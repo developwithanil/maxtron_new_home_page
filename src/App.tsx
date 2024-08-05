@@ -1,35 +1,51 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
+// import ContactSection from "./components/ContactSection";
+import ContactForm from "./components/elementalComponent/ContactForm";
+import Footer from "./components/Footer";
+// import Home from "./components/Home";
+import Service from "./components/Services";
 
-function App() {
-  const [count, setCount] = useState(0)
+const Home: React.FC = () => (
+  <div>
+    <Banner />
+  </div>
+);
+const About: React.FC = () => <div>About Us Page</div>;
+const Services: React.FC = () => (
+  <div>
+    <Service />
+  </div>
+);
+const Solutions: React.FC = () => <div>Solutions Page</div>;
+const CaseStudies: React.FC = () => <div>Case Studies Page</div>;
+const Blog: React.FC = () => <div>Blog Page</div>;
+const Contact: React.FC = () => (
+  <div>
+    <ContactForm />
+  </div>
+);
+const Book: React.FC = () => <div>Book a Meeting Page</div>;
 
+const App: React.FC = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/solutions" element={<Solutions />} />
+        <Route path="/case-studies" element={<CaseStudies />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/book" element={<Book />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
+};
 
-export default App
+export default App;
