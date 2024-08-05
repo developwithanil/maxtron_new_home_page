@@ -16,7 +16,7 @@ const BackgroundVideo: React.FC = () => {
       <div className="relative md:px-20 lg:px-28 flex items-center justify-start py-12 px-4 w-full h-full  ">
         <div className="md:w-11/12">
           <p className="text-xl text-black text-left font-normal font-OpenSans">
-            Building Great Products And Making Them Successful
+            Building Innovative Products And Making Them Successful
           </p>
           <h1 className="text-[#1E1E1E] text-3xl md:text-5xl text-left font-extrabold ">
             {/* Empowering Your Business <br /> with Cutting-Edge Technology. */}

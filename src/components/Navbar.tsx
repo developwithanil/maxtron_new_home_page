@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
             isOpen ? "block" : "hidden"
           }`}
         >
-          <div className="text-white font-OpenSans md:flex md:space-x-4">
+          <div className="text-white font-OpenSans capitalize md:flex md:space-x-4">
             <Link
               to="/"
               className="block mt-4 md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
@@ -78,7 +78,7 @@ const Navbar: React.FC = () => {
               <Link to="/Contact">Contact Us</Link>
             </button>
 
-            <button className="block mt-4 md:inline-block md:mt-0 rounded-lg p-2 bg-[#F5F5F5]  text-black">
+            <button className="block mt-4 md:inline-block md:mt-0 capitalize rounded-lg p-2 bg-[#F5F5F5]  text-black">
               <Link to="/book">Book a Meeting</Link>
             </button>
           </div>

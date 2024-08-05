@@ -12,7 +12,7 @@ const Card: React.FC<CardProps> = ({ title, description, imageUrl }) => {
   return (
     <div
       style={{ backgroundImage: "url(/cardbg.svg)" }}
-      className=" text-[#1E1E1E] bg-cover bg-center p-4 rounded-lg shadow-md"
+      className=" text-[#1E1E1E] bg-cover bg-center p-4 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-110 hover:shadow-lg"
     >
       <div className="flex flex-col  items-start p-2">
         <div className="text-xl ">
