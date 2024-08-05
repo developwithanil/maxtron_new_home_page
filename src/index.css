@@ -72,3 +72,7 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+.bg-custom-gradient {
+  background: linear-gradient(90deg, #d97ed6 0%, #481658 57%, #69348f 100%);
+}

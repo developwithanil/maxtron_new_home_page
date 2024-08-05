@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-[#1D112F] to-[#69348F] p-4">
+    <nav className="bg-custom-gradient p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="">
           <img src={logo} alt="" />
@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
               Blog
             </Link>
             <button className="block mt-4 md:inline-block md:mt-0 rounded-lg p-2 bg-[#F5F5F5] text-black">
-              <Link to="/book">Contact Us</Link>
+              <Link to="/Contact">Contact Us</Link>
             </button>
 
             <button className="block mt-4 md:inline-block md:mt-0 rounded-lg p-2 bg-[#F5F5F5]  text-black">

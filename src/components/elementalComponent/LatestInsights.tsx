@@ -1,10 +1,13 @@
 import React from "react";
 import InsightCard from "./InsightCard";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import profile from "../../assets/profile.svg";
+// import profile from "../../assets/profile.svg";
 
 const insightsData = [
   {
-    imageUrl: "/path-to-image1.jpg",
+    image: profile,
+    imageUrl: profile,
     category: "Technology",
     title:
       "The Impact of Technology on the Workplace: How Technology is Changing",
@@ -12,7 +15,8 @@ const insightsData = [
     date: "July 02, 2024",
   },
   {
-    imageUrl: "/path-to-image2.jpg",
+    image: profile,
+    imageUrl: profile,
     category: "Technology",
     title:
       "The Impact of Technology on the Workplace: How Technology is Changing",
@@ -20,7 +24,8 @@ const insightsData = [
     date: "July 02, 2024",
   },
   {
-    imageUrl: "/path-to-image3.jpg",
+    image: profile,
+    imageUrl: profile,
     category: "Technology",
     title:
       "The Impact of Technology on the Workplace: How Technology is Changing",
@@ -31,13 +36,14 @@ const insightsData = [
 
 const LatestInsights: React.FC = () => {
   return (
-    <section className="py-12 px-4 bg-gradient-to-r from-purple-700 to-purple-900 text-center">
+    <section className="py-12 px-4 text-center">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-white mb-8">Latest Insights</h2>
+        <h2 className="text-4xl font-bold text-black mb-8">Latest Insights</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {insightsData.map((insight, index) => (
             <InsightCard
               key={index}
+              image={insight.image}
               imageUrl={insight.imageUrl}
               category={insight.category}
               title={insight.title}
@@ -46,11 +52,11 @@ const LatestInsights: React.FC = () => {
             />
           ))}
         </div>
-        <div className="mt-8">
+        {/* <div className="mt-8">
           <Link to="/posts" className="text-white underline">
             View All Posts &gt;
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

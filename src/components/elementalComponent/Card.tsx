@@ -7,17 +7,21 @@ interface CardProps {
   icon: React.ReactNode;
 }
 
-const Card: React.FC<CardProps> = ({ title, subtitle, description, icon }) => {
+const Card: React.FC<CardProps> = ({ title, description, icon }) => {
   return (
-    <div className="bg-purple-600 text-white p-6 rounded-lg shadow-md">
-      <div className="flex items-center mb-4">
-        <div className="text-4xl">{icon}</div>
-        <div className="ml-4">
-          <h3 className="text-2xl font-bold">{title}</h3>
-          <h4 className="text-lg">{subtitle}</h4>
-        </div>
+    <div
+      style={{ backgroundImage: "url(/cardbg.svg)" }}
+      className=" text-[#1E1E1E] bg-cover bg-center p-4 rounded-lg shadow-md"
+    >
+      <div className="flex flex-col  items-start p-2">
+        <div className="text-xl ">{icon}</div>
+
+        <h3 className="text-xl font-OpenSans text-left font-bold">{title}</h3>
+
+        <p className="bg-[#F7F4F480] my-4 p-2 flex items-center justify-stretch font-normal text-sm rounded-lg font-OpenSans">
+          {description}
+        </p>
       </div>
-      <p>{description}</p>
     </div>
   );
 };

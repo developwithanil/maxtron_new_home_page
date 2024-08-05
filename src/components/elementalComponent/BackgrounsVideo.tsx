@@ -2,7 +2,7 @@ import React from "react";
 
 const BackgroundVideo: React.FC = () => {
   return (
-    <div className="relative h-screen">
+    <div className="relative h-screen ">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         autoPlay
@@ -13,16 +13,21 @@ const BackgroundVideo: React.FC = () => {
         <source src="/path-to-your-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="relative md:px-28 z-10 flex items-center justify-start w-full h-full bg-white ">
-        <div>
-          <h1 className="text-[#4E009C] text-4xl font-black">
-            Empowering Your Business <br /> with Cutting-Edge Technology.
-          </h1>{" "}
-          <div className="py-4 space-x-4">
-            <button className="bg-[#F9CEC0] p-2 text-[#55308D] rounded-xl">
+      <div className="relative md:px-20 lg:px-28 flex items-center justify-start py-12 px-4 w-full h-full  ">
+        <div className="md:w-11/12">
+          <p className="text-xl text-black text-left font-normal font-OpenSans">
+            Building Great Products And Making Them Successful
+          </p>
+          <h1 className="text-[#1E1E1E] text-3xl md:text-5xl text-left font-extrabold ">
+            {/* Empowering Your Business <br /> with Cutting-Edge Technology. */}
+            Transform Your Business and Growth with 360° Cutting-Edge Tech
+            Solutions
+          </h1>
+          <div className="py-4  space-x-4">
+            <button className="bg-[#F9CEC0] p-2 font-OpenSans font-bold text-[#55308D] rounded">
               Learn More
             </button>
-            <button className="bg-[#55308D] p-2 text-[#F5F5F5] rounded-xl">
+            <button className="bg-[#55308D] font-OpenSans font-bold p-2 text-[#F5F5F5] rounded">
               Get In Touch
             </button>
           </div>
@@ -33,3 +38,5 @@ const BackgroundVideo: React.FC = () => {
 };
 
 export default BackgroundVideo;
+
+// bg-gradient-to-r from-white from-10% via-pink-200 via-30% to-pink-200 to-90%
