@@ -30,6 +30,7 @@ const ContactForm: React.FC = () => {
 
         if (response.ok) {
           const data = await response.json();
+          window.location.reload();
           console.log("Success:", data);
         } else {
           const errorText = await response.text();
