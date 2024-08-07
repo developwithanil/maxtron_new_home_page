@@ -90,12 +90,12 @@ const clients = [
 
 const ClientMarquee = () => {
   return (
-    <div className="py-12 my-12">
-      <div className="container mx-auto px-4 md:px-20 space-y-8">
-        <h2 className="text-2xl md:text-4xl text-center font-bold text-black mb-4 md:mb-8">
+    <div className="py-12 my-20">
+      <div className="container mx-auto px-4 md:px-20 space-y-4">
+        <h2 className="text-2xl md:text-4xl text-center font-bold text-black  md:mb-4">
           Our Clients
         </h2>
-        <p className="mb-8 md:mb-12 text-center text-bleck font-OpenSans">
+        <p className="mb-16 md:mb-12 text-center text-bleck font-OpenSans">
           Driving <span className="font-bold">IMPACT</span> for leading brands
         </p>
         <div className="relative overflow-hidden">
@@ -105,7 +105,7 @@ const ClientMarquee = () => {
                 key={index}
                 src={client.logo}
                 alt={client.name}
-                className=" h-40 w-80 p-2 md:p-4"
+                className=" h-40 w-40 p-2 md:p-4"
                 // effect="blur"
                 // placeholderSrc={client.logo} // Optional: Placeholder image for better UX
                 // threshold={100} // Load images 100px before they are in view

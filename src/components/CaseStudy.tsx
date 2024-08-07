@@ -1,12 +1,12 @@
 import React from "react";
-import CaseStudyCard from "./CaseStudyCard";
+import CaseStudyCard from "./elementalComponent/CaseStudyCard";
 // import { Link } from "react-router-dom";
-import Robot from "../../../public/robot.svg";
-import DecentralizedImg from "../../../public/decentralized.svg";
-import EvotingImg from "../../../public/e-voting.svg";
-import cryptoImg from "../../../public/crypto-game.svg";
-import EcommerceImg from "../../../public/e-commerce.svg";
-import Web3 from "../../../public/web3.svg";
+import Robot from "../../public/robot.svg";
+import DecentralizedImg from "../../public/decentralized.svg";
+import EvotingImg from "../../public/e-voting.svg";
+import cryptoImg from "../../public/crypto-game.svg";
+import EcommerceImg from "../../public/e-commerce.svg";
+import Web3 from "../../public/web3.svg";
 const caseStudyData = [
   {
     title: "AI-Calling Tool",
@@ -48,9 +48,9 @@ const caseStudyData = [
 
 const CaseStudy: React.FC = () => {
   return (
-    <section className="py-12 text-center ">
-      <div className="container mx-auto px-4 md:px-20 space-y-8">
-        <h2 className="text-4xl font-bold text-black mb-8">Case Studies</h2>
+    <section className="py-20 text-center ">
+      <div className="container mx-auto px-4 md:px-20">
+        <h2 className="text-4xl font-bold text-black mb-16 ">Case Studies</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {caseStudyData.map((caseStudy, index) => (
             <CaseStudyCard

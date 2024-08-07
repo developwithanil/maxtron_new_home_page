@@ -1,9 +1,9 @@
 import React from "react";
-import Card from "./Card";
-import QuickImg from "../../../public/quick.svg";
-import GeneratingImg from "../../../public/gnerating.svg";
-import SmileImg from "../../../public/smile.svg";
-import CuttingImg from "../../../public/cutting.svg";
+import Card from "./elementalComponent/Card";
+import QuickImg from "../../public/quick.svg";
+import GeneratingImg from "../../public/gnerating.svg";
+import SmileImg from "../../public/smile.svg";
+import CuttingImg from "../../public/cutting.svg";
 
 const cardData = [
   {
@@ -44,7 +44,7 @@ const ChooseUs: React.FC = () => {
   return (
     <section
       // style={{ backgroundImage: "url(/gradient-bg.svg)" }}
-      className="relative py-12 inset-0 min-h-screen  text-center"
+      className="relative py-20 inset-0  text-center"
     >
       <div
       // style={{ backgroundImage: "url(/gradient-bg.svg)" }}
@@ -52,7 +52,7 @@ const ChooseUs: React.FC = () => {
       >
         <div className="p-4 ">
           <h2 className="text-4xl font-bold text-black mb-4">Why Maxtron ?</h2>
-          <p className="mb-12 text-[#757575] font-OpenSans">
+          <p className="mb-16 text-[#757575] font-OpenSans">
             We go beyond simply serving the industry; we forge enduring
             relationships built on trust and mutual success.
           </p>

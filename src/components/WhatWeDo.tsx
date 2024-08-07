@@ -1,45 +1,10 @@
 import React from "react";
-import Cards from "./Cards";
-import Neuro from "../../../public/neuro.svg";
-import Cloud from "../../../public/cloud.svg";
-import Topology from "../../../public/topology.svg";
-import Network from "../../../public/network.svg";
+import Cards from "./elementalComponent/Cards";
+import Neuro from "../../public/neuro.svg";
+import Cloud from "../../public/cloud.svg";
+import Topology from "../../public/topology.svg";
+import Network from "../../public/network.svg";
 
-// import { Link } from "react-router-dom";
-
-// const cardData = [
-//   {
-//     title: "Web3.0 Custom Solutions",
-//     subtitle: "Title",
-//     description:
-//       "Native Crypto Token Development & Launch-DApps Development-Crypto Gaming Development.Smart Contract Development-DeFi Development-Metaverse Development.Native Payment Development",
-//     // icon: <FaBrain className="text-[#4E009C]" />,
-//     imageUrl: Neuro,
-//   },
-//   {
-//     title: "Applied AI Products & Services",
-//     subtitle: "Title",
-//     description:
-//       "-Custom AI App Development-AI Integration-AI Agent/Copilot Development-PoC & MVP Development-GenAI Development & LLM Fine-tuning",
-//     // icon: <FaCloud className="text-[#4E009C]" />,
-//     imageUrl: Cloud,
-//   },
-//   {
-//     title: "Business Enhancement",
-//     subtitle: "Title",
-//     description:
-//       "-B2B: AI-Powered Prospecting & AI Calling-B2C: Performance Marketing-Investor Outreach On Autopilot-Channel Partnership-Web3 Projects Marketing & Growth",
-//     // icon: <FaNetworkWired className="text-[#4E009C]" />,
-//     imageUrl: Topology,
-//   },
-//   {
-//     title: "Experiential Development",
-//     subtitle: "Title",
-//     description: "-AR Software/App Development-AR/VR/MR Game Development",
-//     // icon: <FaNetworkWired className="text-[#4E009C]" />,
-//     imageUrl: Network,
-//   },
-// ];
 const cardData = [
   {
     title: "Web3.0 Custom Solutions",
@@ -87,8 +52,8 @@ const WhatWeDo: React.FC = () => {
   return (
     <section className="py-12 text-center ">
       <div className="container px-4 md:px-8 mx-auto">
-        <h2 className="text-4xl font-bold text-black mb-4">What We Do.</h2>
-        <p className="mb-12 font-OpenSans  font-normal text-[#1E1E1E]">
+        <h2 className="text-4xl font-bold text-black mb-4">What We Do</h2>
+        <p className="mb-16 font-OpenSans  font-normal text-[#1E1E1E]">
           We build great products and make them successful to the market across
           a range of verticals & industries. We can help you turn your vision
           into a successful product together.

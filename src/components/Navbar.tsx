@@ -9,12 +9,13 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-custom-gradient p-4">
+    <nav className="fixed bg-custom-gradient p-4 left-0 right-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="">
-          <img src={logo} alt="" />
-        </div>
-        <div className="md:hidden" onClick={toggle}>
+        {/* <div className="flex justify-between items-center"> */}
+        <Link to="/">
+          <img src={logo} alt="maxtron logo" />
+        </Link>
+        <div className="lg:hidden flex " onClick={toggle}>
           <button className="text-white focus:outline-none">
             <svg
               className="w-6 h-6"
@@ -32,12 +33,13 @@ const Navbar: React.FC = () => {
             </svg>
           </button>
         </div>
+        {/* </div> */}
         <div
-          className={`md:flex md:items-center md:w-auto ${
+          className={`lg:flex  lg:items-center md:w-auto ${
             isOpen ? "block" : "hidden"
           }`}
         >
-          <div className="text-white font-OpenSans capitalize md:flex md:space-x-4">
+          <div className="text-white font-OpenSans capitalize lg:flex md:space-x-4">
             <Link
               to="/"
               className="block mt-4 md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
@@ -45,31 +47,31 @@ const Navbar: React.FC = () => {
               Home
             </Link>
             <Link
-              to="/about"
+              to="/"
               className="block mt-4 md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
             >
               About Us
             </Link>
             <Link
-              to="/services"
+              to="/"
               className="block mt-4 md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
             >
               Services
             </Link>
             <Link
-              to="/solutions"
+              to="/"
               className="block mt-4 md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
             >
               Solutions
             </Link>
             <Link
-              to="/case-studies"
+              to="/"
               className="block mt-4 md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
             >
               Case Studies
             </Link>
             <Link
-              to="/blog"
+              to="/"
               className="block mt-4 md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
             >
               Blog
@@ -78,8 +80,13 @@ const Navbar: React.FC = () => {
               <Link to="/Contact">Contact Us</Link>
             </button>
 
-            <button className="block mt-4 md:inline-block md:mt-0 capitalize rounded-lg p-2 bg-[#F5F5F5]  text-black">
-              <Link to="/book">Book a Meeting</Link>
+            <button
+              onClick={() => {
+                window.open("https://calendly.com/business-maxtron/30min");
+              }}
+              className="block mt-4 md:inline-block md:mt-0 capitalize rounded-lg p-2 bg-[#F5F5F5]  text-black"
+            >
+              book a call
             </button>
           </div>
         </div>
