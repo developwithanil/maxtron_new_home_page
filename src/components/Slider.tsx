@@ -15,15 +15,15 @@ const cardData = [
     name: "Anthony Perkins",
     title: "Founder and Editor - Cryptonite",
     description:
-      "The founder works one-on-one. His breadth of experience in digital media ensures his ability to navigate multiple hurdles seamlessly.",
-    category: "Media & Entertainment",
+      "The founders and the core team at Maxtron were exceptionally helpful throughout our collaboration. Their support and expertise enabled us to navigate multiple hurdles seamlessly.",
+    category: "Media Publication",
   },
   {
     image: Joyce,
     name: "Joyce Chow",
     title: "Producer | Actress | Writer - Hollywood",
     description:
-      "Metaverse creativity is integral with mainstream growth in the Metaverse. Her experience as a writer and creator adds a unique twist to each project.",
+      "Maxtron's capacity to interplay with design, content and technology and cater the user in a unique way is all what you need.",
     category: "Movies & Film",
   },
   {
@@ -31,7 +31,7 @@ const cardData = [
     name: "Michael Terpin",
     title: '"Godfather of Crypto" by CNBC',
     description:
-      "The Metaverse has successfully utilized blockchain technology, and he has been integral in bridging this digital gap with real-world blockchain advancements.",
+      "The Maxtron team is exceptionally skilled in dealing with advanced technology. They have delivered high-quality solutions and are completely equipped to tackle complex problems.",
     category: "Technology",
   },
   {
@@ -39,7 +39,7 @@ const cardData = [
     name: "Lalit Mangal",
     title: "Co-founder - Airmeet",
     description:
-      "Experienced founder who fosters exceptional user experiences through advanced events technology. He drives growth through strategic insights.",
+      "I commend Maxtron for their exceptional services. Their expertise enhances experiences, aligning perfectly with our mission of fostering genuine connections in the digital space.",
     category: "Events SaaS Tech",
   },
   {
@@ -47,15 +47,15 @@ const cardData = [
     name: "Sambhav Jain",
     title: "Co-founder - FamPay (YC-backed)",
     description:
-      "Metaverse has been intertwined with our work at scale, providing a bank for the teen generation. His focus on youth engagement is unmatched.",
+      "Maxtron has been instrumental from our early stage period. It’s rare to find a team with such a passion in tech & marketing",
     category: "Fintech",
   },
   {
     image: Grant,
     name: "Grant Gunderson",
-    title: "Founder & CEO - Quantum Agency",
+    title: "Founder & CEO - Quantum Agency X",
     description:
-      "Maxim has an outstanding work culture that fosters creativity and innovation, integrating seamlessly into the everyday business landscape.",
+      "Maxtron has an outstanding work culture and process-based engagement model that helped us evolve from idea to execution. Their expertise is truly commendable.",
     category: "Private Equity & Venture Capital",
   },
 ];
