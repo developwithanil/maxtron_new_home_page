@@ -43,7 +43,14 @@ const cardData = [
   },
   {
     title: "Experiential Development",
-    description: ["AR Software/App Development", "AR/VR/MR Game Development"],
+    description: [
+      "AR Software/App Development",
+      "AR/VR/MR Game Development",
+      "Interactive Technologies",
+      "Embedded Engineering",
+      "Projection Mapping ",
+      "Hologram Technologies",
+    ],
     imageUrl: Network,
   },
 ];

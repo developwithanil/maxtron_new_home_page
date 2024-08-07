@@ -8,9 +8,9 @@ interface CardsProps {
 
 const Cards: React.FC<CardsProps> = ({ title, description, imageUrl }) => {
   return (
-    <div className=" text-[#1E1E1E] p-2 transform transition-transform duration-300 hover:scale-110 hover:shadow-lg rounded-lg shadow-lg border-[#9B9696] border-[2px]">
-      <div className="flex flex-col space-y-4 items-center justify-center p-2">
-        <div className="text-xl ">
+    <div className="text-[#1E1E1E] p-2 transform transition-transform duration-300 hover:scale-110 hover:shadow-lg rounded-lg shadow-lg border-[#9B9696] border-[2px]">
+      <div className="flex flex-col items-center p-2">
+        <div className="text-xl mb-4">
           <img
             src={imageUrl}
             alt={title}
@@ -18,13 +18,18 @@ const Cards: React.FC<CardsProps> = ({ title, description, imageUrl }) => {
           />
         </div>
 
-        <h3 className="text-sm font-OpenSans text-[#4E009C] text-left font-bold">
+        <h3 className="text-sm font-OpenSans text-[#4E009C] mb-4 text-left font-bold">
           {title}
         </h3>
 
-        <p className="flex items-center text-[#4E009C] justify-stretch font-normal text-sm rounded-lg font-OpenSans">
-          {description}
-        </p>
+        {description.map((item, index) => (
+          <p
+            key={index}
+            className="flex text-center justify-start text-[#4E009C] font-normal text-sm rounded-lg font-OpenSans"
+          >
+            {item}
+          </p>
+        ))}
       </div>
     </div>
   );

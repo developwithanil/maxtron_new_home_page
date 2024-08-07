@@ -14,7 +14,7 @@ const Footer = () => {
             <img src={logo} alt="maxtron logo" />
           </div>
           <div className="flex ">
-            <nav className="flex flex-col space-y-4 md:items-left text-[#FFFFFF] w-full  md:w-auto">
+            <nav className="flex flex-col space-y-4 md:items-left text-[#FFFFFF] w-full md:w-auto">
               <a href="#" className="mx-2  md:mb-0 hover:text-white">
                 Home
               </a>
@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
         </div>
         {/* Subscription Section */}
-        <div className="flex flex-col items-center justify-between md:items-end md:w-1/2">
+        <div className="flex flex-col md:flex-row items-center pt-8 justify-between md:items-end md:w-1/2">
           <p className="text-[#FFFFFF] md:w-1/2 font-normal md:font-bold font-OpenSans mb-4 text-left">
             Get latest insights on tech trends, industry news, event updates,
             and more in your inbox.
