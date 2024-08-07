@@ -46,11 +46,11 @@ const ContactForm: React.FC = () => {
     <section className="py-20 md:px-12">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
         <div className="lg:w-2/5 mb-8 lg:mb-0">
-          <h2 className="text-4xl font-normal text-black mb-4">
+          <h2 className="text-4xl font-normal text-black mb-2">
             Talk to us and
           </h2>
           <h2 className="text-4xl font-bold text-black mb-4">
-            Get your project moving!
+            get your project moving!
           </h2>
           <ul className="mb-8">
             <li className="flex items-center space-x-2 mb-4">
@@ -58,10 +58,10 @@ const ContactForm: React.FC = () => {
               <span>We will respond to you within 24 hours.</span>
             </li>
             <li className="flex items-center space-x-2 ">
-              <IoCheckmarkCircleOutline className="text-red-500" />
+              <IoCheckmarkCircleOutline className="text-red-500 h-8 w-8" />
               <span>
-                You’ll be talking to product and tech experts (no account
-                managers).
+                You will be talking with the domain expert pertaining to your
+                requirements.
               </span>
             </li>
           </ul>
@@ -144,7 +144,7 @@ const ContactForm: React.FC = () => {
                 id="description"
                 name="description"
                 className="w-full p-3 border border-gray-300 rounded-lg"
-                placeholder="Tell Us About Your Project."
+                placeholder="Tell Us About Your Project"
               ></textarea>
             </div>
             <div className="text-right">

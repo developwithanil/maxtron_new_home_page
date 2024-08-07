@@ -32,7 +32,7 @@ const SliderCard: React.FC<SliderCardProps> = ({
         </div>
       </div>
 
-      <p className="p-2 mx-4 rounded text-sm font-OpenSans font-medium text-[#4B6BFB] bg-[#4B6BFB0D] max-w-fit">
+      <p className="p-2 mx-4 rounded text-xs md:text-sm font-OpenSans font-medium text-[#4B6BFB] bg-[#4B6BFB0D] max-w-fit">
         {category}
       </p>
       <p className="text-left px-4 text-xs md:text-sm font-semibold font-OpenSans text-[#4E009C]">
