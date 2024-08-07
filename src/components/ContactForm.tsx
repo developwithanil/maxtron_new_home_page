@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import ContactImg from "../../../public/formimg.svg";
+import ContactImg from "../../public/formimg.svg";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 
 const ContactForm: React.FC = () => {
@@ -42,7 +42,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <section className="py-12 md:px-12">
+    <section className="py-20 md:px-12">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
         <div className="lg:w-2/5 mb-8 lg:mb-0">
           <h2 className="text-4xl font-normal text-black mb-4">
@@ -68,7 +68,7 @@ const ContactForm: React.FC = () => {
             <img src={ContactImg} alt="img" />
           </div>
         </div>
-        <div className="w-full lg:w-2/5 bg-white p-4 shadow-md rounded-lg">
+        <div className="w-full lg:w-2/5 bg-white p-4 shadow-md rounded-lg ">
           <form ref={formRef} onSubmit={handleSubmit}>
             <div className="mb-4">
               <label
@@ -83,6 +83,7 @@ const ContactForm: React.FC = () => {
                 name="fullName"
                 className="w-full p-3 border border-gray-300 rounded-lg"
                 placeholder="Full Name"
+                required
               />
             </div>
             <div className="mb-4">
@@ -98,6 +99,7 @@ const ContactForm: React.FC = () => {
                 name="email"
                 className="w-full p-3 border border-gray-300 rounded-lg"
                 placeholder="Email"
+                required
               />
             </div>
             <div className="mb-4">

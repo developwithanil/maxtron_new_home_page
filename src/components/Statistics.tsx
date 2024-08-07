@@ -12,8 +12,8 @@ const Statistics = () => {
   ];
 
   return (
-    <div className="py-10   text-center">
-      <h2 className="text-2xl md:text-4xl font-bold mb-8 text-black">
+    <div className="py-20 text-center">
+      <h2 className="text-2xl md:text-4xl font-bold mb-16 text-black">
         We Take Pride In Our Numbers.
       </h2>
       <div className="flex flex-wrap justify-center gap-8">

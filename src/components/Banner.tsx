@@ -1,11 +1,13 @@
 import ContactSection from "./ContactSection";
-import BackgroundVideo from "./elementalComponent/BackgrounsVideo";
-import CaseStudy from "./elementalComponent/CaseStudy";
-import ChooseUs from "./elementalComponent/ChooseUs";
-import ContactForm from "./elementalComponent/ContactForm";
-import LatestInsights from "./elementalComponent/LatestInsights";
-import Statistics from "./elementalComponent/Statistics";
-import WhatWeDo from "./elementalComponent/WhatWeDo";
+import BackgroundVideo from "./BackgrounsVideo";
+import CaseStudy from "./CaseStudy";
+import ChooseUs from "./ChooseUs";
+import ClientMarquee from "./elementalComponent/ClientMarquee";
+import ContactForm from "./ContactForm";
+// import LatestInsights from "./elementalComponent/LatestInsights";
+import Statistics from "./Statistics";
+import WhatWeDo from "./WhatWeDo";
+import Slider from "./Slider";
 // import Footer from "./Footer";
 
 const Banner = () => {
@@ -15,8 +17,10 @@ const Banner = () => {
       <ChooseUs />
       <WhatWeDo />
       <Statistics />
+      <ClientMarquee />
       <CaseStudy />
-      <LatestInsights />
+      <Slider />
+      {/* <LatestInsights /> */}
       <ContactForm />
       <ContactSection />
       {/* <Footer /> */}

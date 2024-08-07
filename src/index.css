@@ -74,5 +74,20 @@ button:focus-visible {
 } */
 
 .bg-custom-gradient {
-  background: linear-gradient(90deg, #d97ed6 0%, #481658 57%, #69348f 100%);
+  background: linear-gradient(90deg, #481658 10%, #773d75 20%, #69348f 100%);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: fit-content;
+  animation: marquee 30s linear infinite;
 }

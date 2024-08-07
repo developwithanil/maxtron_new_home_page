@@ -1,5 +1,5 @@
 import React from "react";
-import InsightCard from "./InsightCard";
+import InsightCard from "./elementalComponent/InsightCard";
 // import { Link } from "react-router-dom";
 import profile from "../../assets/profile.svg";
 // import profile from "../../assets/profile.svg";

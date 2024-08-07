@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 // import ContactSection from "./components/ContactSection";
-import ContactForm from "./components/elementalComponent/ContactForm";
+import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 // import Home from "./components/Home";
 import Service from "./components/Services";
