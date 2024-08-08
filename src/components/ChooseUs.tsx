@@ -26,7 +26,7 @@ const cardData = [
     title: "Approachable And Responsive",
     subtitle: "Title",
     description:
-      "We think good communication is super important to make something great. That's why we're easy to talk to, always here when you need us, and quick to respond. Think of us as part of your team, ready to keep the conversation flowing smoothly to make sure we create something amazing together.",
+      "We believe that good communication is super important to make something great. That's why we're easy to talk to, always here when you need us, and quick to respond. Think of us as part of your team, ready to keep the conversation flowing smoothly to make sure we create something amazing together.",
     // icon: <FaUsers className="text-purple-500" />,
     imageUrl: SmileImg,
   },
@@ -51,7 +51,7 @@ const ChooseUs: React.FC = () => {
       // className=" absolute inset-0 z-30 bg-cover bg-center "
       >
         <div className="p-4 ">
-          <h2 className="text-4xl font-bold text-black mb-4">Why Maxtron ?</h2>
+          <h2 className="text-4xl font-bold text-black mb-4">Why Maxtron</h2>
           <p className="mb-16 font-OpenSans">
             We go beyond simply serving the industry; we forge enduring
             relationships built on trust and mutual success.

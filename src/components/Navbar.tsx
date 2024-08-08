@@ -42,41 +42,41 @@ const Navbar: React.FC = () => {
           <div className="text-white font-OpenSans capitalize lg:flex md:space-x-4">
             <Link
               to="/"
-              className="block mt-4 md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
+              className="block mt-4 text-sm md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
             >
               Home
             </Link>
             <Link
               to="/"
-              className="block mt-4 md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
+              className="block mt-4 text-sm md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
             >
               About Us
             </Link>
             <Link
               to="/"
-              className="block mt-4 md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
+              className="block mt-4 text-sm md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
             >
               Services
             </Link>
             <Link
               to="/"
-              className="block mt-4 md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
+              className="block mt-4 text-sm md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
             >
-              Solutions
+              Industries
             </Link>
             <Link
               to="/"
-              className="block mt-4 md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
+              className="block mt-4 text-sm md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
             >
               Case Studies
             </Link>
             <Link
               to="/"
-              className="block mt-4 md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
+              className="block mt-4 text-sm md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
             >
-              Blog
+              Insights
             </Link>
-            <button className="block mt-4 md:inline-block md:mt-0 rounded-lg p-2 bg-[#F5F5F5] text-black">
+            <button className="block mt-4 text-sm md:inline-block md:mt-0 rounded-lg p-2 bg-[#F5F5F5] text-black">
               <Link to="/Contact">Contact Us</Link>
             </button>
 
@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
               onClick={() => {
                 window.open("https://calendly.com/business-maxtron/30min");
               }}
-              className="block mt-4 md:inline-block md:mt-0 capitalize rounded-lg p-2 bg-[#F5F5F5]  text-black"
+              className="block mt-4 text-sm md:inline-block md:mt-0 capitalize rounded-lg p-2 bg-[#F5F5F5]  text-black"
             >
               book a call
             </button>
