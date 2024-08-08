@@ -53,12 +53,12 @@ const ContactForm: React.FC = () => {
             get your project moving!
           </h2>
           <ul className="mb-8">
-            <li className="flex items-center space-x-2 mb-4">
-              <IoCheckmarkCircleOutline className="text-red-500" />
+            <li className="flex items-center space-x-2 mb-4 ">
+              <IoCheckmarkCircleOutline className="text-red-500 h-5 w-5" />
               <span>We will respond to you within 24 hours.</span>
             </li>
             <li className="flex items-center space-x-2 ">
-              <IoCheckmarkCircleOutline className="text-red-500 h-8 w-8" />
+              <IoCheckmarkCircleOutline className="text-red-500 h-8 w-8 md:h-5 md:w-5" />
               <span>
                 You will be talking with the domain expert pertaining to your
                 requirements.
