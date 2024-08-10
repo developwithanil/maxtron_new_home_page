@@ -138,13 +138,13 @@ const ContactForm: React.FC = () => {
                 htmlFor="description"
                 className="block text-gray-700 font-bold mb-2"
               >
-                Description
+                Tell Us About Your Project
               </label>
               <textarea
                 id="description"
                 name="description"
                 className="w-full p-3 border border-gray-300 rounded-lg"
-                placeholder="Tell Us About Your Project"
+                placeholder="Description"
               ></textarea>
             </div>
             <div className="text-right">

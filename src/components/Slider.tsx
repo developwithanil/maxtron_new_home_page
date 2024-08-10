@@ -64,7 +64,9 @@ const CardSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 100,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -75,6 +77,8 @@ const CardSlider = () => {
           slidesToScroll: 1,
           infinite: true,
           dots: true,
+          autoplay: true,
+          autoplaySpeed: 3000,
         },
       },
       {
@@ -82,6 +86,8 @@ const CardSlider = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
         },
       },
     ],
@@ -91,7 +97,7 @@ const CardSlider = () => {
     <div className="mx-auto py-20 p-4 text-center capitalize">
       <div className="container px-4 space-y-4 md:px-8 mx-auto">
         <h2 className="text-4xl font-bold text-black mb-16">
-          What our Customers Say.
+          What our Customers Say
         </h2>
         <div className="container">
           <Slider {...settings}>
