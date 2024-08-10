@@ -17,8 +17,8 @@ const ContactSection = () => {
       <div className="flex flex-col items-start">
         <div className="mb-4">
           <p className="font-normal">
-            <span className="font-bold pr-2">Address:</span>Presence in US, UK,
-            Europe, UAE, India & Singapore
+            <span className="font-bold pr-2">Address:</span> US | UK Europe |
+            UAE | India | Singapore
           </p>
         </div>
         <div className="mb-4">

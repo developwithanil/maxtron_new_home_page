@@ -20,7 +20,7 @@ const BackgroundVideo: React.FC = () => {
           </p>
           <h1 className="text-[#1E1E1E] text-3xl md:text-5xl text-left font-extrabold ">
             {/* Empowering Your Business <br /> with Cutting-Edge Technology. */}
-            Transform Your Business and Growth with 360° Cutting-Edge Tech
+            Transform Your Business And Growth With 360° Cutting-Edge Tech
             Solutions
           </h1>
           <div className="py-4  space-x-4">

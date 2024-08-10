@@ -21,7 +21,7 @@ const caseStudyData = [
     imageUrl: DecentralizedImg,
   },
   {
-    title: "Blockchain-Based E-Voting System",
+    title: "Blockchain Based E-Voting System",
     description:
       "A comprehensive solution that leverages blockchain's inherent characteristics to ensure anonymity, integrity, accuracy, and verifiability in the voting process.",
     imageUrl: EvotingImg,
@@ -33,7 +33,7 @@ const caseStudyData = [
     imageUrl: cryptoImg,
   },
   {
-    title: "E-commerce Marketing",
+    title: "E-Commerce Marketing",
     description:
       "Learn how we helped an eCommerce business to increase its online sales by 60% by using omnichannel paid search and social media strategies.",
     imageUrl: EcommerceImg,
