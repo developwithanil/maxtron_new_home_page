@@ -42,8 +42,8 @@ const Footer = () => {
           </div>
         </div>
         {/* Subscription Section */}
-        <div className="flex flex-col md:flex-row items-center pt-8 justify-between md:items-end md:w-1/2">
-          <p className="text-[#FFFFFF] md:w-1/2 font-normal md:font-bold font-OpenSans mb-4 text-left">
+        <div className="flex flex-col md:flex-row items-center pt-8 justify-center md:items-end md:w-1/2">
+          <p className="text-[#FFFFFF] md:w-2/3 font-normal md:font-bold pt-12 items-center font-OpenSans mb-4 text-left">
             Get latest insights on tech trends, industry news, event updates,
             and more in your inbox.
           </p>
