@@ -93,7 +93,7 @@ const CardSlider = () => {
         <h2 className="text-4xl font-bold text-black mb-16">
           What our Customers Say.
         </h2>
-        <div>
+        <div className="container">
           <Slider {...settings}>
             {cardData.map((card, index) => (
               <div key={index} className="p-4">
