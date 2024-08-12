@@ -14,11 +14,11 @@ const BackgroundVideo: React.FC = () => {
         Your browser does not support the video tag.
       </video>
       <div className="relative md:px-20 lg:px-28 flex items-center justify-start py-12 px-4 w-full h-full  ">
-        <div className="md:w-11/12">
+        <div className="md:w-11/12 space-y-6">
           <p className="text-xl text-black text-left font-normal font-OpenSans">
             Building Innovative Products And Making Them Successful
           </p>
-          <h1 className="text-[#1E1E1E] text-3xl md:text-5xl text-left font-extrabold ">
+          <h1 className="text-[#1E1E1E] text-4xl md:text-5xl  text-left font-extrabold ">
             {/* Empowering Your Business <br /> with Cutting-Edge Technology. */}
             Transform Your Business And Growth With 360° Cutting-Edge Tech
             Solutions
