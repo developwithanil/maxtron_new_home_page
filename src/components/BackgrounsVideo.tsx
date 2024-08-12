@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 const BackgroundVideo: React.FC = () => {
   return (
     <div className="relative h-screen ">
@@ -24,9 +24,9 @@ const BackgroundVideo: React.FC = () => {
             Solutions
           </h1>
           <div className="py-4  space-x-4">
-            <button className="bg-[#F9CEC0] p-2 font-OpenSans font-bold text-[#55308D] rounded">
+            {/* <button className="bg-[#F9CEC0] p-2 font-OpenSans font-bold text-[#55308D] rounded">
               <Link to="/Contact">Learn More</Link>
-            </button>
+            </button> */}
             <button
               onClick={() => {
                 window.open("https://calendly.com/business-maxtron/30min");

@@ -6,10 +6,10 @@ import Create from "../../../public/client/createProtocol.svg";
 import IndiaToday from "../../../public/client/indiaToday.svg";
 import Convival from "../../../public/client/convival.svg";
 import Uber from "../../../public/client/uber.svg";
-import Cryptonite from "../../../public/client/cryptonite.svg";
+// import Cryptonite from "../../../public/client/cryptonite.svg";
 import Tenup from "../../../public/client/tenup.svg";
 import PmIndia from "../../../public/client/pmIndia.svg";
-import Sc from "../../../public/client/sc.svg";
+// import Sc from "../../../public/client/sc.svg";
 import Ministry from "../../../public/client/ministry.svg";
 import FoodVerse from "../../../public/client/foodVerse.svg";
 import GovtHy from "../../../public/client/govtHyryana.svg";
@@ -21,10 +21,10 @@ const clients = [
   { name: "India Today", logo: IndiaToday },
   { name: "Convival", logo: Convival },
   { name: "Uber", logo: Uber },
-  { name: "Cryptonite", logo: Cryptonite },
+  // { name: "Cryptonite", logo: Cryptonite },
   { name: "Tenup", logo: Tenup },
   { name: "PM India", logo: PmIndia },
-  { name: "SC", logo: Sc },
+  // { name: "SC", logo: Sc },
   { name: "Ministry", logo: Ministry },
   { name: "FoodVerse", logo: FoodVerse },
   { name: "Govt Haryana", logo: GovtHy },

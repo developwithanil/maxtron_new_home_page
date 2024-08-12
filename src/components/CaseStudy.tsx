@@ -48,7 +48,7 @@ const caseStudyData = [
 
 const CaseStudy: React.FC = () => {
   return (
-    <section className="py-20 text-center ">
+    <section id="Case-studies" className="py-20 text-center ">
       <div className="container mx-auto px-4 md:px-20">
         <h2 className="text-4xl font-bold text-black mb-16 ">Case Studies</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
