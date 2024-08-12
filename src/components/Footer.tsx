@@ -12,8 +12,8 @@ const Footer = () => {
           <div className="mb-4 md:mb-0 md:mr-8">
             <img src={logo} alt="maxtron logo" />
           </div>
-          <div className="flex ">
-            <nav className="flex flex-col space-y-4 md:items-left text-[#FFFFFF] w-full md:w-auto">
+          <div className="flex justify-between ">
+            <nav className="flex flex-col space-y-4 md:items-left text-[#FFFFFF] md:w-auto">
               <a
                 href="#Home"
                 id="Home"
@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
         </div>
         {/* Subscription Section */}
-        <div className="flex flex-col lg:flex-row items-center mx-2 justify-center md:items-end md:w-1/3">
+        <div className="flex flex-col mt-8 md:mt-0 lg:flex-row space-y-4 mx-2 justify-center md:items-end md:w-1/3">
           <p className="text-[#FFFFFF] md:w-2/3 font-normal md:font-bold items-center mb-2 font-OpenSans text-right mr-4">
             {/* Get latest insights on tech trends, industry news, event updates,
             and more in your inbox. */}
@@ -90,7 +90,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-purple-800 py-4 mt-8">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+        <div className="container mx-auto px-2 md:px-4 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-[#FFFFFF] mb-4 md:mb-0 text-center md:text-left">
             © 2024 by Maxtron Innovations
           </p>
