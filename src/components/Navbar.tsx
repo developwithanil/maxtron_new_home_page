@@ -7,13 +7,20 @@ const Navbar: React.FC = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsOpen(false); // Close the mobile menu after clicking
+  };
 
   return (
-    <nav className="fixed bg-custom-gradient p-4 left-0 right-0 z-50">
+    <nav className="fixed bg-custom-gradient p-4  left-0 right-0 z-50">
       <div className="container mx-auto flex   justify-between items-center">
         {/* <div className="flex justify-between items-center"> */}
         <Link to="/">
-          <img src={logo} alt="maxtron logo" />
+          <img src={logo} alt="maxtron logo" className="" />
         </Link>
         <div className="lg:hidden flex " onClick={toggle}>
           <button className="text-white focus:outline-none">
@@ -40,42 +47,48 @@ const Navbar: React.FC = () => {
           }`}
         >
           <div className="text-white font-OpenSans capitalize lg:flex md:space-x-4">
-            <Link
-              to="/"
+            <button
+              onClick={() => scrollToSection("Home")}
               className="block mt-4 text-sm md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
             >
               Home
-            </Link>
-            <Link
-              to="/"
+            </button>
+
+            <button
+              onClick={() => scrollToSection("about-us")}
               className="block mt-4 text-sm md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
             >
               About Us
-            </Link>
-            <Link
-              to="/"
+            </button>
+            <button
+              onClick={() => scrollToSection("Our-services")}
               className="block mt-4 text-sm md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
             >
               Services
-            </Link>
-            <Link
+            </button>
+            <button
+              onClick={() => scrollToSection("Case-studies")}
+              className="block mt-4 text-sm md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
+            >
+              Case Studies
+            </button>
+
+            {/* <Link
               to="/"
               className="block mt-4 text-sm md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
             >
               Industries
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               to="/"
               className="block mt-4 text-sm md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
-            >
-              Case Studies
-            </Link>
-            <Link
+            ></Link> */}
+            {/* <Link
               to="/"
               className="block mt-4 text-sm md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
             >
               Insights
-            </Link>
+            </Link> */}
             <button className="block mt-4 text-sm md:inline-block md:mt-0 rounded-lg p-2 bg-[#F5F5F5] text-black">
               <Link to="/Contact">Contact Us</Link>
             </button>

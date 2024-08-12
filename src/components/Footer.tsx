@@ -1,9 +1,8 @@
 // import React from "react";
 import logo from "../assets/logo.svg";
-// import ContactSection from "./ContactSection";
-import Twitter from "../../src/assets/twitter.svg";
-import LinkedIn from "../../src/assets/linkedin.svg";
-import YouTube from "../../src/assets/youtube.svg";
+import { FaSquareFacebook } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa6";
+
 const Footer = () => {
   return (
     <footer className="relative  bg-gray-900 text-white">
@@ -15,41 +14,79 @@ const Footer = () => {
           </div>
           <div className="flex ">
             <nav className="flex flex-col space-y-4 md:items-left text-[#FFFFFF] w-full md:w-auto">
-              <a href="#" className="mx-2  md:mb-0 hover:text-white">
+              <a
+                href="#Home"
+                id="Home"
+                className="mx-2  md:mb-0 hover:text-white"
+              >
                 Home
               </a>
-              <a href="#" className="mx-2  md:mb-0 hover:text-white">
+              <a
+                href="#Our-services"
+                id="Our-services"
+                className="mx-2  md:mb-0 hover:text-white"
+              >
                 Services
               </a>
-              <a href="#" className="mx-2  md:mb-0 hover:text-white">
+              {/* <a href="#" className="mx-2  md:mb-0 hover:text-white">
                 Industries
-              </a>
-              <a href="#" className="mx-2  md:mb-0 hover:text-white">
+              </a> */}
+              <a
+                href="#Case-studies"
+                id="Case-studies"
+                className="mx-2  md:mb-0 hover:text-white"
+              >
                 Case Studies
               </a>
             </nav>
             <nav className="flex flex-col space-y-4 md:items-left text-[#FFFFFF] md:w-auto">
-              <a href="#" className="mx-2  md:mb-0 hover:text-white">
+              {/* <a href="#" className="mx-2  md:mb-0 hover:text-white">
                 Insights
-              </a>
-              <a href="#" className="mx-2  md:mb-0 hover:text-white">
+              </a> */}
+              <a
+                href="#about-us"
+                id="about-us"
+                className="mx-2  md:mb-0 hover:text-white"
+              >
                 About Us
               </a>
-              <a href="#" className="mx-2  md:mb-0 hover:text-white">
+              <a
+                href="#contact-us"
+                id="contact-us"
+                className="mx-2  md:mb-0 hover:text-white"
+              >
                 Contact Us
               </a>
             </nav>
           </div>
         </div>
         {/* Subscription Section */}
-        <div className="flex flex-col lg:flex-row items-center mx-2 pt-8 justify-center md:items-end md:w-1/3">
-          <p className="text-[#FFFFFF] md:w-2/3 font-normal md:font-bold pt-10 items-center font-OpenSans mb-4 text-left">
-            Get latest insights on tech trends, industry news, event updates,
-            and more in your inbox.
+        <div className="flex flex-col lg:flex-row items-center mx-2 justify-center md:items-end md:w-1/3">
+          <p className="text-[#FFFFFF] md:w-2/3 font-normal md:font-bold items-center mb-2 font-OpenSans text-right mr-4">
+            {/* Get latest insights on tech trends, industry news, event updates,
+            and more in your inbox. */}
+            Follow Us On Socials
           </p>
-          <button className="bg-white text-black py-2 px-4 rounded mb-10 transition duration-300">
-            Subscribe
-          </button>
+          <div className="flex ">
+            <button
+              onClick={() => {
+                window.open("https://www.facebook.com/maxtroninnovations/");
+              }}
+              className="bg-white px-2 text-black rounded transition mr-4  duration-300"
+            >
+              <FaSquareFacebook className="h-6 w-6 text-blue-500" />
+            </button>
+            <button
+              onClick={() => {
+                window.open(
+                  "https://in.linkedin.com/company/maxtron-innovations"
+                );
+              }}
+              className="bg-white p-2  text-black rounded transition duration-300"
+            >
+              <FaLinkedinIn className="h-6 w-6 text-blue-500" />
+            </button>
+          </div>
         </div>
       </div>
       <div className="bg-purple-800 py-4 mt-8">
@@ -70,7 +107,7 @@ const Footer = () => {
           </div>
           <div className="flex space-x-4 justify-center md:justify-end">
             {/* Replace # with actual social media links */}
-            <a href="#" className="text-[#FFFFFF] text-sm hover:text-white">
+            {/* <a href="#" className="text-[#FFFFFF] text-sm hover:text-white">
               <img src={Twitter} alt="twitter logo" />
             </a>
             <a href="#" className="text-[#FFFFFF] text-sm hover:text-white">
@@ -78,7 +115,7 @@ const Footer = () => {
             </a>
             <a href="#" className="text-[#FFFFFF] text-sm hover:text-white">
               <img src={YouTube} alt="Youtube logo" />
-            </a>
+            </a> */}
             {/* <a href="#" className="text-[#FFFFFF] text-sm hover:text-white">
               IG
             </a> */}

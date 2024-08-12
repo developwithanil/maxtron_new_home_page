@@ -43,6 +43,7 @@ const cardData = [
 const ChooseUs: React.FC = () => {
   return (
     <section
+      id="about-us"
       // style={{ backgroundImage: "url(/gradient-bg.svg)" }}
       className="relative py-20 inset-0  text-center"
     >

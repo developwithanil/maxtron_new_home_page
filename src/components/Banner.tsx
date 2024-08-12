@@ -12,7 +12,7 @@ import Slider from "./Slider";
 
 const Banner = () => {
   return (
-    <div className="bg-gradient-to-r from-white to-pink-200  ">
+    <div id="Home" className="bg-gradient-to-r from-white to-pink-200  ">
       <BackgroundVideo />
       <ChooseUs />
       <WhatWeDo />
