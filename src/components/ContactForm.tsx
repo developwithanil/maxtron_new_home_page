@@ -1,9 +1,12 @@
 import React, { useRef } from "react";
+import { useLocation } from "react-router-dom";
 import ContactImg from "../../public/formimg.svg";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
+import "../page.css"
 
 const ContactForm: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
+  const location = useLocation();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -22,7 +25,6 @@ const ContactForm: React.FC = () => {
             mode: "cors",
             headers: {
               "Content-Type": "application/json",
-              // "Access-Control-Allow-Origin": "*",
             },
             body: JSON.stringify(formObject),
           }
@@ -42,11 +44,15 @@ const ContactForm: React.FC = () => {
     }
   };
 
+  const sectionClassName = location.pathname === "/Contact"
+    ? "py-20 md:px-12 pt-36"
+    : "py-20 md:px-12";
+
   return (
-    <section id="contact-us" className="py-20 md:px-12">
+    <section id="contact-us" className={sectionClassName}>
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
         <div className="lg:w-2/5 mb-8 lg:mb-0">
-          <h2 className="text-4xl font-normal text-black mb-2">
+          <h2 className="text-4xl font-normal text-black ">
             Talk to us and
           </h2>
           <h2 className="text-4xl font-bold text-black mb-4">
@@ -82,7 +88,7 @@ const ContactForm: React.FC = () => {
                 type="text"
                 id="fullName"
                 name="fullName"
-                className="w-full p-3 border border-gray-300 rounded-lg"
+                className="w-full p-3 border border-gray-300 rounded-lg placeholder-bg"
                 placeholder="Full Name"
                 required
               />
@@ -98,7 +104,7 @@ const ContactForm: React.FC = () => {
                 type="email"
                 id="email"
                 name="email"
-                className="w-full p-3 border border-gray-300 rounded-lg"
+                className="w-full p-3 border border-gray-300 rounded-lg placeholder-bg"
                 placeholder="Email"
                 required
               />
@@ -114,7 +120,7 @@ const ContactForm: React.FC = () => {
                 type="text"
                 id="designation"
                 name="designation"
-                className="w-full p-3 border border-gray-300 rounded-lg"
+                className="w-full p-3 border border-gray-300 rounded-lg placeholder-bg"
                 placeholder="Designation"
               />
             </div>
@@ -129,7 +135,7 @@ const ContactForm: React.FC = () => {
                 type="text"
                 id="companyName"
                 name="companyName"
-                className="w-full p-3 border border-gray-300 rounded-lg"
+                className="w-full p-3 border border-gray-300 rounded-lg placeholder-bg"
                 placeholder="Company Name"
               />
             </div>
@@ -143,18 +149,19 @@ const ContactForm: React.FC = () => {
               <textarea
                 id="description"
                 name="description"
-                className="w-full p-3 border border-gray-300 rounded-lg"
+                className="w-full p-3 border border-gray-300 rounded-lg placeholder-bg"
                 placeholder="Description"
               ></textarea>
             </div>
             <div className="text-right">
               <button
                 type="submit"
-                className="px-6 py-3 text-black font-bold rounded-lg border-[2px] border-black"
+                className="px-6 py-3 text-black font-bold rounded-lg border-[2px] border-black bg-white hover:bg-black hover:text-white transition-colors duration-300"
               >
                 Submit
               </button>
             </div>
+
           </form>
         </div>
       </div>
