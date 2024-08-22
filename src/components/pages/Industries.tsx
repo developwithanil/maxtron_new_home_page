@@ -149,7 +149,7 @@ const Industries = () => {
           All industries
         </h1>
         <p className="text-base sm:text-lg lg:text-xl mt-4">
-          Become Industry leaders by embracing opportunities and being future-ready
+        Stay ahead of disruption and drive growth by partnering with a technology expert who understands your industry and speaks your business's language. We deliver tailored technology solutions, help you avoid costly errors, save you time, and provide a competitive edge to position your company for success.
         </p>
       </div>
 
