@@ -99,7 +99,7 @@ const CaseStudyPage = () => {
                     Case Studies
                 </h1>
                 <p className="text-base sm:text-lg lg:text-xl mt-4">
-                    Our products are reshaping how industry leaders conduct their case business operations
+                Explore our case studies showcasing how we’ve leveraged AI, blockchain, and advanced marketing techniques across various industries. Our innovative tech solutions have enabled clients to achieve groundbreaking results, while our strategic sales and marketing efforts have driven substantial success and put projects on the fast track to growth. Discover how our expertise in cutting-edge technology can transform your business.
                 </p>
             </div>
 
