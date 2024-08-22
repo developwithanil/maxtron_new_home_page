@@ -7,20 +7,32 @@ import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 // import Home from "./components/Home";
 import Service from "./components/Services";
+import AboutUs from "./components/pages/AboutUs";
+import Insights from "./components/pages/Insights";
+import Industries from "./components/pages/Industries";
+import "./page.css"
+import CaseStudyPage from "./components/pages/CaseStudyPage";
+import InternalPage from "./components/pages/InternalPage";
 
 const Home: React.FC = () => (
   <div>
     <Banner />
   </div>
 );
-const About: React.FC = () => <div>About Us Page</div>;
+
+const About: React.FC = () => (
+  <div>
+    <AboutUs />
+  </div>
+);
+
 const Services: React.FC = () => (
   <div>
     <Service />
   </div>
 );
+
 const Solutions: React.FC = () => <div>Solutions Page</div>;
-const CaseStudies: React.FC = () => <div>Case Studies Page</div>;
 const Blog: React.FC = () => <div>Blog Page</div>;
 const Contact: React.FC = () => (
   <div>
@@ -38,7 +50,10 @@ const App: React.FC = () => {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/solutions" element={<Solutions />} />
-        <Route path="/case-studies" element={<CaseStudies />} />
+        <Route path="/industries" element={<Industries />} />
+        <Route path="/insights" element={<Insights />} />
+        <Route path="/case-studies" element={<CaseStudyPage />} />
+        <Route path="/internal-page" element={<InternalPage />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/book" element={<Book />} />

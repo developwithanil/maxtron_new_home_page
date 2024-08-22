@@ -2,6 +2,7 @@
 import logo from "../assets/logo.svg";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,49 +15,49 @@ const Footer = () => {
           </div>
           <div className="flex justify-between ">
             <nav className="flex flex-col space-y-4 md:items-left text-[#FFFFFF] md:w-auto">
-              <a
-                href="#Home"
+              <Link
+                to="/"
                 id="Home"
                 className="mx-2  md:mb-0 hover:text-white"
               >
                 Home
-              </a>
-              <a
-                href="#Our-services"
+              </Link>
+              <Link
+                to="/services"
                 id="Our-services"
                 className="mx-2  md:mb-0 hover:text-white"
               >
                 Services
-              </a>
-              {/* <a href="#" className="mx-2  md:mb-0 hover:text-white">
+              </Link>
+              {/* <Link to="#" className="mx-2  md:mb-0 hover:text-white">
                 Industries
-              </a> */}
-              <a
-                href="#Case-studies"
+              </Link> */}
+              <Link
+                to="/case-studies"
                 id="Case-studies"
                 className="mx-2  md:mb-0 hover:text-white"
               >
                 Case Studies
-              </a>
+              </Link>
             </nav>
             <nav className="flex flex-col space-y-4 md:items-left text-[#FFFFFF] md:w-auto">
-              {/* <a href="#" className="mx-2  md:mb-0 hover:text-white">
+              {/* <Link to="#" className="mx-2  md:mb-0 hover:text-white">
                 Insights
-              </a> */}
-              <a
-                href="#about-us"
+              </Link> */}
+              <Link
+                to="/about"
                 id="about-us"
                 className="mx-2  md:mb-0 hover:text-white"
               >
                 About Us
-              </a>
-              <a
-                href="#contact-us"
+              </Link>
+              <Link
+                to="/Contact"
                 id="contact-us"
                 className="mx-2  md:mb-0 hover:text-white"
               >
                 Contact Us
-              </a>
+              </Link>
             </nav>
           </div>
         </div>
