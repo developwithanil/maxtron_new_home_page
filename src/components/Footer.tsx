@@ -45,6 +45,13 @@ const Footer = () => {
                 Insights
               </Link> */}
               <Link
+                to="/industries"
+                id="about-us"
+                className="mx-2  md:mb-0 hover:text-white"
+              >
+                Industries
+              </Link>
+              <Link
                 to="/about"
                 id="about-us"
                 className="mx-2  md:mb-0 hover:text-white"

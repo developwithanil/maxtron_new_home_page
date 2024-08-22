@@ -120,7 +120,8 @@ const IndustryList = () => {
             <img
               src={industry.img}
               alt={industry.heading}
-              className="w-106 h-96 object-cover mb-4"
+              style={{ width: '480px', height: '300px' }} 
+              className="object-cover mb-4"
             />
             <h2 className="md:text-2xl font-bold mb-2">{industry.heading}</h2>
             <ul className="list-disc list-inside text-left">
@@ -136,6 +137,7 @@ const IndustryList = () => {
     </div>
   );
 };
+
 
 
 const Industries = () => {
