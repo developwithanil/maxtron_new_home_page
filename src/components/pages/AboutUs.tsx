@@ -6,10 +6,10 @@ import img1 from '../../assets/about/about1.png'
 import img2 from '../../assets/about/about2.png'
 import img3 from '../../assets/about/about3.png'
 import img4 from '../../assets/about/about4.png'
-import good from '../../assets/about/good.png'
-import cup from '../../assets/about/cup.png'
-import handshake from '../../assets/about/handshake.png'
-import person from '../../assets/about/person.png'
+import good from '../../assets/about/thumbs.svg'
+import cup from '../../assets/about/trophy.svg'
+import handshake from '../../assets/about/handshake.svg'
+import person from '../../assets/about/person.svg'
 import ContactForm from '../ContactForm'
 
 
@@ -74,10 +74,12 @@ const AboutUs = () => {
     <div >
       <div className="relative z-10 text-center mb-8 about_hero_img px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
-          About Maxtron.ai.
+        Hello, We’re Maxtron
         </h1>
         <p className="text-base sm:text-lg lg:text-xl mt-4">
-          Our Mission, Vision, and Values.
+        Our team is an extension of yours. 
+Bringing experience, expertise, Rigor, problem-solving skills, innovation and user-focused approach
+
         </p>
       </div>
 
@@ -101,15 +103,10 @@ const AboutUs = () => {
 
 
           <div className={`w-full md:w-1/2 p-4 `}>
-            <h2 className="text-2xl font-bold mb-2">Brief Dummy</h2>
-            <p className="text-gray-700 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Soluta fugit voluptas autem perferendis cupiditate. Amet et labore harum doloremque inventore
-              excepturi molestiae, commodi dolorum possimus blanditiis nobis rem magnam tempora cum. Beatae,
-              aperiam deserunt! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt enim modi
-              placeat debitis. Officia ea ex in laboriosam harum, beatae obcaecati iusto. Aut reiciendis quisquam
-              ostrum nemo quibusdam quos magnam modi vel porro, nesciunt distinctio fugit nihil unde officia
-              mollitia debitis minus assumenda? Dolore aperiam, voluptate illum iure alias adipisci velit
-              sunt blanditiis? Sunt, provident?</p>
+            <h2 className="text-2xl font-bold mb-2">An Ideal Fusion Of Technical, Marketing And Creative Expertise</h2>
+            <p className="text-gray-700 mb-4">Our team blends ex-successful startup founders with top talent from Blockchain, AI, Product, UX/UI, Software Development, Data Analytics & Marketing.
+We’re driven by one goal: to redefine product innovation with a deep understanding of your business and tech needs. Before we build, we dig in to ensure our solutions are perfectly aligned with your goals. Let’s turn your vision into reality with expertise and a user-first approach. Ready to elevate your business? Let’s make it happen!
+</p>
 
           </div>
 
