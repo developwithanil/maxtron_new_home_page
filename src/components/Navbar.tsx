@@ -166,13 +166,13 @@ const Navbar: React.FC = () => {
 
 
 
-              <NavLink
+              {/* <NavLink
                 onClick={() => setIsOpen(false)}
                 to="/insights"
                 className="block mt-4 text-sm md:inline-block md:mt-0 hover:bg-[#F5F5F5] rounded-lg p-2 hover:text-black"
               >
                 Insights
-              </NavLink>
+              </NavLink> */}
 
 
               <NavLink

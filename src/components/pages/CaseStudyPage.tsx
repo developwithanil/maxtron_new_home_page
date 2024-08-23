@@ -66,7 +66,11 @@ const CaseStudyList = () => {
                     <div
                         key={index}
                         className="flex flex-col mb-8 custom_bg_color transform transition-transform duration-300 hover:scale-105 "
-                        onClick={() => navigate('/internal-page')}
+                        onClick={() => {
+                            if (index === 0) {
+                                navigate('/internal-page');
+                            }
+                        }}
                     >
                         <img
                             src={industry.img}
@@ -74,7 +78,7 @@ const CaseStudyList = () => {
                             className="w-full object-cover mb-4"
                         />
                         <b className=" mb-2 text-sm md:text-[16px] w-fit p-2 md:p-4 py-0 rounded-lg">{industry.subheading}</b>
-                        <p className="p-2 md:p-4 py-4 md:py-8 text-sm md:text-[16px]">{industry.heading}</p>
+                        <p className="p-2 md:p-4 py-4 md:py-8 text-sm">{industry.heading}</p>
                     </div>
                 ))}
             </div>

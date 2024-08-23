@@ -122,7 +122,7 @@ const InternalPage = () => {
                     {secondBoxData.map((item, index) => (
                         <div key={index} className="mb-8 p-4 lg:p-0">
                             <h2 className="text-2xl font-bold mb-4">{item.heading}</h2>
-                            <p className="text-base">
+                            <p className="text-sm font-OpenSans">
                                 {item.points.map((point, idx) => (
                                     <span key={idx} className="block pb-4">{point}</span>
                                 ))}
@@ -156,7 +156,7 @@ const InternalPage = () => {
                                         <span className="text-purple-500 absolute left-[-23px]  ">&#x25cf;</span>
                                         <span className=''>{step.title}</span>
                                     </h3>
-                                    <p className="text-base pl-6 leading-relaxed">{step.description}</p>
+                                    <p className="text-sm font-OpenSans pl-6 leading-relaxed">{step.description}</p>
                                 </div>
                             ))}
                         </div>
@@ -187,7 +187,7 @@ const InternalPage = () => {
             "Leader Board for Tournaments",
             "NFT Integrated with Leaderboard System Development (Top Winners to Get NFTs Minted)"
         ].map((text, index) => (
-            <p key={index} className="flex items-start ">
+            <p key={index} className="flex items-start text-sm font-OpenSans">
                 <span className="mr-2 text-xl">&#8226;</span> {/* Unicode for bullet point */}
                 {text}
             </p>

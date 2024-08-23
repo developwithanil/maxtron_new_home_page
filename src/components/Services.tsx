@@ -4,6 +4,7 @@ import img3 from "../assets/service/service3.png"
 import img4 from "../assets/service/service4.png"
 import target from "../assets/service/Target.png"
 import Triange from '../assets/service/Triangle.png'
+import { Link } from "react-router-dom"
 const services = [
   {
     title: "Web3 Custom Solutions",
@@ -106,10 +107,11 @@ const Services = () => {
 
               <div className={`w-full md:w-1/2 p-4 ${isEven ? 'lg:text-left' : 'lg:text-right'}`}>
                 <h2 className="text-2xl font-bold mb-2">{service.title}</h2>
-                <p className="text-gray-700 mb-4">{service.description}</p>
+                <p className="bg-[#F7F4F480] my-4 p-0 flex text-left justify-stretch font-normal text-sm rounded-lg font-OpenSans">
+{service.description}</p>
                 <ul className={`list-disc list-inside ${isEven ? 'lg:text-left' : 'lg:text-right'}`}>
                   {service.points.map((point, idx) => (
-                    <li key={idx} className="text-[#8941C4] mb-1">
+                    <li key={idx} className="text-[#8941C4] mb-1 text-sm rounded-lg font-OpenSans">
                       {point}
                     </li>
                   ))}
@@ -122,9 +124,11 @@ const Services = () => {
         <div className="relative z-10 text-center my-7">
           <button className=" bg-gray-900 text-white my-1 px-5 py-3 text-sm md:text-[16px] rounded-xl mr-4">
             <img src={Triange} alt="Triange" className="inline pr-3 w-8 h-auto md:w-12" />
-            Get in Touch
+            <Link to="/Contact">Get in Touch</Link>
           </button>
-          <button className=" bg-gray-900 text-white my-1 px-5 py-3 text-sm md:text-[16px] rounded-xl">
+          <button className=" bg-gray-900 text-white my-1 px-5 py-3 text-sm md:text-[16px] rounded-xl"  onClick={() => {
+                window.open("https://calendly.com/business-maxtron/30min");
+              }}>
             <img src={target} alt="target" className="inline pr-3 w-8 h-auto md:w-12" />
             Book a Consultation
           </button>
