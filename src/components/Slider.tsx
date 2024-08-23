@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import SliderCard from "../components/elementalComponent/SliderCard";
+import SliderCard from "./elementalComponent/SliderCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Antony from "../../public/customer/anthony-perkins.svg";

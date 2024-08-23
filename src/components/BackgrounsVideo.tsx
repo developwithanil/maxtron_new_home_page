@@ -18,7 +18,7 @@ const BackgroundVideo: React.FC = () => {
           <p className="text-xl text-black text-left font-normal font-OpenSans">
             Building Innovative Products And Making Them Successful
           </p>
-          <h1 className="text-[#1E1E1E] text-4xl md:text-5xl  text-left font-extrabold ">
+          <h1 className="text-[#1E1E1E] text-4xl md:text-6xl  text-left font-extrabold">
             {/* Empowering Your Business <br /> with Cutting-Edge Technology. */}
             Transform Your Business And Growth With 360° Cutting-Edge Tech
             Solutions

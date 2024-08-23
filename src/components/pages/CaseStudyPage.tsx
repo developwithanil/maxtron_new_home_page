@@ -66,7 +66,11 @@ const CaseStudyList = () => {
                     <div
                         key={index}
                         className="flex flex-col mb-8 custom_bg_color transform transition-transform duration-300 hover:scale-105 "
-                        onClick={() => navigate('/internal-page')}
+                        onClick={() => {
+                            if (index === 0) {
+                                navigate('/internal-page');
+                            }
+                        }}
                     >
                         <img
                             src={industry.img}

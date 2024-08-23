@@ -146,7 +146,7 @@ const Industries = () => {
 
       <div className="relative z-10  mb-8 text-center industry_hero_img px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
-          All industries
+        Industry Focus
         </h1>
         <p className="text-base sm:text-lg lg:text-xl mt-4">
         Stay ahead of disruption and drive growth by partnering with a technology expert who understands your industry and speaks your business's language. We deliver tailored technology solutions, help you avoid costly errors, save you time, and provide a competitive edge to position your company for success.

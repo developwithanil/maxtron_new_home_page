@@ -4,6 +4,7 @@ import img3 from "../assets/service/service3.png"
 import img4 from "../assets/service/service4.png"
 import target from "../assets/service/Target.png"
 import Triange from '../assets/service/Triangle.png'
+import { Link } from "react-router-dom"
 const services = [
   {
     title: "Web3 Custom Solutions",
@@ -122,9 +123,11 @@ const Services = () => {
         <div className="relative z-10 text-center my-7">
           <button className=" bg-gray-900 text-white my-1 px-5 py-3 text-sm md:text-[16px] rounded-xl mr-4">
             <img src={Triange} alt="Triange" className="inline pr-3 w-8 h-auto md:w-12" />
-            Get in Touch
+            <Link to="/Contact">Get in Touch</Link>
           </button>
-          <button className=" bg-gray-900 text-white my-1 px-5 py-3 text-sm md:text-[16px] rounded-xl">
+          <button className=" bg-gray-900 text-white my-1 px-5 py-3 text-sm md:text-[16px] rounded-xl"  onClick={() => {
+                window.open("https://calendly.com/business-maxtron/30min");
+              }}>
             <img src={target} alt="target" className="inline pr-3 w-8 h-auto md:w-12" />
             Book a Consultation
           </button>

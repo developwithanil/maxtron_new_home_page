@@ -15,7 +15,7 @@ const MoreCaseStudies: React.FC<MoreCaseStudiesProps> = ({ setShowMoreCaseStudie
     <div className="md:px-12">
       <div className="container mx-auto px-4 flex flex-col items-center">
         <h2 className="text-3xl font-extrabold pb-8 text-black mb-6">
-          Get a Specific Use-Case Case Study From Us
+          Get A Specific Use-Case Study From US
         </h2>
         <div className="w-full lg:w-2/5 bg-white p-8 shadow-lg rounded-lg">
           <form onSubmit={handleSubmit} className="text-start">
@@ -30,9 +30,9 @@ const MoreCaseStudies: React.FC<MoreCaseStudiesProps> = ({ setShowMoreCaseStudie
                 type="text"
                 id="fullName"
                 name="fullName"
-                className="w-full p-3 border border-gray-300 rounded-lg"
+                className="w-full p-3 border border-gray-300 rounded-lg placeholder-bg"
                 placeholder="Name"
-                
+
               />
             </div>
             <div className="mb-4">
@@ -46,9 +46,9 @@ const MoreCaseStudies: React.FC<MoreCaseStudiesProps> = ({ setShowMoreCaseStudie
                 type="email"
                 id="email"
                 name="email"
-                className="w-full p-3 border items-start border-gray-300 rounded-lg"
+                className="w-full p-3 border items-start border-gray-300 rounded-lg placeholder-bg"
                 placeholder="Email"
-                
+
               />
             </div>
             <div className="mb-4">
@@ -62,7 +62,7 @@ const MoreCaseStudies: React.FC<MoreCaseStudiesProps> = ({ setShowMoreCaseStudie
                 type="text"
                 id="companyName"
                 name="companyName"
-                className="w-full p-3 border border-gray-300 rounded-lg"
+                className="w-full p-3 border border-gray-300 rounded-lg placeholder-bg"
                 placeholder="Company Name"
               />
             </div>
@@ -71,19 +71,19 @@ const MoreCaseStudies: React.FC<MoreCaseStudiesProps> = ({ setShowMoreCaseStudie
                 htmlFor="useCase"
                 className="block text-gray-700 font-bold mb-2"
               >
-                On which use-case would you like to have a case study?
+                On Which Use-Case Would You Like To Have A Case Study?
               </label>
               <textarea
                 id="description"
                 name="description"
-                className="w-full p-3 border border-gray-300 rounded-lg"
+                className="w-full p-3 border border-gray-300 rounded-lg placeholder-bg"
                 placeholder="Description"
               ></textarea>
             </div>
             <div className="text-right">
               <button
                 type="submit"
-                className="px-6 py-3 text-black font-bold rounded-lg border-[2px] border-black"
+                className="px-6 py-3 text-black font-bold rounded-lg border-[2px] border-black bg-white hover:bg-black hover:text-white transition-colors duration-300"
               >
                 Submit
               </button>

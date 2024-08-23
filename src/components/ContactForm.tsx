@@ -60,16 +60,15 @@ const ContactForm: React.FC = () => {
           </h2>
           <ul className="mb-8">
             <li className="flex items-center space-x-2 mb-4 ">
-              <IoCheckmarkCircleOutline className="text-red-500 h-5 w-5" />
+              <IoCheckmarkCircleOutline className="text-red-500 h-8 w-8" />
               <span>We will respond to you within 24 hours.</span>
             </li>
-            <li className="flex items-center space-x-2 ">
-              <IoCheckmarkCircleOutline className="text-red-500 h-8 w-8 md:h-5 md:w-5" />
-              <span>
-                You will be talking with the domain expert pertaining to your
-                requirements.
-              </span>
+            <li className="flex items-center space-x-2 mb-4">
+              <IoCheckmarkCircleOutline className="text-red-500 h-14 w-14 md:h-9 md:w-9" />
+              <span> You will be talking with the domain expert pertaining to your requirements.</span>
             </li>
+
+
           </ul>
           <div className=" rounded-lg">
             <img src={ContactImg} alt="img" />
