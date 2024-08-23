@@ -104,7 +104,8 @@ Bringing experience, expertise, rigor, problem-solving skills, innovation and us
 
           <div className={`w-full md:w-1/2 p-4 `}>
             <h2 className="text-2xl font-bold mb-2">An Ideal Fusion Of Technical, Marketing And Creative Expertise</h2>
-            <p className="text-gray-700 mb-4">Our team blends ex-successful startup founders with top talent from Blockchain, AI, Product, UX/UI, Software Development, Data Analytics & Marketing.
+            <p className="bg-[#F7F4F480] my-4 p-2 flex text-left justify-stretch font-normal text-sm rounded-lg font-OpenSans">
+Our team blends ex-successful startup founders with top talent from Blockchain, AI, Product, UX/UI, Software Development, Data Analytics & Marketing.
 We’re driven by one goal: to redefine product innovation with a deep understanding of your business and tech needs. Before we build, we dig in to ensure our solutions are perfectly aligned with your goals. Let’s turn your vision into reality with expertise and a user-first approach. Ready to elevate your business? Let’s make it happen!
 </p>
 
@@ -134,22 +135,26 @@ We’re driven by one goal: to redefine product innovation with a deep understan
         <div className=" rounded-sm p-4  m-4 md:m-0 text-center border-2 border-black">
           <img src={good} alt="img1" className="mx-auto my-4 w-auto h-20" />
           <h3 className="text-xl font-bold mb-2">PROVEN TRACK RECORD</h3>
-          <p className="text-gray-700">Our deep-tech, product, software development, marketing teams have successfully brought 3000+ projects to life.</p>
+          <p className="bg-[#F7F4F480] my-4 p-2 flex text-left justify-stretch font-normal text-sm rounded-lg font-OpenSans">
+Our deep-tech, product, software development, marketing teams have successfully brought 3000+ projects to life.</p>
         </div>
         <div className=" rounded-sm p-4 m-4 md:m-0 text-center border-2 border-black">
           <img src={handshake} alt="img2" className="mx-auto my-4 w-auto h-20" />
           <h3 className="text-xl font-bold mb-2">BUSINESS MINDSET</h3>
-          <p className="text-gray-700">As ex-startup founders with a corporate background, we have experienced many of the struggles on both sides. We know there is more to a successful product than technology, so we will always look at your product from a business standpoint.</p>
+          <p className="bg-[#F7F4F480] my-4 p-2 flex text-left justify-stretch font-normal text-sm rounded-lg font-OpenSans">
+As ex-startup founders with a corporate background, we have experienced many of the struggles on both sides. We know there is more to a successful product than technology, so we will always look at your product from a business standpoint.</p>
         </div>
         <div className=" rounded-sm p-4 m-4 md:m-0 text-center border-2 border-black">
           <img src={cup} alt="img3" className="mx-auto my-4 w-auto h-20" />
           <h3 className="text-xl font-bold mb-2">TOP TALENT</h3>
-          <p className="text-gray-700">We work with the best and brightest in tech talent to ensure you get high-quality tech architecture.</p>
+          <p className="bg-[#F7F4F480] my-4 p-2 flex text-left justify-stretch font-normal text-sm rounded-lg font-OpenSans">
+We work with the best and brightest in tech talent to ensure you get high-quality tech architecture.</p>
         </div>
         <div className=" rounded-sm p-4 m-4 md:m-0 text-center border-2 border-black">
           <img src={person} alt="img4" className="mx-auto my-4 w-auto h-20" />
           <h3 className="text-xl font-bold mb-2">USER-CENTRIC APPROACH</h3>
-          <p className="text-gray-700">We value our end-user above specifications. We take the time to understand our client's needs and desires. The result is a product they will actually use.</p>
+          <p className="bg-[#F7F4F480] my-4 p-2 flex text-left justify-stretch font-normal text-sm rounded-lg font-OpenSans">
+We value our end-user above specifications. We take the time to understand our client's needs and desires. The result is a product they will actually use.</p>
         </div>
       </div>
 

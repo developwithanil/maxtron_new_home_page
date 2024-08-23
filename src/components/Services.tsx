@@ -107,10 +107,11 @@ const Services = () => {
 
               <div className={`w-full md:w-1/2 p-4 ${isEven ? 'lg:text-left' : 'lg:text-right'}`}>
                 <h2 className="text-2xl font-bold mb-2">{service.title}</h2>
-                <p className="text-gray-700 mb-4">{service.description}</p>
+                <p className="bg-[#F7F4F480] my-4 p-0 flex text-left justify-stretch font-normal text-sm rounded-lg font-OpenSans">
+{service.description}</p>
                 <ul className={`list-disc list-inside ${isEven ? 'lg:text-left' : 'lg:text-right'}`}>
                   {service.points.map((point, idx) => (
-                    <li key={idx} className="text-[#8941C4] mb-1">
+                    <li key={idx} className="text-[#8941C4] mb-1 text-sm rounded-lg font-OpenSans">
                       {point}
                     </li>
                   ))}

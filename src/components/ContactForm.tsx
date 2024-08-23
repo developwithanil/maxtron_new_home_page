@@ -50,7 +50,9 @@ const ContactForm: React.FC = () => {
 
   return (
     <section id="contact-us" className={sectionClassName}>
-      <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+      <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
         <div className="lg:w-2/5 mb-8 lg:mb-0">
           <h2 className="text-4xl font-normal text-black ">
             Talk to us and
@@ -61,11 +63,11 @@ const ContactForm: React.FC = () => {
           <ul className="mb-8">
             <li className="flex items-center space-x-2 mb-4 ">
               <IoCheckmarkCircleOutline className="text-red-500 h-8 w-8" />
-              <span>We will respond to you within 24 hours.</span>
+              <span className="text-sm">We will respond to you within 24 hours.</span>
             </li>
             <li className="flex items-center space-x-2 mb-4">
-              <IoCheckmarkCircleOutline className="text-red-500 h-14 w-14 md:h-9 md:w-9" />
-              <span> You will be talking with the domain expert pertaining to your requirements.</span>
+              <IoCheckmarkCircleOutline className="text-red-500 h-12 w-12 md:h-8 md:w-8" />
+              <span className="text-sm"> You will be talking with the domain expert pertaining to your requirements.</span>
             </li>
 
 

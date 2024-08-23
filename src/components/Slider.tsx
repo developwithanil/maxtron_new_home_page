@@ -8,6 +8,9 @@ import Joyce from "../../public/customer/joice.svg";
 import Michel from "../../public/customer/michel.svg";
 import Sambhav from "../../public/customer/sambhavJain.svg";
 import Lalit from "../../public/customer/lalit.svg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const cardData = [
   {
@@ -61,6 +64,7 @@ const cardData = [
 ];
 
 const CardSlider = () => {
+  AOS.init();
   const settings = {
     dots: true,
     infinite: true,
@@ -94,9 +98,9 @@ const CardSlider = () => {
   };
 
   return (
-    <div className="mx-auto py-20 p-4 text-center capitalize">
+    <div className="mx-auto py-20 p-4 text-center capitalize" data-aos="flip-up">
       <div className="container px-4 space-y-4 md:px-8 mx-auto">
-        <h2 className="text-4xl font-bold text-black mb-16">
+        <h2 className="text-4xl font-bold text-black mb-16 ">
           What our Customers Say
         </h2>
         <div className="container">

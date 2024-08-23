@@ -124,7 +124,7 @@ const IndustryList = () => {
               className="object-cover mb-4"
             />
             <h2 className="md:text-2xl font-bold mb-2">{industry.heading}</h2>
-            <ul className="list-disc list-inside text-left">
+            <ul className="list-disc list-inside text-left text-sm">
               {industry.points.map((point, idx) => (
                 <li key={idx} className="text-gray-700 mb-1">
                   {point}

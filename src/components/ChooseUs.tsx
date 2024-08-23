@@ -4,6 +4,8 @@ import QuickImg from "../../public/quick.svg";
 import GeneratingImg from "../../public/gnerating.svg";
 import SmileImg from "../../public/smile.svg";
 import CuttingImg from "../../public/cutting.svg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const cardData = [
   {
@@ -41,6 +43,7 @@ const cardData = [
 ];
 
 const ChooseUs: React.FC = () => {
+  AOS.init();
   return (
     <section
       id="about-us"
@@ -51,8 +54,10 @@ const ChooseUs: React.FC = () => {
       // style={{ backgroundImage: "url(/gradient-bg.svg)" }}
       // className=" absolute inset-0 z-30 bg-cover bg-center "
       >
-        <div className="p-4 ">
-          <h2 className="text-4xl font-bold text-black mb-4">Why Maxtron</h2>
+        <div className="p-4 " data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+          <h2 className="text-4xl font-bold text-black mb-4" >Why Maxtron</h2>
           <p className="mb-16 font-OpenSans">
             We go beyond simply serving the industry; we forge enduring
             relationships built on trust and mutual success.

@@ -15,15 +15,15 @@ const BackgroundVideo: React.FC = () => {
       </video>
       <div className="relative md:px-20 lg:px-28 flex items-center justify-start py-12 px-4 w-full h-full  ">
         <div className="md:w-11/12 space-y-6">
-          <p className="text-xl text-black text-left font-normal font-OpenSans">
+          <p className="text-xl text-black text-left font-normal font-OpenSans animate__pulse">
             Building Innovative Products And Making Them Successful
           </p>
-          <h1 className="text-[#1E1E1E] text-4xl md:text-6xl  text-left font-extrabold">
+          <h1 className="text-[#1E1E1E] text-4xl md:text-5xl  text-left font-extrabold animate__heartBeat">
             {/* Empowering Your Business <br /> with Cutting-Edge Technology. */}
             Transform Your Business And Growth With 360° Cutting-Edge Tech
             Solutions
           </h1>
-          <div className="py-4  space-x-4">
+          <div className="py-4  space-x-4 ">
             {/* <button className="bg-[#F9CEC0] p-2 font-OpenSans font-bold text-[#55308D] rounded">
               <Link to="/Contact">Learn More</Link>
             </button> */}

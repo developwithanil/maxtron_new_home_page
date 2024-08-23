@@ -15,7 +15,7 @@ const MoreCaseStudies: React.FC<MoreCaseStudiesProps> = ({ setShowMoreCaseStudie
     <div className="md:px-12">
       <div className="container mx-auto px-4 flex flex-col items-center">
         <h2 className="text-3xl font-extrabold pb-8 text-black mb-6">
-          Get A Specific Use-Case Study From US
+          Get A Specific Use-Case Study From Us
         </h2>
         <div className="w-full lg:w-2/5 bg-white p-8 shadow-lg rounded-lg">
           <form onSubmit={handleSubmit} className="text-start">

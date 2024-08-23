@@ -78,7 +78,7 @@ const CaseStudyList = () => {
                             className="w-full object-cover mb-4"
                         />
                         <b className=" mb-2 text-sm md:text-[16px] w-fit p-2 md:p-4 py-0 rounded-lg">{industry.subheading}</b>
-                        <p className="p-2 md:p-4 py-4 md:py-8 text-sm md:text-[16px]">{industry.heading}</p>
+                        <p className="p-2 md:p-4 py-4 md:py-8 text-sm">{industry.heading}</p>
                     </div>
                 ))}
             </div>
