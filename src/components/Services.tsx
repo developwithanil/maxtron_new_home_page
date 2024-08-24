@@ -2,8 +2,8 @@ import img1 from "../assets/service/service1.png"
 import img2 from "../assets/service/service2.png"
 import img3 from "../assets/service/service3.png"
 import img4 from "../assets/service/service4.png"
-import target from "../assets/service/Target.png"
-import Triange from '../assets/service/Triangle.png'
+import target from "../assets/service/Target.svg"
+import Triange from '../assets/service/Triangle.svg'
 import { Link } from "react-router-dom"
 const services = [
   {
@@ -74,9 +74,10 @@ const Services = () => {
           Our Services At A Glance
         </h1>
         <p className="text-base sm:text-lg lg:text-xl mt-4">
-          At our core, we craft groundbreaking products that prioritize user needs, harnessing <br className="sm:hidden md:block" />
-          the forefront of
-          technological advancements.
+          At our core, we develop innovative tech products
+          that put user needs first, leveraging cutting-edge technology. Additionally, we strategize and  <br className="sm:hidden md:block" />
+          execute growth plans to maximize returns and drive substantial success for the products.
+
         </p>
       </div>
 
@@ -108,7 +109,7 @@ const Services = () => {
               <div className={`w-full md:w-1/2 p-4 ${isEven ? 'lg:text-left' : 'lg:text-right'}`}>
                 <h2 className="text-2xl font-bold mb-2">{service.title}</h2>
                 <p className="bg-[#F7F4F480] my-4 p-0 flex text-left justify-stretch font-normal text-sm rounded-lg font-OpenSans">
-{service.description}</p>
+                  {service.description}</p>
                 <ul className={`list-disc list-inside ${isEven ? 'lg:text-left' : 'lg:text-right'}`}>
                   {service.points.map((point, idx) => (
                     <li key={idx} className="text-[#8941C4] mb-1 text-sm rounded-lg font-OpenSans">
@@ -126,9 +127,9 @@ const Services = () => {
             <img src={Triange} alt="Triange" className="inline pr-3 w-8 h-auto md:w-12" />
             <Link to="/Contact">Get in Touch</Link>
           </button>
-          <button className=" bg-gray-900 text-white my-1 px-5 py-3 text-sm md:text-[16px] rounded-xl"  onClick={() => {
-                window.open("https://calendly.com/business-maxtron/30min");
-              }}>
+          <button className=" bg-gray-900 text-white my-1 px-5 py-3 text-sm md:text-[16px] rounded-xl" onClick={() => {
+            window.open("https://calendly.com/business-maxtron/30min");
+          }}>
             <img src={target} alt="target" className="inline pr-3 w-8 h-auto md:w-12" />
             Book a Consultation
           </button>

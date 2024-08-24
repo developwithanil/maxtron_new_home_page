@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CaseStudyCard from "./elementalComponent/CaseStudyCard";
-// import { Link } from "react-router-dom";
 import Robot from "../../public/robot.svg";
 import DecentralizedImg from "../../public/decentralized.svg";
 import EvotingImg from "../../public/e-voting.svg";
 import cryptoImg from "../../public/crypto-game.svg";
 import EcommerceImg from "../../public/e-commerce.svg";
 import Web3 from "../../public/web3.svg";
+
 const caseStudyData = [
   {
     title: "AI-Calling Tool",
@@ -50,26 +51,32 @@ const CaseStudy: React.FC = () => {
   return (
     <section id="Case-studies" className="py-20 text-center ">
       <div className="container mx-auto px-4 md:px-20">
-        <h2 className="text-4xl font-bold text-black mb-16 ">Case Studies</h2>
+        <h2 className="text-4xl font-bold text-black mb-16">Case Studies</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {caseStudyData.map((caseStudy, index) => (
-            <CaseStudyCard
-              key={index}
-              // projectName={caseStudy.projectName}
-              title={caseStudy.title}
-              description={caseStudy.description}
-              imageUrl={caseStudy.imageUrl}
-            />
-          ))}
+          {caseStudyData.map((caseStudy, index) => {
+            if (index === 3) {
+              // Wrap the 4th card in a Link component
+              return (
+                <Link to="/internal-page" key={index}>
+                  <CaseStudyCard
+                    title={caseStudy.title}
+                    description={caseStudy.description}
+                    imageUrl={caseStudy.imageUrl}
+                  />
+                </Link>
+              );
+            } else {
+              return (
+                <CaseStudyCard
+                  key={index}
+                  title={caseStudy.title}
+                  description={caseStudy.description}
+                  imageUrl={caseStudy.imageUrl}
+                />
+              );
+            }
+          })}
         </div>
-        {/* <div className="mt-8">
-          <Link
-            to="/posts"
-            className="text-black font-OpenSans font-bold underline"
-          >
-            View All &gt;
-          </Link>
-        </div> */}
       </div>
     </section>
   );

@@ -54,9 +54,7 @@ const ChooseUs: React.FC = () => {
       // style={{ backgroundImage: "url(/gradient-bg.svg)" }}
       // className=" absolute inset-0 z-30 bg-cover bg-center "
       >
-        <div className="p-4 " data-aos="fade-right"
-            data-aos-easing="linear"
-            data-aos-duration="1500">
+        <div className="p-4 " >
           <h2 className="text-4xl font-bold text-black mb-4" >Why Maxtron</h2>
           <p className="mb-16 font-OpenSans">
             We go beyond simply serving the industry; we forge enduring

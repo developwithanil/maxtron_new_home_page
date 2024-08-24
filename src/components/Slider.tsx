@@ -98,7 +98,7 @@ const CardSlider = () => {
   };
 
   return (
-    <div className="mx-auto py-20 p-4 text-center capitalize" data-aos="flip-up">
+    <div className="mx-auto py-20 p-4 text-center capitalize" >
       <div className="container px-4 space-y-4 md:px-8 mx-auto">
         <h2 className="text-4xl font-bold text-black mb-16 ">
           What our Customers Say

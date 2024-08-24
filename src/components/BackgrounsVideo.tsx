@@ -1,8 +1,9 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 const BackgroundVideo: React.FC = () => {
   return (
-    <div className="relative h-screen ">
+    <div className="relative h-screen">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         autoPlay
@@ -13,28 +14,30 @@ const BackgroundVideo: React.FC = () => {
         <source src="/path-to-your-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="relative md:px-20 lg:px-28 flex items-center justify-start py-12 px-4 w-full h-full  ">
+      <div className="relative md:px-20 lg:px-28 flex items-center justify-start py-12 px-4 w-full h-full bg-gradient-to-r from-black/40 to-transparent">
         <div className="md:w-11/12 space-y-6">
-          <p className="text-xl text-black text-left font-normal font-OpenSans animate__pulse">
-            Building Innovative Products And Making Them Successful
-          </p>
-          <h1 className="text-[#1E1E1E] text-4xl md:text-5xl  text-left font-extrabold animate__heartBeat">
-            {/* Empowering Your Business <br /> with Cutting-Edge Technology. */}
+          <h1 className="text-black text-4xl md:text-5xl text-left font-extrabold drop-shadow-lg leading-snug">
             Transform Your Business And Growth With 360° Cutting-Edge Tech
             Solutions
           </h1>
-          <div className="py-4  space-x-4 ">
-            {/* <button className="bg-[#F9CEC0] p-2 font-OpenSans font-bold text-[#55308D] rounded">
-              <Link to="/Contact">Learn More</Link>
-            </button> */}
-            <button
-              onClick={() => {
-                window.open("https://calendly.com/business-maxtron/30min");
-              }}
-              className="bg-[#55308D] font-OpenSans font-bold p-2 text-[#F5F5F5] rounded"
-            >
-              Get In Touch
-            </button>
+          <p className="text-xl text-black text-left font-normal font-OpenSans animate__pulse">
+            Building Innovative Products And Making Them Successful
+          </p>
+          <div className="py-4 space-x-4">
+            <Link to="/services">
+              <button
+                className="bg-white text-[#55308D] font-OpenSans font-bold py-3 px-8 text-lg rounded-full shadow-lg hover:bg-[#f0f0f0] transition-transform transform hover:scale-105"
+              >
+                Learn More
+              </button>
+            </Link>
+            <Link to="/contact">
+              <button
+                className="bg-[#55308D] text-white font-OpenSans font-bold py-3 px-8 text-lg rounded-full shadow-lg hover:bg-[#6b4bb4] transition-transform transform hover:scale-105"
+              >
+                Get In Touch
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -43,5 +46,3 @@ const BackgroundVideo: React.FC = () => {
 };
 
 export default BackgroundVideo;
-
-// bg-gradient-to-r from-white from-10% via-pink-200 via-30% to-pink-200 to-90%
