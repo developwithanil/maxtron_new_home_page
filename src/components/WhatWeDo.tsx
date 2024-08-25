@@ -63,27 +63,21 @@ const WhatWeDo: React.FC = () => {
     <section id="Our-services" className="py-12 text-center ">
       <div className="container px-4 md:px-8 mx-auto animate__backInDown">
         <h2 className="text-4xl font-bold text-black mb-4 animate__backInDown">What We Do</h2>
-        <p className="mb-16 font-OpenSans  font-normal text-[#1E1E1E]">
+        <p className="mb-16 font-OpenSans font-normal text-[#1E1E1E]">
           We build great products and make them successful to the market across
           a range of verticals & industries. We can help you turn your vision
           into a successful product together.
         </p>
-        <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-[#9B9696] gap-8  ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-[#9B9696] gap-8">
           {cardData.map((card, index) => (
             <Cards
               key={index}
               title={card.title}
-              // subtitle={card.subtitle}
               description={card.description}
               imageUrl={card.imageUrl}
             />
           ))}
         </div>
-        {/* <div className="mt-8">
-          <Link to="/services" className="text-black underline">
-            View All &gt;
-          </Link>
-        </div> */}
       </div>
     </section>
   );

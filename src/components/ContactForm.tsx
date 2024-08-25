@@ -1,15 +1,24 @@
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import ContactImg from "../../public/formimg.svg";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
-import "../page.css"
-
+import "../page.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const ContactForm: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const location = useLocation();
+  const [isLoading, setIsLoading] = useState(false);
+
+  const sectionClassName =
+    location.pathname === "/Contact"
+      ? "py-20 md:px-12 pt-36"
+      : "py-20 md:px-12";
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsLoading(true);
+
     if (formRef.current) {
       const formData = new FormData(formRef.current);
       const formObject: { [key: string]: string } = {};
@@ -19,10 +28,9 @@ const ContactForm: React.FC = () => {
 
       try {
         const response = await fetch(
-          "https://sheet.best/api/sheets/ef2a5ec3-6306-4ecc-9425-36e51da1a457",
+          "https://maxtron-backend.vercel.app/sendData",
           {
             method: "POST",
-            mode: "cors",
             headers: {
               "Content-Type": "application/json",
             },
@@ -31,28 +39,29 @@ const ContactForm: React.FC = () => {
         );
 
         if (response.ok) {
-          const data = await response.json();
-          window.location.reload();
-          console.log("Success:", data);
+          toast.success("Request submitted successfully!");
+          formRef.current.reset(); 
         } else {
           const errorText = await response.text();
-          console.log("Error:", errorText);
+          toast.error(errorText);
         }
       } catch (error) {
-        console.log("Error:", error);
+        console.error("Failed to submit the request:", error);
+        toast.error("Error submitting request. Please try again."); 
+      } finally {
+        setIsLoading(false); 
       }
     }
   };
 
-  const sectionClassName = location.pathname === "/Contact"
-    ? "py-20 md:px-12 pt-36"
-    : "py-20 md:px-12";
-
   return (
     <section id="contact-us" className={sectionClassName}>
-      <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500">
+      <div
+        className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
         <div className="lg:w-2/5 mb-8 lg:mb-0">
           <h2 className="text-4xl font-normal text-black ">
             Talk to us and
@@ -63,14 +72,17 @@ const ContactForm: React.FC = () => {
           <ul className="mb-8">
             <li className="flex items-center space-x-2 mb-4 ">
               <IoCheckmarkCircleOutline className="text-red-500 h-8 w-8" />
-              <span className="text-sm">We will respond to you within 24 hours.</span>
+              <span className="text-sm">
+                We will respond to you within 24 hours.
+              </span>
             </li>
             <li className="flex items-center space-x-2 mb-4">
               <IoCheckmarkCircleOutline className="text-red-500 h-12 w-12 md:h-8 md:w-8" />
-              <span className="text-sm"> You will be talking with the domain expert pertaining to your requirements.</span>
+              <span className="text-sm">
+                You will be talking with the domain expert pertaining to your
+                requirements.
+              </span>
             </li>
-
-
           </ul>
           <div className=" rounded-lg">
             <img src={ContactImg} alt="img" />
@@ -158,14 +170,16 @@ const ContactForm: React.FC = () => {
               <button
                 type="submit"
                 className="px-6 py-3 text-black font-bold rounded-lg border-[2px] border-black bg-white hover:bg-black hover:text-white transition-colors duration-300"
+                disabled={isLoading}
               >
-                Submit
+                {isLoading ? "Submitting..." : "Submit"}
               </button>
             </div>
-
           </form>
         </div>
       </div>
+      <ToastContainer />
+
     </section>
   );
 };
