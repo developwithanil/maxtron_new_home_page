@@ -18,11 +18,11 @@ const Cards: React.FC<CardsProps> = ({ title, description, imageUrl }) => {
           />
         </div>
 
-        <h3 className="text-lg font-semibold text-[#2e1730] mb-4 text-center font-Poppins">
+        <h3 className="text-sm font-OpenSans text-[#4E009C] mb-4 text-left font-bold">
           {title}
         </h3>
 
-        <ul className="list-disc text-justify mx-4 text-[#2e1730] font-light text-sm font-OpenSans space-y-2">
+        <ul className="list-disc text-left text-[#4E009C] font-normal text-sm rounded-lg font-OpenSans">
           {description.map((item, index) => (
             <li key={index}>{item}</li>
           ))}

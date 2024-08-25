@@ -16,11 +16,11 @@ const BackgroundVideo: React.FC = () => {
       </video>
       <div className="relative flex flex-col  items-center justify-center py-12 px-4 w-full h-full bg-gradient-to-r from-black/40 to-transparent">
         <div className="text-left md:text-left md:w-11/12 space-y-6">
-          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-extrabold drop-shadow-lg leading-snug">
+          <h1 className="text-black text-3xl sm:text-4xl md:text-5xl font-extrabold drop-shadow-lg leading-snug">
             Transform Your Business And Growth With 360° Cutting-Edge Tech
             Solutions
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-white font-normal font-OpenSans">
+          <p className="text-lg sm:text-xl md:text-2xl text-black font-normal font-OpenSans">
             Building Innovative Products And Making Them Successful
           </p>
           <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
