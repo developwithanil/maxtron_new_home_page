@@ -28,7 +28,7 @@ const cardData = [
     title: "Approachable And Responsive",
     subtitle: "Title",
     description:
-      "We believe that good communication is super important to make something great. That's why we're easy to talk to, always here when you need us, and quick to respond. Think of us as part of your team, ready to keep the conversation flowing smoothly to make sure we create something amazing together.",
+      "We prioritize clear communication to ensure great results, making us accessible, responsive, and always available. Think of us as an extension of your team, committed to keeping the dialogue open and creating something extraordinary together.",
     // icon: <FaUsers className="text-purple-500" />,
     imageUrl: SmileImg,
   },
@@ -36,7 +36,7 @@ const cardData = [
     title: "Cutting-Edge Products and Passionate Experts",
     subtitle: "Title",
     description:
-      "We ensure that you have access to the latest and most advanced tools, techniques, and platforms available to drive your growth forward. Our dedicated team approaches each project with passion and commitment, constantly refining their skills to deliver precisely tuned solutions catering to your needs.",
+      "We innovate and build products using cutting-edge tools, techniques, and platforms to propel your growth, with a dedicated team passionately refining their skills. Our commitment ensures tailored, expertly crafted solutions for your needs.",
     // icon: <FaUsers className="text-purple-500" />,
     imageUrl: CuttingImg,
   },
