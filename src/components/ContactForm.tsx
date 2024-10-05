@@ -58,9 +58,7 @@ const ContactForm: React.FC = () => {
     <section id="contact-us" className={sectionClassName}>
       <div
         className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between"
-        data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
+       
       >
         <div className="lg:w-2/5 mb-8 lg:mb-0">
           <h2 className="text-4xl font-normal text-black ">
