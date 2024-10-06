@@ -12,6 +12,7 @@
   "dependencies": {
     "@types/node": "^22.2.0",
     "@types/react-lazy-load-image-component": "^1.6.4",
+    "@wellyshen/use-web-animations": "^0.5.1",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "react": "^18.3.1",
@@ -23,6 +24,7 @@
     "react-router-dom": "^6.25.1",
     "react-slick": "^0.30.2",
     "react-switch": "^7.0.0",
+    "react-toastify": "^10.0.5",
     "sitemap": "^8.0.0",
     "slick-carousel": "^1.8.1"
   },

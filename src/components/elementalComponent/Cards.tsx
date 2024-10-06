@@ -8,28 +8,27 @@ interface CardsProps {
 
 const Cards: React.FC<CardsProps> = ({ title, description, imageUrl }) => {
   return (
-    <div className="text-[#1E1E1E] p-2 transform transition-transform duration-300 hover:scale-110 hover:shadow-lg rounded-lg shadow-lg border-[#9B9696] border-[2px]">
-      <div className="flex flex-col items-center p-2">
-        <div className="text-xl mb-4">
+    <div className="bg-[#EBDCFB] text-[#1E1E1E] p-8 transform transition-transform duration-500 hover:scale-105 hover:shadow-xl rounded-2xl shadow-lg border-[#D3C4E8] border-[1.5px]">
+      <div className="flex flex-col items-center">
+        <div className="mb-4">
           <img
             src={imageUrl}
             alt={title}
-            className="w-10 h-10 rounded-full mr-4"
+            className="w-20 h-20 rounded-full shadow-md"
           />
         </div>
 
-        <h3 className="text-sm font-OpenSans text-[#4E009C] mb-4 text-left font-bold">
+        <h3 className="font-semibold text-[#4E009C] mb-4 text-left font-normal text-sm">
           {title}
         </h3>
 
-        {description.map((item, index) => (
-          <p
-            key={index}
-            className="flex text-center justify-start text-[#4E009C] font-normal text-sm rounded-lg font-OpenSans"
-          >
-            {item}
-          </p>
-        ))}
+        <ul className="list-disc text-left text-[#4E009C] font-normal text-sm space-y-1">
+          {description.map((item, index) => (
+            <li key={index} className="pl-4">
+              {item}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

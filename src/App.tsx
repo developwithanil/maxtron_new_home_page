@@ -2,17 +2,17 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
-// import ContactSection from "./components/ContactSection";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
-// import Home from "./components/Home";
 import Service from "./components/Services";
 import AboutUs from "./components/pages/AboutUs";
 import Insights from "./components/pages/Insights";
 import Industries from "./components/pages/Industries";
-import "./page.css"
+import "./page.css";
 import CaseStudyPage from "./components/pages/CaseStudyPage";
 import InternalPage from "./components/pages/InternalPage";
+import { caseStudies } from "./components/elementalComponent/caseStudyData";
+
 
 const Home: React.FC = () => (
   <div>
@@ -53,7 +53,10 @@ const App: React.FC = () => {
         <Route path="/industries" element={<Industries />} />
         <Route path="/insights" element={<Insights />} />
         <Route path="/case-studies" element={<CaseStudyPage />} />
-        <Route path="/internal-page" element={<InternalPage />} />
+        <Route 
+          path="/internal-page/:id" 
+          element={<InternalPage caseStudies={caseStudies} />} 
+        />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/book" element={<Book />} />
