@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, NavLink, useLocation, } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import logo from "../assets/logo.svg";
 
 const Navbar: React.FC = () => {
@@ -22,12 +22,11 @@ const Navbar: React.FC = () => {
             <img src={logo} alt="maxtron logo" className="" />
           </Link>
 
-
-
           {/* </div> */}
           <div
-            className={`lg:flex relative  lg:items-center md:w-auto ${isOpen ? "block" : "hidden"
-              }`}
+            className={`lg:flex relative  lg:items-center md:w-auto ${
+              isOpen ? "block" : "hidden"
+            }`}
           >
             <div className="text-white font-OpenSans capitalize lg:flex md:space-x-4">
               <NavLink
@@ -54,7 +53,6 @@ const Navbar: React.FC = () => {
                 Industries
               </NavLink>
 
-
               <NavLink
                 onClick={() => setIsOpen(false)}
                 to="/case-studies"
@@ -63,8 +61,6 @@ const Navbar: React.FC = () => {
                 Case Studies
               </NavLink>
 
-
-
               {/* <NavLink
                 onClick={() => setIsOpen(false)}
                 to="/insights"
@@ -72,7 +68,6 @@ const Navbar: React.FC = () => {
               >
                 Insights
               </NavLink> */}
-
 
               <NavLink
                 onClick={() => setIsOpen(false)}
@@ -94,23 +89,20 @@ const Navbar: React.FC = () => {
               >
                 book a call
               </button>
-
-
             </div>
-
           </div>
         </div>
 
-
         <div className="lg:hidden  flex justify-between w-full">
-          <div
-            className={`flex relative justify-between items-center w-full`}
-          >
+          <div className={`flex relative justify-between items-center w-full`}>
             <Link to="/" className={`${isOpen ? "hidden" : "flex"}`}>
               <img src={logo} alt="maxtron logo" className="" />
             </Link>
 
-            <div className={`lg:hidden flex ${isOpen ? "hidden" : "flex"}`} onClick={toggle}>
+            <div
+              className={`lg:hidden flex ${isOpen ? "hidden" : "flex"}`}
+              onClick={toggle}
+            >
               <button className="text-white focus:outline-none flex">
                 <svg
                   className="w-6 h-6"
@@ -129,8 +121,11 @@ const Navbar: React.FC = () => {
               </button>
             </div>
 
-
-            <div className={`text-white font-OpenSans capitalize lg:flex md:space-x-4  ${isOpen ? "block" : "hidden"}`}>
+            <div
+              className={`text-white font-OpenSans capitalize lg:flex md:space-x-4  ${
+                isOpen ? "block" : "hidden"
+              }`}
+            >
               <NavLink
                 onClick={() => setIsOpen(false)}
                 to="/"
@@ -155,7 +150,6 @@ const Navbar: React.FC = () => {
                 Industries
               </NavLink>
 
-
               <NavLink
                 onClick={() => setIsOpen(false)}
                 to="/case-studies"
@@ -164,8 +158,6 @@ const Navbar: React.FC = () => {
                 Case Studies
               </NavLink>
 
-
-
               {/* <NavLink
                 onClick={() => setIsOpen(false)}
                 to="/insights"
@@ -173,7 +165,6 @@ const Navbar: React.FC = () => {
               >
                 Insights
               </NavLink> */}
-
 
               <NavLink
                 onClick={() => setIsOpen(false)}
@@ -195,15 +186,14 @@ const Navbar: React.FC = () => {
               >
                 book a call
               </button>
-
-
             </div>
-
           </div>
 
-
-          <div className={` absolute top-6 right-5 ${isOpen ? "flex" : "hidden"}`} onClick={toggle}>
-            <button className="focus:outline-none" style={{ color: 'white' }}>
+          <div
+            className={` absolute top-6 right-5 ${isOpen ? "flex" : "hidden"}`}
+            onClick={toggle}
+          >
+            <button className="focus:outline-none" style={{ color: "white" }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -216,9 +206,7 @@ const Navbar: React.FC = () => {
             </button>
           </div>
         </div>
-
       </div>
-
     </nav>
   );
 };
