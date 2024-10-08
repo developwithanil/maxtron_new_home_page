@@ -1,5 +1,5 @@
 import "react-lazy-load-image-component/src/effects/blur.css";
-
+import React from "react";
 import Mercedes from "../../../public/client/mercedes.svg";
 import Fitburn from "../../../public/client/fitburn.svg";
 import Create from "../../../public/client/createProtocol.svg";
@@ -67,4 +67,4 @@ const ClientMarquee = () => {
   );
 };
 
-export default ClientMarquee;
+export default React.memo(ClientMarquee);

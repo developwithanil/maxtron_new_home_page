@@ -21,19 +21,19 @@ const caseStudyData = [
       "Learn how we helped an eCommerce business to increase its online sales by 60% by using omnichannel paid search and social media strategies.",
     imageUrl: EcommerceImg,
   },
-  {
-    title: "AI-Calling Tool",
-    description:
-      "A NextGen AI-phone calling tool that has been designed to communicate on calls just like humans do.",
-    imageUrl: Robot,
-  },
-    
-  {
-    title: "Web3 Project Marketing",
-    description:
-      "How we managed to achieve growth for the web3 project using the right strategies, focused communications, KOLs partnerships, and community initiatives.",
-    imageUrl: Web3,
-  },
+  // {
+  //   title: "AI-Calling Tool",
+  //   description:
+  //     "A NextGen AI-phone calling tool that has been designed to communicate on calls just like humans do.",
+  //   imageUrl: Robot,
+  // },
+
+  // {
+  //   title: "Web3 Project Marketing",
+  //   description:
+  //     "How we managed to achieve growth for the web3 project using the right strategies, focused communications, KOLs partnerships, and community initiatives.",
+  //   imageUrl: Web3,
+  // },
   {
     title: "Mini-Gaming Platform",
     description:
@@ -46,9 +46,6 @@ const caseStudyData = [
       "A decentralized AI platform designed to address the challenge of ensuring intellectual property rights compliance during data usage and AI training.",
     imageUrl: DecentralizedImg,
   },
- 
- 
-
 ];
 
 const CaseStudy: React.FC = () => {
@@ -58,18 +55,16 @@ const CaseStudy: React.FC = () => {
         <h2 className="text-4xl font-bold text-black mb-16">Case Studies</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {caseStudyData.map((caseStudy, index) => {
-            
-              // Wrap the 4th card in a Link component
-              return (
-                <Link to={`/internal-page/${index}`} key={index}>
+            // Wrap the 4th card in a Link component
+            return (
+              <Link to={`/internal-page/${index}`} key={index}>
                 <CaseStudyCard
-                    title={caseStudy.title}
-                    description={caseStudy.description}
-                    imageUrl={caseStudy.imageUrl}
-                  />
-                </Link>
-              );
-          
+                  title={caseStudy.title}
+                  description={caseStudy.description}
+                  imageUrl={caseStudy.imageUrl}
+                />
+              </Link>
+            );
           })}
         </div>
       </div>

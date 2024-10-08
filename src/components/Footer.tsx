@@ -3,6 +3,7 @@ import logo from "../assets/logo.svg";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import React from "react";
 
 const Footer = () => {
   return (
@@ -15,11 +16,7 @@ const Footer = () => {
           </div>
           <div className="flex justify-between ">
             <nav className="flex flex-col space-y-4 md:items-left text-[#FFFFFF] md:w-auto">
-              <Link
-                to="/"
-                id="Home"
-                className="mx-2  md:mb-0 hover:text-white"
-              >
+              <Link to="/" id="Home" className="mx-2  md:mb-0 hover:text-white">
                 Home
               </Link>
               <Link
@@ -134,4 +131,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default React.memo(Footer);

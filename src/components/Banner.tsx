@@ -1,5 +1,5 @@
 import ContactSection from "./ContactSection";
-import BackgroundVideo from "./BackgrounsVideo";
+// import BackgroundVideo from "./BackgrounsVideo";
 import CaseStudy from "./CaseStudy";
 import ChooseUs from "./ChooseUs";
 import ClientMarquee from "./elementalComponent/ClientMarquee";
@@ -8,12 +8,13 @@ import ContactForm from "./ContactForm";
 import Statistics from "./Statistics";
 import WhatWeDo from "./WhatWeDo";
 import Slider from "./Slider";
+import HeroSection from "./Hero";
 // import Footer from "./Footer";
 
 const Banner = () => {
   return (
-    <div id="Home" className="bg-gradient-to-r from-white to-pink-200  ">
-      <BackgroundVideo />
+    <div id="Home" className="">
+      <HeroSection />
       <ChooseUs />
       <WhatWeDo />
       <Statistics />

@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbars";
 import Banner from "./components/Banner";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
@@ -12,7 +12,6 @@ import "./page.css";
 import CaseStudyPage from "./components/pages/CaseStudyPage";
 import InternalPage from "./components/pages/InternalPage";
 import { caseStudies } from "./components/elementalComponent/caseStudyData";
-
 
 const Home: React.FC = () => (
   <div>
@@ -53,9 +52,9 @@ const App: React.FC = () => {
         <Route path="/industries" element={<Industries />} />
         <Route path="/insights" element={<Insights />} />
         <Route path="/case-studies" element={<CaseStudyPage />} />
-        <Route 
-          path="/internal-page/:id" 
-          element={<InternalPage caseStudies={caseStudies} />} 
+        <Route
+          path="/internal-page/:id"
+          element={<InternalPage caseStudies={caseStudies} />}
         />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />

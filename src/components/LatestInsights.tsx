@@ -62,4 +62,4 @@ const LatestInsights: React.FC = () => {
   );
 };
 
-export default LatestInsights;
+export default React.memo(LatestInsights);

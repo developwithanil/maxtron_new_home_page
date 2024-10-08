@@ -4,8 +4,8 @@ import Neuro from "../../public/neuro.svg";
 import Cloud from "../../public/cloud.svg";
 import Topology from "../../public/topology.svg";
 import Network from "../../public/network.svg";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const cardData = [
   {
@@ -62,7 +62,9 @@ const WhatWeDo: React.FC = () => {
   return (
     <section id="Our-services" className="py-12 text-center ">
       <div className="container px-4 md:px-8 mx-auto animate__backInDown">
-        <h2 className="text-4xl font-bold text-black mb-4 animate__backInDown">What We Do</h2>
+        <h2 className="text-4xl font-bold text-black mb-4 animate__backInDown">
+          What We Do
+        </h2>
         <p className="mb-16 font-OpenSans font-normal text-[#1E1E1E]">
           We build great products and make them successful to the market across
           a range of verticals & industries. We can help you turn your vision
@@ -83,4 +85,4 @@ const WhatWeDo: React.FC = () => {
   );
 };
 
-export default WhatWeDo;
+export default React.memo(WhatWeDo);

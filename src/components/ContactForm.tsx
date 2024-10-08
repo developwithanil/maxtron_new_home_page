@@ -40,30 +40,25 @@ const ContactForm: React.FC = () => {
 
         if (response.ok) {
           toast.success("Request submitted successfully!");
-          formRef.current.reset(); 
+          formRef.current.reset();
         } else {
           const errorText = await response.text();
           toast.error(errorText);
         }
       } catch (error) {
         console.error("Failed to submit the request:", error);
-        toast.error("Error submitting request. Please try again."); 
+        toast.error("Error submitting request. Please try again.");
       } finally {
-        setIsLoading(false); 
+        setIsLoading(false);
       }
     }
   };
 
   return (
     <section id="contact-us" className={sectionClassName}>
-      <div
-        className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between"
-       
-      >
+      <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
         <div className="lg:w-2/5 mb-8 lg:mb-0">
-          <h2 className="text-4xl font-normal text-black ">
-            Talk to us and
-          </h2>
+          <h2 className="text-4xl font-normal text-black ">Talk to us and</h2>
           <h2 className="text-4xl font-bold text-black mb-4">
             get your project moving!
           </h2>
@@ -177,9 +172,8 @@ const ContactForm: React.FC = () => {
         </div>
       </div>
       <ToastContainer />
-
     </section>
   );
 };
 
-export default ContactForm;
+export default React.memo(ContactForm);

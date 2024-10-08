@@ -34,4 +34,4 @@ const Cards: React.FC<CardsProps> = ({ title, description, imageUrl }) => {
   );
 };
 
-export default Cards;
+export default React.memo(Cards);

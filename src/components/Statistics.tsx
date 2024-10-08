@@ -1,6 +1,7 @@
 // src/components/Statistics.js
 
 import CountUp from "react-countup";
+import React from "react";
 
 const Statistics = () => {
   const stats = [
@@ -37,4 +38,4 @@ const Statistics = () => {
   );
 };
 
-export default Statistics;
+export default React.memo(Statistics);
