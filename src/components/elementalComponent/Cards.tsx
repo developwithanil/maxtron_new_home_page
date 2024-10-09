@@ -6,6 +6,7 @@ interface CardsProps {
   imageUrl: string;
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 const Cards: React.FC<CardsProps> = ({ title, description, imageUrl }) => {
   return (
     <div className="bg-[#EBDCFB] text-[#1E1E1E] p-8 transform transition-transform duration-500 hover:scale-105 hover:shadow-xl rounded-2xl shadow-lg border-[#D3C4E8] border-[1.5px]">
