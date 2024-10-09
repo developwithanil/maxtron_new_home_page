@@ -18,7 +18,7 @@ const Cards: React.FC<CardsProps> = ({ title, description, imageUrl }) => {
           />
         </div>
 
-        <h3 className="font-semibold text-[#4E009C] mb-4 text-left font-normal text-sm">
+        <h3 className="font-semibold text-[#4E009C] mb-4 text-left text-sm">
           {title}
         </h3>
 
