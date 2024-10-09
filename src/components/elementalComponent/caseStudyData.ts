@@ -19,12 +19,12 @@ import hyper3 from "../../assets/internal/hyper3.svg";
 import create1 from "../../assets/internal/create1.svg";
 import create2 from "../../assets/internal/create2.svg";
 import create3 from "../../assets/internal/create3.svg";
-import dial1 from "../../assets/internal/dial1.svg";
-import dial2 from "../../assets/internal/dial2.svg";
-import dial3 from "../../assets/internal/dial3.svg";
-import web31 from "../../assets/internal/web31.svg";
-import web32 from "../../assets/internal/web32.svg";
-import web33 from "../../assets/internal/web33.svg";
+// import dial1 from "../../assets/internal/dial1.svg";
+// import dial2 from "../../assets/internal/dial2.svg";
+// import dial3 from "../../assets/internal/dial3.svg";
+// import web31 from "../../assets/internal/web31.svg";
+// import web32 from "../../assets/internal/web32.svg";
+// import web33 from "../../assets/internal/web33.svg";
 
 export const caseStudies: CaseStudy[] = [
   {
