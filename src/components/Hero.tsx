@@ -1,5 +1,6 @@
 import React from "react";
-import video from "../assets/hero.mp4";
+// import video from "../assets/hero.mp4";
+import heroVideo from "../assets/hero_video.mp4";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
@@ -14,7 +15,8 @@ const HeroSection = () => {
           muted
           playsInline
         >
-          <source src={video} type="video/mp4" />
+          <source src={heroVideo} type="video/mp4" />
+          {/* <source src={video} type="video/mp4" /> */}
           Your browser does not support the video tag.
         </video>
 
