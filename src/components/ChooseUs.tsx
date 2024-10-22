@@ -56,7 +56,7 @@ const ChooseUs: React.FC = () => {
       >
         <div className="p-4 ">
           <h2 className="text-4xl font-bold text-black mb-4">Why Maxtron</h2>
-          <p className="mb-16 font-OpenSans">
+          <p className="mb-16 font-OpenSans text-[#757575]">
             We go beyond simply serving the industry; we forge enduring
             relationships built on trust and mutual success.
           </p>

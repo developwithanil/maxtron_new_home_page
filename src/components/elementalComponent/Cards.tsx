@@ -9,23 +9,23 @@ interface CardsProps {
 // eslint-disable-next-line react-refresh/only-export-components
 const Cards: React.FC<CardsProps> = ({ title, description, imageUrl }) => {
   return (
-    <div className="bg-[#EBDCFB] text-[#1E1E1E] p-8 transform transition-transform duration-500 hover:scale-105 hover:shadow-xl rounded-2xl shadow-lg border-[#D3C4E8] border-[1.5px]">
-      <div className="flex flex-col items-center">
-        <div className="mb-4">
+    <div className=" text-[#4E009C] bg-cover bg-[#FFEFFC] bg-center p-4 rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-110 hover:shadow-xl">
+      <div className="flex flex-col items-">
+        <div className="mb-2">
           <img
             src={imageUrl}
             alt={title}
-            className="w-20 h-20 rounded-full shadow-md"
+            className="w-8 h-8 rounded-full shadow-md"
           />
         </div>
 
-        <h3 className="font-semibold text-[#4E009C] mb-4 text-left text-sm">
+        <h3 className="text-xl text-[#4E009C] font-OpenSans md:h-14 text-left font-bold">
           {title}
         </h3>
 
-        <ul className="list-disc text-left text-[#4E009C] font-normal text-sm space-y-1">
+        <ul className="list-disc text-left px-7 py-4 mt-2 bg-[#FFFFFF] md:min-h-[200px]  bg-opacity-90 text-[#4E009C] rounded-xl font-normal text-sm space-y-1">
           {description.map((item, index) => (
-            <li key={index} className="pl-4">
+            <li key={index} className="pl-[2px]">
               {item}
             </li>
           ))}

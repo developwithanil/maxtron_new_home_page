@@ -7,8 +7,10 @@ import ContactForm from "./ContactForm";
 // import LatestInsights from "./elementalComponent/LatestInsights";
 import Statistics from "./Statistics";
 import WhatWeDo from "./WhatWeDo";
+
 import Slider from "./Slider";
 import HeroSection from "./Hero";
+import MakingThemSuccessful from "./MakingThemSuccessful";
 // import Footer from "./Footer";
 
 const Banner = () => {
@@ -17,6 +19,7 @@ const Banner = () => {
       <HeroSection />
       <ChooseUs />
       <WhatWeDo />
+      <MakingThemSuccessful/>
       <Statistics />
       <ClientMarquee />
       <CaseStudy />

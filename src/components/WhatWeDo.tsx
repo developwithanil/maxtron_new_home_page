@@ -48,10 +48,7 @@ const cardData = [
     description: [
       "AR Software/App Development",
       "AR/VR/MR Game Development",
-      "Interactive Technologies",
-      "Embedded Engineering",
-      "Projection Mapping ",
-      "Hologram Technologies",
+      
     ],
     imageUrl: Network,
   },
@@ -63,12 +60,10 @@ const WhatWeDo: React.FC = () => {
     <section id="Our-services" className="py-12 text-center ">
       <div className="container px-4 md:px-8 mx-auto animate__backInDown">
         <h2 className="text-4xl font-bold text-black mb-4 animate__backInDown">
-          What We Do
+          Creating Winning Products
         </h2>
-        <p className="mb-16 font-OpenSans font-normal text-[#1E1E1E]">
-          We build great products and make them successful to the market across
-          a range of verticals & industries. We can help you turn your vision
-          into a successful product together.
+        <p className="mb-16  font-OpenSans font-normal text-[#757575]">
+          We go beyond simply serving the industry. We forge enduring relationships builds on trust and mutual success.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-[#9B9696] gap-8">
           {cardData.map((card, index) => (
@@ -81,6 +76,7 @@ const WhatWeDo: React.FC = () => {
           ))}
         </div>
       </div>
+      
     </section>
   );
 };
