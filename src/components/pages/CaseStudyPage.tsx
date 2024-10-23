@@ -1,9 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import img1 from "../../assets/case/case1.png";
-// import img3 from "../../assets/case/case3.png";
+import img3 from "../../assets/case/case3.png";
+import img2 from "../../assets/case/case2.png";
 import img4 from "../../assets/case/case4.png";
 import img5 from "../../assets/case/case5.png";
-// import img6 from "../../assets/case/case6.png";
+import img6 from "../../assets/case/case6.png";
 import img8 from "../../assets/case/case8.png";
 import ContactForm from "../ContactForm";
 import MoreCaseStudies from "./MoreCaseStudies";
@@ -22,16 +23,8 @@ const caseStudyData = [
       " Learn how we helped an eCommerce company successfully achieve fast growth with high margins into a new (Direct-To-Consumers) D2C category with flying colors.",
     subheading: "E-Commerce Marketing",
   },
-  // {
-  //     img: img6,
-  //     heading: 'A NextGen AI-phone calling tool that has been designed to communicate on calls just like humans do.',
-  //     subheading: 'AI-Calling Tool',
-  // },
-  // {
-  //     img: img3,
-  //     heading: 'How we managed to achieve growth for the web3 project using the right strategies, focused communications, KOLs partnerships, and community initiatives.',
-  //     subheading: 'Crypto Project Marketing',
-  // },
+  
+ 
   {
     img: img4,
     heading:
@@ -50,11 +43,21 @@ const caseStudyData = [
       "A decentralized AI platform designed to address the challenge of ensuring intellectual property rights compliance during data usage and AI training.",
     subheading: "Decentralized AI Platform",
   },
-  // {
-  //     img: img2,
-  //     heading: "A comprehensive solution that leverages blockchain's inherent characteristics to ensure anonymity, integrity, accuracy, and verifiability in the voting process.",
-  //     subheading: 'Blockchain-Based E-Voting System',
-  // },
+  {
+      img: img6,
+      heading: 'A NextGen AI-phone calling tool that has been designed to communicate on calls just like humans do.',
+      subheading: 'AI-Calling Tool',
+  },
+   {
+      img: img3,
+      heading: 'How we managed to achieve growth for the web3 project using the right strategies, focused communications, KOLs partnerships, and community initiatives.',
+      subheading: 'Crypto Project Marketing',
+  },
+  {
+      img: img2,
+      heading: "A comprehensive solution that leverages blockchain's inherent characteristics to ensure anonymity, integrity, accuracy, and verifiability in the voting process.",
+      subheading: 'Blockchain-Based E-Voting System',
+  },
 ];
 
 const CaseStudyList: React.FC = () => {

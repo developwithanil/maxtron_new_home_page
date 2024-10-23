@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CaseStudyCard from "./elementalComponent/CaseStudyCard";
-// import Robot from "../../public/robot.svg";
+import Robot from "../../public/robot.svg";
 import DecentralizedImg from "../../public/decentralized.svg";
 import EvotingImg from "../../public/e-voting.svg";
 import cryptoImg from "../../public/crypto-game.svg";
 import EcommerceImg from "../../public/e-commerce.svg";
-// import Web3 from "../../public/web3.svg";
+import Web3 from "../../public/web3.svg";
 
 const caseStudyData = [
   {
@@ -21,19 +21,6 @@ const caseStudyData = [
       "Learn how we helped an eCommerce business to increase its online sales by 60% by using omnichannel paid search and social media strategies.",
     imageUrl: EcommerceImg,
   },
-  // {
-  //   title: "AI-Calling Tool",
-  //   description:
-  //     "A NextGen AI-phone calling tool that has been designed to communicate on calls just like humans do.",
-  //   imageUrl: Robot,
-  // },
-
-  // {
-  //   title: "Web3 Project Marketing",
-  //   description:
-  //     "How we managed to achieve growth for the web3 project using the right strategies, focused communications, KOLs partnerships, and community initiatives.",
-  //   imageUrl: Web3,
-  // },
   {
     title: "Mini-Gaming Platform",
     description:
@@ -45,6 +32,24 @@ const caseStudyData = [
     description:
       "A decentralized AI platform designed to address the challenge of ensuring intellectual property rights compliance during data usage and AI training.",
     imageUrl: DecentralizedImg,
+  },
+  {
+    title: "AI-Calling Tool",
+    description:
+      "A NextGen AI-phone calling tool that has been designed to communicate on calls just like humans do.",
+    imageUrl: Robot,
+  },
+  {
+    title: "Web3 Project Marketing",
+    description:
+      "How we managed to achieve growth for the web3 project using the right strategies, focused communications, KOLs partnerships, and community initiatives.",
+    imageUrl: Web3,
+  },
+  {
+    title: "VOTING BLOCK USA",
+    description:
+      "VOTE! 2024 Vote for President on the blocakchain in 2024",
+    imageUrl: Web3,
   },
 ];
 

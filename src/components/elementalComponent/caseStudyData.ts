@@ -13,6 +13,10 @@ import figma from "../../assets/internal/figma.svg";
 import react from "../../assets/internal/react.svg";
 import mobile from "../../assets/internal/mobile.png";
 import shaperCultHero from "../../assets/internal/shaper1.svg";
+import usablock from "../../assets/internal/usablock.png";
+import vote from "../../assets/internal/vote.png";
+import herovote from "../../assets/internal/herovote.png";
+import shaper2 from "../../assets/internal/shaper2.png";
 import shapercut from "../../assets/internal/shapercut.svg";
 import shaper from "../../assets/internal/shaper.png";
 import shaperCultMobile from "../../assets/internal/shaper2.svg";
@@ -27,12 +31,12 @@ import hyper3 from "../../assets/internal/hyper3.svg";
 import create1 from "../../assets/internal/create1.svg";
 import create2 from "../../assets/internal/create2.svg";
 import create3 from "../../assets/internal/create3.svg";
-// import dial1 from "../../assets/internal/dial1.svg";
-// import dial2 from "../../assets/internal/dial2.svg";
-// import dial3 from "../../assets/internal/dial3.svg";
-// import web31 from "../../assets/internal/web31.svg";
-// import web32 from "../../assets/internal/web32.svg";
-// import web33 from "../../assets/internal/web33.svg";
+import dial1 from "../../assets/internal/dial1.svg";
+import dial2 from "../../assets/internal/dial2.svg";
+import dial3 from "../../assets/internal/dial3.svg";
+import web31 from "../../assets/internal/web31.svg";
+import web32 from "../../assets/internal/web32.svg";
+import web33 from "../../assets/internal/web33.svg";
 
 export const caseStudies: CaseStudy[] = [
   {
@@ -125,7 +129,7 @@ export const caseStudies: CaseStudy[] = [
   {
     title: "ShaperCult",
     subtitle: "",
-    heroImage: shaperCultHero,
+    heroImage: shaper2,
     industryInfo: "Fashion & Apparel Ecommerce",
     projectDuration: "4 Months",
     theprocessText: "The Process",
@@ -191,281 +195,12 @@ export const caseStudies: CaseStudy[] = [
     mobileImage: shaperCultMobile,
     keyFeaturesImage: shaperCultLogo,
   },
-  // {
-  //   title: "DIAL247.AI",
-  //   subtitle: "AI-Phone Calling Solution • Future of Voice Call Interactions",
-  //   heroImage: dial1,
-  //   industryInfo: "AI/ML & Tech, Artificial Intelligence",
-  //   projectDuration: "5 Months",
-  //   theprocessText: "The Process",
-
-  //   clientSatisfaction: 5.0,
-  //   problemSolutionResult: [
-  //     {
-  //       heading: "Problem",
-  //       subheading:
-  //         "High Costs, low Productivity, third party dependency, and long waiting time to get insights after call-process completion",
-  //       points: [
-  //         "Businesses often need to set up large teams for tasks like cold calling, lead assessment, customer service, and market surveys. Basic tasks such as appointment scheduling, visitor confirmations, and job candidate screenings still need to be done manually. Companies either handle these tasks in-house or outsource them to BPOs, which leads to increased costs, reduced productivity, and reliance on third parties. Additionally, obtaining actionable insights can take months, if not years.",
-  //       ],
-  //     },
-  //     {
-  //       heading: "Solution",
-  //       subheading:
-  //         "AI-Powered phone agents which can converse just like humans and speed up process to 100X",
-  //       points: [
-  //         "With AI's advanced capabilities, we've developed a tool where phone agents can engage in human-like conversations, handling various tasks efficiently. These AI agents are designed to be versatile, engaging, and empathetic. They can handle all human requests and come with a variety of voices—male and female, with American, European, Indian, and African accents, among others.",
-  //       ],
-  //     },
-  //     {
-  //       heading: "Results",
-  //       subheading: "",
-  //       points: [
-  //         {
-  //           title: "Increased Brand Awareness",
-  //           details: [
-  //             "Significant growth in social media followers and engagement rates across all platforms.",
-  //             "Improved brand recognition within the Web3 and blockchain communities.",
-  //           ],
-  //         },
-  //         {
-  //           title: "Community Growth",
-  //           details: [
-  //             "Rapid expansion of the client's online community with active participation in discussions and events.",
-  //             "High levels of user engagement and feedback, contributing to product improvements.",
-  //           ],
-  //         },
-  //         {
-  //           title: "Adoption and Usage",
-  //           details: [
-  //             "Notable increase in the number of developers and users adopting client's platform for their decentralized applications.",
-  //             "Positive feedback from the community on the platform's performance and usability.",
-  //           ],
-  //         },
-  //         {
-  //           title: "Thought Leadership",
-  //           details: [
-  //             "Client established itself as a thought leader in the decentralized technology space through consistent content and thought-provoking discussions.",
-  //             "Frequent mentions and features in industry publications and media.",
-  //           ],
-  //         },
-  //         {
-  //           title: "Analytics and Optimization",
-  //           details: [
-  //             "Measuring performance and adjusting strategies based on data-driven insights.",
-  //           ],
-  //         },
-  //       ],
-  //     },
-  //   ],
-  //   techs: [
-  //     { name: "MySQL DB", icon: mysql },
-  //     { name: "Alchemy", icon: "" },
-  //     { name: "NestJS", icon: nestjs },
-  //     { name: "Sequelize", icon: "" },
-  //     { name: "Node", icon: node },
-  //     { name: "TypeScript", icon: "" },
-  //     { name: "Figma", icon: figma },
-  //     { name: "React", icon: react },
-  //     { name: "ReactJs", icon: "" },
-  //     { name: "Tailwind css", icon: "" },
-  //     { name: "Ether.js", icon: "" },
-  //     { name: "Firebase", icon: "" },
-  //     { name: "Jest", icon: "" },
-  //     { name: "Solidity", icon: solidity },
-  //     { name: "EC2", icon: "" },
-  //   ],
-  //   processSteps: [
-  //     {
-  //       title: "Comprehensive Market Research",
-  //       description: [
-  //         "Conducted in-depth market analysis to understand the competitive landscape and identify key differentiators for the client.",
-  //         "Identified target audience segments and their preferences.",
-  //       ],
-  //     },
-  //     {
-  //       title: "Brand Development and Positioning",
-  //       description: [
-  //         "Refined client's brand messaging to clearly communicate its unique value propositions.",
-  //         "Developed a cohesive brand identity that resonates with the Web3 and blockchain communities.",
-  //       ],
-  //     },
-  //     {
-  //       title: "Content Marketing Strategy",
-  //       description: [
-  //         "Created engaging and informative content, including blog posts, whitepapers, and explainer videos, to educate the audience about the client's platform.",
-  //         "Highlighted use cases and success stories to demonstrate the platform's capabilities and benefits.",
-  //       ],
-  //     },
-  //     {
-  //       title: "Social Media Campaigns",
-  //       description: [
-  //         "Developed and executed targeted social media campaigns across Twitter, Instagram, and Facebook to increase brand visibility and engagement.",
-  //         "Leveraged influencers and key opinion leaders in the blockchain space to amplify client's messaging.",
-  //       ],
-  //     },
-  //     {
-  //       title: "Community Building Initiatives",
-  //       description: [
-  //         "Organized online events, webinars, and AMAs (Ask Me Anything) to foster community interaction and engagement.",
-  //         "Created and managed a vibrant online community on platforms such as Telegram and Discord.",
-  //       ],
-  //     },
-  //     {
-  //       title: "SEO and SEM Strategies",
-  //       description: [
-  //         "Implemented search engine optimization (SEO) techniques to improve client's online visibility.",
-  //         "Ran search engine marketing (SEM) campaigns to drive targeted traffic to client's website.",
-  //       ],
-  //     },
-  //     {
-  //       title: "Analytics and Continuous Improvement",
-  //       description: [
-  //         "Monitored campaign performance using advanced analytics tools to measure effectiveness.",
-  //         "Continuously optimized marketing strategies based on data-driven insights.",
-  //       ],
-  //     },
-  //   ],
-  //   keyFeatures: [
-  //     "Integration with a Conversational API: Utilized a robust conversational API to enable natural language processing",
-  //     "Custom call handling: Ability for the integration application to handle specific call scenarios",
-  //     "AI/ML-powered decision making: Implemented advanced machine learning models to make intelligent call flow decisions",
-  //     "Programmable Text-to-Speech and Speech-to-Text capabilities",
-  //     "Comprehensive User Interface: Intuitive dashboard for call management and analytics",
-  //     "Call Recording and Transcription: Option to record calls and generate transcripts for analysis",
-  //     "Integration with CRM systems: Seamless data exchange with popular CRM platforms",
-  //     "Real-time Analytics: Detailed call statistics and performance metrics",
-  //     "Multi-language Support: Ability to handle calls in various languages",
-  //     "Customizable Workflows: Flexible system to adapt to different business processes",
-  //     "AI Framework Development: We Leveraged advanced machine learning models to create an intelligent AI framework",
-  //   ],
-  //   mobileImage: dial2,
-  //   keyFeaturesImage: dial3,
-  // },
-  // {
-  //   title: "WEB3.0 MARKETING PROJECT",
-  //   subtitle:
-  //     "How Maxtron elevated client's marketing strategy for success in the decentralized web3 space",
-  //   heroImage: web31,
-  //   industryInfo: "Blockchain, Decentralized Technology, Crypto Finance",
-  //   projectDuration: "4 Months",
-  //   theprocessText: "The Process",
-
-  //   clientSatisfaction: 5.0,
-  //   problemSolutionResult: [
-  //     {
-  //       heading: "Use Case",
-  //       subheading: "",
-  //       points: ["Intellectual Property Rights Compliance"],
-  //     },
-  //     {
-  //       heading: "Problem",
-  //       subheading: "Intellectual property rights compliance",
-  //       points: [
-  //         "The marketing trends in the web3.0 were broken, with users were not being directed to the desired CTAs. The client's DApp and Dex were unable to reach the masses due to unclear messaging and lack of trust from the users. They were a new kid on the block in crypto space, additionally, venture capital had prioritized its investments in centralized projects. This made it challenging to raise funds and attract new customers. With the decline in value of most native cryptocurrencies due to the downturn in the crypto trading segment, the client's token faced significant devaluation. There was an urgent need to revitalize the project and rebuild market confidence, and create a sustainable flow of ecosystem participants.",
-  //       ],
-  //     },
-  //     {
-  //       heading: "Solution",
-  //       subheading: "",
-  //       points: [
-  //         "We conducted thorough market analysis, including customer, competitor, and internal assessments, to develop a comprehensive marketing strategy. This involved creating user personas, mapping customer journeys, and aligning marketing efforts with business goals. We leveraged various channels including social media, content marketing, influencer partnerships, PR, community building, email campaigns, SEO/SEM, paid advertising, video marketing, podcast appearances, webinars, target-based outreach, lead magnets, newsletter building, social media activations, and key opinion leaders (KOLs).",
-  //         "We also maintained consistent communication with the team and their panel to ensure alignment and address any concerns promptly. Regular progress reports and strategy adjustments were made to optimize campaign performance.",
-  //       ],
-  //     },
-  //   ],
-  //   techs: [],
-  //   processSteps: [
-  //     {
-  //       title: "Comprehensive Market Research",
-  //       description: [
-  //         "Conducted in-depth market analysis to understand the competitive landscape and identify key opportunities. Developed detailed user personas and journey maps to gain insights into the target audience segments and their preferences.",
-  //       ],
-  //     },
-  //     {
-  //       title: "Brand Development and Positioning",
-  //       description: [
-  //         "Refined client's brand messaging to clearly communicate its unique value proposition. Developed a cohesive brand identity that resonates with the Web3 and blockchain communities.",
-  //       ],
-  //     },
-  //     {
-  //       title: "Content Marketing Strategy",
-  //       description: [
-  //         "Created a robust content calendar covering blog posts, whitepapers, and explainer videos to educate the audience about the client's platform. Developed thought leadership content to demonstrate the platform's capabilities and benefits.",
-  //       ],
-  //     },
-  //     {
-  //       title: "Social Media Campaigns",
-  //       description: [
-  //         "Designed and executed targeted social media campaigns across Twitter, Instagram, and Facebook to increase brand visibility and engagement. Leveraged trending topics and hashtags in the blockchain space to amplify reach and messaging.",
-  //       ],
-  //     },
-  //     {
-  //       title: "Community Building Initiatives",
-  //       description: [
-  //         "Established and nurtured online communities on platforms like Telegram to foster community interaction and support. Created and managed a vibrant online community on platforms such as Telegram and Discord.",
-  //       ],
-  //     },
-  //     {
-  //       title: "SEO and SEM Strategies",
-  //       description: [
-  //         "Implemented comprehensive SEO strategies to improve organic search rankings for key terms. Ran targeted search engine marketing (SEM) campaigns to drive targeted traffic to client's website.",
-  //       ],
-  //     },
-  //     {
-  //       title: "Analytics and Continuous Improvement",
-  //       description: [
-  //         "Set up robust tracking and analytics tools to measure effectiveness. Continuously optimized marketing strategies based on data-driven insights.",
-  //       ],
-  //     },
-  //   ],
-  //   keyFeatures: [
-  //     {
-  //       title: "Increased Brand Awareness",
-  //       details: [
-  //         "Significant growth in social media followers and engagement rates across all platforms.",
-  //         "Improved brand recognition within the Web3 and blockchain communities.",
-  //       ],
-  //     },
-  //     {
-  //       title: "Community Growth",
-  //       details: [
-  //         "Rapid expansion of the client's online community with active participation in discussions and events.",
-  //         "High levels of user engagement and feedback, contributing to product improvements.",
-  //       ],
-  //     },
-  //     {
-  //       title: "Adoption and Usage",
-  //       details: [
-  //         "Notable increase in the number of developers and users adopting client's platform for their decentralized applications.",
-  //         "Positive feedback from the community on the platform's performance and usability.",
-  //       ],
-  //     },
-  //     {
-  //       title: "Thought Leadership",
-  //       details: [
-  //         "Client established itself as a thought leader in the decentralized technology space through consistent content and thought-provoking discussions.",
-  //         "Frequent mentions and features in industry publications and media.",
-  //       ],
-  //     },
-  //     {
-  //       title: "Analytics and Optimization",
-  //       details: [
-  //         "Measuring performance and adjusting strategies based on data-driven insights.",
-  //       ],
-  //     },
-  //   ],
-
-  //   mobileImage: web32,
-  //   keyFeaturesImage: web33,
-  // },
-
   {
     title: "HYPER CASUAL GAMES",
     subtitle: "",
     heroImage: hyper1,
-    industryInfo: "Creator economy",
-    projectDuration: "6 Months",
+    industryInfo: "Gaming, iGaming, Crypto Gaming",
+    projectDuration: "2 Months",
     clientSatisfaction: 5.0,
     theprocessText: "The Process",
     problemSolutionResult: [
@@ -540,11 +275,11 @@ export const caseStudies: CaseStudy[] = [
     keyFeaturesImage: hyper3,
   },
   {
-    title: "CREATE PROTOCOL",
+    title: "DECENTRALIZED AI PLATEFORM",
     subtitle: "AI-based web 3.0 & infrastructure for digital content and media",
     heroImage: create1,
-    industryInfo: "Gaming, iGaming, Crypto Gaming",
-    projectDuration: "2 Months",
+    industryInfo: "Ai, Data, Web 3.0, Blockchain",
+    projectDuration: "12 Months",
     theprocessText: "TECH AND INFRASTRUCTURE",
     clientSatisfaction: 5.0,
     problemSolutionResult: [
@@ -598,4 +333,322 @@ export const caseStudies: CaseStudy[] = [
     mobileImage: create2,
     keyFeaturesImage: create3,
   },
+  {
+    title: "AI CALLING AGENT",
+    subtitle: "AI-Phone Calling Solution : Future of Voice Call Interactions",
+    heroImage: dial1,
+    industryInfo: "Telecom, Hi-Tech, Artificial",
+    projectDuration: "5 Months",
+    theprocessText: "Benefits",
+
+    clientSatisfaction: 5.0,
+    problemSolutionResult: [
+      {
+        heading: "Problem",
+        subheading:
+          "High Costs, low Productivity, third party dependency, and long waiting time to get insights after call-process completion",
+        points: [
+          "Businesses often need to set up large teams for tasks like cold calling, lead assessment, customer service, and market surveys. Basic tasks such as appointment scheduling, visitor confirmations, and job candidate screenings still need to be done manually. Companies either handle these tasks in-house or outsource them to BPOs, which leads to increased costs, reduced productivity, and reliance on third parties. Additionally, obtaining actionable insights can take months, if not years.",
+        ],
+      },
+      {
+        heading: "Solution",
+        subheading:
+          "AI-Powered phone agents which can converse just like humans and speed up process to 100X",
+        points: [
+          "With AI's advanced capabilities, we've developed a tool where phone agents can engage in human-like conversations, handling various tasks efficiently. These AI agents are designed to be versatile, engaging, and empathetic. They can handle all human requests and come with a variety of voices—male and female, with American, European, Indian, and African accents, among others" ,
+          "Not only do these AI agents manage interactions, but they also provide you with insights,action items, recordings, and campaign statuses. All this data is delivered in a simple CSV format , making it easy for you to analyze and act upon immediately"
+        ],
+        
+      },
+      
+    ],
+    techs: [],
+    processSteps: [
+      {
+        title: "Customer Support",
+        description: [
+          "Provide 24/7 customer support with no human intervention",
+          "Assistance with troubleshooting and problem resolution",
+        ],
+      },
+      {
+        title: "Sales & Lead Generation",
+        description: [
+          "Couduct cold calls to your trageted leads",
+          "Qualify leads by asking specific questions and assesssing their needs."
+        ],
+      },
+      {
+        title: "Marketing",
+        description: [
+          "Conduct automated outreach for new product launches or special events",
+          "Deliver automated training assessments"
+        ],
+      },
+      {
+        title: "Training & Development",
+        description: [
+          "Provide real-time support and FAQs for employee",
+          "Frequent mentions and features in industry publications and media.",
+        ],
+      },
+      {
+        title: "Utility services",
+        description: [
+          "Inform userabout interruptions or maintenance schedules",
+          "Handle billing inquiries and payments",
+        ],
+      },
+      {
+        title: "Human resources",
+        description: [
+          "Inform users about service interruptions or maintenance schedules",
+          "Provide information about job openings and applicaiton statuses",
+        ],
+      },
+      
+    ],
+    keyFeatures: [
+      {
+        title:"Integration with a Communication API",
+        details:[
+          "Utilized a robust communication API to integrate telephony features, ensuring reliable call handling. Ensured the integration supported features such as call routing, recording, trascription and IVR navigation included."
+        ]
+      },
+      {
+        title:"Immediate Post-call Insights",
+        details:[
+          "Extract actionable insights from conversations right after calls"
+        ]
+      },
+      {
+        title:"Global Client Communication",
+        details:[
+          "Engage with clients worldwide in multiple language. You just name it. AI will be seen speaking in that language"
+        ]
+      },
+      {
+        title:"AI Framework Development",
+        details:[
+          "We leveraged advanced machine learning models to create an intelligent AI framework"
+        ]
+      },
+     
+    ],
+    mobileImage: dial2,
+    keyFeaturesImage: dial3,
+  },
+  {
+    title: "WEB3.0 MARKETING PROJECT",
+    subtitle:
+      "How Maxtron Elevated Client's Marketing Strategy for Success in the Decentralized web3 space",
+    heroImage: web31,
+    industryInfo: "Blockchain and Decentralized Technology, Crypto Finance",
+    projectDuration: "4 Months",
+    theprocessText: "The Process",
+
+    clientSatisfaction: 5.0,
+    problemSolutionResult: [
+      
+      {
+        heading: "Problem",
+        subheading: "",
+        points: [
+          "The marketing funnels on the website were broken, and users were not being directed to the desired CTAs. This caused a significant leakage and increased the bounce rate because the content wasn't resonating with visitors. There was a clear lack of user-focused content. Additionally, website traffic had plummeted by a factor of ten over the last two years. This challenge was evident to the founder and their marketing team. With the decline in value of their native cryptocurrency due to the downturn in the crypto trading segment, negative sentiment was growing. This required proactive social monitoring and engagement. Social media channels were also inactive, and there was a noticeable lack of storytelling.",
+        ],
+      },
+      {
+        heading: "Solution",
+        subheading: "",
+        points: [
+          "We conducted thorough market analysis, including customer, competitor, and internal assessments, to understand the current status quo. Then, we developed a comprehensive strategy to tackle these challenges head-on and drive new users from untapped geographies to the platform. We leveraged various marketing channels, including community management and moderation, email marketing, intent data-based outreach, lead magnets, newsletter building, social media activation, and key opinion leaders (KOLs).",
+
+"We also maintained consistent communication with the client and their team to ensure alignment and coordination. This approach helped reposition the brand and establish it as a thought leader in the crypto space.",
+        ],
+      },
+    ],
+    techs: [],
+    processSteps: [
+      {
+        title: "Comprehensive Market Research",
+        description: [
+          "Conducted in-depth market analysis to understand the competitive landscape and identify key opportunities. Developed detailed user personas and journey maps to gain insights into the target audience segments and their preferences.",
+        ],
+      },
+      {
+        title: "Brand Development and Positioning",
+        description: [
+          "Refined client's brand messaging to clearly communicate its unique value proposition. Developed a cohesive brand identity that resonates with the Web3 and blockchain communities.",
+        ],
+      },
+      {
+        title: "Content Marketing Strategy",
+        description: [
+          "Created a robust content calendar covering blog posts, whitepapers, and explainer videos to educate the audience about the client's platform. Developed thought leadership content to demonstrate the platform's capabilities and benefits.",
+        ],
+      },
+      {
+        title: "Social Media Campaigns",
+        description: [
+          "Designed and executed targeted social media campaigns across Twitter, Instagram, and Facebook to increase brand visibility and engagement. Leveraged trending topics and hashtags in the blockchain space to amplify reach and messaging.",
+        ],
+      },
+      {
+        title: "Community Building Initiatives",
+        description: [
+          "Established and nurtured online communities on platforms like Telegram to foster community interaction and support. Created and managed a vibrant online community on platforms such as Telegram and Discord.",
+        ],
+      },
+      {
+        title: "SEO and SEM Strategies",
+        description: [
+          "Implemented comprehensive SEO strategies to improve organic search rankings for key terms. Ran targeted search engine marketing (SEM) campaigns to drive targeted traffic to client's website.",
+        ],
+      },
+      {
+        title: "Analytics and Continuous Improvement",
+        description: [
+          "Set up robust tracking and analytics tools to measure effectiveness. Continuously optimized marketing strategies based on data-driven insights.",
+        ],
+      },
+    ],
+    keyFeatures: [
+      {
+        title: "Increased Brand Awareness",
+        details: [
+          "Significant growth in social media followers and engagement rates across all platforms.",
+          "Improved brand recognition within the Web3 and blockchain communities.",
+        ],
+      },
+      {
+        title: "Community Growth",
+        details: [
+          "Rapid expansion of the client's online community with active participation in discussions and events.",
+          "High levels of user engagement and feedback, contributing to product improvements.",
+        ],
+      },
+      {
+        title: "Adoption and Usage",
+        details: [
+          "Notable increase in the number of developers and users adopting client's platform for their decentralized applications.",
+          "Positive feedback from the community on the platform's performance and usability.",
+        ],
+      },
+      {
+        title: "Thought Leadership",
+        details: [
+          "Client established itself as a thought leader in the decentralized technology space through consistent content and thought-provoking discussions.",
+          "Frequent mentions and features in industry publications and media.",
+        ],
+      },
+      {
+        title: "Analytics and Optimization",
+        details: [
+          "Measuring performance and adjusting strategies based on data-driven insights.",
+        ],
+      },
+    ],
+
+    mobileImage: web32,
+    keyFeaturesImage: web33,
+  },
+   {
+    title: "VOTOING BLOCK USA",
+    subtitle: "VOTE! 2024 Vote for President on the blockchain in 2024",
+    heroImage: usablock,
+    industryInfo: "Web3.0, Non-Profits,Voting",
+    projectDuration: "4 Months",
+    theprocessText: "The Process",
+
+    clientSatisfaction: 5.0,
+    problemSolutionResult: [
+      {
+        heading: "Problem",
+        subheading: "",
+        points: [
+          `In the 2020 US presidential elections, fewer than 8% of eligible overseas citizens cast their ballot. Anthony Perkins, Founder and editor at Cryptonite, shared his thoughts, saying , "If Americans working overseas or those in the military can't get their ballots back on time, they miss out on their chance to vote . We want to ensure every American xan participate in elctions. Blockchain technology will solve this problem by makingvoting easier and more secure"`,
+        ],
+      },
+      {
+        heading: "Solution",
+        
+        subheading: "",
+        points: [
+          "This blockchain-based platform makes sure voters’ privacy is protected. Unlike absentee ballots, where military voters have to give up their right to a secret vote by sending it via email or fax, blockchain voting keeps everything anonymous",
+          `Maxtron’s CEO, Girish Ahirwar, explained that blockchain technology makes it nearly impossible to tamper with votes. "If someone tries to manipulate the system, it’s easy to catch because blockchain is publicly accessible," he said. Blockchain also allows concerned offices to quickly audit the voting records, ensuring fairness`
+        ],
+      },
+     
+    ],
+    techs: [
+    ],
+    processSteps: [
+      {
+        title: "Identity Requirements",
+        description: [
+          "Conducted research to understand the specific needs of voters, election officials, and other stakeholders. This includes requirements for security, accessibility, and usability.",
+        ],
+      },
+      {
+        title: "Technology Selection",
+        description: [
+          "Chose an appropriate blockchain framework, Arbitrum, and development of smart contracts based on scalability, security, and transparency needs.",
+        ],
+      },
+      {
+        title: "System Architecture Design",
+        description: [
+          "Designed the architecture of the platform, ensuring it supports user authentication, vote encryption, data integrity, and secure storage.",
+        ],
+      },
+      {
+        title: "Development And Security Measures",
+        description: [
+          "Created the backend infrastructure to handle data storage and processing, as well as the frontend application for voter interaction. Also, Implemented strong cryptographic protocols to secure votes and user data, ensuring anonymity and integrity",
+        ],
+      },
+      {
+        title: "Testing, Deployment and Maintenance",
+        description: [
+          "Continuously improving the platform based on user feedback, bugs, technological advancements, and changing regulations.",
+        ],
+      },
+    ],
+    keyFeatures: [
+      {
+        title: "Vote for your dream candidate…",
+        details: [
+          "Once you register to vote on the VB USA platform, you will first have the opportunity to ‘vote’ in the Dream World Election, where you may choose from 24 currently popular candidates or, if your ideal candidate is not on the ballot, you can nominate the candidate of your choice.",
+        ],
+      },
+      {
+        title: "Zoom back to reality",
+        details: [
+          "Second, you will have the choice to ‘vote’ in the Real World Election, with your options limited to those who officially qualified for the real-world ballot.",
+        ],
+      },
+      {
+        title: " See how your Web3 peers are voting",
+        details: [
+          "All the results for the Dream World and Real World elections and survey results will be available in real-time until the polls close at 11 PM PST on November 5, 2024. Registered voters may also change their vote and survey choices until the polls close.",
+        ],
+      },
+      {
+        title: " No human or institution can see you vote",
+        details: [
+          "All voter data is stored on the Arbitrum blockchain, a venture capital-backed Layer 2 scaling solution for Ethereum founded in 2018. Arbitrum ensures that only users can see their voting data by employing several privacy technologies, including Zero-Knowledge Proofs (ZKPs), which allow users to prove the validity of a transaction without revealing any additional information.",
+        ],
+      },
+      {
+        title: "3rd Party Voter ID validation",
+        details: [
+          "All VB USA knows is that it has a validated registered ‘voter’ who is of voting age (18 by November 5, 2024) and has a valid government ID that shows the state of their residency. To achieve this, VB USA has partnered with Persona, a venture capital-backed automated identity verification service founded in 2018. Their ID platform leverages machine learning, computer vision, and algorithmic checks and validates voters biometrically by matching government photo IDs and selfies.",
+        ],
+      }
+    ],
+    mobileImage: vote,
+    keyFeaturesImage: herovote,
+  },
+
 ]

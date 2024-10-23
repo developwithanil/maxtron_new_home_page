@@ -60,20 +60,20 @@ const InternalPage: React.FC<InternalPageProps> = ({ caseStudies }) => {
                 <p className="text-base sm:text-lg lg:text-xl mt-2">
                     {subtitle}
                 </p>
-                <img src={heroImage} alt="hero" className="lg:w-[40%] w-[100%] h-[90%]" />
+                <img src={heroImage} alt="hero" className={`lg:w-[50%] w-[100%] h-[90%]} ${Number(id) == 2 ? 'w-[80%] h-[80%]' : 'w-[100%] h-[90%]'} w-[100%] h-[130%]`} />
             </div>
 
             <div className="container mx-auto mt-8 flex flex-wrap lg:flex-nowrap">
-                <div className="w-full lg:w-[34%] lg:m-0 p-4 bg-[#F2EEEF] rounded-lg h-fit mx-4 lg:mr-8">
-                    <div className="py-2">
+                <div className="w-full lg:w-[30%] lg:m-0 p-4 bg-[#F2EEEF] rounded-lg h-fit mx-4 lg:mr-8">
+                    <div className="py-2 mt-4">
                         <h2 className="text-xl font-bold mb-2">INDUSTRY</h2>
                         <p className="text-lg">{industryInfo}</p>
                     </div>
-                    <div className="py-2">
+                    <div className="py-2 mt-4">
                         <h2 className="text-xl font-bold mb-2">PROJECT DURATION</h2>
                         <p className="text-lg">{projectDuration}</p>
                     </div>
-                    <div className="py-2">
+                    <div className="py-2 mt-4">
                         <h2 className="text-xl font-bold mb-2">CLIENT SATISFACTION</h2>
                         <p className="text-lg flex items-center">
                             {[...Array(5)].map((_, i) => (
@@ -84,7 +84,7 @@ const InternalPage: React.FC<InternalPageProps> = ({ caseStudies }) => {
                     </div>
                 </div>
 
-                <div className="w-full lg:w-[66%] p-4 lg:p-0">
+                <div className="w-full lg:w-[70%] p-4 lg:p-0">
                     {title.toUpperCase().includes("DIAL247.AI") && (
                         <h4 className="text-xl font-bold mb-6">
                             How Maxtron Helped, Build the Revolutionary Dial 247 AI Calling Tool
@@ -99,7 +99,7 @@ const InternalPage: React.FC<InternalPageProps> = ({ caseStudies }) => {
                                     typeof point === 'string' ? (
                                         <p key={idx} className="mt-4">{point}</p>
                                     ) : (
-                                        <p key={idx} className="mt-4">
+                                        <p key={idx} className="mt-3">
                                             <h3 className="text-xl font-semibold mb-4">{point.title}</h3>
                                             <p className="list-disc pl-5 mt-2">
                                                 {point.details.map((detail, detailIdx) => (
@@ -163,7 +163,7 @@ const InternalPage: React.FC<InternalPageProps> = ({ caseStudies }) => {
                                     <div>
                                         <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
                                         <ul className="list-disc pl-5">
-                                            {feature.details.map((detail, detailIndex) => (
+                                            { feature.details.map((detail, detailIndex) => (
                                                 <li key={detailIndex} className="text-sm mb-1">{detail}</li>
                                             ))}
                                         </ul>
