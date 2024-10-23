@@ -53,7 +53,7 @@ const App: React.FC = () => {
         <Route path="/insights" element={<Insights />} />
         <Route path="/case-studies" element={<CaseStudyPage />} />
         <Route
-          path="/internal-page/:id"
+          path="/Maxtron/:title/:id"
           element={<InternalPage caseStudies={caseStudies} />}
         />
         <Route path="/blog" element={<Blog />} />

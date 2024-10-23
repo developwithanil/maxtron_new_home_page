@@ -7,12 +7,20 @@ import nestjs from "../../assets/internal/nest.svg";
 import db from "../../assets/internal/db.png";
 import node from "../../assets/internal/node.svg";
 import solidity from "../../assets/internal/solidity.svg";
+import OpenZeppelin from "../../assets/internal/OpenZeppelin.svg";
+import sequelize from "../../assets/internal/sequelize.svg";
 import figma from "../../assets/internal/figma.svg";
 import react from "../../assets/internal/react.svg";
 import mobile from "../../assets/internal/mobile.png";
 import shaperCultHero from "../../assets/internal/shaper1.svg";
+import shapercut from "../../assets/internal/shapercut.svg";
+import shaper from "../../assets/internal/shaper.png";
 import shaperCultMobile from "../../assets/internal/shaper2.svg";
+import typescript from "../../assets/internal/typescript.svg";
 import shaperCultLogo from "../../assets/internal/shaper3.svg";
+import aws from "../../assets/internal/aws.svg";
+
+import tailwind from "../../assets/internal/tailwind.svg";
 import hyper1 from "../../assets/internal/hyper1.svg";
 import hyper2 from "../../assets/internal/hyper2.svg";
 import hyper3 from "../../assets/internal/hyper3.svg";
@@ -465,45 +473,33 @@ export const caseStudies: CaseStudy[] = [
         heading: "Problem",
         subheading: "",
         points: [
-          "The client's hyper casual game is engaging but takes too long to complete, deterring busy users and preventing the reuse of a core voting feature solution. They want the game optimized while keeping it enjoyable and innovative. The challenge is to reduce play time without compromising the game's appeal, and to integrate the voting feature more seamlessly. User retention is declining due to long gameplay, impacting monetization.",
+          "The client's crypto-based game is engaging but takes too long to complete, deterring busy users and prompting the need for a more time-efficient solution. The client has a gaming platform where players use a native cryptocurrency to play. While the game is engaging, it takes a long time to complete and earn rewards. This has been a barrier for some players, who find it challenging to commit the necessary time due to busy schedules. This issue has become noticeable to the client, prompting them to consider solutions to make the game more accessible and appealing to time-constrained users",
         ],
       },
       {
         heading: "Solution",
         subheading: "",
         points: [
-          "We conducted a comprehensive analysis of the game's mechanics and user engagement patterns. We redesigned the game flow to create shorter, more dynamic levels while preserving the core gameplay elements. The voting feature was seamlessly integrated into the game progression, enhancing user interaction. We also implemented a dynamic difficulty system to keep the game challenging yet achievable for all skill levels. Our UX and marketing teams also developed comprehensive gamification strategies to attract and retain users.",
+          "To create several short play-to-earn games that are easy to play and allow players to quickly earn rewards, we proactively identified the client's problem and conducted research to find a solution that would address the issue without compromising profitability or user retention. We proposed launching an app featuring multiple short, interactive, and easy-to-play games. Additionally, we devised a method to facilitate crypto transactions within the app (for both iOS and Android) using the client's native cryptocurrency token. Our CX and marketing teams also developed comprehensive gamification strategies to attract and retain users.",
         ],
       },
     ],
     techs: [
       { name: "MySQL DB", icon: mysql },
-      { name: "Alchemy", icon: "" },
+      { name: "OpenZeppelin", icon: OpenZeppelin},
       { name: "NestJS", icon: nestjs },
-      { name: "Sequelize", icon: "" },
+      { name: "Sequelize", icon: sequelize },
       { name: "Node", icon: node },
-      { name: "TypeScript", icon: "" },
+      { name: "TypeScript", icon: typescript },
       { name: "Figma", icon: figma },
       { name: "React", icon: react },
-      { name: "ReactJs", icon: "" },
-      { name: "Tailwind css", icon: "" },
+      { name: "Tailwind", icon: tailwind },
       { name: "Ether.js", icon: "" },
       { name: "Firebase", icon: "" },
       { name: "Jest", icon: "" },
       { name: "Solidity", icon: solidity },
-      { name: "EC2", icon: "" },
+      { name: "EC2", icon: aws},
       { name: "CI/CD", icon: "" },
-      { name: "OpenZeppelin", icon: "" },
-      { name: "Hardhat", icon: "" },
-      { name: "Unity 3D", icon: "" },
-      { name: "C#", icon: "" },
-      { name: "JavaScript", icon: "" },
-      { name: "Android Studio", icon: "" },
-      { name: "Xcode", icon: "" },
-      { name: "PlayFab", icon: "" },
-      { name: "AdMob", icon: "" },
-      { name: "Amplitude", icon: "" },
-      { name: "React Native", icon: "" },
     ],
     processSteps: [
       {
@@ -540,8 +536,8 @@ export const caseStudies: CaseStudy[] = [
       "Functionality to Build Geolocated Community via Web Versions and Applications",
       "Game Logic Engine & 3D Environment Development",
     ],
-    mobileImage: hyper3,
-    keyFeaturesImage: hyper2,
+    mobileImage: hyper2,
+    keyFeaturesImage: hyper3,
   },
   {
     title: "CREATE PROTOCOL",
@@ -602,4 +598,4 @@ export const caseStudies: CaseStudy[] = [
     mobileImage: create2,
     keyFeaturesImage: create3,
   },
-];
+]

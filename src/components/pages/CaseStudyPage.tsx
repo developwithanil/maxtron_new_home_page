@@ -67,7 +67,7 @@ const CaseStudyList: React.FC = () => {
           <div
             key={index}
             className="flex flex-col mb-8 custom_bg_color transform transition-transform duration-300 hover:scale-105 cursor-pointer"
-            onClick={() => navigate(`/internal-page/${index}`)}
+            onClick={() => navigate(`/Maxtron/${industry.subheading.replace(/\s+/g, "-")}/${index}`)}
           >
             <img
               src={industry.img}

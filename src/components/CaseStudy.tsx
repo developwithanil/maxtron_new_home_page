@@ -57,7 +57,7 @@ const CaseStudy: React.FC = () => {
           {caseStudyData.map((caseStudy, index) => {
             // Wrap the 4th card in a Link component
             return (
-              <Link to={`/internal-page/${index}`} key={index}>
+              <Link to={`/Maxtron/${caseStudy.title.replace(/\s+/g, "-")}/${index}`} key={index}>
                 <CaseStudyCard
                   title={caseStudy.title}
                   description={caseStudy.description}

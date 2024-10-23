@@ -60,7 +60,7 @@ const InternalPage: React.FC<InternalPageProps> = ({ caseStudies }) => {
                 <p className="text-base sm:text-lg lg:text-xl mt-2">
                     {subtitle}
                 </p>
-                <img src={heroImage} alt="hero" className="lg:w-[40%] w-[100%] h-[70%]" />
+                <img src={heroImage} alt="hero" className="lg:w-[40%] w-[100%] h-[90%]" />
             </div>
 
             <div className="container mx-auto mt-8 flex flex-wrap lg:flex-nowrap">
