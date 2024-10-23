@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`bg-white shadow-lg rounded-3xl mx-4 sm:mx-6 mt-4 sm:mt-6 ${
+      className={`bg-white  shadow-lg rounded-3xl mx-4 sm:mx-24 mt-4 sm:mt-6 ${
         isSticky ? "fixed top-0 left-0 right-0 z-50" : ""
       }`}
     >

@@ -22,13 +22,41 @@ const HeroSection = () => {
 
         <div className="absolute top-0 left-0 w-full h-full bg-purple-900 bg-opacity-50"></div>
 
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-4">
+        <div className="relative z-10 flex flex-col items-start sm:items-center justify-center h-full text-white px-4 sm:px-6 lg:px-8">
+          <h1 className="text-4xl hidden sm:block sm:text-5xl md:text-6xl font-bold text-center mb-4">
             Creating Winning Products, Ensuring Their Success
           </h1>
-          <p className="text-xl sm:text-2xl md:text-3xl text-center mb-8">
+          <h1 className="  sm:hidden text-5xl md:text-6xl font-bold text-center mb-3">
+            Creating
+          </h1>
+          <h1 className="  sm:hidden text-5xl md:text-6xl font-bold text-center mb-3">
+            Winning
+          </h1>
+          <h1 className=" sm:hidden text-5xl md:text-6xl font-bold text-center mb-3">
+            Products,
+          </h1>
+          <h1 className="  sm:hidden text-5xl md:text-6xl font-bold text-center mb-3">
+            Ensuring
+          </h1>
+          <h1 className="  sm:hidden text-5xl md:text-6xl font-bold text-center mb-3">
+            Their
+          </h1>
+          <h1 className="  sm:hidden text-5xl md:text-6xl font-bold text-center mb-5">
+            Success
+          </h1>
+          
+          <p className="text-xl hidden sm:block sm:text-2xl md:text-3xl text-center mb-3">
             Transform Your Business and Growth with 360° Cutting-Edge Tech
             Solutions
+          </p>
+          <p className="text-xl  sm:hidden sm:text-2xl md:text-3xl text-center mb-1">
+          Transform Your Business and
+          </p>
+          <p className="text-xl  sm:hidden sm:text-2xl md:text-3xl text-center mb-1">
+            Growth with 360°
+          </p>
+          <p className="text-xl  sm:hidden sm:text-2xl md:text-3xl text-center mb-8">
+          Cutting-Edge Tech Solutions
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <Link to="/services">
