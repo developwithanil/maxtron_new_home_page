@@ -11,6 +11,11 @@ import OpenZeppelin from "../../assets/internal/OpenZeppelin.svg";
 import sequelize from "../../assets/internal/sequelize.svg";
 import figma from "../../assets/internal/figma.svg";
 import react from "../../assets/internal/react.svg";
+import casestudy1bg from "../../assets/internal/casestudy1bg.png";
+// import bgimage2 from "../../assets/internal/bgimage2.png";
+import bg2 from "../../assets/internal/bg2.png";
+import bg3 from "../../assets/internal/bg3.png";
+import bg4 from "../../assets/internal/bg4.png";
 import mobile from "../../assets/internal/mobile.png";
 // import shaperCultHero from "../../assets/internal/shaper1.svg";
 import usablock from "../../assets/internal/usablock.png";
@@ -124,6 +129,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     mobileImage: mobile,
     keyFeaturesImage: mobile,
+    bgImage:bg3,
   },
 
   {
@@ -194,6 +200,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     mobileImage: shaperCultMobile,
     keyFeaturesImage: shaperCultLogo,
+    bgImage:bg4,
   },
   {
     title: "HYPER CASUAL GAMES",
@@ -273,6 +280,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     mobileImage: hyper2,
     keyFeaturesImage: hyper3,
+    bgImage:casestudy1bg,
   },
   {
     title: "DECENTRALIZED AI PLATEFORM",
@@ -332,6 +340,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     mobileImage: create2,
     keyFeaturesImage: create3,
+    bgImage:bg2,
   },
   {
     title: "AI CALLING AGENT",
@@ -438,6 +447,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     mobileImage: dial2,
     keyFeaturesImage: dial3,
+    bgImage:casestudy1bg,
   },
   {
     title: "WEB3.0 MARKETING PROJECT",
@@ -552,6 +562,7 @@ export const caseStudies: CaseStudy[] = [
 
     mobileImage: web32,
     keyFeaturesImage: web33,
+    bgImage:casestudy1bg,
   },
    {
     title: "VOTOING BLOCK USA",
@@ -649,6 +660,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     mobileImage: vote,
     keyFeaturesImage: herovote,
+    bgImage:bg2,
   },
 
 ]
