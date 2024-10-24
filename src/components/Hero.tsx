@@ -1,6 +1,5 @@
 import React from "react";
 // import video from "../assets/hero.mp4";
-import heroVideo from "../assets/hero_video.mp4";
 import newherovideo from "../assets/newherovideo.mp4";
 import { Link } from "react-router-dom";
 
@@ -45,19 +44,19 @@ const HeroSection = () => {
           <h1 className="  sm:hidden text-5xl md:text-6xl font-bold text-center mb-5">
             Success
           </h1>
-          
+
           <p className="text-xl hidden sm:block sm:text-2xl md:text-3xl text-center mb-3">
             Transform Your Business and Growth with 360° Cutting-Edge Tech
             Solutions
           </p>
           <p className="text-xl  sm:hidden sm:text-2xl md:text-3xl text-center mb-1">
-          Transform Your Business and
+            Transform Your Business and
           </p>
           <p className="text-xl  sm:hidden sm:text-2xl md:text-3xl text-center mb-1">
             Growth with 360°
           </p>
           <p className="text-xl  sm:hidden sm:text-2xl md:text-3xl text-center mb-8">
-          Cutting-Edge Tech Solutions
+            Cutting-Edge Tech Solutions
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <Link to="/services">
