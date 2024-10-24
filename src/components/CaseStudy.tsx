@@ -47,8 +47,7 @@ const caseStudyData = [
   },
   {
     title: "VOTING BLOCK USA",
-    description:
-      "VOTE! 2024 Vote for President on the blocakchain in 2024",
+    description: "VOTE! 2024 Vote for President on the blocakchain in 2024",
     imageUrl: Web3,
   },
 ];
@@ -62,7 +61,10 @@ const CaseStudy: React.FC = () => {
           {caseStudyData.map((caseStudy, index) => {
             // Wrap the 4th card in a Link component
             return (
-              <Link to={`/Maxtron/${caseStudy.title.replace(/\s+/g, "-")}/${index}`} key={index}>
+              <Link
+                to={`/Maxtron/${caseStudy.title.replace(/\s+/g, "-")}/${index}`}
+                key={index}
+              >
                 <CaseStudyCard
                   title={caseStudy.title}
                   description={caseStudy.description}
