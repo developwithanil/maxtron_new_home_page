@@ -190,13 +190,44 @@ export const caseStudies: CaseStudy[] = [
         description: [""],
       },
     ],
+   
     keyFeatures: [
-      "Social media marketing: Meta, influencer marketing, SEO",
-      "eCommerce, PLA",
-      "Customer surveys used to get imperfect survey results",
-      "UX and UI improvements",
-      "Market penetration: mature to pre-viable mobile app",
-      "Data analytics, behavioral and usage analytics, UTM tracking for lead campaigns",
+      {
+        title: "",
+        details: [
+          "Social media marketing: Meta, influencer marketing, SEO",
+        ],
+      },
+      {
+        title: "",
+        details: [
+          "eCommerce, PLA",
+        ],
+      },
+      {
+        title: "",
+        details: [
+          "Customer surveys used to get imperfect survey results",
+        ],
+      },
+      {
+        title: "",
+        details: [
+          "UX and UI improvements",
+        ],
+      },
+      {
+        title: "",
+        details: [
+          "Market penetration: mature to pre-viable mobile app",
+        ],
+      },
+      {
+        title: "",
+        details: [
+          "Data analytics, behavioral and usage analytics, UTM tracking for lead campaigns",
+        ],
+      },
     ],
     mobileImage: shaperCultMobile,
     keyFeaturesImage: shaperCultLogo,
@@ -565,7 +596,7 @@ export const caseStudies: CaseStudy[] = [
     bgImage:casestudy1bg,
   },
    {
-    title: "VOTOING BLOCK USA",
+    title: "VOTING BLOCK USA",
     subtitle: "VOTE! 2024 Vote for President on the blockchain in 2024",
     heroImage: usablock,
     industryInfo: "Web3.0, Non-Profits,Voting",
@@ -578,7 +609,7 @@ export const caseStudies: CaseStudy[] = [
         heading: "Problem",
         subheading: "",
         points: [
-          `In the 2020 US presidential elections, fewer than 8% of eligible overseas citizens cast their ballot. Anthony Perkins, Founder and editor at Cryptonite, shared his thoughts, saying , "If Americans working overseas or those in the military can't get their ballots back on time, they miss out on their chance to vote . We want to ensure every American xan participate in elctions. Blockchain technology will solve this problem by makingvoting easier and more secure"`,
+          `In the 2020 US presidential elections, fewer than 8% of eligible overseas citizens cast their ballot. Anthony Perkins, Founder and editor at Cryptonite, shared his thoughts, saying , "If Americans working overseas or those in the military can't get their ballots back on time, they miss out on their chance to vote . We want to ensure every American can participate in elctions. Blockchain technology will solve this problem by making voting easier and more secure"`,
         ],
       },
       {

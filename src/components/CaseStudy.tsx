@@ -48,7 +48,7 @@ const caseStudyData = [
   {
     title: "VOTING BLOCK USA",
     description:
-      "VOTE! 2024 Vote for President on the blocakchain in 2024",
+      "VOTE! 2024 Vote for President on the blockchain in 2024",
     imageUrl: Web3,
   },
 ];
