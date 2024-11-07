@@ -55,7 +55,7 @@ const InternalPage: React.FC<InternalPageProps> = ({ caseStudies }) => {
     return (
         <div>
            <div className="relative z-10 pt-32 lg:pt-16 text-center internal_page_hero_img px-4 sm:px-6 lg:px-8">
-    <div className="absolute inset-0 bg-cover h-3/4  bg-center z-1" style={{ backgroundImage: `url(${bgImage})` }}></div>
+    <div className="absolute inset-0 bg-cover h-[78%]  bg-center z-1" style={{ backgroundImage: `url(${bgImage})` }}></div>
     <div className="absolute inset-0 bg-gradient-to-b from-[#8941C4] to-transparent opacity-80 z-5"></div>
     
     <h1 className="relative z-15 text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
@@ -64,7 +64,18 @@ const InternalPage: React.FC<InternalPageProps> = ({ caseStudies }) => {
     <p className="relative z-15 text-base sm:text-lg lg:text-xl mt-2 text-white">
         {subtitle}
     </p>
-                <img src={heroImage} alt="hero" className={` relative  lg:w-[50%] w-[100%] h-[90%]} ${Number(id) == 2 ? 'w-[80%] h-[80%]' : 'w-[100%] h-[90%]'} w-[100%] h-[130%]`} />
+    <img 
+  src={heroImage} 
+  alt="hero" 
+  className={`
+    relative 
+    ${Number(id) === 1 ? 'lg:w-[64%] ' : 'lg:w-[50%]'}
+    h-[90%]
+    ${Number(id) === 2 ? 'w-[80%] h-[80%]' :  'w-[100%] h-[90%]'}
+  `} 
+/>
+
+
             </div>
 
             <div className="container mx-auto mt-8 flex flex-wrap lg:flex-nowrap">
