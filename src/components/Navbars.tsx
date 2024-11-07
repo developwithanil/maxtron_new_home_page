@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import logo from "../assets/maxtronlogo.svg";
+import darkFullLogo from "../assets/darkFullLogo.png";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,9 +28,10 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`bg-white  shadow-lg rounded-3xl mx-4 sm:mx-24 mt-4 sm:mt-6 ${
-        isSticky ? "fixed top-0 left-0 right-0 z-50" : ""
-      }`}
+      className={`bg-white shadow-lg rounded-3xl mx-4 sm:mx-24 mt-4 sm:mt-6 
+        ${isSticky ? "fixed top-0 left-0 right-0 z-50" : ""}
+        w-[97%] md:w-[85%] lg:w-[80%]
+      `}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
@@ -38,8 +39,8 @@ const Navbar: React.FC = () => {
           <div className="flex-shrink-0">
             <Link to="/">
               <img
-                className="h-8 w-auto sm:h-10"
-                src={logo}
+                className="h-10 w-auto sm:h-14"
+                src={darkFullLogo}
                 alt="Maxtron Logo"
               />
             </Link>
@@ -50,7 +51,7 @@ const Navbar: React.FC = () => {
             <div className="flex items-center space-x-2 lg:space-x-6 mr-2 ">
               <NavLink
                 to="/case-studies"
-                className="text-[#4E009C] hover:text-purple-800 px-2  py-2 rounded-md text-sm font-medium"
+                className="text-[#4E009C] hover:text-purple-800 px-2 py-2 rounded-md text-sm font-medium"
               >
                 Case Studies
               </NavLink>
