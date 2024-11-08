@@ -11,6 +11,11 @@ import OpenZeppelin from "../../assets/internal/OpenZeppelin.svg";
 import sequelize from "../../assets/internal/sequelize.svg";
 import figma from "../../assets/internal/figma.svg";
 import react from "../../assets/internal/react.svg";
+import casestudy1bg from "../../assets/internal/casestudy1bg.png";
+// import bgimage2 from "../../assets/internal/bgimage2.png";
+import bg2 from "../../assets/internal/bg2.png";
+import bg3 from "../../assets/internal/bg3.png";
+import bg4 from "../../assets/internal/bg4.png";
 import mobile from "../../assets/internal/mobile.png";
 // import shaperCultHero from "../../assets/internal/shaper1.svg";
 import usablock from "../../assets/internal/usablock.png";
@@ -124,6 +129,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     mobileImage: mobile,
     keyFeaturesImage: mobile,
+    bgImage:bg3,
   },
 
   {
@@ -184,16 +190,48 @@ export const caseStudies: CaseStudy[] = [
         description: [""],
       },
     ],
+   
     keyFeatures: [
-      "Social media marketing: Meta, influencer marketing, SEO",
-      "eCommerce, PLA",
-      "Customer surveys used to get imperfect survey results",
-      "UX and UI improvements",
-      "Market penetration: mature to pre-viable mobile app",
-      "Data analytics, behavioral and usage analytics, UTM tracking for lead campaigns",
+      {
+        title: "",
+        details: [
+          "Social media marketing: Meta, influencer marketing, SEO",
+        ],
+      },
+      {
+        title: "",
+        details: [
+          "eCommerce, PLA",
+        ],
+      },
+      {
+        title: "",
+        details: [
+          "Customer surveys used to get imperfect survey results",
+        ],
+      },
+      {
+        title: "",
+        details: [
+          "UX and UI improvements",
+        ],
+      },
+      {
+        title: "",
+        details: [
+          "Market penetration: mature to pre-viable mobile app",
+        ],
+      },
+      {
+        title: "",
+        details: [
+          "Data analytics, behavioral and usage analytics, UTM tracking for lead campaigns",
+        ],
+      },
     ],
     mobileImage: shaperCultMobile,
     keyFeaturesImage: shaperCultLogo,
+    bgImage:bg4,
   },
   {
     title: "HYPER CASUAL GAMES",
@@ -273,6 +311,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     mobileImage: hyper2,
     keyFeaturesImage: hyper3,
+    bgImage:casestudy1bg,
   },
   {
     title: "DECENTRALIZED AI PLATEFORM",
@@ -332,6 +371,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     mobileImage: create2,
     keyFeaturesImage: create3,
+    bgImage:bg2,
   },
   {
     title: "AI CALLING AGENT",
@@ -438,6 +478,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     mobileImage: dial2,
     keyFeaturesImage: dial3,
+    bgImage:casestudy1bg,
   },
   {
     title: "WEB3.0 MARKETING PROJECT",
@@ -552,9 +593,10 @@ export const caseStudies: CaseStudy[] = [
 
     mobileImage: web32,
     keyFeaturesImage: web33,
+    bgImage:casestudy1bg,
   },
    {
-    title: "VOTOING BLOCK USA",
+    title: "VOTING BLOCK USA",
     subtitle: "VOTE! 2024 Vote for President on the blockchain in 2024",
     heroImage: usablock,
     industryInfo: "Web3.0, Non-Profits,Voting",
@@ -567,7 +609,7 @@ export const caseStudies: CaseStudy[] = [
         heading: "Problem",
         subheading: "",
         points: [
-          `In the 2020 US presidential elections, fewer than 8% of eligible overseas citizens cast their ballot. Anthony Perkins, Founder and editor at Cryptonite, shared his thoughts, saying , "If Americans working overseas or those in the military can't get their ballots back on time, they miss out on their chance to vote . We want to ensure every American xan participate in elctions. Blockchain technology will solve this problem by makingvoting easier and more secure"`,
+          `In the 2020 US presidential elections, fewer than 8% of eligible overseas citizens cast their ballot. Anthony Perkins, Founder and editor at Cryptonite, shared his thoughts, saying , "If Americans working overseas or those in the military can't get their ballots back on time, they miss out on their chance to vote . We want to ensure every American can participate in elctions. Blockchain technology will solve this problem by making voting easier and more secure"`,
         ],
       },
       {
@@ -649,6 +691,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     mobileImage: vote,
     keyFeaturesImage: herovote,
+    bgImage:bg2,
   },
 
 ]

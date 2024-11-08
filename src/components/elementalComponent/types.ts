@@ -21,5 +21,6 @@ export interface CaseStudy {
     }>;
     keyFeatures: Array<string | { title: string; details: string[] }>;
     mobileImage: string;
-    keyFeaturesImage: string;  // New property
+    keyFeaturesImage: string;
+    bgImage:string  
   }

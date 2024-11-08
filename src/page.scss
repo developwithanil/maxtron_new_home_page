@@ -83,6 +83,20 @@ body{
     background-blend-mode: multiply;
 }
 
+// .internal_page_hero_img {
+//     height: 617px !important;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     color: white !important;
+//     background: linear-gradient(
+//         to bottom, 
+//         #8941C4 78%, 
+//         rgba(247, 247, 247, 0.2) 78%
+//     );
+// }
+
 .internal_page_hero_img {
     height: 617px !important;
     display: flex;
@@ -90,13 +104,33 @@ body{
     justify-content: center;
     align-items: center;
     color: white !important;
-    background: linear-gradient(
-        to bottom, 
-        #8941C4 78%, 
-        rgba(247, 247, 247, 0.2) 78%
-    );
+    position: relative;
+}
+.internal_page_hero_img .bg-cover {
+    background-size: cover;
+    background-position: top;
+    height: 77%;
+   
+}
+.bg-height{
+    height: 77%;
 }
 
+.internal_page_hero_img .bg-gradient-to-b {
+    background: linear-gradient(to bottom, #8941C4 78%, rgba(247, 247, 247, 0.2) 78%);
+}
+
+.internal_page_hero_img h1, 
+.internal_page_hero_img p {
+    z-index: 15;
+    position: relative;
+    color: white !important;
+}
+
+.internal_page_hero_img img {
+    z-index: 15;
+    position: relative;
+}
 
 .custom_bg_color{
     background-image:url('./assets/case/bg-color.png') ;
