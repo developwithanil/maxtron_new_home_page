@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import useWebAnimations from "@wellyshen/use-web-animations";
-import MainImg from "../assets/internal/main.png"; // Ensure the path is correct
+import MainImg from "../assets/internal/main.png";
 import "../animation.css";
 
 const BackgroundVideo: React.FC = () => {
-  // Animation hook for the image
   const { ref, getAnimation } = useWebAnimations<HTMLImageElement>({
     keyframes: [
       { transform: "translateY(-25px)" },
@@ -13,14 +12,13 @@ const BackgroundVideo: React.FC = () => {
     ],
     timing: {
       delay: 300,
-      duration: 1500, // Increased speed of animation
+      duration: 1500,
       iterations: Infinity,
       direction: "alternate",
       easing: "ease-in-out",
     },
   });
 
-  // Pause animation on hover and resume on mouse leave
   const handleMouseEnter = () => {
     getAnimation()?.pause();
   };
