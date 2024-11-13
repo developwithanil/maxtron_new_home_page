@@ -1,7 +1,7 @@
 import React from "react";
 // import video from "../assets/hero.mp4";
 import hdnewvideo from "../assets/hero_video.mp4";
-import newherovideo from "../assets/newherovideo.mp4";
+// import newherovideo from "../assets/newherovideo.mp4";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
