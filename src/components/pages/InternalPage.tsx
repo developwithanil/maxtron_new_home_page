@@ -69,9 +69,10 @@ const InternalPage: React.FC<InternalPageProps> = ({ caseStudies }) => {
   alt="hero" 
   className={`
     relative 
-    ${Number(id) === 1 ? 'lg:w-[64%] ' : 'lg:w-[50%]'}
+    ${Number(id) === 1 ? 'lg:w-[64%]' : 'lg:w-[50%]'}
     h-[90%]
     ${Number(id) === 2 ? 'w-[80%] h-[80%]' :  'w-[100%] h-[90%]'}
+    
   `} 
 />
 

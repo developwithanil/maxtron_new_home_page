@@ -28,6 +28,7 @@ import shaperCultMobile from "../../assets/internal/shaper2.svg";
 import typescript from "../../assets/internal/typescript.svg";
 import shaperCultLogo from "../../assets/internal/shaper3.svg";
 import aws from "../../assets/internal/aws.svg";
+import hyper from "../../assets/internal/hyper.png"
 
 import tailwind from "../../assets/internal/tailwind.svg";
 import hyper1 from "../../assets/internal/hyper1.svg";
@@ -311,7 +312,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     mobileImage: hyper2,
     keyFeaturesImage: hyper3,
-    bgImage:casestudy1bg,
+    bgImage:hyper,
   },
   {
     title: "DECENTRALIZED AI PLATEFORM",
@@ -593,7 +594,7 @@ export const caseStudies: CaseStudy[] = [
 
     mobileImage: web32,
     keyFeaturesImage: web33,
-    bgImage:casestudy1bg,
+    bgImage:bg2,
   },
    {
     title: "VOTING BLOCK USA",
@@ -691,7 +692,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     mobileImage: vote,
     keyFeaturesImage: herovote,
-    bgImage:bg2,
+    bgImage:bg3,
   },
 
 ]

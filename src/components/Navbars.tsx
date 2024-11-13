@@ -28,9 +28,8 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`bg-white shadow-lg rounded-3xl mx-4 sm:mx-24 mt-4 sm:mt-6 
+      className={`bg-white shadow-lg rounded-3xl mx-4 sm:mx-4 md:mx-7 lg:mx-16 mt-4 sm:mt-6 
         ${isSticky ? "fixed top-0 left-0 right-0 z-50" : ""}
-        w-[97%] md:w-[85%] lg:w-[80%]
       `}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,36 +47,36 @@ const Navbar: React.FC = () => {
 
           {/* Desktop and Tablet Menu */}
           <div className="hidden md:flex items-center justify-end flex-1">
-            <div className="flex items-center space-x-2 lg:space-x-6 mr-2 ">
+            <div className="flex items-center space-x-3 lg:space-x-6">
               <NavLink
                 to="/case-studies"
-                className="text-[#4E009C] hover:text-purple-800 px-2 py-2 rounded-md text-sm font-medium"
+                className="text-[#4E009C] hover:text-purple-800 px-2 py-2 rounded-md text-sm lg:text-base font-medium"
               >
                 Case Studies
               </NavLink>
               <NavLink
                 to="/services"
-                className="text-[#4E009C] hover:text-purple-800 px-2 lg:px-3 py-2 rounded-md text-sm font-medium"
+                className="text-[#4E009C] hover:text-purple-800 px-2 lg:px-3 py-2 rounded-md text-sm lg:text-base font-medium"
               >
                 Services
               </NavLink>
               <NavLink
                 to="/industries"
-                className="text-[#4E009C] hover:text-purple-800 px-2 lg:px-3 py-2 rounded-md text-sm font-medium"
+                className="text-[#4E009C] hover:text-purple-800 px-2 lg:px-3 py-2 rounded-md text-sm lg:text-base font-medium"
               >
                 Industries
               </NavLink>
               <NavLink
                 to="/about"
-                className="text-[#4E009C] hover:text-purple-800 px-2 lg:px-3 py-2 rounded-md text-sm font-medium"
+                className="text-[#4E009C] hover:text-purple-800 px-2 lg:px-3 py-2 rounded-md text-sm lg:text-base font-medium"
               >
                 About Us
               </NavLink>
             </div>
-            <div className="flex items-center space-x-2 lg:space-x-2 xl:ml-6">
+            <div className="flex items-center space-x-3 lg:space-x-4 xl:ml-6">
               <Link
                 to="/contact"
-                className="text-white bg-[#4E009C] hover:bg-purple-800 px-4 lg:px-8 py-2 rounded-full text-xs lg:text-sm font-medium whitespace-nowrap"
+                className="text-white bg-[#4E009C] hover:bg-purple-800 px-4 lg:px-6 xl:px-8 py-2 rounded-full text-xs lg:text-sm font-medium whitespace-nowrap"
               >
                 Contact Us
               </Link>
@@ -85,13 +84,14 @@ const Navbar: React.FC = () => {
                 onClick={() =>
                   window.open("https://calendly.com/business-maxtron/30min")
                 }
-                className="text-white bg-[#4E009C] hover:bg-purple-800 px-4 lg:px-8 py-2 rounded-full text-xs lg:text-sm font-medium whitespace-nowrap"
+                className="text-white bg-[#4E009C] hover:bg-purple-800 px-4 lg:px-6 xl:px-8 py-2 rounded-full text-xs lg:text-sm font-medium whitespace-nowrap"
               >
                 Book a Call
               </button>
             </div>
           </div>
 
+          {/* Mobile Menu Toggle */}
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
