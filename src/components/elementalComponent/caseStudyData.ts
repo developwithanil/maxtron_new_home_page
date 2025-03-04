@@ -12,11 +12,30 @@ import sequelize from "../../assets/internal/sequelize.svg";
 import figma from "../../assets/internal/figma.svg";
 import react from "../../assets/internal/react.svg";
 import casestudy1bg from "../../assets/internal/casestudy1bg.png";
+import mongodb from "../../assets/internal/mongodb.png";
+import talwindcss from "../../assets/internal/talwindcss.png";
+import js from "../../assets/internal/js.png";
+import nodejs from "../../assets/internal/nodejs.png";
+import firebase from "../../assets/internal/firebase.png";
+import cicd from "../../assets/internal/cicd.jpeg";
+import nestjs from "../../assets/internal/nestjs.png";
+import web3 from "../../assets/internal/web3.png";
+
+
+
+
+
 // import bgimage2 from "../../assets/internal/bgimage2.png";
 import bg2 from "../../assets/internal/bg2.png";
 import bg3 from "../../assets/internal/bg3.png";
 import bg4 from "../../assets/internal/bg4.png";
 import mobile from "../../assets/internal/mobile.png";
+import gsmobile from "../../assets/internal/gsmobile.png";
+import gro8hero from "../../assets/internal/gro8hero.png";
+import gro8mobile from "../../assets/internal/gro8mobile.png";
+import gro8feature from "../../assets/internal/gro8feature.png";
+
+
 // import shaperCultHero from "../../assets/internal/shaper1.svg";
 import usablock from "../../assets/internal/usablock.png";
 import vote from "../../assets/internal/vote.png";
@@ -29,6 +48,10 @@ import typescript from "../../assets/internal/typescript.svg";
 import shaperCultLogo from "../../assets/internal/shaper3.svg";
 import aws from "../../assets/internal/aws.svg";
 import hyper from "../../assets/internal/hyper.png"
+import goodstanding from "../../assets/internal/goodstanding.png"
+import gsfeature from "../../assets/internal/gsfeature.png";
+
+
 
 import tailwind from "../../assets/internal/tailwind.svg";
 import hyper1 from "../../assets/internal/hyper1.svg";
@@ -43,6 +66,8 @@ import dial3 from "../../assets/internal/dial3.svg";
 import web31 from "../../assets/internal/web31.svg";
 import web32 from "../../assets/internal/web32.svg";
 import web33 from "../../assets/internal/web33.svg";
+
+
 
 export const caseStudies: CaseStudy[] = [
   {
@@ -692,6 +717,248 @@ export const caseStudies: CaseStudy[] = [
     ],
     mobileImage: vote,
     keyFeaturesImage: herovote,
+    bgImage:bg3,
+  },
+
+  {
+    title: "Good Standing",
+    subtitle: "Connects people who can help to the people who need help",
+    heroImage: goodstanding,
+    industryInfo: "Web3.0, Gig-economy, non-profits",
+    projectDuration: "5 Months",
+    theprocessText: "The Process",
+
+    clientSatisfaction: 5.0,
+    problemSolutionResult: [
+      {
+        heading: "Use Case",
+        subheading: "",
+        points: [
+          "The Good Standing platform streamlines collaboration between organizations and volunteers by offering location-based task management, a reward system with coupons and badges, and a secure blockchain-powered marketplace. With robust admin oversight, real-time communication, and gamified engagement features, it ensures a scalable, user-friendly, and impactful volunteer management ecosystem.",
+        ],
+      },
+      {
+        heading: "Problem",
+        subheading: "",
+        points: [
+          "The problem addressed by the Good Standing platform was the lack of an efficient, engaging, and secure system for organizations to manage volunteer activities. Existing solutions failed to provide location-based task allocation, seamless volunteer-task matching, and engaging features like rewards and challenges, resulting in low volunteer participation, inefficient task management, and trust issues due to the absence of proper oversight.",
+        ],
+      },
+      {
+        heading: "Solution",
+        subheading: "",
+        points: [
+          "The solution provided by Good Standing is a comprehensive platform where organizations can create tasks linked to rewards (coupons and badges), volunteers can discover and complete location-based tasks, and both parties can communicate through real-time chat. The platform includes a dynamic coupon marketplace secured with blockchain (Web3.js) for transparent transactions, a challenge feature for enhanced engagement, and a robust admin panel that ensures trust by authorizing organizations and overseeing activities, creating a streamlined, secure, and engaging volunteer management ecosystem.",
+        ],
+      },
+    ],
+    techs: [
+      { name: "Mongo DB", icon: mongodb },
+      { name: "Javascript", icon: js },
+      { name: "Typescript", icon: typescript },
+      { name: "Talwind CSS", icon: talwindcss },
+      { name: "NestJS", icon: nestjs },
+      { name: "Node JS", icon: nodejs },
+      { name: "Figma", icon: figma },
+      { name: "React", icon: react },
+      { name: "AWS", icon: aws },
+      { name: "Firebase", icon: firebase },
+      { name: "CI/CD", icon: cicd },
+      { name: "Web3.js", icon: web3 },
+    ],
+    processSteps: [
+      {
+        title: "Identify Requirements",
+        description: [
+          "Conducted research to understand the needs of organizations, volunteers, and admins, focusing on secure task management, location-based recommendations, real-time communication, and a user-friendly interface with a robust reward system.",
+        ],
+      },
+      {
+        title: "Technology Selection",
+        description: [
+          "Selected a modern tech stack including React, JavaScript, TypeScript, Tailwind CSS for the frontend, Nest.js, Node.js for the backend, and Web3.js for secure blockchain-backed coupon transactions. AWS, Firebase, and MongoDB were chosen for scalable cloud services and data management.",
+        ],
+      },
+      {
+        title: "System Architecture Design",
+        description: [
+          "Designed a secure architecture supporting user authentication, real-time task management, data integrity, and a blockchain-powered coupon marketplace, all managed through a centralized admin panel.",
+        ],
+      },
+      {
+        title: "Development And Security Measures",
+        description: [
+          "Developed robust backend infrastructure and intuitive frontend interfaces. Implemented strong encryption protocols to secure user data and transactions, ensuring data integrity and user anonymity.",
+        ],
+      },
+      {
+        title: "Testing, Deployment and Maintenance",
+        description: [
+          "Performed comprehensive testing and seamless deployment using CI/CD pipelines. The platform undergoes continuous maintenance and updates based on user feedback, technological advancements, and evolving user needs.",
+        ],
+      },
+    ],
+    keyFeatures: [
+      {
+        title: "Dual User Roles",
+        details: [
+          "Separate user profiles and workflows for organizations and volunteers.",
+        ],
+      },
+      {
+        title: "Task Management",
+        details: [
+          "Organizations can create, manage, and approve tasks linked with badges and coupons.",
+        ],
+      },
+      {
+        title: "Location-Based Recommendations",
+        details: [
+          "Tasks are displayed to volunteers based on proximity, improving task completion rates.",
+        ],
+      },
+      {
+        title: "Coupon Marketplace",
+        details: [
+          "A blockchain-secured marketplace where users can buy, redeem, and trade coupons.",
+        ],
+      },
+      {
+        title: "Challenge Feature",
+        details: [
+          "Grouped tasks that provide extra rewards upon successful completion, boosting engagement.",
+        ],
+      },
+      {
+        title: "Real-Time Communication",
+        details: [
+          "Integrated chat feature allowing seamless interaction between volunteers and organizations.",
+        ],
+      },
+      {
+        title: "Gamified Reward System",
+        details: [
+          "Automatic distribution of badges and coupons upon task completion to motivate participation.",
+        ],
+      },
+      {
+        title: "Admin Panel",
+        details: [
+          "Comprehensive admin dashboard for approving organizations, monitoring tasks, and ensuring platform integrity.",
+        ],
+      },
+      {
+        title: "Secure Transactions",
+        details: [
+          "Web3.js integration for secure, transparent coupon transactions.",
+        ],
+      }
+    ],
+    mobileImage: gsmobile,
+    keyFeaturesImage: gsfeature,
+    bgImage:bg3,
+  },
+
+  {
+    title: "GRO8",
+    subtitle: "10X valuation: Building biggest cross-border investment platform",
+    heroImage: gro8hero,
+    industryInfo: "Venture capital & private equity",
+    projectDuration: "4 Months",
+    theprocessText: "The Process",
+
+    clientSatisfaction: 5.0,
+    problemSolutionResult: [
+      {
+        heading: "Use Case",
+        subheading: "",
+        points: [
+          "Unified Investment and Mentorship Platform for Startups",
+        ],
+      },
+      {
+        heading: "Problem",
+        subheading: "",
+        points: [
+          "Traditional startup ecosystems favor large investors, limiting opportunities for individual investors. Founders, investors, and mentors face challenges in connecting due to fragmented platforms, slow onboarding processes, scattered communication, and inefficient investment tracking and approval systems.",
+        ],
+      },
+      {
+        heading: "Solution",
+        subheading: "",
+        points: [
+          "GRO8 solves these issues by providing a unified platform where startups can pitch ideas, investors can fund projects, and mentors can offer guidance. The platform features streamlined multi-role onboarding, real-time secure chat, a robust admin dashboard for efficient management, and secure, traceable investment processes. Powered by scalable AWS infrastructure, GRO8 ensures reliable performance and long-term growth support.",
+        ],
+      },
+    ],
+    techs: [
+    ],
+    processSteps: [
+      {
+        title: "Identify Requirements",
+        description: [
+          "Researched the needs of founders, investors, mentors, and admins, focusing on secure transactions, seamless onboarding, real-time communication, and scalable infrastructure.",
+        ],
+      },
+      {
+        title: "Technology Selection",
+        description: [
+          "Chose React.js, Tailwind CSS for frontend; Nest.js, Node.js, TypeScript for backend; MongoDB for data storage; Firebase for authentication; and AWS for scalable hosting.",
+        ],
+      },
+      {
+        title: "System Architecture Design",
+        description: [
+          "Designed a secure, scalable architecture supporting multi-role onboarding, real-time communication, investment tracking, and mentorship scheduling with robust user authentication and data protection.",
+        ],
+      },
+      {
+        title: "Development And Security Measures",
+        description: [
+          "Built a secure backend and intuitive frontend with role-based user experiences. Implemented strong cryptographic protocols and Firebase authentication to ensure data privacy and investment integrity.",
+        ],
+      },
+      {
+        title: "Testing, Deployment and Maintenance",
+        description: [
+          "Conducted extensive testing, used CI/CD pipelines for automated deployment, and provided continuous maintenance, incorporating user feedback and adapting to technological advancements.",
+        ],
+      },
+    ],
+    keyFeatures: [
+      {
+        title: "Multi-role Onboarding",
+        details: [
+          "Separate registration flows for investors, mentors, and startups.",
+        ],
+      },
+      {
+        title: "Admin Dashboard",
+        details: [
+          "Approve or reject applications, manage user roles, and monitor platform activities.",
+        ],
+      },
+      {
+        title: "Investment Management",
+        details: [
+          "End-to-end tracking and management of startup investments.",
+        ],
+      },
+      {
+        title: "Mentorship Scheduling",
+        details: [
+          "Allow mentors to schedule sessions and provide feedback.",
+        ],
+      },
+      {
+        title: "Real-time Chat",
+        details: [
+          "Secure messaging for seamless communication among stakeholders.",
+        ],
+      }
+    ],
+    mobileImage: gro8mobile,
+    keyFeaturesImage: gro8feature,
     bgImage:bg3,
   },
 

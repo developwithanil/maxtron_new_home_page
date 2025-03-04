@@ -11,6 +11,7 @@ import WhatWeDo from "./WhatWeDo";
 import Slider from "./Slider";
 import HeroSection from "./Hero";
 import MakingThemSuccessful from "./MakingThemSuccessful";
+// import Footer from "./Footer";
 
 const Banner = () => {
   return (
