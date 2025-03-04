@@ -88,7 +88,7 @@ const CaseStudyList: React.FC = () => {
             <img
               src={industry.img}
               alt={industry.subheading}
-              className="w-full object-cover mb-4"
+              className="w-full object-cover mb-4 rounded-t-xl"
             />
             <b className="mb-2 text-sm md:text-[16px] w-fit p-2 md:p-4 py-0 rounded-lg">
               {industry.subheading}

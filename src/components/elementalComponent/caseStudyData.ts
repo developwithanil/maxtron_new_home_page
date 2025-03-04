@@ -18,7 +18,6 @@ import js from "../../assets/internal/js.png";
 import nodejs from "../../assets/internal/nodejs.png";
 import firebase from "../../assets/internal/firebase.png";
 import cicd from "../../assets/internal/cicd.jpeg";
-import nestjs from "../../assets/internal/nestjs.png";
 import web3 from "../../assets/internal/web3.png";
 
 
@@ -892,6 +891,17 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
     techs: [
+      { name: "Mongo DB", icon: mongodb },
+      { name: "Javascript", icon: js },
+      { name: "Typescript", icon: typescript },
+      { name: "Talwind CSS", icon: talwindcss },
+      { name: "NestJS", icon: nestjs },
+      { name: "Node JS", icon: nodejs },
+      { name: "Figma", icon: figma },
+      { name: "React", icon: react },
+      { name: "AWS", icon: aws },
+      { name: "Firebase", icon: firebase },
+      { name: "CI/CD", icon: cicd },
     ],
     processSteps: [
       {
