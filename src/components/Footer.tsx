@@ -97,7 +97,7 @@ const Footer = () => {
       <div className="bg-purple-800 py-4 mt-8">
         <div className="container mx-auto px-2 md:px-4 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-[#FFFFFF] mb-4 md:mb-0 text-center md:text-left">
-            © 2024 by Maxtron Innovations
+            © {new Date().getFullYear()} by Maxtron Innovations
           </p>
           <div className="flex md:justify-start  mb-4 md:mb-0">
             <a href="#" className="text-[#FFFFFF] text-sm hover:text-white">
