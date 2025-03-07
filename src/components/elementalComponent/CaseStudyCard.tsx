@@ -25,7 +25,7 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
             className="w-10 h-10 rounded-full mr-4"
           />
 
-          <p className="text-sm text-left text-black">{description}</p>
+          <p className="text-sm text-left text-black ">{description}</p>
         </div>
       </div>
     </div>
