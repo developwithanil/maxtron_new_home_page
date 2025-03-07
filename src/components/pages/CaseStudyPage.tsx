@@ -6,6 +6,9 @@ import img4 from "../../assets/case/case4.png";
 import img5 from "../../assets/case/case5.png";
 import img6 from "../../assets/case/case6.png";
 import img8 from "../../assets/case/case8.png";
+import img9 from "../../assets/case/case9.png";
+import img10 from "../../assets/case/case10.png";
+
 import ContactForm from "../ContactForm";
 import MoreCaseStudies from "./MoreCaseStudies";
 import { useState } from "react";
@@ -58,6 +61,16 @@ const caseStudyData = [
       heading: "A comprehensive solution that leverages blockchain's inherent characteristics to ensure anonymity, integrity, accuracy, and verifiability in the voting process.",
       subheading: 'Blockchain-Based E-Voting System',
   },
+  {
+    img: img9,
+    heading: "Good Standing is a volunteer management platform that connects organizations and volunteers through location-based tasks, rewards, and real-time communication. It features a secure blockchain-backed coupon marketplace, a gamified challenge system, and an admin panel for oversight. Built with React, Nest.js, Web3.js, AWS, and Firebase, it ensures a scalable, secure, and engaging experience.",
+    subheading: 'Good Standing',
+},
+{
+  img: img10,
+  heading: "Gro8 is a dynamic platform connecting investors, mentors, and startup founders in one place. It enables seamless startup funding, mentorship, and collaboration, with an admin dashboard, real-time chat, and secure investment tracking. Built with Nest.js, React, Firebase, AWS, and MongoDB, Gro8 ensures a scalable, efficient, and secure experience for all users.",
+  subheading: 'Gro8',
+},
 ];
 
 const CaseStudyList: React.FC = () => {
@@ -75,7 +88,7 @@ const CaseStudyList: React.FC = () => {
             <img
               src={industry.img}
               alt={industry.subheading}
-              className="w-full object-cover mb-4"
+              className="w-full object-cover mb-4 rounded-t-xl"
             />
             <b className="mb-2 text-sm md:text-[16px] w-fit p-2 md:p-4 py-0 rounded-lg">
               {industry.subheading}
