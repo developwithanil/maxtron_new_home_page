@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
   return (
-    <nav className="fixed bg-custom-gradient p-4  left-0 right-0 z-50">
+    <nav className="fixed bg-custom-gradient p-4   left-0 right-0 z-50">
       <div className="container mx-auto flex   justify-between items-center">
         {/* <div className="flex justify-between items-center"> */}
         <div className=" w-full lg:flex hidden  justify-between ">

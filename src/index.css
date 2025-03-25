@@ -7,6 +7,9 @@
 .bg-custom-gradient {
   background: linear-gradient(90deg, #481658 10%, #773d75 20%, #69348f 100%);
 }
+.bg-custom-color {
+  background: linear-gradient(270deg,#F2D8DD 0%,#FFF 100%);
+}
 
 @keyframes marquee {
   from {

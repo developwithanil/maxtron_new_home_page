@@ -12,6 +12,7 @@ import "./page.css";
 import CaseStudyPage from "./components/pages/CaseStudyPage";
 import InternalPage from "./components/pages/InternalPage";
 import { caseStudies } from "./components/elementalComponent/caseStudyData";
+import CaseStudy from "./components/pages/CaseStudy";
 
 const Home: React.FC = () => (
   <div>
@@ -52,6 +53,7 @@ const App: React.FC = () => {
         <Route path="/industries" element={<Industries />} />
         <Route path="/insights" element={<Insights />} />
         <Route path="/case-studies" element={<CaseStudyPage />} />
+        <Route path="/case-study" element={<CaseStudy />} />
         <Route
           path="/Maxtron/:title/:id"
           element={<InternalPage caseStudies={caseStudies} />}

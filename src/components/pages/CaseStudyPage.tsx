@@ -107,7 +107,7 @@ const CaseStudyPage = () => {
   const [showMoreCaseStudies, setShowMoreCaseStudies] = useState(false);
 
   const handleButtonClick = () => {
-    setShowMoreCaseStudies(!showMoreCaseStudies); // Toggle visibility
+    setShowMoreCaseStudies(!showMoreCaseStudies); 
   };
 
   return (
