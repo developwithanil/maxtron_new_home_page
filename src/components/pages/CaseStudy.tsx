@@ -43,8 +43,8 @@ const industries = ["Mobile Apps", "Web Application", "Websites"];
 const CaseStudy = () => {
   const [isProjectTypeOpen, setIsProjectTypeOpen] = useState(false);
   const [isIndustryOpen, setIsIndustryOpen] = useState(false);
-  const [selectedProjectType, setSelectedProjectType] = useState("");
-  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [, setSelectedProjectType] = useState("");
+  const [, setSelectedIndustry] = useState("");
 
   return (
     <div className="w-full flex flex-col gap-8 md:gap-10 lg:gap-12 mt-2 mb-4">
@@ -82,7 +82,7 @@ const CaseStudy = () => {
           </div>
           <div
             className={`relative flex justify-center border-l-[1px] border-r-[1px] border-[rgba(0,0,0,0.20)] ${
-              isProjectTypeOpen ? "bg-[#F2D8DD_0]" : ""
+              isProjectTypeOpen ? "bg-[#f8e7ea]" : ""
             } border-solid flex-col items-start flex-[1_0_0] px-16 py-8`}
           >
             <motion.div
@@ -90,7 +90,7 @@ const CaseStudy = () => {
               className="flex justify-between w-full cursor-pointer"
             >
               <p
-                className={`text-[#1E1E1E] [font-family:Switzer] text-2xl font-semibold leading-[120%]`}
+                className={` ${isProjectTypeOpen ? "text-[#8941C4]":"text-[#1E1E1E]"} [font-family:Switzer] text-2xl font-semibold leading-[120%]`}
               >
                 Project type
               </p>
@@ -108,30 +108,32 @@ const CaseStudy = () => {
                 height: isProjectTypeOpen ? "auto" : 0,
               }}
               transition={{ duration: 0.3 }}
-              className="absolute  top-full left-0 w-full bg-[#fff]  z-50 border-l-[1px] border-r-[1px] border-b-[1px] border-[rgba(0,0,0,0.20)] px-16  pb-4"
+              className="absolute  top-full left-0 w-full bg-[#f8e7ea]  z-50 border-l-[1px] border-r-[1px] border-b-[1px] border-[rgba(0,0,0,0.20)] px-16  pb-4"
             >
               {projectTypes.map((type, index) => (
                 <div
                   key={index}
-                  className="text-[#1E1E1E] [font-family:Switzer] text-2xl font-semibold leading-[120%] cursor-pointer w-full flex justify-between py-3 border-t-[1px] border-[rgba(0,0,0,0.20)]"
+                  className={`text-[#1E1E1E] [font-family:Switzer] text-2xl font-semibold leading-[120%] cursor-pointer w-full flex justify-between py-3 border-t-[1px] border-[rgba(0,0,0,0.20)]`}
                   onClick={() => {
                     setSelectedProjectType(type);
                     setIsProjectTypeOpen(false);
                   }}
                 >
                   <div>{type}</div>
-                  <div className="relative bg-green-400">f</div>
+                  <div className="relative bg-green-400"></div>
                 </div>
               ))}
             </motion.div>
           </div>
-          <div className=" relative flex justify-center border-[rgba(0,0,0,0.20)] border-solid flex-col items-start flex-[1_0_0] px-16 py-8 ">
+          <div className={`relative flex justify-center border-l-[1px] border-r-[1px] border-[rgba(0,0,0,0.20)] ${
+              isIndustryOpen ? "bg-[#f8e7ea]" : ""
+            } border-solid flex-col items-start flex-[1_0_0] px-16 py-8`}>
             <motion.div
               onClick={() => setIsIndustryOpen(!isIndustryOpen)}
               className="flex justify-between w-full cursor-pointer"
             >
               <p
-                className={`text-[#1E1E1E] [font-family:Switzer] text-2xl font-semibold leading-[120%]`}
+                className={`${isIndustryOpen ? "text-[#8941C4]":"text-[#1E1E1E]"} [font-family:Switzer] text-2xl font-semibold leading-[120%]`}
               >
                 Industry
               </p>
@@ -150,18 +152,19 @@ const CaseStudy = () => {
                 height: isIndustryOpen ? "auto" : 0,
               }}
               transition={{ duration: 0.3 }}
-              className="absolute top-full left-0 w-full    z-50 mt-2 overflow-hidden"
+              className="absolute  top-full left-0 w-full bg-[#f8e7ea]  z-50 border-l-[1px] border-r-[1px] border-b-[1px] border-[rgba(0,0,0,0.20)] px-16  pb-4"
             >
-              {industries.map((industry, index) => (
+              {industries.map((type, index) => (
                 <div
                   key={index}
-                  className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  className="text-[#1E1E1E] [font-family:Switzer] text-2xl font-semibold leading-[120%] cursor-pointer w-full flex justify-between py-3 border-t-[1px] border-[rgba(0,0,0,0.20)]"
                   onClick={() => {
-                    setSelectedIndustry(industry);
+                    setSelectedIndustry(type);
                     setIsIndustryOpen(false);
                   }}
                 >
-                  {industry}
+                  <div>{type}</div>
+                  <div className="relative bg-green-400"></div>
                 </div>
               ))}
             </motion.div>
