@@ -91,8 +91,8 @@ const ContactForm: React.FC = () => {
         </div>
 
         {/* Right Section - Form */}
-        <div className="w-full lg:w-1/2  p-6 sm:p-8 ">
-          <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+        <div className="w-full lg:w-1/2  p-4 sm:p-6 border-[2px] rounded-2xl  border-solid border-[#7A3A82]">
+          <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label htmlFor="fullName" className="block text-gray-700 font-medium mb-2 font-['Switzer']">
                 Full Name
