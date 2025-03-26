@@ -81,7 +81,7 @@ const CasesCard = () => {
         {caseStudyData.map((item, index) => (
           <div
             key={index}
-            className="relative group overflow-hidden rounded-[32px] aspect-[5/3] cursor-pointer"
+            className="relative group overflow-hidden rounded-[32px] aspect-[4/3] cursor-pointer"
           >
             {/* Background Image */}
             <div className="absolute inset-0 overflow-hidden">
@@ -93,7 +93,7 @@ const CasesCard = () => {
             </div>
 
             {/* Type Label */}
-            <div className="absolute top-5 left-5 font-semibold bg-[#8952b6] text-lg text-white px-4 py-2 rounded-3xl z-20">
+            <div className="absolute top-3 md:top-5 left-4 md:left-5 font-semibold bg-[#8952b6] text-lg text-white px-4 py-2 rounded-3xl z-20">
               {item.type}
             </div>
 
