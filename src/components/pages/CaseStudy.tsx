@@ -13,11 +13,12 @@ import GovtHy from "../../../public/client/govtHyryana.svg";
 import Ludo from "../../../public/client/ludoLove.svg";
 import cadbury from "../../../public/client/cadbury.svg";
 import Audi from "../../../public/client/audi.svg";
-import { ArrowDown, ArrowUp } from "../VectorImage";
-import { motion } from "motion/react";
+import { ArrowDown, ArrowUp, WhiteLogo } from "../VectorImage";
+import { motion } from "motion/react"; 
 import { useState } from "react";
 import CasesCard from "../elementalComponent/CasesCard";
 import ContactForm from "../ContactForm";
+import { Link } from "react-router-dom";
 
 const clients = [
   { name: "Mercedes", logo: Mercedes },
@@ -48,16 +49,18 @@ const CaseStudy = () => {
 
   return (
     <div className="w-full flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 mt-2 mb-4 relative">
-      <div className='flex w-full flex-col h-[20rem] sm:h-[24rem] md:h-[28rem] lg:h-[35rem] xl:h-[40rem] justify-center items-center [background:linear-gradient(0deg,rgba(0,0,0,0.40)_0%,rgba(0,0,0,0.40)_100%),url("./assets/case/hero.png")_lightgray_50%_/_cover_no-repeat]'>
-        <div className="w-full max-w-[88rem] px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-6">
-          <p className="text-[#FFFFFF] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-['Switzer']">CASE STUDIES</p>
-          <p className="text-[#FFFFFF] text-lg  lg:text-xl max-w-2xl font-['Open_Sans_Hebrew']">
+      <div className='flex w-full max-w-[96rem] mx-auto flex-col h-[20rem] sm:h-[24rem] md:h-[28rem] lg:h-[35rem] xl:h-[40rem] justify-center items-start [background:linear-gradient(0deg,rgba(0,0,0,0.40)_0%,rgba(0,0,0,0.40)_100%),url("./assets/case/hero.png")_lightgray_50%_/_cover_no-repeat]'>
+        <div className="md:w-1/2  w-full max-w-[88rem]  px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col gap-1 sm:gap-2 md:gap-3 lg:gap-5">
+          <p className="text-[#FFFFFF] font-['Switzer'] text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold  tracking-[0.02em] leading-[160%] mb-2 sm:mb-3 md:mb-4">
+            CASE STUDIES
+          </p>
+          <p className={`flex-[1_0_0] text-white [font-family:"Open_Sans_Hebrew"] text-xl sm:text-xl md:text-2xl lg:text-3xl font-normal `}>
             Our products are reshaping how industry leaders conduct their core business operations.
           </p>
         </div>
       </div>
 
-      <div className="relative z-0 marquee-container w-[95%] sm:w-[90%] md:w-[85%] mx-auto max-w-[88rem]">
+      <div className="relative z-30 marquee-container w-[95%] sm:w-[90%] md:w-[85%] mx-auto max-w-[88rem]">
         <div className="animate-marquee whitespace-nowrap">
           {clients.concat(clients).map((client, index) => (
             <div key={index} className="marquee-item inline-block">
@@ -105,7 +108,7 @@ const CaseStudy = () => {
                 height: isProjectTypeOpen ? "auto" : 0,
               }}
               transition={{ duration: 0.3 }}
-              className="absolute top-full left-0 w-full bg-[#f8e7ea] z-30 border-l-[1px] border-r-[1px] border-b-[1px] border-[rgba(0,0,0,0.20)] px-4 sm:px-8 md:px-12 lg:px-16 pb-4"
+              className="absolute top-full left-0 w-full bg-[#f8e7ea] z-40 border-l-[1px] border-r-[1px] border-b-[1px] border-[rgba(0,0,0,0.20)] px-4 sm:px-8 md:px-12 lg:px-16 pb-4"
             >
               {projectTypes.map((type, index) => (
                 <div
@@ -124,7 +127,7 @@ const CaseStudy = () => {
           </div>
 
           {/* Industry Dropdown */}
-          <div className={`relative ${isProjectTypeOpen ? "hidden md:block":""} z-40 flex justify-center border-[rgba(0,0,0,0.20)] ${
+          <div className={`relative z-30 flex ${isProjectTypeOpen ? "hidden md:block":""} justify-center border-[rgba(0,0,0,0.20)] ${
             isIndustryOpen ? "bg-[#f8e7ea]" : ""
           } border-solid flex-col items-start flex-[1_0_0] px-4 sm:px-8 md:px-12 lg:px-16 py-4 sm:py-6 md:py-8`}>
             <motion.div
@@ -174,6 +177,33 @@ const CaseStudy = () => {
         <CasesCard/>
       </div>
       <ContactForm/>
+      <div className="w-full relative -bottom-4 sm:-bottom-6 md:-bottom-8 lg:-bottom-10 xl:-bottom-12 bg-gradient-to-r from-[#D77DD4] via-[#481658] to-[#69348F] pb-10">
+  <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-10 py-10">
+    
+    {/* Logo */}
+    <div className="w-full md:w-1/2 flex justify-center md:justify-start">
+      <WhiteLogo/>
+    </div>
+
+    {/* Buttons */}
+    <div className="w-full md:w-1/2 flex flex-row md:flex-col justify-center md:justify-end items-center gap-4 ">
+      <Link to="/Contact">
+        <button className="text-sm px-5 py-2 rounded-lg bg-[#F5F5F5] text-black hover:text-white hover:bg-transparent border-2 bprder-solid border-white font-['Open_Sans'] font-bold transition hover:bg-white shadow-md">
+          Contact Us
+        </button>
+      </Link>
+      <button
+        onClick={() =>
+          window.open("https://calendly.com/business-maxtron/30min", "_blank")
+        }
+        className="text-sm px-5 py-2 rounded-lg bg-[#F5F5F5] text-black font-['Open_Sans'] hover:text-white hover:bg-transparent border-2 bprder-solid border-white font-bold transition hover:bg-white shadow-md"
+      >
+        Book a Call
+      </button>
+    </div>
+
+  </div>
+</div>
     </div>
   );
 };

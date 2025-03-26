@@ -72,7 +72,7 @@ const ContactForm: React.FC = () => {
               <div className="md:w-8 w-6 h-6 md:h-8">
                 <RightClick/>
               </div>
-              <div className="text-[#1E1E1E] [font-family:Inter] text-base font-normal leading-[120%]">
+              <div className="text-[#1E1E1E] [font-family:Inter] text-sm md:text-base font-normal leading-[120%]">
                 We will respond to you within 24 hours.
               </div>
             </li>
@@ -80,7 +80,7 @@ const ContactForm: React.FC = () => {
               <div className="md:w-8 w-6 h-6 md:h-8">
                 <RightClick/>
               </div>
-              <div className="text-[#1E1E1E] [font-family:Inter] text-base font-normal leading-[120%]">
+              <div className="text-[#1E1E1E] [font-family:Inter] text-sm md:text-base font-normal leading-[120%]">
                 You will be talking with the domain expert pertaining to your requirements.
               </div>
             </li>
