@@ -49,8 +49,8 @@ const CaseStudy = () => {
     <div className="w-full flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 mt-2 mb-4 relative">
       <div className='flex w-full flex-col h-[20rem] sm:h-[24rem] md:h-[28rem] lg:h-[35rem] xl:h-[40rem] justify-center items-center [background:linear-gradient(0deg,rgba(0,0,0,0.40)_0%,rgba(0,0,0,0.40)_100%),url("./assets/case/hero.png")_lightgray_50%_/_cover_no-repeat]'>
         <div className="w-full max-w-[88rem] px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-6">
-          <p className="text-[#FFFFFF] text-xl sm:text-2xl md:text-3xl lg:text-4xl">CASE STUDIES</p>
-          <p className="text-[#FFFFFF] text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl">
+          <p className="text-[#FFFFFF] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-['Switzer']">CASE STUDIES</p>
+          <p className="text-[#FFFFFF] text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl font-['Open_Sans_Hebrew']">
             Our products are reshaping how industry leaders conduct their core business operations.
           </p>
         </div>
@@ -72,17 +72,19 @@ const CaseStudy = () => {
 
       <div className="w-[95%] sm:w-[90%] md:w-[85%] mx-auto max-w-[88rem] relative">
         <div className="grid grid-cols-1 sm:grid-cols-3 border-t border-[rgba(0,0,0,0.20)] border-solid">
-          <div className="p-3 sm:p-4 flex justify-center items-center text-[#8941C4] text-center [font-family:Switzer] text-lg sm:text-xl md:text-2xl font-bold leading-[120%]">
+          <div className="p-3 sm:p-4 flex justify-center items-center text-[#8941C4] text-center font-['Switzer'] text-lg sm:text-xl md:text-2xl font-bold leading-[120%]">
             All Cases
           </div>
 
           {/* Project Type Dropdown */}
-          <div className={`relative z-10 flex justify-center md:border-l md:border-r border-[rgba(0,0,0,0.20)] ${isProjectTypeOpen ? "bg-[#f8e7ea]" : ""} border-solid flex-col items-start flex-[1_0_0] px-4 sm:px-8 md:px-12 lg:px-16 py-4 sm:py-6 md:py-8`}>
+          <div className={`relative z-10 flex justify-center md:border-l md:border-r border-[rgba(0,0,0,0.20)] ${
+            isProjectTypeOpen ? "bg-[#f8e7ea]" : ""
+          } border-solid flex-col items-start flex-[1_0_0] px-4 sm:px-8 md:px-12 lg:px-16 py-4 sm:py-6 md:py-8`}>
             <motion.div
               onClick={() => setIsProjectTypeOpen(!isProjectTypeOpen)}
               className="flex justify-between w-full cursor-pointer"
             >
-              <p className={`${isProjectTypeOpen ? "text-[#8941C4]" : "text-[#1E1E1E]"} [font-family:Switzer] text-lg sm:text-xl md:text-2xl font-semibold leading-[120%]`}>
+              <p className={`${isProjectTypeOpen ? "text-[#8941C4]" : "text-[#1E1E1E]"} font-['Switzer'] text-lg sm:text-xl md:text-2xl font-semibold leading-[120%]`}>
                 Project type
               </p>
               <motion.div
@@ -102,12 +104,12 @@ const CaseStudy = () => {
                 height: isProjectTypeOpen ? "auto" : 0,
               }}
               transition={{ duration: 0.3 }}
-              className="absolute top-full left-0 w-full bg-[#f8e7ea] z-50 border-l border-r border-b border-[rgba(0,0,0,0.20)] px-4 sm:px-8 md:px-12 lg:px-16 pb-4"
+              className="absolute top-full left-0 w-full bg-[#f8e7ea] z-[100] border-l-[1px] border-r-[1px] border-b-[1px] border-[rgba(0,0,0,0.20)] px-4 sm:px-8 md:px-12 lg:px-16 pb-4"
             >
               {projectTypes.map((type, index) => (
                 <div
                   key={index}
-                  className="text-[#1E1E1E] [font-family:Switzer] text-base sm:text-lg md:text-xl lg:text-2xl font-semibold leading-[120%] cursor-pointer w-full flex justify-between py-2 sm:py-3 border-t border-[rgba(0,0,0,0.20)]"
+                  className="text-[#1E1E1E] font-['Switzer'] text-base sm:text-lg md:text-xl lg:text-2xl font-semibold leading-[120%] cursor-pointer w-full flex justify-between py-2 sm:py-3 border-t-[1px] border-[rgba(0,0,0,0.20)]"
                   onClick={() => {
                     setSelectedProjectType(type);
                     setIsProjectTypeOpen(false);
@@ -121,12 +123,14 @@ const CaseStudy = () => {
           </div>
 
           {/* Industry Dropdown */}
-          <div className={`${isProjectTypeOpen ? "hidden" :""} relative z-10 flex justify-center border-[rgba(0,0,0,0.20)] ${isIndustryOpen ? "bg-[#f8e7ea]" : ""} border-solid flex-col items-start flex-[1_0_0] px-4 sm:px-8 md:px-12 lg:px-16 py-4 sm:py-6 md:py-8`}>
+          <div className={`relative ${isProjectTypeOpen ? "hidden":""} z-10 flex justify-center border-[rgba(0,0,0,0.20)] ${
+            isIndustryOpen ? "bg-[#f8e7ea]" : ""
+          } border-solid flex-col items-start flex-[1_0_0] px-4 sm:px-8 md:px-12 lg:px-16 py-4 sm:py-6 md:py-8`}>
             <motion.div
               onClick={() => setIsIndustryOpen(!isIndustryOpen)}
               className="flex justify-between w-full cursor-pointer"
             >
-              <p className={`${isIndustryOpen ? "text-[#8941C4]" : "text-[#1E1E1E]"} [font-family:Switzer] text-lg sm:text-xl md:text-2xl font-semibold leading-[120%]`}>
+              <p className={`${isIndustryOpen ? "text-[#8941C4]" : "text-[#1E1E1E]"} font-['Switzer'] text-lg sm:text-xl md:text-2xl font-semibold leading-[120%]`}>
                 Industry
               </p>
               <motion.div
@@ -146,12 +150,12 @@ const CaseStudy = () => {
                 height: isIndustryOpen ? "auto" : 0,
               }}
               transition={{ duration: 0.3 }}
-              className={`absolute top-full left-0 w-full bg-[#f8e7ea]  z-40 border-l border-r border-b border-[rgba(0,0,0,0.20)] px-4 sm:px-8 md:px-12 lg:px-16 pb-4`}
+              className="absolute top-full left-0 w-full bg-[#f8e7ea] z-[100] border-l-[1px] border-r-[1px] border-b-[1px] border-[rgba(0,0,0,0.20)] px-4 sm:px-8 md:px-12 lg:px-16 pb-4"
             >
               {industries.map((type, index) => (
                 <div
                   key={index}
-                  className="text-[#1E1E1E] [font-family:Switzer] text-base sm:text-lg md:text-xl lg:text-2xl font-semibold leading-[120%] cursor-pointer w-full flex justify-between py-2 sm:py-3 border-t border-[rgba(0,0,0,0.20)]"
+                  className="text-[#1E1E1E] font-['Switzer'] text-base sm:text-lg md:text-xl lg:text-2xl font-semibold leading-[120%] cursor-pointer w-full flex justify-between py-2 sm:py-3 border-t-[1px] border-[rgba(0,0,0,0.20)]"
                   onClick={() => {
                     setSelectedIndustry(type);
                     setIsIndustryOpen(false);
