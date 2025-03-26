@@ -1,10 +1,12 @@
 import React, { useState, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import ContactImg from "../../public/formimg.svg";
-import { IoCheckmarkCircleOutline } from "react-icons/io5";
+
 import "../page.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { RightClick } from "./VectorImage";
+
 const ContactForm: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const location = useLocation();
@@ -12,8 +14,8 @@ const ContactForm: React.FC = () => {
 
   const sectionClassName =
     location.pathname === "/Contact"
-      ? "py-20 md:px-12 pt-36"
-      : "py-20 md:px-12";
+      ? "py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 pt-24 sm:pt-32 md:pt-36"
+      : "py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12";
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -56,122 +58,126 @@ const ContactForm: React.FC = () => {
 
   return (
     <section id="contact-us" className={sectionClassName}>
-      <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
-        <div className="lg:w-2/5 mb-8 lg:mb-0">
-          <h2 className="text-4xl font-normal text-black ">Talk to us and</h2>
-          <h2 className="text-4xl font-bold text-black mb-4">
-            get your project moving!
+      <div className="container mx-auto flex flex-col lg:flex-row bg-white shadow-lg rounded-2xl items-center p-3 md:p-5 justify-between gap-6 lg:gap-8">
+        {/* Left Section */}
+        <div className="lg:w-1/2 text-center lg:text-left">
+          <h2 className=" self-stretch text-[#1E1E1E] [font-family:Switzer] text-[40px] leading-[120%]">
+            Talk to us and
           </h2>
-          <ul className="mb-8">
-            <li className="flex items-center space-x-2 mb-4 ">
-              <IoCheckmarkCircleOutline className="text-red-500 h-8 w-8" />
-              <span className="text-sm">
+          <h2 className="self-stretch text-[#1E1E1E] [font-family:Switzer] font-bold text-[40px] leading-[120%]">
+            Get your project moving!
+          </h2>
+          <ul className="mb-8 mt-8 space-y-4">
+            <li className="flex items-center space-x-3">
+              <div className="md:w-8 w-6 h-6 md:h-8">
+                <RightClick/>
+              </div>
+              <div className="text-[#1E1E1E] [font-family:Inter] text-base font-normal leading-[120%]">
                 We will respond to you within 24 hours.
-              </span>
+              </div>
             </li>
-            <li className="flex items-center space-x-2 mb-4">
-              <IoCheckmarkCircleOutline className="text-red-500 h-12 w-12 md:h-8 md:w-8" />
-              <span className="text-sm">
-                You will be talking with the domain expert pertaining to your
-                requirements.
-              </span>
+            <li className="flex items-center space-x-3">
+              <div className="md:w-8 w-6 h-6 md:h-8">
+                <RightClick/>
+              </div>
+              <div className="text-[#1E1E1E] [font-family:Inter] text-base font-normal leading-[120%]">
+                You will be talking with the domain expert pertaining to your requirements.
+              </div>
             </li>
           </ul>
-          <div className=" rounded-lg">
-            <img src={ContactImg} alt="img" />
+          <div className="">
+            <img src={ContactImg} alt="Contact illustration" className="w-full h-auto" />
           </div>
         </div>
-        <div className="w-full lg:w-2/5 bg-white p-4 shadow-md rounded-lg ">
-          <form ref={formRef} onSubmit={handleSubmit}>
-            <div className="mb-4">
-              <label
-                htmlFor="fullName"
-                className="block text-gray-700 font-bold mb-2"
-              >
+
+        {/* Right Section - Form */}
+        <div className="w-full lg:w-1/2  p-6 sm:p-8 ">
+          <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+            <div>
+              <label htmlFor="fullName" className="block text-gray-700 font-medium mb-2 font-['Switzer']">
                 Full Name
               </label>
               <input
                 type="text"
                 id="fullName"
                 name="fullName"
-                className="w-full p-3 border border-gray-300 rounded-lg placeholder-bg"
-                placeholder="Full Name"
+                className="w-full p-3  rounded-lg placeholder-gray-400 bg-[#FCF4FE]  focus:border-transparent transition-all duration-300 font-['Open_Sans_Hebrew']"
+                placeholder="Enter your full name"
                 required
               />
             </div>
-            <div className="mb-4">
-              <label
-                htmlFor="email"
-                className="block text-gray-700 font-bold mb-2"
-              >
+            <div>
+              <label htmlFor="email" className="block text-gray-700 font-medium mb-2 font-['Switzer']">
                 Work Email
               </label>
               <input
                 type="email"
                 id="email"
                 name="email"
-                className="w-full p-3 border border-gray-300 rounded-lg placeholder-bg"
-                placeholder="Email"
+                className="w-full p-3  bg-[#FCF4FE] rounded-lg placeholder-gray-400   focus:border-transparent transition-all duration-300 font-['Open_Sans_Hebrew']"
+                placeholder="Enter your work email"
                 required
               />
             </div>
-            <div className="mb-4">
-              <label
-                htmlFor="designation"
-                className="block text-gray-700 font-bold mb-2"
-              >
+            <div>
+              <label htmlFor="designation" className="block text-gray-700 font-medium mb-2 font-['Switzer']">
                 Designation
               </label>
               <input
                 type="text"
                 id="designation"
                 name="designation"
-                className="w-full p-3 border border-gray-300 rounded-lg placeholder-bg"
-                placeholder="Designation"
+                className="w-full p-3 bg-[#FCF4FE] rounded-lg placeholder-gray-400  focus:border-transparent transition-all duration-300 font-['Open_Sans_Hebrew']"
+                placeholder="Enter your designation"
               />
             </div>
-            <div className="mb-4">
-              <label
-                htmlFor="companyName"
-                className="block text-gray-700 font-bold mb-2"
-              >
+            <div>
+              <label htmlFor="companyName" className="block text-gray-700 font-medium mb-2 font-['Switzer']">
                 Company Name
               </label>
               <input
                 type="text"
                 id="companyName"
                 name="companyName"
-                className="w-full p-3 border border-gray-300 rounded-lg placeholder-bg"
-                placeholder="Company Name"
+                className="w-full p-3 bg-[#FCF4FE] rounded-lg placeholder-gray-400  focus:border-transparent transition-all duration-300 font-['Open_Sans_Hebrew']"
+                placeholder="Enter your company name"
               />
             </div>
-            <div className="mb-4">
-              <label
-                htmlFor="description"
-                className="block text-gray-700 font-bold mb-2"
-              >
-                Tell Us About Your Project
+            <div>
+              <label htmlFor="description" className="block text-gray-700 font-medium mb-2 font-['Switzer']">
+              Description
               </label>
               <textarea
                 id="description"
                 name="description"
-                className="w-full p-3 border border-gray-300 rounded-lg placeholder-bg"
-                placeholder="Description"
+                rows={4}
+                className="w-full p-3 bg-[#FCF4FE] rounded-lg placeholder-gray-400  focus:border-transparent transition-all duration-300 font-['Open_Sans_Hebrew'] resize-none"
+                placeholder="Describe your project requirements"
               ></textarea>
             </div>
             <div className="text-right">
               <button
                 type="submit"
-                className="px-6 py-3 text-black font-bold rounded-lg border-[2px] border-black bg-white hover:bg-black hover:text-white transition-colors duration-300"
+                className="px-8 py-3 text-white font-semibold rounded-lg bg-[#8952b6] hover:bg-[#6B2F9C] transition-all duration-300 transform hover:scale-105 active:scale-95 font-['Switzer']"
                 disabled={isLoading}
               >
-                {isLoading ? "Submitting..." : "Submit"}
+                {isLoading ? (
+                  <span className="flex items-center justify-center">
+                    <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Submitting...
+                  </span>
+                ) : (
+                  "Submit"
+                )}
               </button>
             </div>
           </form>
         </div>
       </div>
-      <ToastContainer />
+      <ToastContainer position="top-right" />
     </section>
   );
 };

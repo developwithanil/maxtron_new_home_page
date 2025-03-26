@@ -17,6 +17,7 @@ import { ArrowDown, ArrowUp } from "../VectorImage";
 import { motion } from "motion/react";
 import { useState } from "react";
 import CasesCard from "../elementalComponent/CasesCard";
+import ContactForm from "../ContactForm";
 
 const clients = [
   { name: "Mercedes", logo: Mercedes },
@@ -172,6 +173,7 @@ const CaseStudy = () => {
       <div className="w-[95%] sm:w-[90%] md:w-[85%] mx-auto max-w-[88rem] relative">
         <CasesCard/>
       </div>
+      <ContactForm/>
     </div>
   );
 };
