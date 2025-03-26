@@ -16,6 +16,7 @@ import Audi from "../../../public/client/audi.svg";
 import { ArrowDown, ArrowUp } from "../VectorImage";
 import { motion } from "framer-motion"; // fixed from "motion/react"
 import { useState } from "react";
+import CasesCard from "../elementalComponent/CasesCard";
 
 const clients = [
   { name: "Mercedes", logo: Mercedes },
@@ -163,6 +164,9 @@ const CaseStudy = () => {
             </motion.div>
           </div>
         </div>
+      </div>
+      <div className="w-[95%] sm:w-[90%] md:w-[85%] mx-auto max-w-[88rem] relative">
+        <CasesCard/>
       </div>
     </div>
   );
