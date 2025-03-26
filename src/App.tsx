@@ -52,8 +52,8 @@ const App: React.FC = () => {
         <Route path="/solutions" element={<Solutions />} />
         <Route path="/industries" element={<Industries />} />
         <Route path="/insights" element={<Insights />} />
-        <Route path="/case-studies" element={<CaseStudyPage />} />
-        <Route path="/case-study" element={<CaseStudy />} />
+        <Route path="/case-study" element={<CaseStudyPage />} />
+        <Route path="/case-studies" element={<CaseStudy />} />
         <Route
           path="/Maxtron/:title/:id"
           element={<InternalPage caseStudies={caseStudies} />}
