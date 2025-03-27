@@ -7,6 +7,7 @@ import Problem from "../elementalComponent/Problem";
 import ImageSection from "../elementalComponent/ImageSection";
 import Solution from "../elementalComponent/Solution";
 import BusinessResult from "../elementalComponent/BusinessResult";
+import Technology from "../elementalComponent/Technology";
 
 interface InternalPageProps {
   caseStudies: CaseStudy[];
@@ -71,7 +72,7 @@ const InternalPageDetails: React.FC<InternalPageProps> = ({ caseStudies }) => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row w-full mx-auto max-w-[88rem] items-center gap-20 md:gap-24 lg:gap-32 px-[30px] md:px-[60px] lg:px-[100px] py-7 md:py-10 lg:py-12">
-      <div className="w-48 md:w-1/8">
+      <div className="w-48 md:w-[14%]">
         <img src={afterHeroSection} alt="Hero section" />
       </div>
       <div className="flex-1 ">
@@ -93,6 +94,12 @@ const InternalPageDetails: React.FC<InternalPageProps> = ({ caseStudies }) => {
   subheading={problemSolutionResult[1].subheading}
   points={problemSolutionResult[1].points}/>
   <BusinessResult points={problemSolutionResult[0].points} results={problemSolutionResult[1].points} industryInfo={industryInfo} projectDuration={projectDuration} clientSatisfaction={clientSatisfaction} afterHeroSection={afterHeroSection}/>
+  {techs.length > 0 && (
+  <Technology techs={techs}/>
+
+  )
+
+  }
           <ContactForm/>
       <ContactAndSubscribe/>
     </div>

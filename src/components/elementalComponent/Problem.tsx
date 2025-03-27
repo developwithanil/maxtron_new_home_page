@@ -8,7 +8,7 @@ interface ProblemProps {
 const Problem :React.FC<ProblemProps> = ({heading,subheading,points}) => {
     console.log( "points", points)
   return (
-   <div className="flex flex-col md:flex-row w-full mx-auto max-w-[88rem] items-center gap-5 px-[30px] md:px-[50px] lg:px-[70px] py-7 md:py-10 lg:py-12">
+   <div className="flex flex-col md:flex-row w-full mx-auto max-w-[88rem] items-center gap-5 px-[30px] py-7 md:py-10 lg:py-12">
    <div className="w-full md:w-1/4 flex items-start justify-start self-start ">
    <p className=" text-[#B1B1B1] [font-family:Switzer] text-xl font-medium leading-[160%] uppercase">The {heading}</p>
    </div>
