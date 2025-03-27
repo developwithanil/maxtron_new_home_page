@@ -16,7 +16,7 @@ const BusinessResult: React.FC<Props> = ({
   clientSatisfaction,
 }) => {
   return (
-    <div className="flex flex-col w-full 2xl:mx-auto max-w-[88rem] items-start  py-4 md:py-6 lg:py-8 px-6 lg:px-0">
+    <div className="flex flex-col w-full 2xl:mx-auto max-w-[88rem] items-start  py-4 md:py-6 lg:py-8 px-6 lg:px-10 xl:px-0">
       <div className="flex flex-col lg:flex-row w-full">
         <div className="lg:w-1/2 w-full   flex flex-col items-center  bg-[rgba(217,217,217,0.20)] justify-start">
           <div className="w-full flex  items-center self-stretch bg-[#8941C4] md:py-8 py-2 px-4 ">

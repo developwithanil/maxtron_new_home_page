@@ -12,6 +12,13 @@ export const Mecidies = ()=>{
 </svg>
     )
 }
+export const Key = ()=>{
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+      <path d="M10.1666 8.6665L4.48324 14.3499C3.572 15.2611 3.572 16.7385 4.48321 17.6497L10.1666 23.3332M22.8333 8.6665L28.5167 14.3499C29.4279 15.2611 29.4279 16.7385 28.5167 17.6497L22.8333 23.3332" stroke="#8941C4" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+    )
+}
 
 
 export const CreateProtocol = ()=>{
