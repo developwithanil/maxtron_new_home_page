@@ -822,7 +822,7 @@ export const caseStudies: CaseStudy[] = [
       {
         title: "Dual User Roles",
         details: [
-          "Separate user profiles and workflows for organizations and volunteers.",
+          "Separate user profiles and workflows for organizations and volunteers .",
         ],
       },
       {
