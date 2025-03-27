@@ -6,10 +6,12 @@ export interface CaseStudy {
     projectDuration: string;
     theprocessText:string,
     clientSatisfaction: number;
+    afterHeroSection:string;
+    type:string;
     problemSolutionResult: Array<{
       heading: string;
       subheading: string;
-      points: Array<string | { title: string; details: string[] }>;
+      points: string[];
   }>;
     techs: Array<{
       name: string;
@@ -23,4 +25,5 @@ export interface CaseStudy {
     mobileImage: string;
     keyFeaturesImage: string;
     bgImage:string  
+
   }

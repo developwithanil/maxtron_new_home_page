@@ -26,7 +26,7 @@ import web3 from "../../assets/internal/web3.png";
 
 // import bgimage2 from "../../assets/internal/bgimage2.png";
 import bg2 from "../../assets/internal/bg2.png";
-import bg3 from "../../assets/internal/bg3.png";
+import bg3 from "../../assets/internal/ludo.jpg";
 import bg4 from "../../assets/internal/bg4.png";
 import mobile from "../../assets/internal/mobile.png";
 import gsmobile from "../../assets/internal/gsmobile.png";
@@ -49,6 +49,7 @@ import aws from "../../assets/internal/aws.svg";
 import hyper from "../../assets/internal/hyper.png"
 import goodstanding from "../../assets/internal/goodstanding.png"
 import gsfeature from "../../assets/internal/gsfeature.png";
+import ludoafterherosection from "../../assets/internal/ludoafterherosection.png";
 
 
 
@@ -71,12 +72,13 @@ import web33 from "../../assets/internal/web33.svg";
 export const caseStudies: CaseStudy[] = [
   {
     title: "Ludo Love",
-    subtitle: "Ready To Roll The Dice",
+    subtitle: "Ready To Roll The Dice 🎲",
     heroImage: hero,
     industryInfo: "Gaming, iGaming, Crypto Gaming.",
     projectDuration: "4 Months",
     theprocessText: "The Process",
-
+    afterHeroSection:ludoafterherosection,
+    type:"APP",
     clientSatisfaction: 5.0,
     problemSolutionResult: [
       {
@@ -161,8 +163,10 @@ export const caseStudies: CaseStudy[] = [
     title: "ShaperCult",
     subtitle: "",
     heroImage: shaper2,
+    type:"APPLICATION",
     industryInfo: "Fashion & Apparel Ecommerce",
     projectDuration: "4 Months",
+    afterHeroSection:ludoafterherosection,
     theprocessText: "The Process",
 
     clientSatisfaction: 5.0,
@@ -262,6 +266,8 @@ export const caseStudies: CaseStudy[] = [
     title: "HYPER CASUAL GAMES",
     subtitle: "",
     heroImage: hyper1,
+    type:"APP",
+    afterHeroSection:ludoafterherosection,
     industryInfo: "Gaming, iGaming, Crypto Gaming",
     projectDuration: "2 Months",
     clientSatisfaction: 5.0,
@@ -276,6 +282,13 @@ export const caseStudies: CaseStudy[] = [
       },
       {
         heading: "Solution",
+        subheading: "",
+        points: [
+          "To create several short play-to-earn games that are easy to play and allow players to quickly earn rewards, we proactively identified the client's problem and conducted research to find a solution that would address the issue without compromising profitability or user retention. We proposed launching an app featuring multiple short, interactive, and easy-to-play games. Additionally, we devised a method to facilitate crypto transactions within the app (for both iOS and Android) using the client's native cryptocurrency token. Our CX and marketing teams also developed comprehensive gamification strategies to attract and retain users.",
+        ],
+      },
+      {
+        heading: "Result",
         subheading: "",
         points: [
           "To create several short play-to-earn games that are easy to play and allow players to quickly earn rewards, we proactively identified the client's problem and conducted research to find a solution that would address the issue without compromising profitability or user retention. We proposed launching an app featuring multiple short, interactive, and easy-to-play games. Additionally, we devised a method to facilitate crypto transactions within the app (for both iOS and Android) using the client's native cryptocurrency token. Our CX and marketing teams also developed comprehensive gamification strategies to attract and retain users.",
@@ -344,14 +357,12 @@ export const caseStudies: CaseStudy[] = [
     heroImage: create1,
     industryInfo: "Ai, Data, Web 3.0, Blockchain",
     projectDuration: "12 Months",
+    afterHeroSection:ludoafterherosection,
+    type:"APPLICATION",
     theprocessText: "TECH AND INFRASTRUCTURE",
     clientSatisfaction: 5.0,
     problemSolutionResult: [
-      {
-        heading: "Use Case",
-        subheading: "",
-        points: ["Intellectual Property Rights Compliance"],
-      },
+      
       {
         heading: "Problem",
         subheading:
@@ -362,6 +373,14 @@ export const caseStudies: CaseStudy[] = [
       },
       {
         heading: "Solution",
+        subheading:
+          "Ethical AI Solutions for Protecting Intellectual Property and Remaining Compliant",
+        points: [
+          "To address these challenges, we propose implementing advanced AI-driven compliance tools which automate the process of obtaining and tracking permissions for data usage in AI training. This decentralized IP solution can streamline the process of obtaining permissions from multiple IP owners, ensuring compliance with data rights. By leveraging blockchain technology, we can create an immutable record of data usage and rights, ensuring access to legal and compliant data.",
+        ],
+      },
+      {
+        heading: "Result",
         subheading:
           "Ethical AI Solutions for Protecting Intellectual Property and Remaining Compliant",
         points: [
@@ -402,6 +421,8 @@ export const caseStudies: CaseStudy[] = [
     title: "AI CALLING AGENT",
     subtitle: "AI-Phone Calling Solution : Future of Voice Call Interactions",
     heroImage: dial1,
+    type:"APPLICATION",
+    afterHeroSection:ludoafterherosection,
     industryInfo: "Telecom, Hi-Tech, Artificial",
     projectDuration: "5 Months",
     theprocessText: "Benefits",
@@ -510,6 +531,8 @@ export const caseStudies: CaseStudy[] = [
     subtitle:
       "How Maxtron Elevated Client's Marketing Strategy for Success in the Decentralized web3 space",
     heroImage: web31,
+    type:"APPLICATION",
+    afterHeroSection:ludoafterherosection,
     industryInfo: "Blockchain and Decentralized Technology, Crypto Finance",
     projectDuration: "4 Months",
     theprocessText: "The Process",
@@ -624,6 +647,8 @@ export const caseStudies: CaseStudy[] = [
     title: "VOTING BLOCK USA",
     subtitle: "VOTE! 2024 Vote for President on the blockchain in 2024",
     heroImage: usablock,
+    type:"APPLICATION",
+    afterHeroSection:ludoafterherosection,
     industryInfo: "Web3.0, Non-Profits,Voting",
     projectDuration: "4 Months",
     theprocessText: "The Process",
@@ -723,19 +748,15 @@ export const caseStudies: CaseStudy[] = [
     title: "Good Standing",
     subtitle: "Connects people who can help to the people who need help",
     heroImage: goodstanding,
+    type:"APPLICATION",
+    afterHeroSection:ludoafterherosection,
     industryInfo: "Web3.0, Gig-economy, non-profits",
     projectDuration: "5 Months",
     theprocessText: "The Process",
 
     clientSatisfaction: 5.0,
     problemSolutionResult: [
-      {
-        heading: "Use Case",
-        subheading: "",
-        points: [
-          "The Good Standing platform streamlines collaboration between organizations and volunteers by offering location-based task management, a reward system with coupons and badges, and a secure blockchain-powered marketplace. With robust admin oversight, real-time communication, and gamified engagement features, it ensures a scalable, user-friendly, and impactful volunteer management ecosystem.",
-        ],
-      },
+    
       {
         heading: "Problem",
         subheading: "",
@@ -862,19 +883,15 @@ export const caseStudies: CaseStudy[] = [
     title: "GRO8",
     subtitle: "10X valuation: Building biggest cross-border investment platform",
     heroImage: gro8hero,
+    type:"APPLICATION",
+    afterHeroSection:ludoafterherosection,
     industryInfo: "Venture capital & private equity",
     projectDuration: "4 Months",
     theprocessText: "The Process",
 
     clientSatisfaction: 5.0,
     problemSolutionResult: [
-      {
-        heading: "Use Case",
-        subheading: "",
-        points: [
-          "Unified Investment and Mentorship Platform for Startups",
-        ],
-      },
+      
       {
         heading: "Problem",
         subheading: "",

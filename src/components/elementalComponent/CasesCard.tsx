@@ -109,7 +109,7 @@ const CasesCard = () => {
               </div>
 
               <button
-                className="bg-[#6B2F9C] md:bg-transparent relative -top-6 hover:bg-[#6B2F9C] text-white text-2xl font-extrabold px-4 py-2 rounded-full font-['Switzer'] border-2 border-white  transition-colors duration-200"
+                className="bg-[#6B2F9C] md:bg-transparent aspect-square relative -top-6 hover:bg-[#6B2F9C] text-white text-2xl font-extrabold px-4 py-2 rounded-full font-['Switzer'] border-2 border-white  transition-colors duration-200"
                 onClick={(e) => {
                   e.stopPropagation();
                   navigate(

@@ -10,9 +10,10 @@ import Insights from "./components/pages/Insights";
 import Industries from "./components/pages/Industries";
 import "./page.css";
 import CaseStudyPage from "./components/pages/CaseStudyPage";
-import InternalPage from "./components/pages/InternalPage";
+// import InternalPage from "./components/pages/InternalPage";
 import { caseStudies } from "./components/elementalComponent/caseStudyData";
 import CaseStudy from "./components/pages/CaseStudy";
+import InternalPageDetails from "./components/pages/InternalPageDetails";
 
 const Home: React.FC = () => (
   <div>
@@ -54,9 +55,13 @@ const App: React.FC = () => {
         <Route path="/insights" element={<Insights />} />
         <Route path="/case-study" element={<CaseStudyPage />} />
         <Route path="/case-studies" element={<CaseStudy />} />
-        <Route
+        {/* <Route
           path="/Maxtron/:title/:id"
           element={<InternalPage caseStudies={caseStudies} />}
+        /> */}
+        <Route
+          path="/Maxtron/:title/:id"
+          element={<InternalPageDetails caseStudies={caseStudies} />}
         />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />

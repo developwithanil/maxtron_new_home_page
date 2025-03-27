@@ -13,12 +13,13 @@ import GovtHy from "../../../public/client/govtHyryana.svg";
 import Ludo from "../../../public/client/ludoLove.svg";
 import cadbury from "../../../public/client/cadbury.svg";
 import Audi from "../../../public/client/audi.svg";
-import { ArrowDown, ArrowUp, WhiteLogo } from "../VectorImage";
+import { ArrowDown, ArrowUp } from "../VectorImage";
 import { motion } from "motion/react"; 
 import { useState } from "react";
 import CasesCard from "../elementalComponent/CasesCard";
 import ContactForm from "../ContactForm";
-import { Link } from "react-router-dom";
+import ContactAndSubscribe from "../elementalComponent/ContactAndSubscribe";
+
 
 const clients = [
   { name: "Mercedes", logo: Mercedes },
@@ -54,7 +55,7 @@ const CaseStudy = () => {
           <p className="text-[#FFFFFF] font-['Switzer'] text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold  tracking-[0.02em] leading-[160%] mb-2 sm:mb-3 md:mb-4">
             CASE STUDIES
           </p>
-          <p className={`flex-[1_0_0] text-white [font-family:"Open_Sans_Hebrew"] text-xl sm:text-xl md:text-2xl lg:text-3xl font-normal `}>
+          <p className={`flex-[1_0_0] text-white font-openSansHebrew text-xl sm:text-xl md:text-2xl lg:text-2xl font-normal `}>
             Our products are reshaping how industry leaders conduct their core business operations.
           </p>
         </div>
@@ -177,33 +178,7 @@ const CaseStudy = () => {
         <CasesCard/>
       </div>
       <ContactForm/>
-      <div className="w-full relative -bottom-4 sm:-bottom-6 md:-bottom-8 lg:-bottom-10 xl:-bottom-12 bg-gradient-to-r from-[#D77DD4] via-[#481658] to-[#69348F] pb-10">
-  <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-10 py-10">
-    
-    {/* Logo */}
-    <div className="w-full md:w-1/2 flex justify-center md:justify-start">
-      <WhiteLogo/>
-    </div>
-
-    {/* Buttons */}
-    <div className="w-full md:w-1/2 flex flex-row md:flex-col justify-center md:justify-end items-center gap-4 ">
-      <Link to="/Contact">
-        <button className="text-sm px-5 py-2 rounded-lg bg-[#F5F5F5] text-black hover:text-white hover:bg-transparent border-2 bprder-solid border-white font-['Open_Sans'] font-bold transition hover:bg-white shadow-md">
-          Contact Us
-        </button>
-      </Link>
-      <button
-        onClick={() =>
-          window.open("https://calendly.com/business-maxtron/30min", "_blank")
-        }
-        className="text-sm px-5 py-2 rounded-lg bg-[#F5F5F5] text-black font-['Open_Sans'] hover:text-white hover:bg-transparent border-2 bprder-solid border-white font-bold transition hover:bg-white shadow-md"
-      >
-        Book a Call
-      </button>
-    </div>
-
-  </div>
-</div>
+        <ContactAndSubscribe/>
     </div>
   );
 };
