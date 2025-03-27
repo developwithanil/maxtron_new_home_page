@@ -8,6 +8,8 @@ import ImageSection from "../elementalComponent/ImageSection";
 import Solution from "../elementalComponent/Solution";
 import BusinessResult from "../elementalComponent/BusinessResult";
 import Technology from "../elementalComponent/Technology";
+import Process from "../elementalComponent/Process";
+import KeyFeature from "../elementalComponent/KeyFeature";
 
 interface InternalPageProps {
   caseStudies: CaseStudy[];
@@ -72,36 +74,45 @@ const InternalPageDetails: React.FC<InternalPageProps> = ({ caseStudies }) => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row w-full mx-auto max-w-[88rem] items-center gap-20 md:gap-24 lg:gap-32 px-[30px] md:px-[60px] lg:px-[100px] py-7 md:py-10 lg:py-12">
-      <div className="w-48 md:w-[14%]">
-        <img src={afterHeroSection} alt="Hero section" />
-      </div>
-      <div className="flex-1 ">
-        <p className=" text-black font-openSansHebrew text-lg md:text-2xl font-normal leading-[160%]">
-          Lorem ipsum dolor sit amet consectetur. Mi volutpat non dolor
-          consequat nibh. Justo sodales neque malesuada consequat sed id
-          faucibus. Id eget ante in sagittis consequat mattis vestibulum. Neque
-          tellus lectus molestie etiam.
-        </p>
-      </div>
+        <div className="w-48 md:w-[14%]">
+          <img src={afterHeroSection} alt="Hero section" />
+        </div>
+        <div className="flex-1 ">
+          <p className=" text-black font-openSansHebrew text-lg md:text-2xl font-normal leading-[160%]">
+            Lorem ipsum dolor sit amet consectetur. Mi volutpat non dolor
+            consequat nibh. Justo sodales neque malesuada consequat sed id
+            faucibus. Id eget ante in sagittis consequat mattis vestibulum.
+            Neque tellus lectus molestie etiam.
+          </p>
+        </div>
       </div>
       <Problem
-  heading={problemSolutionResult[0].heading}
-  subheading={problemSolutionResult[0].subheading}
-  points={problemSolutionResult[0].points}
-/>
-<ImageSection keyFeaturesImage={keyFeaturesImage} mobileImage={mobileImage}/>
-<Solution heading={problemSolutionResult[1].heading}
-  subheading={problemSolutionResult[1].subheading}
-  points={problemSolutionResult[1].points}/>
-  <BusinessResult points={problemSolutionResult[0].points} results={problemSolutionResult[1].points} industryInfo={industryInfo} projectDuration={projectDuration} clientSatisfaction={clientSatisfaction} afterHeroSection={afterHeroSection}/>
-  {techs.length > 0 && (
-  <Technology techs={techs}/>
-
-  )
-
-  }
-          <ContactForm/>
-      <ContactAndSubscribe/>
+        heading={problemSolutionResult[0].heading}
+        subheading={problemSolutionResult[0].subheading}
+        points={problemSolutionResult[0].points}
+      />
+      <ImageSection
+        keyFeaturesImage={keyFeaturesImage}
+        mobileImage={mobileImage}
+      />
+      <Solution
+        heading={problemSolutionResult[1].heading}
+        subheading={problemSolutionResult[1].subheading}
+        points={problemSolutionResult[1].points}
+      />
+      <BusinessResult
+        points={problemSolutionResult[0].points}
+        results={problemSolutionResult[1].points}
+        industryInfo={industryInfo}
+        projectDuration={projectDuration}
+        clientSatisfaction={clientSatisfaction}
+        afterHeroSection={afterHeroSection}
+      />
+      {techs.length > 0 && <Technology techs={techs} />}
+       <Process processSteps={caseStudy.processSteps}/>
+       <KeyFeature keyFeatures={keyFeatures} />
+      <ContactForm />
+      <ContactAndSubscribe />
     </div>
   );
 };

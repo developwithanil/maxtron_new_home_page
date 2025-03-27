@@ -122,7 +122,7 @@ export const caseStudies: CaseStudy[] = [
       {
         title: "Product Scope",
         description: [
-          "Maxtron started by understanding the business vision and creating a detailed plan for the project. This involved researching the market, analyzing competitors, and gathering all necessary information. We then had a deep discussion with the client to develop a value proposition and establish the main assumptions to test. Finally, we outlined the key user stories and features needed to validate these assumptions in the Minimum Viable Product (MVP).",
+          "Maxtron started by understanding the business vision and creating a detailed plan for the project. This involved researching the market, analyzing competitors, and gathering all necessary information. We then had a deep discussion with the client to develop a value proposition and establish the main assumptions to test. Finally, we outlined the key user stories and features needed to validate these assumptions in the Minimum Viable Product (MVP)."
         ],
       },
       {
