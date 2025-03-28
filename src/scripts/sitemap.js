@@ -10,7 +10,7 @@ var urls = [
     { url: "/services", changefreq: sitemap_1.EnumChangefreq.MONTHLY, priority: 0.8 },
     { url: "/case-studies", changefreq: sitemap_1.EnumChangefreq.MONTHLY, priority: 0.8 },
     { url: "/contact", changefreq: sitemap_1.EnumChangefreq.MONTHLY, priority: 0.8 },
-    // Add additional pages here
+    // Add additional pages 
 ];
 var publicDir = (0, path_1.resolve)(__dirname, "public");
 // Ensure the public directory exists
