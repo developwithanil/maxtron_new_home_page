@@ -1,5 +1,5 @@
 // import React from "react";
-import logo from "../assets/logo.svg";
+// import logo from "../assets/logo.svg";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { Link } from "react-router-dom";
@@ -11,9 +11,9 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-12 py-8 md:py-20 flex flex-col md:flex-row justify-between items-start md:items-center">
         {/* Logo and Navigation Links */}
         <div className="flex flex-col md:items-center md:space-y-10 md:mb-0 w-full md:w-auto">
-          <div className="mb-4 md:mb-0 md:mr-8">
+          {/* <div className="mb-4 md:mb-0 md:mr-8">
             <img src={logo} alt="maxtron logo" />
-          </div>
+          </div> */}
           <div className="flex justify-between ">
             <nav className="flex flex-col space-y-4 md:items-left text-[#FFFFFF] md:w-auto">
               <Link to="/" id="Home" className="mx-2  md:mb-0 hover:text-white">
