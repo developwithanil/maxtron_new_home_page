@@ -101,7 +101,7 @@ const ContactForm: React.FC = () => {
                 type="text"
                 id="fullName"
                 name="fullName"
-                className="w-full p-3  rounded-lg placeholder-gray-400 bg-[#FCF4FE]  focus:border-transparent transition-all duration-300 font-['Open_Sans_Hebrew']"
+                className="w-full p-3  rounded-lg placeholder-gray-400 bg-[#FCF4FE]  focus:border-transparent transition-all duration-300 font-['Switzer']"
                 placeholder="Enter your full name"
                 required
               />
@@ -114,7 +114,7 @@ const ContactForm: React.FC = () => {
                 type="email"
                 id="email"
                 name="email"
-                className="w-full p-3  bg-[#FCF4FE] rounded-lg placeholder-gray-400   focus:border-transparent transition-all duration-300 font-['Open_Sans_Hebrew']"
+                className="w-full p-3  bg-[#FCF4FE] rounded-lg placeholder-gray-400   focus:border-transparent transition-all duration-300 font-['Switzer']"
                 placeholder="Enter your work email"
                 required
               />
@@ -127,7 +127,7 @@ const ContactForm: React.FC = () => {
                 type="text"
                 id="designation"
                 name="designation"
-                className="w-full p-3 bg-[#FCF4FE] rounded-lg placeholder-gray-400  focus:border-transparent transition-all duration-300 font-['Open_Sans_Hebrew']"
+                className="w-full p-3 bg-[#FCF4FE] rounded-lg placeholder-gray-400  focus:border-transparent transition-all duration-300 font-['Switzer']"
                 placeholder="Enter your designation"
               />
             </div>
@@ -139,7 +139,7 @@ const ContactForm: React.FC = () => {
                 type="text"
                 id="companyName"
                 name="companyName"
-                className="w-full p-3 bg-[#FCF4FE] rounded-lg placeholder-gray-400  focus:border-transparent transition-all duration-300 font-['Open_Sans_Hebrew']"
+                className="w-full p-3 bg-[#FCF4FE] rounded-lg placeholder-gray-400  focus:border-transparent transition-all duration-300 font-['Switzer']"
                 placeholder="Enter your company name"
               />
             </div>
@@ -151,7 +151,7 @@ const ContactForm: React.FC = () => {
                 id="description"
                 name="description"
                 rows={4}
-                className="w-full p-3 bg-[#FCF4FE] rounded-lg placeholder-gray-400  focus:border-transparent transition-all duration-300 font-['Open_Sans_Hebrew'] resize-none"
+                className="w-full p-3 bg-[#FCF4FE] rounded-lg placeholder-gray-400  focus:border-transparent transition-all duration-300 font-['Switzer']"
                 placeholder="Describe your project requirements"
               ></textarea>
             </div>
