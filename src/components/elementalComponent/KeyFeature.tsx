@@ -27,8 +27,8 @@ const KeyFeature: React.FC<KeyFeatureProps> = ({ keyFeatures }) => {
         return (
           <div
             key={index}
-            className={`flex  flex-col items-center justify-center gap-6 px-6 md:px-12 lg:px-20 py-6 md:py-8  border-[rgba(0,0,0,0.20)] border-solid
-                ${index % 2 !== 0 ? "lg:pb-32" :"lg:pb-8"}
+            className={`flex  flex-col items-center  justify-center gap-6 px-6 md:px-12 lg:px-20 py-6 md:py-8  border-[rgba(0,0,0,0.20)] border-solid
+                ${index % 2 !== 0 ? "lg:pb-32" :"lg:pb-20"}
               ${!isInLastRow ? 'border-b' : 'lg:border-b-0 border-b'}
             
             `}
