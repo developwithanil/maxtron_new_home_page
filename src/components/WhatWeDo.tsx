@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react"; 
 import Cards from "./elementalComponent/Cards";
 import Neuro from "../../public/neuro.svg";
 import Cloud from "../../public/cloud.svg";
 import Topology from "../../public/topology.svg";
 import Network from "../../public/network.svg";
 import AOS from "aos";
-import "aos/dist/aos.css";
+import "aos/dist/aos.css"; 
 
 const cardData = [
   {
+    id: "web3",
     title: "Web3.0 Custom Solutions",
     description: [
       "Native Crypto Token Development & Launch",
@@ -22,6 +23,7 @@ const cardData = [
     imageUrl: Neuro,
   },
   {
+    id: "ai",
     title: "Applied AI Products & Services",
     description: [
       "Custom AI App Development",
@@ -33,6 +35,7 @@ const cardData = [
     imageUrl: Cloud,
   },
   {
+    id: "other",
     title: "Other Technology Services",
     description: [
       "Mobile App Development",
@@ -46,6 +49,7 @@ const cardData = [
     imageUrl: Topology,
   },
   {
+    id: "experiential",
     title: "Experiential Development",
     description: [
       "Kinetic Installation",
@@ -55,37 +59,77 @@ const cardData = [
       "Transparent Screen",
       "Gesture Based Installation",
       "Projection Mapping",
-      
     ],
     imageUrl: Network,
   },
 ];
 
 const WhatWeDo: React.FC = () => {
-  AOS.init();
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  }, []); 
+
   return (
     <section id="Our-services" className="py-12 text-center ">
-      <div className="container px-4 md:px-8 mx-auto animate__backInDown">
-        <h2 className="text-4xl font-bold text-black mb-4 animate__backInDown">
+   
+      <div className="container px-4 md:px-8 mx-auto">
+        <h2
+          className="text-4xl font-bold text-black mb-4"
+          data-aos="fade-down" 
+        >
           Creating Winning Products
         </h2>
-        <p className="mb-16  font-OpenSans font-normal text-[#757575]">
-          We go beyond simply serving the industry. We forge enduring relationships builds on trust and mutual success.
+        <p
+          className="mb-16 font-OpenSans font-normal text-[#757575]"
+          data-aos="fade-up" 
+        >
+          We go beyond simply serving the industry. We forge enduring
+          relationships builds on trust and mutual success.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-[#9B9696] gap-8">
-          {cardData.map((card, index) => (
-            <Cards
-              key={index}
-              title={card.title}
-              description={card.description}
-              imageUrl={card.imageUrl}
-            />
-          ))}
+          {cardData.map((card, index) =>
+            card.title === "Experiential Development" ? (
+             
+              <a
+                href="https://experiences.maxtron.ai/"
+                target="_blank"
+                rel="noopener noreferrer"
+                key={card.id}
+                data-aos="fade-up" 
+                data-aos-delay={index * 100} 
+                className="block"
+              >
+                <Cards
+                
+                  title={card.title}
+                  description={card.description}
+                  imageUrl={card.imageUrl}
+                />
+              </a>
+            ) : (
+             
+              <div
+                key={card.id} 
+                data-aos="fade-up" 
+                data-aos-delay={index * 100} 
+              >
+                <Cards
+                  title={card.title}
+                  description={card.description}
+                  imageUrl={card.imageUrl}
+                 />
+              </div>
+            )
+          )}
         </div>
       </div>
-      
     </section>
   );
 };
+
 
 export default React.memo(WhatWeDo);
