@@ -1,11 +1,10 @@
-import React, { useEffect } from "react"; 
+import React from "react"; 
 import Cards from "./elementalComponent/Cards";
 import Neuro from "../../public/neuro.svg";
 import Cloud from "../../public/cloud.svg";
 import Topology from "../../public/topology.svg";
 import Network from "../../public/network.svg";
-import AOS from "aos";
-import "aos/dist/aos.css"; 
+
 
 const cardData = [
   {
@@ -66,12 +65,7 @@ const cardData = [
 
 const WhatWeDo: React.FC = () => {
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  }, []); 
+  
 
   return (
     <section id="Our-services" className="py-12 text-center ">
@@ -79,19 +73,19 @@ const WhatWeDo: React.FC = () => {
       <div className="container px-4 md:px-8 mx-auto">
         <h2
           className="text-4xl font-bold text-black mb-4"
-          data-aos="fade-down" 
+        
         >
           Creating Winning Products
         </h2>
         <p
           className="mb-16 font-OpenSans font-normal text-[#757575]"
-          data-aos="fade-up" 
+      
         >
           We go beyond simply serving the industry. We forge enduring
           relationships builds on trust and mutual success.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-[#9B9696] gap-8">
-          {cardData.map((card, index) =>
+          {cardData.map((card) =>
             card.title === "Experiential Development" ? (
              
               <a
@@ -99,8 +93,7 @@ const WhatWeDo: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 key={card.id}
-                data-aos="fade-up" 
-                data-aos-delay={index * 100} 
+             
                 className="block"
               >
                 <Cards
@@ -114,8 +107,7 @@ const WhatWeDo: React.FC = () => {
              
               <div
                 key={card.id} 
-                data-aos="fade-up" 
-                data-aos-delay={index * 100} 
+               
               >
                 <Cards
                   title={card.title}
