@@ -6,6 +6,16 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
+    <div className="relative top-0">
+          <Link
+  to="https://experiences.maxtron.ai/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-red-700 absolute  -top-[100px] md:-top-[114px] xl:-top-[120px] left-8 md:left-[14%] xl:left-[18%]"
+>
+  <span className="underline">our experiences website</span>{' '}
+  <span className="no-underline">&#x2192;</span>
+</Link>
     <div className="mx-4 mt-4 sm:mx-6 lg:mx-8 ">
       {" "}
       <div className="relative h-screen w-full overflow-hidden rounded-3xl">
@@ -73,6 +83,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
