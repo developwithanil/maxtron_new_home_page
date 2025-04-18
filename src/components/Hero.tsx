@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <div className="relative top-0">
-          <Link
+          {/* <Link
   to="https://experiences.maxtron.ai/"
   target="_blank"
   rel="noopener noreferrer"
@@ -15,7 +15,7 @@ const HeroSection = () => {
 >
   <span className="underline">our experiences website</span>{' '}
   <span className="no-underline">&#x2192;</span>
-</Link>
+</Link> */}
     <div className="mx-4 mt-4 sm:mx-6 lg:mx-8 ">
       {" "}
       <div className="relative h-screen w-full overflow-hidden rounded-3xl">
