@@ -46,34 +46,40 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Desktop and Tablet Menu */}
-          <div className="hidden md:flex items-center justify-end flex-1">
-            <div className="flex items-center space-x-3 lg:space-x-6">
+          <div className="hidden lg:flex items-center justify-end flex-1">
+            <div className="flex items-center space-x-2 lg:space-x-3 xl:space-x-4">
               <NavLink
                 to="/case-studies"
-                className="text-[#4E009C] hover:text-purple-800 px-2 py-2 rounded-md text-sm lg:text-base font-medium"
+                className="text-[#4E009C] hover:text-purple-800 px-1 xl:px-2 py-2 rounded-md text-sm xl:text-base font-medium"
               >
                 Case Studies
               </NavLink>
               <NavLink
                 to="/services"
-                className="text-[#4E009C] hover:text-purple-800 px-2 lg:px-3 py-2 rounded-md text-sm lg:text-base font-medium"
+                className="text-[#4E009C] hover:text-purple-800 px-1 xl:px-2 py-2 rounded-md text-sm xl:text-base font-medium"
               >
                 Services
               </NavLink>
               <NavLink
                 to="/industries"
-                className="text-[#4E009C] hover:text-purple-800 px-2 lg:px-3 py-2 rounded-md text-sm lg:text-base font-medium"
+                className="text-[#4E009C] hover:text-purple-800 px-1 xl:px-2 py-2 rounded-md text-sm xl:text-base font-medium"
               >
                 Industries
               </NavLink>
               <NavLink
                 to="/about"
-                className="text-[#4E009C] hover:text-purple-800 px-2 lg:px-3 py-2 rounded-md text-sm lg:text-base font-medium"
+                className="text-[#4E009C] hover:text-purple-800 px-1 xl:px-2 py-2 rounded-md text-sm xl:text-base font-medium"
               >
                 About Us
               </NavLink>
+              <NavLink
+                to="/careers"
+                className="text-[#4E009C] hover:text-purple-800 px-1 xl:px-2 py-2 rounded-md text-sm xl:text-base font-medium"
+              >
+                Careers
+              </NavLink>
             </div>
-            <div className="flex items-center space-x-3 lg:space-x-4 xl:ml-6">
+            <div className="flex items-center space-x-3 lg:space-x-4 xl:ml-6 ml-2">
               <Link
                 to="/contact"
                 className="text-white bg-[#4E009C] hover:bg-purple-800 px-4 lg:px-6 xl:px-8 py-2 rounded-full text-xs lg:text-sm font-medium whitespace-nowrap"
@@ -92,7 +98,7 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Mobile Menu Toggle */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={toggleMenu}
               className="text-purple-600 hover:text-purple-800 focus:outline-none focus:text-purple-800"
@@ -120,7 +126,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <NavLink
               to="/case-studies"
@@ -149,6 +155,13 @@ const Navbar: React.FC = () => {
               className="block text-[#4E009C] hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium"
             >
               About Us
+            </NavLink>
+            <NavLink
+           to="/careers"
+              onClick={() => setIsOpen(false)}
+              className="block text-[#4E009C] hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium"
+            >
+            Careers
             </NavLink>
           </div>
 
