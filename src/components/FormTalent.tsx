@@ -201,7 +201,7 @@ const FormTalent = () => {
       });
       
       if (response.ok) {
-        toast.success('Request submitted successfully!');
+        toast.success('Thanks for your submission! We will get back to you soon.');
         if(formRef.current) formRef.current.reset();
         setFile(null);
         const fileInput = document.getElementById('resume-upload') as HTMLInputElement;
