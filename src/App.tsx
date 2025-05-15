@@ -72,6 +72,7 @@ const App: React.FC = () => {
           path="/Maxtron/:title/:id"
           element={<InternalPageDetails caseStudies={caseStudies} />}
         />
+       
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/book" element={<Book />} />

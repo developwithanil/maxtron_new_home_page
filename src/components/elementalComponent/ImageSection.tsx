@@ -1,25 +1,27 @@
-import React from 'react'
+import React from 'react';
 
-type Props={
-    keyFeaturesImage: string;
-    mobileImage : string;
-}
+type Props = {
+  keyFeaturesImage: string[];
+};
 
-const ImageSection :React.FC<Props> = ({keyFeaturesImage,mobileImage}) => {
+const ImageSection: React.FC<Props> = ({ keyFeaturesImage }) => {
   return (
-    <div className='mx-4'>
-
-    <div className='flex flex-col bg-white   rounded-3xl md:flex-row w-full  2xl:mx-auto max-w-[88rem] items-center gap-5 px-[30px] md:px-[50px] lg:px-[70px] py-4 md:py-6 lg:py-8'>
-
-        <div className='lg:w-1/2 w-full'>
-<img src={keyFeaturesImage} alt="IMAGE" />
+    <div className="mx-4">
+      <div className="flex flex-col  bg-white rounded-3xl w-full 2xl:mx-auto max-w-[88rem] px-[30px] md:px-[50px] lg:px-[70px] py-4 md:py-6 lg:py-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full items-center">
+          {keyFeaturesImage.map((src, index) => (
+            <div key={index} className="w-full">
+              <img
+                src={src}
+                alt={`Key Feature ${index + 1}`}
+                className="w-full h-auto max-h-[750px] rounded-xl object-contain"
+              />
+            </div>
+          ))}
         </div>
-        <div className='lg:w-1/2 w-full'>
-        <img src={mobileImage} alt="IMAGE" />
-        </div>
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default ImageSection
+export default ImageSection;

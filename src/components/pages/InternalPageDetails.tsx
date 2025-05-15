@@ -36,7 +36,7 @@ const InternalPageDetails: React.FC<InternalPageProps> = ({ caseStudies }) => {
     techs,
     afterHeroSection,
     keyFeatures,
-    mobileImage,
+   
     keyFeaturesImage,
     bgImage,
   } = caseStudy;
@@ -51,11 +51,18 @@ const InternalPageDetails: React.FC<InternalPageProps> = ({ caseStudies }) => {
       >
         {/* Text Section */}
         <div className="w-full md:w-1/2 max-w-[88rem] px-4 sm:px-6 md:px-8 py-4 flex flex-col gap-2 md:gap-4">
-          <div className="self-start px-4 py-2 border border-transparent rounded-3xl bg-white/20 flex items-center gap-2">
-            <p className="text-white text-xs md:text-sm font-bold font-openSansHebrew leading-none">
-              {type}
-            </p>
-          </div>
+          <div className="flex flex-wrap gap-2">
+    {type.map((tag, index) => (
+      <div
+        key={index}
+        className="px-4 py-2 border border-transparent rounded-3xl bg-white/20 flex items-center"
+      >
+        <p className="text-white text-xs md:text-sm font-bold font-openSansHebrew leading-none">
+          {tag}
+        </p>
+      </div>
+    ))}
+  </div>
           <p className="text-white font-['Switzer'] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-snug">
             {title}
           </p>
@@ -93,7 +100,7 @@ const InternalPageDetails: React.FC<InternalPageProps> = ({ caseStudies }) => {
       />
       <ImageSection
         keyFeaturesImage={keyFeaturesImage}
-        mobileImage={mobileImage}
+       
       />
       <Solution
         heading={problemSolutionResult[1].heading}

@@ -7,7 +7,7 @@ export interface CaseStudy {
     theprocessText:string,
     clientSatisfaction: number;
     afterHeroSection:string;
-    type:string;
+    type:string[];
     problemSolutionResult: Array<{
       heading: string;
       subheading: string;
@@ -22,8 +22,8 @@ export interface CaseStudy {
       description: string[];  
     }>;
     keyFeatures: Array<string | { title: string; details: string[] }>;
-    mobileImage: string;
-    keyFeaturesImage: string;
-    bgImage:string  
+   
+    keyFeaturesImage: string[];
+    bgImage:string 
 
   }

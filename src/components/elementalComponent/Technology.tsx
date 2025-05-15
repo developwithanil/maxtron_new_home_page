@@ -52,35 +52,30 @@ const Technology: React.FC<TechnologyProps> = ({ techs }) => {
             {/* Tech Stack Container */}
             <div className="lg:w-3/4 w-full ">
                 {/* Desktop Row Layout */}
-                <div className="w-full relative overflow-hidden">
-                    <motion.div
-                        className="flex flex-nowrap gap-4 md:gap-6"
-                        style={{ width: `${containerWidth}px` }}
-                        variants={animationVariants}
-                        initial="intial"
-                        animate="animate"
-                    >
-                        {techs.concat(techs).concat(techs).concat(techs).concat(techs).concat(techs).map((tech, index) => (
-                            <div
-                                key={index}
-                                className="flex items-center gap-3 bg-white shadow-md hover:shadow-lg transition-all duration-300 py-2 lg:py-3 px-4  lg:px-6 rounded-xl border border-gray-100"
-                            >
-                                {tech.icon && (
-                                    <div className="w-8 h-8 flex items-center justify-center bg-[#8941C4]/10 rounded-lg">
-                                        <img
-                                            src={tech.icon}
-                                            alt={tech.name}
-                                            className="w-5 h-5 object-contain"
-                                        />
-                                    </div>
-                                )}
-                                <span className="text-gray-800 [font-family:Inter] font-medium whitespace-nowrap">
-                                    {tech.name}
-                                </span>
-                            </div>
-                        ))}
-                    </motion.div>
-                </div>
+                <div className="w-full relative overflow-hidden px-4 sm:px-6 md:px-8">
+  <div className="flex flex-wrap gap-4 md:gap-6 justify-start">
+    {techs.map((tech, index) => (
+      <div
+        key={index}
+        className="flex items-center gap-3 bg-white shadow-md hover:shadow-lg transition-all duration-300 py-2 lg:py-3 px-4 lg:px-6 rounded-xl border border-gray-100"
+      >
+        {tech.icon && (
+          <div className="w-8 h-8 flex items-center justify-center bg-[#8941C4]/10 rounded-lg">
+            <img
+              src={tech.icon}
+              alt={tech.name}
+              className="w-5 h-5 object-contain"
+            />
+          </div>
+        )}
+        <span className="text-gray-800 font-[Inter] font-medium whitespace-nowrap">
+          {tech.name}
+        </span>
+      </div>
+    ))}
+  </div>
+</div>
+
             </div>
         </div>
     );

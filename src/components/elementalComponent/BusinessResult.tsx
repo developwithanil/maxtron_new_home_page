@@ -77,14 +77,28 @@ const BusinessResult: React.FC<Props> = ({
             <p className=" text-[#B1B1B1] [font-family:Switzer] text-center text-lg md:text-xl font-medium leading-[160%] uppercase">
               CLIENT SATISFACTION
             </p>
-            <p className="text-black font-openSansHebrew  text-base md:text-lg font-medium leading-[120%] mt-4">
-              {[...Array(5)].map((_, i) => (
-                <span key={i} className="text-black">
-                  ★
-                </span>
-              ))}
+            <div className="text-black font-openSansHebrew flex flex-col items-center  text-base md:text-lg font-medium leading-[120%] mt-4">
+              <p>
+
+               {[...Array(5)].map((_, i) => (
+    <span className="text-2xl"
+      key={i}
+      style={{
+        color: i < Math.floor(clientSatisfaction)
+          ? '#7A35C1'
+          : 'rgba(122, 53, 193, 0.3)',
+      }}
+    >
+      ★
+    </span>
+  ))}
+
+              </p>
+              <p>
+
               {clientSatisfaction.toFixed(1)}
-            </p>
+              </p>
+            </div>
           </div>
         </div>
       </div>
