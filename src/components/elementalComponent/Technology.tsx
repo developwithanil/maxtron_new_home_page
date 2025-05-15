@@ -1,6 +1,6 @@
 "use client";
-import React, { useMemo } from "react";
-import { motion } from 'framer-motion';
+import React from "react";
+
 
 interface TechnologyProps {
     techs: Array<{
@@ -10,35 +10,10 @@ interface TechnologyProps {
 }
 
 const Technology: React.FC<TechnologyProps> = ({ techs }) => {
-    const itemWidth = 180;
-    const animationDuration = 40; 
+    
 
    
-    const { containerWidth, totalContentWidth, shouldScroll } = useMemo(() => {
-        const calculatedContainerWidth = typeof window !== 'undefined' ? Math.min(window.innerWidth * 0.8, 1200) : 1200;
-        const calculatedTotalContentWidth = techs.length * itemWidth;
-        const calculatedShouldScroll = calculatedTotalContentWidth > calculatedContainerWidth;
-
-        return {
-            containerWidth: calculatedContainerWidth,
-            totalContentWidth: calculatedTotalContentWidth,
-            shouldScroll: calculatedShouldScroll,
-        };
-    }, [techs]);
-
-    const animationVariants = {
-        initial: { x: containerWidth },
-        animate: {
-            x: shouldScroll ? `-${totalContentWidth}px` : 0,
-            transition: {
-                x: {
-                    repeat: Infinity,
-                    duration: animationDuration,
-                    ease: "linear",
-                },
-            },
-        },
-    };
+   
 
     return (
         <div className="flex flex-col lg:flex-row w-full mx-auto max-w-[88rem] items-start gap-5 md:gap-8 px-4 sm:px-6 md:px-8 py-7 md:py-10 lg:py-12">

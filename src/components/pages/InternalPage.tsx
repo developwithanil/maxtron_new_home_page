@@ -47,8 +47,8 @@ const InternalPage: React.FC<InternalPageProps> = ({ caseStudies }) => {
         problemSolutionResult,
         techs,
         keyFeatures,
-        mobileImage,
-        keyFeaturesImage,
+      
+        
         bgImage
     } = caseStudy;
 
@@ -134,9 +134,7 @@ const InternalPage: React.FC<InternalPageProps> = ({ caseStudies }) => {
 
             <div className="container mx-auto py-12">
                 <div className="flex mx-4 flex-wrap lg:flex-nowrap items-center justify-between">
-                    <div className="w-full lg:w-1/3 justify-center lg:justify-end flex lg:hidden">
-                        <img src={mobileImage} alt="Process Overview" className="h-auto" />
-                    </div>
+                  
 
                     <div className="w-full lg:w-2/3">
                         {techs.length > 0 && (
@@ -158,16 +156,12 @@ const InternalPage: React.FC<InternalPageProps> = ({ caseStudies }) => {
                         </div>
                     </div>
 
-                    <div className="w-full lg:w-1/3 justify-center lg:justify-end hidden lg:flex">
-                        <img src={mobileImage} alt="Process Overview" className="h-auto" />
-                    </div>
+                  
                 </div>
             </div>
 
             <div className="container mx-auto pt-4 px-4 lg:px-0 flex flex-wrap lg:flex-nowrap items-center justify-between">
-                <div className="w-full lg:w-1/2 flex justify-center lg:justify-start mb-8 lg:mb-0">
-                    <img src={keyFeaturesImage} alt="App Preview" className="w-full h-auto" />
-                </div>
+                
 
                 <div className="w-full lg:w-1/2 lg:pl-8 lg:pr-4">
                     <h2 className="text-3xl font-bold mb-6">Key Features</h2>

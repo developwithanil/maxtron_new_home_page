@@ -16,6 +16,7 @@ import tokennew2 from "../../assets/internal/tokennew2.png";
 import tokennew3 from "../../assets/internal/tokennew3.png";
 import tokennew4 from "../../assets/internal/tokennew4.png";
 import ulalo1 from "../../assets/internal/ulalo1.png";
+import tawuniya3 from "../../assets/internal/tawuniya5.png";
 
 import tawuniyanew1 from "../../assets/internal/tawuniyanew1.png";
 import tawuniyanew2 from "../../assets/internal/tawuniyanew2.png";
@@ -187,6 +188,7 @@ export const caseStudies: CaseStudy[] = [
         ],
       },
     ],
+    bussinessNees:`<p></p>`,
     keyFeatures: [
       "Functional Requirement Documentation",
       "Technical Architecture Planning",
@@ -1373,7 +1375,7 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
    
-    keyFeaturesImage: [tawuniyanew1,tawuniyanew2],
+    keyFeaturesImage: [tawuniyanew1,tawuniyanew2,tawuniya3],
     bgImage:tawuniyabg,
   },
   {

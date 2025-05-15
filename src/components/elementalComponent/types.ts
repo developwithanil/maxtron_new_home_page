@@ -17,6 +17,8 @@ export interface CaseStudy {
       name: string;
       icon: string;
     }>;
+    bussinessNees?:string;
+    result?:string
     processSteps: Array<{
       title: string;
       description: string[];  

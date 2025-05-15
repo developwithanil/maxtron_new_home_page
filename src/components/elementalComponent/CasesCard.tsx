@@ -8,6 +8,10 @@ import img6 from "../../assets/case/case6.png";
 import img8 from "../../assets/case/case8.png";
 import img9 from "../../assets/case/case9.png";
 import img10 from "../../assets/case/case10.png";
+import caseulalo from "../../assets/case/caseulalo.png";
+import iccaCase from "../../assets/case/iccaCase.png";
+import Tawuniyacase from "../../assets/case/Tawuniyacase.png";
+import tokencase from "../../assets/case/tokencase.png";
 
 const caseStudyData = [
   {
@@ -15,60 +19,88 @@ const caseStudyData = [
     heading:
       "A gaming platform that allows gamers to earn cryptocurrency by playing on both mobile apps (iOS and Google)...",
     subheading: "Blockchain Game Development",
-    type: "APP",
+    type: ["APP"],
   },
   {
     img: img5,
     heading:
       "Learn how we helped an eCommerce company successfully achieve fast growth...",
     subheading: "E-Commerce Marketing",
-    type: "Application",
+    type:[ "Application"],
   },
   {
     img: img4,
     heading: "AI-Enabled Social Networking App For Chefs...",
     subheading: "AI-Enabled Social Networking App For Chefs",
-    type: "App",
+    type: ["App"],
   },
   {
     img: img8,
     heading:
       "A decentralized AI platform designed to address IP rights compliance...",
     subheading: "Decentralized AI Platform",
-    type: "Application",
+    type: ["Application"],
   },
   {
     img: img6,
     heading: "A NextGen AI-phone calling tool...",
     subheading: "AI-Calling Tool",
-    type: "Application",
+    type: ["Application"],
   },
   {
     img: img3,
     heading: "How we managed to achieve growth for a web3 project...",
     subheading: "Crypto Project Marketing",
-    type: "Application",
+    type: ["Application"],
   },
   {
     img: img2,
     heading:
       "A blockchain solution to ensure anonymity and verifiability in voting...",
     subheading: "Blockchain-Based E-Voting System",
-    type: "Application",
+    type: ["Application"],
   },
   {
     img: img9,
     heading:
       "Good Standing connects organizations and volunteers through tasks and rewards...",
     subheading: "Good Standing",
-    type: "Application",
+    type: ["Application"],
   },
   {
     img: img10,
     heading:
       "Gro8 is a platform connecting investors, mentors, and startup founders...",
     subheading: "Gro8",
-    type: "Application",
+    type: ["Application"],
+  },
+  {
+    img: tokencase,
+    heading:
+      "Maxtron successfully helped a blockchain client launch a new cryptocurrency token - covering every aspect of the process: smart contract creation, liquidity ",
+    subheading: "Tocken Launch",
+    type: ["Web Application","UX/UI","Marketing","Graphic Design"],
+  },
+  {
+    img: iccaCase,
+    heading:
+    "A world-class culinary school shaping the future of hospitality through award-winning training. Based in the heart of Dubai, ICCA empowers aspiring chefs and industry professionals with globally recognized programs, state-of-the-art facilities",
+    subheading: "ICCA",
+    type: ["Chat Bot", "UX/UI"],
+  },
+  {
+    img: Tawuniyacase,
+    heading:
+      "Our recent digital activation project done for Tawuniya, an official sponsor of نادي الهلال السعودي - Al-Hilal Saudi Club during the Al-Hilal vs Al-Nassr match in the #Saudi Pro League on 4th April in Riyadh.",
+    subheading: "Tawuniya",
+    type: ["Event","Management"],
+  },
+  {
+    img: caseulalo,
+    heading:
+      "AI and blockchain-powered health-tech protocol revolutionizing how patients manage their medical data. With a secure Smart Patient Wallet, ULALO empowers users to store, share, and visualize health records, receive personalized health insights, and take control of their well-being",
+    subheading: "ULALO",
+    type: ["Marketing","UX/UI", "Web Development", "Web3 Devlopment","Video Editing"],
   },
 ];
 
@@ -93,17 +125,34 @@ const CasesCard = () => {
             </div>
 
             {/* Type Label */}
-            <div className="absolute top-3 md:top-5 left-4 md:left-5 font-semibold bg-[#8952b6] text-lg text-white px-4 py-2 rounded-3xl z-20">
-              {item.type}
-            </div>
+         <div className="absolute  top-3 md:top-5 left-4 md:left-5 md:flex hidden flex-wrap gap-2 z-20">
+  {item.type.map((t, i) => (
+    <span
+      key={i}
+      className="bg-[#8952b6] text-white text-sm md:text-base font-semibold px-3 py-1 rounded-2xl"
+    >
+      {t}
+    </span>
+  ))}
+</div>
+         <div className="absolute md:hidden  top-3 md:top-5 left-4 md:left-5 flex flex-wrap gap-2 z-20">
+  {item.type.slice(0,3).map((t, i) => (
+    <span
+      key={i}
+      className="bg-[#8952b6] text-white text-sm md:text-base font-semibold px-3 py-1 rounded-2xl"
+    >
+      {t}
+    </span>
+  ))}
+</div>
 
             {/* Hover Overlay */}
             <div className="absolute inset-0 bg-black/60 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex flex-row justify-between  items-end p-3 md:p-6 gap-2 md:gap-4 z-10">
               <div className="text-white">
-                <p className="text-xl md:text-2xl font-['Switzer'] font-semibold mb-1 md:mb-2">
+                <p className="text-lg md:text-2xl font-['Switzer'] font-semibold mb-1 md:mb-2 ">
                   {item.subheading}
                 </p>
-                <h3 className="text-base md:text-lg font-['Open_Sans_Hebrew'] mb-2 md:mb-4 ">
+                <h3 className="text-sm md:text-lg font-['Open_Sans_Hebrew'] mb-2 md:mb-4 line-clamp-2">
                   {item.heading}
                 </h3>
               </div>
