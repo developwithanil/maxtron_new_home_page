@@ -39,14 +39,14 @@ const clients = [
   { name: "Audi", logo: Audi },
 ];
 
-const projectTypes = ["Mobile Apps", "Web Applications", "Website"];
-const industries = ["Mobile Apps", "Web Application", "Websites"];
+const projectTypes = ["All", "APP", "APPLICATION", "Event", "Management", "Web Development", "UX/UI", "Marketing", "Graphic Design", "Chat Bot", "Web3 Development", "Video Editing"];
+const industries = ["All", "Gaming", "E-Commerce", "AI", "Web3", "Education", "Healthcare", "Government", "Social", "Startup", "Culinary", "Sports"];
 
 const CaseStudy = () => {
   const [isProjectTypeOpen, setIsProjectTypeOpen] = useState(false);
   const [isIndustryOpen, setIsIndustryOpen] = useState(false);
-  const [, setSelectedProjectType] = useState("");
-  const [, setSelectedIndustry] = useState("");
+  const [selectedProjectType, setSelectedProjectType] = useState("All");
+  const [selectedIndustry, setSelectedIndustry] = useState("All");
 
   return (
     <div className="w-full flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 mt-2 mb-4 relative">
@@ -90,7 +90,7 @@ const CaseStudy = () => {
               className="flex justify-between w-full cursor-pointer"
             >
               <p className={`${isProjectTypeOpen ? "text-[#8941C4]" : "text-[#1E1E1E]"} font-['Switzer'] text-lg sm:text-xl md:text-2xl font-semibold leading-[120%]`}>
-                Project type
+                {selectedProjectType === "All" ? "Project type" : selectedProjectType}
               </p>
               <motion.div
                 animate={{ rotate: isProjectTypeOpen ? 360 : 0 }}
@@ -114,14 +114,18 @@ const CaseStudy = () => {
               {projectTypes.map((type, index) => (
                 <div
                   key={index}
-                  className="text-[#1E1E1E] font-['Switzer'] text-base sm:text-lg md:text-xl lg:text-2xl font-semibold leading-[120%] cursor-pointer w-full flex justify-between py-2 sm:py-3 border-t-[1px] border-[rgba(0,0,0,0.20)]"
+                  className={`text-[#1E1E1E] font-['Switzer'] text-base sm:text-lg md:text-xl lg:text-2xl font-semibold leading-[120%] cursor-pointer w-full flex justify-between py-2 sm:py-3 border-t-[1px] border-[rgba(0,0,0,0.20)] ${
+                    type === selectedProjectType ? "text-[#8941C4]" : ""
+                  }`}
                   onClick={() => {
                     setSelectedProjectType(type);
                     setIsProjectTypeOpen(false);
                   }}
                 >
                   <div>{type}</div>
-                  <div className="relative bg-green-400"></div>
+                  {type === selectedProjectType && (
+                    <div className="w-2 h-2 rounded-full bg-[#8941C4]"></div>
+                  )}
                 </div>
               ))}
             </motion.div>
@@ -136,7 +140,7 @@ const CaseStudy = () => {
               className="flex justify-between w-full cursor-pointer"
             >
               <p className={`${isIndustryOpen ? "text-[#8941C4]" : "text-[#1E1E1E]"} font-['Switzer'] text-lg sm:text-xl md:text-2xl font-semibold leading-[120%]`}>
-                Industry
+                {selectedIndustry === "All" ? "Industry" : selectedIndustry}
               </p>
               <motion.div
                 animate={{ rotate: isIndustryOpen ? 360 : 0 }}
@@ -160,14 +164,18 @@ const CaseStudy = () => {
               {industries.map((type, index) => (
                 <div
                   key={index}
-                  className="text-[#1E1E1E] font-['Switzer'] text-base sm:text-lg md:text-xl lg:text-2xl font-semibold leading-[120%] cursor-pointer w-full flex justify-between py-2 sm:py-3 border-t-[1px] border-[rgba(0,0,0,0.20)]"
+                  className={`text-[#1E1E1E] font-['Switzer'] text-base sm:text-lg md:text-xl lg:text-2xl font-semibold leading-[120%] cursor-pointer w-full flex justify-between py-2 sm:py-3 border-t-[1px] border-[rgba(0,0,0,0.20)] ${
+                    type === selectedIndustry ? "text-[#8941C4]" : ""
+                  }`}
                   onClick={() => {
                     setSelectedIndustry(type);
                     setIsIndustryOpen(false);
                   }}
                 >
                   <div>{type}</div>
-                  <div className="relative bg-green-400"></div>
+                  {type === selectedIndustry && (
+                    <div className="w-2 h-2 rounded-full bg-[#8941C4]"></div>
+                  )}
                 </div>
               ))}
             </motion.div>
@@ -175,7 +183,10 @@ const CaseStudy = () => {
         </div>
       </div>
       <div className="w-[95%] sm:w-[90%] md:w-[85%] mx-auto max-w-[88rem] relative">
-        <CasesCard/>
+        <CasesCard 
+          selectedProjectType={selectedProjectType}
+          selectedIndustry={selectedIndustry}
+        />
       </div>
       <ContactForm/>
         <ContactAndSubscribe/>

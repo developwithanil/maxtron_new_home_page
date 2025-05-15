@@ -2,7 +2,7 @@ import { CaseStudy } from "./types";
 
 import hero from "../../assets/internal/hero.png";
 import mysql from "../../assets/internal/mysql.svg";
-import pythan from "../../assets/internal/Python.png";
+import python from "../../assets/internal/Python.png";
 import fastapi from "../../assets/internal/fastapi.png";
 import zoho from "../../assets/internal/Zoho.png";
 import LLM from "../../assets/internal/LLM.png";
@@ -1173,7 +1173,7 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
     techs: [
-      { name: "Pythan", icon: pythan },
+      { name: "Python", icon: python },
       { name: "FastAPI", icon: fastapi },
       { name: "Vector Database (Pinecone / Chroma)", icon: vectordatabase },
       { name: "Mongo DB", icon: mongodb },
@@ -1294,7 +1294,7 @@ export const caseStudies: CaseStudy[] = [
       { name: "Webcam", icon: Webcam },
       { name: "Headset", icon: Headset },
       { name: "Mic", icon: Mic },
-      { name: "Pythan", icon: pythan },
+      { name: "Python", icon: python },
        { name: "React", icon: react },
       { name: "Figma", icon: figma },
       { name: "Custom VR Game Engine", icon: vr },
