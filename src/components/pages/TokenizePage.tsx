@@ -1,6 +1,8 @@
 import ContactAndSubscribe from '../elementalComponent/ContactAndSubscribe'
 import tokenize1 from "../../assets/case/tokenize1.png"
 import tokenize2 from "../../assets/case/tokenize2.png"
+import WhyTokenize from '../elementalComponent/WhyTokenize'
+import AllCrpto from '../elementalComponent/AllCrpto'
 
 const TokenizePage = () => {
   return (
@@ -35,6 +37,8 @@ const TokenizePage = () => {
           </div>
         </div>
       </div>
+      <AllCrpto/>
+     <WhyTokenize/>
       <ContactAndSubscribe/>
     </div>
   )
