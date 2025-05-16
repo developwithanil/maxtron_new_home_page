@@ -8,6 +8,7 @@ import Service from "./components/Services";
 import AboutUs from "./components/pages/AboutUs";
 import Insights from "./components/pages/Insights";
 import Industries from "./components/pages/Industries";
+
 import "./page.css";
 import CaseStudyPage from "./components/pages/CaseStudyPage";
 // import InternalPage from "./components/pages/InternalPage";
@@ -15,6 +16,7 @@ import { caseStudies } from "./components/elementalComponent/caseStudyData";
 import CaseStudy from "./components/pages/CaseStudy";
 import InternalPageDetails from "./components/pages/InternalPageDetails";
 import Careers from "./components/pages/Careers";
+import TokenizePage from "./components/pages/TokenizePage";
 
 const Home: React.FC = () => (
   <div>
@@ -64,6 +66,7 @@ const App: React.FC = () => {
         <Route path="/case-study" element={<CaseStudyPage />} />
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/case-studies" element={<CaseStudy />} />
+        <Route path="/tokenize" element={<TokenizePage />} />
         {/* <Route
           path="/Maxtron/:title/:id"
           element={<InternalPage caseStudies={caseStudies} />}

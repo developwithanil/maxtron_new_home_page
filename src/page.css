@@ -48,6 +48,19 @@ body {
   background-color: gray;
   background-blend-mode: multiply;
 }
+.tokenize_hero_img {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/case/tokenize.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white !important;
+  background-color: gray;
+  background-blend-mode: multiply;
+}
 
 .insights_hero_img {
   height: 517px !important;

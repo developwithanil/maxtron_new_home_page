@@ -34,6 +34,19 @@ body{
     background-color: gray;
     background-blend-mode: multiply;
 }
+.tokenize_hero_img {
+  height: 600px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/case/tokenize.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white !important;
+  background-color: gray;
+  background-blend-mode: multiply;
+}
 
 .caseStudy_hero_img{
     height: 517px !important;
