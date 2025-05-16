@@ -42,13 +42,13 @@ const items = [
 const WhyTokenize = () => {
   return (
     <div className='w-full max-w-[96rem] mx-auto flex flex-col gap-5 md:gap-9 lg:gap-12 px-4 sm:px-6 lg:px-10 py-5 md:py-7 lg:py-10'>
-      <p className='w-full text-center text-[#2A2A2A] font-[Switzer] text-3xl lg:text-4xl xl:text-5xl font-black leading-[160%] tracking-tight'>
+      <p className='w-full text-center text-[#2A2A2A] font-[Switzer] text-3xl lg:text-4xl xl:text-5xl mb-5 font-black leading-[160%] tracking-tight'>
         Why tokenize?
       </p>
 
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-8'>
         {items.map((item, index) => (
-          <div key={index} className='flex flex-col items-start gap-2 md:gap-3 lg:gap-4  p-5  '>
+          <div key={index} className='flex flex-col items-start gap-2 md:gap-3 lg:gap-4   '>
             <img src={item.icon} alt={item.title} className='w-10 h-10 object-contain' />
             <h3 className='self-stretch text-[#2A2A2A] font-[Switzer] text-xl lg:text-2xl font-semibold leading-[160%] tracking-[-0.48px]'>{item.title}</h3>
             <p className='self-stretch text-[#2A2A2A] font-openSansHebrew text-sm lg:text-base font-normal leading-6 tracking-[-0.16px]'>{item.desc}</p>

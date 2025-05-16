@@ -195,7 +195,7 @@ const FormTalent = () => {
     formData.set('consentSMS', consentSMS ? 'true' : 'false');
 
     try {
-      const response = await fetch('https://backend-awue.onrender.com/sendTalentData', {
+      const response = await fetch('https://api.maxtron.ai/sendTalentData', {
         method: 'POST',
         body: formData,
       });
