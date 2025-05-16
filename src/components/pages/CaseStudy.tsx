@@ -108,7 +108,8 @@ const CaseStudy = () => {
                 height: isProjectTypeOpen ? "auto" : 0,
               }}
               transition={{ duration: 0.3 }}
-              className="absolute top-full left-0 w-full bg-[#f8e7ea] z-40 border-l-[1px] border-r-[1px] border-b-[1px] border-[rgba(0,0,0,0.20)] px-4 sm:px-8 md:px-12 lg:px-16 pb-4"
+              className="absolute top-full left-0 w-full bg-[#f8e7ea] z-40 border-l-[1px] border-r-[1px] border-b-[1px] border-[rgba(0,0,0,0.20)] px-4 sm:px-8 md:px-12 lg:px-16 pb-4 pointer-events-none"
+              style={{ pointerEvents: isProjectTypeOpen ? 'auto' : 'none' }}
             >
               {projectTypes.map((type, index) => (
                 <div
@@ -157,7 +158,8 @@ const CaseStudy = () => {
                 height: isIndustryOpen ? "auto" : 0,
               }}
               transition={{ duration: 0.3 }}
-              className="absolute top-full left-0 w-full bg-[#f8e7ea] z-40 border-l-[1px] border-r-[1px] border-b-[1px] border-[rgba(0,0,0,0.20)] px-4 sm:px-8 md:px-12 lg:px-16 pb-4"
+              className="absolute top-full left-0 w-full bg-[#f8e7ea] z-40 border-l-[1px] border-r-[1px] border-b-[1px] border-[rgba(0,0,0,0.20)] px-4 sm:px-8 md:px-12 lg:px-16 pb-4 pointer-events-none"
+              style={{ pointerEvents: isIndustryOpen ? 'auto' : 'none' }}
             >
               {industries.map((type, index) => (
                 <div
