@@ -149,7 +149,14 @@ const CasesCard = ({ selectedProjectType, selectedIndustry }: CasesCardProps) =>
             {displayedCaseStudies.map((item, index) => (
               <div
                 key={index}
-                className="relative group overflow-hidden rounded-[32px] aspect-[4/3] cursor-pointer"
+                className="relative group overflow-hidden rounded-[32px] aspect-[4/3] cursor-pointer"  onClick={(e) => {
+                      e.stopPropagation();
+                      navigate(
+                        `/Maxtron/${encodeURIComponent(
+                          item.subheading.replace(/\s+/g, "-")
+                        )}/${index}`
+                      );
+                    }}
               >
                 {/* Background Image */}
                 <div className="absolute inset-0 overflow-hidden">

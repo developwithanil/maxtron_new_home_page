@@ -81,7 +81,7 @@ const CaseStudy = () => {
             All Cases
           </div>
 
-          {/* Project Type Dropdown */}
+      
           <div className={`relative z-30 flex justify-center md:border-l md:border-r border-[rgba(0,0,0,0.20)] ${
             isProjectTypeOpen ? "bg-[#f8e7ea]" : ""
           } border-solid flex-col items-start flex-[1_0_0] px-4 sm:px-8 md:px-12 lg:px-16 py-4 sm:py-6 md:py-8`}>
@@ -101,7 +101,6 @@ const CaseStudy = () => {
               </motion.div>
             </motion.div>
 
-            {/* Dropdown Content */}
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{
@@ -131,7 +130,6 @@ const CaseStudy = () => {
             </motion.div>
           </div>
 
-          {/* Industry Dropdown */}
           <div className={`relative z-30 flex ${isProjectTypeOpen ? "hidden md:block":""} justify-center border-[rgba(0,0,0,0.20)] ${
             isIndustryOpen ? "bg-[#f8e7ea]" : ""
           } border-solid flex-col items-start flex-[1_0_0] px-4 sm:px-8 md:px-12 lg:px-16 py-4 sm:py-6 md:py-8`}>
@@ -151,7 +149,7 @@ const CaseStudy = () => {
               </motion.div>
             </motion.div>
 
-            {/* Dropdown Content */}
+          
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{

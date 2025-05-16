@@ -28,11 +28,11 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`bg-white shadow-lg rounded-3xl mx-4 sm:mx-4 md:mx-7 lg:mx-16 mt-4 sm:mt-6 
+      className={`bg-white shadow-lg rounded-3xl mx-4 sm:mx-2 md:mx-6 lg:mx-8 mt-4 sm:mt-6 
         ${isSticky ? "fixed top-0 left-0 right-0 z-50" : ""}
       `}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-3 sm:px-3 lg:px-5">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -48,6 +48,12 @@ const Navbar: React.FC = () => {
           {/* Desktop and Tablet Menu */}
           <div className="hidden lg:flex items-center justify-end flex-1">
             <div className="flex items-center space-x-2 lg:space-x-3 xl:space-x-4">
+              <NavLink
+                to="/tokenization"
+                className="text-[#4E009C] hover:text-purple-800 px-1 xl:px-2 py-2 rounded-md text-sm xl:text-base font-medium"
+              >
+                Tokenization
+              </NavLink>
               <NavLink
                 to="/case-studies"
                 className="text-[#4E009C] hover:text-purple-800 px-1 xl:px-2 py-2 rounded-md text-sm xl:text-base font-medium"
@@ -70,7 +76,7 @@ const Navbar: React.FC = () => {
                 to="/about"
                 className="text-[#4E009C] hover:text-purple-800 px-1 xl:px-2 py-2 rounded-md text-sm xl:text-base font-medium"
               >
-                About Us
+                About
               </NavLink>
               <NavLink
                 to="/careers"
@@ -128,6 +134,13 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <div className="lg:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <NavLink
+              to="/tokenization"
+              onClick={() => setIsOpen(false)}
+              className="block text-[#4E009C] hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium"
+            >
+              Tokenizations
+            </NavLink>
             <NavLink
               to="/case-studies"
               onClick={() => setIsOpen(false)}
