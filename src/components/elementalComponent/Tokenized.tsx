@@ -66,7 +66,7 @@ const Tokenized = () => {
     </div>
   ))}
 </div>
- <div className='flex w-[85%]  max-w-[96rem] mx-auto flex-col h-[14rem] sm:h-[17rem] md:h-[21rem] lg:h-[23rem] xl:h-[28rem] justify-center items-center [background:linear-gradient(0deg,rgba(0,0,0,0.40)_0%,rgba(0,0,0,0.40)_100%),url("./assets/case/tokenize.png")_lightgray_50%_/_cover_no-repeat]'>
+ <div className='flex w-[85%]  max-w-[96rem] mx-auto flex-col h-[14rem] sm:h-[17rem] md:h-[21rem] lg:h-[23rem] xl:h-[28rem] justify-center items-center [background:linear-gradient(0deg,rgba(0,0,0,0.40)_0%,rgba(0,0,0,0.40)_100%),url("./assets/case/tokenize.png")_lightgray_50%_/_cover_no-repeat] rounded-lg lg: rounded-xl'>
         <div className="w-full  flex flex-col gap-4 md:gap-6 lg:gap-9">
           
           <div className='w-[75%]  mx-auto'>

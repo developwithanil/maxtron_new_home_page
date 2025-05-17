@@ -5,6 +5,7 @@ import WhyTokenize from '../elementalComponent/WhyTokenize'
 import AllCrpto from '../elementalComponent/AllCrpto'
 import GlobalPresence from '../elementalComponent/GlobalPresence'
 import Tokenized from '../elementalComponent/Tokenized'
+import WhyWithUs from '../elementalComponent/WhyWithUs'
 
 const TokenizePage = () => {
   return (
@@ -45,6 +46,7 @@ const TokenizePage = () => {
      <WhyTokenize/>
      <GlobalPresence/>
      <Tokenized/>
+     <WhyWithUs/>
       <ContactAndSubscribe/>
     </div>
   )
