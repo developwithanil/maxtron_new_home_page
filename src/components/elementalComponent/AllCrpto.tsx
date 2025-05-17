@@ -18,6 +18,10 @@ const AllCrpto = () => {
         <img src={item} alt="item" className='w-10 lg:w-12 h-10 lg:h-12'/>
 
     </div>
+//      <div key={index}>
+//      <img src={item} alt="item" className='w-10 lg:w-12 h-10 lg:h-12'/>
+
+//  </div>
 ))}
 </div>   
 )

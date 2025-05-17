@@ -2,7 +2,7 @@
 
 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal  setup to get React working in Vite with HMR and some ESLint rules.
 
 
 Currently, two official plugins are available:
@@ -16,7 +16,7 @@ If you are developing a production application, we recommend updating the config
 
 - Configure the top-level `parserOptions` property like this:
 
-```js
+
 export default {
   // other rules...
   parserOptions: {
