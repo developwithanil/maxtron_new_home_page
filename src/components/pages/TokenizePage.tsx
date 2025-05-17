@@ -35,7 +35,7 @@ const TokenizePage = () => {
            <p className=' text-[#FFF] font-[Switzer] text-base md:text-lg lg:text-xl font-normal leading-5 '>Design, launch, and manage any tokenized asset with our expert team and best-in-industry token management tools.</p>
           </div>
           <div className='flex w-full md:w-1/3 lg:w-1/4  justify-center items-center [background:var(--White,#FFF)] shadow-[0px_0px_0px_1px_#C7C7C7_inset] py-[8px] md:py-[10px] lg:py-[13px] px-6 rounded-lg'>
-           <p className='text-black text-center font-[Switzer] text-lg font-semibold leading-[21.6px] hover:text-blue-800'  onClick={() =>
+           <p className='text-black text-center font-[Switzer] text-lg font-semibold leading-[21.6px] hover:text-blue-800 hover:cursor-pointer'  onClick={() =>
                   window.open("https://calendly.com/business-maxtron/30min")
                 }>Schedule Introduction</p>
           </div>

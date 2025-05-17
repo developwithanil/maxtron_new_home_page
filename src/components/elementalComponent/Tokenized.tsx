@@ -72,8 +72,8 @@ const Tokenized = () => {
           <div className='w-[75%]  mx-auto'>
            <p className=' text-[#FFF] text-center font-[Switzer] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-7 lg:leading-[48px] tracking-[-0.5px] lg:tracking-[-1.44px]'>250K+ Cumulative token holders</p>
           </div>
-          <div className='flex w-full max-w-56 md:max-w-xl mx-auto md:w-1/3 lg:w-1/3  justify-center items-center [background:var(--White,#FFF)] shadow-[0px_0px_0px_1px_#C7C7C7_inset] py-[8px] md:py-[10px] lg:py-[13px] px-6 rounded-lg'>
-           <p className='text-black text-center font-[Switzer] text-md lg:text-lg font-semibold leading-5 lg:leading-[21.6px] hover:text-blue-800'  onClick={() =>
+          <div className='flex w-full max-w-56 md:max-w-72 mx-auto md:w-1/3 lg:w-1/3  justify-center items-center [background:var(--White,#FFF)] shadow-[0px_0px_0px_1px_#C7C7C7_inset] py-[8px] md:py-[10px] lg:py-[13px] px-6 rounded-lg'>
+           <p className='text-black text-center font-[Switzer] text-md lg:text-lg font-semibold leading-5 lg:leading-[21.6px] hover:text-blue-800 hover:cursor-pointer'  onClick={() =>
                   window.open("https://calendly.com/business-maxtron/30min")
                 }>Schedule Introduction</p>
           </div>
