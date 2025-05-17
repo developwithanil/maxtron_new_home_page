@@ -8,6 +8,7 @@ import Tokenized from '../elementalComponent/Tokenized'
 import WhyWithUs from '../elementalComponent/WhyWithUs'
 import WhoisworkingwithUs from '../elementalComponent/WhoisworkingwithUs'
 import Faqs from '../elementalComponent/Faqs'
+import LastComponent from '../elementalComponent/LastComponent'
 
 const TokenizePage = () => {
   return (
@@ -51,6 +52,7 @@ const TokenizePage = () => {
      <WhyWithUs/>
      <WhoisworkingwithUs/>
      <Faqs/>
+     <LastComponent/>
       <ContactAndSubscribe/>
     </div>
   )
