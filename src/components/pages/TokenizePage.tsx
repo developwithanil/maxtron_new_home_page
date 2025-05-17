@@ -6,6 +6,8 @@ import AllCrpto from '../elementalComponent/AllCrpto'
 import GlobalPresence from '../elementalComponent/GlobalPresence'
 import Tokenized from '../elementalComponent/Tokenized'
 import WhyWithUs from '../elementalComponent/WhyWithUs'
+import WhoisworkingwithUs from '../elementalComponent/WhoisworkingwithUs'
+import Faqs from '../elementalComponent/Faqs'
 
 const TokenizePage = () => {
   return (
@@ -47,6 +49,8 @@ const TokenizePage = () => {
      <GlobalPresence/>
      <Tokenized/>
      <WhyWithUs/>
+     <WhoisworkingwithUs/>
+     <Faqs/>
       <ContactAndSubscribe/>
     </div>
   )
