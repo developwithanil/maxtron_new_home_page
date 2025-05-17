@@ -4,6 +4,7 @@ import tokenize2 from "../../assets/case/tokenize2.png"
 import WhyTokenize from '../elementalComponent/WhyTokenize'
 import AllCrpto from '../elementalComponent/AllCrpto'
 import GlobalPresence from '../elementalComponent/GlobalPresence'
+import Tokenized from '../elementalComponent/Tokenized'
 
 const TokenizePage = () => {
   return (
@@ -43,6 +44,7 @@ const TokenizePage = () => {
       <AllCrpto/>
      <WhyTokenize/>
      <GlobalPresence/>
+     <Tokenized/>
       <ContactAndSubscribe/>
     </div>
   )
