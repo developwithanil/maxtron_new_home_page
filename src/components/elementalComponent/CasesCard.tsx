@@ -33,9 +33,10 @@ const caseStudyData = [
   },
   {
     img: img4,
-    heading: "AI-Enabled Social Networking App For Chefs...",
-    subheading: "AI-Enabled Social Networking App For Chefs",
-    type: ["App"],
+    heading: "Developed 7+ mini-games, which can be played on one single plateform, to enable the quick earning and gaming experience for users",
+   
+    subheading: "Mini-Gaming Platform",
+    type: ["App ", "Web 3.0"],
     industry: "AI"
   },
   {
@@ -205,7 +206,7 @@ const CasesCard = ({ selectedProjectType, selectedIndustry }: CasesCardProps) =>
                     onClick={(e) => {
                       e.stopPropagation();
                       navigate(
-                        `/Maxtron/${encodeURIComponent(
+                        `/Maxtron.ai/case-study/${encodeURIComponent(
                           item.subheading.replace(/\s+/g, "-")
                         )}/${index}`
                       );
