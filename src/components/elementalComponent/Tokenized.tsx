@@ -9,7 +9,7 @@ const cards = [
   {
     img: tokenized1,
     title: "GOLD TOKENIZATION",
-    desc: "We helped transform the play-and-earn token economy for a global gaming phenomenon.",
+    desc: "We helped transform the gold and other precious metals' tokenization projects for global RWA opportunities.",
   },
   {
     img: tokenized2,
