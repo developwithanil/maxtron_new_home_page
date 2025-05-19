@@ -125,22 +125,28 @@ export const caseStudies: CaseStudy[] = [
 
     type:["APP"],
     clientSatisfaction: 5.0,
+    
+    bussinessNeeds:{
+      title: "To comply with App Store and Play Store restrictions, an alternative solution is needed for players to use Tenup Token (TUP) without violating policies. The system must ensure privacy, prevent tracking of crypto transactions, and maintain seamless synchronization between web and mobile platforms.",
+     
+    },
+    results:{
+      title: "Players can now purchase game points with TUP tokens via the web platform and use them on mobile apps. This setup preserves privacy, ensures compliance, and allows players to convert points back into TUP tokens. It enhances engagement, supports token adoption, and creates a smooth, scalable gaming experience.",
+      
+    },
     problemSolutionResult: [
       {
         heading: "Problem",
-        subheading: "",
+        subheading: "Boosting Tenup Token (TUP) Adoption in Gaming",
         points: [
-          "Increase Tenup Token (TUP) adoption and build gaming utilities for the Tenup Ecosystem and Community. The Tenup token can be used on the App Store (iOS) and Play Store (Android) for the Tenup Gaming Platform.",
-          "App Store and Play Store have implemented restrictions on transactions involving cryptocurrencies within mobile apps. This means players are unable to use crypto TUP tokens directly through apps downloaded from these stores.",
+          "Tenup Token (TUP) enhances the Tenup Ecosystem with gaming utilities. While App Store and Play Store restrict direct crypto transactions, TUP remains integral to the Tenup Gaming Platform through innovative solutions."
         ],
       },
       {
         heading: "Solution",
-        subheading: "",
+        subheading: "Seamless Crypto Integration for Mobile Gaming",
         points: [
-          "Bridging the web and mobile app for a seamless experience for players to play mobile games with crypto, making it easy for players to use crypto as digital value on the mobile platform.",
-          "Players have the option to conduct transactions using crypto TUP tokens through the web platform and convert them into game points to be used on the mobile applications.",
-          "Despite the mobile app restrictions, the web platform of the game remains interconnected with the apps login system using the same database to maintain the point system on mobile apps and the crypto conversion for all individual players. This smooth synchronization ensures that the number of TUP tokens held is well synchronized with the Game Points using a single master database, providing a seamless experience for players to use their crypto TUP tokens on the mobile apps.",
+          'Players can use TUP tokens via the web platform, converting them into game points for mobile apps. Despite app restrictions, a unified database ensures smooth synchronization, enabling a seamless gaming experience across web and mobile.'
         ],
       },
       {
@@ -189,7 +195,7 @@ export const caseStudies: CaseStudy[] = [
         ],
       },
     ],
-    bussinessNees:`<p></p>`,
+  
     keyFeatures: [
       "Functional Requirement Documentation",
       "Technical Architecture Planning",
@@ -1045,6 +1051,18 @@ export const caseStudies: CaseStudy[] = [
     theprocessText: "The Process",
 description:"Maxtron successfully helped a blockchain client launch a new cryptocurrency token - covering every aspect of the process: smart contract creation, liquidity deployment, influencer marketing, market making, and web design. The result was a well-orchestrated launch that stood out in a saturated Web3 landscape and gained immediate traction across crypto platforms.",
     clientSatisfaction: 4.0,
+    bussinessNeeds:{
+      title: "The client required a holistic, tech-powered token launch strategy that minimized risk, aligned with compliance standards, and ensured post-launch sustainability and community growth.",
+      
+     
+    },
+    results:{
+      title: "",
+      description:[
+       `Fully functional token ecosystem launched within deadline.`,"Organic community traction with measurable growth across social platforms.","Strong liquidity presence, with immediate listing on key CEXs and DEXs.","Brand credibility established through KOLs and digital assets."
+      ]
+      
+    },
     problemSolutionResult: [
       
       {
@@ -1156,6 +1174,24 @@ description:"Maxtron successfully helped a blockchain client launch a new crypto
     theprocessText: "The Process",
 description:"A world-class culinary school shaping the future of hospitality through award-winning training. Based in the heart of Dubai, ICCA empowers aspiring chefs and industry professionals with globally recognized programs, state-of-the-art facilities",
     clientSatisfaction: 5.0,
+    bussinessNeeds:{
+      title: "",
+      description:[
+        "Engages prospective students 24/7",
+        "Collects lead information and user intent accurately",
+        "Syncs all interactions directly with ICCA’s CRM (Zoho)",
+        "Recommends courses, scholarships, and career options",
+        "Adapts to ICCA’s evolving content without needing constant retraining"
+      ]
+     
+    },
+    results:{
+      title: "",
+      description:[
+       `AI Chatbot AIVA Developed & Deployed (Staging)`," Handles lead qualification using the BANT model","Recommends programs based on interests and goals","Multilingual support improves accessibility and UX","Full Zoho CRM integration for seamless lead routing","Live content updates from ICCA’s catalog & resources — no retraining needed","Built-in dashboard for monitoring leads, FAQs, and engagement"
+      ]
+      
+    },
     problemSolutionResult: [
       
       {
@@ -1272,6 +1308,23 @@ description:"A world-class culinary school shaping the future of hospitality thr
     theprocessText: "The Process",
 description:"Our recent digital activation project done for Tawuniya, an official sponsor of نادي الهلال السعودي - Al-Hilal Saudi Club during the Al-Hilal vs Al-Nassr match in the #Saudi Pro League on 4th April in Riyadh.Immersive experiences we created include #VR Goalie Activation, #AR Activation, Personalized Commentary Activation, and Fantasy Dream Team Formation at the on-ground venue.",
     clientSatisfaction: 5.0,
+    bussinessNeeds:{
+      title: "To create a high-impact fan zone that blends gamification, personalization, and immersive tech to:",
+      description:[
+        "Increase booth engagement",
+        "Drive brand recall",
+        "Promote social sharing",
+        "Collect visitor data & boost lead generation"
+      ]
+     
+    },
+    results:{
+      title: "",
+      description:[
+       `3 Custom Digital Activations Developed and Deployed Up to 1000+ visitors engaged per day`,"Personalized content shared via email, WhatsApp, and QR code","Fully branded VR environment and UI","Increased dwell time and footfall at the event zone","Enabled content virality and user amplification on social media"
+      ]
+      
+    },
     problemSolutionResult: [
       
       {
@@ -1390,6 +1443,17 @@ description:"Our recent digital activation project done for Tawuniya, an officia
     theprocessText: "The Process",
 description:"AI and blockchain-powered health-tech protocol revolutionizing how patients manage their medical data. With a secure Smart Patient Wallet, ULALO empowers users to store, share, and visualize health records, receive personalized health insights, and take control of their well-being",
     clientSatisfaction: 5.0,
+     bussinessNeeds:{
+      title: "Empower patients by building a decentralized system where individuals own their health data and can earn rewards from sharing it. Enable the healthcare industry to access ethical, verified, and high-integrity data, while ULALO positions itself as a pioneer in the tokenized healthcare data space.",
+     
+    },
+    results:{
+      title: "",
+      description:[
+        "Testnet launched, simulating real health data exchange across thousands of dummy records.","DApp released, allowing wallet-based login, data upload, permission toggles, and token rewards.","Marketing strategy implemented, with ULALO gaining traction in Web3, DeSci, and health innovation communities.","Community growth by 400% in initial 2 months through content, events, ambassador program and strategic partnerships."
+      ]
+      
+    },
     problemSolutionResult: [
       
       {

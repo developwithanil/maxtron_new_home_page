@@ -30,6 +30,8 @@ const InternalPageDetails: React.FC<InternalPageProps> = ({ caseStudies }) => {
     heroImage,
     type,
     industryInfo,
+    bussinessNeeds,
+    results,
     projectDuration,
     clientSatisfaction,
     problemSolutionResult,
@@ -114,6 +116,8 @@ const InternalPageDetails: React.FC<InternalPageProps> = ({ caseStudies }) => {
         projectDuration={projectDuration}
         clientSatisfaction={clientSatisfaction}
         afterHeroSection={afterHeroSection}
+        bussinessNeeds={bussinessNeeds}
+        resultsData={results}
       />
       {techs.length > 0 && <Technology techs={techs} />}
        <Process processSteps={caseStudy.processSteps}/>

@@ -5,6 +5,14 @@ type Props = {
   projectDuration: string;
   afterHeroSection: string;
   clientSatisfaction: number;
+  bussinessNeeds?: {
+    title?: string;
+    description?: string[];
+  };
+  resultsData?: {
+    title?: string;
+    description?: string[];
+  };
 };
 
 const BusinessResult: React.FC<Props> = ({
@@ -14,7 +22,11 @@ const BusinessResult: React.FC<Props> = ({
   projectDuration,
   afterHeroSection,
   clientSatisfaction,
+  bussinessNeeds,
+  resultsData,
 }) => {
+  const hasBusinessNeedsAndResults = bussinessNeeds && resultsData;
+
   return (
     <div className="flex flex-col w-full xl:mx-auto max-w-[88rem] items-start  py-4 md:py-6 lg:py-8 px-6 lg:px-10 xl:px-8">
       <div className="flex flex-col lg:flex-row w-full">
@@ -25,10 +37,22 @@ const BusinessResult: React.FC<Props> = ({
             </p>
           </div>
           <div className="w-full flex justify-center items-center self-stretch   py-8 px-4 ">
-            <p className="flex-[1_0_0] text-black font-openSansHebrew text-base   font-normal leading-[160%]">
-              {" "}
-              {points?.join(" ")}
-            </p>
+            {hasBusinessNeedsAndResults ? (
+              <div className="flex-[1_0_0] text-black font-openSansHebrew text-base font-normal leading-[160%]">
+                <p className="mb-4">{bussinessNeeds.title}</p>
+                {bussinessNeeds.description && (
+                  <ul className="list-disc pl-6 space-y-2">
+                    {bussinessNeeds.description.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ) : (
+              <p className="flex-[1_0_0] text-black font-openSansHebrew text-base font-normal leading-[160%]">
+                {points?.join(" ")}
+              </p>
+            )}
           </div>
         </div>
         <div className="lg:w-1/2 w-full  flex flex-col items-center bg-[rgba(217,217,217,0.20)] justify-start">
@@ -38,10 +62,22 @@ const BusinessResult: React.FC<Props> = ({
             </p>
           </div>
           <div className="w-full flex justify-center items-center self-stretch   py-8 px-4 border-l-[rgba(0,0,0,0.20)] border-l border-solid">
-            <p className="flex-[1_0_0] text-black font-openSansHebrew text-base font-normal leading-[160%]">
-              {" "}
-              {results?.join(" ")}
-            </p>
+            {hasBusinessNeedsAndResults ? (
+              <div className="flex-[1_0_0] text-black font-openSansHebrew text-base font-normal leading-[160%]">
+                {resultsData.title && <p className="mb-4">{resultsData.title}</p>}
+                {resultsData.description && (
+                  <ul className="list-disc pl-6 space-y-2">
+                    {resultsData.description.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ) : (
+              <p className="flex-[1_0_0] text-black font-openSansHebrew text-base font-normal leading-[160%]">
+                {results?.join(" ")}
+              </p>
+            )}
           </div>
         </div>
       </div>
@@ -79,25 +115,21 @@ const BusinessResult: React.FC<Props> = ({
             </p>
             <div className="text-black font-openSansHebrew flex flex-col items-center  text-base md:text-lg font-medium leading-[120%] mt-4">
               <p>
-
-               {[...Array(5)].map((_, i) => (
-    <span className="text-2xl"
-      key={i}
-      style={{
-        color: i < Math.floor(clientSatisfaction)
-          ? '#7A35C1'
-          : 'rgba(122, 53, 193, 0.3)',
-      }}
-    >
-      ★
-    </span>
-  ))}
-
+                {[...Array(5)].map((_, i) => (
+                  <span
+                    className="text-2xl"
+                    key={i}
+                    style={{
+                      color: i < Math.floor(clientSatisfaction)
+                        ? '#7A35C1'
+                        : 'rgba(122, 53, 193, 0.3)',
+                    }}
+                  >
+                    ★
+                  </span>
+                ))}
               </p>
-              <p>
-
-              {clientSatisfaction.toFixed(1)}
-              </p>
+              <p>{clientSatisfaction.toFixed(1)}</p>
             </div>
           </div>
         </div>
