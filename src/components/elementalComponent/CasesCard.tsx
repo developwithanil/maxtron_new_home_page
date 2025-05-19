@@ -150,10 +150,10 @@ const CasesCard = ({ selectedProjectType, selectedIndustry }: CasesCardProps) =>
             {displayedCaseStudies.map((item, index) => (
               <div
                 key={index}
-                className="relative group overflow-hidden rounded-[32px] aspect-[4/3] cursor-pointer"  onClick={(e) => {
+                className="relative group overflow-hidden rounded-[32px] aspect-[4/3] cursor-pointer"   onClick={(e) => {
                       e.stopPropagation();
                       navigate(
-                        `/Maxtron/${encodeURIComponent(
+                        `/Maxtron.ai/case-study/${encodeURIComponent(
                           item.subheading.replace(/\s+/g, "-")
                         )}/${index}`
                       );
