@@ -36,7 +36,7 @@ const InternalPageDetails: React.FC<InternalPageProps> = ({ caseStudies }) => {
     techs,
     afterHeroSection,
     keyFeatures,
-   
+   description,
     keyFeaturesImage,
     bgImage,
   } = caseStudy;
@@ -80,19 +80,19 @@ const InternalPageDetails: React.FC<InternalPageProps> = ({ caseStudies }) => {
           />
         </div>
       </div>
-      {/* <div className="flex flex-col md:flex-row w-full mx-auto max-w-[88rem] items-center gap-20 md:gap-24 lg:gap-32 px-[30px] md:px-[60px] lg:px-[100px] py-7 md:py-10 lg:py-12">
+      {description && (
+
+      <div className="flex flex-col md:flex-row w-full mx-auto max-w-[88rem] items-center gap-20 md:gap-24 lg:gap-32 px-[20px] md:px-[30px] lg:px-[50px] py-7 md:py-10 lg:py-12">
         <div className="w-48 md:w-[14%]">
           <img src={afterHeroSection} alt="Hero section" />
         </div>
         <div className="flex-1 ">
           <p className=" text-black font-openSansHebrew text-lg md:text-2xl font-normal leading-[160%]">
-            Lorem ipsum dolor sit amet consectetur. Mi volutpat non dolor
-            consequat nibh. Justo sodales neque malesuada consequat sed id
-            faucibus. Id eget ante in sagittis consequat mattis vestibulum.
-            Neque tellus lectus molestie etiam.
+            {description}
           </p>
         </div>
-      </div> */}
+      </div>
+      )}
       <Problem
         heading={problemSolutionResult[0].heading}
         subheading={problemSolutionResult[0].subheading}

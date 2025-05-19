@@ -122,6 +122,7 @@ export const caseStudies: CaseStudy[] = [
     projectDuration: "4 Months",
     theprocessText: "The Process",
     afterHeroSection:ludoafterherosection,
+
     type:["APP"],
     clientSatisfaction: 5.0,
     problemSolutionResult: [
@@ -1042,7 +1043,7 @@ export const caseStudies: CaseStudy[] = [
     industryInfo: "Gaming, iGaming, Crypto Gaming",
     projectDuration: "4 Months",
     theprocessText: "The Process",
-
+description:"Maxtron successfully helped a blockchain client launch a new cryptocurrency token - covering every aspect of the process: smart contract creation, liquidity deployment, influencer marketing, market making, and web design. The result was a well-orchestrated launch that stood out in a saturated Web3 landscape and gained immediate traction across crypto platforms.",
     clientSatisfaction: 4.0,
     problemSolutionResult: [
       
@@ -1153,7 +1154,7 @@ export const caseStudies: CaseStudy[] = [
     industryInfo: "Education, EdTech, AI Chatbots",
     projectDuration: "3 Months (MVP Phase)",
     theprocessText: "The Process",
-
+description:"A world-class culinary school shaping the future of hospitality through award-winning training. Based in the heart of Dubai, ICCA empowers aspiring chefs and industry professionals with globally recognized programs, state-of-the-art facilities",
     clientSatisfaction: 5.0,
     problemSolutionResult: [
       
@@ -1269,7 +1270,7 @@ export const caseStudies: CaseStudy[] = [
     industryInfo: "Event Marketing, Experiential Tech, Immersive Brand Engagement",
     projectDuration: "Quick Delivery (<2 Weeks) (Concept to Deployment)",
     theprocessText: "The Process",
-
+description:"Our recent digital activation project done for Tawuniya, an official sponsor of نادي الهلال السعودي - Al-Hilal Saudi Club during the Al-Hilal vs Al-Nassr match in the #Saudi Pro League on 4th April in Riyadh.Immersive experiences we created include #VR Goalie Activation, #AR Activation, Personalized Commentary Activation, and Fantasy Dream Team Formation at the on-ground venue.",
     clientSatisfaction: 5.0,
     problemSolutionResult: [
       
@@ -1387,7 +1388,7 @@ export const caseStudies: CaseStudy[] = [
     industryInfo: "Web3, HealthTech, Data Ownership",
     projectDuration: "4 Months",
     theprocessText: "The Process",
-
+description:"AI and blockchain-powered health-tech protocol revolutionizing how patients manage their medical data. With a secure Smart Patient Wallet, ULALO empowers users to store, share, and visualize health records, receive personalized health insights, and take control of their well-being",
     clientSatisfaction: 5.0,
     problemSolutionResult: [
       

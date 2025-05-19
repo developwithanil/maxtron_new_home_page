@@ -7,6 +7,7 @@ export interface CaseStudy {
     theprocessText:string,
     clientSatisfaction: number;
     afterHeroSection:string;
+    description?:string;
     type:string[];
     problemSolutionResult: Array<{
       heading: string;
