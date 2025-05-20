@@ -75,7 +75,7 @@ const CaseStudy = () => {
         </div>
       </div>
 
-      <div className="w-[95%] sm:w-[90%] md:w-[85%] mx-auto max-w-[88rem] relative">
+      {/* <div className="w-[95%] sm:w-[90%] md:w-[85%] mx-auto max-w-[88rem] relative">
         <div className="grid grid-cols-1 sm:grid-cols-3 border-t border-[rgba(0,0,0,0.20)] border-solid">
           <div className="p-3 sm:p-4 flex justify-center items-center text-[#8941C4] text-center font-['Switzer'] text-lg sm:text-xl md:text-2xl font-bold leading-[120%]">
             All Cases
@@ -180,6 +180,16 @@ const CaseStudy = () => {
               ))}
             </motion.div>
           </div>
+        </div>
+      </div> */}
+       <div className="w-[95%] sm:w-[90%] md:w-[85%] mx-auto max-w-[88rem] relative">
+        <div className="grid grid-cols-1 border-t border-[rgba(0,0,0,0.20)] border-solid">
+          <div className="p-3 sm:p-4 flex justify-center items-center text-[#8941C4] text-center font-['Switzer'] text-lg sm:text-xl md:text-2xl font-bold leading-[120%]">
+            All Cases
+          </div>
+
+      
+         
         </div>
       </div>
       <div className="w-[95%] sm:w-[90%] md:w-[85%] mx-auto max-w-[88rem] relative">
