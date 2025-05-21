@@ -27,7 +27,7 @@ const caseStudyData = [
     img: img5,
     heading:
       "Learn how we helped an eCommerce company successfully achieve fast growth...",
-    subheading: "E-Commerce Marketing",
+    subheading: "ECommerce Marketing",
     type:[ "Application"],
     industry: "E-Commerce"
   },
@@ -35,7 +35,7 @@ const caseStudyData = [
     img: img4,
     heading: "Developed 7+ mini-games, which can be played on one single plateform, to enable the quick earning and gaming experience for users",
    
-    subheading: "Mini-Gaming Platform",
+    subheading: "Mini Gaming Platform",
     type: ["App ", "Web 3.0"],
     industry: "AI"
   },
@@ -50,7 +50,7 @@ const caseStudyData = [
   {
     img: img6,
     heading: "A NextGen AI-phone calling tool...",
-    subheading: "AI-Calling Tool",
+    subheading: "AI Calling Tool",
     type: ["Application"],
     industry: "AI"
   },
@@ -65,7 +65,7 @@ const caseStudyData = [
     img: img2,
     heading:
       "A blockchain solution to ensure anonymity and verifiability in voting...",
-    subheading: "Blockchain-Based E-Voting System",
+    subheading: "Blockchain Based EVoting System",
     type: ["Application"],
     industry: "Government"
   },
@@ -155,7 +155,7 @@ const CasesCard = ({ selectedProjectType, selectedIndustry }: CasesCardProps) =>
                       navigate(
                         `/Maxtron.ai/case-study/${encodeURIComponent(
                           item.subheading.replace(/\s+/g, "-")
-                        )}/${index}`
+                        )}`
                       );
                     }}
               >
@@ -208,7 +208,7 @@ const CasesCard = ({ selectedProjectType, selectedIndustry }: CasesCardProps) =>
                       navigate(
                         `/Maxtron.ai/case-study/${encodeURIComponent(
                           item.subheading.replace(/\s+/g, "-")
-                        )}/${index}`
+                        )}`
                       );
                     }}
                   >
@@ -228,7 +228,7 @@ const CasesCard = ({ selectedProjectType, selectedIndustry }: CasesCardProps) =>
 
           {filteredCaseStudies.length > 6 && (
             <button
-              className="text-white px-5 py-3 rounded-2xl font-['Switzer'] border-2 self-center border-white font-medium transition-all duration-300 bg-[#8952b6]/60 hover:bg-[#6B2F9C] hover:shadow-lg active:scale-95"
+              className="text-white px-5 py-3 rounded-2xl font-['Switzer'] border-2 self-center border-white font-medium transition-all duration-300 bg-[#6B2F9C] hover:shadow-lg hover:scale-105"
               onClick={() => setShowAll(!showAll)}
             >
               {showAll ? "Show Less" : "View More"}

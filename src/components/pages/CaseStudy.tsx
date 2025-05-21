@@ -13,8 +13,8 @@ import GovtHy from "../../../public/client/govtHyryana.svg";
 import Ludo from "../../../public/client/ludoLove.svg";
 import cadbury from "../../../public/client/cadbury.svg";
 import Audi from "../../../public/client/audi.svg";
-// import { ArrowDown, ArrowUp } from "../VectorImage";
-// import { motion } from "motion/react"; 
+import { ArrowDown, ArrowUp } from "../VectorImage";
+import { motion } from "motion/react"; 
 import { useState } from "react";
 import CasesCard from "../elementalComponent/CasesCard";
 import ContactForm from "../ContactForm";
@@ -39,16 +39,16 @@ const clients = [
   { name: "Audi", logo: Audi },
 ];
 
-// const projectTypes = ["All", "APP", "APPLICATION", "Event", "Management", "Web Development", "UX/UI", "Marketing", "Graphic Design", "Chat Bot", "Web3 Development", "Video Editing"];
-// const industries = ["All", "Gaming", "E-Commerce", "AI", "Web3", "Education", "Healthcare", "Government", "Social", "Startup", "Culinary", "Sports"];
+const projectTypes = ["All", "APP", "APPLICATION", "Event", "Management", "Web Development", "UX/UI", "Marketing", "Graphic Design", "Chat Bot", "Web3 Development", "Video Editing"];
+const industries = ["All", "Gaming", "E-Commerce", "AI", "Web3", "Education", "Healthcare", "Government", "Social", "Startup", "Culinary", "Sports"];
 
 const CaseStudy = () => {
-  // const [isProjectTypeOpen, setIsProjectTypeOpen] = useState(false);
-  // const [isIndustryOpen, setIsIndustryOpen] = useState(false);
-  // const [selectedProjectType, setSelectedProjectType] = useState("All");
-  // const [selectedIndustry, setSelectedIndustry] = useState("All");
-  const [selectedProjectType, ] = useState("All");
-  const [selectedIndustry, ] = useState("All");
+  const [isProjectTypeOpen, setIsProjectTypeOpen] = useState(false);
+  const [isIndustryOpen, setIsIndustryOpen] = useState(false);
+  const [selectedProjectType, setSelectedProjectType] = useState("All");
+  const [selectedIndustry, setSelectedIndustry] = useState("All");
+  // const [selectedProjectType, ] = useState("All");
+  // const [selectedIndustry, ] = useState("All");
 
   return (
     <div className="w-full flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 mt-2 mb-4 relative">
@@ -77,7 +77,7 @@ const CaseStudy = () => {
         </div>
       </div>
 
-      {/* <div className="w-[95%] sm:w-[90%] md:w-[85%] mx-auto max-w-[88rem] relative">
+      <div className="w-[95%] sm:w-[90%] md:w-[85%] mx-auto max-w-[88rem] relative">
         <div className="grid grid-cols-1 sm:grid-cols-3 border-t border-[rgba(0,0,0,0.20)] border-solid">
           <div className="p-3 sm:p-4 flex justify-center items-center text-[#8941C4] text-center font-['Switzer'] text-lg sm:text-xl md:text-2xl font-bold leading-[120%]">
             All Cases
@@ -183,17 +183,8 @@ const CaseStudy = () => {
             </motion.div>
           </div>
         </div>
-      </div> */}
-       <div className="w-[95%] sm:w-[90%] md:w-[85%] mx-auto max-w-[88rem] relative">
-        <div className="grid grid-cols-1 border-t border-[rgba(0,0,0,0.20)] border-solid">
-          <div className="p-3 sm:p-4 flex justify-center items-center text-[#8941C4] text-center font-['Switzer'] text-lg sm:text-xl md:text-2xl font-bold leading-[120%]">
-            All Cases
-          </div>
-
-      
-         
-        </div>
       </div>
+      
       <div className="w-[95%] sm:w-[90%] md:w-[85%] mx-auto max-w-[88rem] relative">
         <CasesCard 
           selectedProjectType={selectedProjectType}

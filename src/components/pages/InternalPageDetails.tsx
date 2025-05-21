@@ -16,8 +16,9 @@ interface InternalPageProps {
 }
 
 const InternalPageDetails: React.FC<InternalPageProps> = ({ caseStudies }) => {
-  const { id } = useParams<{ id: string }>();
-  const caseStudy = caseStudies[Number(id)];
+  const { casestudyName } = useParams<{ casestudyName: string }>();
+  const caseStudyName = casestudyName?.replace(/-/g, " ");
+  const caseStudy = caseStudies.find((study) => study.name === caseStudyName);
 
   if (!caseStudy) {
     return (

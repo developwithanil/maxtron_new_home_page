@@ -9,6 +9,7 @@ export interface CaseStudy {
     afterHeroSection:string;
     description?:string;
     type:string[];
+    name: string;
     problemSolutionResult: Array<{
       heading: string;
       subheading: string;

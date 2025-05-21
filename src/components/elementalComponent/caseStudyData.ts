@@ -122,6 +122,7 @@ export const caseStudies: CaseStudy[] = [
     projectDuration: "4 Months",
     theprocessText: "The Process",
     afterHeroSection:ludoafterherosection,
+    name:"Blockchain Game Development",
 
     type:["APP"],
     clientSatisfaction: 5.0,
@@ -220,7 +221,7 @@ export const caseStudies: CaseStudy[] = [
     projectDuration: "4 Months",
     afterHeroSection:shaper2,
     theprocessText: "The Process",
-
+name:"ECommerce Marketing",
     clientSatisfaction: 5.0,
     problemSolutionResult: [
       {
@@ -324,6 +325,7 @@ export const caseStudies: CaseStudy[] = [
     projectDuration: "2 Months",
     clientSatisfaction: 5.0,
     theprocessText: "The Process",
+    name:"Mini Gaming Platform",
     problemSolutionResult: [
       {
         heading: "Problem",
@@ -411,6 +413,7 @@ export const caseStudies: CaseStudy[] = [
     projectDuration: "12 Months",
     afterHeroSection:create1,
     type:["APPLICATION"],
+    name:"Decentralized AI Platform",
     theprocessText: "TECH AND INFRASTRUCTURE",
     clientSatisfaction: 5.0,
     problemSolutionResult: [
@@ -478,7 +481,7 @@ export const caseStudies: CaseStudy[] = [
     industryInfo: "Telecom, Hi-Tech, Artificial",
     projectDuration: "5 Months",
     theprocessText: "Benefits",
-
+ name:"AI Calling Tool",
     clientSatisfaction: 5.0,
     problemSolutionResult: [
       {
@@ -588,7 +591,7 @@ export const caseStudies: CaseStudy[] = [
     industryInfo: "Blockchain and Decentralized Technology, Crypto Finance",
     projectDuration: "4 Months",
     theprocessText: "The Process",
-
+name:"Crypto Project Marketing",
     clientSatisfaction: 5.0,
     problemSolutionResult: [
       
@@ -702,6 +705,7 @@ export const caseStudies: CaseStudy[] = [
     type:["APPLICATION"],
     afterHeroSection:usablock,
     industryInfo: "Web3.0, Non-Profits,Voting",
+    name:"Blockchain Based EVoting System",
     projectDuration: "4 Months",
     theprocessText: "The Process",
 
@@ -805,7 +809,7 @@ export const caseStudies: CaseStudy[] = [
     industryInfo: "Web3.0, Gig-economy, non-profits",
     projectDuration: "5 Months",
     theprocessText: "The Process",
-
+name:"Good Standing",
     clientSatisfaction: 5.0,
     problemSolutionResult: [
     
@@ -940,7 +944,7 @@ export const caseStudies: CaseStudy[] = [
     industryInfo: "Venture capital & private equity",
     projectDuration: "4 Months",
     theprocessText: "The Process",
-
+name:"Gro8",
     clientSatisfaction: 5.0,
     problemSolutionResult: [
       
@@ -1048,6 +1052,7 @@ export const caseStudies: CaseStudy[] = [
     afterHeroSection:process,
     industryInfo: "Gaming, iGaming, Crypto Gaming",
     projectDuration: "4 Months",
+    name:"Token Launch",
     theprocessText: "The Process",
 description:"Maxtron successfully helped a blockchain client launch a new cryptocurrency token - covering every aspect of the process: smart contract creation, liquidity deployment, influencer marketing, market making, and web design. The result was a well-orchestrated launch that stood out in a saturated Web3 landscape and gained immediate traction across crypto platforms.",
     clientSatisfaction: 4.0,
@@ -1172,6 +1177,7 @@ description:"Maxtron successfully helped a blockchain client launch a new crypto
     industryInfo: "Education, EdTech, AI Chatbots",
     projectDuration: "3 Months (MVP Phase)",
     theprocessText: "The Process",
+    name:"ICCA",
 description:"A world-class culinary school shaping the future of hospitality through award-winning training. Based in the heart of Dubai, ICCA empowers aspiring chefs and industry professionals with globally recognized programs, state-of-the-art facilities",
     clientSatisfaction: 5.0,
     bussinessNeeds:{
@@ -1303,6 +1309,7 @@ description:"A world-class culinary school shaping the future of hospitality thr
     heroImage: tawuniyamain,
     type:["Event","Management"],
     afterHeroSection:tawuniya,
+    name:"Tawuniya",
     industryInfo: "Event Marketing, Experiential Tech, Immersive Brand Engagement",
     projectDuration: "Quick Delivery (<2 Weeks) (Concept to Deployment)",
     theprocessText: "The Process",
@@ -1441,6 +1448,7 @@ description:"Our recent digital activation project done for Tawuniya, an officia
     industryInfo: "Web3, HealthTech, Data Ownership",
     projectDuration: "4 Months",
     theprocessText: "The Process",
+    name:"ULALO",
 description:"AI and blockchain-powered health-tech protocol revolutionizing how patients manage their medical data. With a secure Smart Patient Wallet, ULALO empowers users to store, share, and visualize health records, receive personalized health insights, and take control of their well-being",
     clientSatisfaction: 5.0,
      bussinessNeeds:{
