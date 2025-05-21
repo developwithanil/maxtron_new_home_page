@@ -1,4 +1,4 @@
-# React + TypeScript + Vite 
+# React + TypeScript + Vite  +tailwind
 
 
 
@@ -15,6 +15,8 @@ Currently, two official plugins are available:
 If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
 - Configure the top-level `parserOptions` property like this:
+
+- 
 
 
 export default {
