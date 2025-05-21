@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbars";
-import Banner from "./components/Banner";
+// import Banner from "./components/Banner";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import Service from "./components/Services";
@@ -17,10 +17,11 @@ import CaseStudy from "./components/pages/CaseStudy";
 import InternalPageDetails from "./components/pages/InternalPageDetails";
 import Careers from "./components/pages/Careers";
 import TokenizePage from "./components/pages/TokenizePage";
+import NewHomePage from "./components/pages/NewHomePage";
 
 const Home: React.FC = () => (
   <div>
-    <Banner />
+    <NewHomePage />
   </div>
 );
 

@@ -1,8 +1,12 @@
-
+import ClientMarquee from "../elementalComponent/ClientMarquee"
+import HeroSection from "../Hero"
 
 const NewHomePage = () => {
   return (
-    <div>NewHomePage</div>
+     <div id="Home" className="">
+          <HeroSection />
+          <ClientMarquee/>
+     </div>
   )
 }
 
