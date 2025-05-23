@@ -19,7 +19,7 @@ const Banner = () => {
       <HeroSection />
       <ChooseUs />
       <WhatWeDo />
-      <MakingThemSuccessful/>
+      <MakingThemSuccessful />
       <Statistics />
       <ClientMarquee />
       <CaseStudy />
