@@ -39,7 +39,7 @@ const clients = [
 const ClientMarquee = () => {
   return (
     <div className="py-6 md:py-8 lg:py-10 xl:py-11 my-6 md:my-7 lg:my-8 xl:my-10">
-      <div className="container mx-auto px-4 md:px-10 lg:px-12 xl:px-16 space-y-3 lg:space-y-4">
+      <div className="container mx-auto px-4 space-y-3 lg:space-y-4">
         <div className="relative marquee-container">
           <div className="animate-marquee whitespace-nowrap">
             {clients.concat(clients).map((client, index) => (
@@ -47,10 +47,8 @@ const ClientMarquee = () => {
                 <img
                   src={client.logo}
                   alt={client.name}
-                  className="h-28 md:h-32 lg:h-36 xl:h-40 w-28 md:w-32 lg:w-36 xl:w-40 p-2 md:p-4"
-                  // effect="blur"
-                  // placeholderSrc={client.logo} // Optional: Placeholder image for better UX
-                  // threshold={100} // Load images 100px before they are in view
+                  className="h-24 md:h-32 lg:h-36 xl:h-40 w-24 md:w-32 lg:w-36 xl:w-40 p-2 md:p-4"
+                 
                 />
               </div>
             ))}
