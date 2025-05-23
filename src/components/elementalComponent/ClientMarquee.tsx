@@ -48,7 +48,6 @@ const ClientMarquee = () => {
                   src={client.logo}
                   alt={client.name}
                   className="h-24 md:h-32 lg:h-36 xl:h-40 w-24 md:w-32 lg:w-36 xl:w-40 p-2 md:p-4"
-                 
                 />
               </div>
             ))}

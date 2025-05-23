@@ -170,11 +170,11 @@ const Navbar: React.FC = () => {
               About Us
             </NavLink>
             <NavLink
-           to="/careers"
+              to="/careers"
               onClick={() => setIsOpen(false)}
               className="block text-[#4E009C] hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium"
             >
-            Careers
+              Careers
             </NavLink>
           </div>
 
