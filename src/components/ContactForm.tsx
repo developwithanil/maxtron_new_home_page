@@ -104,7 +104,7 @@ const ContactForm: React.FC = () => {
           </div>
 
           {/* Right Section - Form */}
-          <div className="w-full lg:w-1/2  p-4 sm:p-6  rounded-2xl  ">
+          <div className="w-full lg:w-1/2  p-0 sm:p-6  rounded-2xl  ">
             <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label

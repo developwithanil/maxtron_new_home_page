@@ -1,165 +1,166 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import darkFullLogo from "../assets/darkFullLogo.png"; // Make sure this path is correct
+import darkFullLogo from "../assets/darkFullLogo.png"; // Ensure this path is correct
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
-// --- Helper Icons (can be moved to a separate file) ---
-const ChevronDownIcon: React.FC<{ className?: string }> = ({
-  className = "w-4 h-4 inline-block ml-1 opacity-70",
-}) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 20 20"
-    fill="currentColor"
-    className={className}
-  >
-    <path
-      fillRule="evenodd"
-      d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-      clipRule="evenodd"
-    />
-  </svg>
+// This is for the DESKTOP dropdown header, not mobile.
+const CustomArrowIcon = () => (
+  <div className="flex-shrink-0 w-6 h-6 bg-[#7A35C1] rounded flex items-center justify-center ml-2">
+    <svg
+      width="10"
+      height="10"
+      viewBox="0 0 8 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1 11L6 6L1 1"
+        stroke="white"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </div>
 );
 
-const RightArrowIcon: React.FC<{ className?: string }> = ({
-  className = "w-5 h-5",
-}) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={3}
-    stroke="currentColor"
-    className={className}
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M8.25 4.5l7.5 7.5-7.5 7.5"
-    />
-  </svg>
-);
-// --- End Helper Icons ---
-
-// --- Navigation Data ---
-interface NavItem {
-  id: string;
-  label: string;
-  path: string;
-  hasDropdown?: boolean;
-}
-
-const navLinks: NavItem[] = [
-  { id: "tokenization", label: "Tokenization", path: "/tokenization" },
-  { id: "case-studies", label: "Case Studies", path: "/case-studies" },
-  { id: "services", label: "Services", path: "/services", hasDropdown: true }, // Example: Services also has a dropdown
-  {
-    id: "industries",
-    label: "Industries",
-    path: "/industries",
-    hasDropdown: true,
+const dropdownContentData = {
+  industries: {
+    head: "Who We Help",
+    title: "Industries",
+    link: "/industries",
+    liTags: [
+      { name: "Gaming", link: "/industries/gaming" }, // Corrected link
+      {
+        name: "Banking & Financial Services",
+        link: "/industries",
+      },
+      { name: "Food & Beverages", link: "/industries" },
+      { name: "Retail & E-Commerce", link: "/industries" },
+      {
+        name: "Supply Chain & Logistics",
+        link: "/industries",
+      },
+      {
+        name: "Sustainable Industry",
+        link: "/industries",
+      },
+      { name: "Construction", link: "/industries" },
+      { name: "Healthcare", link: "/industries" },
+    ],
   },
-  { id: "about", label: "About", path: "/about" },
-  { id: "careers", label: "Careers", path: "/careers" },
-];
-
-// Content for dropdowns
-// The function receives a `close` callback to close the dropdown upon item click
-const dropdownContents: {
-  [key: string]: (close: () => void) => React.ReactNode;
-} = {
-  industries: (closeDropdown) => (
-    <div className="p-6 bg-white shadow-xl rounded-lg w-[90vw] max-w-4xl">
-      <div className="flex items-center mb-6">
-        <h3 className="text-2xl font-bold text-gray-800 font-openSansHebrew">
-          Who We Help
-        </h3>
-        <div className="ml-3 bg-[#4E009C] text-white w-8 h-8 rounded-md flex items-center justify-center">
-          <RightArrowIcon />
-        </div>
-      </div>
-      <p className="text-sm text-gray-500 mb-4 uppercase tracking-wider font-openSansHebrew">
-        Industries
-      </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3">
-        {[
-          { name: "Gaming", to: "/industries/gaming", special: true },
-          {
-            name: "Banking & Financial Services",
-            to: "/industries/banking-financial-services",
-          },
-          { name: "Food & Beverages", to: "/industries/food-beverages" },
-          { name: "Retail & E-Commerce", to: "/industries/retail-ecommerce" },
-          {
-            name: "Supply Chain & Logistics",
-            to: "/industries/supply-chain-logistics",
-          },
-          {
-            name: "Sustainable Industry",
-            to: "/industries/sustainable-industry",
-          },
-          { name: "Construction", to: "/industries/construction" },
-          { name: "Healthcare", to: "/industries/healthcare" },
-        ].map((item) => (
-          <Link
-            key={item.name}
-            to={item.to}
-            onClick={closeDropdown}
-            className={`block py-1 text-gray-700 hover:text-[#4E009C] transition-colors duration-150 font-openSansHebrew ${
-              item.special ? "text-[#4E009C] font-semibold" : ""
-            }`}
-          >
-            {item.name}
-          </Link>
-        ))}
-      </div>
-    </div>
-  ),
-  services: (closeDropdown) => (
-    <div className="p-4 bg-white shadow-xl rounded-lg w-60">
-      <h3 className="text-lg font-semibold mb-3 text-gray-800 font-openSansHebrew">
-        Our Services
-      </h3>
-      <Link
-        to="/services/consulting"
-        onClick={closeDropdown}
-        className="block py-1 text-gray-700 hover:text-[#4E009C] font-openSansHebrew"
-      >
-        Consulting
-      </Link>
-      <Link
-        to="/services/development"
-        onClick={closeDropdown}
-        className="block py-1 text-gray-700 hover:text-[#4E009C] font-openSansHebrew"
-      >
-        Development
-      </Link>
-      <Link
-        to="/services/support"
-        onClick={closeDropdown}
-        className="block py-1 text-gray-700 hover:text-[#4E009C] font-openSansHebrew"
-      >
-        Support
-      </Link>
-    </div>
-  ),
+  services: {
+    head: "What We Do",
+    title: "Services",
+    link: "/services",
+    liTags: [
+      { name: "Web3", link: "/services" },
+      { name: "Artificial Intelligence", link: "/services" },
+      {
+        name: "Experiential Development",
+        link: "https://experiences.maxtron.ai/",
+      },
+      { name: "Business Enhancement", link: "/services" },
+    ],
+  },
+  caseStudies: {
+    head: "Our Work",
+    title: "Projects",
+    link: "/case-studies",
+    liTags: [
+      {
+        name: "Blockchain Game Development",
+        link: "/Maxtron.ai/case-study/Blockchain-Game-Development",
+      },
+      {
+        name: "E-commerce Marketing",
+        link: "/Maxtron.ai/case-study/ECommerce-Marketing",
+      },
+      {
+        name: "Mini-Gaming Platform",
+        link: "/Maxtron.ai/case-study/Mini-Gaming-Platform",
+      },
+      {
+        name: "AI-Calling Tool",
+        link: "/Maxtron.ai/case-study/AI-Calling-Tool",
+      },
+      {
+        name: "Crypto Project Marketing",
+        link: "/Maxtron.ai/case-study/Crypto-Project-Marketing",
+      },
+      {
+        name: "Blockchain Based E-Voting System",
+        link: "/Maxtron.ai/case-study/Blockchain-Based-EVoting-System",
+      },
+      { name: "Good Standing", link: "/Maxtron.ai/case-study/Good-Standing" },
+      { name: "GRO8", link: "/Maxtron.ai/case-study/Gro8" }, // Assuming 'GRO8' is the correct case
+      { name: "Token Launch", link: "/Maxtron.ai/case-study/Token-Launch" },
+      { name: "ICCA", link: "/Maxtron.ai/case-study/ICCA" }, // Assuming 'ICCA' is the correct case
+      { name: "Tawuniya", link: "/Maxtron.ai/case-study/Tawuniya" },
+      { name: "ULALO", link: "/Maxtron.ai/case-study/ULALO" }, // Assuming 'ULALO' is the correct case
+    ],
+  },
+  tokenization: {
+    head: "Explore Tokenization",
+    title: "Tokenization",
+    link: "/tokenization",
+    liTags: [
+      { name: "Asset Tokenization", link: "/tokenization/asset" },
+      { name: "Real World Assets (RWA)", link: "/tokenization/rwa" },
+      { name: "Security Tokens (STO)", link: "/tokenization/security-tokens" },
+      { name: "Utility Tokens", link: "/tokenization/utility-tokens" },
+    ],
+  },
+  about: {
+    head: "Learn About Us",
+    title: "About Maxtron",
+    link: "/about",
+    liTags: [
+      { name: "Our Mission & Vision", link: "/about/mission" },
+      { name: "Meet The Team", link: "/about/team" },
+      { name: "Our Journey", link: "/about/history" },
+    ],
+  },
+  careers: {
+    head: "Join Our Team",
+    title: "Careers at Maxtron",
+    link: "/careers",
+    liTags: [
+      { name: "Current Openings", link: "/careers/openings" },
+      { name: "Life at Maxtron", link: "/careers/life-at-maxtron" },
+      { name: "Employee Benefits", link: "/careers/benefits" },
+    ],
+  },
 };
-// --- End Navigation Data ---
+type DropdownKey = keyof typeof dropdownContentData;
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   const { pathname } = useLocation();
+  const navRef = useRef<HTMLElement>(null);
 
-  // Dropdown states
-  const [stickyDropdown, setStickyDropdown] = useState<string | null>(null);
-  const [hoveredDropdown, setHoveredDropdown] = useState<string | null>(null);
-
-  const navItemRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
-  const dropdownContainerRef = useRef<HTMLDivElement | null>(null);
-  const mouseLeaveTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const [activeDropdownKey, setActiveDropdownKey] =
+    useState<DropdownKey | null>(null);
+  const [openMobileDropdownKey, setOpenMobileDropdownKey] =
+    useState<DropdownKey | null>(null);
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setIsMobileMenuOpen((prev) => !prev);
+    setActiveDropdownKey(null); // Close desktop dropdown
+    if (isMobileMenuOpen) {
+      // If was open, now closing
+      setOpenMobileDropdownKey(null); // Close mobile dropdown when closing main mobile menu
+    }
+  };
+
+  const handleMobileNavClick = () => {
+    setIsMobileMenuOpen(false);
+    setOpenMobileDropdownKey(null);
+  };
+
+  const handleMobileDropdownToggle = (key: DropdownKey) => {
+    setOpenMobileDropdownKey((prevKey) => (prevKey === key ? null : key));
   };
 
   useEffect(() => {
@@ -172,267 +173,391 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    setIsMobileMenuOpen(false); // Close mobile menu on navigation
-    setStickyDropdown(null); // Close any sticky dropdowns on navigation
-    setHoveredDropdown(null); // Clear hover state
+    setActiveDropdownKey(null); // Close desktop dropdown on route change
+    setIsMobileMenuOpen(false); // Close mobile menu on route change
+    setOpenMobileDropdownKey(null); // Close mobile dropdown on route change
   }, [pathname]);
 
-  // Close dropdowns utility
-  const closeAllDropdowns = () => {
-    setStickyDropdown(null);
-    setHoveredDropdown(null);
-    if (mouseLeaveTimeoutRef.current) {
-      clearTimeout(mouseLeaveTimeoutRef.current);
-    }
-  };
-
-  // Handlers for dropdown logic
-  const handleMouseEnter = (linkId: string) => {
-    if (mouseLeaveTimeoutRef.current)
-      clearTimeout(mouseLeaveTimeoutRef.current);
-    if (dropdownContents[linkId]) {
-      // Only act if the link is supposed to have a dropdown
-      if (stickyDropdown !== linkId) {
-        // Don't show hover dropdown if a different one is sticky, or if this one is already sticky
-        setHoveredDropdown(linkId);
-      } else if (stickyDropdown === linkId) {
-        setHoveredDropdown(linkId); // Ensure hover is active if it's the sticky one
-      }
-    }
-  };
-
-  const handleMouseLeaveWrapper = () => {
-    mouseLeaveTimeoutRef.current = setTimeout(() => {
-      setHoveredDropdown(null);
-    }, 150); // Small delay to allow moving to dropdown panel
-  };
-
-  const handleMouseEnterDropdownPanel = () => {
-    if (mouseLeaveTimeoutRef.current)
-      clearTimeout(mouseLeaveTimeoutRef.current);
-  };
-
-  const handleLinkClick = (
-    linkId: string,
-    event: React.MouseEvent,
-    isDropdownLink: boolean
-  ) => {
-    if (mouseLeaveTimeoutRef.current)
-      clearTimeout(mouseLeaveTimeoutRef.current);
-
-    if (isDropdownLink && dropdownContents[linkId]) {
-      event.preventDefault(); // Prevent navigation for dropdown toggles
-      if (stickyDropdown === linkId) {
-        setStickyDropdown(null); // Toggle off
-        setHoveredDropdown(null); // Clear hover as well
-      } else {
-        setStickyDropdown(linkId); // Set as sticky
-        setHoveredDropdown(linkId); // Also set as hovered to ensure it's visible
-      }
-    } else {
-      // It's a normal link or a link that should navigate immediately
-      closeAllDropdowns(); // Close any open dropdowns
-      setIsMobileMenuOpen(false); // Close mobile menu if open
-      // Navigation will be handled by NavLink
-    }
-  };
-
-  // Effect for clicking outside to close sticky dropdown
+  // Close desktop dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (stickyDropdown) {
-        const isClickOnOpener = navItemRefs.current[stickyDropdown]?.contains(
-          event.target as Node
-        );
-        const isClickInsideDropdown = dropdownContainerRef.current?.contains(
-          event.target as Node
-        );
-
-        if (!isClickOnOpener && !isClickInsideDropdown) {
-          setStickyDropdown(null);
-          setHoveredDropdown(null); // Also clear hover
-        }
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setActiveDropdownKey(null);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, [stickyDropdown]);
-
-  // Cleanup timeout on unmount
-  useEffect(() => {
-    return () => {
-      if (mouseLeaveTimeoutRef.current)
-        clearTimeout(mouseLeaveTimeoutRef.current);
-    };
   }, []);
 
-  const visibleDropdownKey = stickyDropdown || hoveredDropdown;
+  const handleNavButtonClick = (key: DropdownKey) => {
+    setActiveDropdownKey((prevKey) => (prevKey === key ? null : key));
+  };
+
+  const closeDesktopDropdown = () => {
+    setActiveDropdownKey(null);
+  };
+
+  const navLinksConfig = [
+    {
+      label: "Industries",
+      key: "industries" as DropdownKey,
+    },
+    { label: "Services", key: "services" as DropdownKey },
+    {
+      label: "Our Work",
+      key: "caseStudies" as DropdownKey,
+    },
+  ];
+
+  const currentDropdownContent = activeDropdownKey
+    ? dropdownContentData[activeDropdownKey]
+    : null;
 
   return (
     <nav
-      className={`bg-white shadow-lg rounded-3xl mx-4 sm:mx-2 md:mx-6 lg:mx-8 mt-4 sm:mt-6 
+      ref={navRef}
+      className={`shadow-lg ${
+        activeDropdownKey ? "rounded-t-3xl" : "rounded-3xl"
+      } 
         ${
           isSticky
-            ? "fixed top-0 left-0 right-0 z-50 transform-none rounded-none !mx-0 !mt-0"
-            : ""
+            ? "fixed top-0 left-0 right-0 z-50 bg-white  backdrop-blur-sm transform transition-all duration-300 ease-in-out mx-4 sm:mx-2 md:mx-6 lg:mx-8  mt-4 sm:mt-6"
+            : "relative mx-4 sm:mx-2 md:mx-6 lg:mx-8 mt-4 sm:mt-6"
         }
-      `} // Adjusted sticky styles
+      `}
     >
-      <div className="max-w-7xl mx-auto px-3 sm:px-3 lg:px-5">
-        <div className="flex items-center justify-between h-16 sm:h-20">
+      {/* Main Navbar Content Area (Logo, Nav Links, CTAs) */}
+      <div className="max-w-screen mx-auto px-4">
+        <div className="flex items-center justify-between h-20">
+          {" "}
+          {/* Standardized height for the nav bar row */}
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link to="/" onClick={closeAllDropdowns}>
-              <img
-                className="h-10 w-auto sm:h-14"
-                src={darkFullLogo}
-                alt="Maxtron Logo"
-              />
-            </Link>
+          <div className="max-w-7xl mx-auto flex xl:gap-10 justify-between w-full">
+            <div className="flex-shrink-0">
+              <Link to="/" onClick={closeDesktopDropdown}>
+                <img
+                  className="h-10 w-auto sm:h-12"
+                  src={darkFullLogo}
+                  alt="Maxtron Logo"
+                />
+              </Link>
+            </div>
+            {/* Desktop and Tablet Menu */}
+            <div className="hidden lg:flex items-center">
+              <div className="flex items-baseline space-x-1 xl:space-x-2">
+                {navLinksConfig.map(({ label, key }) => (
+                  <div key={key} className="relative">
+                    {" "}
+                    <button
+                      onClick={() => handleNavButtonClick(key)}
+                      className={`flex items-center px-2 xl:px-3 py-2 rounded-md text-sm xl:text-base font-medium focus:outline-none transition-colors duration-150 ease-in-out
+                                ${
+                                  activeDropdownKey === key
+                                    ? "text-purple-900 bg-purple-100"
+                                    : "text-[#4E009C] hover:text-purple-800 hover:bg-purple-50"
+                                }`}
+                      aria-haspopup="true"
+                      aria-expanded={activeDropdownKey === key}
+                    >
+                      {label}
+                      {key && (
+                        <span className="ml-1">
+                          {activeDropdownKey === key ? (
+                            <FiChevronUp size={16} />
+                          ) : (
+                            <FiChevronDown size={16} />
+                          )}
+                        </span>
+                      )}
+                    </button>
+                  </div>
+                ))}
+                <NavLink
+                  to="/tokenization"
+                  onClick={closeDesktopDropdown}
+                  className={({ isActive }) =>
+                    `block ${
+                      isActive
+                        ? "bg-purple-100 text-purple-700"
+                        : "text-[#4E009C]"
+                    } hover:bg-purple-50 hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium`
+                  }
+                >
+                  Tokenization
+                </NavLink>
+                <NavLink
+                  to="/careers"
+                  onClick={closeDesktopDropdown}
+                  className={({ isActive }) =>
+                    `block ${
+                      isActive
+                        ? "bg-purple-100 text-purple-700"
+                        : "text-[#4E009C]"
+                    } hover:bg-purple-50 hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium`
+                  }
+                >
+                  Careers
+                </NavLink>
+                <NavLink
+                  to="/about"
+                  onClick={closeDesktopDropdown}
+                  className={({ isActive }) =>
+                    `block ${
+                      isActive
+                        ? "bg-purple-100 text-purple-700"
+                        : "text-[#4E009C]"
+                    } hover:bg-purple-50 hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium`
+                  }
+                >
+                  About
+                </NavLink>
+              </div>
+
+              <div className="flex items-center space-x-1 xl:space-x-4 ml-4 xl:ml-6">
+                <Link
+                  to="/contact"
+                  onClick={closeDesktopDropdown}
+                  className="text-white bg-[#4E009C] hover:bg-purple-800 px-5 py-2.5 rounded-full text-xs lg:text-sm font-medium whitespace-nowrap transition-colors duration-150"
+                >
+                  Contact Us
+                </Link>
+                <button
+                  onClick={() => {
+                    window.open(
+                      "https://calendly.com/business-maxtron/30min",
+                      "_blank"
+                    );
+                    closeDesktopDropdown();
+                  }}
+                  className="text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 px-5 py-2.5 rounded-full text-xs lg:text-sm font-medium whitespace-nowrap transition-all duration-150 shadow-md hover:shadow-lg"
+                >
+                  Book a Call
+                </button>
+              </div>
+            </div>
+            {/* Mobile Menu Toggle */}
+            <div className="lg:hidden flex items-center">
+              <button
+                onClick={toggleMobileMenu}
+                className="text-purple-600 hover:text-purple-800 focus:outline-none focus:text-purple-800 p-2 rounded-md"
+                aria-controls="mobile-menu"
+                aria-expanded={isMobileMenuOpen}
+              >
+                <span className="sr-only">Open main menu</span>
+                <svg
+                  className="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d={
+                      isMobileMenuOpen
+                        ? "M6 18L18 6M6 6l12 12"
+                        : "M4 6h16M4 12h16M4 18h16"
+                    }
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Shared Full-Width Dropdown for Desktop */}
+      {activeDropdownKey && currentDropdownContent && (
+        <div
+          className={`
+      absolute left-0 right-0 z-40 top-full
+      ${
+        activeDropdownKey
+          ? "dropdown-animation-open" // Make sure these CSS classes are defined for animation
+          : "dropdown-animation-close"
+      }
+    `}
+          onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside dropdown
+        >
+          <div className="mx-auto">
+            {" "}
+            {/* Consider max-w-screen-xl if needed */}
+            <div className="bg-gray-50 rounded-b-xl p-6 ring-1 ring-black ring-opacity-5 max-h-[calc(100vh-8rem)] overflow-y-auto">
+              <div className="flex items-center mb-5">
+                <h3 className="text-xl font-bold text-gray-800">
+                  {currentDropdownContent.head}
+                </h3>
+                <CustomArrowIcon />
+              </div>
+              <Link
+                to={currentDropdownContent.link}
+                onClick={closeDesktopDropdown}
+                className="block text-[18px] font-semibold text-[#9693A6] mb-5"
+              >
+                {currentDropdownContent.title}
+              </Link>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-3 font-openSansHebrew text-[20px] text-[#2A2A2A]">
+                {currentDropdownContent.liTags.map((item, index) => {
+                  const itemName = typeof item === "string" ? item : item.name;
+                  let itemLink = "#";
+                  if (typeof item === "object" && item.link) {
+                    itemLink = item.link;
+                  } else if (typeof item === "string") {
+                    itemLink = `${currentDropdownContent.link}/${itemName
+                      .toLowerCase()
+                      .replace(/\s+/g, "-")
+                      .replace(/&/g, "and")}`;
+                  }
+                  return (
+                    <Link
+                      key={`${activeDropdownKey}-item-${index}`}
+                      to={itemLink}
+                      onClick={closeDesktopDropdown}
+                      className="text-gray-700 hover:text-purple-700 hover:font-medium py-1 text-sm rounded-md transition-colors duration-150 ease-in-out"
+                    >
+                      {itemName}
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Mobile Menu - Slides down from below navbar */}
+      {isMobileMenuOpen && (
+        <div
+          className="lg:hidden shadow-lg rounded-b-3xl z-30 overflow-y-auto max-h-[calc(100vh-6rem)] bg-white" // Adjust max-h if needed
+          id="mobile-menu"
+        >
+          <div className="px-2 pt-2 pb-1 space-y-1 sm:px-3">
+            {navLinksConfig.map(({ label, key }) => {
+              const content = dropdownContentData[key];
+              const isMobileDropdownOpen = openMobileDropdownKey === key;
+              return (
+                <div key={`mobile-dropdown-${key}`}>
+                  <button
+                    onClick={() => handleMobileDropdownToggle(key)}
+                    className={`w-full flex justify-between items-center text-left px-3 py-2.5 rounded-md text-base font-medium
+                      ${
+                        isMobileDropdownOpen
+                          ? "bg-purple-100 text-purple-700"
+                          : "text-[#4E009C] hover:bg-purple-50 hover:text-purple-800"
+                      }`}
+                  >
+                    <span>{label}</span>
+                    {isMobileDropdownOpen ? (
+                      <FiChevronUp size={20} />
+                    ) : (
+                      <FiChevronDown size={20} />
+                    )}
+                  </button>
+                  {isMobileDropdownOpen && content && (
+                    <div className="py-2 pl-5 pr-2 space-y-1 bg-purple-50/40 rounded-b-md">
+                      <div className="px-3 pt-2 pb-1">
+                        <Link
+                          to={content.link}
+                          onClick={handleMobileNavClick}
+                          className="text-sm font-semibold text-purple-700 hover:text-purple-900 hover:underline"
+                        >
+                          {content.title}
+                        </Link>
+                      </div>
+                      {content.liTags.map((item, index) => {
+                        const itemName =
+                          typeof item === "string" ? item : item.name;
+                        let itemLink = "#";
+                        if (typeof item === "object" && item.link) {
+                          itemLink = item.link;
+                        } else if (typeof item === "string") {
+                          itemLink = `${content.link}/${itemName
+                            .toLowerCase()
+                            .replace(/\s+/g, "-")
+                            .replace(/&/g, "and")}`;
+                        }
+                        return (
+                          <NavLink
+                            key={`mobile-sub-${key}-${index}`}
+                            to={itemLink}
+                            onClick={handleMobileNavClick}
+                            className={({ isActive }) =>
+                              `block ${
+                                isActive
+                                  ? "text-purple-700 font-semibold"
+                                  : "text-gray-700"
+                              } hover:text-purple-600 hover:font-medium py-1.5 px-3 rounded-md text-sm transition-colors duration-150 ease-in-out`
+                            }
+                          >
+                            {itemName}
+                          </NavLink>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+
+            <NavLink
+              to="/tokenization"
+              onClick={handleMobileNavClick}
+              className={({ isActive }) =>
+                `block ${
+                  isActive ? "bg-purple-100 text-purple-700" : "text-[#4E009C]"
+                } hover:bg-purple-50 hover:text-purple-800 px-3 py-2.5 rounded-md text-base font-medium`
+              }
+            >
+              Tokenization
+            </NavLink>
+            <NavLink
+              to="/careers"
+              onClick={handleMobileNavClick}
+              className={({ isActive }) =>
+                `block ${
+                  isActive ? "bg-purple-100 text-purple-700" : "text-[#4E009C]"
+                } hover:bg-purple-50 hover:text-purple-800 px-3 py-2.5 rounded-md text-base font-medium`
+              }
+            >
+              Careers
+            </NavLink>
+            <NavLink
+              to="/about"
+              onClick={handleMobileNavClick}
+              className={({ isActive }) =>
+                `block ${
+                  isActive ? "bg-purple-100 text-purple-700" : "text-[#4E009C]"
+                } hover:bg-purple-50 hover:text-purple-800 px-3 py-2.5 rounded-md text-base font-medium`
+              }
+            >
+              About
+            </NavLink>
           </div>
 
-          {/* Desktop and Tablet Menu */}
-          <div className="hidden lg:flex items-center justify-end flex-1">
-            <div className="flex items-center space-x-1 lg:space-x-2 xl:space-x-3">
-              {" "}
-              {/* Reduced spacing slightly */}
-              {navLinks.map((link) => (
-                <div
-                  key={link.id}
-                  className="relative"
-                  onMouseEnter={() => handleMouseEnter(link.id)}
-                  onMouseLeave={handleMouseLeaveWrapper}
-                  ref={(el) => (navItemRefs.current[link.id] = el)}
-                >
-                  <NavLink
-                    to={link.path}
-                    onClick={(e) =>
-                      handleLinkClick(link.id, e, !!link.hasDropdown)
-                    }
-                    className={({ isActive }) =>
-                      `text-[#4E009C] hover:text-purple-800 px-2 py-2 rounded-md text-sm xl:text-base font-medium font-openSansHebrew flex items-center whitespace-nowrap
-                       ${
-                         isActive && !link.hasDropdown
-                           ? "!text-purple-900 font-semibold"
-                           : ""
-                       }
-                       ${
-                         visibleDropdownKey === link.id && link.hasDropdown
-                           ? "!text-purple-900 font-semibold"
-                           : ""
-                       }
-                      `
-                    }
-                  >
-                    {link.label}
-                    {link.hasDropdown && dropdownContents[link.id] && (
-                      <ChevronDownIcon />
-                    )}
-                  </NavLink>
-
-                  {visibleDropdownKey === link.id &&
-                    link.hasDropdown &&
-                    dropdownContents[link.id] && (
-                      <div
-                        ref={dropdownContainerRef}
-                        className="absolute top-full left-1/2 -translate-x-1/2 mt-2 z-[51]" // Ensure dropdown is above sticky navbar if z-index clash
-                        onMouseEnter={handleMouseEnterDropdownPanel}
-                        // onMouseLeave is handled by handleMouseLeaveWrapper for the parent
-                      >
-                        {dropdownContents[link.id](() => {
-                          closeAllDropdowns();
-                          // Navigation will occur via Link components inside dropdown
-                        })}
-                      </div>
-                    )}
-                </div>
-              ))}
-            </div>
-            <div className="flex items-center space-x-3 lg:space-x-4 xl:ml-6 ml-3">
-              {" "}
-              {/* Adjusted margin */}
+          <div className="flex flex-row justify-between pt-3 p-10 pb-4 space-y-3 border-gray-200 mt-2">
+            <div className="flex flex-grow space-x-2">
               <Link
                 to="/contact"
-                onClick={closeAllDropdowns}
-                className="text-white bg-[#4E009C] hover:bg-purple-800 px-4 lg:px-5 xl:px-6 py-2 rounded-full text-xs lg:text-sm font-medium whitespace-nowrap font-openSansHebrew" // Slightly reduced padding
+                onClick={handleMobileNavClick}
+                className="flex-1 text-white text-center bg-[#4E009C] hover:bg-purple-800 px-3 py-2.5 rounded-full text-base font-medium"
               >
                 Contact Us
               </Link>
               <button
                 onClick={() => {
-                  closeAllDropdowns();
-                  window.open("https://calendly.com/business-maxtron/30min");
+                  window.open(
+                    "https://calendly.com/business-maxtron/30min",
+                    "_blank"
+                  );
+                  handleMobileNavClick();
                 }}
-                className="text-white bg-[#4E009C] hover:bg-purple-800 px-4 lg:px-5 xl:px-6 py-2 rounded-full text-xs lg:text-sm font-medium whitespace-nowrap font-openSansHebrew" // Slightly reduced padding
+                className="flex-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 px-3 py-2.5 rounded-full text-base font-medium"
               >
                 Book a Call
               </button>
             </div>
-          </div>
-
-          {/* Mobile Menu Toggle */}
-          <div className="lg:hidden">
-            <button
-              onClick={toggleMobileMenu}
-              className="text-purple-600 hover:text-purple-800 focus:outline-none focus:text-purple-800 font-openSansHebrew"
-            >
-              <svg
-                className="h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d={
-                    isMobileMenuOpen
-                      ? "M6 18L18 6M6 6l12 12"
-                      : "M4 6h16M4 12h16M4 18h16"
-                  }
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="lg:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navLinks.map((link) => (
-              <NavLink
-                key={`mobile-${link.id}`}
-                to={link.path}
-                onClick={() =>
-                  handleLinkClick(link.id, {} as React.MouseEvent, false)
-                } // Treat mobile links as direct navigators for now
-                className="block text-[#4E009C] hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium font-openSansHebrew"
-              >
-                {link.label}
-              </NavLink>
-            ))}
-          </div>
-          <div className="px-5 pb-3 space-y-2">
-            <Link
-              to="/contact"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="block text-white bg-[#4E009C] hover:bg-purple-800 px-3 py-2 rounded-full text-base font-medium text-center font-openSansHebrew"
-            >
-              Contact Us
-            </Link>
-            <button
-              onClick={() => {
-                window.open("https://calendly.com/business-maxtron/30min");
-                setIsMobileMenuOpen(false);
-              }}
-              className="w-full text-white bg-[#4E009C] hover:bg-purple-800 px-3 py-2 rounded-full text-base font-medium font-openSansHebrew"
-            >
-              Book a Call
-            </button>
           </div>
         </div>
       )}

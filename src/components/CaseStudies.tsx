@@ -55,7 +55,7 @@ const CaseStudies = () => {
   return (
     <section
       id="case-studies"
-      className="relative py-16 md:py-24 bg-brand-bg-dark text-brand-text-light overflow-hidden"
+      className="relative py-5 md:py-24 bg-brand-bg-dark text-brand-text-light overflow-hidden "
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-row justify-between items-center mb-12 md:mb-16">
@@ -70,8 +70,8 @@ const CaseStudies = () => {
           </a>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-center">
-          <div className="relative w-full aspect-[4/3] rounded-xl md:rounded-2xl overflow-hidden shadow-2xl">
+        <div className="grid md:grid-cols-2 gap-2 md:gap-12 lg:gap-16 items-center ">
+          <div className="relative w-full aspect-[4/3]  rounded-xl md:rounded-2xl overflow-hidden shadow-2xl">
             <img
               key={`case-study-image-${currentStudy.id}`}
               src={currentStudy.image}
@@ -80,7 +80,7 @@ const CaseStudies = () => {
             />
           </div>
 
-          <div className="flex flex-row md:flex-col items-center text-center relative min-h-[350px] md:min-h-[400px] justify-between py-6 md:py-0 w-full">
+          <div className="flex flex-row md:flex-col items-center text-center relative  md:min-h-[400px] justify-between py-6 md:py-0 w-full ">
             {/* Previous Button */}
             <button
               onClick={handlePrev}
@@ -102,7 +102,7 @@ const CaseStudies = () => {
                 key={`case-study-content-${currentStudy.id}`}
                 className={`w-full max-w-md px-2 md:px-4 ${contentAnimationClass} duration-300`}
               >
-                <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-[32px] font-bold text-[#2A2A2A] mb-3">
+                <h3 className="text-2xl sm:text-3xl  md:text-4xl lg:text-[32px] font-bold text-[#2A2A2A] mb-3">
                   {currentStudy.title}
                 </h3>
                 <div className="flex flex-wrap justify-center gap-x-2.5 gap-y-1 mb-4">

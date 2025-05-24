@@ -66,31 +66,21 @@ const Footer = () => {
           </div>
         </div>
         {/* Subscription Section */}
-        <div className="flex flex-col mt-8 md:mt-0 lg:flex-row space-y-4 mx-2 justify-center md:items-end md:w-1/3">
-          <p className="text-[#FFFFFF] md:w-2/3 font-normal md:font-bold items-center mb-2 font-OpenSans text-right mr-4">
-            {/* Get latest insights on tech trends, industry news, event updates,
+        <div className="flex flex-col md:flex-row  space-y-4 md:space-y-0 md:space-x-10  justify-center md:items-end ">
+          <div className="flex-1">
+            <p className="text-[#FFFFFF]  md:w-[400px] font-normal md:font-normal items-center font-openSansHebrew text-[14px] md:mt-0 mt-10">
+              {/* Get latest insights on tech trends, industry news, event updates,
             and more in your inbox. */}
-            Follow Us On Socials
-          </p>
-          <div className="flex ">
-            <button
-              onClick={() => {
-                window.open("https://www.facebook.com/maxtroninnovations/");
-              }}
-              className="bg-white px-2 text-black rounded transition mr-4  duration-300"
-            >
-              <FaSquareFacebook className="h-6 w-6 text-blue-500" />
-            </button>
-            <button
-              onClick={() => {
-                window.open(
-                  "https://in.linkedin.com/company/maxtron-innovations"
-                );
-              }}
-              className="bg-white p-2  text-black rounded transition duration-300"
-            >
-              <FaLinkedinIn className="h-6 w-6 text-blue-500" />
-            </button>
+              Get Latest Insights on tech trends, Industry news, event updates
+              and more in your inbox
+            </p>
+          </div>
+          <div className="flex-1">
+            <Link to="/Contact">
+              <button className="text-sm px-5 py-2 rounded-lg bg-[#F5F5F5] text-[#55308D] hover:text-white hover:bg-transparent border-2 border-solid border-white font-['Open_Sans'] font-bold transition shadow-md">
+                Contact Us
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -98,18 +88,38 @@ const Footer = () => {
         <div className="container mx-auto px-2 md:px-4 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-[#FFFFFF] mb-4 md:mb-0 text-center md:text-left">
             © {new Date().getFullYear()} by Maxtron Innovations ©{" "}
-            {new Date().getFullYear()} by Maxtron Innovations
+            {/* {new Date().getFullYear()} by Maxtron Innovations */}
           </p>
           <div className="flex md:justify-start  mb-4 md:mb-0">
             <a href="#" className="text-[#FFFFFF] text-sm hover:text-white">
-              Privacy Policies<span className="px-2">|</span>
+              Privacy Policies<span className="px-4"></span>
             </a>
             <a href="#" className="text-[#FFFFFF] text-sm hover:text-white">
-              Security<span className="px-2">|</span>
+              Security<span className="px-4"></span>
             </a>
             <a href="#" className="text-[#FFFFFF] text-sm hover:text-white">
               Terms of Conditions
             </a>
+          </div>
+          <div className="flex ">
+            <button
+              onClick={() => {
+                window.open("https://www.facebook.com/maxtroninnovations/");
+              }}
+              className=" px-2 text-black rounded transition mr-4  duration-300"
+            >
+              <FaSquareFacebook className="h-6 w-6 text-white" />
+            </button>
+            <button
+              onClick={() => {
+                window.open(
+                  "https://in.linkedin.com/company/maxtron-innovations"
+                );
+              }}
+              className=" p-2  text-black rounded transition duration-300"
+            >
+              <FaLinkedinIn className="h-6 w-6 text-white" />
+            </button>
           </div>
           <div className="flex space-x-4 justify-center md:justify-end">
             {/* Replace # with actual social media links */}

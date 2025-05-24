@@ -13,7 +13,7 @@ const ContactAndSubscribe = () => {
         {/* Buttons */}
         <div className="w-full md:w-1/2 flex flex-row md:flex-row justify-center md:justify-end items-center gap-4 ">
           <Link to="/Contact">
-            <button className="text-sm px-5 py-2 rounded-lg bg-[#F5F5F5] text-black hover:text-white hover:bg-transparent border-2 bprder-solid border-white font-['Open_Sans'] font-bold transition  shadow-md">
+            <button className="text-sm px-5 py-2 rounded-lg bg-[#F5F5F5] text-[#55308D] hover:text-white hover:bg-transparent border-2 bprder-solid border-white font-['Open_Sans'] font-bold transition  shadow-md">
               Contact Us
             </button>
           </Link>
@@ -24,7 +24,7 @@ const ContactAndSubscribe = () => {
                 "_blank"
               )
             }
-            className="text-sm px-5 py-2 rounded-lg bg-[#F5F5F5] text-black font-['Open_Sans'] hover:text-white hover:bg-transparent border-2 bprder-solid border-white font-bold transition  shadow-md"
+            className="text-sm px-5 py-2 rounded-lg bg-[#F5F5F5] text-[#55308D] font-['Open_Sans'] hover:text-white hover:bg-transparent border-2 bprder-solid border-white font-bold transition  shadow-md"
           >
             Book a Call
           </button>
