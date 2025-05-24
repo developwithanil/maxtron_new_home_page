@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Verify } from "./VectorImage"; // Assuming Verify is an SVG icon component
 import MaxtronLogo from "../assets/maxtronlogo.svg";
-import product1 from "../assets/products/blockchainproduct1.png";
-import product2 from "../assets/products/aiproduct2.png";
-import product3 from "../assets/products/experientialproduct3.png";
-import product4 from "../assets/products/otherproduct4.png";
+import product1 from "../assets/products/blockchainproduct1.svg";
+import product2 from "../assets/products/aiproduct2.svg";
+import product3 from "../assets/products/experientialproduct3.svg";
+import product4 from "../assets/products/otherproduct4.svg";
 
-import fund1 from "../assets/products/marketing.png";
-import fund2 from "../assets/products/fundraising .png";
+import fund1 from "../assets/products/marketing.svg";
+import fund2 from "../assets/products/fundraising.svg";
 import { logo1, logo2, logo3, logo4, logo5, logo6 } from "./VectorImage"; // These must be React SVG components
 
 type ContentItem = {
@@ -282,8 +282,8 @@ const WhoMaxtron = () => {
                             {
                               className: `h-full w-full object-contain ${
                                 isSubTabActive
-                                  ? "fill-white"
-                                  : "fill-gray-700 group-hover:fill-white"
+                                  ? "text-white"
+                                  : "hover:text-white text-gray-400 group-hover:text-white"
                               }`,
                             }
                           )}
@@ -372,7 +372,7 @@ const WhoMaxtron = () => {
                               >,
                               {
                                 className: `h-5 w-5 mr-3 ${
-                                  isActive ? "fill-[#7A35C1]" : "fill-gray-700"
+                                  isActive ? "fill-[#7A35C1] " : "fill-gray-700"
                                 }`,
                               }
                             )

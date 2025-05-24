@@ -80,7 +80,7 @@ const Pride = () => {
                       ${
                         isActive
                           ? "bg-[#7A35C1] text-white shadow-md scale-[1.02] hover:text-white"
-                          : "bg-white text-[#7A35C1] border border-[#DCD8E6] hover:bg-[#7A35C1] hover:border-[#A480CC] hover:text-white"
+                          : "bg-white text-[#7A35C1] border border-[#7A35C1] hover:bg-[#7A35C1] hover:border-[#A480CC] hover:text-white"
                       }`}
                   >
                     <div
@@ -96,9 +96,9 @@ const Pride = () => {
                       <item.icon
                         className={`transition-all duration-300 ease-in-out transform
                           ${
-                            isActive || activeTabId === item.id
-                              ? "scale-110 text-white animate-fade-in"
-                              : "scale-0"
+                            isActive
+                              ? "scale-110 opacity-100 animate-fade-in"
+                              : "scale-0 opacity-0"
                           }
                         `}
                         isActive={isActive}

@@ -7,7 +7,7 @@ const cardData = [
   {
     title: "AI",
     desc: "Built to Go Viral",
-    link: "https://experiences.maxtron.ai/",
+    // link: "https://experiences.maxtron.ai/",
     tag: "Coming Soon",
     image: tech1,
     linktitle: "Meet AI",
@@ -32,7 +32,7 @@ const cardData = [
   {
     title: "Quantum Technologies",
     desc: "Feel the Flow",
-    link: "https://experiences.maxtron.ai/",
+    // link: "https://experiences.maxtron.ai/",
     tag: "Coming Soon",
     image: tech4,
     linktitle: "Enter The Quantum Rea ",
@@ -67,7 +67,7 @@ const TechnologyUsed = () => {
                 <div className="py-4 flex flex-row justify-between">
                   <div className="flex flex-col items-start">
                     <h3 className="text-lg font-bold mb-2">{card.title}</h3>
-                    <p className="text-gray-700 text-base">{card.desc}</p>
+                    <p className="text-[#79748A] text-base">{card.desc}</p>
                   </div>
                   <div className="flex mt-4 items-center">
                     <a

@@ -7,14 +7,14 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="relative  bg-gray-900 text-white">
+    <footer className="relative  bg-[#1D1B33] text-white">
       <div className="container mx-auto px-4 md:px-12 py-8 md:py-20 flex flex-col md:flex-row justify-between items-start md:items-center">
         {/* Logo and Navigation Links */}
         <div className="flex flex-col md:items-center md:space-y-10 md:mb-0 w-full md:w-auto">
           {/* <div className="mb-4 md:mb-0 md:mr-8">
             <img src={logo} alt="maxtron logo" />
           </div> */}
-          <div className="flex justify-between ">
+          <div className="flex justify-between  gap-12">
             <nav className="flex flex-col space-y-4 md:items-left text-[#FFFFFF] md:w-auto">
               <Link to="/" id="Home" className="mx-2  md:mb-0 hover:text-white">
                 Home
@@ -94,11 +94,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-purple-800 py-4 mt-8">
+      <div className="bg-[#1D1B33] py-4 mt-8 mx-14 border-t  border-[#FFFFFF33]">
         <div className="container mx-auto px-2 md:px-4 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-[#FFFFFF] mb-4 md:mb-0 text-center md:text-left">
-          © {new Date().getFullYear()} by Maxtron Innovations
-            © {new Date().getFullYear()} by Maxtron Innovations
+            © {new Date().getFullYear()} by Maxtron Innovations ©{" "}
+            {new Date().getFullYear()} by Maxtron Innovations
           </p>
           <div className="flex md:justify-start  mb-4 md:mb-0">
             <a href="#" className="text-[#FFFFFF] text-sm hover:text-white">

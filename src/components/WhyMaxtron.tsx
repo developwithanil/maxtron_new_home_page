@@ -1,7 +1,7 @@
-import feature1 from "../assets/whymaxtron/feature1.png";
-import feature2 from "../assets/whymaxtron/feature2.png";
-import feature3 from "../assets/whymaxtron/feature3.png";
-import feature4 from "../assets/whymaxtron/feature4.png";
+import feature1 from "../assets/whymaxtron/feature1.svg";
+import feature2 from "../assets/whymaxtron/feature2.svg";
+import feature3 from "../assets/whymaxtron/feature3.svg";
+import feature4 from "../assets/whymaxtron/feature4.svg";
 
 const cardData = [
   { text: "Quick Response", image: feature1 },
@@ -31,7 +31,7 @@ const WhyMaxtron = () => {
             {cardData.map((card, index) => (
               <div
                 key={index}
-                className="bg-white border border-solid border-[#BEBCCA] rounded-xl p-4 flex flex-col items-start gap-5"
+                className="bg-white border border-solid border-[#DFDEE7] rounded-[20px] p-4 flex flex-col items-start gap-5"
               >
                 <div className="text-[#2A2A2A] font-[Switzer] font-semibold text-base lg:text-lg text-start gap-5">
                   {card.text}
@@ -39,7 +39,7 @@ const WhyMaxtron = () => {
                 <img
                   src={card.image}
                   alt={card.text}
-                  className="w-full h-auto rounded-lg text-center"
+                  className="w-full h-auto rounded-xl text-center"
                 />
               </div>
             ))}
