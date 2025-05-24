@@ -1,4 +1,3 @@
-import React from "react";
 import { Verify } from "./VectorImage";
 import TestimonialsCard from "./TestimonialsCard";
 
