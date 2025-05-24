@@ -58,7 +58,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <section id="contact-us" className={sectionClassName}>
-      <div className="shadow-lg border border-[#BEBCCA] rounded-3xl p-8">
+      <div className="shadow-lg border border-[#BEBCCA] rounded-3xl p-5 md:p-8">
         <div
           className="w-full flex p-2 items-start gap-2 rounded-lg container mx-auto "
           style={{
@@ -68,10 +68,10 @@ const ContactForm: React.FC = () => {
         >
           <p className="p-2 text-white">Free 30-Minutes Consultation</p>
         </div>
-        <div className="container mx-auto flex flex-col lg:flex-row bg-white items-center p-3 md:p-5 justify-between gap-6 lg:gap-8">
+        <div className="container mx-auto flex flex-col lg:flex-row bg-white items-center py-5 md:p-5 justify-between gap-6 lg:gap-8">
           {/* Left Section */}
-          <div className="lg:w-1/2 text-center lg:text-left">
-            <h2 className="self-stretch text-[#1E1E1E] [font-family:Switzer] font-bold text-[40px] leading-[120%]">
+          <div className="lg:w-1/2 text-left lg:text-left">
+            <h2 className="self-stretch text-[#1E1E1E] [font-family:Switzer] font-bold text-xl md:text-[40px] leading-[120%]">
               Fill the form & Get your project moving!
             </h2>
 

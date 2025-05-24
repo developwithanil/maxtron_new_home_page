@@ -88,25 +88,25 @@ export const caseStudiesData: CaseStudyItem[] = [
   {
     id: "Token Launch",
     image: study2,
-    title: "E-commerce Revamp",
+    title: "Token Launch",
     tags: ["Web APPLICATION", "UX/UI ", " MARKETING", "GRAPHIC DESIGN"],
     description:
-      "Maxtron successfully helped a blockchain client launch a new cryptocurrency token - covering every aspect of the process: smart contrac",
+      "Maxtron successfully helped a blockchain client launch a new cryptocurrency token - covering every aspect of the process: smart contract creation, liquidity deployment, influencer marketing, market making, and web design. The result was a well-orchestrated launch that stood out in a saturated Web3 landscape and gained immediate traction across crypto platforms.",
     learnMoreLink: "#",
   },
   {
     id: "Tawuniya",
     image: study3,
-    title: "HealthTrack Mobile",
+    title: "Tawuniya",
     tags: ["EVENT", "MANAGEMENT"],
     description:
-      "Our recent digital activation project done for Tawuniya, an official sponsor of نادي الهلال السعودي - Al-Hilal Saudi Club during the Al-Hilal vs Al-Nassr mat",
+      "Our recent digital activation project done for Tawuniya, an official sponsor of نادي الهلال السعودي - Al-Hilal Saudi Club during the Al-Hilal vs Al-Nassr match in the #Saudi Pro League on 4th April in Riyadh.",
     learnMoreLink: "#",
   },
   {
     id: "ICCA",
     image: study4,
-    title: "HealthTrack Mobile",
+    title: "ICCA",
     tags: ["UX/UI", "CHAT BOT"],
     description:
       "A world-class culinary school shaping the future of hospitality through award-winning training. Based in the heart of Dubai, ICCA empowers aspiring chefs and industry professionals with globally recognized programs, state-of-the-art facilities",

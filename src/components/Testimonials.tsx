@@ -9,7 +9,7 @@ const Testimonials = () => {
       className="relative py-4 md:py-8 lg:py-11 xl:py-12 text-center bg-white "
     >
       <div className="p-4 ">
-        <p className="text-sm flex items-center justify-center text-center text-[#7A35C1]">
+        <p className="text-xs md:text-sm flex items-center justify-center text-center text-[#7A35C1]">
           <Verify />
           TESTIMONIALS
         </p>

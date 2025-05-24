@@ -201,7 +201,7 @@ const WhoMaxtron = () => {
       className="relative py-4 md:py-8 lg:py-11 xl:py-12 bg-white"
     >
       <div className="p-4 text-center">
-        <p className="text-sm flex items-center justify-center text-center text-[#7A35C1] mb-1">
+        <p className=" text-xs md:text-sm flex items-center justify-center text-center text-[#7A35C1] mb-1">
           {" "}
           <Verify /> ENTERPRISE-GRADE SOLUTIONS{" "}
         </p>
@@ -209,7 +209,7 @@ const WhoMaxtron = () => {
           {" "}
           Who Are We{" "}
         </h2>
-        <p className="text-base sm:text-lg md:text-lg mb-6 md:mb-10 lg:mb-14 xl:mb-16 text-[#79748A] font-openSansHebrew px-2">
+        <p className="text-base sm:text-sm md:text-lg mb-6 md:mb-10 lg:mb-14 xl:mb-16 text-[#79748A] font-openSansHebrew px-2">
           {" "}
           Your Partner in Building Future-Ready Digital Solutions{" "}
         </p>
@@ -233,7 +233,7 @@ const WhoMaxtron = () => {
                 {tab.label}{" "}
               </div>
               {index < tabSystemData.mainTabs.length - 1 && (
-                <div className="px-2 md:px-4 lg:px-6 flex items-center justify-center">
+                <div className="hidden md:flex px-2 md:px-4 lg:px-6 items-center justify-center">
                   {" "}
                   <img
                     className="h-8 sm:h-10 md:h-14 w-auto"
@@ -407,7 +407,7 @@ const WhoMaxtron = () => {
                     )}
                   </div>
                   {isActive && contentForAccordionItem && (
-                    <div className="p-5 pt-0 text-left">
+                    <div className="p-10 pt-0 text-left">
                       <p className="text-xs font-semibold uppercase text-[#7A35C1] mb-2">
                         {contentForAccordionItem.category}
                       </p>

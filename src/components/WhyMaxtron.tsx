@@ -23,7 +23,7 @@ const WhyMaxtron = () => {
           <h2 className="text-3xl lg:text-4xl font-bold text-[#2A2A2A] mb-4 text-[Switzer]">
             Why Maxtron
           </h2>
-          <p className="mb-8 md:mb-10 lg:mb-14 xl:mb-16  text-[#79748A] font-openSansHebrew text-lg">
+          <p className="mb-8 md:mb-10 lg:mb-14 xl:mb-16  text-[#79748A] font-openSansHebrew text-md md:text-lg">
             We go beyond simply serving the industry; we forge enduring
             relationships built on trust and mutual success.
           </p>

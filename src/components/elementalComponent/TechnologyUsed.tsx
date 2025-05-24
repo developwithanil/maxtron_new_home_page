@@ -5,8 +5,8 @@ import tech4 from "../../assets/case/tech4.svg";
 
 const cardData = [
   {
-    title: "Experiential Tech",
-    desc: "Beyond Screens, Into Senses",
+    title: "AI",
+    desc: "Built to Go Viral",
     link: "https://experiences.maxtron.ai/",
     tag: "Coming Soon",
     image: tech1,
@@ -22,15 +22,15 @@ const cardData = [
   },
 
   {
-    title: "Affiliate Program",
-    desc: "Built to Go Viral",
+    title: "Experiential Tech",
+    desc: "Beyond Screens, Into Senses",
     link: "https://experiences.maxtron.ai/",
-    tag: "Coming Soon",
+    tag: "New",
     image: tech3,
     linktitle: "Explore The Experience ",
   },
   {
-    title: "Blog",
+    title: "Quantum Technologies",
     desc: "Feel the Flow",
     link: "https://experiences.maxtron.ai/",
     tag: "Coming Soon",
@@ -46,7 +46,7 @@ const TechnologyUsed = () => {
       className="relative py-4 md:py-8 lg:py-11 xl:py-12 inset-0  text-center"
     >
       <div>
-        <div className="p-4 ">
+        <div className="p-5 md:p-4 lg:p-4 xl:p-4 ">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#2A2A2A] mb-8 text-[Switzer]">
             Trends We Are Building
           </h2>
