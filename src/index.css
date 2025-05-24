@@ -36,3 +36,36 @@
   flex-shrink: 0;
   margin-right: 20px;
 }
+
+
+@keyframes dropdown-open {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px) scaleY(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+@keyframes dropdown-close {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px) scaleY(0.95);
+  }
+}
+
+.dropdown-animation-open {
+  animation: dropdown-open 300ms ease-out forwards;
+  transform-origin: top;
+}
+
+.dropdown-animation-close {
+  animation: dropdown-close 200ms ease-in forwards;
+  transform-origin: top;
+}

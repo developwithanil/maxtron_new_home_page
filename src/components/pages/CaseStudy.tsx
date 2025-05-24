@@ -14,12 +14,11 @@ import Ludo from "../../../public/client/ludoLove.svg";
 import cadbury from "../../../public/client/cadbury.svg";
 import Audi from "../../../public/client/audi.svg";
 import { ArrowDown, ArrowUp } from "../VectorImage";
-import { motion } from "motion/react"; 
+import { motion } from "motion/react";
 import { useState } from "react";
 import CasesCard from "../elementalComponent/CasesCard";
 import ContactForm from "../ContactForm";
 import ContactAndSubscribe from "../elementalComponent/ContactAndSubscribe";
-
 
 const clients = [
   { name: "Mercedes", logo: Mercedes },
@@ -39,8 +38,34 @@ const clients = [
   { name: "Audi", logo: Audi },
 ];
 
-const projectTypes = ["All", "APP", "APPLICATION", "Event", "Management", "Web Development", "UX/UI", "Marketing", "Graphic Design", "Chat Bot", "Web3 Development", "Video Editing"];
-const industries = ["All", "Gaming", "E-Commerce", "AI", "Web3", "Education", "Healthcare", "Government", "Social", "Startup", "Culinary", "Sports"];
+const projectTypes = [
+  "All",
+  "APP",
+  "APPLICATION",
+  "Event",
+  "Management",
+  "Web Development",
+  "UX/UI",
+  "Marketing",
+  "Graphic Design",
+  "Chat Bot",
+  "Web3 Development",
+  "Video Editing",
+];
+const industries = [
+  "All",
+  "Gaming",
+  "E-Commerce",
+  "AI",
+  "Web3",
+  "Education",
+  "Healthcare",
+  "Government",
+  "Social",
+  "Startup",
+  "Culinary",
+  "Sports",
+];
 
 const CaseStudy = () => {
   const [isProjectTypeOpen, setIsProjectTypeOpen] = useState(false);
@@ -57,8 +82,11 @@ const CaseStudy = () => {
           <p className="text-[#FFFFFF] font-['Switzer'] text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold  tracking-[0.02em] leading-[160%] mb-2 sm:mb-3 md:mb-4">
             CASE STUDIES
           </p>
-          <p className={`flex-[1_0_0] text-white font-openSansHebrew text-xl sm:text-xl md:text-2xl lg:text-2xl font-normal `}>
-            Our products are reshaping how industry leaders conduct their core business operations.
+          <p
+            className={`flex-[1_0_0] text-white font-openSansHebrew text-xl sm:text-xl md:text-2xl lg:text-2xl font-normal `}
+          >
+            Our products are reshaping how industry leaders conduct their core
+            business operations.
           </p>
         </div>
       </div>
@@ -83,16 +111,23 @@ const CaseStudy = () => {
             All Cases
           </div>
 
-      
-          <div className={`relative z-30 flex justify-center md:border-l md:border-r border-[rgba(0,0,0,0.20)] ${
-            isProjectTypeOpen ? "bg-[#f8e7ea]" : ""
-          } border-solid flex-col items-start flex-[1_0_0] px-4 sm:px-8 md:px-12 lg:px-16 py-4 sm:py-6 md:py-8`}>
+          <div
+            className={`relative z-30 flex justify-center md:border-l md:border-r border-[rgba(0,0,0,0.20)] ${
+              isProjectTypeOpen ? "bg-[#f8e7ea]" : ""
+            } border-solid flex-col items-start flex-[1_0_0] px-4 sm:px-8 md:px-12 lg:px-16 py-4 sm:py-6 md:py-8`}
+          >
             <motion.div
               onClick={() => setIsProjectTypeOpen(!isProjectTypeOpen)}
               className="flex justify-between w-full cursor-pointer"
             >
-              <p className={`${isProjectTypeOpen ? "text-[#8941C4]" : "text-[#1E1E1E]"} font-['Switzer'] text-lg sm:text-xl md:text-2xl font-semibold leading-[120%]`}>
-                {selectedProjectType === "All" ? "Project type" : selectedProjectType}
+              <p
+                className={`${
+                  isProjectTypeOpen ? "text-[#8941C4]" : "text-[#1E1E1E]"
+                } font-['Switzer'] text-lg sm:text-xl md:text-2xl font-semibold leading-[120%]`}
+              >
+                {selectedProjectType === "All"
+                  ? "Project type"
+                  : selectedProjectType}
               </p>
               <motion.div
                 animate={{ rotate: isProjectTypeOpen ? 360 : 0 }}
@@ -111,7 +146,7 @@ const CaseStudy = () => {
               }}
               transition={{ duration: 0.3 }}
               className="absolute top-full left-0 w-full bg-[#f8e7ea] z-40 border-l-[1px] border-r-[1px] border-b-[1px] border-[rgba(0,0,0,0.20)] px-4 sm:px-8 md:px-12 lg:px-16 pb-4 pointer-events-none"
-              style={{ pointerEvents: isProjectTypeOpen ? 'auto' : 'none' }}
+              style={{ pointerEvents: isProjectTypeOpen ? "auto" : "none" }}
             >
               {projectTypes.map((type, index) => (
                 <div
@@ -133,14 +168,22 @@ const CaseStudy = () => {
             </motion.div>
           </div>
 
-          <div className={`relative z-30 flex ${isProjectTypeOpen ? "hidden md:block":""} justify-center border-[rgba(0,0,0,0.20)] ${
-            isIndustryOpen ? "bg-[#f8e7ea]" : ""
-          } border-solid flex-col items-start flex-[1_0_0] px-4 sm:px-8 md:px-12 lg:px-16 py-4 sm:py-6 md:py-8`}>
+          <div
+            className={`relative z-30 flex ${
+              isProjectTypeOpen ? "hidden md:block" : ""
+            } justify-center border-[rgba(0,0,0,0.20)] ${
+              isIndustryOpen ? "bg-[#f8e7ea]" : ""
+            } border-solid flex-col items-start flex-[1_0_0] px-4 sm:px-8 md:px-12 lg:px-16 py-4 sm:py-6 md:py-8`}
+          >
             <motion.div
               onClick={() => setIsIndustryOpen(!isIndustryOpen)}
               className="flex justify-between w-full cursor-pointer"
             >
-              <p className={`${isIndustryOpen ? "text-[#8941C4]" : "text-[#1E1E1E]"} font-['Switzer'] text-lg sm:text-xl md:text-2xl font-semibold leading-[120%]`}>
+              <p
+                className={`${
+                  isIndustryOpen ? "text-[#8941C4]" : "text-[#1E1E1E]"
+                } font-['Switzer'] text-lg sm:text-xl md:text-2xl font-semibold leading-[120%]`}
+              >
                 {selectedIndustry === "All" ? "Industry" : selectedIndustry}
               </p>
               <motion.div
@@ -152,7 +195,6 @@ const CaseStudy = () => {
               </motion.div>
             </motion.div>
 
-          
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{
@@ -161,7 +203,7 @@ const CaseStudy = () => {
               }}
               transition={{ duration: 0.3 }}
               className="absolute top-full left-0 w-full bg-[#f8e7ea] z-40 border-l-[1px] border-r-[1px] border-b-[1px] border-[rgba(0,0,0,0.20)] px-4 sm:px-8 md:px-12 lg:px-16 pb-4 pointer-events-none"
-              style={{ pointerEvents: isIndustryOpen ? 'auto' : 'none' }}
+              style={{ pointerEvents: isIndustryOpen ? "auto" : "none" }}
             >
               {industries.map((type, index) => (
                 <div
@@ -184,15 +226,15 @@ const CaseStudy = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="w-[95%] sm:w-[90%] md:w-[85%] mx-auto max-w-[88rem] relative">
-        <CasesCard 
+        <CasesCard
           selectedProjectType={selectedProjectType}
           selectedIndustry={selectedIndustry}
         />
       </div>
-      <ContactForm/>
-        <ContactAndSubscribe/>
+      <ContactForm />
+      <ContactAndSubscribe />
     </div>
   );
 };

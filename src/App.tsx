@@ -43,7 +43,6 @@ const CareersPage: React.FC = () => (
   </div>
 );
 
-
 const Solutions: React.FC = () => <div>Solutions Page</div>;
 const Blog: React.FC = () => <div>Blog Page</div>;
 const Contact: React.FC = () => (
@@ -76,7 +75,7 @@ const App: React.FC = () => {
           path="/Maxtron.ai/case-study/:casestudyName"
           element={<InternalPageDetails caseStudies={caseStudies} />}
         />
-       
+
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/book" element={<Book />} />
