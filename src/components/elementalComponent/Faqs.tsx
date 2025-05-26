@@ -15,7 +15,7 @@ const faqs = [
     answer: (
       <>
         <p>The short answer is no.</p>
-        <p className="mt-2">Tokenization only becomes expensive when you're needing to design new technology. Republic's technology exists and is configured according to your tokenization needs.</p>
+        <p className="mt-2">Tokenization only becomes expensive when you're needing to design new technology. Maxtron technology exists and is configured according to your tokenization needs.</p>
       </>
     ),
   },
