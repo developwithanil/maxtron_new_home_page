@@ -24,8 +24,8 @@ const WhyMaxtron = () => {
             Why Maxtron
           </h2>
           <p className="mb-8 md:mb-10 lg:mb-14 xl:mb-16  text-[#79748A] font-openSansHebrew text-md md:text-lg">
-            We go beyond simply serving the industry; we forge enduring
-            relationships built on trust and mutual success.
+            We go beyond merely serving the industry - we forge enduring
+            relationships founded on trust and mutual success.
           </p>
           <div className="container mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-3 xl:gap-8">
             {cardData.map((card, index) => (

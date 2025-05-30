@@ -20,24 +20,25 @@ const caseStudyData = [
     heading:
       "A gaming platform that allows gamers to earn cryptocurrency by playing on both mobile apps (iOS and Google)...",
     subheading: "Blockchain Game Development",
-    type: ["APP"],
-    industry: "Gaming"
+    type: ["Application"],
+    industry: "Gaming",
   },
   {
     img: img5,
     heading:
       "Learn how we helped an eCommerce company successfully achieve fast growth...",
     subheading: "ECommerce Marketing",
-    type:[ "Application"],
-    industry: "E-Commerce"
+    type: ["Application"],
+    industry: "E-Commerce",
   },
   {
     img: img4,
-    heading: "Developed 7+ mini-games, which can be played on one single plateform, to enable the quick earning and gaming experience for users",
-   
+    heading:
+      "Developed 7+ mini-games, which can be played on one single plateform, to enable the quick earning and gaming experience for users",
+
     subheading: "Mini Gaming Platform",
-    type: ["App ", "Web 3.0"],
-    industry: "AI"
+    type: ["Application ", "Web 3.0"],
+    industry: "AI",
   },
   {
     img: img8,
@@ -45,21 +46,21 @@ const caseStudyData = [
       "A decentralized AI platform designed to address IP rights compliance...",
     subheading: "Decentralized AI Platform",
     type: ["Application"],
-    industry: "Web3"
+    industry: "Web3",
   },
   {
     img: img6,
     heading: "A NextGen AI-phone calling tool...",
     subheading: "AI Calling Tool",
     type: ["Application"],
-    industry: "AI"
+    industry: "AI",
   },
   {
     img: img3,
     heading: "How we managed to achieve growth for a web3 project...",
     subheading: "Crypto Project Marketing",
     type: ["Application"],
-    industry: "Web3"
+    industry: "Web3",
   },
   {
     img: img2,
@@ -67,7 +68,7 @@ const caseStudyData = [
       "A blockchain solution to ensure anonymity and verifiability in voting...",
     subheading: "Blockchain Based EVoting System",
     type: ["Application"],
-    industry: "Government"
+    industry: "Government",
   },
   {
     img: img9,
@@ -75,7 +76,7 @@ const caseStudyData = [
       "Good Standing connects organizations and volunteers through tasks and rewards...",
     subheading: "Good Standing",
     type: ["Application"],
-    industry: "Social"
+    industry: "Social",
   },
   {
     img: img10,
@@ -83,39 +84,45 @@ const caseStudyData = [
       "Gro8 is a platform connecting investors, mentors, and startup founders...",
     subheading: "Gro8",
     type: ["Application"],
-    industry: "Startup"
+    industry: "Startup",
   },
   {
     img: tokencase,
     heading:
       "Maxtron successfully helped a blockchain client launch a new cryptocurrency token - covering every aspect of the process: smart contract creation, liquidity ",
     subheading: "Token Launch",
-    type: ["Web Application","UX/UI","Marketing","Graphic Design"],
-    industry: "Web3"
+    type: ["Web Application", "UX/UI", "Marketing", "Graphic Design"],
+    industry: "Web3",
   },
   {
     img: iccaCase,
     heading:
-    "A world-class culinary school shaping the future of hospitality through award-winning training. Based in the heart of Dubai, ICCA empowers aspiring chefs and industry professionals with globally recognized programs, state-of-the-art facilities",
+      "A world-class culinary school shaping the future of hospitality through award-winning training. Based in the heart of Dubai, ICCA empowers aspiring chefs and industry professionals with globally recognized programs, state-of-the-art facilities",
     subheading: "ICCA",
     type: ["Chat Bot", "UX/UI"],
-    industry: "Culinary"
+    industry: "Culinary",
   },
   {
     img: Tawuniyacase,
     heading:
       "Our recent digital activation project done for Tawuniya, an official sponsor of نادي الهلال السعودي - Al-Hilal Saudi Club during the Al-Hilal vs Al-Nassr match in the #Saudi Pro League on 4th April in Riyadh.",
     subheading: "Tawuniya",
-    type: ["Event","Management"],
-    industry: "Sports"
+    type: ["Event", "Management"],
+    industry: "Sports",
   },
   {
     img: caseulalo,
     heading:
       "AI and blockchain-powered health-tech protocol revolutionizing how patients manage their medical data. With a secure Smart Patient Wallet, ULALO empowers users to store, share, and visualize health records, receive personalized health insights, and take control of their well-being",
     subheading: "ULALO",
-    type: ["Marketing","UX/UI", "Web Development", "Web3 Development","Video Editing"],
-    industry: "Healthcare"
+    type: [
+      "Marketing",
+      "UX/UI",
+      "Web Development",
+      "Web3 Development",
+      "Video Editing",
+    ],
+    industry: "Healthcare",
   },
 ];
 
@@ -124,23 +131,31 @@ interface CasesCardProps {
   selectedIndustry: string;
 }
 
-const CasesCard = ({ selectedProjectType, selectedIndustry }: CasesCardProps) => {
+const CasesCard = ({
+  selectedProjectType,
+  selectedIndustry,
+}: CasesCardProps) => {
   const navigate = useNavigate();
   const [showAll, setShowAll] = useState(false);
 
   // Filter case studies based on selected type and industry
   const filteredCaseStudies = caseStudyData.filter((item) => {
-    const matchesType = selectedProjectType === "All" || item.type.some(type => 
-      type.toLowerCase().includes(selectedProjectType.toLowerCase())
-    );
-    const matchesIndustry = selectedIndustry === "All" || 
+    const matchesType =
+      selectedProjectType === "All" ||
+      item.type.some((type) =>
+        type.toLowerCase().includes(selectedProjectType.toLowerCase())
+      );
+    const matchesIndustry =
+      selectedIndustry === "All" ||
       item.industry.toLowerCase().includes(selectedIndustry.toLowerCase());
-    
+
     return matchesType && matchesIndustry;
   });
 
   // Get the case studies to display based on showAll state
-  const displayedCaseStudies = showAll ? filteredCaseStudies : filteredCaseStudies.slice(0, 6);
+  const displayedCaseStudies = showAll
+    ? filteredCaseStudies
+    : filteredCaseStudies.slice(0, 6);
 
   return (
     <div className="flex flex-col gap-4 md:gap-12">
@@ -150,14 +165,15 @@ const CasesCard = ({ selectedProjectType, selectedIndustry }: CasesCardProps) =>
             {displayedCaseStudies.map((item, index) => (
               <div
                 key={index}
-                className="relative group overflow-hidden rounded-[32px] aspect-[4/3] cursor-pointer"   onClick={(e) => {
-                      e.stopPropagation();
-                      navigate(
-                        `/Maxtron.ai/case-study/${encodeURIComponent(
-                          item.subheading.replace(/\s+/g, "-")
-                        )}`
-                      );
-                    }}
+                className="relative group overflow-hidden rounded-[32px] aspect-[4/3] cursor-pointer"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  navigate(
+                    `/Maxtron.ai/case-study/${encodeURIComponent(
+                      item.subheading.replace(/\s+/g, "-")
+                    )}`
+                  );
+                }}
               >
                 {/* Background Image */}
                 <div className="absolute inset-0 overflow-hidden">
@@ -180,7 +196,7 @@ const CasesCard = ({ selectedProjectType, selectedIndustry }: CasesCardProps) =>
                   ))}
                 </div>
                 <div className="absolute md:hidden top-3 md:top-5 left-4 md:left-5 flex flex-wrap gap-2 z-20">
-                  {item.type.slice(0,3).map((t, i) => (
+                  {item.type.slice(0, 3).map((t, i) => (
                     <span
                       key={i}
                       className="bg-[#8952b6] text-white text-sm md:text-base font-semibold px-3 py-1 rounded-2xl"
@@ -241,7 +257,8 @@ const CasesCard = ({ selectedProjectType, selectedIndustry }: CasesCardProps) =>
             No Projects Available
           </h3>
           <p className="text-lg text-gray-600 max-w-md">
-            We couldn't find any projects matching your selected filters. Please try different combinations of project type and industry.
+            We couldn't find any projects matching your selected filters. Please
+            try different combinations of project type and industry.
           </p>
         </div>
       )}
