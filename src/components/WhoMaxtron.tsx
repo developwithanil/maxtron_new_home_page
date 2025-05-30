@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Verify } from "./VectorImage"; // Assuming Verify is an SVG icon component
+import { Verify } from "./VectorImage";
 import MaxtronLogo from "../assets/maxtronlogo.svg";
 import product1 from "../assets/products/blockchainproduct1.svg";
 import product2 from "../assets/products/aiproduct2.svg";
@@ -8,7 +8,7 @@ import product4 from "../assets/products/otherproduct4.svg";
 
 import fund1 from "../assets/products/marketing.svg";
 import fund2 from "../assets/products/fundraising.svg";
-import { logo1, logo2, logo3, logo4, logo5, logo6 } from "./VectorImage"; // These must be React SVG components
+import { logo1, logo2, logo3, logo4, logo5, logo6 } from "./VectorImage";
 
 type ContentItem = {
   category: string;
@@ -172,7 +172,7 @@ const WhoMaxtron = () => {
         [activeMainTab]: tabSystemData.subTabs[activeMainTab][0].id,
       }));
     }
-  }, [activeMainTab]); // Only activeMainTab in dependency array
+  }, [activeMainTab]);
 
   const handleMainTabClick = (mainTabId: "products" | "success") => {
     setActiveMainTab(mainTabId as keyof typeof tabSystemData.subTabs);
@@ -205,7 +205,7 @@ const WhoMaxtron = () => {
           {" "}
           <Verify /> ENTERPRISE-GRADE SOLUTIONS{" "}
         </p>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#2A2A2A] mb-3 md:mb-4 font-[Switzer]">
+        <h2 className="text-4xl sm:text-4xl md:text-2xl font-bold text-[#2A2A2A] mb-3 md:mb-4 font-[Switzer]">
           {" "}
           Who Are We{" "}
         </h2>
@@ -223,7 +223,7 @@ const WhoMaxtron = () => {
                 onClick={() =>
                   handleMainTabClick(tab.id as "products" | "success")
                 }
-                className={`text-base md:text-2xl lg:text-3xl font-semibold cursor-pointer px-3 py-4 md:py-6 flex-1 text-center border-l border-r border-[#DFDEE7] ${
+                className={`text-[14px] md:text-2xl lg:text-3xl font-semibold cursor-pointer px-3 py-4 md:py-6 flex-1 text-center border-l border-r border-[#DFDEE7] ${
                   activeMainTab === tab.id
                     ? "text-[#2A2A2A] bg-[#F8F8F8] [font-family:Switzer]"
                     : "text-[#79748A] bg-white  hover:text-[#6A0DAD] [font-family:Switzer]"
@@ -246,7 +246,6 @@ const WhoMaxtron = () => {
           ))}
         </div>
 
-        {/* ---- DESKTOP VIEW: Sub-Tabs Container and Content Panel ---- */}
         <div className="hidden md:block">
           {currentSubTabsList.length > 0 && (
             <div className="flex w-full bg-gray-50 border-b border-[#DFDEE7] overflow-hidden">
@@ -292,8 +291,8 @@ const WhoMaxtron = () => {
                     <span
                       className={`leading-tight ${
                         isSubTabActive
-                          ? "font-normal text-lg text-[#7A35C1] font-[openSansHebrew]"
-                          : "text-[#79748A] group-hover:text-[#7A35C1] font-normal text-lg font-[openSansHebrew]"
+                          ? "font-normal text-lg text-[#7A35C1] font-openSansHebrew"
+                          : "text-[#79748A] group-hover:text-[#7A35C1] font-normal text-lg font-openSansHebrew"
                       }`}
                     >
                       {subTab.label}
@@ -320,10 +319,10 @@ const WhoMaxtron = () => {
                   {currentContent.points.map((point, pointIndex) => (
                     <li
                       key={pointIndex}
-                      className="flex items-start text-base text-[#79748A]"
+                      className="flex items-start text-base text-[#79748A] "
                     >
                       {" "}
-                      <span className="text-[#7A35C1] font-bold mr-2 mt-1">
+                      <span className="text-[#79748A] font-bold mr-2 mt-1">
                         •
                       </span>{" "}
                       {point}{" "}
@@ -343,7 +342,6 @@ const WhoMaxtron = () => {
           )}
         </div>
 
-        {/* ---- MOBILE VIEW: Accordion ---- */}
         <div className="block md:hidden bg-[#F7F7FA]">
           {currentSubTabsList.length > 0 &&
             currentSubTabsList.map((subTab) => {
@@ -371,8 +369,10 @@ const WhoMaxtron = () => {
                                 React.SVGProps<SVGSVGElement>
                               >,
                               {
-                                className: `h-5 w-5 mr-3 ${
-                                  isActive ? "fill-[#7A35C1] " : "fill-gray-700"
+                                className: `h-6 w-6 mr-3 text-[#79748A]    ${
+                                  isActive
+                                    ? "fill-[#7A35C1] bg-[#7A35C1] text-white rounded-md "
+                                    : ""
                                 }`,
                               }
                             )
@@ -408,10 +408,10 @@ const WhoMaxtron = () => {
                   </div>
                   {isActive && contentForAccordionItem && (
                     <div className="p-10 pt-0 text-left">
-                      <p className="text-xs font-semibold uppercase text-[#7A35C1] mb-2">
+                      <p className="text-[12px] font-semibold uppercase text-[#7A35C1] mb-2 font-openSansHebrew">
                         {contentForAccordionItem.category}
                       </p>
-                      <h3 className="text-xl font-bold text-[#2A2A2A] mb-4 font-[Switzer]">
+                      <h3 className="text-xl font-normal text-[#2A2A2A] mb-4 font-[Switzer]">
                         {contentForAccordionItem.title}
                       </h3>
                       <ul className="space-y-2.5 mb-4">
@@ -419,9 +419,9 @@ const WhoMaxtron = () => {
                           (point, pointIndex) => (
                             <li
                               key={pointIndex}
-                              className="flex items-start text-sm text-gray-700"
+                              className="flex items-start text-[14px] text-[#79748A]"
                             >
-                              <span className="text-[#7A35C1] font-bold mr-2 mt-[1px] text-lg leading-none">
+                              <span className="text-[#79748A] font-bold mr-2 mt-[1px] text-lg leading-none">
                                 •
                               </span>{" "}
                               {point}

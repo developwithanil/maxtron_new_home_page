@@ -33,7 +33,7 @@ const HeroSection = () => {
 
           <div className="absolute top-0 left-0 w-full h-full bg-purple-900 bg-opacity-50"></div>
 
-          <div className="relative z-10 flex flex-col items-start sm:items-center justify-center h-full text-white px-4 sm:px-6 lg:px-8">
+          <div className="relative z-10 flex flex-col items-center sm:items-center justify-center h-full text-white px-4 sm:px-6 lg:px-8">
             <h1 className="text-2xl hidden sm:block sm:text-xl md:text-6xl font-bold text-center mb-4">
               Creating Winning Products, Ensuring Their Success
             </h1>
@@ -46,7 +46,7 @@ const HeroSection = () => {
               Solutions
             </p>
 
-            <div className="flex flex-row sm:flex-row justify-center items-center space-x-4">
+            <div className=" flex flex-row sm:flex-row justify-center items-center space-x-4">
               <Link to="/services">
                 <button className="bg-purple-700 hover:bg-purple-800 text-white font-bold md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3">
                   Learn More

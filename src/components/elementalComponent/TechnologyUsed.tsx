@@ -47,7 +47,7 @@ const TechnologyUsed = () => {
     >
       <div>
         <div className="p-5 md:p-4 lg:p-4 xl:p-4 ">
-          <h2 className="text-3xl lg:text-4xl font-bold text-[#2A2A2A] mb-8 text-[Switzer]">
+          <h2 className="text-3xl lg:text-2xl font-bold text-[#2A2A2A] mb-8 text-[Switzer]">
             Trends We Are Building
           </h2>
 

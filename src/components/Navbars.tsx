@@ -30,7 +30,7 @@ const dropdownContentData = {
     title: "Industries",
     link: "/industries",
     liTags: [
-      { name: "Gaming", link: "/industries" }, 
+      { name: "Gaming", link: "/industries" },
       {
         name: "Banking & Financial Services",
         link: "/industries",
@@ -93,11 +93,11 @@ const dropdownContentData = {
         link: "/Maxtron.ai/case-study/Blockchain-Based-EVoting-System",
       },
       { name: "Good Standing", link: "/Maxtron.ai/case-study/Good-Standing" },
-      { name: "GRO8", link: "/Maxtron.ai/case-study/Gro8" }, // Assuming 'GRO8' is the correct case
+      { name: "GRO8", link: "/Maxtron.ai/case-study/Gro8" },
       { name: "Token Launch", link: "/Maxtron.ai/case-study/Token-Launch" },
-      { name: "ICCA", link: "/Maxtron.ai/case-study/ICCA" }, // Assuming 'ICCA' is the correct case
+      { name: "ICCA", link: "/Maxtron.ai/case-study/ICCA" },
       { name: "Tawuniya", link: "/Maxtron.ai/case-study/Tawuniya" },
-      { name: "ULALO", link: "/Maxtron.ai/case-study/ULALO" }, // Assuming 'ULALO' is the correct case
+      { name: "ULALO", link: "/Maxtron.ai/case-study/ULALO" },
     ],
   },
   tokenization: {
@@ -147,10 +147,9 @@ const Navbar: React.FC = () => {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
-    setActiveDropdownKey(null); // Close desktop dropdown
+    setActiveDropdownKey(null);
     if (isMobileMenuOpen) {
-      // If was open, now closing
-      setOpenMobileDropdownKey(null); // Close mobile dropdown when closing main mobile menu
+      setOpenMobileDropdownKey(null);
     }
   };
 
@@ -173,12 +172,11 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    setActiveDropdownKey(null); // Close desktop dropdown on route change
-    setIsMobileMenuOpen(false); // Close mobile menu on route change
-    setOpenMobileDropdownKey(null); // Close mobile dropdown on route change
+    setActiveDropdownKey(null);
+    setIsMobileMenuOpen(false);
+    setOpenMobileDropdownKey(null);
   }, [pathname]);
 
-  // Close desktop dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (navRef.current && !navRef.current.contains(event.target as Node)) {
@@ -226,12 +224,9 @@ const Navbar: React.FC = () => {
         }
       `}
     >
-      {/* Main Navbar Content Area (Logo, Nav Links, CTAs) */}
       <div className="max-w-screen mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {" "}
-          {/* Standardized height for the nav bar row */}
-          {/* Logo */}
           <div className="max-w-7xl mx-auto flex xl:gap-10 justify-between w-full">
             <div className="flex-shrink-0">
               <Link to="/" onClick={closeDesktopDropdown}>
@@ -242,7 +237,7 @@ const Navbar: React.FC = () => {
                 />
               </Link>
             </div>
-            {/* Desktop and Tablet Menu */}
+
             <div className="hidden lg:flex items-center">
               <div className="flex items-baseline space-x-1 xl:space-x-2">
                 {navLinksConfig.map(({ label, key }) => (
@@ -254,7 +249,7 @@ const Navbar: React.FC = () => {
                                 ${
                                   activeDropdownKey === key
                                     ? "text-purple-900 bg-purple-100"
-                                    : "text-[#4E009C] hover:text-purple-800 hover:bg-purple-50"
+                                    : "text-[#2A2A2A] hover:text-purple-800 font-openSansHebrew hover:bg-purple-50"
                                 }`}
                       aria-haspopup="true"
                       aria-expanded={activeDropdownKey === key}
@@ -279,7 +274,7 @@ const Navbar: React.FC = () => {
                     `block ${
                       isActive
                         ? "bg-purple-100 text-purple-700"
-                        : "text-[#4E009C]"
+                        : "text-[#2A2A2A] font-openSansHebrew"
                     } hover:bg-purple-50 hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium`
                   }
                 >
@@ -292,7 +287,7 @@ const Navbar: React.FC = () => {
                     `block ${
                       isActive
                         ? "bg-purple-100 text-purple-700"
-                        : "text-[#4E009C]"
+                        : "text-[#2A2A2A] font-openSansHebrew"
                     } hover:bg-purple-50 hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium`
                   }
                 >
@@ -305,11 +300,11 @@ const Navbar: React.FC = () => {
                     `block ${
                       isActive
                         ? "bg-purple-100 text-purple-700"
-                        : "text-[#4E009C]"
+                        : "text-[#2A2A2A] font-openSansHebrew"
                     } hover:bg-purple-50 hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium`
                   }
                 >
-                  About
+                  About Us
                 </NavLink>
               </div>
 
@@ -317,7 +312,7 @@ const Navbar: React.FC = () => {
                 <Link
                   to="/contact"
                   onClick={closeDesktopDropdown}
-                  className="text-white bg-[#4E009C] hover:bg-purple-800 px-5 py-2.5 rounded-full text-xs lg:text-sm font-medium whitespace-nowrap transition-colors duration-150"
+                  className="text-white bg-[#7A35C1] hover:bg-purple-800 px-5 py-2.5 rounded-md text-xs lg:text-sm font-medium whitespace-nowrap transition-colors duration-150 font-SegoeUISymbol"
                 >
                   Contact Us
                 </Link>
@@ -329,13 +324,13 @@ const Navbar: React.FC = () => {
                     );
                     closeDesktopDropdown();
                   }}
-                  className="text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 px-5 py-2.5 rounded-full text-xs lg:text-sm font-medium whitespace-nowrap transition-all duration-150 shadow-md hover:shadow-lg"
+                  className="text-white bg-gradient-to-r bg-[#7A35C1] hover:from-purple-700 hover:to-indigo-700 px-5 py-2.5 rounded-md text-xs lg:text-sm font-medium whitespace-nowrap transition-all duration-150 shadow-md hover:shadow-lg font-SegoeUISymbol"
                 >
                   Book a Call
                 </button>
               </div>
             </div>
-            {/* Mobile Menu Toggle */}
+
             <div className="lg:hidden flex items-center">
               <button
                 onClick={toggleMobileMenu}
@@ -368,26 +363,26 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      {/* Shared Full-Width Dropdown for Desktop */}
       {activeDropdownKey && currentDropdownContent && (
         <div
           className={`
       absolute left-0 right-0 z-40 top-full
       ${
         activeDropdownKey
-          ? "dropdown-animation-open" // Make sure these CSS classes are defined for animation
+          ? "dropdown-animation-open"
           : "dropdown-animation-close"
       }
     `}
-          onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside dropdown
+          onClick={(e) => e.stopPropagation()}
         >
           <div className="mx-auto">
             {" "}
-            {/* Consider max-w-screen-xl if needed */}
             <div className="bg-gray-50 rounded-b-xl p-6 ring-1 ring-black ring-opacity-5 max-h-[calc(100vh-8rem)] overflow-y-auto">
-             <Link
+              <Link
                 to={currentDropdownContent.link}
-                onClick={closeDesktopDropdown} className="flex items-center mb-5" >
+                onClick={closeDesktopDropdown}
+                className="flex items-center mb-5"
+              >
                 <h3 className="text-xl font-bold text-gray-800">
                   {currentDropdownContent.head}
                 </h3>
@@ -429,10 +424,9 @@ const Navbar: React.FC = () => {
         </div>
       )}
 
-      {/* Mobile Menu - Slides down from below navbar */}
       {isMobileMenuOpen && (
         <div
-          className="lg:hidden shadow-lg rounded-b-3xl z-30 overflow-y-auto max-h-[calc(100vh-6rem)] bg-white" // Adjust max-h if needed
+          className="lg:hidden shadow-lg rounded-b-3xl z-30 overflow-y-auto max-h-[calc(100vh-6rem)] bg-white"
           id="mobile-menu"
         >
           <div className="px-2 pt-2 pb-1 space-y-1 sm:px-3">
@@ -447,7 +441,7 @@ const Navbar: React.FC = () => {
                       ${
                         isMobileDropdownOpen
                           ? "bg-purple-100 text-purple-700"
-                          : "text-[#4E009C] hover:bg-purple-50 hover:text-purple-800"
+                          : "text-[#2A2A2A] hover:bg-purple-50 hover:text-purple-800"
                       }`}
                   >
                     <span>{label}</span>
@@ -508,7 +502,7 @@ const Navbar: React.FC = () => {
               onClick={handleMobileNavClick}
               className={({ isActive }) =>
                 `block ${
-                  isActive ? "bg-purple-100 text-purple-700" : "text-[#4E009C]"
+                  isActive ? "bg-purple-100 text-purple-700" : "text-[#2A2A2A]"
                 } hover:bg-purple-50 hover:text-purple-800 px-3 py-2.5 rounded-md text-base font-medium`
               }
             >
@@ -519,7 +513,7 @@ const Navbar: React.FC = () => {
               onClick={handleMobileNavClick}
               className={({ isActive }) =>
                 `block ${
-                  isActive ? "bg-purple-100 text-purple-700" : "text-[#4E009C]"
+                  isActive ? "bg-purple-100 text-purple-700" : "text-[#2A2A2A]"
                 } hover:bg-purple-50 hover:text-purple-800 px-3 py-2.5 rounded-md text-base font-medium`
               }
             >
@@ -530,11 +524,11 @@ const Navbar: React.FC = () => {
               onClick={handleMobileNavClick}
               className={({ isActive }) =>
                 `block ${
-                  isActive ? "bg-purple-100 text-purple-700" : "text-[#4E009C]"
+                  isActive ? "bg-purple-100 text-purple-700" : "text-[#2A2A2A]"
                 } hover:bg-purple-50 hover:text-purple-800 px-3 py-2.5 rounded-md text-base font-medium`
               }
             >
-              About
+              About Us
             </NavLink>
           </div>
 
@@ -543,7 +537,7 @@ const Navbar: React.FC = () => {
               <Link
                 to="/contact"
                 onClick={handleMobileNavClick}
-                className="flex-1 text-white text-center bg-[#4E009C] hover:bg-purple-800 px-3 py-2.5 rounded-full text-base font-medium"
+                className="flex-1 text-white text-center bg-[#7A35C1]  hover:bg-purple-800 px-3 py-2.5 rounded-md text-base font-medium"
               >
                 Contact Us
               </Link>
@@ -555,7 +549,7 @@ const Navbar: React.FC = () => {
                   );
                   handleMobileNavClick();
                 }}
-                className="flex-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 px-3 py-2.5 rounded-full text-base font-medium"
+                className="flex-1 text-white bg-gradient-to-r bg-[#7A35C1] hover:from-purple-700 hover:to-indigo-700 px-3 py-2.5 rounded-md text-base font-medium"
               >
                 Book a Call
               </button>
