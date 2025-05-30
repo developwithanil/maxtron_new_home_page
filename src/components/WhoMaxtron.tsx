@@ -205,7 +205,7 @@ const WhoMaxtron = () => {
           {" "}
           <Verify /> ENTERPRISE-GRADE SOLUTIONS{" "}
         </p>
-        <h2 className="text-4xl sm:text-4xl md:text-2xl font-bold text-[#2A2A2A] mb-3 md:mb-4 font-[Switzer]">
+        <h2 className="text-4xl sm:text-4xl md:text-3xl font-bold text-[#2A2A2A] mb-3 md:mb-4 font-[Switzer]">
           {" "}
           Who Are We{" "}
         </h2>
@@ -266,7 +266,7 @@ const WhoMaxtron = () => {
                   >
                     {subTab.icon && (
                       <div
-                        className={`p-1 rounded mr-1.5 sm:mr-2 flex items-center justify-center h-6 w-6 sm:h-7 sm:w-7 shrink-0 transition-colors duration-200 
+                        className={`p-1 rounded mr-1.5  sm:mr-2 flex items-center justify-center h-6 w-6 sm:h-7 sm:w-7 shrink-0 transition-colors duration-200 
                           ${
                             isSubTabActive
                               ? "bg-[#7A35C1]"
@@ -371,7 +371,7 @@ const WhoMaxtron = () => {
                               {
                                 className: `h-6 w-6 mr-3 text-[#79748A]    ${
                                   isActive
-                                    ? "fill-[#7A35C1] bg-[#7A35C1] text-white rounded-md "
+                                    ? "fill-[#7A35C1] bg-[#7A35C1]  text-white rounded-md "
                                     : ""
                                 }`,
                               }
@@ -380,7 +380,7 @@ const WhoMaxtron = () => {
                             <img
                               src={subTab.icon as string}
                               alt=""
-                              className="h-5 w-5 mr-3"
+                              className="h-6 w-6 mr-3 "
                             />
                           )}
                         </>

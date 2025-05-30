@@ -20,7 +20,7 @@ const WhyMaxtron = () => {
     >
       <div>
         <div className="p-4 ">
-          <h2 className="text-3xl lg:text-2xl font-bold text-[#2A2A2A] mb-4 text-[Switzer]">
+          <h2 className="text-3xl lg:text-3xl font-bold text-[#2A2A2A] mb-4 text-[Switzer]">
             Why Maxtron
           </h2>
           <p className="mb-8 md:mb-10 lg:mb-14 xl:mb-16  text-[#79748A] font-openSansHebrew text-md md:text-lg">
