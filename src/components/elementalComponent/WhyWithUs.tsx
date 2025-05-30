@@ -7,7 +7,7 @@ const items = [
   {
     image: whyus1,
     title: "We tokenize any asset",
-    desc: "Whether you need tokenization for a small or large portfolio,we can design a solution that meets your requirements and delivers the results you need.",
+    desc: "We tokenize any asset",
   },
   {
     image: whyus2,

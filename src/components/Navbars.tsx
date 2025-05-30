@@ -30,7 +30,7 @@ const dropdownContentData = {
     title: "Industries",
     link: "/industries",
     liTags: [
-      { name: "Gaming", link: "/industries/gaming" }, // Corrected link
+      { name: "Gaming", link: "/industries" }, 
       {
         name: "Banking & Financial Services",
         link: "/industries",
@@ -385,12 +385,14 @@ const Navbar: React.FC = () => {
             {" "}
             {/* Consider max-w-screen-xl if needed */}
             <div className="bg-gray-50 rounded-b-xl p-6 ring-1 ring-black ring-opacity-5 max-h-[calc(100vh-8rem)] overflow-y-auto">
-              <div className="flex items-center mb-5">
+             <Link
+                to={currentDropdownContent.link}
+                onClick={closeDesktopDropdown} className="flex items-center mb-5" >
                 <h3 className="text-xl font-bold text-gray-800">
                   {currentDropdownContent.head}
                 </h3>
                 <CustomArrowIcon />
-              </div>
+              </Link>
               <Link
                 to={currentDropdownContent.link}
                 onClick={closeDesktopDropdown}
