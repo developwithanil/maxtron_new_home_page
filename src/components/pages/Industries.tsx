@@ -10,7 +10,7 @@ import img8 from "../../assets/industry/industry8.png";
 const industryData = [
   {
     img: img1,
-    heading: 'Gaming & iGaming',
+    heading: "Gaming & iGaming",
     points: [
       "Mobile Game Development",
       "PC Game Development",
@@ -24,7 +24,7 @@ const industryData = [
   },
   {
     img: img2,
-    heading: 'Banking, Financial Services & Insurance',
+    heading: "Banking, Financial Services & Insurance",
     points: [
       "Fintech Software Development",
       "E-Wallet Development",
@@ -37,7 +37,7 @@ const industryData = [
   },
   {
     img: img3,
-    heading: 'Food & Beverages',
+    heading: "Food & Beverages",
     points: [
       "IT Consulting",
       "Enterprise Resource Planning (ERP) Software",
@@ -50,7 +50,7 @@ const industryData = [
   },
   {
     img: img4,
-    heading: 'Retail & E-Commerce',
+    heading: "Retail & E-Commerce",
     points: [
       "Strategy, Marketing, Branding, Advertising, & Communications",
       "Customer Experience Solutions",
@@ -64,7 +64,7 @@ const industryData = [
   },
   {
     img: img5,
-    heading: 'Supply Chain & Logistics',
+    heading: "Supply Chain & Logistics",
     points: [
       "Technology Consulting Solutions",
       "Fleet Management Systems",
@@ -75,7 +75,7 @@ const industryData = [
   },
   {
     img: img6,
-    heading: 'Sustainable Industry',
+    heading: "Sustainable Industry",
     points: [
       "Advanced Data Analytics in Climate Tech",
       "AI-driven Energy Management",
@@ -87,7 +87,7 @@ const industryData = [
   },
   {
     img: img7,
-    heading: 'Construction',
+    heading: "Construction",
     points: [
       "Digital Transformation",
       "Modern Platform Building",
@@ -98,7 +98,7 @@ const industryData = [
   },
   {
     img: img8,
-    heading: 'Healthcare & Pharmaceuticals',
+    heading: "Healthcare & Pharmaceuticals",
     points: [
       "Healthcare Software Solutions",
       "Telemedicine App Development",
@@ -110,7 +110,6 @@ const industryData = [
   },
 ];
 
-
 const IndustryList = () => {
   return (
     <div className="p-0 md:p-8">
@@ -120,7 +119,7 @@ const IndustryList = () => {
             <img
               src={industry.img}
               alt={industry.heading}
-              style={{ width: '480px', height: '300px' }} 
+              style={{ width: "480px", height: "300px" }}
               className="object-cover mb-4"
             />
             <h2 className="md:text-2xl font-bold mb-2">{industry.heading}</h2>
@@ -138,27 +137,27 @@ const IndustryList = () => {
   );
 };
 
-
-
 const Industries = () => {
   return (
     <div>
-
       <div className="relative z-10  mb-8 text-center industry_hero_img px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
-        Industry Focus
+          Industry Focus
         </h1>
         <p className="text-base sm:text-lg lg:text-xl mt-4">
-        Stay ahead of disruption and drive growth by partnering with a technology expert who understands your industry and speaks your business's language. We deliver tailored technology solutions, help you avoid costly errors, save you time, and provide a competitive edge to position your company for success.
+          Stay ahead of disruption and drive growth by partnering with a
+          technology expert who understands your industry and speaks your
+          business's language. We deliver tailored technology solutions, help
+          you avoid costly errors, save you time, and provide a competitive edge
+          to position your company for success.
         </p>
       </div>
 
       <div className="relative container mx-auto ">
         <div className="absolute inset-0 opacity-10 z-0"></div>
 
-        <IndustryList  />
+        <IndustryList />
       </div>
-
     </div>
   );
 };

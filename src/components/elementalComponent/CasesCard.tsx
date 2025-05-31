@@ -1,17 +1,17 @@
 import { useNavigate } from "react-router-dom";
-import img1 from "../../assets/case/case1.png";
-import img3 from "../../assets/case/case3.png";
-import img2 from "../../assets/case/case2.png";
-import img4 from "../../assets/case/case4.png";
-import img5 from "../../assets/case/case5.png";
-import img6 from "../../assets/case/case6.png";
-import img8 from "../../assets/case/case8.png";
-import img9 from "../../assets/case/case9.png";
-import img10 from "../../assets/case/case10.png";
-import caseulalo from "../../assets/case/caseulalo.png";
-import iccaCase from "../../assets/case/iccaCase.png";
-import Tawuniyacase from "../../assets/case/Tawuniyacase.png";
-import tokencase from "../../assets/case/tokencase.png";
+import img1 from "../../assets/case/case1.svg";
+import img3 from "../../assets/case/case3.svg";
+import img2 from "../../assets/case/case2.svg";
+import img4 from "../../assets/case/case4.svg";
+import img5 from "../../assets/case/case5.svg";
+import img6 from "../../assets/case/case6.svg";
+import img8 from "../../assets/case/case8.svg";
+import img9 from "../../assets/case/case9.svg";
+import img10 from "../../assets/case/case10.svg";
+import caseulalo from "../../assets/case/caseulalo.svg";
+import iccaCase from "../../assets/case/iccaCase.svg";
+import Tawuniyacase from "../../assets/case/Tawuniyacase.svg";
+import tokencase from "../../assets/case/tokencase.svg";
 import { useState } from "react";
 
 const caseStudyData = [
@@ -20,7 +20,7 @@ const caseStudyData = [
     heading:
       "A gaming platform that allows gamers to earn cryptocurrency by playing on both mobile apps (iOS and Google)...",
     subheading: "Blockchain Game Development",
-    type: ["Application"],
+    type: ["Mobile App"],
     industry: "Gaming",
   },
   {
@@ -28,7 +28,7 @@ const caseStudyData = [
     heading:
       "Learn how we helped an eCommerce company successfully achieve fast growth...",
     subheading: "ECommerce Marketing",
-    type: ["Application"],
+    type: ["Web Application"],
     industry: "E-Commerce",
   },
   {
@@ -37,7 +37,7 @@ const caseStudyData = [
       "Developed 7+ mini-games, which can be played on one single plateform, to enable the quick earning and gaming experience for users",
 
     subheading: "Mini Gaming Platform",
-    type: ["Application ", "Web 3.0"],
+    type: ["Mobile App", "Web 3.0"],
     industry: "AI",
   },
   {
@@ -45,21 +45,21 @@ const caseStudyData = [
     heading:
       "A decentralized AI platform designed to address IP rights compliance...",
     subheading: "Decentralized AI Platform",
-    type: ["Application"],
+    type: ["Web Application"],
     industry: "Web3",
   },
   {
     img: img6,
     heading: "A NextGen AI-phone calling tool...",
     subheading: "AI Calling Tool",
-    type: ["Application"],
+    type: ["Web Application"],
     industry: "AI",
   },
   {
     img: img3,
     heading: "How we managed to achieve growth for a web3 project...",
     subheading: "Crypto Project Marketing",
-    type: ["Application"],
+    type: ["Web Application"],
     industry: "Web3",
   },
   {
@@ -67,7 +67,7 @@ const caseStudyData = [
     heading:
       "A blockchain solution to ensure anonymity and verifiability in voting...",
     subheading: "Blockchain Based EVoting System",
-    type: ["Application"],
+    type: ["Web Application"],
     industry: "Government",
   },
   {
@@ -75,7 +75,7 @@ const caseStudyData = [
     heading:
       "Good Standing connects organizations and volunteers through tasks and rewards...",
     subheading: "Good Standing",
-    type: ["Application"],
+    type: ["Web Application"],
     industry: "Social",
   },
   {
@@ -83,7 +83,7 @@ const caseStudyData = [
     heading:
       "Gro8 is a platform connecting investors, mentors, and startup founders...",
     subheading: "Gro8",
-    type: ["Application"],
+    type: ["Web Application"],
     industry: "Startup",
   },
   {

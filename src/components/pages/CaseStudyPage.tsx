@@ -26,8 +26,7 @@ const caseStudyData = [
       " Learn how we helped an eCommerce company successfully achieve fast growth with high margins into a new (Direct-To-Consumers) D2C category with flying colors.",
     subheading: "E-Commerce Marketing",
   },
-  
- 
+
   {
     img: img4,
     heading:
@@ -47,30 +46,35 @@ const caseStudyData = [
     subheading: "Decentralized AI Platform",
   },
   {
-      img: img6,
-      heading: 'A NextGen AI-phone calling tool that has been designed to communicate on calls just like humans do.',
-      subheading: 'AI-Calling Tool',
-  },
-   {
-      img: img3,
-      heading: 'How we managed to achieve growth for the web3 project using the right strategies, focused communications, KOLs partnerships, and community initiatives.',
-      subheading: 'Crypto Project Marketing',
+    img: img6,
+    heading:
+      "A NextGen AI-phone calling tool that has been designed to communicate on calls just like humans do.",
+    subheading: "AI-Calling Tool",
   },
   {
-      img: img2,
-      heading: "A comprehensive solution that leverages blockchain's inherent characteristics to ensure anonymity, integrity, accuracy, and verifiability in the voting process.",
-      subheading: 'Blockchain-Based E-Voting System',
+    img: img3,
+    heading:
+      "How we managed to achieve growth for the web3 project using the right strategies, focused communications, KOLs partnerships, and community initiatives.",
+    subheading: "Crypto Project Marketing",
+  },
+  {
+    img: img2,
+    heading:
+      "A comprehensive solution that leverages blockchain's inherent characteristics to ensure anonymity, integrity, accuracy, and verifiability in the voting process.",
+    subheading: "Blockchain-Based E-Voting System",
   },
   {
     img: img9,
-    heading: "Good Standing is a volunteer management platform that connects organizations and volunteers through location-based tasks, rewards, and real-time communication. It features a secure blockchain-backed coupon marketplace, a gamified challenge system, and an admin panel for oversight. Built with React, Nest.js, Web3.js, AWS, and Firebase, it ensures a scalable, secure, and engaging experience.",
-    subheading: 'Good Standing',
-},
-{
-  img: img10,
-  heading: "Gro8 is a dynamic platform connecting investors, mentors, and startup founders in one place. It enables seamless startup funding, mentorship, and collaboration, with an admin dashboard, real-time chat, and secure investment tracking. Built with Nest.js, React, Firebase, AWS, and MongoDB, Gro8 ensures a scalable, efficient, and secure experience for all users.",
-  subheading: 'Gro8',
-},
+    heading:
+      "Good Standing is a volunteer management platform that connects organizations and volunteers through location-based tasks, rewards, and real-time communication. It features a secure blockchain-backed coupon marketplace, a gamified challenge system, and an admin panel for oversight. Built with React, Nest.js, Web3.js, AWS, and Firebase, it ensures a scalable, secure, and engaging experience.",
+    subheading: "Good Standing",
+  },
+  {
+    img: img10,
+    heading:
+      "Gro8 is a dynamic platform connecting investors, mentors, and startup founders in one place. It enables seamless startup funding, mentorship, and collaboration, with an admin dashboard, real-time chat, and secure investment tracking. Built with Nest.js, React, Firebase, AWS, and MongoDB, Gro8 ensures a scalable, efficient, and secure experience for all users.",
+    subheading: "Gro8",
+  },
 ];
 
 const CaseStudyList: React.FC = () => {
@@ -83,7 +87,11 @@ const CaseStudyList: React.FC = () => {
           <div
             key={index}
             className="flex flex-col mb-8 custom_bg_color transform transition-transform duration-300 hover:scale-105 cursor-pointer"
-            onClick={() => navigate(`/Maxtron/${industry.subheading.replace(/\s+/g, "-")}/${index}`)}
+            onClick={() =>
+              navigate(
+                `/Maxtron/${industry.subheading.replace(/\s+/g, "-")}/${index}`
+              )
+            }
           >
             <img
               src={industry.img}
@@ -107,7 +115,7 @@ const CaseStudyPage = () => {
   const [showMoreCaseStudies, setShowMoreCaseStudies] = useState(false);
 
   const handleButtonClick = () => {
-    setShowMoreCaseStudies(!showMoreCaseStudies); 
+    setShowMoreCaseStudies(!showMoreCaseStudies);
   };
 
   return (
