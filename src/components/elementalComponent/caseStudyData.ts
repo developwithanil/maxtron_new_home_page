@@ -300,7 +300,7 @@ export const caseStudies: CaseStudy[] = [
     title: "HYPER CASUAL GAMES",
     subtitle: "",
     heroImage: hyper1,
-    type: ["MOBILE APP"],
+    type: ["MOBILE APP", "WEB 3.0"],
     afterHeroSection: hyper1,
     industryInfo: "Gaming, iGaming, Crypto Gaming",
     projectDuration: "2 Months",

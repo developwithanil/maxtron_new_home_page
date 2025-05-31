@@ -40,8 +40,8 @@ const clients = [
 
 const projectTypes = [
   "All",
-  "APP",
-  "APPLICATION",
+  "Mobile App",
+  "Web Application",
   "Event",
   "Management",
   "Web Development",
