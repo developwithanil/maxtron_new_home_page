@@ -14,7 +14,7 @@ const FundRaising = () => {
                 className="text-transparent bg-clip-text font-openSansHebrew text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-[110%]"
                 style={{
                   backgroundImage:
-                    "linear-gradient(90deg, var(--Text, #2A2A2A) 0%, var(--Primary-500, #7A35C1) 54.42%)",
+                 "linear-gradient(90deg, #2A2A2A 0%, #7A35C1 54.42%)",
                 }}
               >
                 Raise Capital
