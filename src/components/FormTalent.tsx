@@ -217,7 +217,7 @@ const FormTalent = () => {
     formData.set('selectionReason', selectionReason);
 
     try {
-      const response = await fetch('http://localhost:3000/sendTalentData', {
+      const response = await fetch('https://api.maxtron.ai/sendTalentData', {
         method: 'POST',
         body: formData,
       });
