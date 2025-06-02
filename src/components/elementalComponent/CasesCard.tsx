@@ -1,17 +1,17 @@
 import { useNavigate } from "react-router-dom";
-import img1 from "../../assets/case/case1.png";
-import img3 from "../../assets/case/case3.png";
-import img2 from "../../assets/case/case2.png";
-import img4 from "../../assets/case/case4.png";
-import img5 from "../../assets/case/case5.png";
-import img6 from "../../assets/case/case6.png";
-import img8 from "../../assets/case/case8.png";
-import img9 from "../../assets/case/case9.png";
-import img10 from "../../assets/case/case10.png";
-import caseulalo from "../../assets/case/caseulalo.png";
-import iccaCase from "../../assets/case/iccaCase.png";
-import Tawuniyacase from "../../assets/case/Tawuniyacase.png";
-import tokencase from "../../assets/case/tokencase.png";
+import img1 from "../../assets/case/case1.svg";
+import img3 from "../../assets/case/case3.svg";
+import img2 from "../../assets/case/case2.svg";
+import img4 from "../../assets/case/case4.svg";
+import img5 from "../../assets/case/case5.svg";
+import img6 from "../../assets/case/case6.svg";
+import img8 from "../../assets/case/case8.svg";
+import img9 from "../../assets/case/case9.svg";
+import img10 from "../../assets/case/case10.svg";
+import caseulalo from "../../assets/case/caseulalo.svg";
+import iccaCase from "../../assets/case/iccaCase.svg";
+import Tawuniyacase from "../../assets/case/Tawuniyacase.svg";
+import tokencase from "../../assets/case/tokencase.svg";
 import { useState } from "react";
 
 const caseStudyData = [
@@ -20,102 +20,109 @@ const caseStudyData = [
     heading:
       "A gaming platform that allows gamers to earn cryptocurrency by playing on both mobile apps (iOS and Google)...",
     subheading: "Blockchain Game Development",
-    type: ["APP"],
-    industry: "Gaming"
+    type: ["Mobile App"],
+    industry: "Gaming",
   },
   {
     img: img5,
     heading:
       "Learn how we helped an eCommerce company successfully achieve fast growth...",
     subheading: "ECommerce Marketing",
-    type:[ "Application"],
-    industry: "E-Commerce"
+    type: ["Web Application"],
+    industry: "E-Commerce",
   },
   {
     img: img4,
-    heading: "Developed 7+ mini-games, which can be played on one single plateform, to enable the quick earning and gaming experience for users",
-   
+    heading:
+      "Developed 7+ mini-games, which can be played on one single plateform, to enable the quick earning and gaming experience for users",
+
     subheading: "Mini Gaming Platform",
-    type: ["App ", "Web 3.0"],
-    industry: "AI"
+    type: ["Mobile App", "Web 3.0"],
+    industry: "AI",
   },
   {
     img: img8,
     heading:
       "A decentralized AI platform designed to address IP rights compliance...",
     subheading: "Decentralized AI Platform",
-    type: ["Application"],
-    industry: "Web3"
+    type: ["Web Application"],
+    industry: "Web3",
   },
   {
     img: img6,
     heading: "A NextGen AI-phone calling tool...",
     subheading: "AI Calling Tool",
-    type: ["Application"],
-    industry: "AI"
+    type: ["Web Application"],
+    industry: "AI",
   },
   {
     img: img3,
     heading: "How we managed to achieve growth for a web3 project...",
     subheading: "Crypto Project Marketing",
-    type: ["Application"],
-    industry: "Web3"
+    type: ["Web Application"],
+    industry: "Web3",
   },
   {
     img: img2,
     heading:
       "A blockchain solution to ensure anonymity and verifiability in voting...",
     subheading: "Blockchain Based EVoting System",
-    type: ["Application"],
-    industry: "Government"
+    type: ["Web Application"],
+    industry: "Government",
   },
   {
     img: img9,
     heading:
       "Good Standing connects organizations and volunteers through tasks and rewards...",
     subheading: "Good Standing",
-    type: ["Application"],
-    industry: "Social"
+    type: ["Web Application"],
+    industry: "Social",
   },
   {
     img: img10,
     heading:
       "Gro8 is a platform connecting investors, mentors, and startup founders...",
     subheading: "Gro8",
-    type: ["Application"],
-    industry: "Startup"
+    type: ["Web Application"],
+    industry: "Startup",
   },
   {
     img: tokencase,
     heading:
       "Maxtron successfully helped a blockchain client launch a new cryptocurrency token - covering every aspect of the process: smart contract creation, liquidity ",
     subheading: "Token Launch",
-    type: ["Web Application","UX/UI","Marketing","Graphic Design"],
-    industry: "Web3"
+    type: ["Web Application", "UX/UI", "Marketing", "Graphic Design"],
+    industry: "Web3",
   },
   {
     img: iccaCase,
     heading:
-    "A world-class culinary school shaping the future of hospitality through award-winning training. Based in the heart of Dubai, ICCA empowers aspiring chefs and industry professionals with globally recognized programs, state-of-the-art facilities",
+      "A world-class culinary school shaping the future of hospitality through award-winning training. Based in the heart of Dubai, ICCA empowers aspiring chefs and industry professionals with globally recognized programs, state-of-the-art facilities",
     subheading: "ICCA",
     type: ["Chat Bot", "UX/UI"],
-    industry: "Culinary"
+    industry: "Culinary",
   },
   {
     img: Tawuniyacase,
     heading:
       "Our recent digital activation project done for Tawuniya, an official sponsor of نادي الهلال السعودي - Al-Hilal Saudi Club during the Al-Hilal vs Al-Nassr match in the #Saudi Pro League on 4th April in Riyadh.",
     subheading: "Tawuniya",
-    type: ["Event","Management"],
-    industry: "Sports"
+    type: ["Event", "Management"],
+    industry: "Sports",
   },
   {
     img: caseulalo,
     heading:
       "AI and blockchain-powered health-tech protocol revolutionizing how patients manage their medical data. With a secure Smart Patient Wallet, ULALO empowers users to store, share, and visualize health records, receive personalized health insights, and take control of their well-being",
     subheading: "ULALO",
-    type: ["Marketing","UX/UI", "Web Development", "Web3 Development","Video Editing"],
-    industry: "Healthcare"
+    type: [
+      "Marketing",
+      "UX/UI",
+      "Web Development",
+      "Web3 Development",
+      "Video Editing",
+    ],
+    industry: "Healthcare",
   },
 ];
 
@@ -124,23 +131,31 @@ interface CasesCardProps {
   selectedIndustry: string;
 }
 
-const CasesCard = ({ selectedProjectType, selectedIndustry }: CasesCardProps) => {
+const CasesCard = ({
+  selectedProjectType,
+  selectedIndustry,
+}: CasesCardProps) => {
   const navigate = useNavigate();
   const [showAll, setShowAll] = useState(false);
 
   // Filter case studies based on selected type and industry
   const filteredCaseStudies = caseStudyData.filter((item) => {
-    const matchesType = selectedProjectType === "All" || item.type.some(type => 
-      type.toLowerCase().includes(selectedProjectType.toLowerCase())
-    );
-    const matchesIndustry = selectedIndustry === "All" || 
+    const matchesType =
+      selectedProjectType === "All" ||
+      item.type.some((type) =>
+        type.toLowerCase().includes(selectedProjectType.toLowerCase())
+      );
+    const matchesIndustry =
+      selectedIndustry === "All" ||
       item.industry.toLowerCase().includes(selectedIndustry.toLowerCase());
-    
+
     return matchesType && matchesIndustry;
   });
 
   // Get the case studies to display based on showAll state
-  const displayedCaseStudies = showAll ? filteredCaseStudies : filteredCaseStudies.slice(0, 6);
+  const displayedCaseStudies = showAll
+    ? filteredCaseStudies
+    : filteredCaseStudies.slice(0, 6);
 
   return (
     <div className="flex flex-col gap-4 md:gap-12">
@@ -150,14 +165,15 @@ const CasesCard = ({ selectedProjectType, selectedIndustry }: CasesCardProps) =>
             {displayedCaseStudies.map((item, index) => (
               <div
                 key={index}
-                className="relative group overflow-hidden rounded-[32px] aspect-[4/3] cursor-pointer"   onClick={(e) => {
-                      e.stopPropagation();
-                      navigate(
-                        `/Maxtron.ai/case-study/${encodeURIComponent(
-                          item.subheading.replace(/\s+/g, "-")
-                        )}`
-                      );
-                    }}
+                className="relative group overflow-hidden rounded-[32px] aspect-[4/3] cursor-pointer"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  navigate(
+                    `/Maxtron.ai/case-study/${encodeURIComponent(
+                      item.subheading.replace(/\s+/g, "-")
+                    )}`
+                  );
+                }}
               >
                 {/* Background Image */}
                 <div className="absolute inset-0 overflow-hidden">
@@ -180,7 +196,7 @@ const CasesCard = ({ selectedProjectType, selectedIndustry }: CasesCardProps) =>
                   ))}
                 </div>
                 <div className="absolute md:hidden top-3 md:top-5 left-4 md:left-5 flex flex-wrap gap-2 z-20">
-                  {item.type.slice(0,3).map((t, i) => (
+                  {item.type.slice(0, 3).map((t, i) => (
                     <span
                       key={i}
                       className="bg-[#8952b6] text-white text-sm md:text-base font-semibold px-3 py-1 rounded-2xl"
@@ -241,7 +257,8 @@ const CasesCard = ({ selectedProjectType, selectedIndustry }: CasesCardProps) =>
             No Projects Available
           </h3>
           <p className="text-lg text-gray-600 max-w-md">
-            We couldn't find any projects matching your selected filters. Please try different combinations of project type and industry.
+            We couldn't find any projects matching your selected filters. Please
+            try different combinations of project type and industry.
           </p>
         </div>
       )}

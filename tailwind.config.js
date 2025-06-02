@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         OpenSans: ["Open Sans", "sans-serif"],
         openSansHebrew: ['"Open Sans Hebrew"', 'sans-serif'],
+        SegoeUISymbol: ['"Segoe UI Symbol"', 'sans-serif'],
       },
     },
   },

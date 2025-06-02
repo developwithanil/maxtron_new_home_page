@@ -64,10 +64,6 @@ import iccabg from "../../assets/internal/iccabg.jpg";
 
 import process from "../../assets/internal/process.png";
 
-
-
-
-
 // import bgimage2 from "../../assets/internal/bgimage2.png";
 import bg2 from "../../assets/internal/bg2.png";
 import bg3 from "../../assets/internal/ludo.jpg";
@@ -77,7 +73,6 @@ import gsmobile from "../../assets/internal/gsmobile.png";
 import gro8hero from "../../assets/internal/gro8hero.png";
 import gro8mobile from "../../assets/internal/gro8mobile.png";
 import gro8feature from "../../assets/internal/gro8feature.png";
-
 
 // import shaperCultHero from "../../assets/internal/shaper1.svg";
 import usablock from "../../assets/internal/usablock.png";
@@ -90,12 +85,10 @@ import shaperCultMobile from "../../assets/internal/shaper2.svg";
 import typescript from "../../assets/internal/typescript.svg";
 import shaperCultLogo from "../../assets/internal/shaper3.svg";
 import aws from "../../assets/internal/aws.svg";
-import hyper from "../../assets/internal/hyper.png"
-import goodstanding from "../../assets/internal/goodstanding.png"
+import hyper from "../../assets/internal/hyper.png";
+import goodstanding from "../../assets/internal/goodstanding.png";
 import gsfeature from "../../assets/internal/gsfeature.png";
 import ludoafterherosection from "../../assets/internal/ludoafterherosection.png";
-
-
 
 import tailwind from "../../assets/internal/tailwind.svg";
 import hyper1 from "../../assets/internal/hyper1.svg";
@@ -111,8 +104,6 @@ import web31 from "../../assets/internal/web31.svg";
 import web32 from "../../assets/internal/web32.svg";
 import web33 from "../../assets/internal/web33.svg";
 
-
-
 export const caseStudies: CaseStudy[] = [
   {
     title: "Ludo Love",
@@ -121,33 +112,33 @@ export const caseStudies: CaseStudy[] = [
     industryInfo: "Gaming, iGaming, Crypto Gaming.",
     projectDuration: "4 Months",
     theprocessText: "The Process",
-    afterHeroSection:ludoafterherosection,
-    name:"Blockchain Game Development",
+    afterHeroSection: ludoafterherosection,
+    name: "Blockchain Game Development",
 
-    type:["APP"],
+    type: ["MOBILE APP"],
     clientSatisfaction: 5.0,
-    
-    bussinessNeeds:{
-      title: "To comply with App Store and Play Store restrictions, an alternative solution is needed for players to use Tenup Token (TUP) without violating policies. The system must ensure privacy, prevent tracking of crypto transactions, and maintain seamless synchronization between web and mobile platforms.",
-     
+
+    bussinessNeeds: {
+      title:
+        "To comply with App Store and Play Store restrictions, an alternative solution is needed for players to use Tenup Token (TUP) without violating policies. The system must ensure privacy, prevent tracking of crypto transactions, and maintain seamless synchronization between web and mobile platforms.",
     },
-    results:{
-      title: "Players can now purchase game points with TUP tokens via the web platform and use them on mobile apps. This setup preserves privacy, ensures compliance, and allows players to convert points back into TUP tokens. It enhances engagement, supports token adoption, and creates a smooth, scalable gaming experience.",
-      
+    results: {
+      title:
+        "Players can now purchase game points with TUP tokens via the web platform and use them on mobile apps. This setup preserves privacy, ensures compliance, and allows players to convert points back into TUP tokens. It enhances engagement, supports token adoption, and creates a smooth, scalable gaming experience.",
     },
     problemSolutionResult: [
       {
         heading: "Problem",
         subheading: "Boosting Tenup Token (TUP) Adoption in Gaming",
         points: [
-          "Tenup Token (TUP) enhances the Tenup Ecosystem with gaming utilities. While App Store and Play Store restrict direct crypto transactions, TUP remains integral to the Tenup Gaming Platform through innovative solutions."
+          "Tenup Token (TUP) enhances the Tenup Ecosystem with gaming utilities. While App Store and Play Store restrict direct crypto transactions, TUP remains integral to the Tenup Gaming Platform through innovative solutions.",
         ],
       },
       {
         heading: "Solution",
         subheading: "Seamless Crypto Integration for Mobile Gaming",
         points: [
-          'Players can use TUP tokens via the web platform, converting them into game points for mobile apps. Despite app restrictions, a unified database ensures smooth synchronization, enabling a seamless gaming experience across web and mobile.'
+          "Players can use TUP tokens via the web platform, converting them into game points for mobile apps. Despite app restrictions, a unified database ensures smooth synchronization, enabling a seamless gaming experience across web and mobile.",
         ],
       },
       {
@@ -174,7 +165,7 @@ export const caseStudies: CaseStudy[] = [
       {
         title: "Product Scope",
         description: [
-          "Maxtron started by understanding the business vision and creating a detailed plan for the project. This involved researching the market, analyzing competitors, and gathering all necessary information. We then had a deep discussion with the client to develop a value proposition and establish the main assumptions to test. Finally, we outlined the key user stories and features needed to validate these assumptions in the Minimum Viable Product (MVP)."
+          "Maxtron started by understanding the business vision and creating a detailed plan for the project. This involved researching the market, analyzing competitors, and gathering all necessary information. We then had a deep discussion with the client to develop a value proposition and establish the main assumptions to test. Finally, we outlined the key user stories and features needed to validate these assumptions in the Minimum Viable Product (MVP).",
         ],
       },
       {
@@ -196,7 +187,7 @@ export const caseStudies: CaseStudy[] = [
         ],
       },
     ],
-  
+
     keyFeatures: [
       "Functional Requirement Documentation",
       "Technical Architecture Planning",
@@ -207,21 +198,21 @@ export const caseStudies: CaseStudy[] = [
       "Leader Board for Tournaments",
       "NFT Integrated with Leaderboard System Development (Top Winners to Get NFTs Minted)",
     ],
-    
-    keyFeaturesImage: [mobile,mobile],
-    bgImage:bg3,
+
+    keyFeaturesImage: [mobile, mobile],
+    bgImage: bg3,
   },
 
   {
     title: "ShaperCult",
     subtitle: "",
     heroImage: shaper2,
-    type:["APPLICATION"],
+    type: ["WEB APPLICATION"],
     industryInfo: "Fashion & Apparel Ecommerce",
     projectDuration: "4 Months",
-    afterHeroSection:shaper2,
+    afterHeroSection: shaper2,
     theprocessText: "The Process",
-name:"ECommerce Marketing",
+    name: "ECommerce Marketing",
     clientSatisfaction: 5.0,
     problemSolutionResult: [
       {
@@ -272,37 +263,27 @@ name:"ECommerce Marketing",
         description: [""],
       },
     ],
-   
+
     keyFeatures: [
       {
         title: "",
-        details: [
-          "Social media marketing: Meta, influencer marketing, SEO",
-        ],
+        details: ["Social media marketing: Meta, influencer marketing, SEO"],
       },
       {
         title: "",
-        details: [
-          "eCommerce, PLA",
-        ],
+        details: ["eCommerce, PLA"],
       },
       {
         title: "",
-        details: [
-          "Customer surveys used to get imperfect survey results",
-        ],
+        details: ["Customer surveys used to get imperfect survey results"],
       },
       {
         title: "",
-        details: [
-          "UX and UI improvements",
-        ],
+        details: ["UX and UI improvements"],
       },
       {
         title: "",
-        details: [
-          "Market penetration: mature to pre-viable mobile app",
-        ],
+        details: ["Market penetration: mature to pre-viable mobile app"],
       },
       {
         title: "",
@@ -312,20 +293,20 @@ name:"ECommerce Marketing",
       },
     ],
 
-    keyFeaturesImage: [shaperCultLogo,shaperCultMobile],
-    bgImage:bg4,
+    keyFeaturesImage: [shaperCultLogo, shaperCultMobile],
+    bgImage: bg4,
   },
   {
     title: "HYPER CASUAL GAMES",
     subtitle: "",
     heroImage: hyper1,
-    type:["APP"],
-    afterHeroSection:hyper1,
+    type: ["MOBILE APP", "WEB 3.0"],
+    afterHeroSection: hyper1,
     industryInfo: "Gaming, iGaming, Crypto Gaming",
     projectDuration: "2 Months",
     clientSatisfaction: 5.0,
     theprocessText: "The Process",
-    name:"Mini Gaming Platform",
+    name: "Mini Gaming Platform",
     problemSolutionResult: [
       {
         heading: "Problem",
@@ -351,7 +332,7 @@ name:"ECommerce Marketing",
     ],
     techs: [
       { name: "MySQL DB", icon: mysql },
-      { name: "OpenZeppelin", icon: OpenZeppelin},
+      { name: "OpenZeppelin", icon: OpenZeppelin },
       { name: "NestJS", icon: nestjs },
       { name: "Sequelize", icon: sequelize },
       { name: "Node", icon: node },
@@ -363,7 +344,7 @@ name:"ECommerce Marketing",
       { name: "Firebase", icon: "" },
       { name: "Jest", icon: "" },
       { name: "Solidity", icon: solidity },
-      { name: "EC2", icon: aws},
+      { name: "EC2", icon: aws },
       { name: "CI/CD", icon: "" },
     ],
     processSteps: [
@@ -401,9 +382,9 @@ name:"ECommerce Marketing",
       "Functionality to Build Geolocated Community via Web Versions and Applications",
       "Game Logic Engine & 3D Environment Development",
     ],
-   
-    keyFeaturesImage: [hyper3,hyper2],
-    bgImage:hyper,
+
+    keyFeaturesImage: [hyper3, hyper2],
+    bgImage: hyper,
   },
   {
     title: "DECENTRALIZED AI PLATEFORM",
@@ -411,13 +392,12 @@ name:"ECommerce Marketing",
     heroImage: create1,
     industryInfo: "Ai, Data, Web 3.0, Blockchain",
     projectDuration: "12 Months",
-    afterHeroSection:create1,
-    type:["APPLICATION"],
-    name:"Decentralized AI Platform",
+    afterHeroSection: create1,
+    type: ["WEB APPLICATION"],
+    name: "Decentralized AI Platform",
     theprocessText: "TECH AND INFRASTRUCTURE",
     clientSatisfaction: 5.0,
     problemSolutionResult: [
-      
       {
         heading: "Problem",
         subheading:
@@ -468,20 +448,20 @@ name:"ECommerce Marketing",
     keyFeatures: [
       "Monetizing IP Through Virtual Data Training for AI Models Enabled By Creative Chain Method",
     ],
-   
-    keyFeaturesImage: [create3,create2],
-    bgImage:bg2,
+
+    keyFeaturesImage: [create3, create2],
+    bgImage: bg2,
   },
   {
     title: "AI CALLING AGENT",
     subtitle: "AI-Phone Calling Solution : Future of Voice Call Interactions",
     heroImage: dial1,
-    type:["APPLICATION"],
-    afterHeroSection:dial1,
+    type: ["WEB APPLICATION"],
+    afterHeroSection: dial1,
     industryInfo: "Telecom, Hi-Tech, Artificial",
     projectDuration: "5 Months",
     theprocessText: "Benefits",
- name:"AI Calling Tool",
+    name: "AI Calling Tool",
     clientSatisfaction: 5.0,
     problemSolutionResult: [
       {
@@ -497,12 +477,10 @@ name:"ECommerce Marketing",
         subheading:
           "AI-Powered phone agents which can converse just like humans and speed up process to 100X",
         points: [
-          "With AI's advanced capabilities, we've developed a tool where phone agents can engage in human-like conversations, handling various tasks efficiently. These AI agents are designed to be versatile, engaging, and empathetic. They can handle all human requests and come with a variety of voices—male and female, with American, European, Indian, and African accents, among others" ,
-          "Not only do these AI agents manage interactions, but they also provide you with insights,action items, recordings, and campaign statuses. All this data is delivered in a simple CSV format , making it easy for you to analyze and act upon immediately"
+          "With AI's advanced capabilities, we've developed a tool where phone agents can engage in human-like conversations, handling various tasks efficiently. These AI agents are designed to be versatile, engaging, and empathetic. They can handle all human requests and come with a variety of voices—male and female, with American, European, Indian, and African accents, among others",
+          "Not only do these AI agents manage interactions, but they also provide you with insights,action items, recordings, and campaign statuses. All this data is delivered in a simple CSV format , making it easy for you to analyze and act upon immediately",
         ],
-        
       },
-      
     ],
     techs: [],
     processSteps: [
@@ -517,14 +495,14 @@ name:"ECommerce Marketing",
         title: "Sales & Lead Generation",
         description: [
           "Couduct cold calls to your trageted leads",
-          "Qualify leads by asking specific questions and assesssing their needs."
+          "Qualify leads by asking specific questions and assesssing their needs.",
         ],
       },
       {
         title: "Marketing",
         description: [
           "Conduct automated outreach for new product launches or special events",
-          "Deliver automated training assessments"
+          "Deliver automated training assessments",
         ],
       },
       {
@@ -548,53 +526,50 @@ name:"ECommerce Marketing",
           "Provide information about job openings and applicaiton statuses",
         ],
       },
-      
     ],
     keyFeatures: [
       {
-        title:"Integration with a Communication API",
-        details:[
-          "Utilized a robust communication API to integrate telephony features, ensuring reliable call handling. Ensured the integration supported features such as call routing, recording, trascription and IVR navigation included."
-        ]
+        title: "Integration with a Communication API",
+        details: [
+          "Utilized a robust communication API to integrate telephony features, ensuring reliable call handling. Ensured the integration supported features such as call routing, recording, trascription and IVR navigation included.",
+        ],
       },
       {
-        title:"Immediate Post-call Insights",
-        details:[
-          "Extract actionable insights from conversations right after calls"
-        ]
+        title: "Immediate Post-call Insights",
+        details: [
+          "Extract actionable insights from conversations right after calls",
+        ],
       },
       {
-        title:"Global Client Communication",
-        details:[
-          "Engage with clients worldwide in multiple language. You just name it. AI will be seen speaking in that language"
-        ]
+        title: "Global Client Communication",
+        details: [
+          "Engage with clients worldwide in multiple language. You just name it. AI will be seen speaking in that language",
+        ],
       },
       {
-        title:"AI Framework Development",
-        details:[
-          "We leveraged advanced machine learning models to create an intelligent AI framework"
-        ]
+        title: "AI Framework Development",
+        details: [
+          "We leveraged advanced machine learning models to create an intelligent AI framework",
+        ],
       },
-     
     ],
-    
-    keyFeaturesImage: [dial3,dial2],
-    bgImage:casestudy1bg,
+
+    keyFeaturesImage: [dial3, dial2],
+    bgImage: casestudy1bg,
   },
   {
     title: "WEB3.0 MARKETING PROJECT",
     subtitle:
       "How Maxtron Elevated Client's Marketing Strategy for Success in the Decentralized web3 space",
     heroImage: web31,
-    type:["APPLICATION"],
-    afterHeroSection:web31,
+    type: ["WEB APPLICATION"],
+    afterHeroSection: web31,
     industryInfo: "Blockchain and Decentralized Technology, Crypto Finance",
     projectDuration: "4 Months",
     theprocessText: "The Process",
-name:"Crypto Project Marketing",
+    name: "Crypto Project Marketing",
     clientSatisfaction: 5.0,
     problemSolutionResult: [
-      
       {
         heading: "Problem",
         subheading: "",
@@ -608,7 +583,7 @@ name:"Crypto Project Marketing",
         points: [
           "We conducted thorough market analysis, including customer, competitor, and internal assessments, to understand the current status quo. Then, we developed a comprehensive strategy to tackle these challenges head-on and drive new users from untapped geographies to the platform. We leveraged various marketing channels, including community management and moderation, email marketing, intent data-based outreach, lead magnets, newsletter building, social media activation, and key opinion leaders (KOLs).",
 
-"We also maintained consistent communication with the client and their team to ensure alignment and coordination. This approach helped reposition the brand and establish it as a thought leader in the crypto space.",
+          "We also maintained consistent communication with the client and their team to ensure alignment and coordination. This approach helped reposition the brand and establish it as a thought leader in the crypto space.",
         ],
       },
     ],
@@ -694,18 +669,17 @@ name:"Crypto Project Marketing",
       },
     ],
 
-
-    keyFeaturesImage: [web33,web32],
-    bgImage:bg2,
+    keyFeaturesImage: [web33, web32],
+    bgImage: bg2,
   },
-   {
+  {
     title: "VOTING BLOCK USA",
     subtitle: "VOTE! 2024 Vote for President on the blockchain in 2024",
     heroImage: usablock,
-    type:["APPLICATION"],
-    afterHeroSection:usablock,
+    type: ["WEB APPLICATION"],
+    afterHeroSection: usablock,
     industryInfo: "Web3.0, Non-Profits,Voting",
-    name:"Blockchain Based EVoting System",
+    name: "Blockchain Based EVoting System",
     projectDuration: "4 Months",
     theprocessText: "The Process",
 
@@ -720,17 +694,15 @@ name:"Crypto Project Marketing",
       },
       {
         heading: "Solution",
-        
+
         subheading: "",
         points: [
           "This blockchain-based platform makes sure voters’ privacy is protected. Unlike absentee ballots, where military voters have to give up their right to a secret vote by sending it via email or fax, blockchain voting keeps everything anonymous",
-          `Maxtron’s CEO, Girish Ahirwar, explained that blockchain technology makes it nearly impossible to tamper with votes. "If someone tries to manipulate the system, it’s easy to catch because blockchain is publicly accessible," he said. Blockchain also allows concerned offices to quickly audit the voting records, ensuring fairness`
+          `Maxtron’s CEO, Girish Ahirwar, explained that blockchain technology makes it nearly impossible to tamper with votes. "If someone tries to manipulate the system, it’s easy to catch because blockchain is publicly accessible," he said. Blockchain also allows concerned offices to quickly audit the voting records, ensuring fairness`,
         ],
       },
-     
     ],
-    techs: [
-    ],
+    techs: [],
     processSteps: [
       {
         title: "Identity Requirements",
@@ -793,26 +765,25 @@ name:"Crypto Project Marketing",
         details: [
           "All VB USA knows is that it has a validated registered ‘voter’ who is of voting age (18 by November 5, 2024) and has a valid government ID that shows the state of their residency. To achieve this, VB USA has partnered with Persona, a venture capital-backed automated identity verification service founded in 2018. Their ID platform leverages machine learning, computer vision, and algorithmic checks and validates voters biometrically by matching government photo IDs and selfies.",
         ],
-      }
+      },
     ],
-   
-    keyFeaturesImage: [herovote,vote],
-    bgImage:bg3,
+
+    keyFeaturesImage: [herovote, vote],
+    bgImage: bg3,
   },
 
   {
     title: "Good Standing",
     subtitle: "Connects people who can help to the people who need help",
     heroImage: goodstanding,
-    type:["APPLICATION"],
-    afterHeroSection:goodstanding,
+    type: ["WEB APPLICATION"],
+    afterHeroSection: goodstanding,
     industryInfo: "Web3.0, Gig-economy, non-profits",
     projectDuration: "5 Months",
     theprocessText: "The Process",
-name:"Good Standing",
+    name: "Good Standing",
     clientSatisfaction: 5.0,
     problemSolutionResult: [
-    
       {
         heading: "Problem",
         subheading: "",
@@ -928,26 +899,26 @@ name:"Good Standing",
         details: [
           "Web3.js integration for secure, transparent coupon transactions.",
         ],
-      }
+      },
     ],
-   
-    keyFeaturesImage: [gsfeature,gsmobile],
-    bgImage:bg3,
+
+    keyFeaturesImage: [gsfeature, gsmobile],
+    bgImage: bg3,
   },
 
   {
     title: "GRO8",
-    subtitle: "10X valuation: Building biggest cross-border investment platform",
+    subtitle:
+      "10X valuation: Building biggest cross-border investment platform",
     heroImage: gro8hero,
-    type:["APPLICATION"],
-    afterHeroSection:gro8hero,
+    type: ["WEB APPLICATION"],
+    afterHeroSection: gro8hero,
     industryInfo: "Venture capital & private equity",
     projectDuration: "4 Months",
     theprocessText: "The Process",
-name:"Gro8",
+    name: "Gro8",
     clientSatisfaction: 5.0,
     problemSolutionResult: [
-      
       {
         heading: "Problem",
         subheading: "",
@@ -1023,53 +994,50 @@ name:"Gro8",
       },
       {
         title: "Investment Management",
-        details: [
-          "End-to-end tracking and management of startup investments.",
-        ],
+        details: ["End-to-end tracking and management of startup investments."],
       },
       {
         title: "Mentorship Scheduling",
-        details: [
-          "Allow mentors to schedule sessions and provide feedback.",
-        ],
+        details: ["Allow mentors to schedule sessions and provide feedback."],
       },
       {
         title: "Real-time Chat",
         details: [
           "Secure messaging for seamless communication among stakeholders.",
         ],
-      }
+      },
     ],
-    
-    keyFeaturesImage: [gro8feature,gro8mobile],
-    bgImage:bg3,
+
+    keyFeaturesImage: [gro8feature, gro8mobile],
+    bgImage: bg3,
   },
   {
     title: "TOKEN LAUNCH",
     subtitle: " And It’s Success 📈",
     heroImage: tokeninside,
-    type:["Marketing","UX/UI Design", "Graphics Design", "Web Development"],
-    afterHeroSection:process,
+    type: ["Marketing", "UX/UI Design", "Graphics Design", "Web Development"],
+    afterHeroSection: process,
     industryInfo: "Gaming, iGaming, Crypto Gaming",
     projectDuration: "4 Months",
-    name:"Token Launch",
+    name: "Token Launch",
     theprocessText: "The Process",
-description:"Maxtron successfully helped a blockchain client launch a new cryptocurrency token - covering every aspect of the process: smart contract creation, liquidity deployment, influencer marketing, market making, and web design. The result was a well-orchestrated launch that stood out in a saturated Web3 landscape and gained immediate traction across crypto platforms.",
+    description:
+      "Maxtron successfully helped a blockchain client launch a new cryptocurrency token - covering every aspect of the process: smart contract creation, liquidity deployment, influencer marketing, market making, and web design. The result was a well-orchestrated launch that stood out in a saturated Web3 landscape and gained immediate traction across crypto platforms.",
     clientSatisfaction: 4.0,
-    bussinessNeeds:{
-      title: "The client required a holistic, tech-powered token launch strategy that minimized risk, aligned with compliance standards, and ensured post-launch sustainability and community growth.",
-      
-     
+    bussinessNeeds: {
+      title:
+        "The client required a holistic, tech-powered token launch strategy that minimized risk, aligned with compliance standards, and ensured post-launch sustainability and community growth.",
     },
-    results:{
+    results: {
       title: "",
-      description:[
-       `Fully functional token ecosystem launched within deadline.`,"Organic community traction with measurable growth across social platforms.","Strong liquidity presence, with immediate listing on key CEXs and DEXs.","Brand credibility established through KOLs and digital assets."
-      ]
-      
+      description: [
+        `Fully functional token ecosystem launched within deadline.`,
+        "Organic community traction with measurable growth across social platforms.",
+        "Strong liquidity presence, with immediate listing on key CEXs and DEXs.",
+        "Brand credibility established through KOLs and digital assets.",
+      ],
     },
     problemSolutionResult: [
-      
       {
         heading: "Problem",
         subheading: "Token Creation",
@@ -1087,7 +1055,7 @@ description:"Maxtron successfully helped a blockchain client launch a new crypto
     ],
     techs: [
       { name: "React", icon: react },
-        { name: "Node JS", icon: nodejs },
+      { name: "Node JS", icon: nodejs },
       { name: "Mongo DB", icon: mongodb },
       { name: "Javascript", icon: js },
       { name: "Typescript", icon: typescript },
@@ -1095,10 +1063,8 @@ description:"Maxtron successfully helped a blockchain client launch a new crypto
       { name: "NestJS", icon: nestjs },
       { name: "MySQL DB", icon: mysql },
       { name: "Php", icon: php },
-    
+
       { name: "Figma", icon: figma },
-    
-      
     ],
     processSteps: [
       {
@@ -1124,7 +1090,7 @@ description:"Maxtron successfully helped a blockchain client launch a new crypto
         description: [
           "With the decisions closed in the previous steps, we proceeded with developing the product through agile cycles (methodology).",
         ],
-      }
+      },
     ],
     keyFeatures: [
       {
@@ -1164,52 +1130,58 @@ description:"Maxtron successfully helped a blockchain client launch a new crypto
         ],
       },
     ],
-  
-    keyFeaturesImage: [tokennew2,tokennew4,tokennew1,tokennew3],
-    bgImage:token,
+
+    keyFeaturesImage: [tokennew2, tokennew4, tokennew1, tokennew3],
+    bgImage: token,
   },
   {
     title: "ICCA",
     subtitle: " And It’s Success 📈",
     heroImage: iccamain,
-    type:["Chat Bot Development","UX/UI Design"],
-    afterHeroSection:icca,
+    type: ["Chat Bot Development", "UX/UI Design"],
+    afterHeroSection: icca,
     industryInfo: "Education, EdTech, AI Chatbots",
     projectDuration: "3 Months (MVP Phase)",
     theprocessText: "The Process",
-    name:"ICCA",
-description:"A world-class culinary school shaping the future of hospitality through award-winning training. Based in the heart of Dubai, ICCA empowers aspiring chefs and industry professionals with globally recognized programs, state-of-the-art facilities",
+    name: "ICCA",
+    description:
+      "A world-class culinary school shaping the future of hospitality through award-winning training. Based in the heart of Dubai, ICCA empowers aspiring chefs and industry professionals with globally recognized programs, state-of-the-art facilities",
     clientSatisfaction: 5.0,
-    bussinessNeeds:{
+    bussinessNeeds: {
       title: "",
-      description:[
+      description: [
         "Engages prospective students 24/7",
         "Collects lead information and user intent accurately",
         "Syncs all interactions directly with ICCA’s CRM (Zoho)",
         "Recommends courses, scholarships, and career options",
-        "Adapts to ICCA’s evolving content without needing constant retraining"
-      ]
-     
+        "Adapts to ICCA’s evolving content without needing constant retraining",
+      ],
     },
-    results:{
+    results: {
       title: "",
-      description:[
-       `AI Chatbot AIVA Developed & Deployed (Staging)`," Handles lead qualification using the BANT model","Recommends programs based on interests and goals","Multilingual support improves accessibility and UX","Full Zoho CRM integration for seamless lead routing","Live content updates from ICCA’s catalog & resources — no retraining needed","Built-in dashboard for monitoring leads, FAQs, and engagement"
-      ]
-      
+      description: [
+        `AI Chatbot AIVA Developed & Deployed (Staging)`,
+        " Handles lead qualification using the BANT model",
+        "Recommends programs based on interests and goals",
+        "Multilingual support improves accessibility and UX",
+        "Full Zoho CRM integration for seamless lead routing",
+        "Live content updates from ICCA’s catalog & resources — no retraining needed",
+        "Built-in dashboard for monitoring leads, FAQs, and engagement",
+      ],
     },
     problemSolutionResult: [
-      
       {
         heading: "Problem",
-        subheading: "ICCA Dubai Transforms Student Recruitment with AI-Powered Chatbot",
+        subheading:
+          "ICCA Dubai Transforms Student Recruitment with AI-Powered Chatbot",
         points: [
           "ICCA Dubai, a leading culinary arts institute, wanted to modernize its student recruitment and engagement process. The team faced the challenge of: Managing high volumes of inquiries from potential students across time zones. Capturing lead data effectively and routing it into Zoho CRM. Providing personalized information about programs, scholarships, and career options. Staying competitive in a space where AI is redefining how institutions connect with digital-native students. ICCA needed a proactive, intelligent chatbot that could handle complex interactions, qualify leads, and improve conversion without relying on human agents 24/7.",
         ],
       },
       {
         heading: "Solution",
-        subheading: "AIVA: Multilingual AI Chatbot Revolutionizing Student Engagement with RAG-Powered Intelligence.",
+        subheading:
+          "AIVA: Multilingual AI Chatbot Revolutionizing Student Engagement with RAG-Powered Intelligence.",
         points: [
           "We developed AIVA (Artificial Intelligence Virtual Assistant) — a custom-built, multilingual AI chatbot powered by the Retrieval-Augmented Generation (RAG) framework. Unlike traditional scripted bots, AIVA leverages advanced LLMs and a dynamic knowledge base to provide accurate, real-time responses. It proactively engages website visitors, identifies their intent, and qualifies them as leads based on parameters like program interest, timeline, and readiness — all while syncing seamlessly with Zoho CRM. AIVA’s architecture ensures scalable performance, compliance with data privacy norms, and multilingual accessibility (English & Arabic)",
         ],
@@ -1221,19 +1193,14 @@ description:"A world-class culinary school shaping the future of hospitality thr
       { name: "Vector Database (Pinecone / Chroma)", icon: vectordatabase },
       { name: "Mongo DB", icon: mongodb },
       { name: "React", icon: react },
-        { name: "LLM + RAG Framework", icon: LLM },
-        { name: "Zoho CRM API", icon: zoho },
+      { name: "LLM + RAG Framework", icon: LLM },
+      { name: "Zoho CRM API", icon: zoho },
       { name: "Javascript", icon: js },
       { name: "Google Cloud Run", icon: google },
       { name: " Multilingual NLP Toolkit", icon: toolkit },
       { name: " GPT-4 APIs", icon: chatgpt },
-     
-    
 
-    
       { name: "Figma", icon: figma },
-    
-      
     ],
     processSteps: [
       {
@@ -1259,91 +1226,85 @@ description:"A world-class culinary school shaping the future of hospitality thr
         description: [
           "We developed and hosted the chatbot MVP using GCP Cloud Run and integrated it with MongoDB Atlas and Pinecone for vector-based search. CRM integration was finalized using Zoho's REST API. A staging environment was provided for real-time testing, and ownership was transitioned to ICCA’s cloud accounts.",
         ],
-      }
+      },
     ],
     keyFeatures: [
       {
         title: "",
-        details: [
-          "Multilingual Support (English & Arabic)",
-        ],
+        details: ["Multilingual Support (English & Arabic)"],
       },
       {
         title: "",
-        details: [
-          "Live Course, Scholarship, and FAQ Retrieval",
-        ],
+        details: ["Live Course, Scholarship, and FAQ Retrieval"],
       },
       {
         title: "",
-        details: [
-          "User Intent Detection with Smart Recommendations",
-        ],
+        details: ["User Intent Detection with Smart Recommendations"],
       },
       {
         title: "",
-        details: [
-          "CRM Lead Qualification via BANT Framework",
-        ],
+        details: ["CRM Lead Qualification via BANT Framework"],
       },
       {
         title: "",
-        details: [
-          "Integration with Zoho CRM",
-        ],
+        details: ["Integration with Zoho CRM"],
       },
       {
         title: "",
-        details: [
-          "Dashboard for Tracking Chat Metrics & User Interests",
-        ],
+        details: ["Dashboard for Tracking Chat Metrics & User Interests"],
       },
     ],
 
-    keyFeaturesImage: [icca1,icca2],
-    bgImage:iccabg,
+    keyFeaturesImage: [icca1, icca2],
+    bgImage: iccabg,
   },
   {
     title: "TAWUNIYA",
     subtitle: " And It’s Success 📈",
     heroImage: tawuniyamain,
-    type:["Event","Management"],
-    afterHeroSection:tawuniya,
-    name:"Tawuniya",
-    industryInfo: "Event Marketing, Experiential Tech, Immersive Brand Engagement",
+    type: ["Event", "Management"],
+    afterHeroSection: tawuniya,
+    name: "Tawuniya",
+    industryInfo:
+      "Event Marketing, Experiential Tech, Immersive Brand Engagement",
     projectDuration: "Quick Delivery (<2 Weeks) (Concept to Deployment)",
     theprocessText: "The Process",
-description:"Our recent digital activation project done for Tawuniya, an official sponsor of نادي الهلال السعودي - Al-Hilal Saudi Club during the Al-Hilal vs Al-Nassr match in the #Saudi Pro League on 4th April in Riyadh.Immersive experiences we created include #VR Goalie Activation, #AR Activation, Personalized Commentary Activation, and Fantasy Dream Team Formation at the on-ground venue.",
+    description:
+      "Our recent digital activation project done for Tawuniya, an official sponsor of نادي الهلال السعودي - Al-Hilal Saudi Club during the Al-Hilal vs Al-Nassr match in the #Saudi Pro League on 4th April in Riyadh.Immersive experiences we created include #VR Goalie Activation, #AR Activation, Personalized Commentary Activation, and Fantasy Dream Team Formation at the on-ground venue.",
     clientSatisfaction: 5.0,
-    bussinessNeeds:{
-      title: "To create a high-impact fan zone that blends gamification, personalization, and immersive tech to:",
-      description:[
+    bussinessNeeds: {
+      title:
+        "To create a high-impact fan zone that blends gamification, personalization, and immersive tech to:",
+      description: [
         "Increase booth engagement",
         "Drive brand recall",
         "Promote social sharing",
-        "Collect visitor data & boost lead generation"
-      ]
-     
+        "Collect visitor data & boost lead generation",
+      ],
     },
-    results:{
+    results: {
       title: "",
-      description:[
-       `3 Custom Digital Activations Developed and Deployed Up to 1000+ visitors engaged per day`,"Personalized content shared via email, WhatsApp, and QR code","Fully branded VR environment and UI","Increased dwell time and footfall at the event zone","Enabled content virality and user amplification on social media"
-      ]
-      
+      description: [
+        `3 Custom Digital Activations Developed and Deployed Up to 1000+ visitors engaged per day`,
+        "Personalized content shared via email, WhatsApp, and QR code",
+        "Fully branded VR environment and UI",
+        "Increased dwell time and footfall at the event zone",
+        "Enabled content virality and user amplification on social media",
+      ],
     },
     problemSolutionResult: [
-      
       {
         heading: "Problem",
-        subheading: "Tawuniya Fan Zone: Transforming Event Marketing into an Immersive Digital Experience",
+        subheading:
+          "Tawuniya Fan Zone: Transforming Event Marketing into an Immersive Digital Experience",
         points: [
           "Tawuniya, a leading insurance brand in the region, aimed to transform traditional event marketing into a fully immersive digital experience during their upcoming high-profile event. With a goal to boost brand engagement, footfall, and social media virality, Tawuniya needed an interactive fan zone that would: Attract and retain event attendees Deliver memorable, high-energy brand experiences. Encourage user-generated content. Provide shareable digital takeaways.",
         ],
       },
       {
         heading: "Solution",
-        subheading: "Driving Engagement with Interactive Digital Activations for Tawuniya",
+        subheading:
+          "Driving Engagement with Interactive Digital Activations for Tawuniya",
         points: [
           "In collaboration with Sketch & Build UAE, Maxtron & Quadra designed and delivered a state-of-the-art interactive fan engagement zone, featuring three powerful digital activations: Personalized Commentary Booth, Virtual Reality Goalie Challenge, and Dream Team Formation. Each activation was custom-developed with Tawuniya’s branding, using cutting-edge tech to deliver fun, engaging, and share-worthy experiences—turning passive event attendees into active brand ambassadors.",
         ],
@@ -1356,20 +1317,13 @@ description:"Our recent digital activation project done for Tawuniya, an officia
       { name: "Headset", icon: Headset },
       { name: "Mic", icon: Mic },
       { name: "Python", icon: python },
-       { name: "React", icon: react },
+      { name: "React", icon: react },
       { name: "Figma", icon: figma },
       { name: "Custom VR Game Engine", icon: vr },
       { name: "Chroma Key Integration", icon: chrome },
-        { name: "Web App + QR Generator", icon: QR },
-        { name: "High-performance PCs", icon: Pc },
-        { name: "4K AV Hardware", icon: av },
-       
-      
-    
-
-
-    
-      
+      { name: "Web App + QR Generator", icon: QR },
+      { name: "High-performance PCs", icon: Pc },
+      { name: "4K AV Hardware", icon: av },
     ],
     processSteps: [
       {
@@ -1395,7 +1349,7 @@ description:"Our recent digital activation project done for Tawuniya, an officia
         description: [
           "Hardware (PCs, tablets, sensors, webcams) and software were installed and tested at the venue. Our team provided full technical support and trained volunteers to ensure smooth operation during the event. Real-time QR code distribution allowed users to share and download their experiences instantly.",
         ],
-      }
+      },
     ],
     keyFeatures: [
       {
@@ -1435,65 +1389,67 @@ description:"Our recent digital activation project done for Tawuniya, an officia
         ],
       },
     ],
-   
-    keyFeaturesImage: [tawuniyanew1,tawuniyanew2,tawuniya3],
-    bgImage:tawuniyabg,
+
+    keyFeaturesImage: [tawuniyanew1, tawuniyanew2, tawuniya3],
+    bgImage: tawuniyabg,
   },
   {
     title: "ULALO",
     subtitle: "Reclaim control over your health data ⚕️",
     heroImage: ulalomain,
-    type:["Marketing","UX/UI Design", "Web Development", "Web3 Testnet Dev"],
-    afterHeroSection:ulaloprocess,
+    type: ["Marketing", "UX/UI Design", "Web Development", "Web3 Testnet Dev"],
+    afterHeroSection: ulaloprocess,
     industryInfo: "Web3, HealthTech, Data Ownership",
     projectDuration: "4 Months",
     theprocessText: "The Process",
-    name:"ULALO",
-description:"AI and blockchain-powered health-tech protocol revolutionizing how patients manage their medical data. With a secure Smart Patient Wallet, ULALO empowers users to store, share, and visualize health records, receive personalized health insights, and take control of their well-being",
+    name: "ULALO",
+    description:
+      "AI and blockchain-powered health-tech protocol revolutionizing how patients manage their medical data. With a secure Smart Patient Wallet, ULALO empowers users to store, share, and visualize health records, receive personalized health insights, and take control of their well-being",
     clientSatisfaction: 5.0,
-     bussinessNeeds:{
-      title: "Empower patients by building a decentralized system where individuals own their health data and can earn rewards from sharing it. Enable the healthcare industry to access ethical, verified, and high-integrity data, while ULALO positions itself as a pioneer in the tokenized healthcare data space.",
-     
+    bussinessNeeds: {
+      title:
+        "Empower patients by building a decentralized system where individuals own their health data and can earn rewards from sharing it. Enable the healthcare industry to access ethical, verified, and high-integrity data, while ULALO positions itself as a pioneer in the tokenized healthcare data space.",
     },
-    results:{
+    results: {
       title: "",
-      description:[
-        "Testnet launched, simulating real health data exchange across thousands of dummy records.","DApp released, allowing wallet-based login, data upload, permission toggles, and token rewards.","Marketing strategy implemented, with ULALO gaining traction in Web3, DeSci, and health innovation communities.","Community growth by 400% in initial 2 months through content, events, ambassador program and strategic partnerships."
-      ]
-      
+      description: [
+        "Testnet launched, simulating real health data exchange across thousands of dummy records.",
+        "DApp released, allowing wallet-based login, data upload, permission toggles, and token rewards.",
+        "Marketing strategy implemented, with ULALO gaining traction in Web3, DeSci, and health innovation communities.",
+        "Community growth by 400% in initial 2 months through content, events, ambassador program and strategic partnerships.",
+      ],
     },
     problemSolutionResult: [
-      
       {
         heading: "Problem",
-        subheading: "Decentralizing Healthcare Data: User-Owned Data in a Web3 Ecosystem",
+        subheading:
+          "Decentralizing Healthcare Data: User-Owned Data in a Web3 Ecosystem",
         points: [
           "Tokenize healthcare data and build a decentralized ecosystem that empowers users to control and monetize their medical records. Despite growing interest in Web3 and data privacy, the healthcare sector lacks a user-owned data model that ensures transparency, compliance, and usability. ULALO is solving this gap - but needed a complete ecosystem that included: A secure blockchain ecosystem to simulate real health data interactions. Scalable, compliant DApps for both patients and researchers. A strong marketing and growth strategy to educate users and build traction in both healthcare and Web3 communities.",
         ],
       },
       {
         heading: "Solution",
-        subheading: "Building a Web3 Ecosystem for Tokenized Health Data Ownership and Exchange",
+        subheading:
+          "Building a Web3 Ecosystem for Tokenized Health Data Ownership and Exchange",
         points: [
           "Our team collaborated with ULALO to build a foundational Web3 ecosystem designed for tokenized health data ownership and exchange. Users can upload or connect their medical data, which is tokenized into a secure, shareable, and monetizable asset. The system allows patients to grant or revoke access to data in real-time, rewarding them with $ULA tokens for participation in research, surveys, or health trials. Despite regulatory complexities and high security demands, we helped in building a seamless experience by integrating smart contracts, identity verification, and a real-time dashboard into user-friendly DApps—backed by a permissioned and scalable infrastructure.",
         ],
       },
     ],
     techs: [
-        { name: "MySQL DB", icon: mysql },
-        { name: "Php", icon: php },
-        { name: "NestJS", icon: nestjs },
-       
-        { name: "Mongo DB", icon: mongodb },
-        { name: "Node JS", icon: nodejs },
+      { name: "MySQL DB", icon: mysql },
+      { name: "Php", icon: php },
+      { name: "NestJS", icon: nestjs },
+
+      { name: "Mongo DB", icon: mongodb },
+      { name: "Node JS", icon: nodejs },
       { name: "Javascript", icon: js },
       { name: "Typescript", icon: typescript },
       { name: "Talwind CSS", icon: talwindcss },
-     { name: "Solidity", icon: solidity },
-    
+      { name: "Solidity", icon: solidity },
+
       { name: "Figma", icon: figma },
-    
-      
     ],
     processSteps: [
       {
@@ -1519,49 +1475,36 @@ description:"AI and blockchain-powered health-tech protocol revolutionizing how 
         description: [
           "Using agile sprints, we delivered the live testnet, integrated wallet features, built the tokenomics system, and launched the DApp. We created educational materials and initiated community onboarding to support product adoption and engagement.",
         ],
-      }
+      },
     ],
     keyFeatures: [
       {
         title: "",
-        details: [
-          "Blockchain-based Health Data Tokenization",
-        ],
+        details: ["Blockchain-based Health Data Tokenization"],
       },
       {
         title: "",
-        details: [
-          "Smart Contracts for Access Rights & Rewards",
-        ],
+        details: ["Smart Contracts for Access Rights & Rewards"],
       },
       {
         title: "",
-        details: [
-          "Web3 Wallet Integration (Metamask, WalletConnect)",
-        ],
+        details: ["Web3 Wallet Integration (Metamask, WalletConnect)"],
       },
       {
         title: "",
-        details: [
-          "Permissioned Testnet for Simulated Data Exchange",
-        ],
+        details: ["Permissioned Testnet for Simulated Data Exchange"],
       },
       {
         title: "",
-        details: [
-          "Tokenomics Engine for Incentivized Sharing",
-        ],
+        details: ["Tokenomics Engine for Incentivized Sharing"],
       },
       {
         title: "",
-        details: [
-          "Campaign-Driven Community Growth",
-        ],
+        details: ["Campaign-Driven Community Growth"],
       },
     ],
-   
-    keyFeaturesImage: [ulalo1,ulalo2],
-    bgImage:ulalobg,
-  },
 
-]
+    keyFeaturesImage: [ulalo1, ulalo2],
+    bgImage: ulalobg,
+  },
+];

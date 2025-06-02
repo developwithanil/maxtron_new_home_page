@@ -53,69 +53,196 @@ const prideData: TabItem[] = [
   },
 ];
 
+const UpArrowSVG = ({ className = "w-5 h-5" }: { className?: string }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={3}
+    stroke="currentColor"
+    className={className}
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="m4.5 15.75 7.5-7.5 7.5 7.5"
+    />
+  </svg>
+);
+
+const DownArrowSVG = ({ className = "w-5 h-5" }: { className?: string }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={3}
+    stroke="currentColor"
+    className={className}
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+    />
+  </svg>
+);
+
 const Pride = () => {
-  const [activeTabId, setActiveTabId] = useState<string>(prideData[0].id);
+  const [activeTabId, setActiveTabId] = useState<string>("experience");
   const activeTabData = prideData.find((tab) => tab.id === activeTabId);
 
   return (
     <section
       id="pride-in-numbers"
-      className="relative  md:py-16 lg:py-20  text-center"
+      className="relative md:py-16 lg:py-20 text-center"
     >
-      <div className="container mx-auto p-5 md:p-4 lg:p-4 xl:p-4  px-4">
+      <div className="container mx-auto p-5 md:p-4 lg:p-4 xl:p-4 px-4">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2A2A2A] mb-10 md:mb-14">
           We Take Pride In Our Numbers
         </h2>
-        <div className="flex flex-col md:flex-row gap-6 lg:gap-8 max-w-5xl mx-auto">
+
+        <div className="md:hidden max-w-md mx-auto">
+          {prideData.map((item) => {
+            const isMobileActive = activeTabId === item.id;
+            return (
+              <div
+                key={item.id}
+                className={`rounded-xl mb-3 overflow-hidden shadow-lg transition-all duration-300 ease-in-out
+                  ${isMobileActive ? "bg-[#7A35C1]" : "border border-[#7A35C1]"}
+                `}
+              >
+                <button
+                  onClick={() =>
+                    setActiveTabId(item.id === activeTabId ? "" : item.id)
+                  }
+                  className={`w-full flex items-center justify-between px-4 py-3.5 text-left focus:outline-none transition-colors duration-200
+                    ${
+                      isMobileActive
+                        ? "text-white bg-[#7A35C1]"
+                        : "text-[#7A35C1] hover:bg-white/10 "
+                    }
+                  `}
+                  aria-expanded={isMobileActive}
+                  aria-controls={`content-${item.id}`}
+                >
+                  <div className="flex items-center">
+                    {isMobileActive && (
+                      <div
+                        className={`mr-3 flex items-center justify-center 
+                          ${
+                            item.id === "experience" ? "h-6 w-auto" : "w-6 h-6"
+                          } ${isMobileActive ? "opacity-100" : "opacity-0"}
+                        `}
+                      >
+                        <item.icon className="w-full h-full" isActive={true} />
+                      </div>
+                    )}
+                    <span
+                      className={`font-medium text-base ${
+                        !isMobileActive && !item.icon
+                          ? "ml-0"
+                          : isMobileActive
+                          ? ""
+                          : "ml-0"
+                      }`}
+                    >
+                      {item.label}
+                    </span>
+                  </div>
+                  {isMobileActive ? (
+                    <UpArrowSVG className="w-5 h-5 text-white" />
+                  ) : (
+                    <DownArrowSVG className="w-5 h-5 text-[#7A35C1]" />
+                  )}
+                </button>
+
+                {isMobileActive &&
+                  activeTabData &&
+                  item.id === activeTabData.id && (
+                    <div className="bg-[#7A35C1] p-5">
+                      <div
+                        id={`content-${item.id}`}
+                        className="bg-white p-6 text-center rounded-xl"
+                      >
+                        <div className="flex items-center justify-center">
+                          {" "}
+                          <div
+                            className="text-7xl sm:text-8xl font-extrabold leading-none"
+                            style={{
+                              background:
+                                "linear-gradient(180deg, #BCA1DD 3.43%, #7A35C1 100%)",
+                              backgroundClip: "text",
+                              WebkitBackgroundClip: "text",
+                              WebkitTextFillColor: "transparent",
+                            }}
+                          >
+                            {activeTabData.numberText}
+                          </div>
+                          <p
+                            className="text-4xl sm:text-5xl font-medium leading-none ml-1 sm:ml-2"
+                            style={{
+                              background:
+                                "linear-gradient(180deg, #BCA1DD 3.43%, #7A35C1 100%)",
+                              backgroundClip: "text",
+                              WebkitBackgroundClip: "text",
+                              WebkitTextFillColor: "transparent",
+                            }}
+                          >
+                            +
+                          </p>
+                        </div>
+                        <div className="text-lg text-[#7A35C1] font-medium mt-3">
+                          {" "}
+                          {activeTabData.description}
+                        </div>
+                      </div>
+                    </div>
+                  )}
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="hidden md:flex flex-col md:flex-row gap-6 lg:gap-8 max-w-5xl mx-auto">
           <div className="md:w-[300px] lg:w-[340px] flex-shrink-0 border border-[#7A35C1] rounded-2xl p-3 bg-white shadow-lg">
             <div className="space-y-2">
               {prideData.map((item) => {
-                const isActive = activeTabId === item.id;
-
+                const isDesktopActive = activeTabId === item.id;
                 return (
                   <button
                     key={item.id}
                     onClick={() => setActiveTabId(item.id)}
-                    className={`group w-full flex items-center px-4 py-3.5 rounded-xl text-left transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50 border border-[#7A35C1] 
+                    className={`group w-full flex items-center px-4 py-3.5 rounded-xl text-left transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-50 border
                       ${
-                        isActive
-                          ? "bg-[#7A35C1] text-white shadow-md scale-[1.02] hover:text-white"
-                          : "bg-white text-[#7A35C1] border border-[#7A35C1] hover:bg-[#7A35C1] hover:border-[#A480CC] hover:text-white"
+                        isDesktopActive
+                          ? "bg-[#7A35C1] text-white shadow-md scale-[1.02] border-[#7A35C1] hover:text-white"
+                          : "bg-white text-[#7A35C1] border-[#7A35C1] hover:bg-[#7A35C1] hover:border-[#A480CC] hover:text-white"
                       }`}
                   >
                     <div
                       className={`mr-3 flex items-center justify-center transition-transform duration-300 ease-in-out
-                        ${item.id === "experience" ? "h-7 w-auto" : "w-7 h-7"} 
-                        ${
-                          isActive || activeTabId === item.id
-                            ? "opacity-100"
-                            : "opacity-0 group-hover:opacity-100"
-                        }
+                        ${item.id === "experience" ? "h-7 w-auto" : "w-7 h-7"}
+                        ${isDesktopActive ? "opacity-100" : "opacity-0"}
                       `}
                     >
                       <item.icon
                         className={`transition-all duration-300 ease-in-out transform
                           ${
-                            isActive
+                            isDesktopActive
                               ? "scale-110 opacity-100 animate-fade-in"
-                              : "scale-0 opacity-0"
-                          }
-                        `}
-                        isActive={isActive}
+                              : "scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100"
+                          }`}
+                        isActive={isDesktopActive}
                       />
                     </div>
                     <span
-                      className={`font-medium text-sm lg:text-base transition-colors duration-200 hover:text-white
+                      className={`font-medium text-sm lg:text-base transition-colors duration-200
                         ${
-                          isActive
+                          isDesktopActive
                             ? "text-white"
-                            : "text-[#7A35C1] group-hover:text-white hover:text-white"
+                            : "text-[#7A35C1] group-hover:text-white"
                         }
-                        ${
-                          isActive || activeTabId === item.id
-                            ? "ml-4"
-                            : "ml-0 group-hover:ml-4"
-                        }
+                        ${isDesktopActive ? "ml-4" : "ml-0 group-hover:ml-4"}
                       `}
                     >
                       {item.label}

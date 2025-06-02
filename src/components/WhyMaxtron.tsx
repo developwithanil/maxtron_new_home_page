@@ -20,12 +20,12 @@ const WhyMaxtron = () => {
     >
       <div>
         <div className="p-4 ">
-          <h2 className="text-3xl lg:text-4xl font-bold text-[#2A2A2A] mb-4 text-[Switzer]">
+          <h2 className="text-3xl lg:text-3xl font-bold text-[#2A2A2A] mb-4 text-[Switzer]">
             Why Maxtron
           </h2>
           <p className="mb-8 md:mb-10 lg:mb-14 xl:mb-16  text-[#79748A] font-openSansHebrew text-md md:text-lg">
-            We go beyond simply serving the industry; we forge enduring
-            relationships built on trust and mutual success.
+            We go beyond merely serving the industry - we forge enduring
+            relationships founded on trust and mutual success.
           </p>
           <div className="container mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-3 xl:gap-8">
             {cardData.map((card, index) => (
@@ -33,7 +33,7 @@ const WhyMaxtron = () => {
                 key={index}
                 className="bg-white border border-solid border-[#DFDEE7] rounded-[20px] p-4 flex flex-col items-start gap-5"
               >
-                <div className="text-[#2A2A2A] font-[Switzer] font-semibold text-base lg:text-lg text-start gap-5">
+                <div className="text-[#2A2A2A] font-[Switzer] font-semibold text-lg lg:text-lg text-start gap-5">
                   {card.text}
                 </div>
                 <img
