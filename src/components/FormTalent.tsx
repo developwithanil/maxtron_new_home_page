@@ -166,10 +166,16 @@ const FormTalent = () => {
 
     if (!currentSalary.trim()) {
       newErrors.currentSalary = 'Please enter your current salary';
+    } else if (!/^\d+(\.\d{0,1})?$/.test(currentSalary)) {
+      newErrors.currentSalary = 'Please enter a valid number (e.g., 3, 3.5)';
     }
+
     if (!expectedSalary.trim()) {
       newErrors.expectedSalary = 'Please enter your expected salary';
+    } else if (!/^\d+(\.\d{0,1})?$/.test(expectedSalary)) {
+      newErrors.expectedSalary = 'Please enter a valid number (e.g., 3, 3.5)';
     }
+
     if (!selectionReason.trim()) {
       newErrors.selectionReason = 'Please tell us why we should select you';
     }
@@ -211,7 +217,7 @@ const FormTalent = () => {
     formData.set('selectionReason', selectionReason);
 
     try {
-      const response = await fetch('https://api.maxtron.ai/sendTalentData', {
+      const response = await fetch('http://localhost:3000/sendTalentData', {
         method: 'POST',
         body: formData,
       });
@@ -475,9 +481,14 @@ const FormTalent = () => {
                 type="text" 
                 value={currentSalary}
                 onChange={(e) => {
-                  setCurrentSalary(e.target.value);
-                  if (errors.currentSalary) setErrors(prev => ({...prev, currentSalary: ''}));
+                  const value = e.target.value;
+                  // Only allow numbers and one decimal point
+                  if (value === '' || /^\d*\.?\d{0,1}$/.test(value)) {
+                    setCurrentSalary(value);
+                    if (errors.currentSalary) setErrors(prev => ({...prev, currentSalary: ''}));
+                  }
                 }}
+                placeholder="4 LPA"
                 className={`px-3 py-2 md:p-3 rounded-lg bg-[#FCF4FE] border ${
                   errors.currentSalary ? 'border-red-500 bg-red-50' : 'border-[#E5E7EB]'
                 } focus:border-[#8952b6] outline-none`} 
@@ -497,9 +508,14 @@ const FormTalent = () => {
                 type="text" 
                 value={expectedSalary}
                 onChange={(e) => {
-                  setExpectedSalary(e.target.value);
-                  if (errors.expectedSalary) setErrors(prev => ({...prev, expectedSalary: ''}));
+                  const value = e.target.value;
+                  // Only allow numbers and one decimal point
+                  if (value === '' || /^\d*\.?\d{0,1}$/.test(value)) {
+                    setExpectedSalary(value);
+                    if (errors.expectedSalary) setErrors(prev => ({...prev, expectedSalary: ''}));
+                  }
                 }}
+                placeholder="4 LPA"
                 className={`px-3 py-2 md:p-3 rounded-lg bg-[#FCF4FE] border ${
                   errors.expectedSalary ? 'border-red-500 bg-red-50' : 'border-[#E5E7EB]'
                 } focus:border-[#8952b6] outline-none`} 
