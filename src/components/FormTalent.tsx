@@ -37,6 +37,9 @@ const FormTalent = () => {
   const [consentSMS, setConsentSMS] = useState(false);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [currentSalary, setCurrentSalary] = useState('');
+  const [expectedSalary, setExpectedSalary] = useState('');
+  const [selectionReason, setSelectionReason] = useState('');
 
   const MAX_FILE_SIZE = 5 * 1024 * 1024;
   const ALLOWED_FILE_TYPES = ['.pdf', '.doc', '.docx'];
@@ -161,6 +164,16 @@ const FormTalent = () => {
       newErrors.country = 'Please enter your country';
     }
 
+    if (!currentSalary.trim()) {
+      newErrors.currentSalary = 'Please enter your current salary';
+    }
+    if (!expectedSalary.trim()) {
+      newErrors.expectedSalary = 'Please enter your expected salary';
+    }
+    if (!selectionReason.trim()) {
+      newErrors.selectionReason = 'Please tell us why we should select you';
+    }
+
     const fileValidationErrors = validateFile(file);
     if (fileValidationErrors.resume) {
         newErrors.resume = fileValidationErrors.resume;
@@ -193,6 +206,9 @@ const FormTalent = () => {
     formData.set('experienceLevel', exp);
     formData.set('consentEmail', consentEmail ? 'true' : 'false');
     formData.set('consentSMS', consentSMS ? 'true' : 'false');
+    formData.set('currentSalary', currentSalary);
+    formData.set('expectedSalary', expectedSalary);
+    formData.set('selectionReason', selectionReason);
 
     try {
       const response = await fetch('https://api.maxtron.ai/sendTalentData', {
@@ -450,6 +466,74 @@ const FormTalent = () => {
             </div>
           </div>
    
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="flex flex-col gap-1">
+              <label htmlFor="currentSalary" className="self-stretch font-openSansHebrew text-xs font-medium leading-[140%]">Current Salary ( LPA ) <span className="text-[#EA1C00]">*</span></label>
+              <input 
+                id="currentSalary"
+                name="currentSalary" 
+                type="text" 
+                value={currentSalary}
+                onChange={(e) => {
+                  setCurrentSalary(e.target.value);
+                  if (errors.currentSalary) setErrors(prev => ({...prev, currentSalary: ''}));
+                }}
+                className={`px-3 py-2 md:p-3 rounded-lg bg-[#FCF4FE] border ${
+                  errors.currentSalary ? 'border-red-500 bg-red-50' : 'border-[#E5E7EB]'
+                } focus:border-[#8952b6] outline-none`} 
+              />
+              {errors.currentSalary && (
+                <span className="text-xs text-red-500 mt-1 bg-red-50 px-2 py-1 rounded-md">
+                  {errors.currentSalary}
+                </span>
+              )}
+            </div>
+
+            <div className="flex flex-col gap-1">
+              <label htmlFor="expectedSalary" className="self-stretch font-openSansHebrew text-xs font-medium leading-[140%]">Expected Salary ( LPA ) <span className="text-[#EA1C00]">*</span></label>
+              <input 
+                id="expectedSalary"
+                name="expectedSalary" 
+                type="text" 
+                value={expectedSalary}
+                onChange={(e) => {
+                  setExpectedSalary(e.target.value);
+                  if (errors.expectedSalary) setErrors(prev => ({...prev, expectedSalary: ''}));
+                }}
+                className={`px-3 py-2 md:p-3 rounded-lg bg-[#FCF4FE] border ${
+                  errors.expectedSalary ? 'border-red-500 bg-red-50' : 'border-[#E5E7EB]'
+                } focus:border-[#8952b6] outline-none`} 
+              />
+              {errors.expectedSalary && (
+                <span className="text-xs text-red-500 mt-1 bg-red-50 px-2 py-1 rounded-md">
+                  {errors.expectedSalary}
+                </span>
+              )}
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-1">
+            <label htmlFor="selectionReason" className="self-stretch font-openSansHebrew text-xs font-medium leading-[140%]">Why Should We Select You?<span className="text-[#EA1C00]">*</span></label>
+            <textarea 
+              id="selectionReason"
+              name="selectionReason" 
+              value={selectionReason}
+              onChange={(e) => {
+                setSelectionReason(e.target.value);
+                if (errors.selectionReason) setErrors(prev => ({...prev, selectionReason: ''}));
+              }}
+              rows={4}
+              className={`px-3 py-2 md:p-3 rounded-lg bg-[#FCF4FE] border ${
+                errors.selectionReason ? 'border-red-500 bg-red-50' : 'border-[#E5E7EB]'
+              } focus:border-[#8952b6] outline-none`} 
+            />
+            {errors.selectionReason && (
+              <span className="text-xs text-red-500 mt-1 bg-red-50 px-2 py-1 rounded-md">
+                {errors.selectionReason}
+              </span>
+            )}
+          </div>
+
           <div className="flex flex-col gap-3 md:gap-4 mt-2">
             <label className={`flex items-start text-sm md:text-base gap-2 font-openSansHebrew text-[#2A2A2A]`}>
               <input 
@@ -471,6 +555,7 @@ const FormTalent = () => {
               <span>By checking this box, I consent to receive transactional and marketing text messages regarding employment opportunities.</span>
             </label>
           </div>
+
           <button
             type="submit"
             className={`w-full py-3 mt-2 text-white font-semibold font-openSansHebrew rounded-lg transition-all duration-300 text-lg ${
