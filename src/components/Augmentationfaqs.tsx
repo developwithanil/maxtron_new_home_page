@@ -63,7 +63,7 @@ const faqs = [
   },
 ];
 
-const Faqs = () => {
+const AugmentationFaqs = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const handleToggle = (idx: number) => {
@@ -72,15 +72,15 @@ const Faqs = () => {
 
   return (
     <div className="w-full max-w-[96rem] mx-auto flex flex-col gap-6 md:gap-9 lg:gap-12 px-4 sm:px-6 lg:px-10 py-8 md:py-12 lg:py-16">
-      <h2 className="text-start text-[#2A2A2A] font-[Switzer] text-3xl lg:text-4xl xl:text-5xl font-black leading-tight tracking-tight mb-2">
-        Questions? Answers
+      <h2 className="text-center  text-[#2A2A2A] font-[Switzer] text-3xl lg:text-3xl xl:text-3xl font-black leading-tight tracking-tight mb-2 ">
+        Frequently Asked Questions
       </h2>
-      <div className="flex flex-col rounded-xl">
+      <div className="flex flex-col border-t rounded-lg border-l border-r  border-[#DFDEE7]">
         {faqs.map((faq, idx) => (
           <div
             key={idx}
-            className={`bg-white p-2 ${
-              idx !== faqs.length - 1 ? "border-b border-[#DFDEE7]" : ""
+            className={`bg-white p-2 border-b  border-[#DFDEE7] ${
+              idx !== faqs.length - 1 ? " border-[#DFDEE7]" : ""
             }`}
           >
             <button
@@ -134,4 +134,4 @@ const Faqs = () => {
   );
 };
 
-export default Faqs;
+export default AugmentationFaqs;

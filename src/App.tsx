@@ -8,6 +8,7 @@ import Service from "./components/Services";
 import AboutUs from "./components/pages/AboutUs";
 import Insights from "./components/pages/Insights";
 import Industries from "./components/pages/Industries";
+import StaffAugmentation from "./components/pages/staffAugmentation";
 
 import "./page.css";
 import CaseStudyPage from "./components/pages/CaseStudyPage";
@@ -67,6 +68,7 @@ const App: React.FC = () => {
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/case-studies" element={<CaseStudy />} />
         <Route path="/tokenization" element={<TokenizePage />} />
+        <Route path="/staff-augmentation" element={<StaffAugmentation />} />
         {/* <Route
           path="/Maxtron/:title/:id"
           element={<InternalPage caseStudies={caseStudies} />}
