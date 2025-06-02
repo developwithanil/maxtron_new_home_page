@@ -12,6 +12,7 @@ const AREA_OF_INTEREST = [
   'Legal and Administration',
   'Manufacturing',
   'Marketing and PR',
+  'UI/UX Design',
   'Networking',
   'Operations',
   'Sales',
