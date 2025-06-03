@@ -7,15 +7,15 @@ const TooEarly = () => {
         <div className="bg-[#F5F5F5]  w-full rounded-xl py-16 md:py-20 lg:py-24 xl:py-28 px-5 md:px-8 lg:px-12 lg:rounded-2xl relative overflow-hidden items-center justify-center flex flex-col gap-6 md:gap-7 lg:gap-10">
             <div className="flex flex-col gap-2 md:gap-3 lg:gap-4 xl:gap-5 z-20">
 
-              <h1 className="text-[#2A2A2A] text-center font-[Switzer] text-xl md:text-2xl lg:text-4xl xl:text-5xl font-bold leading-[140%]">You’re not too early. You’re just early enough.</h1>
-              <p className=" text-[#2A2A2A] text-center font-[Switzer] text-sm lg:text-base font-normal leading-[140%]">We help radical founders raise capital the world hasn’t seen — yet.</p>
+              <h1 className="text-[#2A2A2A] text-center font-[Switzer] text-xl md:text-2xl lg:text-4xl xl:text-5xl font-bold leading-[140%]">You're not too early. You're just early enough.</h1>
+              <p className=" text-[#2A2A2A] text-center font-[Switzer] text-sm lg:text-base font-normal leading-[140%]">We help radical founders raise capital the world hasn't seen — yet.</p>
             </div>
-            <Link to={"#"} className="flex justify-between items-center gap-4 lg:gap-7 xl:gap-8  border-[#2A2A2A] px-6 md:px-7 lg:px-8 py-2 md:py-3 lg:py-4 rounded-[38px] border-2 border-solid z-20">
-              <p className="text-[#2A2A2A] text-center font-[Switzer] text-base lg:text-lg font-normal leading-[140%]">Pitch Us Now</p>
-             <p>
+            <Link to={"#"} className="flex justify-between items-center gap-4 lg:gap-7 xl:gap-8 border-[#2A2A2A] px-6 md:px-7 lg:px-8 py-2 md:py-3 lg:py-4 rounded-[38px] border-2 border-solid z-20 hover:bg-[#2A2A2A] transition-all duration-300 group">
+              <p className="text-[#2A2A2A] text-center font-[Switzer] text-base lg:text-lg font-normal leading-[140%] group-hover:text-white transition-colors duration-300">Pitch Us Now</p>
+             <p className="group-hover:translate-x-1 transition-transform duration-300">
                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15" fill="none">
   <g clip-path="url(#clip0_1686_3708)">
-    <path d="M1.5 7.5H17.5M17.5 7.5L11.5 1.5M17.5 7.5L11.5 13.5" stroke="#2A2A2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1.5 7.5H17.5M17.5 7.5L11.5 1.5M17.5 7.5L11.5 13.5" stroke="#2A2A2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="group-hover:stroke-white transition-colors duration-300"/>
   </g>
   <defs>
     <clipPath id="clip0_1686_3708">
