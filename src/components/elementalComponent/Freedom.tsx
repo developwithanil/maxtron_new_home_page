@@ -1,4 +1,4 @@
-import freedom from "../../assets/case/freedom.svg";
+
 
 
 const  items =[
@@ -66,13 +66,7 @@ const Freedom = () => {
           </div>
 
         </div>
-       <div className="">
-  <img
-    src={freedom}
-    alt="freedom"
-    className="w-[70%] absolute -bottom-10 left-1/2 transform -translate-x-1/2 z-50"
-  />
-</div>
+       
       </div>
     </div>
   )

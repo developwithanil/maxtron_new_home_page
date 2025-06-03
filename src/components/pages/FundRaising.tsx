@@ -11,9 +11,12 @@ import whatwedo8 from "../../assets/case/whatwedo8.svg";
 import whatwedo9 from "../../assets/case/whatwedo9.svg";
 import whatwedo10 from "../../assets/case/whatwedo10.svg";
 
+
 import { Link } from "react-router-dom";
 import RealProject from "../elementalComponent/RealProject";
 import Freedom from "../elementalComponent/Freedom";
+import Image from "../elementalComponent/Image";
+import WhyFounder from "../elementalComponent/WhyFounder";
 
 const items = [
     {
@@ -136,6 +139,13 @@ Everything You Need to Go from Vision to Valuation
         <RealProject/>
       </div>
       <Freedom/>
+  
+
+   <Image/>
+   <WhyFounder/>
+     
+
+
 
       <ContactAndSubscribe />
     </div>
