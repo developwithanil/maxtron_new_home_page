@@ -12,6 +12,7 @@ import whatwedo9 from "../../assets/case/whatwedo9.svg";
 import whatwedo10 from "../../assets/case/whatwedo10.svg";
 
 import { Link } from "react-router-dom";
+import RealProject from "../elementalComponent/RealProject";
 
 const items = [
     {
@@ -131,6 +132,7 @@ Everything You Need to Go from Vision to Valuation
 
         </div>
         </div>
+        <RealProject/>
       </div>
      
 
