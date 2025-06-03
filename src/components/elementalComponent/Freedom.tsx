@@ -43,13 +43,13 @@ const Freedom = () => {
       <div className='w-full max-w-[96rem] mx-auto px-4 sm:px-7 md:px-10 xl:px-12'>
         <div className='flex flex-col lg:flex-row justify-between w-full gap-8'>
           {/* Left Section */}
-          <div className='flex flex-col gap-2 md:gap-3 lg:gap-4 w-full lg:w-[30%]'>
-            <h1 className='text-[#FFF] font-[Switzer] text-[24px] lg:text-[32px] font-semibold leading-[140%]'>Freedom Capital</h1>
-            <p className='text-[#FFF] font-openSansHebrew text-base lg:text-lg font-extralight leading-[140%]'>
+          <div className='flex flex-col gap-2 md:gap-3 lg:gap-4 w-full lg:w-[30%] leading-relaxed'>
+            <h1 className='text-[#FFF] font-[Switzer] text-[24px] lg:text-[32px] font-semibold '>Freedom Capital</h1>
+            <p className='text-[#FFF] font-openSansHebrew text-lg lg:text-xl font-extralight '>
               <span className='font-semibold'>Freedom Capital </span>
               is launching soon — a first-of-its-kind fund for radical builders in <span className='font-semibold'>Web3, AI, DeSci, Quantum & beyond.</span>
             </p>
-            <p className='text-[#FFF] font-openSansHebrew text-base lg:text-lg font-semibold leading-[140%]'>
+            <p className='text-[#FFF] font-openSansHebrew text-base lg:text-lg font-semibold '>
               Be the first to pitch. Be the first to raise.
             </p>
           </div>
