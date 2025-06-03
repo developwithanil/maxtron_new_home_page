@@ -1,13 +1,63 @@
 import React, { useState } from "react";
-import { industryData } from "../../src/components/industryData";
+import Banking from "../assets/augmentation/EmpanelmentSection/Banking.svg";
+import Retail from "../assets/augmentation/EmpanelmentSection/Retail.svg";
+import Gaming from "../assets/augmentation/EmpanelmentSection/Gaming.svg";
+import SaaS from "../assets/augmentation/EmpanelmentSection/SaaS.svg";
+import Healthcare from "../assets/augmentation/EmpanelmentSection/healthcare.svg";
+
+const industryData = [
+  {
+    id: 1,
+    title: "Banking, Financial Services & Insurance",
+    image: Banking,
+    altText: "Banking",
+  },
+  {
+    id: 2,
+    title: "Retail & E-commerce",
+    image: Retail,
+    altText: "Retail",
+  },
+  {
+    id: 3,
+    title: "Gaming Studios",
+    image: Gaming,
+    altText: "Gaming",
+  },
+  {
+    id: 4,
+    title: "SaaS & Startups",
+    image: SaaS,
+    altText: "SaaS",
+  },
+  {
+    id: 5,
+    title: "Healthcare & MedTech",
+    image: Healthcare,
+    altText: "Healthcare & MedTech",
+  },
+];
 
 const CircleIcon: React.FC<{ isActive: boolean }> = ({ isActive }) => (
   <div
-    className={`w-6 h-6 rounded-full border-2 flex items-center justify-center mr-4 shrink-0 transition-colors duration-300
+    className={`w-8 h-8 rounded-full border flex items-center justify-center mr-4 
       ${
-        isActive ? "border-purple-500" : "border-gray-600 hover:border-gray-400"
+        isActive
+          ? "border-[#BEBCCA]"
+          : "border-[#BEBCCA] group-hover:border-[#BEBCCA] text-[#2A2A2A]"
       }`}
-  ></div>
+  >
+    <span
+      className={`text-sm font-semibold  
+        ${
+          isActive
+            ? "text-[#2A2A2A]"
+            : "text-[#2A2A2A] group-hover:text-[#7A35C1]"
+        }`}
+    >
+      +
+    </span>
+  </div>
 );
 
 const EmpanelmentSection = () => {
@@ -20,57 +70,57 @@ const EmpanelmentSection = () => {
   );
 
   return (
-    <div className="  p-5 md:p-8 lg:p-11 xl:p-16 ">
-      <div className="container mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-start">
-          <div className="pt-2">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[#2A2A2A]  mb-6 [font-family:Switzer]">
-              Fast-Track Empanelment & Onboarding
-            </h2>
-            <p
-              className="text-gray-400  text-[14px] md:text-3xl
-        lg:text-3xl xl:text-3xl mb-3 font-openSansHebrew leading-relaxed"
-            >
-              We're already empaneled or in the procurement pipeline of major
-              clients across
-            </p>
-            <p className="text-gray-400 text-base lg:text-lg font-openSansHebrew leading-relaxed">
-              We support MSA, SoW, NDA, SLA agreements and are ISO-compliant,
-              GDPR-aligned.
-            </p>
-          </div>
+    <div className=" text-white  p-5 md:p-12 lg:p-16 xl:p-16">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 className="text-xl md:text-2xl lg:text-2xl xl:text-3xl  text-[#2A2A2A] font-[Switzer] mb-6 font-bold">
+            Fast-Track Empanelment & Onboarding
+          </h2>
+          <p className="mb-4 font-openSansHebrew text-[#2A2A2A] text-sm md:text-lg lg:text-lg xl:text-lg font-normal">
+            We're already empaneled or in the procurement pipeline of major
+            clients across
+          </p>
+          <p className="font-openSansHebrew text-[#2A2A2A] text-sm md:text-lg lg:text-lg xl:text-lg font-normal">
+            We support{" "}
+            <strong className="text-[#2A2A2A] text-sm md:text-lg lg:text-lg xl:text-lg ">
+              MSA, SoW, NDA, SLA agreements
+            </strong>{" "}
+            and are{" "}
+            <strong className="text-[#2A2A2A] text-sm md:text-lg lg:text-lg xl:text-lg">
+              ISO-compliant, GDPR-aligned.
+            </strong>
+          </p>
+        </div>
 
-          <div>
-            <ul>
-              {industryData.map((industry) => (
-                <li
-                  key={industry.id}
-                  onClick={() => setActiveIndustryId(industry.id)}
-                  className={`flex items-center py-3 cursor-pointer border-b border-gray-700 transition-colors duration-300
-                    ${
-                      activeIndustryId === industry.id
-                        ? "text-purple-400"
-                        : "text-gray-300 hover:text-gray-100"
-                    }`}
-                >
-                  <CircleIcon isActive={activeIndustryId === industry.id} />
-                  <span className="text-lg font-medium [font-family:Switzer]">
-                    {industry.title}
-                  </span>
-                </li>
-              ))}
-            </ul>
+        <div>
+          <ul className="mb-6">
+            {industryData.map((industry) => (
+              <li
+                key={industry.id}
+                onClick={() => setActiveIndustryId(industry.id)}
+                className={`group flex items-center py-3 cursor-pointer border-b border-[#BEBCCA] transition-colors duration-300 ${
+                  activeIndustryId === industry.id
+                    ? "text-[#7A35C1]"
+                    : "text-[#79748A] hover:text-[#7A35C1]"
+                }`}
+              >
+                <CircleIcon isActive={activeIndustryId === industry.id} />
+                <span className="text-base font-normal font-openSansHebrew md:text-xl lg:text-xl xl:text-xl ">
+                  {industry.title}
+                </span>
+              </li>
+            ))}
+          </ul>
 
-            {selectedIndustry && (
-              <div className="mt-8 rounded-lg overflow-hidden shadow-2xl">
-                <img
-                  src={selectedIndustry.imageSrc}
-                  alt={selectedIndustry.altText}
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            )}
-          </div>
+          {selectedIndustry && (
+            <div className="rounded-lg overflow-hidden shadow-lg">
+              <img
+                src={selectedIndustry.image}
+                alt={selectedIndustry.altText}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>

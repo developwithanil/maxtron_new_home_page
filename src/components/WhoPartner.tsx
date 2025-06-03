@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { partnerItems, CIcon, DoubleArrowIcon } from "./PartnerData";
+import { partnerItems, DoubleArrowIcon } from "./PartnerData";
+import logo from "../assets/augmentation/EmpanelmentSection/logo.svg";
 
 interface ItemData {
   id: number;
@@ -15,45 +16,98 @@ const SelectableItem: React.FC<{
   isActive: boolean;
   isAnyActive: boolean;
   onSelect: () => void;
-}> = ({ itemData, isActive, isAnyActive, onSelect }) => {
-  let containerClasses =
-    "transition-all duration-500 ease-in-out overflow-hidden ";
-  let contentOpacityClass = "opacity-0 ";
-
-  if (!isAnyActive) {
-    containerClasses += "h-[calc((100%-0px)/3)] ";
-  } else {
-    if (isActive) {
-      containerClasses += "flex-grow ";
-      contentOpacityClass = "opacity-100 delay-300 duration-500";
-    } else {
-      containerClasses += "h-0 opacity-0 pointer-events-none ";
-    }
-  }
+}> = ({ itemData, isActive, onSelect }) => {
+  const desktopBaseClasses = isActive ? "md:w-full" : "md:flex-1 md:basis-0";
 
   return (
     <div
-      className={`${containerClasses} ${itemData.bgColor} ${itemData.textColor} rounded-tr-2xl rounded-br-2xl relative group`}
+      className={`
+        ${itemData.bgColor}
+        ${itemData.textColor}
+        w-full 
+        md:h-full
+        overflow-hidden 
+        cursor-pointer
+        transition-all duration-300 ease-in-out
+        ${desktopBaseClasses}
+      `}
+      onClick={() => {
+        const isDesktop = window.innerWidth >= 768;
+        if (isActive && isDesktop) {
+          return;
+        }
+        onSelect();
+      }}
     >
-      <div
-        className="flex justify-between items-center p-6 py-5 sm:py-6 h-[70px] sm:h-[80px] cursor-pointer "
-        onClick={onSelect}
-      >
-        <h3 className="text-lg sm:text-xl md:text-2xl font-semibold [font-family:Switzer,sans-serif]">
-          {itemData.tabLabel}
-        </h3>
-        {(!isActive || !isAnyActive) && (
-          <div className="shrink-0">
-            {" "}
+      <div className="md:hidden">
+        <div className="flex justify-between items-center p-4">
+          <h3 className="text-xl font-bold [font-family:Switzer]">
+            {itemData.tabLabel}
+          </h3>
+
+          <span
+            className={`transform transition-transform duration-300 ${
+              isActive ? "rotate-90" : "rotate-0"
+            }`}
+          >
             <DoubleArrowIcon colorClass={itemData.arrowColor} />
+          </span>
+        </div>
+
+        <div
+          className={`
+            overflow-hidden transition-all duration-300 ease-in-out
+            ${isActive ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"} 
+            `}
+          style={{ transitionProperty: "max-height, opacity" }}
+        >
+          <div className="px-4 pb-4 pt-1">
+            <p className="text-sm leading-relaxed [font-family:Switzer,sans-serif]">
+              {itemData.description}
+            </p>
           </div>
-        )}
+        </div>
       </div>
 
-      <div className={`px-6 pb-6 ${contentOpacityClass} transition-opacity`}>
-        <p className="text-sm md:text-base leading-relaxed font-openSansHebrew">
-          {itemData.description}
-        </p>
+      <div className={`hidden md:flex md:flex-col md:h-full`}>
+        {isActive ? (
+          <div
+            className={`p-6 sm:p-8 text-left h-full flex flex-col relative ${itemData.textColor}`}
+          >
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                onSelect();
+              }}
+              className="absolute top-2 right-2 sm:top-4 sm:right-4 z-10 p-1"
+              aria-label="Close tab"
+            >
+              <span className="transform -rotate-180 inline-block">
+                {" "}
+                <DoubleArrowIcon colorClass={itemData.arrowColor} />
+              </span>
+            </button>
+            <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-3 sm:mb-4 [font-family:Switzer,sans-serif]">
+              {itemData.tabLabel}
+            </h3>
+            <p className="text-sm sm:text-base leading-relaxed [font-family:Switzer,sans-serif]">
+              {itemData.description}
+            </p>
+          </div>
+        ) : (
+          <div
+            className={`flex flex-col items-center justify-between h-full py-4 px-1 sm:py-6 ${itemData.textColor}`}
+          >
+            <div className="flex-grow flex items-center justify-center w-full overflow-hidden">
+              <h3 className="text-sm sm:text-xl font-bold whitespace-nowrap transform rotate-90 origin-center [font-family:Switzer]">
+                {itemData.tabLabel}
+              </h3>
+            </div>
+            <div className="mt-2 sm:mt-4">
+              <DoubleArrowIcon colorClass={itemData.arrowColor} />{" "}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -63,50 +117,77 @@ const WhoPartner = () => {
   const [activeItemId, setActiveItemId] = useState<number | null>(null);
 
   const handleSelect = (itemId: number) => {
-    if (activeItemId === itemId) {
-      // Optional: Clicking an already active item's header closes it and shows tab list
-      // setActiveItemId(null);
-    } else {
-      setActiveItemId(itemId);
-    }
+    setActiveItemId((prevId) => (prevId === itemId ? null : itemId));
   };
 
   const resetView = () => {
     setActiveItemId(null);
   };
 
+  const activeItem =
+    activeItemId !== null
+      ? partnerItems.find((item) => item.id === activeItemId)
+      : null;
+
   return (
-    <section className="py-12 md:py-16 ">
+    <section className="p-5 md:p-16 lg:p-16 xl:p-16">
       {" "}
-      <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row min-h-[480px] md:min-h-[500px] shadow-xl rounded-2xl">
+      <div className="container mx-auto ">
+        <div className="flex flex-col md:flex-row rounded-t-2xl overflow-hidden shadow-xl bg-[#F5F5F5]">
           <div
-            className="w-full md:w-[35%] lg:w-[40%] bg-indigo-600 text-white p-8 sm:p-10 md:p-12 flex flex-col justify-center items-center text-center rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl cursor-pointer"
+            className="bg-[#7A35C1] text-white md:w-[40%] lg:w-[50%] w-full p-6 sm:p-8 md:p-10 flex flex-col items-center justify-center text-center rounded-t-[32px]   cursor-pointer order-first h-auto md:min-h-[28rem] lg:min-h-[30rem]"
             onClick={resetView}
           >
-            <CIcon />
-            <h2 className="text-3xl lg:text-4xl font-bold [font-family:Switzer,sans-serif]">
+            <img src={logo}></img>
+            <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-3xl font-bold mt-4 [font-family:Switzer,sans-serif]">
               Who should partner with us?
             </h2>
           </div>
 
-          <div className="w-full md:w-[65%] lg:w-[60%] flex flex-col rounded-b-2xl md:rounded-bl-none md:rounded-r-2xl overflow-hidden">
-            {partnerItems.map((item) => (
-              <SelectableItem
-                key={item.id}
-                itemData={item}
-                isActive={activeItemId === item.id}
-                isAnyActive={activeItemId !== null}
-                onSelect={() => {
-                  if (activeItemId === null) {
-                    handleSelect(item.id);
-                  } else if (activeItemId === item.id) {
-                    // Optional: allow clicking active item's header to return to tab list
-                    // setActiveItemId(null);
-                  }
-                }}
-              />
-            ))}
+          <div className="flex-1 flex flex-col md:flex-row order-last md:rounded-bl-none overflow-hidden md:min-h-[28rem] lg:min-h-[30rem]">
+            <div className="hidden md:flex md:flex-row w-full h-full">
+              {activeItem ? (
+                <SelectableItem
+                  key={activeItem.id}
+                  itemData={activeItem}
+                  isActive={true}
+                  isAnyActive={true}
+                  onSelect={() => handleSelect(activeItem.id)}
+                />
+              ) : (
+                partnerItems.map((item) => (
+                  <SelectableItem
+                    key={item.id}
+                    itemData={item}
+                    isActive={false}
+                    isAnyActive={false}
+                    onSelect={() => handleSelect(item.id)}
+                  />
+                ))
+              )}
+            </div>
+
+            <div className="md:hidden flex flex-col w-full">
+              {activeItem ? (
+                <SelectableItem
+                  key={activeItem.id}
+                  itemData={activeItem}
+                  isActive={true}
+                  isAnyActive={true}
+                  onSelect={() => handleSelect(activeItem.id)}
+                />
+              ) : (
+                partnerItems.map((item) => (
+                  <SelectableItem
+                    key={item.id}
+                    itemData={item}
+                    isActive={false}
+                    isAnyActive={false}
+                    onSelect={() => handleSelect(item.id)}
+                  />
+                ))
+              )}
+            </div>
           </div>
         </div>
       </div>

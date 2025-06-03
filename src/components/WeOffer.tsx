@@ -88,13 +88,13 @@ const WeOffer = () => {
         What We Offer
       </h1>
       <p className="text-[#79748A] font-openSansHebrew lg:text-lg md:text-lg xl:text-lg sm:text-[14px] text-center font-normal mb-12">
-        We provide scalable, on-demand tech resources across all major stacks
-        and domains. Whether you're a product company, digital agency, SI
-        partner, or enterprise, our flexible staff augmentation model ensures
-        zero downtime in your delivery roadmap.
+        We provide <strong>scalable, on-demand tech resources</strong> across
+        all major stacks and domains. Whether you're a product company, digital
+        agency, SI partner, or enterprise, our flexible staff augmentation model
+        ensures <strong>zero downtime</strong> in your delivery roadmap.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
         {cardsData.map((card) => (
           <Card
             key={card.id}

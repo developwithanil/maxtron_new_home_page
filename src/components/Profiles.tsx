@@ -1,96 +1,158 @@
-import React from "react";
-import icon1 from "../assets/augmentation/blockchain.svg";
-
-interface CardProps {
-  status: string;
-  title: string;
-  description: string;
-  experience: string;
-  timings: string;
-}
-
-const Card: React.FC<CardProps> = ({
-  status,
-  title,
-  description,
-  experience,
-  timings,
-}) => {
-  return (
-    <div className="border border-[#DFDEE7] rounded-[24px] flex flex-col  justify-start p-4">
-      <div className=" mb-8 bg-[#F5F5F5] flex items-start justify-start p-2  rounded-lg">
-        {status}
-      </div>
-      <div className="">
-        <div className="flex justify-between items-center mb-4">
-          <h3 className="text-xl font-semibold text-[#2A2A2A] [font-family:Switzer]">
-            {title}
-          </h3>
-          <p className="text-sm text-[#79748A]">{experience}</p>
-        </div>
-        <p>{timings}</p>
-        <p className="text-sm text-[#79748A] font-openSansHebrew items-start text-start ">
-          {description}
-        </p>
-      </div>
-    </div>
-  );
-};
+import React, { useState } from "react";
+import Card from "./Card";
+import { Link } from "react-router-dom";
 
 const cardsData = [
   {
     id: 1,
-    icon: icon1,
-    title: "Blockchain & Web3",
-    status: "Expert",
-    experience: "5 years",
-    timings: "Full-time",
-    description: "Solidity, Ethereum, Smart Contracts, NFTs, DeFi, Layer-2s",
+    title: "React Developer",
+    status: "Immediately Available",
+    experience: "5 Years Exp.",
+    timings: "4–6 Hours EST",
+    skills: [
+      "Next.js, Redux, Tailwind, GraphQL",
+      "Previously worked with US Fintech Product",
+    ],
   },
   {
     id: 2,
-    icon: icon1,
-    title: "Blockchain & Web3",
-    status: "Expert",
-    experience: "5 years",
-    timings: "Full-time",
-    description: "Solidity, Ethereum, Smart Contracts, NFTs, DeFi, Layer-2s",
+    title: "Blockchain Developer",
+    status: "Immediately Available",
+    experience: "5 Years Exp.",
+    timings: "4–6 Hours EST",
+    skills: [
+      "Solidity, Hardhat, Web3.js, IPFS",
+      "Experience with DeFi protocols",
+      "Can lead smart contract audits",
+    ],
   },
   {
     id: 3,
-    icon: icon1,
-    title: "Blockchain & Web3",
-    status: "Expert",
-    experience: "5 years",
-    timings: "Full-time",
-    description: "Solidity, Ethereum, Smart Contracts, NFTs, DeFi, Layer-2s",
+    title: "Game Developer",
+    status: "Available after 1 Week",
+    experience: "5 Years Exp.",
+    timings: "4–6 Hours EST",
+    skills: ["Unity, C#, Photon Engine", "Developed 3+ published mobile games"],
   },
 ];
-// --- End of ICONS & CARD DATA ---
 
-const Profiles = () => {
+const LeftArrowIcon = () => (
+  <svg
+    width="14"
+    height="12"
+    viewBox="0 0 14 12"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M12.5 6L1.5 6M1.5 6L5.625 10.125M1.5 6L5.625 1.875"
+      stroke="#2A2A2A"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+const RightArrowIcon = () => (
+  <svg
+    width="14"
+    height="10"
+    viewBox="0 0 14 10"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1.5 5H12.5M12.5 5L8.375 1M12.5 5L8.375 9"
+      stroke="#2A2A2A"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+const Profiles: React.FC = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handlePrev = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === 0 ? cardsData.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === cardsData.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const currentCard = cardsData[activeIndex];
+
   return (
-    <div className="xl:p-16 md:p-16 lg:p-16 sm:p-5">
-      <h1 className="text-[#2A2A2A] justify-center [font-family: Switzer] text-2xl text-center font-bold mb-12">
-        Sample Developer Profiles from Our Bench{" "}
+    <div className=" text-[#2A2A2A] p-5 md:p-16 lg:p-16 xl:p-16 font-[Switzer]">
+      {" "}
+      <h1 className="text-xl md:text-[32px] text-center font-bold mb-8 md:mb-12">
+        {" "}
+        Sample Developer Profiles from Our Bench
       </h1>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
+      <div className="md:hidden flex flex-col items-center">
+        {cardsData.length > 0 && currentCard && (
+          <div className="w-full max-w-sm mb-6">
+            {" "}
+            <Card
+              key={currentCard.id}
+              title={currentCard.title}
+              status={currentCard.status}
+              experience={currentCard.experience}
+              timings={currentCard.timings}
+              skills={currentCard.skills}
+              isMobileView={true}
+            />
+          </div>
+        )}
+        {cardsData.length > 1 && (
+          <div className="w-full max-w-sm flex justify-end items-center gap-3">
+            {" "}
+            <button
+              onClick={handlePrev}
+              className="w-10 h-10 rounded-full border border-[#BEBCCA] flex items-center justify-center text-[#2A2A2A] hover:bg-gray-100 active:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-purple-500"
+              aria-label="Previous profile"
+            >
+              <LeftArrowIcon />
+            </button>
+            <button
+              onClick={handleNext}
+              className="w-10 h-10 rounded-full border border-[#BEBCCA] flex items-center justify-center text-[#2A2A2A] hover:bg-gray-100 active:bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-purple-500"
+              aria-label="Next profile"
+            >
+              <RightArrowIcon />
+            </button>
+          </div>
+        )}
+      </div>
+      <div className="hidden md:flex  md:justify-center md:gap-6 lg:gap-8">
+        {" "}
         {cardsData.map((card) => (
           <Card
             key={card.id}
-            status={card.status}
             title={card.title}
-            description={card.description}
-            timings={card.timings}
+            status={card.status}
             experience={card.experience}
+            timings={card.timings}
+            skills={card.skills}
+            isMobileView={false}
           />
         ))}
       </div>
-      <div className="p-12">
-        <div className="text-center justify-center items-center  bg-[#7A35C1] text-[#FFFFFF] py-3 px-8">
-          <button>Request for a profile you need</button>
-        </div>
+      <div className="relative z-10 text-center mt-10 md:mt-12 ">
+        {" "}
+        <Link to="/contact">
+          <button className="bg-[#7A35C1] text-[15px] md:text-[16px] px-6 py-3 sm:px-8 rounded-lg sm:rounded-xl text-white font-openSansHebrew font-medium hover:bg-purple-700 transition-colors">
+            {" "}
+            Request for a profile you need
+          </button>
+        </Link>
       </div>
     </div>
   );
