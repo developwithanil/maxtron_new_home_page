@@ -32,7 +32,10 @@ const cardsData = [
     status: "Available after 1 Week",
     experience: "5 Years Exp.",
     timings: "4–6 Hours EST",
-    skills: ["Unity, C#, Photon Engine", "Developed 3+ published mobile games"],
+    skills: [
+      "Next.js, Redux, Tailwind, GraphQL",
+      "Previously worked with US Fintech Product",
+    ],
   },
 ];
 

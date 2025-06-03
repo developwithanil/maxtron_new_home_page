@@ -1,4 +1,3 @@
-import React from "react";
 import map from "../assets/augmentation/map.svg";
 import icon1 from "../assets/augmentation/timezone.svg";
 import icon2 from "../assets/augmentation/group.svg";
