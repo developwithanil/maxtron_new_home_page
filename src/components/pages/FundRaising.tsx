@@ -13,6 +13,7 @@ import whatwedo10 from "../../assets/case/whatwedo10.svg";
 
 import { Link } from "react-router-dom";
 import RealProject from "../elementalComponent/RealProject";
+import Freedom from "../elementalComponent/Freedom";
 
 const items = [
     {
@@ -58,7 +59,7 @@ const FundRaising = () => {
           <div className="flex-1 flex flex-col justify-center items-start px-2 sm:px-3 md:px-4 lg:px-5 xl:px-7 gap-4 md:gap-5 lg:gap-6 xl:gap-8">
             <div className="flex flex-col gap-1 sm:gap-2">
               <h1
-                className="text-transparent bg-clip-text font-openSansHebrew text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-[110%]"
+                className="text-transparent bg-clip-text font-openSansHebrew text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-[110%]"
                 style={{
                   backgroundImage:
                  "linear-gradient(90deg, #2A2A2A 0%, #7A35C1 54.42%)",
@@ -124,7 +125,7 @@ Everything You Need to Go from Vision to Valuation
   }}
 >
   <img src={whatwedo9} alt="left" className="h-24" />
-  <h3 className="text-white font-[Switzer] text-2xl font-bold leading-[140%]">
+  <h3 className="text-white font-[Switzer] text-xl lg:text-2xl font-bold leading-[140%]">
     Trusted by pioneering founders building in 10+ countries.
   </h3>
   <img src={whatwedo10} alt="right" className="h-24" />
@@ -134,7 +135,7 @@ Everything You Need to Go from Vision to Valuation
         </div>
         <RealProject/>
       </div>
-     
+      <Freedom/>
 
       <ContactAndSubscribe />
     </div>
