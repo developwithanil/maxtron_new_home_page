@@ -10,7 +10,7 @@ const TooEarly = () => {
               <h1 className="text-[#2A2A2A] text-center font-[Switzer] text-xl md:text-2xl lg:text-4xl xl:text-5xl font-bold leading-[140%]">You're not too early. You're just early enough.</h1>
               <p className=" text-[#2A2A2A] text-center font-[Switzer] text-sm lg:text-base font-normal leading-[140%]">We help radical founders raise capital the world hasn't seen — yet.</p>
             </div>
-            <Link to={"#"} className="flex justify-between items-center gap-4 lg:gap-7 xl:gap-8 border-[#2A2A2A] px-6 md:px-7 lg:px-8 py-2 md:py-3 lg:py-4 rounded-[38px] border-2 border-solid z-20 hover:bg-[#2A2A2A] transition-all duration-300 group">
+            <Link to={"/contact"} className="flex justify-between items-center gap-4 lg:gap-7 xl:gap-8 border-[#2A2A2A] px-6 md:px-7 lg:px-8 py-2 md:py-3 lg:py-4 rounded-[38px] border-2 border-solid z-20 hover:bg-[#2A2A2A] transition-all duration-300 group">
               <p className="text-[#2A2A2A] text-center font-[Switzer] text-base lg:text-lg font-normal leading-[140%] group-hover:text-white transition-colors duration-300">Pitch Us Now</p>
              <p className="group-hover:translate-x-1 transition-transform duration-300">
                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15" fill="none">

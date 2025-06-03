@@ -51,7 +51,7 @@ const RealProject = () => {
               Want to build something radical like this?
             </p>
             <Link
-              to="#"
+              to="/contact"
               className="text-[#7A35C1] font-openSansHebrew text-lg font-normal leading-[160%] underline"
             >
               We want to hear from you.
