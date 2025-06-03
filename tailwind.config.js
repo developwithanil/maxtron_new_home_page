@@ -7,6 +7,7 @@ export default {
         OpenSans: ["Open Sans", "sans-serif"],
         openSansHebrew: ['"Open Sans Hebrew"', 'sans-serif'],
         SegoeUISymbol: ['"Segoe UI Symbol"', 'sans-serif'],
+        lexendDeca: ['"Lexend Deca"', 'sans-serif'],
       },
     },
   },
