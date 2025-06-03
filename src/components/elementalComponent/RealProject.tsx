@@ -43,7 +43,7 @@ const RealProject = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Left Section */}
         <div className="lg:col-span-4 flex flex-col gap-3 lg:gap-6 mt-3 md:mt-4 lg:mt-5">
-          <h2 className="text-[#2A2A2A] text-start font-[Switzer] font-bold text-2xl lg:text-3xl xl:text-4xl leading-tight">
+          <h2 className="text-[#2A2A2A] text-start font-[Switzer] font-semibold text-2xl lg:text-3xl xl:text-4xl leading-tight">
             Real Projects We're Backing
           </h2>
           <div>
@@ -76,7 +76,7 @@ const RealProject = () => {
                   alt={item.title}
                   className="w-full h-44 object-cover rounded-xl mb-2"
                 />
-                <h3 className="font-bold text-lg md:text-xl text-[#2A2A2A] leading-snug font-[Switzer]">
+                <h3 className="font-semibold text-lg md:text-xl text-[#2A2A2A] leading-snug font-[Switzer]">
                   {item.title}
                 </h3>
                 <ul className="list-disc pl-5 text-[#3B3C4A] text-sm md:text-base flex flex-col gap-1 font-openSansHebrew">

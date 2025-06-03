@@ -58,7 +58,7 @@ const items = [
 const FundRaising = () => {
   return (
     <div className="w-full">
-      <div className="w-full max-w-[96rem] mx-auto px-5 sm:px-7 md:px-10 xl:px-12 py-4 sm:py-6 md:py-8 lg:py-10 xl:py-12 ">
+      <div className="w-full max-w-[96rem] mx-auto px-4 sm:px-7 md:px-10 xl:px-12 py-4 sm:py-6 md:py-8 lg:py-10 xl:py-12 ">
         <div className="flex flex-col lg:flex-row gap-5 sm:gap-7 md:gap-9 lg:gap-10">
           {/* Text Content */}
           <div className="flex-1 flex flex-col justify-center items-start px-2 sm:px-3 md:px-4 lg:px-5 xl:px-7 gap-4 md:gap-5 lg:gap-6 xl:gap-8">
@@ -123,7 +123,7 @@ Everything You Need to Go from Vision to Valuation
                 </div>
             ))}
             <div
-  className="flex items-center justify-center gap-5 border border-[#DFDEE7] rounded-3xl border-solid bg-center bg-no-repeat text-center p-6"
+  className="flex items-center justify-center gap-5 border border-[#DFDEE7] rounded-3xl border-solid bg-center bg-no-repeat text-center p-4"
   style={{
     background:
       "radial-gradient(187.13% 114.42% at 50% 50%, #B58AE5 0%, #7A35C1 100%)",

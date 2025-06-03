@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 const TooEarly = () => {
   return (
-    <div className="w-full max-w-[96rem] mx-auto px-4 sm:px-6 md:px-8 xl:px-6 py-4 sm:py-6 md:py-8 lg:py-10 xl:py-12 ">
+    <div className="w-full max-w-[96rem] mx-auto px-4 sm:px-7 md:px-10 xl:px-12 py-4 sm:py-6 md:py-8 lg:py-10 xl:py-12 ">
         <div className="bg-[#F5F5F5]  w-full rounded-xl py-16 md:py-20 lg:py-24 xl:py-28 px-5 md:px-8 lg:px-12 lg:rounded-2xl relative overflow-hidden items-center justify-center flex flex-col gap-6 md:gap-7 lg:gap-10">
             <div className="flex flex-col gap-2 md:gap-3 lg:gap-4 xl:gap-5 z-20">
 
