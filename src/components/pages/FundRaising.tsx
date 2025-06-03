@@ -17,6 +17,8 @@ import RealProject from "../elementalComponent/RealProject";
 import Freedom from "../elementalComponent/Freedom";
 import Image from "../elementalComponent/Image";
 import WhyFounder from "../elementalComponent/WhyFounder";
+import Testimonials from "../Testimonials";
+import TooEarly from "../elementalComponent/TooEarly";
 
 const items = [
     {
@@ -143,7 +145,8 @@ Everything You Need to Go from Vision to Valuation
 
    <Image/>
    <WhyFounder/>
-     
+      <Testimonials />
+     <TooEarly/>
 
 
 
