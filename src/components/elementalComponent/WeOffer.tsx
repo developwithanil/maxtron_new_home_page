@@ -1,11 +1,11 @@
 import React from "react";
-import icon1 from "../assets/augmentation/blockchain.svg";
-import icon2 from "../assets/augmentation/Website.svg";
-import icon3 from "../assets/augmentation/mobile.svg";
-import icon4 from "../assets/augmentation/game.svg";
-import icon5 from "../assets/augmentation/fullstack.svg";
-import icon6 from "../assets/augmentation/cloud.svg";
-import icon7 from "../assets/augmentation/ai.svg";
+import icon1 from "../../assets/augmentation/blockchain.svg";
+import icon2 from "../../assets/augmentation/Website.svg";
+import icon3 from "../../assets/augmentation/mobile.svg";
+import icon4 from "../../assets/augmentation/game.svg";
+import icon5 from "../../assets/augmentation/fullstack.svg";
+import icon6 from "../../assets/augmentation/cloud.svg";
+import icon7 from "../../assets/augmentation/ai.svg";
 
 interface CardProps {
   icon: string;

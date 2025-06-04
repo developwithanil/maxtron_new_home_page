@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { partnerItems, DoubleArrowIcon } from "./PartnerData";
-import logo from "../assets/augmentation/EmpanelmentSection/logo.svg";
+import logo from "../../assets/augmentation/EmpanelmentSection/logo.svg";
 
 interface ItemData {
   id: number;

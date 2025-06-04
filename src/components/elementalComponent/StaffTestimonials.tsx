@@ -1,5 +1,5 @@
-import { Verify } from "./VectorImage";
-import TestimonialsCard from "./TestimonialsCard";
+import { Verify } from "../VectorImage";
+import TestimonialsCard from "../TestimonialsCard";
 
 const Testimonials = () => {
   return (

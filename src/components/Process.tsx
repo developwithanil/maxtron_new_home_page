@@ -68,7 +68,7 @@ const Process = () => {
               {step.number}
             </div>
             <div className="flex-grow">
-              <h3 className="text-sm lg:text-lg md:text-lg xl:text-lg  text-[#2A2A2A] mb-1 font-semibold lg:mb-2 font-openSansHebrew">
+              <h3 className="text-sm lg:text-lg md:text-lg xl:text-lg  text-[#2A2A2A] mb-1 font-semibold lg:mb-2 font-lexendDeca">
                 {step.title}
               </h3>
               <p className="text-[#2A2A2A] text-sm sm:text-base">

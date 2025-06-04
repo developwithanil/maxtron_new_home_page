@@ -1,15 +1,15 @@
 import React from "react";
 import augmentation from "../../assets/augmentation.svg";
-import WeOffer from "../WeOffer";
-import WhyChoose from "../WhyChoose";
-import EmpanelmentSection from "../EmpanelmentSection";
-import Profiles from "../Profiles";
-import TimeZone from "../TimeZone";
-import WhoPartner from "../WhoPartner";
+import WeOffer from "../../components/elementalComponent/WeOffer";
+import WhyChoose from "../../components/elementalComponent/WhyChoose";
+import EmpanelmentSection from "../../components/elementalComponent/EmpanelmentSection";
+import TimeZone from "../../components/elementalComponent/TimeZone";
+import WhoPartner from "../../components/elementalComponent/WhoPartner";
 import Process from "../Process";
-import AugmentationFaqs from "../Augmentationfaqs";
-import StaffTestimonials from "../StaffTestimonials";
-import ScheduleFooter from "../ScheduleFooter";
+import Profiles from "../Profiles";
+import AugmentationFaqs from "../../components/elementalComponent/Augmentationfaqs";
+import StaffTestimonials from "../../components/elementalComponent/StaffTestimonials";
+import ScheduleFooter from "../../components/elementalComponent/ScheduleFooter";
 
 const StaffAugmentation: React.FC = () => {
   return (

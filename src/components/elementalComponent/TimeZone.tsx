@@ -1,8 +1,8 @@
-import map from "../assets/augmentation/map.svg";
-import icon1 from "../assets/augmentation/timezone.svg";
-import icon2 from "../assets/augmentation/group.svg";
-import icon3 from "../assets/augmentation/puzzle.svg";
-import pin from "../assets/augmentation/pin.svg";
+import map from "../../assets/augmentation/map.svg";
+import icon1 from "../../assets/augmentation/timezone.svg";
+import icon2 from "../../assets/augmentation/group.svg";
+import icon3 from "../../assets/augmentation/puzzle.svg";
+import pin from "../../assets/augmentation/pin.svg";
 
 const items = [
   { text: "<strong>Timezone-aligned</strong> developers", icon: icon1 },

@@ -17,8 +17,8 @@ const cardsData = [
   {
     id: 2,
     title: "Blockchain Developer",
-    status: "Immediately Available",
-    experience: "5 Years Exp.",
+    status: "Available in 2 Days",
+    experience: "4 Years Exp.",
     timings: "4–6 Hours EST",
     skills: [
       "Solidity, Hardhat, Web3.js, IPFS",
@@ -30,11 +30,11 @@ const cardsData = [
     id: 3,
     title: "Game Developer",
     status: "Available after 1 Week",
-    experience: "5 Years Exp.",
+    experience: "6 Years Exp.",
     timings: "4–6 Hours EST",
     skills: [
-      "Next.js, Redux, Tailwind, GraphQL",
-      "Previously worked with US Fintech Product",
+      "Unity, Photon, Multiplayer Networking",
+      "Portfolio includes 3 shipped games on Play Store",
     ],
   },
 ];
