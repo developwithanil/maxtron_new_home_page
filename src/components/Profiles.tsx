@@ -151,7 +151,7 @@ const Profiles: React.FC = () => {
       <div className="relative z-10 text-center mt-10 md:mt-12 ">
         {" "}
         <Link to="/contact">
-          <button className="bg-[#7A35C1] text-[15px] md:text-[16px] px-6 py-3 sm:px-8 rounded-lg sm:rounded-xl text-white font-openSansHebrew font-medium hover:bg-purple-700 transition-colors">
+          <button className="bg-[#7A35C1] text-[15px] md:text-[16px] px-6 py-3 sm:px-8 rounded-lg sm:rounded-xl text-white font-openSansHebrew font-medium hover:bg-[#682BAF] transition-colors">
             {" "}
             Request for a profile you need
           </button>

@@ -32,10 +32,10 @@ const StaffAugmentation: React.FC = () => {
           <div className="flex flex-col sm:flex-row md:items-start xl:items-start lg:items-start  gap-3 md:gap-4 items-center">
             <a
               href="/contact"
-              className="bg-[#7A35C1] hover:bg-purple-700 text-[#FFFFFF] font-medium 
+              className="bg-[#7A35C1]  text-[#FFFFFF] font-medium 
                          py-3 px-6 sm:px-8 rounded-lg text-sm sm:text-base 
                          transition-colors duration-300 shadow-lg hover:shadow-purple-500/50 
-                         focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 "
+                         focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 hover:bg-[#682BAF]"
             >
               Request Talent
             </a>

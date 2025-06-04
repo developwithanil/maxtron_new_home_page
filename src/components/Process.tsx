@@ -40,7 +40,7 @@ const Process = () => {
 
         <Link
           to="/contact"
-          className="bg-[#7030A0] hover:bg-[#5e2886] text-white font-normal py-3 px-8 rounded-lg text-lg self-center md:self-start transition-colors duration-200"
+          className="bg-[#7030A0] hover:bg-[#682BAF] text-white font-normal py-3 px-8 rounded-lg text-lg self-center md:self-start transition-colors duration-200"
         >
           Request Talent
         </Link>

@@ -32,7 +32,7 @@ const ScheduleFooter = () => {
               onClick={() => {
                 window.open("https://calendly.com/business-maxtron/30min");
               }}
-              className="group  hover:bg-violet-400 border-2 border-white rounded-full 
+              className="group  hover:bg-[#682BAF] border-2 border-white rounded-full 
                        py-3 px-6 sm:px-8 
                        text-sm sm:text-base font-normal 
                        text-[#FFF]
