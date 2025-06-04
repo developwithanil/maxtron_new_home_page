@@ -58,13 +58,13 @@ const items = [
 const FundRaising = () => {
   return (
     <div className="w-full">
-      <div className="w-full max-w-[96rem] mx-auto px-4 sm:px-7 md:px-10 xl:px-12 py-4 sm:py-6 md:py-8 lg:py-10 xl:py-12 ">
+      <div className="w-full max-w-[96rem] mx-auto px-4 sm:px-7 md:px-12 xl:px-14 py-4 sm:py-6 md:py-8 lg:py-10 xl:py-12 ">
         <div className="flex flex-col lg:flex-row gap-5 sm:gap-7 md:gap-9 lg:gap-10">
           {/* Text Content */}
           <div className="flex-1 flex flex-col justify-center items-start px-2 sm:px-3 md:px-4 lg:px-5 xl:px-7 gap-4 md:gap-5 lg:gap-6 xl:gap-8">
             <div className="flex flex-col gap-1 sm:gap-2">
               <h1
-                className="text-transparent bg-clip-text font-openSansHebrew text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-[110%]"
+                className="text-transparent bg-clip-text font-openSansHebrew text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold leading-[110%]"
                 style={{
                   backgroundImage:
                  "linear-gradient(90deg, #2A2A2A 0%, #7A35C1 54.42%)",
@@ -72,12 +72,12 @@ const FundRaising = () => {
               >
                 Raise Capital
               </h1>
-              <h1 className="text-[#2A2A2A] font-openSansHebrew text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-[110%]">
+              <h1 className="text-[#2A2A2A] font-openSansHebrew text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold leading-[110%]">
                 for the Future You're Building
               </h1>
             </div>
 
-            <p className="text-[#3B3C4A] font-openSansHebrew text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-light leading-[160%]">
+            <p className="text-[#2A2A2A] md:text-[20px] xl:text-[20px] lg:text-[20px] sm:text-[14px] leading-relaxed mb-8 sm:mb-12 font-openSansHebrew font-normal">
               We back founders building in <span className="text-[#2A2A2A] font-semibold">Web3, AI, Quantum, and Emerging Tech -</span> with token fundraising, line of credit, legal support, and a global VC network. Now accepting early pitches for Freedom Capital, our upcoming founder-first Web3 fund
             </p>
             <div className="flex flex-col justify-center  gap-2 sm:gap-2.5 w-auto ">
@@ -99,7 +99,8 @@ const FundRaising = () => {
           </div>
         </div>
         <div className="w-full  mt-12 md:mt-16 lg:mt-20 xl:mt-24">
-            <h2 className="text-[#2A2A2A] font-[Switzer] text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-center mt-8 md:mt-10 lg:mt-12 xl:mt-16">
+            <h2 className="text-[#2A2A2A] font-[Switzer]  justify-center   text-xl md:text-3xl
+        lg:text-3xl  font-semibold text-center mt-8 md:mt-10 lg:mt-12 xl:mt-16">
                 What We Do
             </h2>
             <p className="text-center mt-3 lg:mt-4 xl:mt-5 self-stretch text-[#79748A] font-openSansHebrew  text-base md:text-lg lg:text-xl font-normal leading-[160%]">
@@ -117,20 +118,20 @@ Everything You Need to Go from Vision to Valuation
                     alt={item.title}
                     className="w-16 h-16 p-2 bg-[#F5F5F5] rounded-lg"
                 />
-                <h3 className="self-stretch text-[#2A2A2A] font-[Switzer] text-xl lg:text-2xl font-semibold leading-[140%]">
+                <h3 className="self-stretch text-[#2A2A2A] font-[Switzer] text-xl  font-semibold leading-[140%]">
                     {item.title}
                 </h3>
                 </div>
             ))}
             <div
-  className="flex items-center justify-center gap-5 border border-[#DFDEE7] rounded-3xl border-solid bg-center bg-no-repeat text-center p-4"
+  className="flex items-center justify-center gap-2 border border-[#DFDEE7] rounded-3xl border-solid bg-center bg-no-repeat text-center p-4"
   style={{
     background:
       "radial-gradient(187.13% 114.42% at 50% 50%, #B58AE5 0%, #7A35C1 100%)",
   }}
 >
   <img src={whatwedo9} alt="left" className="h-24" />
-  <h3 className="text-white font-[Switzer] text-xl lg:text-2xl font-semibold leading-[140%]">
+  <h3 className="text-white font-[Switzer] text-xl  font-semibold leading-[140%]">
     Trusted by pioneering founders building in 10+ countries.
   </h3>
   <img src={whatwedo10} alt="right" className="h-24" />
@@ -145,7 +146,10 @@ Everything You Need to Go from Vision to Valuation
 
    <Image/>
    <WhyFounder/>
+   <div className="">
+
       <Testimonials />
+   </div>
      <TooEarly/>
 
 

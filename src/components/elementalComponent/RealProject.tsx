@@ -43,11 +43,11 @@ const RealProject = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Left Section */}
         <div className="lg:col-span-4 flex flex-col gap-3 lg:gap-6 mt-3 md:mt-4 lg:mt-5">
-          <h2 className="text-[#2A2A2A] text-start font-[Switzer] font-semibold text-2xl lg:text-3xl xl:text-4xl leading-tight">
+          <h2 className="text-[#2A2A2A] text-start font-[Switzer] font-semibold text-2xl lg:text-3xl xl:text-3xl leading-tight">
             Real Projects We're Backing
           </h2>
           <div>
-            <p className="text-[#79748A] text-base md:text-lg lg:text-xl font-openSansHebrew">
+            <p className="text-[#79748A] text-base md:text-lg  font-openSansHebrew">
               Want to build something radical like this?
             </p>
             <Link

@@ -40,16 +40,16 @@ title:"Liquid + illiquid fundraising options"
 const Freedom = () => {
   return (
     <div className='w-full relative bg-[#7A35C1] pt-6 md:pt-8 lg:pt-12 pb-24 md:pb-30 lg:pb-40 mt-10 md:mt-12 lg:mt-16'>
-      <div className='w-full max-w-[96rem] mx-auto px-4 sm:px-7 md:px-10 xl:px-12'>
+      <div className='w-full max-w-[96rem] mx-auto px-4 sm:px-7 md:px-12 xl:px-14'>
         <div className='flex flex-col lg:flex-row justify-between w-full gap-8'>
           {/* Left Section */}
           <div className='flex flex-col gap-2 md:gap-3 lg:gap-4 w-full lg:w-[30%] leading-relaxed'>
             <h1 className='text-[#FFF] font-[Switzer] text-[24px] lg:text-[32px] font-semibold '>Freedom Capital</h1>
-            <p className='text-[#FFF] font-openSansHebrew text-lg lg:text-xl font-extralight '>
+            <p className='text-[#FFF] font-openSansHebrew text-lg  font-extralight '>
               <span className='font-semibold'>Freedom Capital </span>
               is launching soon — a first-of-its-kind fund for radical builders in <span className='font-semibold'>Web3, AI, DeSci, Quantum & beyond.</span>
             </p>
-            <p className='text-[#FFF] font-openSansHebrew text-base lg:text-lg font-semibold '>
+            <p className='text-[#FFF] font-openSansHebrew text-base  font-semibold '>
               Be the first to pitch. Be the first to raise.
             </p>
           </div>
@@ -58,7 +58,7 @@ const Freedom = () => {
             {items.map((item, index) => (
               <div key={index} className='flex flex-col items-start gap-3 bg-[#F5F5F5] p-4 rounded-xl shadow-sm'>
                 <div>{item.icon}</div>
-                <div className='text-[#2A2A2A] font-[Switzer] text-lg lg:text-xl font-semibold leading-[140%]'>
+                <div className='text-[#2A2A2A] font-[Switzer] text-lg  font-semibold leading-[140%]'>
                   {item.title}
                 </div>
               </div>
