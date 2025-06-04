@@ -75,19 +75,30 @@ const Footer = () => {
               and more in your inbox
             </p>
           </div>
-          <div className="flex-1">
+          <div className="flex flex-row gap-4 md:flex-row lg:flex-row xl:flex-row overflow-hidden">
             <Link to="/Contact">
               <button className="text-sm px-5 py-2 rounded-lg bg-[#F5F5F5] text-[#55308D] hover:text-white hover:bg-transparent border-2 border-solid border-white font-['Open_Sans'] font-bold transition shadow-md">
                 Contact Us
               </button>
             </Link>
+            <button
+              onClick={() =>
+                window.open(
+                  "https://calendly.com/business-maxtron/30min",
+                  "_blank"
+                )
+              }
+              className="text-sm px-5 py-2 rounded-lg bg-[#F5F5F5] text-[#55308D] font-['Open_Sans'] hover:text-white hover:bg-transparent border-2 bprder-solid border-white font-bold transition  shadow-md"
+            >
+              Book a Call
+            </button>
           </div>
         </div>
       </div>
       <div className="bg-[#1D1B33] py-4 mt-8 mx-14 border-t  border-[#FFFFFF33]">
         <div className="container mx-auto px-2 md:px-4 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-[#FFFFFF] mb-4 md:mb-0 text-center md:text-left">
-            © {new Date().getFullYear()} by Maxtron Innovations ©{" "}
+            © {new Date().getFullYear()} by Maxtron Innovations{" "}
             {/* {new Date().getFullYear()} by Maxtron Innovations */}
           </p>
           <div className="flex md:justify-start  mb-4 md:mb-0">

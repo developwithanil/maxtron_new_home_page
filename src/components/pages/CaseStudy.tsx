@@ -18,7 +18,6 @@ import { motion } from "motion/react";
 import { useState } from "react";
 import CasesCard from "../elementalComponent/CasesCard";
 import ContactForm from "../ContactForm";
-import ContactAndSubscribe from "../elementalComponent/ContactAndSubscribe";
 
 const clients = [
   { name: "Mercedes", logo: Mercedes },
@@ -234,7 +233,7 @@ const CaseStudy = () => {
         />
       </div>
       <ContactForm />
-      <ContactAndSubscribe />
+      {/* <ContactAndSubscribe /> */}
     </div>
   );
 };

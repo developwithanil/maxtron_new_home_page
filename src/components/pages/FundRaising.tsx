@@ -1,4 +1,3 @@
-import ContactAndSubscribe from "../elementalComponent/ContactAndSubscribe";
 import fund from "../../assets/case/fund.svg";
 import whatwedo1 from "../../assets/case/whatwedo1.svg";
 import whatwedo2 from "../../assets/case/whatwedo2.svg";
@@ -158,7 +157,7 @@ const FundRaising = () => {
       </div>
       <TooEarly />
 
-      <ContactAndSubscribe />
+      {/* <ContactAndSubscribe /> */}
     </div>
   );
 };

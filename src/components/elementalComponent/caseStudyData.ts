@@ -75,6 +75,7 @@ import gro8mobile from "../../assets/internal/gro8mobile.png";
 import gro8feature from "../../assets/internal/gro8feature.png";
 import voting from "../../assets/internal/voting.svg";
 import gro8bg from "../../assets/internal/gro8bg.svg";
+import goodstandingbg from "../../assets/internal/goodstandingbg.svg";
 
 // import shaperCultHero from "../../assets/internal/shaper1.svg";
 import usablock from "../../assets/internal/usablock.png";
@@ -905,7 +906,7 @@ export const caseStudies: CaseStudy[] = [
     ],
 
     keyFeaturesImage: [gsfeature, gsmobile],
-    bgImage: bg3,
+    bgImage: goodstandingbg,
   },
 
   {
