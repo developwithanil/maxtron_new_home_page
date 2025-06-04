@@ -16,7 +16,7 @@ import RealProject from "../elementalComponent/RealProject";
 import Freedom from "../elementalComponent/Freedom";
 import Image from "../elementalComponent/Image";
 import WhyFounder from "../elementalComponent/WhyFounder";
-import Testimonials from "../Testimonials";
+import StaffTestimonials from "../../components/elementalComponent/StaffTestimonials";
 import TooEarly from "../elementalComponent/TooEarly";
 
 const items = [
@@ -111,7 +111,7 @@ const FundRaising = () => {
             className="text-[#2A2A2A] font-[Switzer]  justify-center   text-xl md:text-3xl
         lg:text-3xl  font-semibold text-center mt-8 md:mt-10 lg:mt-12 xl:mt-16"
           >
-            What We Do
+            What We Offer
           </h2>
           <p className="text-center mt-3 lg:mt-4 xl:mt-5 self-stretch text-[#79748A] font-openSansHebrew  text-base md:text-lg lg:text-xl font-normal leading-[160%]">
             Everything You Need to Go from Vision to Valuation
@@ -154,7 +154,7 @@ const FundRaising = () => {
       <Image />
       <WhyFounder />
       <div className="">
-        <Testimonials />
+        <StaffTestimonials />
       </div>
       <TooEarly />
 

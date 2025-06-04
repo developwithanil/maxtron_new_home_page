@@ -20,6 +20,10 @@ const getStatusTagMeta = (
     if (status === "Immediately Available") {
       mobileBgColor = "#13982014";
       mobileTextColor = "#139820";
+    }
+    if (status === "Available in 2 Days") {
+      mobileBgColor = "#F8C22014";
+      mobileTextColor = "#E7B10E";
     } else if (status === "Available after 1 Week") {
       mobileBgColor = "#F8C22014";
       mobileTextColor = "#E7B10E";
@@ -42,7 +46,7 @@ const getStatusTagMeta = (
         backgroundColor: "#F1550C14",
         textColor: "#F1550C",
       },
-      "Available in 2 days": {
+      "Available in 2 Days": {
         backgroundColor: "#F8C22014",
         textColor: "#E7B10E",
       },
