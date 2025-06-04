@@ -130,9 +130,9 @@ const WhoPartner = () => {
       : null;
 
   return (
-    <section className="p-5 md:p-16 lg:p-16 xl:p-16">
+    <section className="p-5 md:px-32 lg:px-32 xl:px-32 md:py-16 lg:py-16 xl:py-16  ">
       {" "}
-      <div className="container mx-auto ">
+      <div className="">
         <div className="flex flex-col md:flex-row rounded-t-2xl overflow-hidden shadow-xl bg-[#F5F5F5]">
           <div
             className="bg-[#7A35C1] text-white md:w-[40%] lg:w-[50%] w-full p-6 sm:p-8 md:p-10 flex flex-col items-center justify-center text-center rounded-t-[32px]   cursor-pointer order-first h-auto md:min-h-[28rem] lg:min-h-[30rem]"

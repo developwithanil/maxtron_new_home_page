@@ -73,6 +73,9 @@ import gsmobile from "../../assets/internal/gsmobile.png";
 import gro8hero from "../../assets/internal/gro8hero.png";
 import gro8mobile from "../../assets/internal/gro8mobile.png";
 import gro8feature from "../../assets/internal/gro8feature.png";
+import voting from "../../assets/internal/voting.svg";
+import gro8bg from "../../assets/internal/gro8bg.svg";
+import goodstandingbg from "../../assets/internal/goodstandingbg.svg";
 
 // import shaperCultHero from "../../assets/internal/shaper1.svg";
 import usablock from "../../assets/internal/usablock.png";
@@ -769,7 +772,7 @@ export const caseStudies: CaseStudy[] = [
     ],
 
     keyFeaturesImage: [herovote, vote],
-    bgImage: bg3,
+    bgImage: voting,
   },
 
   {
@@ -903,7 +906,7 @@ export const caseStudies: CaseStudy[] = [
     ],
 
     keyFeaturesImage: [gsfeature, gsmobile],
-    bgImage: bg3,
+    bgImage: goodstandingbg,
   },
 
   {
@@ -1009,7 +1012,7 @@ export const caseStudies: CaseStudy[] = [
     ],
 
     keyFeaturesImage: [gro8feature, gro8mobile],
-    bgImage: bg3,
+    bgImage: gro8bg,
   },
   {
     title: "TOKEN LAUNCH",

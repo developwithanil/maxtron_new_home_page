@@ -93,13 +93,13 @@ const Profiles: React.FC = () => {
   const currentCard = cardsData[activeIndex];
 
   return (
-    <div className=" text-[#2A2A2A] p-5 md:p-16 lg:p-16 xl:p-16 font-[Switzer]">
+    <div className=" text-[#2A2A2A] p-5 md:p-16 lg:p-16 xl:p-16 font-[Switzer] max-w-[96rem] mx-auto">
       {" "}
-      <h1 className="text-xl md:text-[32px] text-center font-bold mb-8 md:mb-12">
+      <h1 className=" text-xl md:text-[32px] text-center font-bold mb-8 md:mb-12">
         {" "}
         Sample Developer Profiles from Our Bench
       </h1>
-      <div className="md:hidden flex flex-col items-center">
+      <div className="md:hidden flex flex-col items-center ">
         {cardsData.length > 0 && currentCard && (
           <div className="w-full max-w-sm mb-6">
             {" "}

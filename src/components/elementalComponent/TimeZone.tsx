@@ -2,7 +2,6 @@ import map from "../../assets/augmentation/map.svg";
 import icon1 from "../../assets/augmentation/timezone.svg";
 import icon2 from "../../assets/augmentation/group.svg";
 import icon3 from "../../assets/augmentation/puzzle.svg";
-import pin from "../../assets/augmentation/pin.svg";
 
 const items = [
   { text: "<strong>Timezone-aligned</strong> developers", icon: icon1 },
@@ -24,32 +23,7 @@ const TimeZone = () => {
           <img
             src={map}
             alt="Global presence"
-            className="absolute inset-0  z-0 opacity-20"
-          />
-          <img
-            src={pin}
-            alt="Pin"
-            className="absolute top-[16%] left-[80%] w-4 h-6"
-          />
-          <img
-            src={pin}
-            alt="Pin"
-            className="absolute top-[25%] left-[90%] w-4 h-6"
-          />
-          <img
-            src={pin}
-            alt="Pin"
-            className="absolute top-[40%] left-[85%] w-4 h-6"
-          />
-          <img
-            src={pin}
-            alt="Pin"
-            className="absolute top-[45%] left-[75%] w-4 h-6"
-          />
-          <img
-            src={pin}
-            alt="Pin"
-            className="absolute top-[62%] left-[82%] w-4 h-6"
+            className="absolute inset-0  z-0 "
           />
 
           <div className="relative z-10 p-4 sm:p-8 md:p-8 max-w-[85%]">

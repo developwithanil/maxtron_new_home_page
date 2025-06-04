@@ -8,7 +8,6 @@ import CaseStudies from "../CaseStudies";
 import Gallery from "../Gallery";
 import Testimonials from "../Testimonials";
 import ContactForm from "../ContactForm";
-import ContactAndSubscribe from "../elementalComponent/ContactAndSubscribe";
 
 const NewHomePage = () => {
   return (
@@ -23,7 +22,7 @@ const NewHomePage = () => {
       <Gallery />
       <Testimonials />
       <ContactForm />
-      <ContactAndSubscribe />
+      {/* <ContactAndSubscribe /> */}
     </div>
   );
 };

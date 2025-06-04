@@ -1,5 +1,5 @@
 import React from "react";
-import augmentation from "../../assets/augmentation.svg";
+import augmentation from "../../assets/augmentation.png";
 import WeOffer from "../../components/elementalComponent/WeOffer";
 import WhyChoose from "../../components/elementalComponent/WhyChoose";
 import EmpanelmentSection from "../../components/elementalComponent/EmpanelmentSection";
@@ -14,9 +14,15 @@ import ScheduleFooter from "../../components/elementalComponent/ScheduleFooter";
 const StaffAugmentation: React.FC = () => {
   return (
     <>
-      <div className="w-full text-white flex flex-col lg:flex-row lg:items-center pt-5 px-6 sm:px-10 md:px-16 lg:pl-12 xl:pl-20 2xl:pl-32 lg:pr-8 xl:pr-12">
-        <div className="w-full lg:w-[58%] xl:w-[60%] 2xl:w-[55%] flex flex-col justify-center  md:py-0 py-5 pt-5">
-          <h1 className="text-[#2A2A2A] text-2xl md:text-5xl lg:text-5xl xl:text-5xl mb-0 md:mb-5 font-semibold">
+      <div className="w-full text-white flex flex-col lg:flex-row lg:items-center pt-5 px-6 sm:px-10 md:px-16 lg:pl-12 xl:pl-20 2xl:pl-32 lg:pr-8 xl:pr-12 max-w-[96rem] mx-auto">
+        <div className="w-full lg:w-[58%] xl:w-[60%] 2xl:w-[55%] flex flex-col justify-center  md:py-0 py-5 pt-5 ">
+          <h1
+            className="text-transparent bg-clip-text font-openSansHebrew text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-[110%] pb-2"
+            style={{
+              backgroundImage:
+                "linear-gradient(90deg, #2A2A2A 0%, #7A35C1 54.42%)",
+            }}
+          >
             Plug-and-Play
           </h1>
 
@@ -61,6 +67,7 @@ const StaffAugmentation: React.FC = () => {
             className="w-full h-full object-cover"
             style={{
               clipPath: "ellipse(140% 75% at 110% 50%)",
+              filter: "grayscale(100%)",
             }}
           />
         </div>

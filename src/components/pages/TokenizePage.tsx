@@ -1,4 +1,3 @@
-import ContactAndSubscribe from "../elementalComponent/ContactAndSubscribe";
 import tokenize1 from "../../assets/case/tokenize1.png";
 import tokenize2 from "../../assets/case/tokenize2.png";
 import WhyTokenize from "../elementalComponent/WhyTokenize";
@@ -81,7 +80,7 @@ const TokenizePage = () => {
       <WhoisworkingwithUs />
       <Faqs />
       <LastComponent />
-      <ContactAndSubscribe />
+      {/* <ContactAndSubscribe /> */}
     </div>
   );
 };

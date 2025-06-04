@@ -20,6 +20,10 @@ const getStatusTagMeta = (
     if (status === "Immediately Available") {
       mobileBgColor = "#13982014";
       mobileTextColor = "#139820";
+    }
+    if (status === "Available in 2 Days") {
+      mobileBgColor = "#F8C22014";
+      mobileTextColor = "#E7B10E";
     } else if (status === "Available after 1 Week") {
       mobileBgColor = "#F8C22014";
       mobileTextColor = "#E7B10E";
@@ -39,10 +43,13 @@ const getStatusTagMeta = (
         textColor: "#139820",
       },
       "Available after 1 Week": {
+        backgroundColor: "#F1550C14",
+        textColor: "#F1550C",
+      },
+      "Available in 2 Days": {
         backgroundColor: "#F8C22014",
         textColor: "#E7B10E",
       },
-      "Not Available": { backgroundColor: "#FF5C5C", textColor: "#FFFFFF" },
     };
     const matchedStyle = desktopStyles[status] || {
       backgroundColor: "#E0E0E0",
@@ -69,7 +76,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
   const statusTag = getStatusTagMeta(status, isMobileView);
 
-  const cardContainerBaseClasses = "w-full max-w-sm ";
+  const cardContainerBaseClasses = "w-full ";
 
   const cardContainerViewClasses = isMobileView
     ? " rounded-xl border border-[#DFDEE7] p-4 text-white font-[Switzer]"
