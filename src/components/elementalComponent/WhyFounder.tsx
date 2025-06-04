@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const WhyFounder = () => {
   return (
-    <div className="w-full max-w-[96rem] mx-auto px-4 sm:px-7 md:px-10 xl:px-12 py-4 sm:py-6 md:py-8 lg:py-10 xl:py-12">
+    <div className="w-full max-w-[96rem] mx-auto px-4 sm:px-7 md:px-12 xl:px-14 py-4 sm:py-6 md:py-8 lg:py-10 xl:py-12 mt-4 md:mt-6 lg:mt-8">
       <div className="grid grid-cols-1 lg:grid-cols-12  gap-3 md:gap-5  lg:gap-6">
         {/* Left Section */}
         <div className="lg:col-span-4 flex flex-col gap-3 lg:gap-6 ">
-          <h2 className="text-[#2A2A2A] text-start font-[Switzer] font-semibold text-2xl lg:text-3xl xl:text-4xl leading-tight">
+          <h2 className="text-[#2A2A2A] text-start font-[Switzer] font-semibold text-2xl lg:text-3xl xl:text-3xl leading-tight">
             Why Founders Choose Us
           </h2>
           <div className="flex flex-col justify-center  gap-2 sm:gap-2.5 w-fit ">
