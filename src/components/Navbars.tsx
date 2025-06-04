@@ -61,6 +61,7 @@ const dropdownContentData = {
         link: "https://experiences.maxtron.ai/",
       },
       { name: "Business Enhancement", link: "/services" },
+      { name: "Staff Augmentation", link: "/staff-augmentation" },
       { name: "Fund Raising", link: "/fund-raising" },
     ],
   },
