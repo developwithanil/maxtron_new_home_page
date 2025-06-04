@@ -145,7 +145,7 @@ const WhyChoose: React.FC = () => {
   const maxtronStaticBorderColor = "border-[#7A35C1]";
   const maxtronHeaderTextHoverColor = "text-[#7A35C1]";
   const columnHoverHeaderTextColor = "text-[#7A35C1]";
-  const rowBottomBorder = "border-gray-700";
+  const rowBottomBorder = "border-[#DFDEE7]";
 
   const handleColumnEnter = (colIndex: number) => {
     setHoveredColumnIndex(colIndex);
@@ -202,7 +202,7 @@ const WhyChoose: React.FC = () => {
 
   return (
     <div
-      className=" text-[#2A2A2A]  font-normal font-[Switzer]  p-5 md:p-12 lg:p-16 xl:p-16"
+      className=" text-[#2A2A2A]  font-normal font-[Switzer]  p-5 md:p-12 lg:p-16 xl:p-16 max-w-[96rem]  mx-auto"
       onMouseLeave={handleColumnLeave}
     >
       <div className="mx-auto">
@@ -243,7 +243,7 @@ const WhyChoose: React.FC = () => {
               className={`relative border-b ${rowBottomBorder} last:border-b-transparent`}
             >
               <div
-                className={`grid ${gridColsBase} ${gridColsSm} ${gridColsMd} items-center font-normal font-[Switzer]   text-xs sm:text-xs md:text-lg`}
+                className={`grid ${gridColsBase} ${gridColsSm} ${gridColsMd} items-center font-normal font-[Switzer] text-[#292929]   text-xs sm:text-xs md:text-lg`}
               >
                 {[row.feature, row.inHouse, row.freelancers, row.maxtron].map(
                   (cellData, colIndex) => (
@@ -265,8 +265,8 @@ const WhyChoose: React.FC = () => {
                                md:px-[calc(0.75rem+1px)] md:py-[calc(0.875rem+1px)]
                                lg:px-[calc(1rem+1px)] lg:py-[calc(1.125rem+1px)] z-10 relative`
                             : colIndex === 0
-                            ? "text-[#2A2A2A] font-semibold"
-                            : "text-[#2A2A2A]"
+                            ? "text-[#2A2A2A] font-semibold "
+                            : "text-[#292929]"
                         }
                         ${getColumnBorderClasses(
                           colIndex,

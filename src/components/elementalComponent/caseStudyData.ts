@@ -73,6 +73,7 @@ import gsmobile from "../../assets/internal/gsmobile.png";
 import gro8hero from "../../assets/internal/gro8hero.png";
 import gro8mobile from "../../assets/internal/gro8mobile.png";
 import gro8feature from "../../assets/internal/gro8feature.png";
+import voting from "../../assets/internal/voting.svg";
 
 // import shaperCultHero from "../../assets/internal/shaper1.svg";
 import usablock from "../../assets/internal/usablock.png";
@@ -769,7 +770,7 @@ export const caseStudies: CaseStudy[] = [
     ],
 
     keyFeaturesImage: [herovote, vote],
-    bgImage: bg3,
+    bgImage: voting,
   },
 
   {

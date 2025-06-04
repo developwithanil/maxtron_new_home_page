@@ -198,9 +198,9 @@ const WhoMaxtron = () => {
   return (
     <section
       id="about-us"
-      className="relative py-4 md:py-8 lg:py-11 xl:py-12 bg-white"
+      className="relative py-4 md:py-8 lg:py-11 xl:py-12 bg-white max-w-[96rem] mx-auto"
     >
-      <div className="p-4 text-center">
+      <div className="p-4 text-center ">
         <p className=" text-xs md:text-sm flex items-center justify-center text-center text-[#7A35C1] mb-1">
           {" "}
           <Verify /> ENTERPRISE-GRADE SOLUTIONS{" "}

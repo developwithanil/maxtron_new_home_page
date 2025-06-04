@@ -1,11 +1,12 @@
-
 import React, { FormEvent } from "react";
 
 interface MoreCaseStudiesProps {
   setShowMoreCaseStudies: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const MoreCaseStudies: React.FC<MoreCaseStudiesProps> = ({ setShowMoreCaseStudies }) => {
+const MoreCaseStudies: React.FC<MoreCaseStudiesProps> = ({
+  setShowMoreCaseStudies,
+}) => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setShowMoreCaseStudies(false);
@@ -32,7 +33,6 @@ const MoreCaseStudies: React.FC<MoreCaseStudiesProps> = ({ setShowMoreCaseStudie
                 name="fullName"
                 className="w-full p-3 border border-gray-300 rounded-lg placeholder-bg"
                 placeholder="Name"
-
               />
             </div>
             <div className="mb-4">
@@ -48,7 +48,6 @@ const MoreCaseStudies: React.FC<MoreCaseStudiesProps> = ({ setShowMoreCaseStudie
                 name="email"
                 className="w-full p-3 border items-start border-gray-300 rounded-lg placeholder-bg"
                 placeholder="Email"
-
               />
             </div>
             <div className="mb-4">

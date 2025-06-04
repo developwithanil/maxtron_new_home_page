@@ -96,7 +96,7 @@ const Pride = () => {
       id="pride-in-numbers"
       className="relative md:py-16 lg:py-20 text-center"
     >
-      <div className="container mx-auto p-5 md:p-4 lg:p-4 xl:p-4 px-4">
+      <div className="max-w-[96rem] mx-auto p-5 md:p-4 lg:p-4 xl:p-4 px-4">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2A2A2A] mb-10 md:mb-14">
           We Take Pride In Our Numbers
         </h2>

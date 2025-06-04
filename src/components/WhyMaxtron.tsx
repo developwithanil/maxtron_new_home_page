@@ -16,7 +16,7 @@ const WhyMaxtron = () => {
   return (
     <section
       id="about-us"
-      className="relative py-4 md:py-8 lg:py-11 xl:py-12 inset-0  text-center"
+      className="relative py-4 md:py-8 lg:py-11 xl:py-12 inset-0  text-center "
     >
       <div>
         <div className="p-4 ">

@@ -59,7 +59,7 @@ const AugmentationFaqs = () => {
   };
 
   return (
-    <div className="w-full max-w-[96rem] mx-auto flex flex-col gap-6 md:gap-9 lg:gap-12 px-4 sm:px-6 lg:px-10 p-5 md:p-16 lg:p-16 xl:p-16">
+    <div className=" w-full max-w-[96rem] mx-auto flex flex-col gap-6 md:gap-9 lg:gap-12 px-4 sm:px-6 lg:px-10 p-5 md:p-16 lg:p-16 xl:p-16">
       <h2 className="text-center  text-[#2A2A2A] font-[Switzer] text-3xl lg:text-3xl xl:text-3xl font-black leading-tight tracking-tight mb-2 ">
         Frequently Asked Questions
       </h2>
