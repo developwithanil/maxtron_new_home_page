@@ -1,7 +1,7 @@
-import whyus1 from "../../assets/case/whyus1.png";
-import whyus2 from "../../assets/case/whyus2.png";
-import whyus3 from "../../assets/case/whyus3.png";
-import whyus4 from "../../assets/case/whyus4.png";
+import whyus1 from "../../assets/case/whyus1.webp";
+import whyus2 from "../../assets/case/whyus2.webp";
+import whyus3 from "../../assets/case/whyus3.webp";
+import whyus4 from "../../assets/case/whyus4.webp";
 
 const items = [
   {

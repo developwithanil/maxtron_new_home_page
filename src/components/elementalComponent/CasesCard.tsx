@@ -1,17 +1,17 @@
 import { useNavigate } from "react-router-dom";
-import img1 from "../../assets/case/case1.svg";
-import img3 from "../../assets/case/case3.svg";
-import img2 from "../../assets/case/case2.svg";
-import img4 from "../../assets/case/case4.svg";
-import img5 from "../../assets/case/case5.svg";
-import img6 from "../../assets/case/case6.svg";
-import img8 from "../../assets/case/case8.svg";
-import img9 from "../../assets/case/case9.svg";
-import img10 from "../../assets/case/case10.svg";
-import caseulalo from "../../assets/case/caseulalo.svg";
-import iccaCase from "../../assets/case/iccaCase.svg";
-import Tawuniyacase from "../../assets/case/Tawuniyacase.svg";
-import tokencase from "../../assets/case/tokencase.svg";
+import img1 from "../../assets/case/img1.webp";
+import img3 from "../../assets/case/img3.webp";
+import img2 from "../../assets/case/img2.webp";
+import img4 from "../../assets/case/img4.webp";
+import img5 from "../../assets/case/img5.webp";
+import img6 from "../../assets/case/img6.webp";
+import img8 from "../../assets/case/img8.webp";
+import img9 from "../../assets/case/img9.webp";
+import img10 from "../../assets/case/img10.webp";
+import caseulalo from "../../assets/case/caseulalo.webp";
+import iccaCase from "../../assets/case/iccaCase.webp";
+import Tawuniyacase from "../../assets/case/Tawuniyacase.webp";
+import tokencase from "../../assets/case/tokencase.webp";
 import { useState } from "react";
 
 const caseStudyData = [

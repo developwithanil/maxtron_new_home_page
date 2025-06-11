@@ -1,4 +1,4 @@
-import tokenize1 from "../../assets/case/tokenize1.png";
+import { Tokenize1 } from "../VectorImage";
 import tokenize2 from "../../assets/case/tokenize2.png";
 import WhyTokenize from "../elementalComponent/WhyTokenize";
 import AllCrpto from "../elementalComponent/AllCrpto";
@@ -12,15 +12,11 @@ import LastComponent from "../elementalComponent/LastComponent";
 const TokenizePage = () => {
   return (
     <div className="w-full flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 mt-2 mb-4 relative">
-      <div className='flex w-full max-w-[96rem] mx-auto flex-col h-[25rem] sm:h-[29rem] md:h-[32rem] lg:h-[38rem] xl:h-[40rem] justify-center items-start [background:linear-gradient(0deg,rgba(0,0,0,0.40)_0%,rgba(0,0,0,0.40)_100%),url("./assets/case/tokenize.png")_lightgray_50%_/_cover_no-repeat]'>
+      <div className='flex w-full max-w-[96rem] mx-auto flex-col h-[25rem] sm:h-[29rem] md:h-[32rem] lg:h-[38rem] xl:h-[40rem] justify-center items-start [background:linear-gradient(0deg,rgba(0,0,0,0.40)_0%,rgba(0,0,0,0.40)_100%),url("./assets/case/tokenize.webp")_lightgray_50%_/_cover_no-repeat]'>
         <div className="w-full px-10 lg:px-16 xl:px-40 flex flex-col gap-4 md:gap-6 lg:gap-9">
           <div className="w-full max-w-[88rem] flex flex-col lg:flex-row gap-1 md:gap-2 lg:gap-3 items-start">
             <div className="flex justify-between items-center gap-2 lg:gap-3 shrink-0 bg-[#FFF] backdrop-blur-[3.1999998092651367px] py-2 pl-4 pr-6 rounded-[30.72px]">
-              <img
-                src={tokenize1}
-                alt="us security"
-                className="w-[28px] md:w-[45px] h-[28px] md:h-[45px]"
-              />
+              <Tokenize1 />
               <div className="flex flex-col gap-1">
                 <p className='text-[12px] lg:text-base font-["Switzer"]'>
                   U.S. Securities and Exchange

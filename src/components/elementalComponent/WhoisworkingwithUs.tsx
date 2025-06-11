@@ -1,43 +1,30 @@
-
-
 const categories = [
   {
-    title: 'Asset managers',
+    title: "Asset managers",
     items: [
-      'Funds',
-      'Private equity & VC',
-      'Investment banking',
-      'Real estate',
-      'Art & collectibles',
+      "Funds",
+      "Private equity & VC",
+      "Investment banking",
+      "Real estate",
+      "Art & collectibles",
     ],
   },
   {
-    title: 'Issuers',
-    items: [
-      'Start-up founders',
-      'Non-profits',
-      'Enterprise',
-      'Corporations',
-    ],
+    title: "Issuers",
+    items: ["Start-up founders", "Non-profits", "Enterprise", "Corporations"],
   },
   {
-    title: 'Industry',
-    items: [
-      'Music',
-      'Film',
-      'Tech',
-      'Finance',
-      'Gaming',
-    ],
+    title: "Industry",
+    items: ["Music", "Film", "Tech", "Finance", "Gaming"],
   },
   {
-    title: 'Crypto',
+    title: "Crypto",
     items: [
-      'Blockchains',
-      'Decentralized Finance',
-      'Infrastructure',
-      'Decentralized Apps',
-      'NFTs',
+      "Blockchains",
+      "Decentralized Finance",
+      "Infrastructure",
+      "Decentralized Apps",
+      "NFTs",
     ],
   },
 ];
@@ -52,7 +39,9 @@ const WhoisworkingwithUs = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 w-[90%] mx-auto">
         {categories.map((category, index) => (
           <div key={index}>
-            <h3 className="shrink-0 self-stretch text-[#2A2A2A] font-[Switzer] text-lg lg:text-2xl font-semibold leading-[30px] tracking-[-0.48px] mb-4">{category.title}</h3>
+            <h3 className="shrink-0 self-stretch text-[#2A2A2A] font-[Switzer] text-lg lg:text-2xl font-semibold leading-[30px] tracking-[-0.48px] mb-4">
+              {category.title}
+            </h3>
             <ul className="flex flex-col gap-2">
               {category.items.map((item, idx) => (
                 <li

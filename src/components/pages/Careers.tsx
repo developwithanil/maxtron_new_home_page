@@ -1,4 +1,4 @@
-import career from "../../../src/assets/career.png";
+import career from "../../../src/assets/career.webp";
 
 import FormTalent from "../FormTalent";
 import { changer, connection, rightIcon } from "../VectorImage";

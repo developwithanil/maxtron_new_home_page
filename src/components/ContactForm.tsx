@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { useLocation } from "react-router-dom";
-import ContactImg from "../../public/formimg.svg";
+import ContactImg from "../../public/formimg.webp";
 
 import "../page.css";
 import { ToastContainer, toast } from "react-toastify";

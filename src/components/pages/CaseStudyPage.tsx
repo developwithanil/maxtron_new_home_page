@@ -1,13 +1,13 @@
 import { useNavigate } from "react-router-dom";
-import img1 from "../../assets/case/case1.png";
-import img3 from "../../assets/case/case3.png";
-import img2 from "../../assets/case/case2.png";
-import img4 from "../../assets/case/case4.png";
-import img5 from "../../assets/case/case5.png";
-import img6 from "../../assets/case/case6.png";
-import img8 from "../../assets/case/case8.png";
-import img9 from "../../assets/case/case9.png";
-import img10 from "../../assets/case/case10.png";
+import img1 from "../../assets/case/img1.webp";
+import img3 from "../../assets/case/img3.webp";
+import img2 from "../../assets/case/img2.webp";
+import img4 from "../../assets/case/img4.webp";
+import img5 from "../../assets/case/img5.webp";
+import img6 from "../../assets/case/img6.webp";
+import img8 from "../../assets/case/img8.webp";
+import img9 from "../../assets/case/img9.webp";
+import img10 from "../../assets/case/img10.webp";
 
 import ContactForm from "../ContactForm";
 import MoreCaseStudies from "./MoreCaseStudies";
