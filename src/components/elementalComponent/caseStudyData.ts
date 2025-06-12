@@ -1,6 +1,6 @@
 import { CaseStudy } from "./types";
 
-import hero from "../../assets/internal/hero.png";
+import hero from "../../assets/internal/hero.webp";
 import mysql from "../../assets/internal/mysql.svg";
 import python from "../../assets/internal/Python.png";
 import fastapi from "../../assets/internal/fastapi.png";
@@ -21,7 +21,7 @@ import tawuniya3 from "../../assets/internal/tawuniya5.png";
 import tawuniyanew1 from "../../assets/internal/tawuniyanew1.png";
 import tawuniyanew2 from "../../assets/internal/tawuniyanew2.png";
 import ulalo2 from "../../assets/internal/ulalo2.png";
-import ulalobg from "../../assets/internal/ulalobg.jpg";
+import ulalobg from "../../assets/internal/ulalobg.webp";
 import icca1 from "../../assets/internal/icca1.png";
 import icca2 from "../../assets/internal/icca2.png";
 
@@ -29,8 +29,8 @@ import chrome from "../../assets/internal/chrome.png";
 import Pc from "../../assets/internal/Pc.png";
 import toolkit from "../../assets/internal/toolkit.png";
 import ulaloprocess from "../../assets/internal/ulaloprocess.png";
-import tawuniyamain from "../../assets/internal/tawuniyamain.png";
-import ulalomain from "../../assets/internal/ulalomain.png";
+import tawuniyamain from "../../assets/internal/tawuniyamain.webp";
+import ulalomain from "../../assets/internal/ulalomain.webp";
 import Webcam from "../../assets/internal/Webcam.png";
 import meta from "../../assets/internal/meta.png";
 import tawuniyabg from "../../assets/internal/tawuniya.jpg";
@@ -47,7 +47,7 @@ import OpenZeppelin from "../../assets/internal/OpenZeppelin.svg";
 import sequelize from "../../assets/internal/sequelize.svg";
 import figma from "../../assets/internal/figma.svg";
 import react from "../../assets/internal/react.svg";
-import casestudy1bg from "../../assets/internal/casestudy1bg.png";
+import casestudy1bg from "../../assets/internal/casestudy1bg.webp";
 import mongodb from "../../assets/internal/mongodb.png";
 import talwindcss from "../../assets/internal/talwindcss.png";
 import js from "../../assets/internal/js.png";
@@ -65,26 +65,26 @@ import iccabg from "../../assets/internal/iccabg.jpg";
 import process from "../../assets/internal/process.png";
 
 // import bgimage2 from "../../assets/internal/bgimage2.png";
-import bg2 from "../../assets/internal/bg2.png";
-import bg3 from "../../assets/internal/ludo.jpg";
-import bg4 from "../../assets/internal/bg4.png";
+import bg2 from "../../assets/internal/bg2.webp";
+import bg3 from "../../assets/internal/bg3.webp";
+import bg4 from "../../assets/internal/bg4.webp";
 import mobile from "../../assets/internal/mobile.png";
 import gsmobile from "../../assets/internal/gsmobile.png";
 import gro8hero from "../../assets/internal/gro8hero.png";
 import gro8mobile from "../../assets/internal/gro8mobile.png";
 import gro8feature from "../../assets/internal/gro8feature.png";
-import voting from "../../assets/internal/voting.svg";
-import gro8bg from "../../assets/internal/gro8bg.svg";
-import goodstandingbg from "../../assets/internal/goodstandingbg.svg";
+import voting from "../../assets/internal/voting.webp";
+import gro8bg from "../../assets/internal/gro8bg.webp";
+import goodstandingbg from "../../assets/internal/goodstandingbg.webp";
 
 // import shaperCultHero from "../../assets/internal/shaper1.svg";
-import usablock from "../../assets/internal/usablock.png";
+import usablock from "../../assets/internal/usablock.webp";
 import vote from "../../assets/internal/vote.png";
 import herovote from "../../assets/internal/herovote.png";
-import shaper2 from "../../assets/internal/shaper2.png";
+import shaper2 from "../../assets/internal/shaper2.webp";
 // import shapercut from "../../assets/internal/shapercut.svg";
 // import shaper from "../../assets/internal/shaper.png";
-import shaperCultMobile from "../../assets/internal/shaper2.svg";
+import shaperCultMobile from "../../assets/internal/shaper2.webp";
 import typescript from "../../assets/internal/typescript.svg";
 import shaperCultLogo from "../../assets/internal/shaper3.svg";
 import aws from "../../assets/internal/aws.svg";
@@ -94,7 +94,7 @@ import gsfeature from "../../assets/internal/gsfeature.png";
 import ludoafterherosection from "../../assets/internal/ludoafterherosection.png";
 
 import tailwind from "../../assets/internal/tailwind.svg";
-import hyper1 from "../../assets/internal/hyper1.svg";
+import hyper1 from "../../assets/internal/hyper1.webp";
 import hyper2 from "../../assets/internal/hyper2.svg";
 import hyper3 from "../../assets/internal/hyper3.svg";
 import create1 from "../../assets/internal/create1.svg";
@@ -103,7 +103,7 @@ import create3 from "../../assets/internal/create3.svg";
 import dial1 from "../../assets/internal/dial1.svg";
 import dial2 from "../../assets/internal/dial2.svg";
 import dial3 from "../../assets/internal/dial3.svg";
-import web31 from "../../assets/internal/web31.svg";
+import web31 from "../../assets/internal/web31.webp";
 import web32 from "../../assets/internal/web32.svg";
 import web33 from "../../assets/internal/web33.svg";
 
@@ -201,7 +201,6 @@ export const caseStudies: CaseStudy[] = [
       "Leader Board for Tournaments",
       "NFT Integrated with Leaderboard System Development (Top Winners to Get NFTs Minted)",
     ],
-
     keyFeaturesImage: [mobile, mobile],
     bgImage: bg3,
   },
