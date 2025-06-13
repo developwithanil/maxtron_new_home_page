@@ -1,12 +1,12 @@
-import fund from "../../assets/case/fund.svg";
-import whatwedo1 from "../../assets/case/whatwedo1.svg";
-import whatwedo2 from "../../assets/case/whatwedo2.svg";
-import whatwedo3 from "../../assets/case/whatwedo3.svg";
-import whatwedo4 from "../../assets/case/whatwedo4.svg";
-import whatwedo5 from "../../assets/case/whatwedo5.svg";
-import whatwedo6 from "../../assets/case/whatwedo6.svg";
-import whatwedo7 from "../../assets/case/whatwedo7.svg";
-import whatwedo8 from "../../assets/case/whatwedo8.svg";
+import fund from "../../assets/case/fund.webp";
+import { whatwedo1 } from "../../components/VectorImage";
+import { whatwedo2 } from "../../components/VectorImage";
+import { whatwedo3 } from "../../components/VectorImage";
+import { whatwedo4 } from "../../components/VectorImage";
+import { whatwedo5 } from "../../components/VectorImage";
+import { whatwedo6 } from "../../components/VectorImage";
+import { whatwedo7 } from "../../components/VectorImage";
+import { whatwedo8 } from "../../components/VectorImage";
 import whatwedo9 from "../../assets/case/whatwedo9.svg";
 import whatwedo10 from "../../assets/case/whatwedo10.svg";
 
@@ -121,11 +121,9 @@ const FundRaising = () => {
                 key={index}
                 className="flex flex-col items-start gap-5 border border-[#DFDEE7] p-4 rounded-3xl border-solid"
               >
-                <img
-                  src={item.icon}
-                  alt={item.title}
-                  className="w-16 h-16 p-2 bg-[#F5F5F5] rounded-lg"
-                />
+                <div className="w-16 h-16 p-2 bg-[#F5F5F5] rounded-lg">
+                  <item.icon />
+                </div>
                 <h3 className="self-stretch text-[#2A2A2A] font-[Switzer] text-xl  font-semibold leading-[140%]">
                   {item.title}
                 </h3>

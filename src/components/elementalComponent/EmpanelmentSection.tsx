@@ -2,11 +2,11 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
-import Banking from "../../assets/augmentation/EmpanelmentSection/Banking.svg";
-import Retail from "../../assets/augmentation/EmpanelmentSection/Retail.svg";
-import Gaming from "../../assets/augmentation/EmpanelmentSection/Gaming.svg";
-import SaaS from "../../assets/augmentation/EmpanelmentSection/SaaS.svg";
-import Healthcare from "../../assets/augmentation/EmpanelmentSection/healthcare.svg";
+import Banking from "../../assets/augmentation/EmpanelmentSection/Banking.webp";
+import Retail from "../../assets/augmentation/EmpanelmentSection/Retail.webp";
+import Gaming from "../../assets/augmentation/EmpanelmentSection/Gaming.webp";
+import SaaS from "../../assets/augmentation/EmpanelmentSection/SaaS.webp";
+import Healthcare from "../../assets/augmentation/EmpanelmentSection/healthcare.webp";
 
 interface Industry {
   id: number;

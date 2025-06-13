@@ -1,17 +1,17 @@
 import map from "../../assets/augmentation/map.svg";
-import icon1 from "../../assets/augmentation/timezone.svg";
-import icon2 from "../../assets/augmentation/group.svg";
-import icon3 from "../../assets/augmentation/puzzle.svg";
+import { timezone } from "../../components/VectorImage";
+import { communication } from "../../components/VectorImage";
+import { agile } from "../../components/VectorImage";
 
 const items = [
-  { text: "<strong>Timezone-aligned</strong> developers", icon: icon1 },
+  { text: "<strong>Timezone-aligned</strong> developers", icon: timezone },
   {
     text: "<strong>Clear</strong> communication and English <strong>proficiency</strong>",
-    icon: icon2,
+    icon: communication,
   },
   {
     text: "<strong>Cultural</strong> fit and <strong>agile</strong> process readiness",
-    icon: icon3,
+    icon: agile,
   },
 ];
 
@@ -51,11 +51,7 @@ const TimeZone = () => {
               className="bg-[#F5F5F5] rounded-xl p-4 lg:p-5 flex flex-col items-start gap-2"
             >
               <div className="flex items-center justify-center w-8 h-8">
-                <img
-                  src={item.icon}
-                  alt={`Icon for ${item.text}`}
-                  className="w-full h-full object-contain"
-                />
+                <item.icon />
               </div>
               <div
                 className="text-[#2A2A2A] font-[Switzer] font-medium text-base lg:text-lg"

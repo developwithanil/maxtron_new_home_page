@@ -1,5 +1,5 @@
 import React from "react";
-import augmentation from "../../assets/augmentation.png";
+import augmentation from "../../assets/augmentation/augmentation.webp";
 import WeOffer from "../../components/elementalComponent/WeOffer";
 import WhyChoose from "../../components/elementalComponent/WhyChoose";
 import EmpanelmentSection from "../../components/elementalComponent/EmpanelmentSection";

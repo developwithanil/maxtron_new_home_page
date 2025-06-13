@@ -1,66 +1,72 @@
 import { CaseStudy } from "./types";
-
 import hero from "../../assets/internal/hero.webp";
-import mysql from "../../assets/internal/mysql.svg";
-import python from "../../assets/internal/Python.png";
-import fastapi from "../../assets/internal/fastapi.png";
-import zoho from "../../assets/internal/Zoho.png";
-import LLM from "../../assets/internal/LLM.png";
-import google from "../../assets/internal/google.png";
-import Unity from "../../assets/internal/Unity.png";
-import chatgpt from "../../assets/internal/chatgpt.png";
-import vr from "../../assets/internal/vr.png";
-import Headset from "../../assets/internal/Headset.png";
-import tokennew1 from "../../assets/internal/tokennew1.png";
-import tokennew2 from "../../assets/internal/tokennew2.png";
-import tokennew3 from "../../assets/internal/tokennew3.png";
-import tokennew4 from "../../assets/internal/tokennew4.png";
-import ulalo1 from "../../assets/internal/ulalo1.png";
-import tawuniya3 from "../../assets/internal/tawuniya5.png";
 
-import tawuniyanew1 from "../../assets/internal/tawuniyanew1.png";
-import tawuniyanew2 from "../../assets/internal/tawuniyanew2.png";
-import ulalo2 from "../../assets/internal/ulalo2.png";
+import {
+  Mysql,
+  Python,
+  FastApi,
+  Zoho,
+  LLM,
+  web3,
+  typescript,
+  aws,
+  Unity,
+  PC,
+  toolkit,
+  webcam,
+  Google,
+  meta,
+  Mic,
+  av,
+  vectordatabase,
+  php,
+  nest,
+  db,
+  nodejs,
+  solidity,
+  js,
+  OpenZeppelin,
+  sequelize,
+  figma,
+  react,
+  mongodb,
+  talwindcss,
+  qr,
+  Chatgpt,
+  vr,
+  Headset,
+  Either,
+  cicd,
+  firebase,
+  jest,
+  Chrome,
+} from "../../components/VectorImage";
+
+import tokennew1 from "../../assets/internal/tokennew1.webp";
+import tokennew2 from "../../assets/internal/tokennew2.webp";
+import tokennew3 from "../../assets/internal/tokennew3.webp";
+import tokennew4 from "../../assets/internal/tokennew4.webp";
+import ulalo1 from "../../assets/internal/ulalo1.webp";
+import tawuniya3 from "../../assets/internal/tawuniya5.webp";
+
+import tawuniyanew1 from "../../assets/internal/tawuniyanew1.webp";
+import tawuniyanew2 from "../../assets/internal/tawuniyanew2.webp";
+import ulalo2 from "../../assets/internal/ulalo2.webp";
 import ulalobg from "../../assets/internal/ulalobg.webp";
-import icca1 from "../../assets/internal/icca1.png";
-import icca2 from "../../assets/internal/icca2.png";
+import icca1 from "../../assets/internal/icca1.webp";
+import icca2 from "../../assets/internal/icca2.webp";
 
-import chrome from "../../assets/internal/chrome.png";
-import Pc from "../../assets/internal/Pc.png";
-import toolkit from "../../assets/internal/toolkit.png";
-import ulaloprocess from "../../assets/internal/ulaloprocess.png";
+import ulaloprocess from "../../assets/internal/ulaloprocess.webp";
 import tawuniyamain from "../../assets/internal/tawuniyamain.webp";
 import ulalomain from "../../assets/internal/ulalomain.webp";
-import Webcam from "../../assets/internal/Webcam.png";
-import meta from "../../assets/internal/meta.png";
 import tawuniyabg from "../../assets/internal/tawuniya.jpg";
-import Mic from "../../assets/internal/Mic.png";
-import av from "../../assets/internal/av.png";
-import vectordatabase from "../../assets/internal/vectordatabase.png";
-import php from "../../assets/internal/php.png";
-import nestjs from "../../assets/internal/nest.svg";
 import tawuniya from "../../assets/internal/tawuniya.png";
-import db from "../../assets/internal/db.png";
-import node from "../../assets/internal/node.svg";
-import solidity from "../../assets/internal/solidity.svg";
-import OpenZeppelin from "../../assets/internal/OpenZeppelin.svg";
-import sequelize from "../../assets/internal/sequelize.svg";
-import figma from "../../assets/internal/figma.svg";
-import react from "../../assets/internal/react.svg";
 import casestudy1bg from "../../assets/internal/casestudy1bg.webp";
-import mongodb from "../../assets/internal/mongodb.png";
-import talwindcss from "../../assets/internal/talwindcss.png";
-import js from "../../assets/internal/js.png";
-import nodejs from "../../assets/internal/nodejs.png";
-import QR from "../../assets/internal/QR.png";
-import firebase from "../../assets/internal/firebase.png";
-import cicd from "../../assets/internal/cicd.jpeg";
-import web3 from "../../assets/internal/web3.png";
-import tokeninside from "../../assets/internal/tokeninside.png";
-import token from "../../assets/internal/token.jpg";
-import iccamain from "../../assets/internal/iccamain.png";
-import icca from "../../assets/internal/icca.png";
-import iccabg from "../../assets/internal/iccabg.jpg";
+import tokeninside from "../../assets/internal/tokeninside.webp";
+import token from "../../assets/internal/token.webp";
+import iccamain from "../../assets/internal/iccamain.webp";
+import icca from "../../assets/internal/icca.webp";
+import iccabg from "../../assets/internal/iccabg.webp";
 
 import process from "../../assets/internal/process.png";
 
@@ -69,43 +75,40 @@ import bg2 from "../../assets/internal/bg2.webp";
 import bg3 from "../../assets/internal/bg3.webp";
 import bg4 from "../../assets/internal/bg4.webp";
 import mobile from "../../assets/internal/mobile.png";
-import gsmobile from "../../assets/internal/gsmobile.png";
-import gro8hero from "../../assets/internal/gro8hero.png";
-import gro8mobile from "../../assets/internal/gro8mobile.png";
-import gro8feature from "../../assets/internal/gro8feature.png";
+import gsmobile from "../../assets/internal/gsmobile.webp";
+import gro8hero from "../../assets/internal/gro8hero.webp";
+import gro8mobile from "../../assets/internal/gro8mobile.webp";
+import gro8feature from "../../assets/internal/gro8feature.webp";
 import voting from "../../assets/internal/voting.webp";
 import gro8bg from "../../assets/internal/gro8bg.webp";
 import goodstandingbg from "../../assets/internal/goodstandingbg.webp";
 
 // import shaperCultHero from "../../assets/internal/shaper1.svg";
 import usablock from "../../assets/internal/usablock.webp";
-import vote from "../../assets/internal/vote.png";
-import herovote from "../../assets/internal/herovote.png";
+import vote from "../../assets/internal/vote.webp";
+import herovote from "../../assets/internal/herovote.webp";
 import shaper2 from "../../assets/internal/shaper2.webp";
 // import shapercut from "../../assets/internal/shapercut.svg";
 // import shaper from "../../assets/internal/shaper.png";
-import shaperCultMobile from "../../assets/internal/shaper2.webp";
-import typescript from "../../assets/internal/typescript.svg";
+import shaperCultMobile from "../../assets/internal/shaperCultMobile.webp";
 import shaperCultLogo from "../../assets/internal/shaper3.svg";
-import aws from "../../assets/internal/aws.svg";
-import hyper from "../../assets/internal/hyper.png";
-import goodstanding from "../../assets/internal/goodstanding.png";
+import hyper from "../../assets/internal/hyper.webp";
+import goodstanding from "../../assets/internal/goodstanding.webp";
 import gsfeature from "../../assets/internal/gsfeature.png";
-import ludoafterherosection from "../../assets/internal/ludoafterherosection.png";
+import ludoafterherosection from "../../assets/internal/ludoafterherosection.webp";
 
-import tailwind from "../../assets/internal/tailwind.svg";
 import hyper1 from "../../assets/internal/hyper1.webp";
-import hyper2 from "../../assets/internal/hyper2.svg";
-import hyper3 from "../../assets/internal/hyper3.svg";
-import create1 from "../../assets/internal/create1.svg";
-import create2 from "../../assets/internal/create2.svg";
-import create3 from "../../assets/internal/create3.svg";
-import dial1 from "../../assets/internal/dial1.svg";
-import dial2 from "../../assets/internal/dial2.svg";
-import dial3 from "../../assets/internal/dial3.svg";
+import hyper2 from "../../assets/internal/hyper2.webp";
+import hyper3 from "../../assets/internal/hyper3.webp";
+import create1 from "../../assets/internal/create1.webp";
+import create2 from "../../assets/internal/create2.webp";
+import create3 from "../../assets/internal/create3.webp";
+import dial1 from "../../assets/internal/dial1.webp";
+import dial2 from "../../assets/internal/dial2.webp";
+import dial3 from "../../assets/internal/dial3.webp";
 import web31 from "../../assets/internal/web31.webp";
-import web32 from "../../assets/internal/web32.svg";
-import web33 from "../../assets/internal/web33.svg";
+import web32 from "../../assets/internal/web32.webp";
+import web33 from "../../assets/internal/web33.webp";
 
 export const caseStudies: CaseStudy[] = [
   {
@@ -155,11 +158,11 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
     techs: [
-      { name: "MySQL DB", icon: mysql },
+      { name: "MySQL DB", icon: Mysql },
       { name: "PHP", icon: php },
-      { name: "NestJS", icon: nestjs },
+      { name: "NestJS", icon: nest },
       { name: "MongoDB", icon: db },
-      { name: "Node", icon: node },
+      { name: "Node", icon: nodejs },
       { name: "Solidity", icon: solidity },
       { name: "Figma", icon: figma },
       { name: "React", icon: react },
@@ -333,21 +336,22 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
     techs: [
-      { name: "MySQL DB", icon: mysql },
+      { name: "MySQL DB", icon: Mysql },
       { name: "OpenZeppelin", icon: OpenZeppelin },
-      { name: "NestJS", icon: nestjs },
+      { name: "NestJS", icon: nest },
       { name: "Sequelize", icon: sequelize },
-      { name: "Node", icon: node },
+      { name: "Node", icon: nodejs },
       { name: "TypeScript", icon: typescript },
       { name: "Figma", icon: figma },
       { name: "React", icon: react },
-      { name: "Tailwind", icon: tailwind },
-      { name: "Ether.js", icon: "" },
-      { name: "Firebase", icon: "" },
-      { name: "Jest", icon: "" },
+      { name: "Tailwind", icon: talwindcss },
+      { name: "Ether.js", icon: Either },
+      { name: "Firebase", icon: firebase },
+
+      { name: "Jest", icon: jest },
       { name: "Solidity", icon: solidity },
       { name: "EC2", icon: aws },
-      { name: "CI/CD", icon: "" },
+      { name: "CI/CD", icon: cicd },
     ],
     processSteps: [
       {
@@ -699,8 +703,8 @@ export const caseStudies: CaseStudy[] = [
 
         subheading: "",
         points: [
-          "This blockchain-based platform makes sure voters’ privacy is protected. Unlike absentee ballots, where military voters have to give up their right to a secret vote by sending it via email or fax, blockchain voting keeps everything anonymous",
-          `Maxtron’s CEO, Girish Ahirwar, explained that blockchain technology makes it nearly impossible to tamper with votes. "If someone tries to manipulate the system, it’s easy to catch because blockchain is publicly accessible," he said. Blockchain also allows concerned offices to quickly audit the voting records, ensuring fairness`,
+          "This blockchain-based platform makes sure voters' privacy is protected. Unlike absentee ballots, where military voters have to give up their right to a secret vote by sending it via email or fax, blockchain voting keeps everything anonymous",
+          `Maxtron's CEO, Girish Ahirwar, explained that blockchain technology makes it nearly impossible to tamper with votes. "If someone tries to manipulate the system, it's easy to catch because blockchain is publicly accessible," he said. Blockchain also allows concerned offices to quickly audit the voting records, ensuring fairness`,
         ],
       },
     ],
@@ -741,13 +745,13 @@ export const caseStudies: CaseStudy[] = [
       {
         title: "Vote for your dream candidate…",
         details: [
-          "Once you register to vote on the VB USA platform, you will first have the opportunity to ‘vote’ in the Dream World Election, where you may choose from 24 currently popular candidates or, if your ideal candidate is not on the ballot, you can nominate the candidate of your choice.",
+          "Once you register to vote on the VB USA platform, you will first have the opportunity to 'vote' in the Dream World Election, where you may choose from 24 currently popular candidates or, if your ideal candidate is not on the ballot, you can nominate the candidate of your choice.",
         ],
       },
       {
         title: "Zoom back to reality",
         details: [
-          "Second, you will have the choice to ‘vote’ in the Real World Election, with your options limited to those who officially qualified for the real-world ballot.",
+          "Second, you will have the choice to 'vote' in the Real World Election, with your options limited to those who officially qualified for the real-world ballot.",
         ],
       },
       {
@@ -765,7 +769,7 @@ export const caseStudies: CaseStudy[] = [
       {
         title: "3rd Party Voter ID validation",
         details: [
-          "All VB USA knows is that it has a validated registered ‘voter’ who is of voting age (18 by November 5, 2024) and has a valid government ID that shows the state of their residency. To achieve this, VB USA has partnered with Persona, a venture capital-backed automated identity verification service founded in 2018. Their ID platform leverages machine learning, computer vision, and algorithmic checks and validates voters biometrically by matching government photo IDs and selfies.",
+          "All VB USA knows is that it has a validated registered 'voter' who is of voting age (18 by November 5, 2024) and has a valid government ID that shows the state of their residency. To achieve this, VB USA has partnered with Persona, a venture capital-backed automated identity verification service founded in 2018. Their ID platform leverages machine learning, computer vision, and algorithmic checks and validates voters biometrically by matching government photo IDs and selfies.",
         ],
       },
     ],
@@ -806,7 +810,7 @@ export const caseStudies: CaseStudy[] = [
       { name: "Javascript", icon: js },
       { name: "Typescript", icon: typescript },
       { name: "Talwind CSS", icon: talwindcss },
-      { name: "NestJS", icon: nestjs },
+      { name: "NestJS", icon: nest },
       { name: "Node JS", icon: nodejs },
       { name: "Figma", icon: figma },
       { name: "React", icon: react },
@@ -941,7 +945,7 @@ export const caseStudies: CaseStudy[] = [
       { name: "Javascript", icon: js },
       { name: "Typescript", icon: typescript },
       { name: "Talwind CSS", icon: talwindcss },
-      { name: "NestJS", icon: nestjs },
+      { name: "NestJS", icon: nest },
       { name: "Node JS", icon: nodejs },
       { name: "Figma", icon: figma },
       { name: "React", icon: react },
@@ -1015,7 +1019,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     title: "TOKEN LAUNCH",
-    subtitle: " And It’s Success 📈",
+    subtitle: " And It's Success 📈",
     heroImage: tokeninside,
     type: ["Marketing", "UX/UI Design", "Graphics Design", "Web Development"],
     afterHeroSection: process,
@@ -1062,8 +1066,8 @@ export const caseStudies: CaseStudy[] = [
       { name: "Javascript", icon: js },
       { name: "Typescript", icon: typescript },
       { name: "Talwind CSS", icon: talwindcss },
-      { name: "NestJS", icon: nestjs },
-      { name: "MySQL DB", icon: mysql },
+      { name: "NestJS", icon: nest },
+      { name: "MySQL DB", icon: Mysql },
       { name: "Php", icon: php },
 
       { name: "Figma", icon: figma },
@@ -1133,12 +1137,12 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
 
-    keyFeaturesImage: [tokennew2, tokennew4, tokennew1, tokennew3],
+    keyFeaturesImage: [tokennew2, tokennew4, tokennew3, tokennew1],
     bgImage: token,
   },
   {
     title: "ICCA",
-    subtitle: " And It’s Success 📈",
+    subtitle: " And It's Success 📈",
     heroImage: iccamain,
     type: ["Chat Bot Development", "UX/UI Design"],
     afterHeroSection: icca,
@@ -1154,9 +1158,9 @@ export const caseStudies: CaseStudy[] = [
       description: [
         "Engages prospective students 24/7",
         "Collects lead information and user intent accurately",
-        "Syncs all interactions directly with ICCA’s CRM (Zoho)",
+        "Syncs all interactions directly with ICCA's CRM (Zoho)",
         "Recommends courses, scholarships, and career options",
-        "Adapts to ICCA’s evolving content without needing constant retraining",
+        "Adapts to ICCA's evolving content without needing constant retraining",
       ],
     },
     results: {
@@ -1167,7 +1171,7 @@ export const caseStudies: CaseStudy[] = [
         "Recommends programs based on interests and goals",
         "Multilingual support improves accessibility and UX",
         "Full Zoho CRM integration for seamless lead routing",
-        "Live content updates from ICCA’s catalog & resources — no retraining needed",
+        "Live content updates from ICCA's catalog & resources — no retraining needed",
         "Built-in dashboard for monitoring leads, FAQs, and engagement",
       ],
     },
@@ -1185,22 +1189,23 @@ export const caseStudies: CaseStudy[] = [
         subheading:
           "AIVA: Multilingual AI Chatbot Revolutionizing Student Engagement with RAG-Powered Intelligence.",
         points: [
-          "We developed AIVA (Artificial Intelligence Virtual Assistant) — a custom-built, multilingual AI chatbot powered by the Retrieval-Augmented Generation (RAG) framework. Unlike traditional scripted bots, AIVA leverages advanced LLMs and a dynamic knowledge base to provide accurate, real-time responses. It proactively engages website visitors, identifies their intent, and qualifies them as leads based on parameters like program interest, timeline, and readiness — all while syncing seamlessly with Zoho CRM. AIVA’s architecture ensures scalable performance, compliance with data privacy norms, and multilingual accessibility (English & Arabic)",
+          "We developed AIVA (Artificial Intelligence Virtual Assistant) — a custom-built, multilingual AI chatbot powered by the Retrieval-Augmented Generation (RAG) framework. Unlike traditional scripted bots, AIVA leverages advanced LLMs and a dynamic knowledge base to provide accurate, real-time responses. It proactively engages website visitors, identifies their intent, and qualifies them as leads based on parameters like program interest, timeline, and readiness — all while syncing seamlessly with Zoho CRM. AIVA's architecture ensures scalable performance, compliance with data privacy norms, and multilingual accessibility (English & Arabic)",
         ],
       },
     ],
     techs: [
-      { name: "Python", icon: python },
-      { name: "FastAPI", icon: fastapi },
+      { name: "Python", icon: Python },
+      { name: "FastAPI", icon: FastApi },
       { name: "Vector Database (Pinecone / Chroma)", icon: vectordatabase },
       { name: "Mongo DB", icon: mongodb },
       { name: "React", icon: react },
       { name: "LLM + RAG Framework", icon: LLM },
-      { name: "Zoho CRM API", icon: zoho },
+      { name: "Zoho CRM API", icon: Zoho },
+
       { name: "Javascript", icon: js },
-      { name: "Google Cloud Run", icon: google },
+      { name: "Google Cloud Run", icon: Google },
       { name: " Multilingual NLP Toolkit", icon: toolkit },
-      { name: " GPT-4 APIs", icon: chatgpt },
+      { name: " GPT-4 APIs", icon: Chatgpt },
 
       { name: "Figma", icon: figma },
     ],
@@ -1208,7 +1213,7 @@ export const caseStudies: CaseStudy[] = [
       {
         title: "Product Scope",
         description: [
-          "We conducted a deep-dive session with ICCA’s leadership to define the assistant’s objectives. We mapped user personas (prospective students, parents, international learners), reviewed common queries, and defined critical user journeys.",
+          "We conducted a deep-dive session with ICCA's leadership to define the assistant's objectives. We mapped user personas (prospective students, parents, international learners), reviewed common queries, and defined critical user journeys.",
         ],
       },
       {
@@ -1226,7 +1231,7 @@ export const caseStudies: CaseStudy[] = [
       {
         title: "Final Development",
         description: [
-          "We developed and hosted the chatbot MVP using GCP Cloud Run and integrated it with MongoDB Atlas and Pinecone for vector-based search. CRM integration was finalized using Zoho's REST API. A staging environment was provided for real-time testing, and ownership was transitioned to ICCA’s cloud accounts.",
+          "We developed and hosted the chatbot MVP using GCP Cloud Run and integrated it with MongoDB Atlas and Pinecone for vector-based search. CRM integration was finalized using Zoho's REST API. A staging environment was provided for real-time testing, and ownership was transitioned to ICCA's cloud accounts.",
         ],
       },
     ],
@@ -1262,7 +1267,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     title: "TAWUNIYA",
-    subtitle: " And It’s Success 📈",
+    subtitle: " And It's Success 📈",
     heroImage: tawuniyamain,
     type: ["Event", "Management"],
     afterHeroSection: tawuniya,
@@ -1308,36 +1313,36 @@ export const caseStudies: CaseStudy[] = [
         subheading:
           "Driving Engagement with Interactive Digital Activations for Tawuniya",
         points: [
-          "In collaboration with Sketch & Build UAE, Maxtron & Quadra designed and delivered a state-of-the-art interactive fan engagement zone, featuring three powerful digital activations: Personalized Commentary Booth, Virtual Reality Goalie Challenge, and Dream Team Formation. Each activation was custom-developed with Tawuniya’s branding, using cutting-edge tech to deliver fun, engaging, and share-worthy experiences—turning passive event attendees into active brand ambassadors.",
+          "In collaboration with Sketch & Build UAE, Maxtron & Quadra designed and delivered a state-of-the-art interactive fan engagement zone, featuring three powerful digital activations: Personalized Commentary Booth, Virtual Reality Goalie Challenge, and Dream Team Formation. Each activation was custom-developed with Tawuniya's branding, using cutting-edge tech to deliver fun, engaging, and share-worthy experiences—turning passive event attendees into active brand ambassadors.",
         ],
       },
     ],
     techs: [
       { name: "Unity 3D", icon: Unity },
       { name: "Meta Quest 3 / 3s", icon: meta },
-      { name: "Webcam", icon: Webcam },
+      { name: "Webcam", icon: webcam },
       { name: "Headset", icon: Headset },
       { name: "Mic", icon: Mic },
-      { name: "Python", icon: python },
+      { name: "Python", icon: Python },
       { name: "React", icon: react },
       { name: "Figma", icon: figma },
       { name: "Custom VR Game Engine", icon: vr },
-      { name: "Chroma Key Integration", icon: chrome },
-      { name: "Web App + QR Generator", icon: QR },
-      { name: "High-performance PCs", icon: Pc },
+      { name: "Chroma Key Integration", icon: Chrome },
+      { name: "Web App + QR Generator", icon: qr },
+      { name: "High-performance PCs", icon: PC },
       { name: "4K AV Hardware", icon: av },
     ],
     processSteps: [
       {
         title: "Discovery & Ideation",
         description: [
-          "Quadra & Maxtron collaborated with Sketch & Build UAE to understand Tawuniya’s brand identity, audience expectations, and event goals. We proposed three digital activations tailored to maximize engagement and virality.",
+          "Quadra & Maxtron collaborated with Sketch & Build UAE to understand Tawuniya's brand identity, audience expectations, and event goals. We proposed three digital activations tailored to maximize engagement and virality.",
         ],
       },
       {
         title: "UX/UI & Tech. Architecture",
         description: [
-          "We developed detailed interaction flows, wireframes, and backend plans. Each activation was scoped to ensure scalability, performance, and seamless onsite operation. All interfaces and game environments were customized with Tawuniya’s brand assets.",
+          "We developed detailed interaction flows, wireframes, and backend plans. Each activation was scoped to ensure scalability, performance, and seamless onsite operation. All interfaces and game environments were customized with Tawuniya's brand assets.",
         ],
       },
       {
@@ -1440,9 +1445,9 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
     techs: [
-      { name: "MySQL DB", icon: mysql },
+      { name: "MySQL DB", icon: Mysql },
       { name: "Php", icon: php },
-      { name: "NestJS", icon: nestjs },
+      { name: "NestJS", icon: nest },
 
       { name: "Mongo DB", icon: mongodb },
       { name: "Node JS", icon: nodejs },
@@ -1457,13 +1462,13 @@ export const caseStudies: CaseStudy[] = [
       {
         title: "Product Scope",
         description: [
-          "We began by understanding ULALO’s core mission: to give people ownership of their health data. Through deep industry research and workshops, we defined the user journey for both healthcare consumers and institutions. This helped us form a roadmap for the MVP and eventual full ecosystem rollout.",
+          "We began by understanding ULALO's core mission: to give people ownership of their health data. Through deep industry research and workshops, we defined the user journey for both healthcare consumers and institutions. This helped us form a roadmap for the MVP and eventual full ecosystem rollout.",
         ],
       },
       {
         title: "Rationale & Tech Scope",
         description: [
-          "After aligning with stakeholders, we mapped out the required smart contract functions, compliance-sensitive backend infrastructure, and identity layers. We focused on ensuring GDPR and HIPAA-ready architecture while creating a seamless UX. We finalized user stories and the DApp’s primary features.",
+          "After aligning with stakeholders, we mapped out the required smart contract functions, compliance-sensitive backend infrastructure, and identity layers. We focused on ensuring GDPR and HIPAA-ready architecture while creating a seamless UX. We finalized user stories and the DApp's primary features.",
         ],
       },
       {
