@@ -1,9 +1,9 @@
 import tokenized1 from "../../assets/case/tokenized1.png";
-import tokenized2 from "../../assets/case/tokenized2.jpg";
-import tokenized3 from "../../assets/case/tokenized3.jpg";
-import tokenized4 from "../../assets/case/tokenized4.jpg";
-import tokenized5 from "../../assets/case/tokenized5.jpg";
-import tokenized6 from "../../assets/case/tokenized6.jpg";
+import tokenized2 from "../../assets/case/tokenized2.webp";
+import tokenized3 from "../../assets/case/tokenized3.webp";
+import tokenized4 from "../../assets/case/tokenized4.webp";
+import tokenized5 from "../../assets/case/tokenized5.webp";
+import tokenized6 from "../../assets/case/tokenized6.webp";
 const cards = [
   {
     img: tokenized1,

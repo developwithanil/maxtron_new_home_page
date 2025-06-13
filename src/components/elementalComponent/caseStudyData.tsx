@@ -40,7 +40,7 @@ import {
   firebase,
   jest,
   Chrome,
-} from "../../components/VectorImage";
+} from "../VectorImage.tsx";
 
 import tokennew1 from "../../assets/internal/tokennew1.webp";
 import tokennew2 from "../../assets/internal/tokennew2.webp";
@@ -835,13 +835,13 @@ export const caseStudies: CaseStudy[] = [
       {
         title: "System Architecture Design",
         description: [
-          "Designed a secure architecture supporting user authentication, real-time task management, data integrity, and a blockchain-powered coupon marketplace, all managed through a centralized admin panel.",
+          "Designed a secure, scalable architecture supporting multi-role onboarding, real-time communication, investment tracking, and mentorship scheduling with robust user authentication and data protection.",
         ],
       },
       {
         title: "Development And Security Measures",
         description: [
-          "Developed robust backend infrastructure and intuitive frontend interfaces. Implemented strong encryption protocols to secure user data and transactions, ensuring data integrity and user anonymity.",
+          "Built a secure backend and intuitive frontend with role-based user experiences. Implemented strong cryptographic protocols and Firebase authentication to ensure data privacy and investment integrity.",
         ],
       },
       {

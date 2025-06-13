@@ -6,10 +6,10 @@ import firstImg from "../../assets/about/first.webp";
 // import img2 from '../../assets/about/about2.png'
 // import img3 from '../../assets/about/about3.png'
 // import img4 from '../../assets/about/about4.png'
-import good from "../../assets/about/thumbs.svg";
-import cup from "../../assets/about/trophy.svg";
-import handshake from "../../assets/about/handshake.svg";
-import person from "../../assets/about/person.svg";
+import { good } from "../../components/VectorImage";
+import { cup } from "../../components/VectorImage";
+import { handshake } from "../../components/VectorImage";
+import { person } from "../../components/VectorImage";
 import ContactForm from "../ContactForm";
 
 const AboutUs = () => {
@@ -73,7 +73,7 @@ const AboutUs = () => {
     <div>
       <div className="relative z-10 text-center mb-8 about_hero_img px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
-          Hello, We’re Maxtron
+          Hello, We're Maxtron
         </h1>
         <p className="text-base sm:text-lg lg:text-xl mt-4">
           Our team is an extension of yours. Bringing experience, expertise,
@@ -102,12 +102,12 @@ const AboutUs = () => {
             <p className="bg-[#F7F4F480] my-4 p-2 flex text-left justify-stretch font-normal text-sm rounded-lg font-OpenSans">
               Our team blends ex-successful startup founders with top talent
               from Blockchain, AI, Product, UX/UI, Software Development, Data
-              Analytics & Marketing. We’re driven by one goal: to redefine
+              Analytics & Marketing. We're driven by one goal: to redefine
               product innovation with a deep understanding of your business and
               tech needs. Before we build, we dig in to ensure our solutions are
-              perfectly aligned with your goals. Let’s turn your vision into
+              perfectly aligned with your goals. Let's turn your vision into
               reality with expertise and a user-first approach. Ready to elevate
-              your business? Let’s make it happen!
+              your business? Let's make it happen!
             </p>
           </div>
         </div>
@@ -130,7 +130,9 @@ const AboutUs = () => {
 
       <div className="bg-card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-6 p-8 mt-8 py-14">
         <div className=" rounded-sm p-4  m-4 md:m-0 text-center border-2 border-black">
-          <img src={good} alt="img1" className="mx-auto my-4 w-auto h-20" />
+          <div className="mx-auto my-4 w-auto h-20 flex justify-center items-center">
+            {good()}
+          </div>
           <h3 className="text-xl font-bold mb-2">PROVEN TRACK RECORD</h3>
           <p className="bg-[#F7F4F480] my-4 p-2 flex text-left justify-stretch font-normal text-sm rounded-lg font-OpenSans">
             Our deep-tech, product, software development, marketing teams have
@@ -138,11 +140,9 @@ const AboutUs = () => {
           </p>
         </div>
         <div className=" rounded-sm p-4 m-4 md:m-0 text-center border-2 border-black">
-          <img
-            src={handshake}
-            alt="img2"
-            className="mx-auto my-4 w-auto h-20"
-          />
+          <div className="mx-auto my-4 w-auto h-20 flex justify-center items-center">
+            {handshake()}
+          </div>
           <h3 className="text-xl font-bold mb-2">BUSINESS MINDSET</h3>
           <p className="bg-[#F7F4F480] my-4 p-2 flex text-left justify-stretch font-normal text-sm rounded-lg font-OpenSans">
             As ex-startup founders with a corporate background, we have
@@ -152,7 +152,9 @@ const AboutUs = () => {
           </p>
         </div>
         <div className=" rounded-sm p-4 m-4 md:m-0 text-center border-2 border-black">
-          <img src={cup} alt="img3" className="mx-auto my-4 w-auto h-20" />
+          <div className="mx-auto my-4 w-auto h-20 flex justify-center items-center">
+            {cup()}
+          </div>
           <h3 className="text-xl font-bold mb-2">TOP TALENT</h3>
           <p className="bg-[#F7F4F480] my-4 p-2 flex text-left justify-stretch font-normal text-sm rounded-lg font-OpenSans">
             We work with the best and brightest in tech talent to ensure you get
@@ -160,7 +162,9 @@ const AboutUs = () => {
           </p>
         </div>
         <div className=" rounded-sm p-4 m-4 md:m-0 text-center border-2 border-black">
-          <img src={person} alt="img4" className="mx-auto my-4 w-auto h-20" />
+          <div className="mx-auto my-4 w-auto h-20 flex justify-center items-center">
+            {person()}
+          </div>
           <h3 className="text-xl font-bold mb-2">USER-CENTRIC APPROACH</h3>
           <p className="bg-[#F7F4F480] my-4 p-2 flex text-left justify-stretch font-normal text-sm rounded-lg font-OpenSans">
             We value our end-user above specifications. We take the time to

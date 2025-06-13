@@ -37,7 +37,7 @@ const services = [
       "AI Chatbot Development",
       "Others",
     ],
-    image: img2,
+    image: img3,
   },
   {
     title: "Experiential Development",
@@ -51,7 +51,7 @@ const services = [
       "Projection Mapping",
       "Hologram Technologies",
     ],
-    image: img3,
+    image: img2,
   },
   {
     title: "Business Enhancement",
