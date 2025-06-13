@@ -76,7 +76,7 @@ const CaseStudy = () => {
 
   return (
     <div className="w-full flex flex-col gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 mt-2 mb-4 relative">
-      <div className='flex w-full max-w-[96rem] mx-auto flex-col h-[20rem] sm:h-[24rem] md:h-[28rem] lg:h-[35rem] xl:h-[40rem] justify-center items-start [background:linear-gradient(0deg,rgba(0,0,0,0.40)_0%,rgba(0,0,0,0.40)_100%),url("./assets/case/hero.png")_lightgray_50%_/_cover_no-repeat]'>
+      <div className='flex w-full max-w-[96rem] mx-auto flex-col h-[20rem] sm:h-[24rem] md:h-[28rem] lg:h-[35rem] xl:h-[40rem] justify-center items-start [background:linear-gradient(0deg,rgba(0,0,0,0.40)_0%,rgba(0,0,0,0.40)_100%),url("./assets/case/hero.webp")_lightgray_50%_/_cover_no-repeat]'>
         <div className="md:w-1/2  w-full max-w-[88rem]  px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col gap-1 sm:gap-2 md:gap-3 lg:gap-5">
           <p className="text-[#FFFFFF] font-['Switzer'] text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold  tracking-[0.02em] leading-[160%] mb-2 sm:mb-3 md:mb-4">
             CASE STUDIES

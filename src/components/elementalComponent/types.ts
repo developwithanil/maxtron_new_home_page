@@ -17,7 +17,7 @@ export interface CaseStudy {
   }>;
     techs: Array<{
       name: string;
-      icon: string;
+      icon: () => JSX.Element;
     }>;
     bussinessNeeds?:
       {

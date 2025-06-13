@@ -1,11 +1,11 @@
-import img1 from "../../assets/industry/industry1.png";
-import img2 from "../../assets/industry/industry2.png";
-import img3 from "../../assets/industry/industry3.png";
-import img4 from "../../assets/industry/industry4.png";
-import img5 from "../../assets/industry/industry5.png";
-import img6 from "../../assets/industry/industry6.png";
-import img7 from "../../assets/industry/industry7.png";
-import img8 from "../../assets/industry/industry8.png";
+import img1 from "../../assets/industry/industry1.webp";
+import img2 from "../../assets/industry/industry2.webp";
+import img3 from "../../assets/industry/industry3.webp";
+import img4 from "../../assets/industry/industry4.webp";
+import img5 from "../../assets/industry/industry5.webp";
+import img6 from "../../assets/industry/industry6.webp";
+import img7 from "../../assets/industry/industry7.webp";
+import img8 from "../../assets/industry/industry8.webp";
 
 const industryData = [
   {

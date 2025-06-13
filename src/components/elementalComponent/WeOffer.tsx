@@ -1,23 +1,23 @@
 import React from "react";
-import icon1 from "../../assets/augmentation/blockchain.svg";
-import icon2 from "../../assets/augmentation/Website.svg";
-import icon3 from "../../assets/augmentation/mobile.svg";
-import icon4 from "../../assets/augmentation/game.svg";
-import icon5 from "../../assets/augmentation/fullstack.svg";
-import icon6 from "../../assets/augmentation/cloud.svg";
-import icon7 from "../../assets/augmentation/ai.svg";
+import { icon1 } from "../../components/VectorImage";
+import { icon2 } from "../../components/VectorImage";
+import { icon3 } from "../../components/VectorImage";
+import { icon4 } from "../../components/VectorImage";
+import { icon5 } from "../../components/VectorImage";
+import { icon6 } from "../../components/VectorImage";
+import { icon7 } from "../../components/VectorImage";
 
 interface CardProps {
-  icon: string;
+  icon: React.ComponentType;
   title: string;
   description: string;
 }
 
-const Card: React.FC<CardProps> = ({ icon, title, description }) => {
+const Card: React.FC<CardProps> = ({ icon: Icon, title, description }) => {
   return (
     <div className="border border-[#DFDEE7] rounded-[24px] flex flex-col  justify-start p-4">
-      <div className=" mb-8 bg-[#F5F5F5] flex items-start justify-start p-2 h-12 w-12 rounded-lg">
-        <img src={icon} />
+      <div className=" mb-8  bg-[#F5F5F5] flex items-start justify-start  h-12 w-12 rounded-lg">
+        <Icon />
       </div>
       <div className="">
         <h3 className="text-xl font-semibold mb-4 text-[#2A2A2A] [font-family:Switzer] items-start text-start ">

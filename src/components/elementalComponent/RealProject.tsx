@@ -1,5 +1,5 @@
-import realproject1 from "../../assets/case/realproject1.svg";
-import realproject2 from "../../assets/case/realproject2.svg";
+import realproject1 from "../../assets/case/realproject1.webp";
+import realproject2 from "../../assets/case/realproject2.webp";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
 import { motion } from "framer-motion";
@@ -15,7 +15,8 @@ const items = [
   },
   {
     image: realproject2,
-    title: "Decentralized Health Utility – Tokenizing Medical Data for Ownership",
+    title:
+      "Decentralized Health Utility – Tokenizing Medical Data for Ownership",
     description: [
       "Users earn crypto by sharing medical data with full control & transparency.",
       "Built for the future of DeSci & personal health sovereignty.",
@@ -59,9 +60,7 @@ const RealProject = () => {
           </div>
         </div>
 
-     
         <div className="lg:col-span-8 w-full relative">
-         
           <motion.div
             ref={scrollRef}
             className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory px-1 lg:overflow-visible lg:flex-wrap"
@@ -88,25 +87,48 @@ const RealProject = () => {
             ))}
           </motion.div>
           <div className="w-full flex flex-row gap-3 justify-end mt-3 lg:hidden ">
-
-          <button
-            className="z-10 flex  flex-col justify-center items-center   border border-[#BEBCCA] p-3 rounded-3xl border-solid aspect-square"
-            onClick={() => scroll("left")}
-            aria-label="Scroll left"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none">
-  <path d="M17 7L0.999999 7M0.999999 7L7 13M0.999999 7L7 1" stroke="#2A2A2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-          </button>
-          <button
-            className=" z-10 flex  flex-col justify-center items-center  border border-[#BEBCCA] p-3 rounded-3xl border-solid aspect-square"
-            onClick={() => scroll("right")}
-            aria-label="Scroll right"
-          >
-           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none">
-  <path d="M1 7H17M17 7L11 1M17 7L11 13" stroke="#2A2A2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-          </button>
+            <button
+              className="z-10 flex  flex-col justify-center items-center   border border-[#BEBCCA] p-3 rounded-3xl border-solid aspect-square"
+              onClick={() => scroll("left")}
+              aria-label="Scroll left"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="14"
+                viewBox="0 0 18 14"
+                fill="none"
+              >
+                <path
+                  d="M17 7L0.999999 7M0.999999 7L7 13M0.999999 7L7 1"
+                  stroke="#2A2A2A"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button
+              className=" z-10 flex  flex-col justify-center items-center  border border-[#BEBCCA] p-3 rounded-3xl border-solid aspect-square"
+              onClick={() => scroll("right")}
+              aria-label="Scroll right"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="14"
+                viewBox="0 0 18 14"
+                fill="none"
+              >
+                <path
+                  d="M1 7H17M17 7L11 1M17 7L11 13"
+                  stroke="#2A2A2A"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>

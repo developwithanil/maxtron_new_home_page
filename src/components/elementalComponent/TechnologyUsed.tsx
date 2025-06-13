@@ -1,7 +1,7 @@
-import tech1 from "../../assets/case/tech1.svg";
-import tech2 from "../../assets/case/tech2.svg";
-import tech3 from "../../assets/case/tech3.svg";
-import tech4 from "../../assets/case/tech4.svg";
+import tech1 from "../../assets/case/tech1.webp";
+import tech2 from "../../assets/case/tech2.webp";
+import tech3 from "../../assets/case/tech3.webp";
+import tech4 from "../../assets/case/tech4.webp";
 
 const cardData = [
   {

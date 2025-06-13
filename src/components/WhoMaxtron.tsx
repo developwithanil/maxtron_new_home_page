@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Verify } from "./VectorImage";
 import MaxtronLogo from "../assets/maxtronlogo.svg";
-import product1 from "../assets/products/blockchainproduct1.svg";
-import product2 from "../assets/products/aiproduct2.svg";
-import product3 from "../assets/products/experientialproduct3.svg";
-import product4 from "../assets/products/otherproduct4.svg";
+import product1 from "../assets/products/blockchainproduct1.webp";
+import product2 from "../assets/products/aiproduct2.webp";
+import product3 from "../assets/products/experientialproduct3.webp";
+import product4 from "../assets/products/otherproduct4.webp";
 
-import fund1 from "../assets/products/marketing.svg";
-import fund2 from "../assets/products/fundraising.svg";
+import fund1 from "../assets/products/marketing.webp";
+import fund2 from "../assets/products/fundraising.webp";
 import { logo1, logo2, logo3, logo4, logo5, logo6 } from "./VectorImage";
 
 type ContentItem = {

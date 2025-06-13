@@ -1,7 +1,7 @@
-import study1 from "../assets/study/study1.svg";
-import study2 from "../assets/study/study2.svg";
-import study3 from "../assets/study/study3.svg";
-import study4 from "../assets/study/study4.svg";
+import study1 from "../assets/study/study1.webp";
+import study2 from "../assets/study/study2.webp";
+import study3 from "../assets/study/study3.webp";
+import study4 from "../assets/study/study4.webp";
 
 export const ArrowUpIcon = ({ className = "" }: { className?: string }) => (
   <svg

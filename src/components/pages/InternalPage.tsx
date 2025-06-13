@@ -162,13 +162,7 @@ const InternalPage: React.FC<InternalPageProps> = ({ caseStudies }) => {
                   key={index}
                   className="flex items-center mr-2 mb-4 bg-[#D9D9D9] py-1 px-2 rounded-lg"
                 >
-                  {tech.icon !== "" && (
-                    <img
-                      src={tech.icon}
-                      alt={tech.name}
-                      className="mr-2 h-6 w-6"
-                    />
-                  )}
+                  {tech.icon && <tech.icon />}
                   <span>{tech.name}</span>
                 </div>
               ))}

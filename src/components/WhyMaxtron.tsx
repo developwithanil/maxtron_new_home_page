@@ -1,7 +1,7 @@
-import feature1 from "../assets/whymaxtron/feature1.svg";
-import feature2 from "../assets/whymaxtron/feature2.svg";
-import feature3 from "../assets/whymaxtron/feature3.svg";
-import feature4 from "../assets/whymaxtron/feature4.svg";
+import feature1 from "../assets/whymaxtron/feature1.webp";
+import feature2 from "../assets/whymaxtron/feature2.webp";
+import feature3 from "../assets/whymaxtron/feature3.webp";
+import feature4 from "../assets/whymaxtron/feature4.webp";
 
 const cardData = [
   { text: "Quick Response", image: feature1 },
