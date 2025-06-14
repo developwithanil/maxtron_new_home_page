@@ -49,7 +49,7 @@ const industryData = [
     ],
   },
   {
-    img: img4,
+    img: img5,
     heading: "Retail & E-Commerce",
     points: [
       "Strategy, Marketing, Branding, Advertising, & Communications",
@@ -63,7 +63,7 @@ const industryData = [
     ],
   },
   {
-    img: img5,
+    img: img6,
     heading: "Supply Chain & Logistics",
     points: [
       "Technology Consulting Solutions",
@@ -74,7 +74,7 @@ const industryData = [
     ],
   },
   {
-    img: img6,
+    img: img7,
     heading: "Sustainable Industry",
     points: [
       "Advanced Data Analytics in Climate Tech",
@@ -86,7 +86,7 @@ const industryData = [
     ],
   },
   {
-    img: img7,
+    img: img4,
     heading: "Construction",
     points: [
       "Digital Transformation",
