@@ -7,7 +7,7 @@ import { deals, offer, report } from "../AffiliateVectorImage";
 const items = [
   {
     icon: deals,
-    title: "Up to 30% Commission on Closed Deals",
+    title: "Upto 30% Commission on Closed Deals",
     description: "Get rewarded for real value. Unlike most programs, we pay based on actual deal closures, meaning higher payouts—often $1,000+ per referral.",
   },
   {
@@ -23,12 +23,17 @@ const items = [
   
 ]
 
+
+const items1 = [
+  "SaaS Reviewers & Bloggers","B2B Content Creators","Consultants & Agencies","Startup Advisors","LinkedIn Influencers","Tech Community Builders"
+]
+
 const AffiliateProgramPage = () => {
   return (
     <div className="w-full">
       <div className="w-full max-w-[96rem] mx-auto pl-4 sm:pl-7 md:pl-12 xl:pl-14 py-4 sm:py-6 md:py-8 lg:py-10 xl:py-12 ">
         <div className="flex flex-col-reverse lg:flex-row gap-5 sm:gap-7 md:gap-9 lg:gap-10">
-          {/* Text Content */}
+  
           <div className="flex-1 flex flex-col  justify-center items-start px-1 sm:px-2 md:px-3 lg:px-5 xl:px-7 gap-4 md:gap-5 lg:gap-6 xl:gap-8">
             <div className="flex flex-col gap-1 sm:gap-2">
               <h1
@@ -48,7 +53,7 @@ const AffiliateProgramPage = () => {
 </h1>
             </div>
 
-           <p className=" text-[#79748A] font-openSansHebrew text-base md:text-lg lg:text-xl font-normal leading-[160%]">Earn up to 30% commission for every deal you help close with Maxtron Innovations.</p>
+           <p className=" text-[#79748A] font-openSansHebrew text-base md:text-lg lg:text-xl font-normal leading-[160%]">Earn upto 30% commission for every deal you help close with Maxtron Innovations.</p>
           <div className="flex justify-center items-center w-fit border border-[#7A35C1] px-6 py-2 lg:py-3 rounded-lg transition duration-300 hover:bg-[#7A35C1] group cursor-pointer">
   <Link
     to="/contact"
@@ -70,7 +75,7 @@ const AffiliateProgramPage = () => {
 
           </div>
 
-          {/* Image */}
+   
           <div className="flex-1 mt-6 lg:mt-0">
             <img
               src={affiliaterightlanding}
@@ -79,7 +84,7 @@ const AffiliateProgramPage = () => {
             />
           </div>
         </div>
-         <div className="w-full  mt-12 md:mt-16 lg:mt-20 xl:mt-36 pr-2">
+         <div className="w-full  mt-12 md:mt-16 lg:mt-20 xl:mt-36 pr-2 md:pr-4 lg:pr-8">
           <h2
             className="self-stretch text-[#2A2A2A]  font-[Switzer] text-2xl lg:text-3xl xl:text-4xl font-semibold leading-[140%] text-center mt-8 md:mt-10 lg:mt-12 xl:mt-16"
           >
@@ -104,6 +109,32 @@ const AffiliateProgramPage = () => {
            
           </div>
         </div>
+        <div className="w-full flex flex-col lg:flex-row gap-8 mt-12 md:mt-16 lg:mt-20 xl:mt-36 pr-2 md:pr-4 lg:pr-8">
+  {/* Left Section - Heading and Paragraph */}
+  <div className="w-full lg:w-[40%] text-center lg:text-start">
+    <h1 className="text-[#2A2A2A] font-[Switzer] text-2xl lg:text-3xl xl:text-4xl mb-2 font-semibold leading-[140%]">
+      Who Should Join?
+    </h1>
+    <p className="text-[#2A2A2A] font-openSansHebrew text-lg lg:text-xl font-normal leading-8">
+      If you have an audience, influence, or insider industry knowledge, we want to work with you:
+    </p>
+  </div>
+
+  {/* Right Section - Grid */}
+  <div className="w-full lg:w-[60%] grid grid-cols-2 gap-4 md:gap-5 lg:gap-5 xl:gap-6">
+    {items1.map((item, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center gap-2.5 border border-[#DFDEE7] p-2 md:p-3 lg:p-3 xl:p-4 rounded-lg"
+      >
+        <p className="text-[#2A2A2A] font-[Switzer] text-base lg:text-lg font-semibold leading-[23.4px] text-center">
+          {item}
+        </p>
+      </div>
+    ))}
+  </div>
+</div>
+
       </div>
     </div>
   );
