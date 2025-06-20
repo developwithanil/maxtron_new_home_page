@@ -18,7 +18,7 @@ const AffiliateProgramPage = () => {
               </h1>
             <h1 className="text-[#2A2A2A] font-[Switzer] text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium leading-[110%]">
   <span className="flex items-center gap-2 flex-wrap">
-    <span className="bg-[#F3EBFC] px-[7px] lg:px-[11px] py-1 rounded-xl text-[#7A35C1] text-center w-fit">revenue</span>
+    <span className="bg-[#F3EBFC] px-[7px] lg:px-[11px] py-[2px] rounded-xl text-[#7A35C1] text-center w-fit">revenue</span>
     with
     <span className="flex items-center bg-white shadow-[0px_4px_10px_0px_rgba(0,0,0,0.14)] px-2 lg:px-4 py-1 rounded-xl">
       <img src={darkFullLogo} alt="Maxtron logo" className="w-[110px] md:w-[130px] lg:w-[141.857px] h-9 md:h-10 lg:h-12" />
