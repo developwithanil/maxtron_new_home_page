@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import affiliaterightlanding from "../../assets/case/affiliaterightlanding.webp";
 import darkFullLogo from "../../assets/darkFullLogo.png"; 
 import { deals, offer, report } from "../AffiliateVectorImage";
+import AffiliateLastComponent from "../elementalComponent/AffiliateLastComponent";
 
 
 
@@ -185,6 +186,7 @@ const AffiliateProgramPage = () => {
 </div>
 
         </div>
+        <AffiliateLastComponent/>
       </div>
     </div>
   );
