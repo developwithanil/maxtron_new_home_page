@@ -4,6 +4,7 @@ import darkFullLogo from "../../assets/darkFullLogo.png";
 import { deals, offer, report } from "../AffiliateVectorImage";
 
 
+
 const items = [
   {
     icon: deals,
@@ -26,6 +27,24 @@ const items = [
 
 const items1 = [
   "SaaS Reviewers & Bloggers","B2B Content Creators","Consultants & Agencies","Startup Advisors","LinkedIn Influencers","Tech Community Builders"
+]
+const items2 =[
+  {
+    title: "Apply to Join",
+    description: "Submit your info and promotion plan. We’ll review and respond within 2–3 business days.",
+  },
+  {
+    title: "Get Approved & Onboarded",
+    description: "Once approved, you’ll gain access to your affiliate dashboard, links, and custom assets.",
+  },
+  {
+    title: "Refer & Promote",
+    description: "Use your unique tracking link to refer companies to Maxtron. We provide sales collateral, email templates, and more.",
+  },
+  {
+    title: "Earn Commission",
+    description: "When your referral signs and pays, you’ll earn up to 30% of the deal value. It’s that simple.",
+  },
 ]
 
 const AffiliateProgramPage = () => {
@@ -84,7 +103,7 @@ const AffiliateProgramPage = () => {
             />
           </div>
         </div>
-         <div className="w-full  mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-2 md:pr-4 lg:pr-8">
+         <div className="w-full  mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-3 md:pr-4 lg:pr-8">
           <h2
             className="self-stretch text-[#2A2A2A]  font-[Switzer] text-2xl lg:text-3xl xl:text-4xl font-semibold leading-[140%] text-center mt-8 md:mt-10 lg:mt-12 xl:mt-16"
           >
@@ -109,7 +128,7 @@ const AffiliateProgramPage = () => {
            
           </div>
         </div>
-        <div className="w-full flex flex-col lg:flex-row gap-8 mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-2 md:pr-4 lg:pr-8">
+        <div className="w-full flex flex-col lg:flex-row gap-8 mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-3 md:pr-4 lg:pr-8">
   {/* Left Section - Heading and Paragraph */}
   <div className="w-full lg:w-[40%] text-center lg:text-start">
     <h1 className="text-[#2A2A2A] font-[Switzer] text-2xl lg:text-3xl xl:text-4xl mb-2 font-semibold leading-[140%]">
@@ -134,7 +153,38 @@ const AffiliateProgramPage = () => {
     ))}
   </div>
 </div>
+          <div className="w-full  mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-3 md:pr-4 lg:pr-8">
+          <h2
+            className="self-stretch text-[#2A2A2A]  font-[Switzer] text-2xl lg:text-3xl xl:text-4xl font-semibold leading-[140%] text-center mt-8 md:mt-10 lg:mt-12 xl:mt-16"
+          >
+           How it Works
+          </h2>
+          
+       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-9 lg:gap-4 mt-10 md:mt-12 lg:mt-16 xl:mt-20">
+  {items2.map((item, index) => (
+    <div
+      key={index}
+      className="flex relative flex-col items-center text-center p-3 pt-10 border border-gray-200 rounded-2xl shadow-sm bg-white"
+    >
 
+      <div className="w-12 h-12 absolute -top-[20px] font-[Switzer] flex items-center justify-center rounded-full bg-[#F5F5F5] text-[#1D1B33] font-bold ">
+        {index + 1}
+      </div>
+
+     
+      <h3 className="text-[#2A2A2A] text-center font-lexendDeca text-lg font-semibold leading-7 mb-2">
+        {item.title}
+      </h3>
+
+ 
+      <p className="self-stretch text-[#2A2A2A] text-center font-openSansHebrew text-base font-normal leading-6">
+        {item.description}
+      </p>
+    </div>
+  ))}
+</div>
+
+        </div>
       </div>
     </div>
   );
