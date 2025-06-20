@@ -45,7 +45,7 @@ const AffiliateTiers = () => {
         {tiers.map((tier, idx) => (
           <article
             key={tier.name}
-            className="flex flex-col gap-6 rounded-2xl shadow-md border border-[#DFDEE7] bg-white overflow-hidden"
+            className="flex flex-col gap-6 rounded-2xl shadow-md border border-[#DFDEE7]  bg-white overflow-hidden"
             aria-label={`Affiliate tier: ${tier.name}`}
           >
             <header
@@ -57,23 +57,33 @@ const AffiliateTiers = () => {
               </h3>
             </header>
             <div className="flex flex-row gap-4 justify-start px-4">
-              <span className="flex-1 font-semibold text-[#2A2A2A]">Commission Rate</span>
-              <span className="flex-1 text-right">{tier.commission}</span>
+              <span className="flex-1 font-semibold text-[#2A2A2A] font-[Switzer]">Commission Rate</span>
+              <span className="flex-1 text-right font-[Switzer]">{tier.commission}</span>
             </div>
             <div className="flex flex-row gap-4 justify-start px-4">
-              <span className="flex-1 font-semibold text-[#2A2A2A]">Monthly Referrals</span>
-              <span className="flex-1 text-right">{tier.referrals}</span>
+              <span className="flex-1 font-semibold text-[#2A2A2A]  font-[Switzer]">Monthly Referrals</span>
+              <span className="flex-1 text-right font-[Switzer]">{tier.referrals}</span>
             </div>
-            <div className="flex flex-col gap-2 px-4 pb-4">
-              <span className="font-semibold text-[#2A2A2A]">Bonus Perks</span>
+            <div className="flex flex-row gap-4 justify-start px-4 pb-4">
+              <span className="flex-1 font-semibold text-[#2A2A2A]  font-[Switzer]">Bonus Perks</span>
               <ul className="list-disc list-inside space-y-1">
                 {tier.perks.map((perk, i) => (
-                  <li key={i} className="text-[#2A2A2A] text-base font-normal leading-[140%]">
+                  <li key={i} className="text-[#2A2A2A] text-base font-normal leading-[140%] font-[Switzer]">
                     {perk}
                   </li>
                 ))}
               </ul>
             </div>
+            {/* <div className="flex flex-col gap-2 px-4 pb-4">
+              <span className="font-semibold text-[#2A2A2A]  font-[Switzer]">Bonus Perks</span>
+              <ul className="list-disc list-inside space-y-1">
+                {tier.perks.map((perk, i) => (
+                  <li key={i} className="text-[#2A2A2A] text-base font-normal leading-[140%] font-[Switzer]">
+                    {perk}
+                  </li>
+                ))}
+              </ul>
+            </div> */}
           </article>
         ))}
       </div>
