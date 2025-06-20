@@ -84,7 +84,7 @@ const AffiliateProgramPage = () => {
             />
           </div>
         </div>
-         <div className="w-full  mt-12 md:mt-16 lg:mt-20 xl:mt-36 pr-2 md:pr-4 lg:pr-8">
+         <div className="w-full  mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-2 md:pr-4 lg:pr-8">
           <h2
             className="self-stretch text-[#2A2A2A]  font-[Switzer] text-2xl lg:text-3xl xl:text-4xl font-semibold leading-[140%] text-center mt-8 md:mt-10 lg:mt-12 xl:mt-16"
           >
@@ -109,7 +109,7 @@ const AffiliateProgramPage = () => {
            
           </div>
         </div>
-        <div className="w-full flex flex-col lg:flex-row gap-8 mt-12 md:mt-16 lg:mt-20 xl:mt-36 pr-2 md:pr-4 lg:pr-8">
+        <div className="w-full flex flex-col lg:flex-row gap-8 mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-2 md:pr-4 lg:pr-8">
   {/* Left Section - Heading and Paragraph */}
   <div className="w-full lg:w-[40%] text-center lg:text-start">
     <h1 className="text-[#2A2A2A] font-[Switzer] text-2xl lg:text-3xl xl:text-4xl mb-2 font-semibold leading-[140%]">
