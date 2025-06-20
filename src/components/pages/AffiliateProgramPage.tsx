@@ -3,6 +3,7 @@ import affiliaterightlanding from "../../assets/case/affiliaterightlanding.webp"
 import darkFullLogo from "../../assets/darkFullLogo.png"; 
 import { deals, offer, report } from "../AffiliateVectorImage";
 import AffiliateLastComponent from "../elementalComponent/AffiliateLastComponent";
+import AffiliateTiers from "../elementalComponent/AffiliateTiers";
 
 
 
@@ -186,6 +187,7 @@ const AffiliateProgramPage = () => {
 </div>
 
         </div>
+        <AffiliateTiers/>
         <AffiliateLastComponent/>
       </div>
     </div>
