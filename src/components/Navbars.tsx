@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import darkFullLogo from "../assets/darkFullLogo.png"; // Ensure this path is correct
+import darkFullLogo from "../assets/darkFullLogo.png"; 
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 // This is for the DESKTOP dropdown header, not mobile.
