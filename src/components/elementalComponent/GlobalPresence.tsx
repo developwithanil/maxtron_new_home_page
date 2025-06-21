@@ -34,7 +34,7 @@ const GlobalPresence = () => {
             <img
               src={presence}
               alt="Global presence"
-              className="w-full h-full rounded-xl object-cover"
+              className="w-full h-[300px] md:h-[400px] lg:h-[490px]  rounded-xl object-fill"
             />
           </div>
         </div>
