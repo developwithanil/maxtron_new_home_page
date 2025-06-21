@@ -4,6 +4,7 @@ import darkFullLogo from "../../assets/darkFullLogo.png";
 import { deals, offer, report } from "../AffiliateVectorImage";
 import AffiliateLastComponent from "../elementalComponent/AffiliateLastComponent";
 import AffiliateTiers from "../elementalComponent/AffiliateTiers";
+import Faq from "../elementalComponent/Faq";
 
 
 
@@ -33,11 +34,11 @@ const items1 = [
 const items2 =[
   {
     title: "Apply to Join",
-    description: "Submit your info and promotion plan. We’ll review and respond within 2–3 business days.",
+    description: "Submit your info and promotion plan. We'll review and respond within 2–3 business days.",
   },
   {
     title: "Get Approved & Onboarded",
-    description: "Once approved, you’ll gain access to your affiliate dashboard, links, and custom assets.",
+    description: "Once approved, you'll gain access to your affiliate dashboard, links, and custom assets.",
   },
   {
     title: "Refer & Promote",
@@ -45,7 +46,7 @@ const items2 =[
   },
   {
     title: "Earn Commission",
-    description: "When your referral signs and pays, you’ll earn up to 30% of the deal value. It’s that simple.",
+    description: "When your referral signs and pays, you'll earn up to 30% of the deal value. It's that simple.",
   },
 ]
 
@@ -188,6 +189,7 @@ const AffiliateProgramPage = () => {
 
         </div>
         <AffiliateTiers/>
+        <Faq />
         <AffiliateLastComponent/>
       </div>
     </div>
