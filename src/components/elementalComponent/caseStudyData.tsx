@@ -61,6 +61,7 @@ import tawuniyamain from "../../assets/internal/tawuniyamain.webp";
 import ulalomain from "../../assets/internal/ulalomain.webp";
 import tawuniyabg from "../../assets/internal/tawuniya.jpg";
 import tawuniya from "../../assets/internal/tawuniya.png";
+import gro8 from "../../assets/internal/gro8.webp";
 import casestudy1bg from "../../assets/internal/casestudy1bg.webp";
 import tokeninside from "../../assets/internal/tokeninside.webp";
 import token from "../../assets/internal/token.webp";
@@ -82,6 +83,7 @@ import gro8feature from "../../assets/internal/gro8feature.webp";
 import voting from "../../assets/internal/voting.webp";
 import gro8bg from "../../assets/internal/gro8bg.webp";
 import goodstandingbg from "../../assets/internal/goodstandingbg.webp";
+import goodstanding1 from "../../assets/internal/goodstanding1.webp";
 
 // import shaperCultHero from "../../assets/internal/shaper1.svg";
 import usablock from "../../assets/internal/usablock.webp";
@@ -783,7 +785,7 @@ export const caseStudies: CaseStudy[] = [
     subtitle: "Connects people who can help to the people who need help",
     heroImage: goodstanding,
     type: ["WEB APPLICATION"],
-    afterHeroSection: goodstanding,
+    afterHeroSection: goodstanding1,
     industryInfo: "Web3.0, Gig-economy, non-profits",
     projectDuration: "5 Months",
     theprocessText: "The Process",
@@ -918,7 +920,7 @@ export const caseStudies: CaseStudy[] = [
       "10X valuation: Building biggest cross-border investment platform",
     heroImage: gro8hero,
     type: ["WEB APPLICATION"],
-    afterHeroSection: gro8hero,
+    afterHeroSection: gro8,
     industryInfo: "Venture capital & private equity",
     projectDuration: "4 Months",
     theprocessText: "The Process",

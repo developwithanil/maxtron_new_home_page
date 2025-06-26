@@ -20,7 +20,7 @@ const ImageSection: React.FC<Props> = ({ keyFeaturesImage }) => {
               <img
                 src={src}
                 alt={`Key Feature ${index + 1}`}
-                className="w-full h-auto max-h-[500px] rounded-xl object-contain"
+                className={`w-full h-auto ${isThreeImages ? "max-h-[360px]":"max-h-[500px]"} rounded-xl object-contain`}
               />
             </div>
           ))}
