@@ -75,7 +75,8 @@ import process from "../../assets/internal/process.png";
 import bg2 from "../../assets/internal/bg2.webp";
 import bg3 from "../../assets/internal/bg3.webp";
 import bg4 from "../../assets/internal/bg4.webp";
-import mobile from "../../assets/internal/mobile.png";
+import mobile1 from "../../assets/internal/mobile1.webp";
+import mobile2 from "../../assets/internal/mobile2.webp";
 import gsmobile from "../../assets/internal/gsmobile.webp";
 import gro8hero from "../../assets/internal/gro8hero.webp";
 import gro8mobile from "../../assets/internal/gro8mobile.webp";
@@ -206,7 +207,7 @@ export const caseStudies: CaseStudy[] = [
       "Leader Board for Tournaments",
       "NFT Integrated with Leaderboard System Development (Top Winners to Get NFTs Minted)",
     ],
-    keyFeaturesImage: [mobile, mobile],
+    keyFeaturesImage: [mobile1, mobile2],
     bgImage: bg3,
   },
 
