@@ -53,11 +53,11 @@ const Careers = () => {
         <div>
           <FormTalent />
         </div>
-        <div className="w-full mt-5 md:mt-9 lg:mt-12 xl:mt-16">
+        <div className="w-full mt-5 md:mt-9 lg:mt-12 xl:mt-16 mb-6 lg:mb-10">
           <h1 className="self-stretch text-[#3B3C4A] mx-auto w-[90%] md:w-[80%] lg:w-[75%]  text-center font-openSansHebrew text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold leading-[120%]">
             Take your job search to the next level
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 md:mt-12 lg:mt-16 xl:mt-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-5 md:mt-8 lg:mt-11 xl:mt-14">
             {items.map((item, index) => (
               <div
                 key={index}
