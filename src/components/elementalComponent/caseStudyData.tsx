@@ -564,7 +564,7 @@ export const caseStudies: CaseStudy[] = [
     bgImage: casestudy1bg,
   },
   {
-    title: "WEB3.0 MARKETING PROJECT",
+    title: "WEB 3.0 MARKETING PROJECT",
     subtitle:
       "How Maxtron Elevated Client's Marketing Strategy for Success in the Decentralized web3 space",
     heroImage: web31,

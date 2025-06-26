@@ -73,7 +73,7 @@ const services = [
 const Services = () => {
   return (
     <>
-      <div className="relative z-10 text-center mb-8 service_hero_img px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 text-center mb-8 service_hero_img px-4 sm:px-6 lg:px-8 h-[80vh]">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
           Our Services At A Glance
         </h1>

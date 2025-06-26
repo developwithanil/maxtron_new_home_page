@@ -46,7 +46,7 @@ const InternalPageDetails: React.FC<InternalPageProps> = ({ caseStudies }) => {
   return (
     <div className="w-full flex flex-col gap-3 md:gap-5 lg:gap-6 xl:gap-7 mt-2 mb-4 relative">
       <div
-        className="w-full flex flex-col lg:flex-row max-w-[130rem] mx-auto justify-between items-center p-4 sm:p-8 md:p-12 lg:p-16 gap-6 sm:gap-10"
+        className="w-full flex flex-col lg:flex-row max-w-[130rem] mx-auto justify-between items-center p-4 sm:p-8 md:p-12 lg:p-16 gap-6 sm:gap-10 "
         style={{
           background: `linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(${bgImage}) center/cover no-repeat`,
         }}
@@ -78,7 +78,7 @@ const InternalPageDetails: React.FC<InternalPageProps> = ({ caseStudies }) => {
           <img
             src={heroImage}
             alt="Case Study"
-            className="w-full h-auto object-cover rounded-xl"
+            className="w-full h-auto max-h-[500px] object-contain rounded-xl"
           />
         </div>
       </div>

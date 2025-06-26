@@ -6,12 +6,12 @@
 
 
 .service_hero_img {
-  height: 517px !important;
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("./assets/service/service-hero.webp");
+  background-image: url("./assets/case/ourservice.webp");
   background-size: cover;
   background-repeat: no-repeat;
   color: white !important;
@@ -20,12 +20,12 @@
 }
 
 .industry_hero_img {
-  height: 517px !important;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("./assets/industry/industry-hero.webp");
+  background-image: url("./assets/case/industry.webp");
   background-size: cover;
   background-repeat: no-repeat;
   color: white !important;

@@ -140,7 +140,7 @@ const IndustryList = () => {
 const Industries = () => {
   return (
     <div>
-      <div className="relative z-10  mb-8 text-center industry_hero_img px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10  mb-8 text-center industry_hero_img px-4 sm:px-6 lg:px-8 h-[80vh]">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
           Industry Focus
         </h1>
