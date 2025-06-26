@@ -66,9 +66,9 @@ const Footer = () => {
           </div>
         </div>
         {/* Subscription Section */}
-        <div className="flex flex-col md:flex-row  space-y-4 md:space-y-0 md:space-x-10  justify-center md:items-end ">
+        <div className="flex flex-col lg:flex-row  space-y-4 md:space-y-0 md:space-x-10  justify-center lg:items-end ">
           <div className="flex-1">
-            <p className="text-[#FFFFFF]  md:w-[400px] font-normal md:font-normal items-center font-openSansHebrew text-[14px] md:mt-0 mt-10">
+            <p className="text-[#FFFFFF] mb-5  md:w-[400px] font-normal md:font-normal items-center font-openSansHebrew text-[14px] md:mt-0 mt-10">
               {/* Get latest insights on tech trends, industry news, event updates,
             and more in your inbox. */}
               Get Latest Insights on tech trends, Industry news, event updates
