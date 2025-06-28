@@ -73,6 +73,7 @@ import process from "../../assets/internal/process.png";
 
 // import bgimage2 from "../../assets/internal/bgimage2.png";
 import bg2 from "../../assets/internal/bg2.webp";
+import bgmarkating from "../../assets/internal/bgmarkating.webp";
 import bg3 from "../../assets/internal/bg3.webp";
 import bg4 from "../../assets/internal/bg4.webp";
 import mobile1 from "../../assets/internal/mobile1.webp";
@@ -96,6 +97,7 @@ import shaper2 from "../../assets/internal/shaper2.webp";
 import shaperCultMobile from "../../assets/internal/shaperCultMobile.webp";
 import shaperCultLogo from "../../assets/internal/shaper3.svg";
 import hyper from "../../assets/internal/hyper.webp";
+import hyperbg from "../../assets/internal/hyperbg.webp";
 import goodstanding from "../../assets/internal/goodstanding.webp";
 import gsfeature from "../../assets/internal/gsfeature.png";
 import ludoafterherosection from "../../assets/internal/ludoafterherosection.webp";
@@ -301,7 +303,7 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
 
-    keyFeaturesImage: [shaperCultLogo, shaperCultMobile],
+    keyFeaturesImage: [shaper2, shaperCultMobile],
     bgImage: bg4,
   },
   {
@@ -393,7 +395,7 @@ export const caseStudies: CaseStudy[] = [
     ],
 
     keyFeaturesImage: [hyper3, hyper2],
-    bgImage: hyper,
+    bgImage: hyperbg,
   },
   {
     title: "DECENTRALIZED AI PLATEFORM",
@@ -679,7 +681,7 @@ export const caseStudies: CaseStudy[] = [
     ],
 
     keyFeaturesImage: [web33, web32],
-    bgImage: bg2,
+    bgImage: bgmarkating,
   },
   {
     title: "VOTING BLOCK USA",
