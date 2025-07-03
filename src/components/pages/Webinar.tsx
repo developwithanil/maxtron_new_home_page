@@ -4,18 +4,18 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 
 const Webinar = () => {
   return (
-    <div className="flex flex-col-reverse mb-4 lg:flex-row gap-8 bg-white rounded-2xl max-w-7xl mx-auto px-6 lg:px-8 py-8 mt-4">
-      {/* Left: Event Details */}
+    <div className="flex flex-col mb-4 xl:flex-row gap-8 bg-white rounded-2xl max-w-7xl mx-auto px-6 lg:px-8 py-8 mt-4">
+     
       <div className="flex-1 ">
-        {/* Badges */}
+      
         <div className="flex items-center gap-3 mb-4">
           <span className="px-4 py-1 rounded-full text-xs font-semibold bg-purple-100 text-purple-800 ">Webinar</span>
           <span className="px-4 py-1 rounded-full text-xs font-semibold border border-blue-200 text-blue-700 bg-blue-50  ">Upcoming</span>
         </div>
-        {/* Title */}
+       
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Girish (Maxtron) X Hue</h1>
         <h2 className="text-xl md:text-2xl font-semibold text-gray-700 mb-4">Collateralizing Digital Assets and What Regulators Want Now</h2>
-        {/* Description */}
+     
         <p className="text-gray-800 mb-2 text-lg ">
           Join <b>Hue H. Nguyen</b> (Ex-SEC, PwC, Serial Entrepreneur) and <b>Girish</b> (2X Founder, Angel Investor, Global Tech Advisor) for a power-packed session on:
         </p>
@@ -36,8 +36,8 @@ const Webinar = () => {
         <div className="text-gray-800 mb-2 text-lg">
           Whether you're a Web3 founder, compliance lead, VC, or FinTech builder, this webinar will help you prepare for what's coming—and give you the tools to build smarter and safer.
         </div>
-        {/* Event Info Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6 mt-4">
+       
+        {/* <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6 mt-4">
           <div className="flex items-center gap-3 bg-blue-50 rounded-lg px-3 py-3">
             <FaCalendarAlt className="w-5 h-5 text-blue-600 " />
             <div>
@@ -59,72 +59,69 @@ const Webinar = () => {
               <div className="font-medium text-gray-900 ">Virtual Event</div>
             </div>
           </div>
-        </div>
-        {/* Action Buttons */}
+        </div> */}
+    
         <div className="flex flex-col sm:flex-row gap-3 mt-6">
-          <a
-            href="https://linktr.ee/maxtron.ai"
-            target="_blank"
-            rel="noopener noreferrer"
+          <div
+            // href="https://linktr.ee/maxtron.ai"
+            // target="_blank"
+            // rel="noopener noreferrer"
             className="group relative inline-flex items-center justify-center gap-2 sm:gap-3 bg-[#444CE7] text-white font-semibold px-3 py-2 sm:px-4 sm:py-2.5 rounded-lg sm:rounded-xl shadow-2xl hover:shadow-purple-500/30 transform hover:scale-[1.0] transition-all duration-300 overflow-hidden text-xs sm:text-sm"
           >
-            <span className="relative z-20">Register / Learn More</span>
-            <FaArrowRightLong className="w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform duration-300 relative z-20" />
+            <span className="relative z-20">Coming Soon</span>
+            {/* <FaArrowRightLong className="w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform duration-300 relative z-20" /> */}
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/25 to-transparent -skew-x-12 translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700 ease-in-out"></div>
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-          </a>
+          </div>
         </div>
       </div>
-      {/* Right: Speaker Card */}
-     <div className="w-full lg:w-96 flex-shrink-0 bg-blue-50 rounded-2xl py-4 px-5 flex flex-col items-center shadow-md border border-blue-100">
-  <div className="text-base font-semibold text-gray-900 mb-3">Featured Speakers</div>
-
-  {/* Girish Section */}
-  <div className="flex flex-col items-center mb-6">
-    <img src="/girish.webp" alt="Girish" className="rounded-xl object-cover border border-white shadow-lg w-24 h-24 mb-2" />
-    <div className="text-lg font-bold text-gray-900 mb-2">Girish</div>
-    <div className="flex flex-wrap gap-2 justify-center mb-2">
-      <span className="px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">2X Founder, Angel Investor</span>
-      <span className="px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">Global Tech Advisor</span>
-    </div>
-    <p className="text-gray-800 text-[12px] text-center">
-      <b>Girish</b> – 2X exited founder, IIT Roorkee graduate, global business strategist, and angel investor.
-    </p>
-  </div>
-
-  {/* Hue Section */}
-  <div className="flex flex-col items-center">
-    <img src="/hui.webp" alt="Hue H. Nguyen" className="rounded-xl object-cover border border-white shadow-lg w-24 h-24 mb-2" />
-    <div className="text-lg font-bold text-gray-900 mb-2">Hue H. Nguyen</div>
-    <div className="flex flex-wrap gap-2 justify-center mb-2">
-      <span className="px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">Ex-SEC, PwC, Serial Entrepreneur</span>
-    </div>
-    <p className="text-gray-800 text-[12px] text-center">
-      <b>Hue H. Nguyen</b> – Former U.S. SEC regulatory consultant, PwC alum, serial entrepreneur, and activist investor.
-    </p>
-  </div>
-
-  {/* Social Links */}
-  <div className="flex items-center gap-5 mt-5">
-    <a
-      href="https://www.linkedin.com/company/maxtronai/"
-      target="_blank"
-      aria-label="Maxtron LinkedIn"
-      className="flex items-center gap-2 text-blue-300 hover:text-blue-600 transition-colors"
-    >
-      <FaLinkedin className="w-5 h-5" />
-    </a>
-    <a
-      href="https://twitter.com/maxtronai"
-      target="_blank"
-      aria-label="Maxtron Twitter"
-      className="flex items-center gap-2 text-blue-300 hover:text-blue-600 transition-colors"
-    >
-      <FaTwitter className="w-5 h-5" />
-    </a>
-  </div>
-</div>
-
+  
+      <div className="w-full xl:w-96 flex-shrink-0 bg-gradient-to-br from-blue-50 via-purple-50 to-white rounded-2xl py-6 px-6 flex flex-col items-center shadow-xl border border-blue-100 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded-t-2xl" />
+       <div className="text-lg font-semibold text-gray-900 mb-3">Featured Speakers</div>
+        <div className="w-full flex flex-col md:flex-row xl:flex-col gap-3">
+       
+          <div className="flex flex-col items-center bg-white/80 rounded-xl p-2 shadow-md hover:shadow-lg transition-shadow duration-300 relative group">
+            <span className="absolute top-2 right-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-[10px] px-2 py-0.5 rounded-full font-semibold shadow">Featured</span>
+            <div className="relative mb-2">
+              <img src="/girish.webp" alt="Girish" className="rounded-full object-cover border-2 border-white shadow-lg w-28 h-28 mb-1 group-hover:scale-105 group-hover:shadow-purple-200 transition-transform duration-300" />
+            </div>
+            <div className="text-lg font-bold text-gray-900 mb-1">Girish</div>
+            <div className="flex flex-wrap gap-2 justify-center mb-1">
+              <span className="px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">2X Founder, Angel Investor</span>
+              <span className="px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">Global Tech Advisor</span>
+            </div>
+            <p className="text-gray-700 text-sm text-center mb-1">
+              Exited founder, IIT Roorkee alum, global strategist, and angel investor empowering the next wave of Web3 innovation.
+            </p>
+            <div className="flex items-center gap-3 mt-1">
+              <a href="https://www.linkedin.com/in/girish-ahirwar/" target="_blank" aria-label="Girish LinkedIn" className="text-blue-400 hover:text-blue-700 transition-colors"><FaLinkedin className="w-6 h-6" /></a>
+          
+            </div>
+          </div>
+         
+      
+          <div className="flex flex-col items-center bg-white/80 rounded-xl p-2 shadow-md hover:shadow-lg transition-shadow duration-300 relative group">
+            <span className="absolute top-2 right-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-[10px] px-2 py-0.5 rounded-full font-semibold shadow">Featured</span>
+            <div className="relative mb-2">
+              <img src="/hui.webp" alt="Hue H. Nguyen" className="rounded-full object-cover border-2 border-white shadow-lg w-28 h-28 mb-1 group-hover:scale-105 group-hover:shadow-purple-200 transition-transform duration-300" />
+            </div>
+            <div className="text-lg font-bold text-gray-900 mb-1">Hue H. Nguyen</div>
+            <div className="flex flex-wrap gap-2 justify-center mb-1">
+              <span className="px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">Ex-SEC, PwC, Serial Entrepreneur</span>
+            </div>
+            <p className="text-gray-700 text-sm text-center mb-1">
+              Former U.S. SEC consultant, PwC alum, serial entrepreneur, and activist investor driving regulatory clarity in digital assets.
+            </p>
+            <div className="flex items-center gap-3 mt-1">
+              <a href="https://www.linkedin.com/in/hue-h-nguyen-7027852/" target="_blank" aria-label="Hue LinkedIn" className="text-blue-400 hover:text-blue-700 transition-colors"><FaLinkedin className="w-6 h-6" /></a>
+             
+            </div>
+          </div>
+        </div>
+       
+       
+      </div>
     </div>
   );
 };

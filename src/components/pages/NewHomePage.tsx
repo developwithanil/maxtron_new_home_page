@@ -15,7 +15,7 @@ const NewHomePage = () => {
     <div id="Home" className="">
       <HeroSection />
       <ClientMarquee />
-      {/* <Webinar /> */}
+      <Webinar />
       <WhyMaxtron />
       <WhoMaxtron />
       <TechnologyUsed />
