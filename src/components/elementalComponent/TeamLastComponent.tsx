@@ -9,7 +9,7 @@ const TeamLastComponent = () => {
                       <div className="flex flex-col gap-2 md:gap-3 lg:gap-4 xl:gap-5 z-20">
           
                         
-                        <p className=" text-[#FFF] text-center font-[Switzer] max-w-2xl text-lg lg:text-xl xl:text-2xl font-normal leading-[140%]">We always looking for talented and kind people to join our team </p>
+                        <p className=" text-[#FFF] text-center font-[Switzer] max-w-2xl text-lg lg:text-xl xl:text-2xl font-medium leading-[140%]">We always looking for talented and kind people to join our team </p>
                       </div>
                       <Link to={"/careers"} className="flex justify-between items-center  gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-7 border-[#FFF] ] px-3 md:px-4 lg:px-7 py-2 md:py-3 lg:py-3 rounded-[38px] border-2 border-solid z-20 hover:bg-[#FFF] transition-all duration-300 group">
                         <p className="text-[#fff] group-hover:text-[#7A35C1] text-center font-[Switzer] text-[12px] sm:text-sm md:text-base lg:text-lg font-normal leading-[140%]  transition-colors duration-300">Become a Maxtronite</p>
