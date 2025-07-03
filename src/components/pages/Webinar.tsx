@@ -21,7 +21,7 @@ const Webinar = () => {
         </p>
         <ul className="list-disc pl-6 mt-2 text-gray-800 mb-4 text-lg ">
           <li>🧠 <b>Hue H. Nguyen</b> – Former U.S. SEC Regulatory Consultant, PWC Alum, Serial Entrepreneur, and Activist Investor</li>
-          <li>💼 <b>Girish</b> – 2X Exited Founder, Global Tech Adviser, Global Business Strategist, IIT Roorkee Graduate and Angel Investor</li>
+          <li>💼 <b>Girish</b> – 2X Exited Founder, Global Tech Advisor, Global Business Strategist, IIT Roorkee Graduate and Angel Investor</li>
         </ul>
         <div className="text-gray-800 mb-2 text-lg">
           In this session, we'll unpack:
