@@ -21,6 +21,7 @@ import TokenizePage from "./components/pages/TokenizePage";
 import NewHomePage from "./components/pages/NewHomePage";
 import FundRaising from "./components/pages/FundRaising";
 import AffiliateProgramPage from "./components/pages/AffiliateProgramPage";
+import EventsPage from "./components/pages/EventsPage";
 
 const Home: React.FC = () => (
   <div>
@@ -73,6 +74,7 @@ const App: React.FC = () => {
         <Route path="/tokenization" element={<TokenizePage />} />
         <Route path="/staff-augmentation" element={<StaffAugmentation />} />
         <Route path="/affiliate" element={<AffiliateProgramPage />} />
+        <Route path="/events" element={<EventsPage />} />
         {/* <Route
           path="/Maxtron/:title/:id"
           element={<InternalPage caseStudies={caseStudies} />}
