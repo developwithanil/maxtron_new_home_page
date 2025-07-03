@@ -8,6 +8,7 @@ import agnix from "../../assets/case/agnix.webp";
 import vc from "../../assets/case/888vc.webp";
 import team from "../../assets/case/team.webp";
 import darkFullLogo from "../../assets/darkFullLogo.png"; 
+import TeamLastComponent from "../elementalComponent/TeamLastComponent";
 
 
 
@@ -101,8 +102,66 @@ const OurTeam = () => {
           />
 
 </div>
+  <div className="w-full flex flex-col gap-8 mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-5 md:pr-8 lg:pr-14 items-start">
+
+  <div className="w-full text-left ">
+    <h1 className="text-[#2A2A2A] font-[Switzer] text-4xl lg:text-5xl xl:text-5xl font-bold leading-[140%] text-center">
+   About The Founder
+    </h1>
+    
+  </div>
+
+  
+  <div className="w-full max-w-5xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-8 xl:gap-10">
+   
+    <div className="flex-shrink-0 w-52 h-52 xl:w-72 xl:h-72 lg:w-64 lg:h-64  flex items-center justify-center overflow-hidden">
+    
+      <img src="/girish.webp" alt="Girish Ahirwar" className="object-cover w-full h-full rounded-lg" />
+    </div>
+
+    <div className="flex-1 ">
+      <h2 className="text-4xl font-semibold mb-3 pl-5 text-[#58269A]">Girish Ahirwar</h2>
+      <ul className="list-disc pl-5 space-y-2 text-xl font-medium">
+        <li>Partner &amp; Ex- CBO Tagbin</li>
+        <li>Pitched, Won &amp; Delivered- Digital &amp; Experiential Projects Worth $500mn+</li>
+        <li>Fundraising And Partnerships</li>
+        <li>IIT Roorkee</li>
+        <li>10+ Years Experience in Emerging Tech</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div className="w-full flex flex-col gap-8 mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-4 md:pr-5 lg:pr-10 items-start">
+  {/* Left Section - Heading and Paragraph */}
+  <div className="w-full text-left ">
+    <h1 className="text-[#2A2A2A] font-[Switzer] text-4xl lg:text-5xl xl:text-5xl mb-3 lg:mb-5 xl:mb-6 font-bold leading-[140%] text-start">
+     Our Partners
+    </h1>
+    
+  </div>
+
+  
+  <div className="w-full grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-7 lg:gap-8 justify-start items-start">
+      {items.map((item, index) => (
+        <div
+          key={index}
+          className="flex flex-col items-start "
+        >
+          <img
+            src={item.image}
+            alt={item.title}
+            className="w-28 sm:w-32 md:w-36 lg:w-40 xl:w-44 h-28 sm:h-32 md:h-36 lg:h-40 xl:h-44 object-contain rounded-md"
+          />
+          <p className="text-[#2A2A2A] font-[Switzer] text-2xl lg:text-3xl font-semibold text-left mt-3">
+            {item.title}
+          </p>
+          <p className="text-xl lg:text-2xl text-[#363348] text-left mt-1">{item.description}</p>
+        </div>
+      ))}
+    </div>
+</div>
        
-        
+        <TeamLastComponent/>
       </div>
     </div>
   );
