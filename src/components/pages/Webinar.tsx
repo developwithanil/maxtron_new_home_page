@@ -20,8 +20,8 @@ const Webinar = () => {
           Join <b>Hue H. Nguyen</b> (Ex-SEC, PwC, Serial Entrepreneur) and <b>Girish</b> (2X Founder, Angel Investor, Global Tech Advisor) for a power-packed session on:
         </p>
         <ul className="list-disc pl-6 mt-2 text-gray-800 mb-4 text-lg ">
-          <li>🧠 <b>Hue H. Nguyen</b> – Former U.S. SEC regulatory consultant, PwC alum, serial entrepreneur, and activist investor</li>
-          <li>💼 <b>Girish</b> – 2X exited founder, IIT Roorkee graduate, global business strategist, and angel investor</li>
+          <li>🧠 <b>Hue H. Nguyen</b> – Former U.S. SEC Regulatory Consultant, PWC Alum, Serial Entrepreneur, and Activist Investor</li>
+          <li>💼 <b>Girish</b> – 2X Exited Founder, Global Tech Adviser, Global Business Strategist, IIT Roorkee Graduate and Angel Investor</li>
         </ul>
         <div className="text-gray-800 mb-2 text-lg">
           In this session, we'll unpack:
@@ -92,7 +92,7 @@ const Webinar = () => {
               <span className="px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">Global Tech Advisor</span>
             </div>
             <p className="text-gray-700 text-sm text-center mb-1">
-              Exited founder, IIT Roorkee alum, global strategist, and angel investor empowering the next wave of Web3 innovation.
+             2X Exited Founder, IIT Roorkee Alum, Global Strategist, and Angel Investor empowering the next wave of Web3 innovation.
             </p>
             <div className="flex items-center gap-3 mt-1">
               <a href="https://www.linkedin.com/in/girish-ahirwar/" target="_blank" aria-label="Girish LinkedIn" className="text-blue-400 hover:text-blue-700 transition-colors"><FaLinkedin className="w-6 h-6" /></a>
@@ -108,10 +108,10 @@ const Webinar = () => {
             </div>
             <div className="text-lg font-bold text-gray-900 mb-1">Hue H. Nguyen</div>
             <div className="flex flex-wrap gap-2 justify-center mb-1">
-              <span className="px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">Ex-SEC, PwC, Serial Entrepreneur</span>
+              <span className="px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">Ex-SEC, PWC, Serial Entrepreneur</span>
             </div>
             <p className="text-gray-700 text-sm text-center mb-1">
-              Former U.S. SEC consultant, PwC alum, serial entrepreneur, and activist investor driving regulatory clarity in digital assets.
+              Former U.S. SEC Consultant, PWC Alum, Serial Entrepreneur, and Activist Investor driving regulatory clarity in digital assets.
             </p>
             <div className="flex items-center gap-3 mt-1">
               <a href="https://www.linkedin.com/in/hue-h-nguyen-7027852/" target="_blank" aria-label="Hue LinkedIn" className="text-blue-400 hover:text-blue-700 transition-colors"><FaLinkedin className="w-6 h-6" /></a>
