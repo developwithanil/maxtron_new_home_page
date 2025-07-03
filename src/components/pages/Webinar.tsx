@@ -17,7 +17,7 @@ const Webinar = () => {
         <h2 className="text-xl md:text-2xl font-semibold text-gray-700 mb-4">Collateralizing Digital Assets and What Regulators Want Now</h2>
      
         <p className="text-gray-800 mb-2 text-lg ">
-          Join <b>Hue H. Nguyen</b> (Ex-SEC, PwC, Serial Entrepreneur) and <b>Girish</b> (2X Founder, Angel Investor, Global Tech Advisor) for a power-packed session on:
+          Join <b>Hue H. Nguyen</b> and <b>Girish</b>  for a power-packed session :
         </p>
         <ul className="list-disc pl-6 mt-2 text-gray-800 mb-4 text-lg ">
           <li>🧠 <b>Hue H. Nguyen</b> – Former U.S. SEC Regulatory Consultant, PWC Alum, Serial Entrepreneur, and Activist Investor</li>
