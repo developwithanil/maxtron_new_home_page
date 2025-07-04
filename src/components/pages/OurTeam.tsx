@@ -5,6 +5,12 @@ import gro8 from "../../assets/case/gro8.webp";
 import bitangels from "../../assets/case/bitangels.webp";
 import leventiscapital from "../../assets/case/leventiscapital.webp";
 import agnix from "../../assets/case/agnix.webp";
+import prashant from "../../assets/case/prashant.webp";
+import hui from "../../assets/case/hui.webp";
+import ridha from "../../assets/case/ridha.webp";
+import craig from "../../assets/case/craig.webp";
+import riddhi from "../../assets/case/riddhi.webp";
+import aman from "../../assets/case/aman.webp";
 import vc from "../../assets/case/888vc.webp";
 import team from "../../assets/case/team.webp";
 import darkFullLogo from "../../assets/darkFullLogo.png"; 
@@ -39,6 +45,38 @@ const items = [
         title:"AgniX Capital",
         description:"Investment Group",
         image:agnix
+    },
+]
+const teams = [
+    {
+        title:"Prashant",
+       
+        image:prashant
+    },
+    {
+        title:"Hue H.Nguyen",
+       
+        image:hui
+    },
+    {
+        title:"Ridha Agarwal",
+       
+        image:ridha
+    },
+    {
+        title:"Craig Henderson",
+     
+        image:craig
+    },
+    {
+        title:"Aman Shah",
+      
+        image:aman
+    },
+    {
+        title:"Riddhi Jaiswal",
+      
+        image:riddhi
     },
 ]
 
@@ -142,7 +180,7 @@ const OurTeam = () => {
 
   
   <div className="w-full grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-8 lg:gap-x-8 lg:gap-y-10 justify-start items-start">
-      {items.map((item, index) => (
+      {teams.map((item, index) => (
         <div
           key={index}
           className="flex flex-col items-start "
