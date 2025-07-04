@@ -54,7 +54,7 @@ const teams = [
         image:prashant
     },
     {
-        title:"Hue H.Nguyen",
+        title:"Hue H. Nguyen",
        
         image:hui
     },
