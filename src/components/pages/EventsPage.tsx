@@ -2,10 +2,13 @@ import React from "react";
 import EventsList, { EventType } from "../elementalComponent/EventsList";
 import EventsLastComponent from "../elementalComponent/EventsLastComponent";
 
-import eventSpace from "../../assets/events/eventSpace.png";
-import token2049Img from "../../assets/events/tokendate.png";
-import consensusImg from "../../assets/events/ConsensusHongKong.jpg";
-import miamiNftImg from "../../assets/events/MiamiNFTWeek.png";
+import eventSpace from "../../assets/events/eventSpace.webp";
+import token2049Img from "../../assets/events/tokendate.webp";
+import consensusImg from "../../assets/events/ConsensusHongKong.webp";
+import miamiNftImg from "../../assets/events/MiamiNFTWeek.webp";
+import artBaselImg from "../../assets/events/artbasel.webp";
+import nftNycImg from "../../assets/events/nftNycImg.webp";
+import futuristImg from "../../assets/events/futuristconference.webp";
 
 const EventsPage: React.FC = () => {
   const eventsData: EventType[] = [
@@ -25,6 +28,27 @@ const EventsPage: React.FC = () => {
     },
     {
       id: 3,
+      title: "Art Basel",
+      date: "June 2024",
+      image: artBaselImg,
+      isPlaceholder: false,
+    },
+    {
+      id: 4,
+      title: "NFT NYC",
+      date: "June 2024",
+      image: nftNycImg,
+      isPlaceholder: false,
+    },
+    {
+      id: 5,
+      title: "Futurist Conference",
+      date: "May 2024",
+      image: futuristImg,
+      isPlaceholder: false,
+    },
+    {
+      id: 6,
       title: "Miami NFT Week",
       date: "April 2024",
       image: miamiNftImg,
@@ -52,9 +76,10 @@ const EventsPage: React.FC = () => {
       <div className="w-full max-w-[96rem] mx-auto py-8 px-8 lg:px-16 flex flex-col md:flex-row gap-12 md:gap-16 items-center">
         <div className="md:w-[60%]">
           <h2 className="text-black font-openSansHebrew text-lg lg:text-xl font-normal mb-8">
-            Lorem ipsum dolor sit amet consectetur. Feugiat nibh magnis neque ut
-            facilisi gravida cras. Egestas nisi metus id id nibh senectus.
-            Porttitor turpis cursus ipsum enim blandit venenatis.
+            Maxtron turns global events into strategic playgrounds raising
+            funds, showcasing digital art, and activating bold client campaigns.
+            From NFT exhibits at Art Basel to investor wins at Token2049, we use
+            every stage to transform ideas into real-world impact.
           </h2>
           <a href="https://experiences.maxtron.ai/" className="inline-block">
             <button className="bg-[#7A35C1] text-white px-4 py-3 rounded-lg font-semibold hover:bg-violet-500 transition-colors flex items-center gap-2">
