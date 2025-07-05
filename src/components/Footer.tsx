@@ -118,6 +118,7 @@ const Footer = () => {
                 window.open("https://www.facebook.com/maxtroninnovations/");
               }}
               className=" px-2 text-black rounded transition mr-4  duration-300"
+              aria-label="Visit our Facebook page"
             >
               <FaSquareFacebook className="h-6 w-6 text-white" />
             </button>
@@ -128,6 +129,7 @@ const Footer = () => {
                 );
               }}
               className=" p-2  text-black rounded transition duration-300"
+              aria-label="Visit our LinkedIn page"
             >
               <FaLinkedinIn className="h-6 w-6 text-white" />
             </button>
