@@ -95,8 +95,7 @@ import shaper2 from "../../assets/internal/shaper2.webp";
 // import shapercut from "../../assets/internal/shapercut.svg";
 // import shaper from "../../assets/internal/shaper.png";
 import shaperCultMobile from "../../assets/internal/shaperCultMobile.webp";
-import shaperCultLogo from "../../assets/internal/shaper3.svg";
-import hyper from "../../assets/internal/hyper.webp";
+
 import hyperbg from "../../assets/internal/hyperbg.webp";
 import goodstanding from "../../assets/internal/goodstanding.webp";
 import gsfeature from "../../assets/internal/gsfeature.png";
