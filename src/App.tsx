@@ -21,7 +21,11 @@ import TokenizePage from "./components/pages/TokenizePage";
 import NewHomePage from "./components/pages/NewHomePage";
 import FundRaising from "./components/pages/FundRaising";
 import AffiliateProgramPage from "./components/pages/AffiliateProgramPage";
+<<<<<<< HEAD
 import EventsPage from "./components/pages/EventsPage";
+=======
+import OurTeam from "./components/pages/OurTeam";
+>>>>>>> e3abcf2762a4f8f7a6c7e4ef7052fe65425dbec4
 
 const Home: React.FC = () => (
   <div>
@@ -70,6 +74,7 @@ const App: React.FC = () => {
         <Route path="/case-study" element={<CaseStudyPage />} />
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/fund-raising" element={<FundRaising />} />
+        <Route path="/our-team" element={<OurTeam />} />
         <Route path="/case-studies" element={<CaseStudy />} />
         <Route path="/tokenization" element={<TokenizePage />} />
         <Route path="/staff-augmentation" element={<StaffAugmentation />} />

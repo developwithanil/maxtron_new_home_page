@@ -65,6 +65,7 @@ const dropdownContentData = {
       { name: "Fund Raising", link: "/fund-raising" },
       { name: "Affiliate Program", link: "/affiliate" },
       { name: "Events", link: "/events" },
+      { name: "Our Team", link: "/our-team" },
     ],
   },
   caseStudies: {
