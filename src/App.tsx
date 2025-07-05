@@ -21,11 +21,8 @@ import TokenizePage from "./components/pages/TokenizePage";
 import NewHomePage from "./components/pages/NewHomePage";
 import FundRaising from "./components/pages/FundRaising";
 import AffiliateProgramPage from "./components/pages/AffiliateProgramPage";
-<<<<<<< HEAD
 import EventsPage from "./components/pages/EventsPage";
-=======
 import OurTeam from "./components/pages/OurTeam";
->>>>>>> e3abcf2762a4f8f7a6c7e4ef7052fe65425dbec4
 
 const Home: React.FC = () => (
   <div>
