@@ -48,12 +48,18 @@ const HeroSection = () => {
 
             <div className=" flex flex-row sm:flex-row justify-center items-center space-x-4">
               <Link to="/services">
-                <button className="bg-purple-700 hover:bg-purple-800 text-white font-bold md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3">
+                <button
+                  className="bg-purple-700 hover:bg-purple-800 text-white font-bold md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3"
+                  aria-label="Learn more about our services"
+                >
                   Learn More
                 </button>
               </Link>
               <Link to="/contact">
-                <button className="bg-white hover:bg-gray-100 text-purple-700 font-bold md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3">
+                <button
+                  className="bg-white hover:bg-gray-100 text-purple-700 font-bold md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3"
+                  aria-label="Contact us to get in touch"
+                >
                   Get In Touch Now
                 </button>
               </Link>

@@ -15,7 +15,7 @@ const ProcessSteps: React.FC<{ processSteps: CaseStudy["processSteps"] }> = ({
     {processSteps.map((step, index) => (
       <div key={index} className="mb-12 pl-4 relative">
         <div className="w-4 h-4 bg-purple-500 rounded-full absolute left-[-10px] top-2"></div>
-        <h3 className="text-2xl font-semibold mb-2">{step.title}</h3>
+        <h2 className="text-2xl font-semibold mb-2">{step.title}</h2>
         {step.description.length > 0 && step.description[0] !== "" && (
           <ul className="list-disc pl-6 mt-4">
             {step.description.map(
@@ -110,10 +110,10 @@ const InternalPage: React.FC<InternalPageProps> = ({ caseStudies }) => {
 
         <div className="w-full lg:w-[70%] p-4 lg:p-0">
           {title.toUpperCase().includes("DIAL247.AI") && (
-            <h4 className="text-xl font-bold mb-6">
+            <h2 className="text-xl font-bold mb-6">
               How Maxtron Helped, Build the Revolutionary Dial 247 AI Calling
               Tool
-            </h4>
+            </h2>
           )}
           {problemSolutionResult.map((section, index) => (
             <div

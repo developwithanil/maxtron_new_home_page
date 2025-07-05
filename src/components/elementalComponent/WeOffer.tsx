@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({ icon: Icon, title, description }) => {
         <h3 className="text-xl font-semibold mb-4 text-[#2A2A2A] [font-family:Switzer] items-start text-start ">
           {title}
         </h3>
-        <p className="text-sm text-[#79748A] font-openSansHebrew items-start text-start ">
+        <p className="text-sm text-[#595465] font-openSansHebrew items-start text-start">
           {description}
         </p>
       </div>
@@ -87,7 +87,7 @@ const WeOffer = () => {
       >
         What We Offer
       </h1>
-      <p className="text-[#79748A] font-openSansHebrew lg:text-lg md:text-lg xl:text-lg sm:text-[14px] text-center font-normal mb-12">
+      <p className="text-[#595465] font-openSansHebrew lg:text-lg md:text-lg xl:text-lg sm:text-[14px] text-center font-normal mb-12">
         We provide <strong>scalable, on-demand tech resources</strong> across
         all major stacks and domains. Whether you're a product company, digital
         agency, SI partner, or enterprise, our flexible staff augmentation model

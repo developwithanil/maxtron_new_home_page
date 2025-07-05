@@ -9,62 +9,7 @@ interface CardProps {
   isMobileView?: boolean;
 }
 
-const getStatusTagMeta = (
-  status: string,
-  isMobile: boolean
-): { style: React.CSSProperties; className: string } => {
-  if (isMobile) {
-    let mobileBgColor = "#4A5568";
-    let mobileTextColor = "#FFFFFF";
 
-    if (status === "Immediately Available") {
-      mobileBgColor = "#13982014";
-      mobileTextColor = "#139820";
-    }
-    if (status === "Available in 2 Days") {
-      mobileBgColor = "#F8C22014";
-      mobileTextColor = "#E7B10E";
-    } else if (status === "Available after 1 Week") {
-      mobileBgColor = "#F8C22014";
-      mobileTextColor = "#E7B10E";
-    }
-
-    return {
-      style: { backgroundColor: mobileBgColor, color: mobileTextColor },
-      className: "px-4 py-2 text-[16px] font-normal font-[Switzer] rounded-md",
-    };
-  } else {
-    const desktopStyles: Record<
-      string,
-      { backgroundColor: string; textColor: string }
-    > = {
-      "Immediately Available": {
-        backgroundColor: "#13982014",
-        textColor: "#139820",
-      },
-      "Available after 1 Week": {
-        backgroundColor: "#F1550C14",
-        textColor: "#F1550C",
-      },
-      "Available in 2 Days": {
-        backgroundColor: "#F8C22014",
-        textColor: "#E7B10E",
-      },
-    };
-    const matchedStyle = desktopStyles[status] || {
-      backgroundColor: "#E0E0E0",
-      textColor: "#2A2A2A",
-    };
-    return {
-      style: {
-        backgroundColor: matchedStyle.backgroundColor,
-        color: matchedStyle.textColor,
-      },
-      className:
-        "text-[16px] font-normal font-openSansHebrew px-3 py-1 rounded-md",
-    };
-  }
-};
 
 const Card: React.FC<CardProps> = ({
   status,
@@ -74,7 +19,7 @@ const Card: React.FC<CardProps> = ({
   skills,
   isMobileView = false,
 }) => {
-  const statusTag = getStatusTagMeta(status, isMobileView);
+  
 
   const cardContainerBaseClasses = "w-full ";
 
@@ -106,8 +51,11 @@ const Card: React.FC<CardProps> = ({
   return (
     <div className={`${cardContainerBaseClasses} ${cardContainerViewClasses}`}>
       <div
-        className={`inline-block mb-4 ${statusTag.className}`}
-        style={statusTag.style}
+        className={`inline-block mb-4 px-4 py-2 text-[16px] font-normal font-[Switzer] rounded`}
+        style={{
+          backgroundColor: "rgba(19, 152, 32, 0.15)", // Increased opacity
+          color: "#0B6B16", // Darker green for better contrast
+        }}
       >
         {status}
       </div>

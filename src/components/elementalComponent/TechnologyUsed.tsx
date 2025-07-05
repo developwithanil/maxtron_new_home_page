@@ -106,8 +106,11 @@ const TechnologyUsed = () => {
             ))}
           </div>
           <div className="flex justify-center py-10">
-            <button className="bg-[#7A35C1]  p-2 text-white rounded-md hover:bg-[#F3EBFC] hover:text-[#7A35C1]">
-              <p> View All Offerings</p>
+            <button
+              className="bg-[#7A35C1] p-2 text-white rounded-md hover:bg-[#F3EBFC] hover:text-[#7A35C1]"
+              aria-label="View all offerings"
+            >
+              <p>View All Offerings</p>
             </button>
           </div>
         </div>

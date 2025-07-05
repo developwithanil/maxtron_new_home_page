@@ -138,7 +138,7 @@ const WhoPartner = () => {
             className="bg-[#7A35C1] text-white md:w-[40%] lg:w-[50%] w-full p-6 sm:p-8 md:p-10 flex flex-col items-center justify-center text-center rounded-t-[32px]   cursor-pointer order-first h-auto md:min-h-[28rem] lg:min-h-[30rem]"
             onClick={resetView}
           >
-            <img src={logo}></img>
+            <img src={logo} alt="Maxtron Logo"></img>
             <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-3xl font-bold mt-4 [font-family:Switzer,sans-serif]">
               Who should partner with us?
             </h2>

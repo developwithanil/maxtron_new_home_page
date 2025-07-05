@@ -65,9 +65,10 @@ const InternalPageDetails: React.FC<InternalPageProps> = ({ caseStudies }) => {
               </div>
             ))}
           </div>
-          <p className="text-white font-['Switzer'] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-snug">
+          {/* Main heading (h1) */}
+          <h1 className="text-white font-['Switzer'] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-snug">
             {title}
-          </p>
+          </h1>
           <p className="text-white font-openSansHebrew text-base sm:text-lg md:text-xl font-normal">
             {subtitle}
           </p>
@@ -88,9 +89,10 @@ const InternalPageDetails: React.FC<InternalPageProps> = ({ caseStudies }) => {
             <img src={afterHeroSection} alt="Hero section" />
           </div>
           <div className="flex-1 ">
-            <p className=" text-black font-openSansHebrew text-lg md:text-2xl font-normal leading-[160%]">
+            {/* Subheadings should be h2 */}
+            <h2 className="text-black font-openSansHebrew text-lg md:text-2xl font-normal leading-[160%]">
               {description}
-            </p>
+            </h2>
           </div>
         </div>
       )}
