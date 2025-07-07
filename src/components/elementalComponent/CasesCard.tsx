@@ -234,9 +234,9 @@ const CasesCard = ({
 
                 {/* Always-visible subheading */}
                 <div className="absolute bottom-0 hidden md:block left-0 right-0 group-hover:opacity-0 p-6 bg-gradient-to-t from-black/70 to-transparent transition-opacity duration-300 z-0">
-                  <h3 className="text-white text-xl md:text-2xl font-['Switzer'] font-semibold line-clamp-2">
+                  <h2 className="text-white text-xl md:text-2xl font-['Switzer'] font-semibold line-clamp-2">
                     {item.subheading}
-                  </h3>
+                  </h2>
                 </div>
               </div>
             ))}

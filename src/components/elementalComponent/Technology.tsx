@@ -13,7 +13,7 @@ const Technology: React.FC<TechnologyProps> = ({ techs }) => {
     <div className="flex flex-col lg:flex-row w-full mx-auto max-w-[88rem] items-start gap-5 md:gap-8 px-4 sm:px-6 md:px-8 py-7 md:py-10 lg:py-12">
       {/* Header */}
       <div className="lg:w-1/4 w-full">
-        <p className="text-[#B1B1B1] [font-family:Switzer] text-lg md:text-2xl font-medium leading-[160%] uppercase">
+        <p className="text-[#595959] [font-family:Switzer] text-lg md:text-xl font-medium leading-[160%]">
           Technology used
         </p>
       </div>
