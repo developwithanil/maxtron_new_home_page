@@ -34,34 +34,32 @@ const HeroSection = () => {
           <div className="absolute top-0 left-0 w-full h-full bg-purple-900 bg-opacity-50"></div>
 
           <div className="relative z-10 flex flex-col items-center sm:items-center justify-center h-full text-white px-4 sm:px-6 lg:px-8">
-            <h1 className="text-2xl hidden sm:block sm:text-xl md:text-6xl font-bold text-center mb-4">
+            <h2 className="text-2xl hidden sm:block sm:text-xl md:text-6xl font-bold text-center mb-4">
               Creating Winning Products, Ensuring Their Success
-            </h1>
-            <h1 className=" sm:hidden text-3xl md:text-6xl font-bold text-center mb-3">
+            </h2>
+            <h2 className="sm:hidden text-3xl md:text-6xl font-bold text-center mb-3">
               Creating Winning Products, Ensuring Their Success
-            </h1>
+            </h2>
 
-            <p className="text-xl  sm:text-2xl md:text-3xl text-center mb-3">
+            <p className="text-xl sm:text-2xl md:text-3xl text-center mb-3 bg-black bg-opacity-50 p-2 rounded">
               Transform Your Business and Growth with 360° Cutting-Edge Tech
               Solutions
             </p>
 
-            <div className=" flex flex-row sm:flex-row justify-center items-center space-x-4">
-              <Link to="/services">
-                <button
-                  className="bg-purple-700 hover:bg-purple-800 text-white font-bold md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3"
-                  aria-label="Learn more about our services"
-                >
-                  Learn More
-                </button>
+            <div className="flex flex-row sm:flex-row justify-center items-center space-x-4">
+              <Link
+                to="/services"
+                className="bg-purple-700 hover:bg-purple-800 text-white font-bold md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3"
+                aria-label="Learn more about our services"
+              >
+                <span>Learn More</span>
               </Link>
-              <Link to="/contact">
-                <button
-                  className="bg-white hover:bg-gray-100 text-purple-700 font-bold md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3"
-                  aria-label="Contact us to get in touch"
-                >
-                  Get In Touch Now
-                </button>
+              <Link
+                to="/contact"
+                className="bg-white hover:bg-gray-100 text-purple-900 font-bold md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3"
+                aria-label="Contact us to get in touch"
+              >
+                <span>Get In Touch Now</span>
               </Link>
             </div>
           </div>

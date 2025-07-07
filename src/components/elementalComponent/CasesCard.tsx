@@ -209,8 +209,9 @@ const CasesCard = ({
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-black/60 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex flex-row justify-between items-end p-3 md:p-6 gap-2 md:gap-4 z-10">
                   <div className="text-white">
-                    <p className="text-lg md:text-2xl font-['Switzer'] font-semibold mb-1 md:mb-2">
-                      {item.subheading}
+                    <p className="text-[#2A2A2A] font-openSansHebrew text-base md:text-lg lg:text-xl font-normal leading-[160%]">
+                      Earn upto 30% commission for every deal you help close
+                      with Maxtron Innovations.
                     </p>
                     <h3 className="text-sm md:text-lg font-['Open_Sans_Hebrew'] mb-2 md:mb-4 line-clamp-2">
                       {item.heading}

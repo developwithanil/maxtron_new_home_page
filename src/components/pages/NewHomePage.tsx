@@ -13,18 +13,20 @@ import Webinar from "./Webinar";
 const NewHomePage = () => {
   return (
     <div id="Home" className="">
-      <HeroSection />
-      <ClientMarquee />
-      <Webinar />
-      <WhyMaxtron />
-      <WhoMaxtron />
-      <TechnologyUsed />
-      <Pride />
-      <CaseStudies />
-      <Gallery />
-      <Testimonials />
-      <ContactForm />
-      {/* <ContactAndSubscribe /> */}
+      <main>
+        <h1 className="sr-only">Maxtron - Creating Winning Products</h1>
+        <HeroSection />
+        <ClientMarquee />
+        <Webinar />
+        <WhyMaxtron />
+        <WhoMaxtron />
+        <TechnologyUsed />
+        <Pride />
+        <CaseStudies />
+        <Gallery />
+        <Testimonials />
+        <ContactForm />
+      </main>
     </div>
   );
 };

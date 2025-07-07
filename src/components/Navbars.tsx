@@ -282,9 +282,19 @@ const Navbar: React.FC = () => {
                         : "text-[#2A2A2A] font-openSansHebrew"
                     } hover:bg-purple-50 hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium`
                   }
+                  aria-label="Learn about our tokenization services"
                 >
                   Tokenization
                 </NavLink>
+                <a
+                  href="https://experiences.maxtron.ai/"
+                  className="text-[#2A2A2A] hover:text-purple-800"
+                  aria-label="Visit Maxtron Experiences website"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Experience Tech
+                </a>
                 <NavLink
                   to="/careers"
                   onClick={closeDesktopDropdown}
