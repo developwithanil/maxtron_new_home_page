@@ -6,10 +6,9 @@ interface CardProps {
   experience: string;
   timings: string;
   skills: string[];
+  // skills: string[];
   isMobileView?: boolean;
 }
-
-
 
 const Card: React.FC<CardProps> = ({
   status,
@@ -19,8 +18,6 @@ const Card: React.FC<CardProps> = ({
   skills,
   isMobileView = false,
 }) => {
-  
-
   const cardContainerBaseClasses = "w-full ";
 
   const cardContainerViewClasses = isMobileView
