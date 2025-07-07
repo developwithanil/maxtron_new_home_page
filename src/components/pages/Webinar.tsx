@@ -104,7 +104,7 @@ const Webinar = () => {
 
   {/* Time Box */}
   <div className="bg-blue-50 text-blue-900 font-semibold px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg sm:rounded-xl shadow-md border border-blue-200 text-sm sm:text-base">
-    <span className="block text-center font-semibold">10:00 AM PDT</span>
+    <span className="block text-center font-semibold">10:00 AM PDT | 8:30 PM GST | 6:30 PM CEST</span>
   </div>
 </div>
 
