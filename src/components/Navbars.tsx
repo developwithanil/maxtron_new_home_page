@@ -286,15 +286,7 @@ const Navbar: React.FC = () => {
                 >
                   Tokenization
                 </NavLink>
-                <a
-                  href="https://experiences.maxtron.ai/"
-                  className="text-[#2A2A2A] hover:text-purple-800"
-                  aria-label="Visit Maxtron Experiences website"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Experience Tech
-                </a>
+
                 <NavLink
                   to="/careers"
                   onClick={closeDesktopDropdown}
