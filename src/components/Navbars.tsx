@@ -3,7 +3,6 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import darkFullLogo from "../assets/darkFullLogo.png";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
-// This is for the DESKTOP dropdown header, not mobile.
 const CustomArrowIcon = () => (
   <div className="flex-shrink-0 w-6 h-6 bg-[#7A35C1] rounded flex items-center justify-center ml-2">
     <svg

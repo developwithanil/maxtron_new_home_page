@@ -213,9 +213,9 @@ const CasesCard = ({
                       Earn upto 30% commission for every deal you help close
                       with Maxtron Innovations.
                     </p>
-                    <h3 className="text-sm md:text-lg font-['Open_Sans_Hebrew'] mb-2 md:mb-4 line-clamp-2">
+                    <h2 className="text-sm md:text-lg font-['Open_Sans_Hebrew'] mb-2 md:mb-4 line-clamp-2">
                       {item.heading}
-                    </h3>
+                    </h2>
                   </div>
 
                   <button

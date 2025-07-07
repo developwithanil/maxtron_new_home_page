@@ -42,18 +42,18 @@ const cardData = [
 const TechnologyUsed = () => {
   return (
     <section
-      id=""
-      className="relative py-4 md:py-8 lg:py-11 xl:py-12 inset-0  text-center"
+      id="technology-trends"
+      className="relative py-4 md:py-8 lg:py-11 xl:py-12 inset-0 text-center"
     >
       <div>
-        <div className="p-5 md:p-4 lg:p-4 xl:p-4 ">
+        <div className="p-5 md:p-4 lg:p-4 xl:p-4">
           <h2 className="text-3xl lg:text-3xl font-bold text-[#2A2A2A] mb-8 text-[Switzer]">
             Trends We Are Building
           </h2>
 
           <div className="container mx-auto grid sm:grid-cols-2 lg:grid-cols-2 gap-3 xl:gap-8">
             {cardData.map((card, index) => (
-              <div key={index} className="relative rounded-lg ">
+              <div key={index} className="relative rounded-lg">
                 <img
                   src={card.image}
                   alt={card.title}
@@ -67,16 +67,21 @@ const TechnologyUsed = () => {
                 <div className="py-4 flex flex-row justify-between">
                   <div className="flex flex-col items-start">
                     <h3 className="text-lg font-bold mb-2">{card.title}</h3>
-                    <p className="text-[#79748A] text-base">{card.desc}</p>
+                    {/* Fixed contrast issue by using a darker color */}
+                    <p className="text-[#595959] text-base font-medium">
+                      {card.desc}
+                    </p>
                   </div>
                   <div className="flex mt-4 items-center">
+                    {/* Added aria-label for accessibility */}
                     <a
                       href={card.link}
                       className="text-[#7A35C1] hover:text-purple-800"
+                      aria-label={`Learn more about ${card.title}`}
                     >
                       <div className="hover:bg-[#F3EBFC] hover:text-[#7A35C1] md:border border-[#7A35C1] flex items-center gap-2 px-4 py-3 rounded-md">
                         <p className="hidden md:block">{card.linktitle}</p>
-
+                        {/* Added aria-hidden to decorative icon */}
                         <svg
                           className="block md:hidden"
                           width="24"
@@ -84,6 +89,7 @@ const TechnologyUsed = () => {
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
+                          aria-hidden="true"
                         >
                           <path
                             fillRule="evenodd"
