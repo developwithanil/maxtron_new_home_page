@@ -85,7 +85,7 @@ const AffiliateProgramPage = () => {
               </h1>
             </div>
 
-            <p className=" text-[#79748A] font-openSansHebrew text-base md:text-lg lg:text-xl font-normal leading-[160%]">
+            <p className="text-[#5B5570] font-openSansHebrew text-base md:text-lg lg:text-xl font-normal leading-[160%]">
               Earn upto 30% commission for every deal you help close with
               Maxtron Innovations.
             </p>
@@ -101,7 +101,7 @@ const AffiliateProgramPage = () => {
               Already a partner?{" "}
               <Link
                 to="/contact"
-                className="text-[#79748A] font-semibold underline underline-offset-2 hover:text-[#7A35C1] transition-colors duration-300"
+                className="text-[#5B5570] font-semibold underline underline-offset-2 hover:text-[#7A35C1] transition-colors duration-300"
               >
                 Access your affiliate dashboard
               </Link>

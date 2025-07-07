@@ -15,7 +15,7 @@ const Testimonials = () => {
         <h2 className="text-2xl lg:text-3xl font-bold text-[#2A2A2A]  font-[Switzer]">
           Our Believers And Supporters
         </h2>
-        <p className="md:mb-10 lg:mb-14 xl:mb-16  text-[#79748A] [font-family: openSansHebrew] text-lg">
+        <p className="md:mb-10 lg:mb-14 xl:mb-16 text-[#5B5570] [font-family: openSansHebrew] text-lg">
           Find out how our clients are spreading the word!
         </p>
       </div>
