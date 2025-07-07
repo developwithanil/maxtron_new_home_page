@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import darkFullLogo from "../assets/darkFullLogo.png"; 
+import darkFullLogo from "../assets/darkFullLogo.png";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 // This is for the DESKTOP dropdown header, not mobile.
@@ -64,6 +64,7 @@ const dropdownContentData = {
       { name: "Staff Augmentation", link: "/staff-augmentation" },
       { name: "Fund Raising", link: "/fund-raising" },
       { name: "Affiliate Program", link: "/affiliate" },
+      { name: "Events", link: "/events" },
       { name: "Our Team", link: "/our-team" },
     ],
   },

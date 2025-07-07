@@ -1,45 +1,65 @@
-import { useState } from 'react';
-import { FiChevronDown } from 'react-icons/fi';
+import { useState } from "react";
+import { FiChevronDown } from "react-icons/fi";
 
 const faqData = [
   {
     question: "Who can become an affiliate?",
-    answer: "Anyone with a relevant audience or network can apply — no need to be a Maxtron customer."
+    answer:
+      "Anyone with a relevant audience or network can apply — no need to be a Maxtron customer.",
   },
   {
     question: "Is there a cost to join?",
-    answer: " No, it’s completely free."
+    answer: " No, it’s completely free.",
   },
   {
     question: "How and when do I get paid?",
-    answer: "We pay out commissions monthly once the deal is closed and payment is received."
+    answer:
+      "We pay out commissions monthly once the deal is closed and payment is received.",
   },
   {
     question: "Can I refer clients from my agency or network?",
-    answer: "Absolutely. We welcome agencies, consultants, and advisors to participate."
-  }
+    answer:
+      "Absolutely. We welcome agencies, consultants, and advisors to participate.",
+  },
 ];
 
-const FaqItem = ({ item, isOpen, onClick }: { item: { question: string, answer: string }, isOpen: boolean, onClick: () => void }) => (
+const FaqItem = ({
+  item,
+  isOpen,
+  onClick,
+}: {
+  item: { question: string; answer: string };
+  isOpen: boolean;
+  onClick: () => void;
+}) => (
   <div className="border-b  px-6">
     <button
       className="w-full flex justify-between items-center text-left py-4 px-2"
       onClick={onClick}
+      aria-expanded={isOpen}
+      aria-controls={`faq-answer-${item.question
+        .replace(/\s+/g, "-")
+        .toLowerCase()}`}
     >
-      <span className="text-[#2A2A2A] font-[Switzer] text-base md:text-lg">{item.question}</span>
+      <span className="text-[#2A2A2A] font-[Switzer] text-base md:text-lg">
+        {item.question}
+      </span>
       <FiChevronDown
-        className={`transform transition-transform duration-300 ${isOpen ? 'rotate-180' : ''} text-[#7A35C1]`}
+        className={`transform transition-transform duration-300 ${
+          isOpen ? "rotate-180" : ""
+        } text-[#7A35C1]`}
         size={20}
       />
     </button>
     <div
       className={`grid overflow-hidden transition-all duration-500 ease-in-out ${
-        isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+        isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
       }`}
+      id={`faq-answer-${item.question.replace(/\s+/g, "-").toLowerCase()}`}
     >
       <div className="overflow-hidden">
         <div className="pb-4 px-2">
-            <p className="text-[#6e6a7b] font-openSansHebrew">{item.answer}</p>
+          <p className="text-[#6e6a7b] font-openSansHebrew">{item.answer}</p>
         </div>
       </div>
     </div>
@@ -72,4 +92,4 @@ const Faq = () => {
   );
 };
 
-export default Faq; 
+export default Faq;
