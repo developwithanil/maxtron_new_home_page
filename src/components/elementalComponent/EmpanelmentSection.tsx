@@ -131,7 +131,12 @@ const EmpanelmentSection = () => {
                     }}
                   >
                     <CircleIcon isActive={isActive} />
-                    <span className="text-base font-normal font-openSansHebrew md:text-xl lg:text-xl xl:text-xl ">
+                    <span
+                      className={`text-base 
+                        font-normal font-openSansHebrew md:text-xl lg:text-xl xl:text-xl ${
+                          isActive ? "text-[#7A35C1]" : "text-[#595465]"
+                        }`}
+                    >
                       {industry.title}
                     </span>
                   </div>

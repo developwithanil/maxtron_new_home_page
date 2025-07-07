@@ -77,13 +77,30 @@ const Services = () => {
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
           Our Services At A Glance
         </h1>
-        <p className="text-base sm:text-lg lg:text-xl mt-4">
+        <p
+          className="text-base sm:text-lg lg:text-xl mt-4 text-white bg-transparent font-medium"
+          style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
+        >
           At our core, we develop innovative tech products that put user needs
           first, leveraging cutting-edge technology. Additionally, we strategize
           and <br className="sm:hidden md:block" />
           execute growth plans to maximize returns and drive substantial success
           for the products.
         </p>
+      </div>
+
+      {/* Fix for file input accessibility */}
+      <div className="relative">
+        <label htmlFor="fileInput" className="sr-only">
+          Upload File
+        </label>
+        <input
+          type="file"
+          id="fileInput"
+          name="file"
+          className="hidden"
+          aria-label="File upload"
+        />
       </div>
 
       <div className="relative container mx-auto p-0 md:p-8">

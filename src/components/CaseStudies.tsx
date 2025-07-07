@@ -82,7 +82,11 @@ const CaseStudies = () => {
           <div className="flex flex-row md:flex-col items-center text-center relative  md:min-h-[400px] justify-between py-6 md:py-0 w-full ">
             <button
               onClick={handlePrev}
-              aria-label="Previous case study"
+              aria-label={`Previous case study: ${
+                caseStudiesData[
+                  (currentIndex - 1 + totalStudies) % totalStudies
+                ].title
+              }`}
               disabled={isPrevDisabled}
               className={`p-3 transition-colors duration-200 z-10
                           ${
@@ -133,7 +137,9 @@ const CaseStudies = () => {
 
             <button
               onClick={handleNext}
-              aria-label="Next case study"
+              aria-label={`Next case study: ${
+                caseStudiesData[(currentIndex + 1) % totalStudies].title
+              }`}
               disabled={isNextDisabled}
               className={`p-3 transition-colors duration-200 z-10
                           ${
