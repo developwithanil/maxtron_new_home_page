@@ -36,12 +36,9 @@ const EventsList: React.FC<EventsListProps> = ({ events }) => {
 
             <div className="absolute bottom-0 left-0 right-0 p-4">
               <div className="p-4 bg-white rounded-lg shadow-md">
-                <h3
-                  className="font-bold font-switzer text-xl lg:text-2xl xl:text-2xl
-                "
-                >
+                <h2 className="font-bold font-switzer text-xl lg:text-2xl xl:text-2xl">
                   {event.title}
-                </h3>
+                </h2>
                 <p className="text-[#2A2A2A] mt-1 text-base font-switzer">
                   {event.date}
                 </p>

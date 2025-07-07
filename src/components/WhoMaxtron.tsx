@@ -209,7 +209,7 @@ const WhoMaxtron = () => {
           {" "}
           Who Are We{" "}
         </h2>
-        <p className="text-base sm:text-sm md:text-lg mb-6 md:mb-10 lg:mb-14 xl:mb-16 text-[#79748A] font-openSansHebrew px-2">
+        <p className="text-base sm:text-sm md:text-lg mb-6 md:mb-10 lg:mb-14 xl:mb-16 text-[#5B5570] font-openSansHebrew px-2">
           {" "}
           Your Partner in Building Future-Ready Digital Solutions{" "}
         </p>
@@ -226,7 +226,7 @@ const WhoMaxtron = () => {
                 className={`text-[14px] md:text-2xl lg:text-3xl font-semibold cursor-pointer px-3 py-4 md:py-6 flex-1 text-center border-l border-r border-[#DFDEE7] ${
                   activeMainTab === tab.id
                     ? "text-[#2A2A2A] bg-[#F8F8F8] [font-family:Switzer]"
-                    : "text-[#79748A] bg-white  hover:text-[#6A0DAD] [font-family:Switzer]"
+                    : "text-[#5B5570] bg-white hover:text-[#6A0DAD] [font-family:Switzer]"
                 }`}
               >
                 {" "}
@@ -319,10 +319,10 @@ const WhoMaxtron = () => {
                   {currentContent.points.map((point, pointIndex) => (
                     <li
                       key={pointIndex}
-                      className="flex items-start text-base text-[#79748A] "
+                      className="flex items-start text-base text-[#5B5570] "
                     >
                       {" "}
-                      <span className="text-[#79748A] font-bold mr-2 mt-1">
+                      <span className="text-[#5B5570] font-bold mr-2 mt-1">
                         •
                       </span>{" "}
                       {point}{" "}
@@ -419,9 +419,9 @@ const WhoMaxtron = () => {
                           (point, pointIndex) => (
                             <li
                               key={pointIndex}
-                              className="flex items-start text-[14px] text-[#79748A]"
+                              className="flex items-start text-[14px] text-[#5B5570]"
                             >
-                              <span className="text-[#79748A] font-bold mr-2 mt-[1px] text-lg leading-none">
+                              <span className="text-[#5B5570] font-bold mr-2 mt-[1px] text-lg leading-none">
                                 •
                               </span>{" "}
                               {point}

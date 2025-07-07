@@ -102,7 +102,7 @@ const EventsPage: React.FC = () => {
 
         <div className="flex flex-wrap gap-4 justify-center">
           {" "}
-          {realEventImages.map((event) => (
+          {realEventImages.slice(0, 3).map((event) => (
             <img
               key={event.id}
               src={event.image!}

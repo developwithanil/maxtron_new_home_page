@@ -120,7 +120,7 @@ const CaseStudies = () => {
                     </span>
                   ))}
                 </div>
-                <p className="text-brand-text-medium text-xs sm:text-sm lg:text-base leading-relaxed mb-6 text-[#79748A] line-clamp-2 ">
+                <p className="text-brand-text-medium text-xs sm:text-sm lg:text-base leading-relaxed mb-6 text-[#5B5570] line-clamp-2">
                   {currentStudy.description}
                 </p>
               </div>
