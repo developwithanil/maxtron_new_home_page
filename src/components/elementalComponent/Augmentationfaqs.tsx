@@ -70,6 +70,7 @@ const AugmentationFaqs = () => {
               className="w-full flex items-center justify-between py-5 px-2 text-left focus:outline-none "
               onClick={() => handleToggle(idx)}
               aria-expanded={openIndex === idx}
+              aria-controls={`faq-answer-${idx}`}
             >
               <span className="text-base md:text-base font-normal  text-[#2A2A2A] font-openSansHebrew">
                 {faq.question}
@@ -99,6 +100,7 @@ const AugmentationFaqs = () => {
                   ? "grid-rows-[1fr] opacity-100 mt-2"
                   : "grid-rows-[0fr] opacity-0"
               }`}
+              id={`faq-answer-${idx}`}
             >
               <div className="overflow-hidden px-2">
                 <div className="text-gray-500 text-sm md:text-base font-normal font-[Switzer]">
