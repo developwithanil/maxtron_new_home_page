@@ -4,7 +4,7 @@ import img3 from "../assets/service/service3.webp";
 import img4 from "../assets/service/service4.webp";
 import { Link } from "react-router-dom";
 import React from "react";
-import { triangle as Triangle, target as Target } from "./VectorImage";
+import { good as Good, handshake as Handshake } from "./VectorImage";
 
 const services = [
   {
@@ -153,9 +153,9 @@ const Services = () => {
         })}
         <div className="relative z-10 text-center my-7">
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <button className="flex items-center bg-gray-900 text-white my-1 px-5 py-3 text-sm md:text-[16px] rounded-xl">
+            <button className="flex items-center bg-gray-900 text-white my-1 px-6 py-4 text-base md:text-[16px] rounded-xl min-h-[44px] min-w-[44px]">
               <span className="inline-block pr-3 w-6 h-6 md:w-8 md:h-8">
-                <Triangle />
+                <Good />
               </span>
               <Link to="/Contact" className="inline-block">
                 Get in Touch
@@ -163,13 +163,13 @@ const Services = () => {
             </button>
 
             <button
-              className="bg-gray-900 flex items-center text-white my-1 px-5 py-3 text-sm md:text-[16px] rounded-xl"
+              className="bg-gray-900 flex items-center text-white my-1 px-6 py-4 text-base md:text-[16px] rounded-xl min-h-[44px] min-w-[44px]"
               onClick={() => {
                 window.open("https://calendly.com/business-maxtron/30min");
               }}
             >
               <span className="inline pr-3 w-8 h-auto md:w-12">
-                <Target />
+                <Handshake />
               </span>
               Book a Consultation
             </button>

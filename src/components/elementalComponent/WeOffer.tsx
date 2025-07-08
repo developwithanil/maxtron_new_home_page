@@ -81,12 +81,12 @@ const cardsData = [
 const WeOffer = () => {
   return (
     <div className="relative p-5 md:p-8 lg:p-11 xl:p-16 inset-0  text-center max-w-[96rem] mx-auto">
-      <h1
+      <h2
         className="text-[#2A2A2A] justify-center [font-family: Switzer]  text-xl md:text-3xl
         lg:text-3xl xl:text-3xl text-center font-bold mb-2"
       >
         What We Offer
-      </h1>
+      </h2>
       <p className="text-[#595465] font-openSansHebrew lg:text-lg md:text-lg xl:text-lg sm:text-[14px] text-center font-normal mb-12">
         We provide <strong>scalable, on-demand tech resources</strong> across
         all major stacks and domains. Whether you're a product company, digital

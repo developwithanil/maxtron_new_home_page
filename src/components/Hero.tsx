@@ -1,23 +1,11 @@
 import React from "react";
-// import video from "../assets/hero.mp4";
 import hdnewvideo from "../assets/hero_video.mp4";
-// import newherovideo from "../assets/newherovideo.mp4";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
     <div className="relative top-0">
-      {/* <Link
-  to="https://experiences.maxtron.ai/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-red-700 absolute  -top-[100px] md:-top-[114px] xl:-top-[120px] left-8 md:left-[14%] xl:left-[18%]"
->
-  <span className="underline">our experiences website</span>{' '}
-  <span className="no-underline">&#x2192;</span>
-</Link> */}
       <div className="mx-4 mt-4 sm:mx-6 lg:mx-8 ">
-        {" "}
         <div className="relative h-screen w-full overflow-hidden rounded-3xl">
           <video
             className="absolute top-0 left-0 w-full h-full object-cover"
@@ -27,7 +15,13 @@ const HeroSection = () => {
             playsInline
           >
             <source src={hdnewvideo} type="video/mp4" />
-            {/* <source src={video} type="video/mp4" /> */}
+            <track
+              kind="captions"
+              src="/captions/hero-video-captions.vtt"
+              srcLang="en"
+              label="English"
+              default
+            />
             Your browser does not support the video tag.
           </video>
 
@@ -50,14 +44,12 @@ const HeroSection = () => {
               <Link
                 to="/services"
                 className="bg-purple-700 hover:bg-purple-800 text-white font-bold md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3"
-                aria-label="Learn more about our services"
               >
                 <span>Learn More</span>
               </Link>
               <Link
                 to="/contact"
                 className="bg-white hover:bg-gray-100 text-purple-900 font-bold md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3"
-                aria-label="Contact us to get in touch"
               >
                 <span>Get In Touch Now</span>
               </Link>

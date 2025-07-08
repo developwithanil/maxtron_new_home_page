@@ -32,9 +32,9 @@ const TestimonialsCard = () => {
                     className="w-10 h-10 md:w-11 md:h-11 rounded-full border-2 border-brand-purple-accent object-cover flex-shrink-0"
                   />
                   <div className="min-w-0 text-left">
-                    <h3 className="text-lg font-normal font-[Switzer] truncate">
+                    <p className="text-lg font-normal font-[Switzer] truncate">
                       {testimonial.name}
-                    </h3>
+                    </p>
                     <p className="text-xs text-[#2A2A2A] whitespace-normal [font-family: openSansHebrew]">
                       {testimonial.title}
                     </p>
