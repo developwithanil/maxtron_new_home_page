@@ -13,7 +13,7 @@ const TeamLastComponent = () => {
           to={"/careers"}
           className="flex justify-between items-center  gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-7 border-[#FFF] ] px-3 md:px-4 lg:px-7 py-2 md:py-3 lg:py-3 rounded-[38px] border-2 border-solid z-20 hover:bg-[#FFF] transition-all duration-300 group"
         >
-          <p className="text-[#fff] group-hover:text-[#4A1B7E] text-center font-[Switzer] text-[12px] sm:text-sm md:text-base lg:text-lg font-normal leading-[140%]  transition-colors duration-300">
+          <p className="text-[#fff] group-hover:text-[#2A1B4E] text-center font-[Switzer] text-[12px] sm:text-sm md:text-base lg:text-lg font-normal leading-[140%]  transition-colors duration-300">
             Become a Maxtronite
           </p>
           <p className="group-hover:translate-x-1 transition-transform duration-300">
@@ -31,7 +31,7 @@ const TeamLastComponent = () => {
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  className="group-hover:stroke-[#4A1B7E]  transition-colors duration-300"
+                  className="group-hover:stroke-[#2A1B4E]  transition-colors duration-300"
                 />
               </g>
               <defs>
@@ -47,9 +47,9 @@ const TeamLastComponent = () => {
             </svg>
           </p>
         </Link>
-        <div className="w-[655px] h-[655px] hidden lg:flex absolute bottom-[-279px] border-[#FFF] bg-[#CAA8EF] blur-[250px] rounded-[655px] border-0 border-solid right-28 z-10"></div>
-        <div className="w-[248px] md:hidden h-[248px] absolute right-[-22px] bottom-[-40.801px] bg-[#CAA8EF] blur-[150px]"></div>
-        <div className="w-[360px] hidden md:flex  h-[360px] absolute right-[-22px] bottom-[-40.801px] bg-[#CAA8EF] blur-[150px]"></div>
+        <div className="w-[655px] h-[655px] hidden lg:flex absolute bottom-[-279px] border-[#FFF] bg-[#9B6BC7] blur-[250px] rounded-[655px] border-0 border-solid right-28 z-10"></div>
+        <div className="w-[248px] md:hidden h-[248px] absolute right-[-22px] bottom-[-40.801px] bg-[#9B6BC7] blur-[150px]"></div>
+        <div className="w-[360px] hidden md:flex  h-[360px] absolute right-[-22px] bottom-[-40.801px] bg-[#9B6BC7] blur-[150px]"></div>
       </div>
     </div>
   );
