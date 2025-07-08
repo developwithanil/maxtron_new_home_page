@@ -4,7 +4,7 @@ import img3 from "../assets/service/service3.webp";
 import img4 from "../assets/service/service4.webp";
 import { Link } from "react-router-dom";
 import React from "react";
-import { good as Good, handshake as Handshake } from "./VectorImage";
+import { triangle as Triangle, target as Target } from "./VectorImage";
 
 const services = [
   {
@@ -155,7 +155,7 @@ const Services = () => {
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <button className="flex items-center bg-gray-900 text-white my-1 px-6 py-4 text-base md:text-[16px] rounded-xl min-h-[44px] min-w-[44px]">
               <span className="inline-block pr-3 w-6 h-6 md:w-8 md:h-8">
-                <Good />
+                <Triangle />
               </span>
               <Link to="/Contact" className="inline-block">
                 Get in Touch
@@ -169,7 +169,7 @@ const Services = () => {
               }}
             >
               <span className="inline pr-3 w-8 h-auto md:w-12">
-                <Handshake />
+                <Target />
               </span>
               Book a Consultation
             </button>
