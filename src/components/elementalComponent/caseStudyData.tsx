@@ -94,7 +94,7 @@ import herovote from "../../assets/internal/herovote.webp";
 import shaper2 from "../../assets/internal/shaper2.webp";
 // import shapercut from "../../assets/internal/shapercut.svg";
 // import shaper from "../../assets/internal/shaper.png";
-import shaperCultMobile from "../../assets/internal/shaperCultMobile.webp";
+import shaperCultMobile from "../../assets/internal/shaperCultMobile.png";
 
 import hyperbg from "../../assets/internal/hyperbg.webp";
 import goodstanding from "../../assets/internal/goodstanding.webp";
@@ -1141,7 +1141,7 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
 
-    keyFeaturesImage: [tokennew2, tokennew4, tokennew3, tokennew1],
+    keyFeaturesImage: [tokennew1, tokennew2, tokennew3, tokennew4],
     bgImage: token,
   },
   {
