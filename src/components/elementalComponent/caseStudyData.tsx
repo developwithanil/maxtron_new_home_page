@@ -94,7 +94,7 @@ import herovote from "../../assets/internal/herovote.webp";
 import shaper2 from "../../assets/internal/shaper2.webp";
 // import shapercut from "../../assets/internal/shapercut.svg";
 // import shaper from "../../assets/internal/shaper.png";
-import shaperCultMobile from "../../assets/internal/shaperCultMobile.png";
+import shaperCultMobile from "../../assets/internal/shaperCultMobile.webp";
 
 import hyperbg from "../../assets/internal/hyperbg.webp";
 import goodstanding from "../../assets/internal/goodstanding.webp";
