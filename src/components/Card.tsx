@@ -33,8 +33,8 @@ const Card: React.FC<CardProps> = ({
     : "text-xs md:text-sm lg:text-sm xl:text-sm font-semibold text-[#7A35C1]";
 
   const timingsClasses = isMobileView
-    ? "text-[14px] text-[#7A7A7A]"
-    : "text-xs md:text-sm lg:text-sm xl:text-sm text-[#7A7A7A]";
+    ? "text-[14px] text-[#4A4A4A]"
+    : "text-xs md:text-sm lg:text-sm xl:text-sm text-[#4A4A4A]";
 
   const skillsListClasses = isMobileView
     ? "list-disc  space-y-1.5 text-sm font-bold font-openSansHebrew text-[#2A2A2A] p-4"

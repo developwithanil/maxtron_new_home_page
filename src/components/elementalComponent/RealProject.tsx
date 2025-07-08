@@ -48,7 +48,7 @@ const RealProject = () => {
             Real Projects We're Backing
           </h2>
           <div>
-            <p className="text-[#79748A] text-base md:text-lg  font-openSansHebrew">
+            <p className="text-[#2A2A2A] text-base md:text-lg  font-openSansHebrew">
               Want to build something radical like this?
             </p>
             <Link

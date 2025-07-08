@@ -112,7 +112,7 @@ const FundRaising = () => {
           >
             What We Offer
           </h2>
-          <p className="text-center mt-3 lg:mt-4 xl:mt-5 self-stretch text-[#79748A] font-openSansHebrew  text-base md:text-lg lg:text-xl font-normal leading-[160%]">
+          <p className="text-center mt-3 lg:mt-4 xl:mt-5 self-stretch text-[#4B4B4B] font-openSansHebrew text-base md:text-lg lg:text-xl font-normal leading-[160%]">
             Everything You Need to Go from Vision to Valuation
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mt-8 md:mt-10 lg:mt-12 xl:mt-16">
@@ -124,9 +124,10 @@ const FundRaising = () => {
                 <div className="w-16 h-16 p-2 bg-[#F5F5F5] rounded-lg">
                   <item.icon />
                 </div>
-                <h3 className="self-stretch text-[#2A2A2A] font-[Switzer] text-xl  font-semibold leading-[140%]">
+
+                <h2 className="self-stretch text-[#2A2A2A] font-[Switzer] text-xl font-semibold leading-[140%]">
                   {item.title}
-                </h3>
+                </h2>
               </div>
             ))}
             <div
@@ -137,9 +138,9 @@ const FundRaising = () => {
               }}
             >
               <img src={whatwedo9} alt="left" className="h-24" />
-              <h3 className="text-white font-[Switzer] text-xl  font-semibold leading-[140%]">
+              <h2 className="text-white font-[Switzer] text-xl font-semibold leading-[140%]">
                 Trusted by pioneering founders building in 10+ countries.
-              </h3>
+              </h2>
               <img src={whatwedo10} alt="right" className="h-24" />
             </div>
           </div>

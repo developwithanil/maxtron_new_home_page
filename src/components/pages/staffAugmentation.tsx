@@ -15,7 +15,7 @@ const StaffAugmentation: React.FC = () => {
   return (
     <>
       <div className="w-full text-white flex flex-col lg:flex-row lg:items-center pt-5 px-6 sm:px-10 md:px-16 lg:pl-12 xl:pl-20 2xl:pl-32 lg:pr-8 xl:pr-12 max-w-[96rem] mx-auto">
-        <div className="w-full lg:w-[58%] xl:w-[60%] 2xl:w-[55%] flex flex-col justify-center  md:py-0 py-5 pt-5 ">
+        <div className="w-full lg:w-[58%] xl:w-[60%] 2xl:w-[55%] flex flex-col justify-center md:py-0 py-5 pt-5">
           <h1
             className="text-transparent bg-clip-text font-openSansHebrew text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-[110%] pb-2"
             style={{
@@ -26,9 +26,9 @@ const StaffAugmentation: React.FC = () => {
             Plug-and-Play
           </h1>
 
-          <h1 className="text-2xl md:text-5xl lg:text-5xl xl:text-5xl font-semibold text-[#2A2A2A]  mb-3 sm:mb-3">
+          <h2 className="text-2xl md:text-5xl lg:text-5xl xl:text-5xl font-semibold text-[#2A2A2A] mb-3 sm:mb-3">
             Tech Talent From India's Deepest Bench of Developers
-          </h1>
+          </h2>
 
           <p className="text-[#2A2A2A] md:text-[20px] xl:text-[20px] lg:text-[20px] sm:text-[14px] leading-relaxed mb-8 sm:mb-12 font-openSansHebrew font-normal">
             Onboard pre-vetted, project-ready developers in 48 hours. No hiring
