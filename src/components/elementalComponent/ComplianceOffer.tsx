@@ -28,9 +28,9 @@ const Card: React.FC<CardProps> = ({ icon: Icon, title, description }) => {
         <Icon />
       </div>
       <div className="flex-1">
-        <h4 className="text-lg sm:text-xl font-normal mb-3 sm:mb-4 text-[#2A2A2A] [font-family:Switzer] text-start">
+        <h3 className="text-lg sm:text-xl font-normal mb-3 sm:mb-4 text-[#2A2A2A] [font-family:Switzer] text-start">
           {title}
-        </h4>
+        </h3>
         <p className="text-sm sm:text-base text-[#2A2A2A] font-openSansHebrew font-normal text-start leading-relaxed">
           {description}
         </p>
