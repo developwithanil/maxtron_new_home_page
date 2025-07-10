@@ -23,6 +23,7 @@ import FundRaising from "./components/pages/FundRaising";
 import AffiliateProgramPage from "./components/pages/AffiliateProgramPage";
 import EventsPage from "./components/pages/EventsPage";
 import OurTeam from "./components/pages/OurTeam";
+import Compliance from "./components/pages/Compliance";
 
 const Home: React.FC = () => (
   <div>
@@ -77,6 +78,7 @@ const App: React.FC = () => {
         <Route path="/staff-augmentation" element={<StaffAugmentation />} />
         <Route path="/affiliate" element={<AffiliateProgramPage />} />
         <Route path="/events" element={<EventsPage />} />
+        <Route path="/compliance" element={<Compliance />} />
         {/* <Route
           path="/Maxtron/:title/:id"
           element={<InternalPage caseStudies={caseStudies} />}

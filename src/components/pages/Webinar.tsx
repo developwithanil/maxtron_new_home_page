@@ -21,21 +21,22 @@ const Webinar = () => {
         </h2>
 
         <p className="text-gray-800 mb-2 text-lg ">
-          Join <b>Hue H. Nguyen</b> and <b>Girish</b> for a power-packed session
-          :
+          Join <b>Hue H. Nguyen</b> & <b>Girish</b> for a power-packed session :
         </p>
         <ul className="list-disc pl-6 mt-2 text-gray-800 mb-4 text-lg ">
           <li>
             🧠 <b>Hue H. Nguyen</b> – Former U.S. SEC Regulatory Consultant, PWC
-            Alum, Serial Entrepreneur, and Activist Investor
+            Alum, Serial Entrepreneur, Activist Investor, Gold Tokenization, RWA
+            & Digital Asset Compliance & Regulations.
           </li>
           <li>
             💼 <b>Girish</b> – 2X Exited Founder, Global Tech Advisor, Global
-            Business Strategist, IIT Roorkee Graduate and Angel Investor
+            Business Strategist, IIT Roorkee Graduate & Angel Investor
           </li>
         </ul>
         <div className="text-gray-800 mb-2 text-lg">
-          In this session, we'll unpack:
+          In this session, we'll unpack: How to Collateralize, Tokenize and
+          Scale - The Legal Way.
         </div>
         <ul className="list-disc pl-6 mt-2 text-gray-800 mb-6 text-lg ">
           <li>
@@ -55,9 +56,9 @@ const Webinar = () => {
           </li>
         </ul>
         <div className="text-gray-800 mb-2 text-lg">
-          Whether you're a Web3 founder, compliance lead, VC, or FinTech
-          builder, this webinar will help you prepare for what's coming—and give
-          you the tools to build smarter and safer.
+          Whether you're a Web3 Founder, Compliance Lead, VC, or FinTech Builder
+          this webinar will help you prepare for what's coming - and give you
+          the tools to build smarter and safer.
         </div>
 
         {/* <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6 mt-4">
@@ -140,8 +141,8 @@ const Webinar = () => {
               </span>
             </div>
             <p className="text-gray-700 text-sm text-center mb-1">
-              2X Exited Founder, IIT Roorkee Alum, Global Strategist, and Angel
-              Investor empowering the next wave of Web3 innovation.
+              2X Exited Founder, IIT Roorkee Alum, Global Strategist & Angel
+              Investor empowering the next wave of Web3 Innovation.
             </p>
             <div className="flex items-center gap-3 mt-1">
               <a
@@ -175,8 +176,8 @@ const Webinar = () => {
               </span>
             </div>
             <p className="text-gray-700 text-sm text-center mb-1">
-              Former U.S. SEC Consultant, PWC Alum, Serial Entrepreneur, and
-              Activist Investor driving regulatory clarity in digital assets.
+              Former U.S. SEC Consultant, PWC Alum, Serial Entrepreneur,
+              Activist Investor & Digital Asset Compliance & Regulations.
             </p>
             <div className="flex items-center gap-3 mt-1">
               <a

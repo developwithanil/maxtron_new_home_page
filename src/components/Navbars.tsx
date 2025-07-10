@@ -65,6 +65,7 @@ const dropdownContentData = {
       { name: "Affiliate Program", link: "/affiliate" },
       { name: "Events", link: "/events" },
       { name: "Our Team", link: "/our-team" },
+      { name: "Digital Compliance", link: "/compliance" },
     ],
   },
   caseStudies: {
