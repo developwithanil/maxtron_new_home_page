@@ -38,12 +38,12 @@ const MaxtronLead = () => {
   return (
     <div className="relative flex flex-col md:flex-row gap-12 lg:gap-20 p-5 md:p-8 lg:p-10 text-left max-w-[96rem] mx-auto">
       <div className="md:w-1/2">
-        <h1
+        <h2
           className="font-[switzer] font-medium text-[#2A2A2A] lg:text-5xl sm:text-3xl
           text-xl leading-tight"
         >
           Why Maxtron is Built Different
-        </h1>
+        </h2>
       </div>
 
       <div className="md:w-1/2">

@@ -47,9 +47,9 @@ const Card: React.FC<CardProps> = ({
       <div className="h-10 w-10 sm:h-12 sm:w-12">
         <Icon />
       </div>
-      <h2 className="text-lg sm:text-xl lg:text-[24px] font-normal text-start text-[#131416] [font-family:Switzer]">
+      <h4 className="text-lg sm:text-xl font-normal mb-3 sm:mb-4 text-[#2A2A2A] [font-family:Switzer] text-start">
         {title}
-      </h2>
+      </h4>
       <p className="text-[#131416] font-openSansHebrew text-sm sm:text-base lg:text-lg text-start font-normal mb-8 sm:mb-12 lg:mb-16">
         {description}
       </p>
@@ -98,9 +98,9 @@ const ComplianceInnovation = () => {
     <div className="relative p-5 sm:p-6 md:p-8 lg:p-10 xl:p-16 text-center max-w-[96rem] mx-auto">
       <div className="flex flex-col lg:flex-row gap-4 sm:gap-6">
         <div className="w-full lg:w-1/2 bg-black p-4 sm:p-6 lg:p-9">
-          <h1 className="text-[#FFFFFF] [font-family: Switzer] text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl text-start font-normal mb-3 sm:mb-4">
+          <h2 className="text-[#FFFFFF] [font-family: Switzer] text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl text-start font-normal mb-3 sm:mb-4">
             Where Compliance Meets Innovation
-          </h1>
+          </h2>
           <p className="text-[#FFFFFF] font-[switzer] text-sm sm:text-base lg:text-lg text-start font-normal mb-8 sm:mb-12 lg:mb-16">
             We help shape the future of regulated digital innovation.
           </p>
