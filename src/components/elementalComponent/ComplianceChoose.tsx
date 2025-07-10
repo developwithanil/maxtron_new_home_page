@@ -151,9 +151,9 @@ const ComplianceChoose = () => {
 
       <div className="relative flex flex-col md:flex-row gap-12 lg:gap-24 pl-5 pr-6 md:pl-8 md:pr-8 lg:pl-10 lg:pr-12 text-left max-w-[96rem] mx-auto">
         <div className="w-full md:w-1/2 lg:w-1/2 flex-shrink-0">
-          <h1 className="font-normal  font-[switzer] text-black text-lg lg:text-5xl leading-none mb-16">
+          <h2 className="font-normal  font-[switzer] text-black text-lg lg:text-5xl leading-none mb-16">
             Why Choose Maxtron
-          </h1>
+          </h2>
           <div className="space-y-6">
             {leftFeatures.map((feature, index) => (
               <div key={index} className="flex items-center gap-5">
