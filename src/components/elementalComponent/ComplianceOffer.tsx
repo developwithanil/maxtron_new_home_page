@@ -23,12 +23,17 @@ interface CardsProps {
 
 const Card: React.FC<CardProps> = ({ icon: Icon, title, description }) => {
   return (
-    <div className="border border-[#F3EBFC] shadow-lg flex flex-col justify-start p-4 sm:p-6 h-full hover:scale-105 transition-all duration-300">
+    <div
+      className="border border-[#F3EBFC] shadow-lg flex flex-col justify-start p-4 sm:p-6 h-full hover:scale-105 transition-all duration-300"
+      style={{
+        boxShadow: "0px 4px 12px 0px var(--Primary-0, #F3EBFC)",
+      }}
+    >
       <div className="mb-6 sm:mb-8 p-2 bg-[#F3EBFC] flex items-center justify-center h-12 w-12 flex-shrink-0">
         <Icon />
       </div>
       <div className="flex-1">
-        <h3 className="text-lg sm:text-xl font-normal mb-3 sm:mb-4 text-[#2A2A2A] [font-family:Switzer] text-start">
+        <h3 className="text-2xl sm:text-2xl lg:text-2xl xl:text-2xl font-normal mb-3 sm:mb-4 text-[#2A2A2A] [font-family:Switzer] text-start">
           {title}
         </h3>
         <p className="text-sm sm:text-base text-[#2A2A2A] font-openSansHebrew font-normal text-start leading-relaxed">
@@ -41,7 +46,7 @@ const Card: React.FC<CardProps> = ({ icon: Icon, title, description }) => {
 
 const Cards: React.FC<CardsProps> = ({ icon: Icon, title }) => {
   return (
-    <div className="border border-[#F3EBFC] shadow-lg flex flex-col justify-start p-4 sm:p-6 h-full hover:scale-105 transition-all duration-300">
+    <div className="border border-[#F3EBFC] shadow-lg flex flex-col justify-start p-4 sm:p-6 h-full hover:scale-105 transition-all duration-300 ">
       <div className="mb-6 sm:mb-8 p-2 bg-[#F3EBFC] flex items-center justify-center h-12 w-12 flex-shrink-0">
         <Icon />
       </div>

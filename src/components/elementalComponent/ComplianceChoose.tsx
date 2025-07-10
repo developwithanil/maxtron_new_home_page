@@ -49,7 +49,7 @@ const policyCardsColumn1 = [
   },
   {
     icon: finance2,
-    title: "",
+    title: "(Fed/OCC)",
     description:
       "Ensure financial stability with clear Stablecoin rules & careful banking integration",
   },
