@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import compliance from "../../assets/compliance/compliance.webp";
 import ComplianceOffer from "../elementalComponent/ComplianceOffer";
 import ComplianceInnovation from "../elementalComponent/ComplianceInnovation";
@@ -29,7 +28,7 @@ const Compliance = () => {
               </h1>
             </div>
             <p className="text-[#2A2A2A] text-base font-openSansHebrew leading-[150%] mb-16 lg:mb-28">
-              At Maxtron.ai, compliance isn’t an afterthought—it’s a competitive
+              At Maxtron.ai, compliance isn't an afterthought—it's a competitive
               advantage. As global digital asset laws evolve, our platform
               ensures your projects stay legally sound, strategically
               positioned, and future-ready
