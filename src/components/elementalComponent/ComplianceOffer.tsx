@@ -46,9 +46,9 @@ const Cards: React.FC<CardsProps> = ({ icon: Icon, title }) => {
         <Icon />
       </div>
       <div className="flex flex-col items-start w-full flex-1">
-        <h3 className="text-lg sm:text-xl font-normal mb-3 sm:mb-4 text-[#2A2A2A] [font-family:Switzer] text-start max-w-full">
+        <h2 className="text-lg sm:text-xl lg:text-[24px] font-normal text-start text-[#131416] [font-family:Switzer]">
           {title}
-        </h3>
+        </h2>
       </div>
     </div>
   );
@@ -137,7 +137,7 @@ const ComplianceOffer = () => {
           <h2 className="text-[#2A2A2A] text-center lg:text-start [font-family: Switzer] text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-4xl font-normal mb-3 sm:mb-4">
             Smart Legal Integrations
           </h2>
-          <p className="text-[#79748A] font-openSansHebrew text-sm sm:text-base md:text-lg lg:text-lg xl:text-lg text-center lg:text-start font-normal mb-8 sm:mb-10 md:mb-12">
+          <p className="text-[#5A5A5A] font-openSansHebrew text-sm sm:text-base md:text-lg lg:text-lg xl:text-lg text-center lg:text-start font-normal mb-8 sm:mb-10 md:mb-12">
             Plug-and-play modules for
           </p>
         </div>

@@ -47,9 +47,9 @@ const Card: React.FC<CardProps> = ({
       <div className="h-10 w-10 sm:h-12 sm:w-12">
         <Icon />
       </div>
-      <h3 className="text-lg sm:text-xl lg:text-[24px] font-normal text-start text-[#131416] [font-family:Switzer]">
+      <h2 className="text-lg sm:text-xl lg:text-[24px] font-normal text-start text-[#131416] [font-family:Switzer]">
         {title}
-      </h3>
+      </h2>
       <p className="text-[#131416] font-openSansHebrew text-sm sm:text-base lg:text-lg text-start font-normal mb-8 sm:mb-12 lg:mb-16">
         {description}
       </p>
