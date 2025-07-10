@@ -87,13 +87,13 @@ import gro8bg from "../../assets/internal/gro8bg.webp";
 import goodstandingbg from "../../assets/internal/goodstandingbg.webp";
 import goodstanding1 from "../../assets/internal/goodstanding1.webp";
 
-// import shaperCultHero from "../../assets/internal/shaper1.svg";
 import usablock from "../../assets/internal/usablock.webp";
 import vote from "../../assets/internal/vote.webp";
 import herovote from "../../assets/internal/herovote.webp";
+import shaperhero from "../../assets/internal/shaperhero.webp";
 import shaper2 from "../../assets/internal/shaper2.webp";
-// import shapercut from "../../assets/internal/shapercut.svg";
-// import shaper from "../../assets/internal/shaper.png";
+import aicallingbg from "../../assets/internal/aicallingbg.png";
+
 import shaperCultMobile from "../../assets/internal/shaperCultMobile.webp";
 
 import hyperbg from "../../assets/internal/hyperbg.webp";
@@ -215,7 +215,7 @@ export const caseStudies: CaseStudy[] = [
   {
     title: "ShaperCult",
     subtitle: "",
-    heroImage: shaper2,
+    heroImage: shaperhero,
     type: ["WEB APPLICATION"],
     industryInfo: "Fashion & Apparel Ecommerce",
     projectDuration: "4 Months",
@@ -465,7 +465,7 @@ export const caseStudies: CaseStudy[] = [
   {
     title: "AI CALLING AGENT",
     subtitle: "AI-Phone Calling Solution : Future of Voice Call Interactions",
-    heroImage: dial1,
+    heroImage: aicallingbg,
     type: ["WEB APPLICATION"],
     afterHeroSection: dial1,
     industryInfo: "Telecom, Hi-Tech, Artificial",
@@ -564,7 +564,7 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
 
-    keyFeaturesImage: [dial3, dial2],
+    keyFeaturesImage: [dial2, dial3],
     bgImage: casestudy1bg,
   },
   {
