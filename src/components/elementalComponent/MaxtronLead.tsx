@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { led, licensed, global } from "../ComplianceVector";
 
 const featuresData = [
