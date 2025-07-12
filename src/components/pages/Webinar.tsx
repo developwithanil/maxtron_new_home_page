@@ -14,14 +14,15 @@ const Webinar = () => {
         </div>
 
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-          Girish (Maxtron) X Hue
+          Girish Ahirwar(Maxtron) X Hue
         </h1>
         <h2 className="text-xl md:text-2xl font-semibold text-gray-700 mb-4">
           Collateralizing Digital Assets and What Regulators Want Now
         </h2>
 
         <p className="text-gray-800 mb-2 text-lg ">
-          Join <b>Hue H. Nguyen</b> & <b>Girish</b> for a power-packed session :
+          Join <b>Hue H. Nguyen</b> & <b>Girish Ahirwar</b> for a power-packed
+          session :
         </p>
         <ul className="list-disc pl-6 mt-2 text-gray-800 mb-4 text-lg ">
           <li>
@@ -30,8 +31,8 @@ const Webinar = () => {
             & Digital Asset Compliance & Regulations.
           </li>
           <li>
-            💼 <b>Girish</b> – 2X Exited Founder, Global Tech Advisor, Global
-            Business Strategist, IIT Roorkee Graduate & Angel Investor
+            💼 <b>Girish Ahirwar</b> – 2X Exited Founder, Global Web3 Advisor ,
+            Global Business Strategist, IIT Roorkee Graduate & Angel Investor
           </li>
         </ul>
         <div className="text-gray-800 mb-2 text-lg">
@@ -40,23 +41,23 @@ const Webinar = () => {
         </div>
         <ul className="list-disc pl-6 mt-2 text-gray-800 mb-6 text-lg ">
           <li>
-            📜 New U.S. laws enabling the use of digital assets as collateral
+            📜 New U.S. laws enabling the use of digital assets as collateral.
           </li>
-          <li>🪙 Tokenization of real-world assets like gold and equity</li>
+          <li>🪙 Tokenization of real-world assets like gold and equity.</li>
           <li>
             🏛️ How to stay compliant across jurisdictions (SEC, DIFC, FATF,
-            etc.)
+            etc.).
           </li>
           <li>
             🧩 Structuring decentralized hedge funds & AI-based systems within
-            legal frameworks
+            legal frameworks.
           </li>
           <li>
-            🔐 The real risks of non-compliance and how to stay investor-ready
+            🔐 The real risks of non-compliance and how to stay investor-ready.
           </li>
         </ul>
         <div className="text-gray-800 mb-2 text-lg">
-          Whether you're a Web3 Founder, Compliance Lead, VC, or FinTech Builder
+          Whether you're a Web3 Founder, Compliance Lead, VC or FinTech Builder
           this webinar will help you prepare for what's coming - and give you
           the tools to build smarter and safer.
         </div>
@@ -131,13 +132,15 @@ const Webinar = () => {
                 className="rounded-full object-cover border-2 border-white shadow-lg w-28 h-28 mb-1 group-hover:scale-105 group-hover:shadow-purple-200 transition-transform duration-300"
               />
             </div>
-            <div className="text-lg font-bold text-gray-900 mb-1">Girish</div>
+            <div className="text-lg font-bold text-gray-900 mb-1">
+              Girish Ahirwar
+            </div>
             <div className="flex flex-wrap gap-2 justify-center mb-1">
               <span className="px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">
                 2X Founder, Angel Investor
               </span>
               <span className="px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">
-                Global Tech Advisor
+                Global Web3 Advisor
               </span>
             </div>
             <p className="text-gray-700 text-sm text-center mb-1">
