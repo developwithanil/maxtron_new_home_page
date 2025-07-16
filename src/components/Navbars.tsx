@@ -286,6 +286,20 @@ const Navbar: React.FC = () => {
                 >
                   Tokenization
                 </NavLink>
+                <NavLink
+                  to="/web3"
+                  onClick={closeDesktopDropdown}
+                  className={({ isActive }) =>
+                    `block ${
+                      isActive
+                        ? "bg-purple-100 text-purple-700"
+                        : "text-[#2A2A2A] font-openSansHebrew"
+                    } hover:bg-purple-50 hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium`
+                  }
+                  aria-label="Learn about our web3 services"
+                >
+                  Web3
+                </NavLink>
 
                 <NavLink
                   to="/careers"
@@ -514,6 +528,17 @@ const Navbar: React.FC = () => {
               }
             >
               Tokenization
+            </NavLink>
+            <NavLink
+              to="/web3"
+              onClick={handleMobileNavClick}
+              className={({ isActive }) =>
+                `block ${
+                  isActive ? "bg-purple-100 text-purple-700" : "text-[#2A2A2A]"
+                } hover:bg-purple-50 hover:text-purple-800 px-3 py-2.5 rounded-md text-base font-medium`
+              }
+            >
+              Web3
             </NavLink>
             <NavLink
               to="/careers"
