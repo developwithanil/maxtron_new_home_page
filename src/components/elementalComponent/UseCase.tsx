@@ -1,32 +1,34 @@
-import { Link } from "react-router-dom";
-
-// import process from "../assets/augmentation/process.svg";
+import usecase from "../../assets/usecase.webp";
 
 const processStepsData = [
   {
     number: "1",
-    title: "Discovery Call",
-    description: "Understand your tech, team, and timelines",
+    title: "DeFi Protocols",
+    description:
+      "Automate liquidity risk checks, user behavior monitoring and tokenomics optimization.",
   },
   {
     number: "2",
-    title: "Share Bench Profiles",
-    description: "Within 24-48 hours",
+    title: "NFT Platforms",
+    description: "Track ownership, enforce royalties, detect fraud.",
   },
   {
     number: "3",
-    title: "Tech Evaluation",
-    description: "You interview & test them",
+    title: "DAOs",
+    description:
+      "Streamline proposals, auto-generate meeting summaries and smartly route tasks.",
   },
   {
     number: "4",
-    title: "Trial Period",
-    description: "1-2 week free/reduced cost trial",
+    title: "Web3 Exchanges",
+    description:
+      "Compliance automation, real-time trading analytics, fraud detection.",
   },
   {
     number: "5",
-    title: "Deploy & Scale",
-    description: "Scale as per sprint load",
+    title: "Layer 1 / Layer 2 Chains",
+    description:
+      "Run health checks, node analytics and validator coordination at scale.",
   },
 ];
 
@@ -38,20 +40,13 @@ const UseCase = () => {
           Use Cases
         </h2>
 
-        <Link
-          to="/contact"
-          className="bg-[#7030A0] hover:bg-[#682BAF] text-white font-normal py-3 px-8 rounded-lg text-lg self-center md:self-start transition-colors duration-200"
-        >
-          Request Talent
-        </Link>
-
         <div className="w-full flex justify-center items-center  ">
           <div className="w-full max-w-xs sm:max-w-xs flex justify-center items-center ">
-            {/* <img
-              src={process}
+            <img
+              src={usecase}
               alt="Staff Augmentation Process Diagram"
               className="w-full h-auto m-0 p-0"
-            /> */}
+            />
           </div>
         </div>
       </div>

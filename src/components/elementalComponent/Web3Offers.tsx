@@ -8,12 +8,12 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, description, number }) => {
   return (
-    <div className="bg-[#F5F5F5] flex flex-col justify-start p-4 relative pb-16 ">
+    <div className="bg-[#F5F5F5] flex flex-col justify-start p-4 relative pb-16 min-h-80">
       <div>
         <h3 className="text-xl font-medium mb-4 text-[#2A2A2A] [font-family:Switzer] items-start text-start">
           {title}
         </h3>
-        <p className="text-base text-[#171717] font-openSansHebrew items-start text-start">
+        <p className="text-base text-[#171717] font-openSansHebrew items-start text-start pr-7">
           {description}
         </p>
       </div>
@@ -28,46 +28,44 @@ const cardsData = [
   {
     id: 1,
     number: 1,
-    title: "Blockchain & Web3",
-    description: "Solidity, Ethereum, Smart Contracts, NFTs, DeFi, Layer-2s",
+    title: "AI Automation for Smart Workflows",
+    description:
+      "Automate KYC, AML and user onboarding with intelligent workflows that adapt to chain-level data and regional compliance.",
   },
   {
     id: 2,
     number: 2,
-    title: "Web Development",
-    description: "MERN, MEAN, JAMstack, Headless CMS, SEO-optimized builds.",
+    title: "Smart Contract Monitoring & Alerts",
+    description:
+      "Stay ahead of exploits, governance shifts or suspicious behaviors via real-time contract analytics and AI-trained anomaly detection.",
   },
   {
     id: 3,
     number: 3,
-    title: "Mobile App Development",
-    description: "iOS, Android, Flutter, React Native",
+    title: "Cross-Chain Data Intelligence",
+    description:
+      "Unified dashboards and AI summarization across Ethereum, Solana, BNB and more - so you don’t have to choose just one ecosystem.",
   },
   {
     id: 4,
     number: 4,
-    title: "Game Development",
-    description: "Unity, Unreal, WebGL, Multiplayer Infra, AR/VR",
+    title: "No-Code Web3 Integrations",
+    description:
+      "Plug-and-play modules for integrating wallets, NFTs, on-chain activity tracking and DeFi protocols into your platform - no developer bottleneck.",
   },
   {
     id: 5,
     number: 5,
-    title: "Full Stack Teams",
+    title: "Governance Automation",
     description:
-      "Combine Frontend + Backend + DevOps + QA for full delivery units",
+      "Automate DAO proposals, voter notifications or treasury disbursements with customizable triggers and GPT-powered decision-making summaries.",
   },
   {
     id: 6,
     number: 6,
-    title: "Cloud & DevOps",
-    description: "CI/CD, Kubernetes, AWS, Terraform, Infrastructure as Code",
-  },
-  {
-    id: 7,
-    number: 7,
-    title: "AI/ML & Data",
+    title: "End-to-End Design & Development",
     description:
-      "Python, TensorFlow, LLM Integrations, RAG, LangChain, Data Pipelines",
+      "From user-centric dApp design to scalable smart contract architecture - Maxtron builds Web3 products that perform, engage and scale.",
   },
 ];
 

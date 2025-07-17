@@ -28,31 +28,28 @@ const Web3HeroSection = () => {
 
           <div className="absolute top-0 left-0 w-full h-full  bg-opacity-50"></div>
 
-          <div className="relative z-10 flex flex-col items-center sm:items-center justify-center h-full text-white p-4 sm:p-6 lg:p-16">
+          <div className="relative z-10 flex flex-col items-center sm:items-center justify-start h-full text-white p-4 sm:p-6 lg:p-16 mt-8">
             <img src={logo} alt="web3 logo" className="w-54 h-51" />
-            <h2 className="text-2xl hidden sm:block sm:text-xl md:text-6xl font-normal text-center text-[#171717] mb-5">
+            <h2 className="text-2xl  sm:block sm:text-xl md:text-6xl font-normal text-center text-[#171717] mb-5">
               Powering the Next Internet with AI & Automation
             </h2>
 
-            <p className="text-lg sm:text-lg md:text-2xl text-center bg-opacity-50  rounded text-[#171717]">
+            <p className="text-lg sm:text-lg md:text-xl text-center bg-opacity-50  rounded text-[#171717] mb-12">
               The internet is evolving- faster, more decentralized and trustless
               by design. At Maxtron, we're helping forward-thinking teams build
-              in Web3
-            </p>
-            <p className="text-lg sm:text-lg md:text-2xl text-center mb-12  bg-opacity-50  rounded text-[#171717]">
-              with the intelligence and automation edge they need to scale
-              securely, compliantly and globally.
+              in Web3 with the intelligence and automation edge they need to
+              scale securely, compliantly and globally.
             </p>
 
             <div className="flex flex-row sm:flex-row justify-center items-center space-x-4">
               <input
                 type="email"
                 placeholder="Enter Your Email"
-                className="hover:bg-purple-800 text-white border-[#FFFFFF] border font-normal md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3 bg-transparent outline-none placeholder:text-[#FFFFFF]"
+                className=" text-white border-[#FFFFFF] border font-normal md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3 bg-transparent outline-none placeholder:text-[#FFFFFF]"
               />
               <Link
                 to="/contact"
-                className="bg-[#7A35C1] hover:bg-gray-100 text-[#FFFFFF] hover:text-[#171717] font-normal md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3"
+                className="bg-[#7A35C1] hover:bg-indigo-200 hover:text-[#7A35C1]  font-normal md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3"
               >
                 <span>Connect</span>
               </Link>

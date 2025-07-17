@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { partnerItems, DoubleArrowIcon } from "./PartnerData";
+import { designItems, DoubleArrowIcon } from "./DesignData";
 import logo from "../../assets/augmentation/EmpanelmentSection/logo.svg";
 
 interface ItemData {
@@ -126,7 +126,7 @@ const DesignSection = () => {
 
   const activeItem =
     activeItemId !== null
-      ? partnerItems.find((item) => item.id === activeItemId)
+      ? designItems.find((item) => item.id === activeItemId)
       : null;
 
   return (
@@ -140,7 +140,7 @@ const DesignSection = () => {
           >
             <img src={logo} alt="Maxtron Logo"></img>
             <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-3xl font-bold mt-4 [font-family:Switzer,sans-serif]">
-              Who should partner with us?
+              Web3 Design & Development
             </h2>
           </div>
 
@@ -155,7 +155,7 @@ const DesignSection = () => {
                   onSelect={() => handleSelect(activeItem.id)}
                 />
               ) : (
-                partnerItems.map((item) => (
+                designItems.map((item) => (
                   <SelectableItem
                     key={item.id}
                     itemData={item}
@@ -177,7 +177,7 @@ const DesignSection = () => {
                   onSelect={() => handleSelect(activeItem.id)}
                 />
               ) : (
-                partnerItems.map((item) => (
+                designItems.map((item) => (
                   <SelectableItem
                     key={item.id}
                     itemData={item}

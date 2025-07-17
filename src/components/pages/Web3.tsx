@@ -5,6 +5,7 @@ import Web3Offers from "../elementalComponent/Web3Offers";
 import DesignSection from "../elementalComponent/DesignSection";
 import UseCase from "../elementalComponent/UseCase";
 import Web3Footer from "../elementalComponent/Web3Footer";
+import Web3Ethos from "../elementalComponent/Web3Ethos";
 
 const Web3 = () => {
   return (
@@ -33,6 +34,9 @@ const Web3 = () => {
         </section>
         <section id="use-case" aria-label="Use Case">
           <UseCase />
+        </section>
+        <section id="web3-ethos" aria-label="Web3 Ethos">
+          <Web3Ethos />
         </section>
         <section id="web3-footer" aria-label="Web3 Footer">
           <Web3Footer />

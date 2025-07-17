@@ -75,7 +75,6 @@ const getFloatingProps = (
 const cards = [
   {
     title: "Rapid user growth and unpredictable load",
-
     className:
       "absolute left-[18%] top-[38%] md:left-[28%] md:top-[28%] lg:left-[23%] lg:top-[28%] p-4 bg-[#F0F2F5] rounded-lg shadow-xl",
     style: {
@@ -180,7 +179,7 @@ const Web3Needs = () => (
           {...getFloatingProps(card.amplitude, card.duration, card.delay)}
         >
           <div className="w-full h-full flex items-center justify-center p-6 backdrop-blur-md bg-white/60 rounded-xl shadow-md mb-20">
-            <h3 className="text-xl md:text-2xl font-bold text-[#171717] leading-snug text-left w-full">
+            <h3 className="text-xl md:text-2xl font-medium font-[Switzer] text-[#171717] leading-snug text-left w-full">
               {card.title}
             </h3>
           </div>
