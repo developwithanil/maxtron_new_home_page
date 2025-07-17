@@ -75,34 +75,34 @@ const dropdownContentData = {
     liTags: [
       {
         name: "Blockchain Game Development",
-        link: "/Maxtron.ai/case-study/Blockchain-Game-Development",
+        link: "/case-study/Blockchain-Game-Development",
       },
       {
         name: "E-commerce Marketing",
-        link: "/Maxtron.ai/case-study/ECommerce-Marketing",
+        link: "/case-study/ECommerce-Marketing",
       },
       {
         name: "Mini-Gaming Platform",
-        link: "/Maxtron.ai/case-study/Mini-Gaming-Platform",
+        link: "/case-study/Mini-Gaming-Platform",
       },
       {
         name: "AI-Calling Tool",
-        link: "/Maxtron.ai/case-study/AI-Calling-Tool",
+        link: "/case-study/AI-Calling-Tool",
       },
       {
         name: "Crypto Project Marketing",
-        link: "/Maxtron.ai/case-study/Crypto-Project-Marketing",
+        link: "/case-study/Crypto-Project-Marketing",
       },
       {
         name: "Blockchain Based E-Voting System",
-        link: "/Maxtron.ai/case-study/Blockchain-Based-EVoting-System",
+        link: "/case-study/Blockchain-Based-EVoting-System",
       },
-      { name: "Good Standing", link: "/Maxtron.ai/case-study/Good-Standing" },
-      { name: "GRO8", link: "/Maxtron.ai/case-study/Gro8" },
-      { name: "Token Launch", link: "/Maxtron.ai/case-study/Token-Launch" },
-      { name: "ICCA", link: "/Maxtron.ai/case-study/ICCA" },
-      { name: "Tawuniya", link: "/Maxtron.ai/case-study/Tawuniya" },
-      { name: "ULALO", link: "/Maxtron.ai/case-study/ULALO" },
+      { name: "Good Standing", link: "/case-study/Good-Standing" },
+      { name: "GRO8", link: "/case-study/Gro8" },
+      { name: "Token Launch", link: "/case-study/Token-Launch" },
+      { name: "ICCA", link: "/case-study/ICCA" },
+      { name: "Tawuniya", link: "/case-study/Tawuniya" },
+      { name: "ULALO", link: "/case-study/ULALO" },
     ],
   },
   tokenization: {

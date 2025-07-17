@@ -84,7 +84,7 @@ const App: React.FC = () => {
           element={<InternalPage caseStudies={caseStudies} />}
         /> */}
         <Route
-          path="/Maxtron.ai/case-study/:casestudyName"
+          path="/case-study/:casestudyName"
           element={<InternalPageDetails caseStudies={caseStudies} />}
         />
 

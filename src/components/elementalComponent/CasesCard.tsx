@@ -169,7 +169,7 @@ const CasesCard = ({
                 onClick={(e) => {
                   e.stopPropagation();
                   navigate(
-                    `/Maxtron.ai/case-study/${encodeURIComponent(
+                    `/case-study/${encodeURIComponent(
                       item.subheading.replace(/\s+/g, "-")
                     )}`
                   );
@@ -223,7 +223,7 @@ const CasesCard = ({
                     onClick={(e) => {
                       e.stopPropagation();
                       navigate(
-                        `/Maxtron.ai/case-study/${encodeURIComponent(
+                        `/case-study/${encodeURIComponent(
                           item.subheading.replace(/\s+/g, "-")
                         )}`
                       );
