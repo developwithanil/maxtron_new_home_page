@@ -45,12 +45,14 @@ const Web3HeroSection = () => {
             </p>
 
             <div className="flex flex-row sm:flex-row justify-center items-center space-x-4">
-              <div className=" hover:bg-purple-800 text-white border-[#FFFFFF] border  font-normal md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3">
-                <span>Enter Your Email</span>
-              </div>
+              <input
+                type="email"
+                placeholder="Enter Your Email"
+                className="hover:bg-purple-800 text-white border-[#FFFFFF] border font-normal md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3 bg-transparent outline-none placeholder:text-[#FFFFFF]"
+              />
               <Link
                 to="/contact"
-                className="bg-[#7A35C1] hover:bg-gray-100 text-[#FFFFFF] font-normal md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3"
+                className="bg-[#7A35C1] hover:bg-gray-100 text-[#FFFFFF] hover:text-[#171717] font-normal md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3"
               >
                 <span>Connect</span>
               </Link>
