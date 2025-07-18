@@ -1,3 +1,4 @@
+import React from 'react';
 import img1 from "../../assets/industry/industry1.webp";
 import img2 from "../../assets/industry/industry2.webp";
 import img3 from "../../assets/industry/industry3.webp";
@@ -6,6 +7,7 @@ import img5 from "../../assets/industry/industry5.webp";
 import img6 from "../../assets/industry/industry6.webp";
 import img7 from "../../assets/industry/industry7.webp";
 import img8 from "../../assets/industry/industry8.webp";
+import { Helmet } from 'react-helmet-async';
 
 const industryData = [
   {
@@ -139,26 +141,38 @@ const IndustryList = () => {
 
 const Industries = () => {
   return (
-    <div>
-      <div className="relative z-10  mb-8 text-center industry_hero_img px-4 sm:px-6 lg:px-8 h-[90vh]">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
-          Industry Focus
-        </h1>
-        <p className="text-base sm:text-lg lg:text-xl mt-4">
-          Stay ahead of disruption and drive growth by partnering with a
-          technology expert who understands your industry and speaks your
-          business's language. We deliver tailored technology solutions, help
-          you avoid costly errors, save you time, and provide a competitive edge
-          to position your company for success.
-        </p>
-      </div>
+    <>
+      <Helmet>
+        <title>Industries | Maxtron</title>
+        <meta name="description" content="Discover Maxtron's industry expertise: tailored technology solutions for gaming, finance, healthcare, retail, and more." />
+        <link rel="canonical" href="https://www.maxtron.ai/industries" />
+        <meta property="og:title" content="Industries | Maxtron" />
+        <meta property="og:description" content="Discover Maxtron's industry expertise: tailored technology solutions for gaming, finance, healthcare, retail, and more." />
+        <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
+        <meta property="og:url" content="https://www.maxtron.ai/industries" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+      <div>
+        <div className="relative z-10  mb-8 text-center industry_hero_img px-4 sm:px-6 lg:px-8 h-[90vh]">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
+            Industry Focus
+          </h1>
+          <p className="text-base sm:text-lg lg:text-xl mt-4">
+            Stay ahead of disruption and drive growth by partnering with a
+            technology expert who understands your industry and speaks your
+            business's language. We deliver tailored technology solutions, help
+            you avoid costly errors, save you time, and provide a competitive edge
+            to position your company for success.
+          </p>
+        </div>
 
-      <div className="relative container mx-auto ">
-        <div className="absolute inset-0 opacity-10 z-0"></div>
+        <div className="relative container mx-auto ">
+          <div className="absolute inset-0 opacity-10 z-0"></div>
 
-        <IndustryList />
+          <IndustryList />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

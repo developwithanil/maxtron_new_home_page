@@ -16,6 +16,7 @@ import team from "../../assets/case/team.webp";
 import TeamLastComponent from "../elementalComponent/TeamLastComponent";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Helmet } from 'react-helmet-async';
 
 const items = [
   {
@@ -120,164 +121,176 @@ const OurTeam = () => {
   const [selected, setSelected] = useState<number | null>(null);
 
   return (
-    <div className="w-full">
-      <div className="w-full max-w-[96rem] mx-auto pl-5 sm:pl-6 md:pl-14 xl:pl-16 py-4 sm:py-6 md:py-8 lg:py-10 xl:py-12 ">
-        <div className="flex flex-row gap-7">
-          <div className="w-[32%] hidden lg:flex flex-col justify-start items-start">
-            <img
-              src={ourteamrightimage}
-              alt="Affiliate team"
-              className="w-full h-[25rem] lg:h-[27rem] xl:h-[34rem] object-fit"
-            />
-          </div>
-
-          <div className="flex-1 flex items-start pr-0">
-            <img
-              src={affiliaterightlanding}
-              alt="Affiliate team"
-              className="w-full h-full  lg:h-[27rem] xl:h-[34rem] object-fit filter grayscale"
-            />
-          </div>
-        </div>
-        <div className="w-full flex flex-col gap-8 mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-4 md:pr-5 lg:pr-10 items-start">
-          {/* Left Section - Heading and Paragraph */}
-          <div className="w-full text-left ">
-            <h1 className="text-[#2A2A2A] font-[Switzer] text-4xl lg:text-5xl xl:text-5xl mb-3 lg:mb-5 xl:mb-6 font-bold leading-[140%] text-start">
-              Our Partners
-            </h1>
-          </div>
-
-          <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-col-3 xl:grid-cols-4 gap-7 lg:gap-8 justify-start items-start">
-            {items.map((item, index) => (
-              <div key={index} className="flex flex-col items-start ">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-32 md:w-36 lg:w-40 xl:w-44 h-32 md:h-36 lg:h-40 xl:h-44 object-contain rounded-md"
-                />
-                <p className="text-[#2A2A2A] font-[Switzer] text-2xl lg:text-3xl font-semibold text-left mt-3">
-                  {item.title}
-                </p>
-                <p className="text-xl lg:text-2xl text-[#363348] text-left mt-1">
-                  {item.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="w-full  mt-9 md:mt-14 lg:mt-20 xl:mt-24 pr-4 md:pr-6 lg:pr-10 ">
-          <img
-            src={team}
-            alt={"team"}
-            className="w-full h-full object-cover rounded-md"
-          />
-        </div>
-        <div className="w-full flex flex-col gap-8 mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-5 md:pr-8 lg:pr-14 items-start">
-          <div className="w-full text-left ">
-            <h1 className="text-[#2A2A2A] font-[Switzer] text-4xl lg:text-5xl xl:text-5xl font-bold leading-[140%] text-center">
-              About The Founder
-            </h1>
-          </div>
-
-          <div className="w-full max-w-5xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-8 xl:gap-10">
-            <div className="flex-shrink-0 w-52 h-52 xl:w-72 xl:h-72 lg:w-64 lg:h-64  flex items-center justify-center overflow-hidden">
+    <>
+      <Helmet>
+        <title>Our Team | Maxtron</title>
+        <meta name="description" content="Meet the Maxtron team: experts in blockchain, AI, product, and marketing, driving innovation and business growth." />
+        <link rel="canonical" href="https://www.maxtron.ai/our-team" />
+        <meta property="og:title" content="Our Team | Maxtron" />
+        <meta property="og:description" content="Meet the Maxtron team: experts in blockchain, AI, product, and marketing, driving innovation and business growth." />
+        <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
+        <meta property="og:url" content="https://www.maxtron.ai/our-team" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+      <div className="w-full">
+        <div className="w-full max-w-[96rem] mx-auto pl-5 sm:pl-6 md:pl-14 xl:pl-16 py-4 sm:py-6 md:py-8 lg:py-10 xl:py-12 ">
+          <div className="flex flex-row gap-7">
+            <div className="w-[32%] hidden lg:flex flex-col justify-start items-start">
               <img
-                src="/girish.webp"
-                alt="Girish Ahirwar"
-                className="object-cover w-full h-full rounded-lg"
+                src={ourteamrightimage}
+                alt="Affiliate team"
+                className="w-full h-[25rem] lg:h-[27rem] xl:h-[34rem] object-fit"
               />
             </div>
 
-            <div className="flex-1 ">
-              <h2 className="text-4xl font-semibold mb-3 pl-5 text-[#58269A]">
-                Girish Ahirwar
-              </h2>
-              <ul className="list-disc pl-5 space-y-2 text-xl font-normal">
-                <li>CEO & Founder </li>
-                <li>Partner &amp; Ex- CBO Tagbin</li>
-                <li>
-                  Pitched, Won &amp; Delivered- Digital &amp; Experiential
-                  Projects Worth $500mn+
-                </li>
-                <li>Fundraising And Partnerships</li>
-                <li>IIT Roorkee</li>
-                <li>10+ Years Experience in Emerging Tech</li>
-              </ul>
+            <div className="flex-1 flex items-start pr-0">
+              <img
+                src={affiliaterightlanding}
+                alt="Affiliate team"
+                className="w-full h-full  lg:h-[27rem] xl:h-[34rem] object-fit filter grayscale"
+              />
             </div>
           </div>
-        </div>
-        <div className="w-full flex flex-col gap-8 mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-4 md:pr-5 lg:pr-10 items-start">
-          {/* Left Section - Heading and Paragraph */}
-          <div className="w-full text-left ">
-            <h1 className="text-[#2A2A2A] font-[Switzer] text-4xl lg:text-5xl xl:text-5xl mb-3 lg:mb-5 xl:mb-6 font-bold leading-[140%] text-start">
-              Our Team
-            </h1>
-          </div>
+          <div className="w-full flex flex-col gap-8 mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-4 md:pr-5 lg:pr-10 items-start">
+            {/* Left Section - Heading and Paragraph */}
+            <div className="w-full text-left ">
+              <h1 className="text-[#2A2A2A] font-[Switzer] text-4xl lg:text-5xl xl:text-5xl mb-3 lg:mb-5 xl:mb-6 font-bold leading-[140%] text-start">
+                Our Partners
+              </h1>
+            </div>
 
-          <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-8 lg:gap-x-8 lg:gap-y-10 justify-start items-start">
-            {teams.map((item, index) => (
-              <div key={index} className="flex flex-col items-start ">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-36 lg:w-44 h-36 lg:h-44 object-contain rounded-md"
-                />
-                <p className="text-[#2A2A2A] font-[Switzer] text-2xl lg:text-3xl font-semibold text-left mt-3">
-                  {item.title}
-                </p>
-                <button
-                  className="mt-2 px-4 py-1 bg-[#58269A] text-white rounded hover:bg-[#6d3bbd] transition-colors"
-                  onClick={() => setSelected(index)}
-                >
-                  Read More
-                </button>
-              </div>
-            ))}
-          </div>
-          <AnimatePresence>
-            {selected !== null && (
-              <motion.div
-                className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                onClick={() => setSelected(null)}
-              >
-                <motion.div
-                  className="bg-white rounded-lg shadow-xl p-8 max-w-md w-full relative"
-                  initial={{ scale: 0.8, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  exit={{ scale: 0.8, opacity: 0 }}
-                  onClick={e => e.stopPropagation()}
-                >
-                  <button
-                    className="absolute top-2 right-2 text-2xl text-gray-400 hover:text-gray-600"
-                    onClick={() => setSelected(null)}
-                  >
-                    &times;
-                  </button>
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-col-3 xl:grid-cols-4 gap-7 lg:gap-8 justify-start items-start">
+              {items.map((item, index) => (
+                <div key={index} className="flex flex-col items-start ">
                   <img
-                    src={teams[selected].image}
-                    alt={teams[selected].title}
-                    className="w-28 h-28 object-contain rounded-md mx-auto mb-4"
+                    src={item.image}
+                    alt={item.title}
+                    className="w-32 md:w-36 lg:w-40 xl:w-44 h-32 md:h-36 lg:h-40 xl:h-44 object-contain rounded-md"
                   />
-                  <h2 className="text-2xl font-bold text-center mb-2 text-[#58269A]">
-                    {teams[selected].title}
-                  </h2>
-                  <ul className="list-disc pl-5 space-y-2 text-left text-gray-700">
-                    {teams[selected].details.map((point, i) => (
-                      <li key={i}>{point}</li>
-                    ))}
-                  </ul>
-                </motion.div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
+                  <p className="text-[#2A2A2A] font-[Switzer] text-2xl lg:text-3xl font-semibold text-left mt-3">
+                    {item.title}
+                  </p>
+                  <p className="text-xl lg:text-2xl text-[#363348] text-left mt-1">
+                    {item.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="w-full  mt-9 md:mt-14 lg:mt-20 xl:mt-24 pr-4 md:pr-6 lg:pr-10 ">
+            <img
+              src={team}
+              alt={"team"}
+              className="w-full h-full object-cover rounded-md"
+            />
+          </div>
+          <div className="w-full flex flex-col gap-8 mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-5 md:pr-8 lg:pr-14 items-start">
+            <div className="w-full text-left ">
+              <h1 className="text-[#2A2A2A] font-[Switzer] text-4xl lg:text-5xl xl:text-5xl font-bold leading-[140%] text-center">
+                About The Founder
+              </h1>
+            </div>
 
-        <TeamLastComponent />
+            <div className="w-full max-w-5xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-8 xl:gap-10">
+              <div className="flex-shrink-0 w-52 h-52 xl:w-72 xl:h-72 lg:w-64 lg:h-64  flex items-center justify-center overflow-hidden">
+                <img
+                  src="/girish.webp"
+                  alt="Girish Ahirwar"
+                  className="object-cover w-full h-full rounded-lg"
+                />
+              </div>
+
+              <div className="flex-1 ">
+                <h2 className="text-4xl font-semibold mb-3 pl-5 text-[#58269A]">
+                  Girish Ahirwar
+                </h2>
+                <ul className="list-disc pl-5 space-y-2 text-xl font-normal">
+                  <li>CEO & Founder </li>
+                  <li>Partner &amp; Ex- CBO Tagbin</li>
+                  <li>
+                    Pitched, Won &amp; Delivered- Digital &amp; Experiential
+                    Projects Worth $500mn+
+                  </li>
+                  <li>Fundraising And Partnerships</li>
+                  <li>IIT Roorkee</li>
+                  <li>10+ Years Experience in Emerging Tech</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="w-full flex flex-col gap-8 mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-4 md:pr-5 lg:pr-10 items-start">
+            {/* Left Section - Heading and Paragraph */}
+            <div className="w-full text-left ">
+              <h1 className="text-[#2A2A2A] font-[Switzer] text-4xl lg:text-5xl xl:text-5xl mb-3 lg:mb-5 xl:mb-6 font-bold leading-[140%] text-start">
+                Our Team
+              </h1>
+            </div>
+
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-8 lg:gap-x-8 lg:gap-y-10 justify-start items-start">
+              {teams.map((item, index) => (
+                <div key={index} className="flex flex-col items-start ">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-36 lg:w-44 h-36 lg:h-44 object-contain rounded-md"
+                  />
+                  <p className="text-[#2A2A2A] font-[Switzer] text-2xl lg:text-3xl font-semibold text-left mt-3">
+                    {item.title}
+                  </p>
+                  <button
+                    className="mt-2 px-4 py-1 bg-[#58269A] text-white rounded hover:bg-[#6d3bbd] transition-colors"
+                    onClick={() => setSelected(index)}
+                  >
+                    Read More
+                  </button>
+                </div>
+              ))}
+            </div>
+            <AnimatePresence>
+              {selected !== null && (
+                <motion.div
+                  className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  onClick={() => setSelected(null)}
+                >
+                  <motion.div
+                    className="bg-white rounded-lg shadow-xl p-8 max-w-md w-full relative"
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    exit={{ scale: 0.8, opacity: 0 }}
+                    onClick={e => e.stopPropagation()}
+                  >
+                    <button
+                      className="absolute top-2 right-2 text-2xl text-gray-400 hover:text-gray-600"
+                      onClick={() => setSelected(null)}
+                    >
+                      &times;
+                    </button>
+                    <img
+                      src={teams[selected].image}
+                      alt={teams[selected].title}
+                      className="w-28 h-28 object-contain rounded-md mx-auto mb-4"
+                    />
+                    <h2 className="text-2xl font-bold text-center mb-2 text-[#58269A]">
+                      {teams[selected].title}
+                    </h2>
+                    <ul className="list-disc pl-5 space-y-2 text-left text-gray-700">
+                      {teams[selected].details.map((point, i) => (
+                        <li key={i}>{point}</li>
+                      ))}
+                    </ul>
+                  </motion.div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
+          <TeamLastComponent />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

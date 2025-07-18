@@ -1,8 +1,21 @@
+import React from 'react';
 import { FaLinkedin } from "react-icons/fa";
+import { Helmet } from 'react-helmet-async';
 
 const Webinar = () => {
   return (
-    <div className="flex flex-col mb-4 xl:flex-row gap-8 bg-white rounded-2xl max-w-7xl mx-auto px-6 lg:px-8 py-8 mt-4">
+    <>
+      <Helmet>
+        <title>Webinar | Maxtron</title>
+        <meta name="description" content="Join Maxtron's expert-led webinars on digital assets, compliance, tokenization, and Web3 innovation." />
+        <link rel="canonical" href="https://www.maxtron.ai/webinar" />
+        <meta property="og:title" content="Webinar | Maxtron" />
+        <meta property="og:description" content="Join Maxtron's expert-led webinars on digital assets, compliance, tokenization, and Web3 innovation." />
+        <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
+        <meta property="og:url" content="https://www.maxtron.ai/webinar" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+      <div className="flex flex-col mb-4 xl:flex-row gap-8 bg-white rounded-2xl max-w-7xl mx-auto px-6 lg:px-8 py-8 mt-4">
       <div className="flex-1 ">
         <div className="flex items-center gap-3 mb-4">
           <span className="px-4 py-1 rounded-full text-xs font-semibold bg-purple-100 text-purple-800 ">
@@ -196,6 +209,7 @@ const Webinar = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

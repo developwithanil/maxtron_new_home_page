@@ -10,10 +10,21 @@ import Profiles from "../Profiles";
 import AugmentationFaqs from "../../components/elementalComponent/Augmentationfaqs";
 import StaffTestimonials from "../../components/elementalComponent/StaffTestimonials";
 import ScheduleFooter from "../../components/elementalComponent/ScheduleFooter";
+import { Helmet } from 'react-helmet-async';
 
 const StaffAugmentation: React.FC = () => {
   return (
     <>
+      <Helmet>
+        <title>Staff Augmentation | Maxtron</title>
+        <meta name="description" content="Onboard pre-vetted, project-ready developers in 48 hours with Maxtron's staff augmentation services. No hiring bottlenecks, just pure development power." />
+        <link rel="canonical" href="https://www.maxtron.ai/staff-augmentation" />
+        <meta property="og:title" content="Staff Augmentation | Maxtron" />
+        <meta property="og:description" content="Onboard pre-vetted, project-ready developers in 48 hours with Maxtron's staff augmentation services. No hiring bottlenecks, just pure development power." />
+        <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
+        <meta property="og:url" content="https://www.maxtron.ai/staff-augmentation" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div className="w-full text-white flex flex-col lg:flex-row lg:items-center pt-5 px-6 sm:px-10 md:px-16 lg:pl-12 xl:pl-20 2xl:pl-32 lg:pr-8 xl:pr-12 max-w-[96rem] mx-auto">
         <div className="w-full lg:w-[58%] xl:w-[60%] 2xl:w-[55%] flex flex-col justify-center md:py-0 py-5 pt-5">
           <h1

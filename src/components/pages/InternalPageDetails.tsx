@@ -48,7 +48,14 @@ const InternalPageDetails: React.FC<InternalPageProps> = ({ caseStudies }) => {
   return (
     <>
       <Helmet>
+        <title>{title} | Case Study | Maxtron</title>
+        <meta name="description" content={description || subtitle || title} />
         <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={`${title} | Case Study | Maxtron`} />
+        <meta property="og:description" content={description || subtitle || title} />
+        <meta property="og:image" content={heroImage} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:type" content="article" />
       </Helmet>
       <div className="w-full flex flex-col gap-3 md:gap-5 lg:gap-6 xl:gap-7 mt-2 mb-4 relative">
         <div
