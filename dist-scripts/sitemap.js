@@ -1,25 +1,69 @@
 import { SitemapStream, streamToPromise, EnumChangefreq, } from "sitemap";
 import { createWriteStream, existsSync, mkdirSync } from "fs";
 import { resolve } from "path";
-import { fileURLToPath } from 'url';
+import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = resolve(__filename, '..');
+const __dirname = resolve(__filename, "..");
 const hostname = "https://www.maxtron.ai";
 const urls = [
     { url: "/", changefreq: EnumChangefreq.DAILY, priority: 1.0 },
     { url: "/industries", changefreq: EnumChangefreq.WEEKLY, priority: 0.9 },
     { url: "/case-studies", changefreq: EnumChangefreq.WEEKLY, priority: 0.9 },
-    { url: "/case-study/Blockchain-Game-Development", changefreq: EnumChangefreq.MONTHLY, priority: 0.8 },
-    { url: "/case-study/AI-Calling-Tool", changefreq: EnumChangefreq.MONTHLY, priority: 0.8 },
-    { url: "/case-study/Good-Standing", changefreq: EnumChangefreq.MONTHLY, priority: 0.8 },
-    { url: "/case-study/ICCA", changefreq: EnumChangefreq.MONTHLY, priority: 0.8 },
-    { url: "/case-study/ECommerce-Marketing", changefreq: EnumChangefreq.MONTHLY, priority: 0.8 },
-    { url: "/case-study/Crypto-Project-Marketing", changefreq: EnumChangefreq.MONTHLY, priority: 0.8 },
-    { url: "/case-study/Gro8", changefreq: EnumChangefreq.MONTHLY, priority: 0.8 },
-    { url: "/case-study/Tawuniya", changefreq: EnumChangefreq.MONTHLY, priority: 0.8 },
-    { url: "/case-study/Blockchain-Based-EVoting-System", changefreq: EnumChangefreq.MONTHLY, priority: 0.8 },
-    { url: "/case-study/Token-Launch", changefreq: EnumChangefreq.MONTHLY, priority: 0.8 },
-    { url: "/case-study/ULALO", changefreq: EnumChangefreq.MONTHLY, priority: 0.8 },
+    {
+        url: "/case-study/Blockchain-Game-Development",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.8,
+    },
+    {
+        url: "/case-study/AI-Calling-Tool",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.8,
+    },
+    {
+        url: "/case-study/Good-Standing",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.8,
+    },
+    {
+        url: "/case-study/ICCA",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.8,
+    },
+    {
+        url: "/case-study/ECommerce-Marketing",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.8,
+    },
+    {
+        url: "/case-study/Crypto-Project-Marketing",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.8,
+    },
+    {
+        url: "/case-study/Gro8",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.8,
+    },
+    {
+        url: "/case-study/Tawuniya",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.8,
+    },
+    {
+        url: "/case-study/Blockchain-Based-EVoting-System",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.8,
+    },
+    {
+        url: "/case-study/Token-Launch",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.8,
+    },
+    {
+        url: "/case-study/ULALO",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.8,
+    },
     { url: "/tokenization", changefreq: EnumChangefreq.MONTHLY, priority: 0.8 },
     { url: "/about", changefreq: EnumChangefreq.YEARLY, priority: 0.7 },
     { url: "/careers", changefreq: EnumChangefreq.MONTHLY, priority: 0.7 },
