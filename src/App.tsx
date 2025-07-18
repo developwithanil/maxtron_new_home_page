@@ -8,7 +8,6 @@ import Service from "./components/Services";
 import AboutUs from "./components/pages/AboutUs";
 import Insights from "./components/pages/Insights";
 import Industries from "./components/pages/Industries";
-import StaffAugmentation from "./components/pages/staffAugmentation";
 
 import "./page.css";
 import CaseStudyPage from "./components/pages/CaseStudyPage";
@@ -22,8 +21,10 @@ import NewHomePage from "./components/pages/NewHomePage";
 import FundRaising from "./components/pages/FundRaising";
 import AffiliateProgramPage from "./components/pages/AffiliateProgramPage";
 import EventsPage from "./components/pages/EventsPage";
+import StaffAugmentation from "./components/pages/staffAugmentation";
 import OurTeam from "./components/pages/OurTeam";
 import Compliance from "./components/pages/Compliance";
+import Web3 from "./components/pages/Web3";
 
 const Home: React.FC = () => (
   <div>
@@ -75,6 +76,7 @@ const App: React.FC = () => {
         <Route path="/our-team" element={<OurTeam />} />
         <Route path="/case-studies" element={<CaseStudy />} />
         <Route path="/tokenization" element={<TokenizePage />} />
+        <Route path="/web3" element={<Web3 />} />
         <Route path="/staff-augmentation" element={<StaffAugmentation />} />
         <Route path="/affiliate" element={<AffiliateProgramPage />} />
         <Route path="/events" element={<EventsPage />} />
