@@ -6,10 +6,18 @@ import DesignSection from "../elementalComponent/DesignSection";
 import UseCase from "../elementalComponent/UseCase";
 import Web3Footer from "../elementalComponent/Web3Footer";
 import Web3Ethos from "../elementalComponent/Web3Ethos";
+import { Helmet } from "react-helmet";
 
 const Web3 = () => {
   return (
     <div id="Home">
+      <Helmet>
+        <title>Web3 App Development Company | Complete Web3 Solutions</title>
+        <meta
+          name="description"
+          content="Build next-gen decentralized applications with a trusted Web3 app development company. Custom dApps, blockchain integration, and full-stack Web3 services."
+        />
+      </Helmet>
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-black"
