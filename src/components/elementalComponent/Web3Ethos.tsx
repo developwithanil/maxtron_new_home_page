@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+
 
 const curveline1 = () => (
   <svg

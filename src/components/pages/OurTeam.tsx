@@ -9,10 +9,13 @@ import hui from "../../assets/case/hui.webp";
 import ridha from "../../assets/case/ridha.webp";
 import craig from "../../assets/case/craig.webp";
 import riddhi from "../../assets/case/riddhi.webp";
+import ishan from "../../assets/case/ishan.webp";
 import aman from "../../assets/case/aman.webp";
 import vc from "../../assets/case/888vc.webp";
 import team from "../../assets/case/team.webp";
 import TeamLastComponent from "../elementalComponent/TeamLastComponent";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const items = [
   {
@@ -43,38 +46,79 @@ const items = [
 ];
 const teams = [
   {
-    title: "Prashant",
-
-    image: prashant,
-  },
-  {
-    title: "Hue H. Nguyen",
-
+    title: "Hue H. Nguyễn",
     image: hui,
+    details: [
+      "Ex- U.S. SEC",
+      "Pricewaterhouse Regulatory Group",
+      "Former COO of Investment Management",
+      "Influential Expertise in TradFi, DeFi, SEC Regulation",
+      "25+ years Experience"
+    ]
   },
   {
     title: "Ridha Agarwal",
-
     image: ridha,
+    details: [
+      "5+ Years in Scaling Web3 Innovative Products",
+      "Leading Tech Communities (Web3 & AI)",
+      "Expanded Products to US, UAE, Europe & Asian Markets",
+      "Ex- Founding Team: Create Protocol & Healaverse"
+    ]
   },
   {
     title: "Craig Henderson",
-
     image: craig,
+    details: [
+      "Listings Manager on top-tier crypto exchanges",
+      "Advisor to multiple Web3 startups across DeFi and GameFi",
+      "Expert in exchange strategy, token lifecycle, and community development",
+      "Led exchange negotiations, KOL outreach, and ambassador programs"
+    ]
+  },
+  {
+    title: "Prashant",
+    image: prashant,
+    details: [
+      "Partner (Serial Entrepreneur)",
+      "Technology & Product",
+      "Selected at Draper University, Summer Program (USA)",
+      "Inter IIT Technology Meet: Gold Medalist"
+    ]
   },
   {
     title: "Aman Shah",
-
     image: aman,
+    details: [
+      "Web3 Solutions Development Expert",
+      "HPE & Blockchain Startup",
+      "Scalable, agile solution builder.",
+      "Blends corporate and startup strengths."
+    ]
+  },
+  {
+    title: "Ishan Dwivedi",
+    image: ishan, 
+    details: [
+      "Product & UI/UX",
+      "Led 100+ UI/UX Projects Globally",
+      "Experienced in user research, prototyping and creating engaging interfaces"
+    ]
   },
   {
     title: "Riddhi Jaiswal",
-
     image: riddhi,
-  },
+    details: [
+      "Project Manager & Lead",
+      "Led 50+ Web3 Projects",
+      "Ex Wipro, Ex Swayatt Robots"
+    ]
+  }
 ];
 
 const OurTeam = () => {
+  const [selected, setSelected] = useState<number | null>(null);
+
   return (
     <div className="w-full">
       <div className="w-full max-w-[96rem] mx-auto pl-5 sm:pl-6 md:pl-14 xl:pl-16 py-4 sm:py-6 md:py-8 lg:py-10 xl:py-12 ">
@@ -181,9 +225,54 @@ const OurTeam = () => {
                 <p className="text-[#2A2A2A] font-[Switzer] text-2xl lg:text-3xl font-semibold text-left mt-3">
                   {item.title}
                 </p>
+                <button
+                  className="mt-2 px-4 py-1 bg-[#58269A] text-white rounded hover:bg-[#6d3bbd] transition-colors"
+                  onClick={() => setSelected(index)}
+                >
+                  Read More
+                </button>
               </div>
             ))}
           </div>
+          <AnimatePresence>
+            {selected !== null && (
+              <motion.div
+                className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={() => setSelected(null)}
+              >
+                <motion.div
+                  className="bg-white rounded-lg shadow-xl p-8 max-w-md w-full relative"
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  exit={{ scale: 0.8, opacity: 0 }}
+                  onClick={e => e.stopPropagation()}
+                >
+                  <button
+                    className="absolute top-2 right-2 text-2xl text-gray-400 hover:text-gray-600"
+                    onClick={() => setSelected(null)}
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src={teams[selected].image}
+                    alt={teams[selected].title}
+                    className="w-28 h-28 object-contain rounded-md mx-auto mb-4"
+                  />
+                  <h2 className="text-2xl font-bold text-center mb-2 text-[#58269A]">
+                    {teams[selected].title}
+                  </h2>
+                  <ul className="list-disc pl-5 space-y-2 text-left text-gray-700">
+                    {teams[selected].details.map((point, i) => (
+                      <li key={i}>{point}</li>
+                    ))}
+                  </ul>
+                </motion.div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
 
         <TeamLastComponent />
