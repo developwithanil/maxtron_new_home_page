@@ -1,9 +1,8 @@
-// import React from "react";
+import React from "react";
 // import logo from "../assets/logo.svg";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import React from "react";
 
 const Footer = () => {
   return (

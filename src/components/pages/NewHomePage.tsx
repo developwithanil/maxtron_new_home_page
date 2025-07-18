@@ -1,3 +1,4 @@
+import React from "react";
 import { Helmet } from 'react-helmet-async';
 import ClientMarquee from "../elementalComponent/ClientMarquee";
 import TechnologyUsed from "../elementalComponent/TechnologyUsed";
@@ -15,7 +16,7 @@ const NewHomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Maxtron | Product Development & Marketing Company | AI, Blockchain, Web3, Emerging Technologies, IT Services, Sales & Marketing</title>
+        <title>Maxtron | AI, Blockchain, Web3Technologies, IT Services, Sales & Marketing</title>
         <meta name="description" content="Transform your business and growth with Maxtron’s IT and marketing solutions. We are a trusted IT product development company to enable rapid development and deployment of cutting-edge solutions, empowering your business to achieve its goals." />
         <link rel="canonical" href="https://www.maxtron.ai/" />
         <meta property="og:title" content="Maxtron | Product Development & Marketing Company | AI, Blockchain, Web3, Emerging Technologies, IT Services, Sales & Marketing" />

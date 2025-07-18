@@ -1,3 +1,4 @@
+import React from "react";
 import image1 from "../assets/gallery/image1.webp";
 import image2 from "../assets/gallery/image2.webp";
 import image3 from "../assets/gallery/image3.webp";

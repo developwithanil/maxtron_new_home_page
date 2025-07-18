@@ -1,0 +1,5 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+const InsightCard = ({ imageUrl, category, title, authorName, date, }) => {
+    return (_jsxs("div", { className: "bg-white rounded-lg shadow-md overflow-hidden p-4", children: [_jsx("img", { src: imageUrl, alt: title, className: "w-full h-48 object-cover" }), _jsxs("div", { className: "p-4", children: [_jsx("span", { className: "inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full uppercase font-semibold tracking-wide", children: category }), _jsx("h3", { className: "text-lg font-semibold mt-2", children: title }), _jsxs("div", { className: "flex items-center mt-2", children: [_jsx("img", { src: imageUrl, alt: authorName, className: "w-8 h-8 rounded-full mr-2" }), _jsxs("div", { className: "flex items-center space-x-4", children: [_jsx("p", { className: "text-sm font-medium", children: authorName }), _jsx("p", { className: "text-xs text-gray-500", children: date })] })] })] })] }));
+};
+export default InsightCard;

@@ -1,3 +1,4 @@
+import React from "react";
 import Antony from "../../public/customer/anthony-perkins.svg";
 import Grant from "../../public/customer/grant.svg";
 import Joyce from "../../public/customer/joice.svg";

@@ -1,3 +1,4 @@
+import React from "react";
 import ContactSection from "./ContactSection";
 // import BackgroundVideo from "./BackgrounsVideo";
 import CaseStudy from "./CaseStudy";

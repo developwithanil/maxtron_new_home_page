@@ -1,6 +1,5 @@
-// import React from "react";
-import contact from "../assets/contactImg.svg";
 import React from "react";
+import contact from "../assets/contactImg.svg";
 const ContactSection = () => {
   return (
     <div className="bg-gray-900 text-white p-6 md:p-16 space-y-4 rounded-3xl border-4 solid border-[#BDBCBC] flex flex-col md:flex-row justify-between items-center z-50 w-full">

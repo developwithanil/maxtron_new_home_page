@@ -5,7 +5,8 @@
     "moduleResolution": "node",
     "outDir": "./dist-scripts",
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "jsx": "react-jsx"
   },
-  "include": ["src/scripts/**/*.ts"]
+  "include": ["src/**/*"]
 }

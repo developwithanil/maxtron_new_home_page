@@ -1,3 +1,4 @@
+import React from "react";
 import study1 from "../assets/study/study1.webp";
 import study2 from "../assets/study/study2.webp";
 import study3 from "../assets/study/study3.webp";

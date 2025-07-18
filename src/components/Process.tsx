@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
 import process from "../assets/augmentation/process.svg";

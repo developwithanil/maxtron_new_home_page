@@ -1,0 +1,7 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+const ImageSection = ({ keyFeaturesImage }) => {
+    const isThreeImages = keyFeaturesImage.length === 3;
+    const isFourthImages = keyFeaturesImage.length === 4;
+    return (_jsx("div", { className: "mx-4", children: _jsx("div", { className: "flex flex-col bg-white rounded-3xl w-full 2xl:mx-auto max-w-[88rem] px-[30px] md:px-[50px] lg:px-[70px] py-2 md:py-3 lg:py-4", children: _jsx("div", { className: `grid grid-cols-1 gap-4 w-full items-center ${isThreeImages ? "lg:grid-cols-3" : "md:grid-cols-2"}`, children: keyFeaturesImage.map((src, index) => (_jsxs("div", { className: "w-full", children: [isFourthImages && (_jsx("img", { src: src, alt: `Key Feature ${index + 1}`, className: `w-full  h-full rounded-xl object-contain` })), !isFourthImages && (_jsx("img", { src: src, alt: `Key Feature ${index + 1}`, className: `w-full h-auto ${isThreeImages ? "max-h-[360px]" : "max-h-[500px]"} rounded-[32px] object-contain` }))] }, index))) }) }) }));
+};
+export default ImageSection;

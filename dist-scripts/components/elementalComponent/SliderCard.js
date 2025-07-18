@@ -1,0 +1,5 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+const SliderCard = ({ image, name, title, category, description, }) => {
+    return (_jsxs("div", { className: "bg-white p-4 md:px-6 py-8 space-y-4 h-80  max-w-96 md:h-80 text-left rounded-3xl shadow-lg", children: [_jsxs("div", { className: "flex ", children: [_jsx("div", { className: " pr-2 md:pr-4", children: _jsx("img", { src: image, alt: title, className: " rounded-full mx-auto" }) }), _jsxs("div", { className: " w-[60%] mt-2 flex flex-col", children: [_jsx("h3", { className: "text-sm text-left md:text-xl font-medium font-OpenSans text-[#4E009C]", children: name }), " ", _jsx("p", { className: "text-xs md:text-sm text-[#4E009C]", children: title })] })] }), _jsx("p", { className: "p-2 rounded text-xs md:text-sm font-OpenSans font-medium text-[#4B6BFB] bg-[#4B6BFB0D] max-w-fit", children: category }), _jsx("p", { className: "text-left md:px-2 text-xs md:text-sm font-semibold normal-case font-OpenSans text-[#4E009C]", children: description })] }));
+};
+export default SliderCard;

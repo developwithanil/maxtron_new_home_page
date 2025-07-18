@@ -40,7 +40,7 @@ import {
   firebase,
   jest,
   Chrome,
-} from "../VectorImage.tsx";
+} from "../VectorImage";
 
 import tokennew1 from "../../assets/internal/tokennew1.webp";
 import tokennew2 from "../../assets/internal/tokennew2.webp";

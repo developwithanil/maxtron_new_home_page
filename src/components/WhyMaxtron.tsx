@@ -1,3 +1,4 @@
+import React from "react";
 import feature1 from "../assets/whymaxtron/feature1.webp";
 import feature2 from "../assets/whymaxtron/feature2.webp";
 import feature3 from "../assets/whymaxtron/feature3.webp";

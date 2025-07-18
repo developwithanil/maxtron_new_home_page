@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "./Card";
 import { Link } from "react-router-dom";
 
@@ -76,7 +76,7 @@ const RightArrowIcon = () => (
 );
 
 const Profiles: React.FC = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = React.useState(0);
 
   const handlePrev = () => {
     setActiveIndex((prevIndex) =>

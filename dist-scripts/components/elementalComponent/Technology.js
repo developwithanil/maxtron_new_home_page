@@ -1,0 +1,6 @@
+"use client";
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+const Technology = ({ techs }) => {
+    return (_jsxs("div", { className: "flex flex-col lg:flex-row w-full mx-auto max-w-[88rem] items-start gap-5 md:gap-8 px-4 sm:px-6 md:px-8 py-7 md:py-10 lg:py-12", children: [_jsx("div", { className: "lg:w-1/4 w-full", children: _jsx("p", { className: "text-[#595959] [font-family:Switzer] text-lg md:text-xl font-medium leading-[160%]", children: "Technology used" }) }), _jsx("div", { className: "lg:w-3/4 w-full ", children: _jsx("div", { className: "w-full relative overflow-hidden px-4 sm:px-6 md:px-8", children: _jsx("div", { className: "flex flex-wrap gap-4 md:gap-6 justify-start", children: techs.map((tech, index) => (_jsxs("div", { className: "flex items-center gap-3 bg-white shadow-md hover:shadow-lg transition-all duration-300 py-2 lg:py-3 px-4 lg:px-6 rounded-xl border border-gray-100", children: [tech.icon && (_jsx("div", { className: "w-8 h-8 flex items-center justify-center bg-[#8941C4]/10 rounded-lg", children: typeof tech.icon === "string" ? (_jsx("img", { src: tech.icon, alt: tech.name, className: "w-5 h-5 object-contain" })) : (_jsx(tech.icon, {})) })), _jsx("span", { className: "text-gray-800 font-[Inter] font-medium whitespace-nowrap", children: tech.name })] }, index))) }) }) })] }));
+};
+export default Technology;
