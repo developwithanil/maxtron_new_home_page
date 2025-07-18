@@ -256,11 +256,11 @@ const Web3Needs = () => {
     >
       <div className="mb-8 sticky top-2 z-20 pt-8 pb-4 h-[700px] ">
         <div className="border border-[#E0E0E0] bg-white rounded-full w-fit mx-auto px-8 mb-2">
-          <h2 className="text-lg text-[#2A2A2A] py-2 px-4 font-normal">
+          <h2 className="text-lg text-[#2A2A2A] py-2 px-4 font-normal uppercase">
             We specialize in
           </h2>
         </div>
-        <p className="text-[#171717] font-[Switzer] text-4xl md:text-9xl font-semibold max-w-8xl mx-auto">
+        <p className="text-[#171717] font-[Switzer] text-4xl md:text-9xl font-medium max-w-8xl mx-auto">
           Why Web3 Needs Maxtron
         </p>
         <p className="text-[#171717]  text-lg md:text-xl font-bold max-w-2xl mx-auto mb-16 px-6 font-openSansHebrew py-32">
