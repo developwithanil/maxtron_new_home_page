@@ -268,7 +268,14 @@ const Web3Needs = () => {
           blockchain infrastructure – face unique challenges
         </p>
 
-        <motion.button className="inline-flex items-center justify-center gap-2 px-8 py-3 text-white bg-[#7A35C1] rounded-full shadow-lg hover:bg-[#4a2bb3] transition duration-300 ease-in-out sticky bottom-8 left-1/2 -translate-x-1/2 z-30 font-openSansHebrew">
+        <motion.button
+          className="inline-flex items-center justify-center gap-2 px-8 py-3 text-white bg-[#7A35C1] rounded-full shadow-lg hover:bg-purple-200 hover:text-[#7A35C1] transition duration-300 ease-in-out sticky bottom-8 left-1/2 -translate-x-1/2 z-30 font-openSansHebrew group"
+          onClick={() => {
+            window.open(
+              "https://calendly.com/business-maxtron/30min?month=2024-08"
+            );
+          }}
+        >
           Book a call
           <svg
             width="12"
@@ -276,10 +283,11 @@ const Web3Needs = () => {
             viewBox="0 0 12 12"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="transition-colors duration-300"
           >
             <path
               d="M1.05078 10.9497L10.2432 1.75734M2.46499 1.05023H9.95028C10.5026 1.05023 10.9503 1.49795 10.9503 2.05023V9.53551"
-              stroke="white"
+              stroke="currentColor"
               stroke-width="2"
               stroke-linecap="round"
             />

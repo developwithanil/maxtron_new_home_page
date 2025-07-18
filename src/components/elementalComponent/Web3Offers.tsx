@@ -8,7 +8,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, description, number }) => {
   return (
-    <div className="bg-[#F5F5F5] flex flex-col justify-start p-4 relative pb-16 min-h-80">
+    <div className="bg-[#F5F5F5] flex flex-col justify-start p-4 relative pb-16 min-h-80 hover:scale-95 transition-all duration-300">
       <div>
         <h3 className="text-xl font-medium mb-4 text-[#2A2A2A] [font-family:Switzer] items-start text-start">
           {title}
@@ -79,7 +79,7 @@ const Web3Offers = () => {
         What We Offer to Web3 Projects
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-2 ">
         {cardsData.map((card) => (
           <Card
             key={card.id}
