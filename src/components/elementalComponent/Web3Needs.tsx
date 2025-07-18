@@ -59,11 +59,9 @@ const cards: CardData[] = [
   {
     title: "Rapid user growth and unpredictable load",
     className:
-      "absolute left-[18%] top-[38%] md:left-[28%] md:top-[28%] lg:left-[23%] lg:top-[28%] p-4 rounded-lg shadow-xl",
+      "absolute left-[5%] top-[35%] md:left-[28%] md:top-[28%] lg:left-[23%] lg:top-[28%] p-2 md:p-4 rounded-lg shadow-xl w-[280px] h-[160px] md:w-[416px] md:h-[226px]",
     rotate: 8,
     style: {
-      width: "416px",
-      height: "226px",
       backgroundImage: `url(${bgcard1})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
@@ -78,11 +76,9 @@ const cards: CardData[] = [
   {
     title: "Cross-chain interoperability and fragmentation",
     className:
-      "absolute right-[18%] top-[43%] md:right-[23%] md:top-[23%] lg:right-[18%] lg:top-[18%] p-4 rounded-lg shadow-xl",
+      "absolute right-[5%] top-[40%] md:right-[23%] md:top-[23%] lg:right-[18%] lg:top-[18%] p-2 md:p-4 rounded-lg shadow-xl w-[280px] h-[160px] md:w-[416px] md:h-[226px]",
     rotate: -8,
     style: {
-      width: "416px",
-      height: "226px",
       backgroundImage: `url(${bgcard2})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
@@ -97,11 +93,9 @@ const cards: CardData[] = [
   {
     title: "Real-time compliance and smart contract risks",
     className:
-      "absolute left-[15%] top-[65%] md:left-[20%] md:top-[60%] lg:left-[18%] lg:top-[58%] p-4 rounded-lg shadow-xl",
+      "absolute left-[5%] top-[60%] md:left-[20%] md:top-[60%] lg:left-[18%] lg:top-[58%] p-2 md:p-4 rounded-lg shadow-xl w-[280px] h-[160px] md:w-[416px] md:h-[226px]",
     rotate: 3,
     style: {
-      width: "416px",
-      height: "226px",
       backgroundImage: `url(${bgcard3})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
@@ -116,11 +110,9 @@ const cards: CardData[] = [
   {
     title: "Demand for seamless, intuitive UX at Web2 standards",
     className:
-      "absolute right-[15%] top-[70%] md:right-[20%] md:top-[65%] lg:right-[18%] lg:top-[63%] p-4 rounded-lg shadow-xl",
+      "absolute right-[5%] top-[65%] md:right-[20%] md:top-[65%] lg:right-[18%] lg:top-[63%] p-2 md:p-4 rounded-lg shadow-xl w-[280px] h-[160px] md:w-[416px] md:h-[226px]",
     rotate: -4,
     style: {
-      width: "416px",
-      height: "226px",
       backgroundImage: `url(${bgcard4})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
@@ -246,8 +238,8 @@ const Web3Needs = () => {
         }}
       >
         <motion.div>
-          <div className="w-full h-full flex items-center justify-center p-6 backdrop-blur-md bg-white/60 rounded-xl shadow-md">
-            <h3 className="text-xl md:text-2xl font-medium font-[Switzer] text-[#171717] leading-snug text-left w-full h-12">
+          <div className="w-full h-full flex items-center justify-center p-3 md:p-6 backdrop-blur-md bg-white/60 rounded-xl shadow-md">
+            <h3 className="text-sm md:text-xl lg:text-2xl font-medium font-[Switzer] text-[#171717] leading-tight md:leading-snug text-left w-full">
               {cardData.title}
             </h3>
           </div>
@@ -276,20 +268,21 @@ const Web3Needs = () => {
           blockchain infrastructure – face unique challenges
         </p>
 
-        <motion.button className="inline-flex items-center justify-center px-8 py-3 text-white bg-[#5B34EA] rounded-full shadow-lg hover:bg-[#4a2bb3] transition duration-300 ease-in-out sticky bottom-8 left-1/2 -translate-x-1/2 z-30 ">
+        <motion.button className="inline-flex items-center justify-center gap-2 px-8 py-3 text-white bg-[#7A35C1] rounded-full shadow-lg hover:bg-[#4a2bb3] transition duration-300 ease-in-out sticky bottom-8 left-1/2 -translate-x-1/2 z-30 font-openSansHebrew">
           Book a call
           <svg
-            className="ml-2 w-5 h-5"
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
             fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M17 8l4 4m0 0l-4 4m4-4H3"
-            ></path>
+              d="M1.05078 10.9497L10.2432 1.75734M2.46499 1.05023H9.95028C10.5026 1.05023 10.9503 1.49795 10.9503 2.05023V9.53551"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
           </svg>
         </motion.button>
       </div>

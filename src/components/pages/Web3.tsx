@@ -32,12 +32,13 @@ const Web3 = () => {
         <section id="design-section" aria-label="Design Section">
           <DesignSection />
         </section>
-        <section id="use-case" aria-label="Use Case">
-          <UseCase />
-        </section>
         <section id="web3-ethos" aria-label="Web3 Ethos">
           <Web3Ethos />
         </section>
+        <section id="use-case" aria-label="Use Case">
+          <UseCase />
+        </section>
+
         <section id="web3-footer" aria-label="Web3 Footer">
           <Web3Footer />
         </section>

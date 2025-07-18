@@ -48,7 +48,7 @@ const Web3HeroSection = () => {
                 className=" text-white border-[#FFFFFF] border font-normal md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3 bg-transparent outline-none placeholder:text-[#FFFFFF]"
               />
               <Link
-                to="/contact"
+                to=""
                 className="bg-[#7A35C1] hover:bg-indigo-200 hover:text-[#7A35C1]  font-normal md:py-3 md:px-6 rounded-full transition duration-300 w-full sm:w-auto py-2 px-3"
               >
                 <span>Connect</span>
