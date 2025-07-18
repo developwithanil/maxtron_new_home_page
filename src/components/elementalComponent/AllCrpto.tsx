@@ -10,12 +10,12 @@ const AllCrpto = () => {
   return (
     <div className=" flex items-center justify-center gap-4 md:gap-5 lg:gap-7">
       {items.map((item, index) => (
-        // <div key={index}>
-        //   <img src={item} alt="item" className="w-10 lg:w-12 h-10 lg:h-12" />
-        // </div>
         <div key={index}>
           <img src={item} alt="item" className="w-10 lg:w-12 h-10 lg:h-12" />
         </div>
+        // <div key={index}>
+        //   <img src={item} alt="item" className="w-10 lg:w-12 h-10 lg:h-12" />
+        // </div>
       ))}
     </div>
   );
