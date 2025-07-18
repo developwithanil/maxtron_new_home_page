@@ -489,7 +489,7 @@ const FormTalent = () => {
                     if (errors.currentSalary) setErrors(prev => ({...prev, currentSalary: ''}));
                   }
                 }}
-                placeholder="4 LPA"
+                placeholder="X LPA"
                 className={`px-3 py-2 md:p-3 rounded-lg bg-[#FCF4FE] border ${
                   errors.currentSalary ? 'border-red-500 bg-red-50' : 'border-[#E5E7EB]'
                 } focus:border-[#8952b6] outline-none`} 
@@ -516,7 +516,7 @@ const FormTalent = () => {
                     if (errors.expectedSalary) setErrors(prev => ({...prev, expectedSalary: ''}));
                   }
                 }}
-                placeholder="4 LPA"
+                placeholder="X LPA"
                 className={`px-3 py-2 md:p-3 rounded-lg bg-[#FCF4FE] border ${
                   errors.expectedSalary ? 'border-red-500 bg-red-50' : 'border-[#E5E7EB]'
                 } focus:border-[#8952b6] outline-none`} 

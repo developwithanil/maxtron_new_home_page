@@ -103,13 +103,13 @@ const OurTeam = () => {
             </h1>
           </div>
 
-          <div className="w-full grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-7 lg:gap-8 justify-start items-start">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-col-3 xl:grid-cols-4 gap-7 lg:gap-8 justify-start items-start">
             {items.map((item, index) => (
               <div key={index} className="flex flex-col items-start ">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-28 sm:w-32 md:w-36 lg:w-40 xl:w-44 h-28 sm:h-32 md:h-36 lg:h-40 xl:h-44 object-contain rounded-md"
+                  className="w-32 md:w-36 lg:w-40 xl:w-44 h-32 md:h-36 lg:h-40 xl:h-44 object-contain rounded-md"
                 />
                 <p className="text-[#2A2A2A] font-[Switzer] text-2xl lg:text-3xl font-semibold text-left mt-3">
                   {item.title}
@@ -149,6 +149,7 @@ const OurTeam = () => {
                 Girish Ahirwar
               </h2>
               <ul className="list-disc pl-5 space-y-2 text-xl font-normal">
+                <li>CEO & Founder </li>
                 <li>Partner &amp; Ex- CBO Tagbin</li>
                 <li>
                   Pitched, Won &amp; Delivered- Digital &amp; Experiential
@@ -169,7 +170,7 @@ const OurTeam = () => {
             </h1>
           </div>
 
-          <div className="w-full grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-8 lg:gap-x-8 lg:gap-y-10 justify-start items-start">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-8 lg:gap-x-8 lg:gap-y-10 justify-start items-start">
             {teams.map((item, index) => (
               <div key={index} className="flex flex-col items-start ">
                 <img
