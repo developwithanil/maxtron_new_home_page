@@ -256,7 +256,7 @@ const Web3Needs = () => {
     >
       <div className="mb-8 sticky top-2 z-20 pt-8 pb-4 h-[700px] ">
         <div className="border border-[#E0E0E0] bg-white rounded-full w-fit mx-auto px-8 mb-2">
-          <h2 className="text-lg text-[#2A2A2A] py-2 px-4 font-normal uppercase">
+          <h2 className="text-lg  text-[#2A2A2A] py-2 px-4 font-normal uppercase">
             We specialize in
           </h2>
         </div>
