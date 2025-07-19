@@ -3,6 +3,7 @@ import MarketingCase from "../elementalComponent/MarketingCase";
 import Web3MarketingOffers from "../elementalComponent/Web3MarketingOffers";
 import Web3MarketingFooter from "../elementalComponent/Web3MarketingFooter";
 import Web3Speed from "../elementalComponent/Web3Speed";
+import FullStackMarketing from "../elementalComponent/FullStackMarketing";
 
 const Web3Marketing = () => {
   return (
@@ -14,6 +15,10 @@ const Web3Marketing = () => {
         ></a>
         <main id="main-content" role="main">
           <Web3MarketingHeroSection />
+
+          <section id="full-stack-marketing" aria-label="Full Stack Marketing">
+            <FullStackMarketing />
+          </section>
 
           <section id="web3marketing-offers" aria-label="Web3 Offers">
             <Web3MarketingOffers />
