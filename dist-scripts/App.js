@@ -25,7 +25,6 @@ import OurTeam from "./components/pages/OurTeam";
 import Compliance from "./components/pages/Compliance";
 import Web3 from "./components/pages/Web3";
 import Web3Marketing from "./components/pages/Web3Marketing";
-
 const Home = () => (_jsx("div", { children: _jsx(NewHomePage, {}) }));
 const About = () => (_jsx("div", { children: _jsx(AboutUs, {}) }));
 const Services = () => (_jsx("div", { children: _jsx(Service, {}) }));
