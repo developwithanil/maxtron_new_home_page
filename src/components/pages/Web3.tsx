@@ -1,5 +1,5 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async'; 
+import React from "react";
+import { Helmet } from "react-helmet-async";
 import ClientMarquee from "../elementalComponent/ClientMarquee";
 import Web3HeroSection from "../Web3HeroSection";
 import Web3Needs from "../elementalComponent/Web3Needs";
