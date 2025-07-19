@@ -133,6 +133,8 @@ const OurTeam = () => {
         <title>Our Team | Maxtron</title>
         <meta name="description" content="Meet the Maxtron team: experts in blockchain, AI, product, and marketing, driving innovation and business growth." />
         <link rel="canonical" href="https://www.maxtron.ai/our-team" />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content="Our Team | Maxtron" />
         <meta property="og:description" content="Meet the Maxtron team: experts in blockchain, AI, product, and marketing, driving innovation and business growth." />
         <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />

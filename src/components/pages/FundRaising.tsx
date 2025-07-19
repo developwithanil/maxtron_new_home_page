@@ -60,10 +60,12 @@ const FundRaising = () => {
     <>
       <Helmet>
         <title>Fund Raising | Maxtron</title>
-        <meta name="description" content="Raise capital for your Web3, AI, and emerging tech projects with Maxtron's global fundraising, legal, and VC network support." />
+        <meta name="description" content="Raise capital for your Web3, AI, and tech projects with Maxtron's global fundraising, legal, and VC network support." />
         <link rel="canonical" href="https://www.maxtron.ai/fund-raising" />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content="Fund Raising | Maxtron" />
-        <meta property="og:description" content="Raise capital for your Web3, AI, and emerging tech projects with Maxtron's global fundraising, legal, and VC network support." />
+        <meta property="og:description" content="Raise capital for your Web3, AI, and tech projects with Maxtron's global fundraising, legal, and VC network support." />
         <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
         <meta property="og:url" content="https://www.maxtron.ai/fund-raising" />
         <meta property="og:type" content="website" />

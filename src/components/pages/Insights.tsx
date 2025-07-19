@@ -107,6 +107,8 @@ const Insights = () => {
         <title>Insights | Maxtron</title>
         <meta name="description" content="Explore technology insights and trends with Maxtron. Stay updated on how tech is changing the workplace and business landscape." />
         <link rel="canonical" href="https://www.maxtron.ai/insights" />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content="Insights | Maxtron" />
         <meta property="og:description" content="Explore technology insights and trends with Maxtron. Stay updated on how tech is changing the workplace and business landscape." />
         <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />

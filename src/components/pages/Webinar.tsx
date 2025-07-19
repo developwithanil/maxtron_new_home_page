@@ -9,6 +9,8 @@ const Webinar = () => {
         <title>Webinar | Maxtron</title>
         <meta name="description" content="Join Maxtron's expert-led webinars on digital assets, compliance, tokenization, and Web3 innovation." />
         <link rel="canonical" href="https://www.maxtron.ai/webinar" />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content="Webinar | Maxtron" />
         <meta property="og:description" content="Join Maxtron's expert-led webinars on digital assets, compliance, tokenization, and Web3 innovation." />
         <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />

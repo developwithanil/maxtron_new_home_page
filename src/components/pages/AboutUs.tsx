@@ -75,10 +75,12 @@ const AboutUs = () => {
     <>
       <Helmet>
         <title>About Us | Maxtron</title>
-        <meta name="description" content="Meet the Maxtron team: a fusion of technical, marketing, and creative expertise delivering innovative IT and marketing solutions." />
+        <meta name="description" content="Meet the Maxtron team: technical, marketing, and creative experts delivering innovative solutions." />
         <link rel="canonical" href="https://www.maxtron.ai/about" />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content="About Us | Maxtron" />
-        <meta property="og:description" content="Meet the Maxtron team: a fusion of technical, marketing, and creative expertise delivering innovative IT and marketing solutions." />
+        <meta property="og:description" content="Meet the Maxtron team: technical, marketing, and creative experts delivering innovative solutions." />
         <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
         <meta property="og:url" content="https://www.maxtron.ai/about" />
         <meta property="og:type" content="website" />

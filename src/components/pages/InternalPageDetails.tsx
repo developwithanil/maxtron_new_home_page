@@ -51,6 +51,8 @@ const InternalPageDetails: React.FC<InternalPageProps> = ({ caseStudies }) => {
         <title>{title} | Case Study | Maxtron</title>
         <meta name="description" content={description || subtitle || title} />
         <link rel="canonical" href={canonicalUrl} />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content={`${title} | Case Study | Maxtron`} />
         <meta property="og:description" content={description || subtitle || title} />
         <meta property="og:image" content={heroImage} />

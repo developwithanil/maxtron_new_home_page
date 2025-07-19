@@ -65,6 +65,8 @@ const EventsPage: React.FC = () => {
         <title>Events | Maxtron</title>
         <meta name="description" content="Discover Maxtron's global events: from NFT exhibits to tech conferences, see how we turn ideas into real-world impact." />
         <link rel="canonical" href="https://www.maxtron.ai/events" />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content="Events | Maxtron" />
         <meta property="og:description" content="Discover Maxtron's global events: from NFT exhibits to tech conferences, see how we turn ideas into real-world impact." />
         <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />

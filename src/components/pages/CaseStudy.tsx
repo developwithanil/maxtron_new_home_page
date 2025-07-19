@@ -81,6 +81,8 @@ const CaseStudy = () => {
         <title>Case Studies | Maxtron</title>
         <meta name="description" content="Explore Maxtron's case studies: real-world examples of our IT, blockchain, AI, and marketing solutions driving business success." />
         <link rel="canonical" href="https://www.maxtron.ai/case-studies" />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content="Case Studies | Maxtron" />
         <meta property="og:description" content="Explore Maxtron's case studies: real-world examples of our IT, blockchain, AI, and marketing solutions driving business success." />
         <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />

@@ -28,10 +28,12 @@ const Careers = () => {
     <>
       <Helmet>
         <title>Careers | Maxtron</title>
-        <meta name="description" content="Join Maxtron's talent community. Get notified about new job openings and build your professional network in tech and marketing." />
+        <meta name="description" content="Join Maxtron's talent community. Get notified about new jobs and build your network in tech and marketing." />
         <link rel="canonical" href="https://www.maxtron.ai/careers" />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content="Careers | Maxtron" />
-        <meta property="og:description" content="Join Maxtron's talent community. Get notified about new job openings and build your professional network in tech and marketing." />
+        <meta property="og:description" content="Join Maxtron's talent community. Get notified about new jobs and build your network in tech and marketing." />
         <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
         <meta property="og:url" content="https://www.maxtron.ai/careers" />
         <meta property="og:type" content="website" />

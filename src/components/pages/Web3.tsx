@@ -14,20 +14,13 @@ const Web3 = () => {
     <>
       <Helmet>
         <title>Web3 Services | Maxtron</title>
-        <meta
-          name="description"
-          content="Explore Maxtron's Web3 services: blockchain, decentralized apps, and next-gen digital solutions for your business."
-        />
+        <meta name="description" content="Explore Maxtron's Web3 services: blockchain, decentralized apps, and next-gen digital solutions for your business." />
         <link rel="canonical" href="https://www.maxtron.ai/web3" />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content="Web3 Services | Maxtron" />
-        <meta
-          property="og:description"
-          content="Explore Maxtron's Web3 services: blockchain, decentralized apps, and next-gen digital solutions for your business."
-        />
-        <meta
-          property="og:image"
-          content="https://www.maxtron.ai/src/assets/MaxtronLogo.png"
-        />
+        <meta property="og:description" content="Explore Maxtron's Web3 services: blockchain, decentralized apps, and next-gen digital solutions for your business." />
+        <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
         <meta property="og:url" content="https://www.maxtron.ai/web3" />
         <meta property="og:type" content="website" />
       </Helmet>

@@ -16,6 +16,8 @@ const Compliance = () => {
         <title>Compliance | Maxtron</title>
         <meta name="description" content="Stay ahead of digital asset legislation with Maxtron's compliance solutions. Ensure your projects are legally sound and future-ready." />
         <link rel="canonical" href="https://www.maxtron.ai/compliance" />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content="Compliance | Maxtron" />
         <meta property="og:description" content="Stay ahead of digital asset legislation with Maxtron's compliance solutions. Ensure your projects are legally sound and future-ready." />
         <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />

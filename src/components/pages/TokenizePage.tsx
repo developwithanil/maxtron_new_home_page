@@ -18,6 +18,8 @@ const TokenizePage = () => {
         <title>Tokenize | Maxtron</title>
         <meta name="description" content="Tokenize anything: launch and manage tokenized assets with Maxtron's expert team and industry-leading tools." />
         <link rel="canonical" href="https://www.maxtron.ai/tokenize" />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content="Tokenize | Maxtron" />
         <meta property="og:description" content="Tokenize anything: launch and manage tokenized assets with Maxtron's expert team and industry-leading tools." />
         <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />

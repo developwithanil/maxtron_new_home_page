@@ -146,6 +146,8 @@ const Industries = () => {
         <title>Industries | Maxtron</title>
         <meta name="description" content="Discover Maxtron's industry expertise: tailored technology solutions for gaming, finance, healthcare, retail, and more." />
         <link rel="canonical" href="https://www.maxtron.ai/industries" />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content="Industries | Maxtron" />
         <meta property="og:description" content="Discover Maxtron's industry expertise: tailored technology solutions for gaming, finance, healthcare, retail, and more." />
         <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />

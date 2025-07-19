@@ -19,6 +19,8 @@ const StaffAugmentation: React.FC = () => {
         <title>Staff Augmentation | Maxtron</title>
         <meta name="description" content="Onboard pre-vetted, project-ready developers in 48 hours with Maxtron's staff augmentation services. No hiring bottlenecks, just pure development power." />
         <link rel="canonical" href="https://www.maxtron.ai/staff-augmentation" />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content="Staff Augmentation | Maxtron" />
         <meta property="og:description" content="Onboard pre-vetted, project-ready developers in 48 hours with Maxtron's staff augmentation services. No hiring bottlenecks, just pure development power." />
         <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
