@@ -36,7 +36,7 @@ const UseCase = () => {
   return (
     <div className="max-w-[96rem]  mx-auto p-5 md:p-16 lg:p-16 xl:p-16 text-white flex flex-col md:flex-row w-full md:gap-28 gap-5">
       <div className="md:w-1/2 w-full flex flex-col justify-center items-center md:items-start text-center md:text-left space-y-6 sm:space-y-8">
-        <h2 className="text-[20px] sm:text-[32px] lg:text-[32px] xl:text-[32px] font-bold text-[#2A2A2A] leading-tight">
+        <h2 className="text-[20px] sm:text-[32px] lg:text-[48px] xl:text-[48px] font-medium text-[#2A2A2A] leading-tight">
           Where We Excel
         </h2>
 
