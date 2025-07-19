@@ -295,7 +295,7 @@ const Web3Needs = () => {
         </motion.button>
       </div>
 
-      <div className="absolute inset-0 z-10" style={{ pointerEvents: "none" }}>
+      <div className="absolute inset-0 z-50" style={{ pointerEvents: "none" }}>
         <AnimatedCard cardData={cards[0]} index={0} />
         <AnimatedCard cardData={cards[1]} index={1} />
 

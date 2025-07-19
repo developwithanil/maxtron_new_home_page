@@ -1,7 +1,5 @@
 "use client";
 
-
-
 const curveline1 = () => (
   <svg
     width="591"
@@ -63,7 +61,7 @@ const curveline4 = () => {
 const features = [
   {
     id: 1,
-    text: ["COMPLIANT BY DEFAULT (KYC/AML,", "GDPR, FATF)"],
+    text: ["DECENTRALIZED FIRST-ARCHITECTURE"],
     Curve: curveline1,
     circlePosition: { top: -30, right: 110 },
     textPosition: { top: 80, right: 0 },
