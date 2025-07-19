@@ -72,23 +72,23 @@ const cardsData = [
 
 const Web3MarketingOffers = () => {
   return (
-    <div className=" relative p-5 md:p-8 lg:p-11 xl:p-16 inset-0  text-center max-w-[96rem] mx-auto">
+    <div className="relative p-5 md:p-8 lg:p-11 xl:p-16 inset-0 text-center max-w-[96rem] mx-auto">
       <h2
-        className="text-[#2A2A2A] justify-center [font-family: Switzer]  text-xl md:text-3xl
+        className="text-[#2A2A2A] justify-center [font-family: Switzer] text-xl md:text-3xl
         lg:text-5xl xl:text-5xl text-start font-normal mb-12"
       >
         What We Offer
       </h2>
 
-      <div className="flex gap-[100px]">
-        <div className="w-[30%] flex items-start justify-start ">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-[100px]">
+        <div className="w-full lg:w-[30%] flex items-start justify-start">
           <img
             src={offerimg}
             alt=""
             className="w-full h-auto object-cover rounded-lg"
           />
         </div>
-        <div className="w-[70%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-2">
+        <div className="w-full lg:w-[70%] grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-2">
           {cardsData.map((card) => (
             <Card
               key={card.id}
