@@ -48,6 +48,7 @@ const items = [
 const teams = [
   {
     title: "Hue H. Nguyễn",
+    designation: "Regulatory & Compliance Advisor",
     image: hui,
     details: [
       "Ex- U.S. SEC",
@@ -59,6 +60,7 @@ const teams = [
   },
   {
     title: "Ridha Agarwal",
+    designation: "Web3 Product Leader",
     image: ridha,
     details: [
       "5+ Years in Scaling Web3 Innovative Products",
@@ -69,6 +71,7 @@ const teams = [
   },
   {
     title: "Craig Henderson",
+    designation: "Crypto Exchange Specialist",
     image: craig,
     details: [
       "Listings Manager on top-tier crypto exchanges",
@@ -79,6 +82,7 @@ const teams = [
   },
   {
     title: "Prashant",
+    designation: "Co-Founder & Partner",
     image: prashant,
     details: [
       "Partner (Serial Entrepreneur)",
@@ -89,6 +93,7 @@ const teams = [
   },
   {
     title: "Aman Shah",
+    designation: "Web3 Solutions Expert",
     image: aman,
     details: [
       "Web3 Solutions Development Expert",
@@ -99,6 +104,7 @@ const teams = [
   },
   {
     title: "Ishan Dwivedi",
+    designation: "Design Manager & Lead",
     image: ishan, 
     details: [
       "Product & UI/UX",
@@ -108,6 +114,7 @@ const teams = [
   },
   {
     title: "Riddhi Jaiswal",
+    designation: "Project Manager & Lead",
     image: riddhi,
     details: [
       "Project Manager & Lead",
@@ -184,37 +191,50 @@ const OurTeam = () => {
               className="w-full h-full object-cover rounded-md"
             />
           </div>
-          <div className="w-full flex flex-col gap-8 mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-5 md:pr-8 lg:pr-14 items-start">
+          <div className="w-full flex flex-col gap-8 mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-4 md:pr-5 lg:pr-10 items-start">
             <div className="w-full text-left ">
               <h1 className="text-[#2A2A2A] font-[Switzer] text-4xl lg:text-5xl xl:text-5xl font-bold leading-[140%] text-center">
                 About The Founder
               </h1>
             </div>
 
-            <div className="w-full max-w-5xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-8 xl:gap-10">
-              <div className="flex-shrink-0 w-52 h-52 xl:w-72 xl:h-72 lg:w-64 lg:h-64  flex items-center justify-center overflow-hidden">
-                <img
-                  src="/girish.webp"
-                  alt="Girish Ahirwar"
-                  className="object-cover w-full h-full rounded-lg"
-                />
-              </div>
-
-              <div className="flex-1 ">
-                <h2 className="text-4xl font-semibold mb-3 pl-5 text-[#58269A]">
+            <div className="w-full flex justify-center">
+              <div
+                className="relative flex flex-col items-center bg-white rounded-3xl shadow-3xl p-8 md:p-14 max-w-xl w-full mx-auto border border-violet-100 founder-card"
+                style={{
+                  background:
+                    'linear-gradient(135deg, #f3e8ff 0%, #fff 100%)',
+                }}
+              >
+                {/* Animated Glowing Gradient Border */}
+                <div className="relative mt-2 mb-4">
+                  <span className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#a084e8] via-[#58269A] to-[#a084e8] blur-xl opacity-70 animate-pulse z-10" />
+                  <div className="relative w-36 h-36 md:w-44 md:h-44 flex items-center justify-center overflow-hidden rounded-full border-4 border-white shadow-xl bg-white z-10 founder-img-glow">
+                    <img
+                      src="/girish.webp"
+                      alt="Girish Ahirwar"
+                      className="object-cover w-full h-full rounded-full border-4 border-[#a084e8] shadow-lg animate-fadeIn"
+                    />
+                  </div>
+                </div>
+                <div className="w-16 h-1 rounded-full bg-gradient-to-r from-[#a084e8] via-[#58269A] to-[#a084e8] mb-3 animate-pulse" />
+                <h2 className="text-4xl md:text-5xl font-extrabold mt-2 mb-1 text-[#58269A] text-center tracking-tight drop-shadow-lg">
                   Girish Ahirwar
                 </h2>
-                <ul className="list-disc pl-5 space-y-2 text-xl font-normal">
-                  <li>CEO & Founder </li>
-                  <li>Partner &amp; Ex- CBO Tagbin</li>
-                  <li>
-                    Pitched, Won &amp; Delivered- Digital &amp; Experiential
-                    Projects Worth $500mn+
-                  </li>
-                  <li>Fundraising And Partnerships</li>
-                  <li>IIT Roorkee</li>
-                  <li>10+ Years Experience in Emerging Tech</li>
+                <p className="text-xl md:text-2xl font-semibold text-[#7c3aed] text-center mb-2">
+                  CEO & Founder
+                </p>
+              
+                <ul className="flex flex-col gap-2 text-base md:text-lg text-gray-800 w-full max-w-md mx-auto mb-4 mt-4">
+                  <li className="flex items-start gap-2 bg-[#f3e8ff] rounded-lg px-3 py-2"><span className="text-[#7c3aed] mt-1">✔️</span> Partner & Ex- CBO Tagbin</li>
+                  <li className="flex items-start gap-2 bg-[#f3e8ff] rounded-lg px-3 py-2"><span className="text-[#7c3aed] mt-1">✔️</span> Pitched, Won & Delivered Digital & Experiential Projects Worth $500mn+</li>
+                  <li className="flex items-start gap-2 bg-[#f3e8ff] rounded-lg px-3 py-2"><span className="text-[#7c3aed] mt-1">✔️</span> Fundraising And Partnerships</li>
+                  <li className="flex items-start gap-2 bg-[#f3e8ff] rounded-lg px-3 py-2"><span className="text-[#7c3aed] mt-1">✔️</span> IIT Roorkee</li>
+                  <li className="flex items-start gap-2 bg-[#f3e8ff] rounded-lg px-3 py-2"><span className="text-[#7c3aed] mt-1">✔️</span> 10+ Years Experience in Emerging Tech</li>
                 </ul>
+                <blockquote className="italic text-center text-gray-500 text-lg border-l-4 border-[#a084e8] pl-4 mt-2">
+                  "Innovation is not just about technology, it's about creating impact."
+                </blockquote>
               </div>
             </div>
           </div>
@@ -226,20 +246,30 @@ const OurTeam = () => {
               </h1>
             </div>
 
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-8 lg:gap-x-8 lg:gap-y-10 justify-start items-start">
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-10 justify-start items-start">
               {teams.map((item, index) => (
-                <div key={index} className="flex flex-col items-start ">
+                <div
+                  key={index}
+                  className="relative flex flex-col items-center bg-white rounded-2xl shadow-xl p-6 group cursor-pointer overflow-hidden team-card transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:border-violet-300 border border-transparent"
+                  style={{
+                    background: 'linear-gradient(135deg, #f3e8ff 0%, #fff 100%)',
+                  }}
+                  onClick={() => setSelected(index)}
+                >
+                  <div className="absolute -top-8 -right-8 w-32 h-32 bg-gradient-to-br from-[#58269A] to-[#a084e8] opacity-10 rounded-full z-0 group-hover:opacity-20 transition-all duration-300" />
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-36 lg:w-44 h-36 lg:h-44 object-contain rounded-md"
+                    className="w-28 h-28 object-cover rounded-full border-4 border-violet-200 shadow-md z-10 group-hover:scale-110 transition-transform duration-300 team-img-glow"
                   />
-                  <p className="text-[#2A2A2A] font-[Switzer] text-2xl lg:text-3xl font-semibold text-left mt-3">
+                  <p className="text-[#58269A] font-[Switzer] text-xl lg:text-2xl font-bold text-center mt-4 z-10">
                     {item.title}
                   </p>
+                  <p className="text-[#7c3aed] text-base lg:text-lg font-medium text-center mt-1 z-10">
+                    {item.designation}
+                  </p>
                   <button
-                    className="mt-2 px-4 py-1 bg-[#58269A] text-white rounded hover:bg-[#6d3bbd] transition-colors"
-                    onClick={() => setSelected(index)}
+                    className="mt-4 px-5 py-2 bg-gradient-to-r from-[#58269A] to-[#a084e8] text-white rounded-full font-semibold shadow hover:from-[#6d3bbd] hover:to-[#b39ddb] transition-all duration-300 scale-100 group-hover:scale-105 group-hover:shadow-lg"
                   >
                     Read More
                   </button>
@@ -249,38 +279,47 @@ const OurTeam = () => {
             <AnimatePresence>
               {selected !== null && (
                 <motion.div
-                  className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+                  className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 backdrop-blur-sm"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   onClick={() => setSelected(null)}
                 >
                   <motion.div
-                    className="bg-white rounded-lg shadow-xl p-8 max-w-md w-full relative"
-                    initial={{ scale: 0.8, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1 }}
-                    exit={{ scale: 0.8, opacity: 0 }}
+                    className="bg-white rounded-3xl shadow-2xl p-0 max-w-md w-full relative overflow-hidden animate-fadeIn"
+                    initial={{ scale: 0.7, opacity: 0, y: 80 }}
+                    animate={{ scale: 1, opacity: 1, y: 0 }}
+                    exit={{ scale: 0.7, opacity: 0, y: 80 }}
+                    transition={{ type: 'spring', stiffness: 300, damping: 25 }}
                     onClick={e => e.stopPropagation()}
                   >
-                    <button
-                      className="absolute top-2 right-2 text-2xl text-gray-400 hover:text-gray-600"
-                      onClick={() => setSelected(null)}
-                    >
-                      &times;
-                    </button>
-                    <img
-                      src={teams[selected].image}
-                      alt={teams[selected].title}
-                      className="w-28 h-28 object-contain rounded-md mx-auto mb-4"
-                    />
-                    <h2 className="text-2xl font-bold text-center mb-2 text-[#58269A]">
-                      {teams[selected].title}
-                    </h2>
-                    <ul className="list-disc pl-5 space-y-2 text-left text-gray-700">
-                      {teams[selected].details.map((point, i) => (
-                        <li key={i}>{point}</li>
-                      ))}
-                    </ul>
+                    <div className="w-full h-32 bg-gradient-to-r from-[#58269A] to-[#a084e8] flex items-center justify-center relative">
+                      <img
+                        src={teams[selected].image}
+                        alt={teams[selected].title}
+                        className="w-24 h-24 object-cover rounded-full border-4 border-white shadow-lg absolute -bottom-12 left-1/2 -translate-x-1/2 z-20 bg-white animate-fadeIn"
+                      />
+                      <button
+                        className="absolute top-3 right-3 text-3xl text-white bg-black bg-opacity-20 hover:bg-opacity-40 rounded-full w-10 h-10 flex items-center justify-center leading-none  transition-all z-30 aspect-square"
+                        onClick={() => setSelected(null)}
+                        aria-label="Close"
+                      >
+                        <span className="flex items-center text-center justify-center w-full h-full">&times;</span>
+                      </button>
+                    </div>
+                    <div className="pt-16 pb-8 px-8">
+                      <h2 className="text-2xl font-bold text-center mb-1 text-[#58269A]">
+                        {teams[selected].title}
+                      </h2>
+                      <p className="text-lg font-semibold text-center text-[#7c3aed] mb-4">
+                        {teams[selected].designation}
+                      </p>
+                      <ul className="list-disc pl-5 space-y-2 text-left text-gray-700">
+                        {teams[selected].details.map((point, i) => (
+                          <li key={i}>{point}</li>
+                        ))}
+                      </ul>
+                    </div>
                   </motion.div>
                 </motion.div>
               )}
