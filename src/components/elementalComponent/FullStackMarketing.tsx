@@ -55,7 +55,7 @@ const FullStackMarketing = () => {
       <h2 className="text-[#2A2A2A] [font-family: Switzer] text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-6xl text-center mb-3 sm:mb-4 md:mb-6 font-semibold px-2 sm:px-4 md:px-8 lg:px-48 xl:px-48 leading-tight">
         Full-Stack Marketing Built for Web3
       </h2>
-      <p className="text-[#5E28A0] font-[Switzer] text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-center font-normal mb-6 sm:mb-8 md:mb-10 lg:mb-12 mx-auto px-2 sm:px-4 md:px-8 lg:px-16 xl:px-20 leading-relaxed">
+      <p className="text-[#5E28A0] font-[Switzer] text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-center font-normal mb-6 sm:mb-8 md:mb-10 lg:mb-12 mx-auto px-2 sm:px-4 md:px-8 lg:px-16 xl:px-20 leading-relaxed uppercase">
         Traditional growth tactics don't work in decentralized ecosystems. You
         need :
       </p>
