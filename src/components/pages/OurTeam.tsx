@@ -20,6 +20,7 @@ import TeamLastComponent from "../elementalComponent/TeamLastComponent";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Helmet } from 'react-helmet-async';
+import { AiFillLinkedin } from "react-icons/ai";
 
 const items = [
   {
@@ -59,7 +60,8 @@ const teams = [
       "Former COO of Investment Management",
       "Influential Expertise in TradFi, DeFi, SEC Regulation",
       "25+ years Experience"
-    ]
+    ],
+    linkedin:"https://www.linkedin.com/in/hue-h-nguyen-7027852/"
   },
   {
     title: "Ridha Agarwal",
@@ -70,18 +72,21 @@ const teams = [
       "Leading Tech Communities (Web3 & AI)",
       "Expanded Products to US, UAE, Europe & Asian Markets",
       "Ex- Founding Team: Create Protocol & Healaverse"
-    ]
+    ],
+    linkedin:"https://www.linkedin.com/in/ridha-agarwal-549ba9187/"
+    
   },
   {
     title: "Pooran Singh",
-    designation: "Co-Founder",
+    designation: "Partner",
     image: pooran,
     details: [
       "5+ Years in Scaling Web3 Innovative Products",
       "Leading Tech Communities (Web3 & AI)",
       "Expanded Products to US, UAE, Europe & Asian Markets",
       "Ex- Founding Team: Create Protocol & Healaverse"
-    ]
+    ],
+    linkedin:"https://www.linkedin.com/in/pooran-singh-ahirwar-409b0932/"
   },
   {
     title: "Geeta Vali",
@@ -92,7 +97,8 @@ const teams = [
       "Leading Tech Communities (Web3 & AI)",
       "Expanded Products to US, UAE, Europe & Asian Markets",
       "Ex- Founding Team: Create Protocol & Healaverse"
-    ]
+       ],
+    linkedin:""
   },
   {
     title: "Craig Henderson",
@@ -103,7 +109,8 @@ const teams = [
       "Advisor to multiple Web3 startups across DeFi and GameFi",
       "Expert in exchange strategy, token lifecycle, and community development",
       "Led exchange negotiations, KOL outreach, and ambassador programs"
-    ]
+      ],
+    linkedin:"https://www.linkedin.com/in/craig-henderson-5a7509bb/"
   },
   {
     title: "Prashant",
@@ -114,7 +121,8 @@ const teams = [
       "Technology & Product",
       "Selected at Draper University, Summer Program (USA)",
       "Inter IIT Technology Meet: Gold Medalist"
-    ]
+      ],
+    linkedin:"https://www.linkedin.com/in/prashant-kumar-939327ab/"
   },
   {
     title: "Aman Shah",
@@ -125,7 +133,8 @@ const teams = [
       "HPE & Blockchain Startup",
       "Scalable, agile solution builder.",
       "Blends corporate and startup strengths."
-    ]
+     ],
+    linkedin:"https://www.linkedin.com/in/shah-aman/"
   },
   {
     title: "Ishan Dwivedi",
@@ -135,7 +144,8 @@ const teams = [
       "Product & UI/UX",
       "Led 100+ UI/UX Projects Globally",
       "Experienced in user research, prototyping and creating engaging interfaces"
-    ]
+      ],
+    linkedin:"https://www.linkedin.com/in/ishan-dwivedi-2021a9376"
   },
   {
     title: "Riddhi Jaiswal",
@@ -145,7 +155,8 @@ const teams = [
       "Project Manager & Lead",
       "Led 50+ Web3 Projects",
       "Ex Wipro, Ex Swayatt Robots"
-    ]
+      ],
+    linkedin:"https://www.linkedin.com/in/ritz-jais/"
   },
   {
     title: "Crypto",
@@ -155,7 +166,8 @@ const teams = [
       "Project Manager & Lead",
       "Led 50+ Web3 Projects",
       "Ex Wipro, Ex Swayatt Robots"
-    ]
+       ],
+    linkedin:""
   }
 ];
 
@@ -272,6 +284,9 @@ const OurTeam = () => {
                 <blockquote className="italic text-center text-gray-500 text-lg border-l-4 border-[#a084e8] pl-4 mt-1">
                   "Innovation is not just about technology, it's about creating impact."
                 </blockquote>
+                <a href="https://www.linkedin.com/in/girish-ahirwar/" target="_blank" rel="noopener noreferrer" className="mt-4">
+                  <AiFillLinkedin className="w-8 h-8 text-[#0A66C2] hover:opacity-80 transition-opacity" />
+                </a>
               </div>
             </div>
           </div>
@@ -305,11 +320,14 @@ const OurTeam = () => {
                   <p className="text-[#7c3aed] text-base lg:text-lg font-medium text-center mt-1 z-10">
                     {item.designation}
                   </p>
-                  <button
-                    className="mt-4 px-5 py-2 bg-gradient-to-r from-[#58269A] to-[#a084e8] text-white rounded-full font-semibold shadow hover:from-[#6d3bbd] hover:to-[#b39ddb] transition-all duration-300 scale-100 group-hover:scale-105 group-hover:shadow-lg"
-                  >
-                    Read More
-                  </button>
+                  <div className="flex items-center gap-3 mt-4 z-10">
+                    <button
+                      className="px-5 py-2 bg-gradient-to-r from-[#58269A] to-[#a084e8] text-white rounded-full font-semibold shadow hover:from-[#6d3bbd] hover:to-[#b39ddb] transition-all duration-300 scale-100 group-hover:scale-105 group-hover:shadow-lg"
+                    >
+                      Read More
+                    </button>
+                   
+                  </div>
                 </div>
               ))}
             </div>
@@ -356,6 +374,13 @@ const OurTeam = () => {
                           <li key={i}>{point}</li>
                         ))}
                       </ul>
+                      {teams[selected].linkedin && (
+                        <div className="flex justify-center mt-4">
+                          <a href={teams[selected].linkedin} target="_blank" rel="noopener noreferrer">
+                            <AiFillLinkedin className="w-8 h-8 text-[#0A66C2] hover:opacity-80 transition-opacity" />
+                          </a>
+                        </div>
+                      )}
                     </div>
                   </motion.div>
                 </motion.div>

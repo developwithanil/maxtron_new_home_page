@@ -79,7 +79,6 @@ const urls: SitemapItemLoose[] = [
 
 const publicDir = resolve(__dirname, "public");
 
-// Ensure the public directory exists
 if (!existsSync(publicDir)) {
   mkdirSync(publicDir);
 }
