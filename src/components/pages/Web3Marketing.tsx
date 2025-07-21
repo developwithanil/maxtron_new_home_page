@@ -12,7 +12,9 @@ const Web3Marketing = () => {
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-black"
-        ></a>
+        >
+          Skip to main content
+        </a>
         <main id="main-content" role="main">
           <Web3MarketingHeroSection />
 
