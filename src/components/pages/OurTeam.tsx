@@ -81,10 +81,9 @@ const teams = [
     designation: "Partner",
     image: pooran,
     details: [
-      "5+ Years in Scaling Web3 Innovative Products",
-      "Leading Tech Communities (Web3 & AI)",
-      "Expanded Products to US, UAE, Europe & Asian Markets",
-      "Ex- Founding Team: Create Protocol & Healaverse"
+      "Scaled Maxtron’s tech and product services across IT, branding, and architecture",
+      "Delivered results across banking, railways, and energy with cross-domain leadership.",
+      "Led operations for NTPC’s key power plants, ensuring efficiency and uptime."
     ],
     linkedin:"https://www.linkedin.com/in/pooran-singh-ahirwar-409b0932/"
   },
@@ -93,10 +92,7 @@ const teams = [
     designation: "Partner",
     image: geeta,
     details: [
-      "5+ Years in Scaling Web3 Innovative Products",
-      "Leading Tech Communities (Web3 & AI)",
-      "Expanded Products to US, UAE, Europe & Asian Markets",
-      "Ex- Founding Team: Create Protocol & Healaverse"
+      
        ],
     linkedin:""
   },
@@ -163,9 +159,9 @@ const teams = [
     designation: "Chief Happiness Officer",
     image: dog,
     details: [
-      "Project Manager & Lead",
-      "Led 50+ Web3 Projects",
-      "Ex Wipro, Ex Swayatt Robots"
+      "He may not write code, but he debugs stress better than anyone.",
+      "His playful presence brings smiles, laughter, and a stress-free atmosphere",
+      "Crypto reminds us to enjoy the little moments."
        ],
     linkedin:""
   }
