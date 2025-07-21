@@ -53,7 +53,8 @@ const dropdownContentData = {
     title: "Services",
     link: "/services",
     liTags: [
-      { name: "Web3", link: "/services" },
+      { name: "Web3", link: "/web3" },
+      { name: "Web3 Marketing", link: "/web3-marketing" },
       { name: "Artificial Intelligence", link: "/services" },
       {
         name: "Experiential Development",
@@ -224,8 +225,8 @@ const Navbar: React.FC = () => {
       } 
         ${
           isSticky
-            ? "fixed top-0 left-0 right-0 z-50 bg-white  backdrop-blur-sm transform transition-all duration-300 ease-in-out mx-4 sm:mx-2 md:mx-6 lg:mx-8  mt-4 sm:mt-6"
-            : "relative mx-4 sm:mx-2 md:mx-6 lg:mx-8 mt-4 sm:mt-6"
+            ? "fixed top-0  left-0 right-0 z-50 bg-white  backdrop-blur-sm transform transition-all duration-300 ease-in-out mx-4 sm:mx-2 md:mx-6 lg:mx-8  mt-4 sm:mt-6"
+            : "relative mx-4 sm:mx-2 md:mx-6 lg:mx-8 mt-4 sm:mt-6 "
         }
       `}
     >
@@ -285,20 +286,6 @@ const Navbar: React.FC = () => {
                   aria-label="Learn about our tokenization services"
                 >
                   Tokenization
-                </NavLink>
-                <NavLink
-                  to="/web3"
-                  onClick={closeDesktopDropdown}
-                  className={({ isActive }) =>
-                    `block ${
-                      isActive
-                        ? "bg-purple-100 text-purple-700"
-                        : "text-[#2A2A2A] font-openSansHebrew"
-                    } hover:bg-purple-50 hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium`
-                  }
-                  aria-label="Learn about our web3 services"
-                >
-                  Web3
                 </NavLink>
 
                 <NavLink
@@ -529,17 +516,7 @@ const Navbar: React.FC = () => {
             >
               Tokenization
             </NavLink>
-            <NavLink
-              to="/web3"
-              onClick={handleMobileNavClick}
-              className={({ isActive }) =>
-                `block ${
-                  isActive ? "bg-purple-100 text-purple-700" : "text-[#2A2A2A]"
-                } hover:bg-purple-50 hover:text-purple-800 px-3 py-2.5 rounded-md text-base font-medium`
-              }
-            >
-              Web3
-            </NavLink>
+
             <NavLink
               to="/careers"
               onClick={handleMobileNavClick}

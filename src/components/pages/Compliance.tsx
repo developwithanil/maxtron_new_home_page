@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 import compliance from "../../assets/compliance/compliance.webp";
 import ComplianceOffer from "../elementalComponent/ComplianceOffer";
@@ -7,20 +7,29 @@ import MaxtronLead from "../elementalComponent/MaxtronLead";
 import ComplianceChoose from "../elementalComponent/ComplianceChoose";
 import ComplianceFooter from "../elementalComponent/ComplianceFooter";
 import { Link } from "react-router-dom";
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
 
 const Compliance = () => {
   return (
     <>
       <Helmet>
         <title>Compliance | Maxtron</title>
-        <meta name="description" content="Stay ahead of digital asset legislation with Maxtron's compliance solutions. Ensure your projects are legally sound and future-ready." />
+        <meta
+          name="description"
+          content="Stay ahead of digital asset legislation with Maxtron's compliance solutions. Ensure your projects are legally sound and future-ready."
+        />
         <link rel="canonical" href="https://www.maxtron.ai/compliance" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content="Compliance | Maxtron" />
-        <meta property="og:description" content="Stay ahead of digital asset legislation with Maxtron's compliance solutions. Ensure your projects are legally sound and future-ready." />
-        <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
+        <meta
+          property="og:description"
+          content="Stay ahead of digital asset legislation with Maxtron's compliance solutions. Ensure your projects are legally sound and future-ready."
+        />
+        <meta
+          property="og:image"
+          content="https://www.maxtron.ai/src/assets/MaxtronLogo.png"
+        />
         <meta property="og:url" content="https://www.maxtron.ai/compliance" />
         <meta property="og:type" content="website" />
       </Helmet>
@@ -42,9 +51,9 @@ const Compliance = () => {
                 </h1>
               </div>
               <p className="text-[#2A2A2A] text-base font-openSansHebrew leading-[150%] mb-16 lg:mb-28">
-                At Maxtron.ai, compliance isn't an afterthought—it's a competitive
-                advantage. As global digital asset laws evolve, our platform
-                ensures your projects stay legally sound, strategically
+                At Maxtron.ai, compliance isn't an afterthought—it's a
+                competitive advantage. As global digital asset laws evolve, our
+                platform ensures your projects stay legally sound, strategically
                 positioned, and future-ready
               </p>
               <div>
