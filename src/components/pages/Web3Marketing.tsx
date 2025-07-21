@@ -4,21 +4,35 @@ import Web3MarketingOffers from "../elementalComponent/Web3MarketingOffers";
 import Web3MarketingFooter from "../elementalComponent/Web3MarketingFooter";
 import Web3Speed from "../elementalComponent/Web3Speed";
 import FullStackMarketing from "../elementalComponent/FullStackMarketing";
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
 
 const Web3Marketing = () => {
   return (
     <>
       <Helmet>
-        <title>Web3 Marketing | Maxtron</title>
-        <meta name="description" content="Maxtron's Web3 Marketing services accelerate your business growth with innovative blockchain and digital marketing solutions." />
+        <title>
+          Best Web3 Marketing & PR Agency | Top Web3 digital marketing agency
+        </title>
+        <meta
+          name="description"
+          content="Looking for the best Web3 marketing agency? We are a leading Web3 marketing company offering PR, advertising, and digital marketing solutions for blockchain brands. Partner with top Web3 marketing experts today."
+        />
         <link rel="canonical" href="https://www.maxtron.ai/web3-marketing" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content="Web3 Marketing | Maxtron" />
-        <meta property="og:description" content="Maxtron's Web3 Marketing services accelerate your business growth with innovative blockchain and digital marketing solutions." />
-        <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
-        <meta property="og:url" content="https://www.maxtron.ai/web3-marketing" />
+        <meta
+          property="og:description"
+          content="Maxtron's Web3 Marketing services accelerate your business growth with innovative blockchain and digital marketing solutions."
+        />
+        <meta
+          property="og:image"
+          content="https://www.maxtron.ai/src/assets/MaxtronLogo.png"
+        />
+        <meta
+          property="og:url"
+          content="https://www.maxtron.ai/web3-marketing"
+        />
         <meta property="og:type" content="website" />
       </Helmet>
       <div id="Home">
