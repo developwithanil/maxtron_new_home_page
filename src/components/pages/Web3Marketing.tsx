@@ -38,7 +38,6 @@ const Web3Marketing = () => {
       <div id="Home">
         <a
           href="#main-content"
-
           className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-black"
         >
           Skip to main content
@@ -55,7 +54,6 @@ const Web3Marketing = () => {
           </section>
 
           <section id="marketing-case" aria-label="Marketing Case">
-            
             <MarketingCase />
           </section>
           <section id="web3-speed" aria-label="Web3 Speed">
