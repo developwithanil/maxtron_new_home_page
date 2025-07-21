@@ -6,13 +6,13 @@ const Webinar = () => {
   return (
     <>
       <Helmet>
-        <title>Webinar | Maxtron</title>
-        <meta name="description" content="Join Maxtron's expert-led webinars on digital assets, compliance, tokenization, and Web3 innovation." />
-        <link rel="canonical" href="https://www.maxtron.ai/webinar" />
+       <title>Maxtron | AI, Blockchain & IT Product Development</title>
+        <meta name="description" content="Maxtron delivers innovative IT and marketing solutions to accelerate your business growth with cutting-edge technology." />
+        <link rel="canonical" href="https://www.maxtron.ai/" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
-        <meta property="og:title" content="Webinar | Maxtron" />
-        <meta property="og:description" content="Join Maxtron's expert-led webinars on digital assets, compliance, tokenization, and Web3 innovation." />
+        <meta property="og:title" content="Maxtron | AI, Blockchain & IT Product Development" />
+        <meta property="og:description" content="Maxtron delivers innovative IT and marketing solutions to accelerate your business growth with cutting-edge technology." />
         <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
         <meta property="og:url" content="https://www.maxtron.ai/webinar" />
         <meta property="og:type" content="website" />
@@ -104,29 +104,19 @@ const Webinar = () => {
         <div className="flex flex-col sm:flex-row items-center gap-3 mt-6">
           {/* Join Now Button */}
           <a
-            href="https://lu.ma/ctt1wol7"
+            href="https://www.youtube.com/live/q_pznGJX8fY?si=YyO35_VbR4zp8lzA"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative inline-flex items-center justify-center gap-2 bg-[#444CE7] text-white font-semibold px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg sm:rounded-xl shadow-xl hover:shadow-purple-500/30 transition-all duration-300 text-sm sm:text-base overflow-hidden"
           >
-            <span className="relative z-20">Join Now</span>
+            <span className="relative z-20">Missed It? Watch Here &rarr;</span>
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/25 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></div>
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
           </a>
 
-          {/* Date Box */}
-          <div className="bg-blue-50 text-blue-900 font-semibold px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg sm:rounded-xl shadow-md border border-blue-200 text-sm sm:text-base">
-            <span className="block text-center font-bold">
-              Wednesday, 16 July
-            </span>
-          </div>
+        
 
-          {/* Time Box */}
-          <div className="bg-blue-50 text-blue-900 font-semibold px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg sm:rounded-xl shadow-md border border-blue-200 text-sm sm:text-base">
-            <span className="block text-center font-semibold">
-              9.30 AM PDT | 8:30 PM GST | 6:30 PM CEST
-            </span>
-          </div>
+         
         </div>
       </div>
 
