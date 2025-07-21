@@ -16,12 +16,12 @@ const NewHomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Maxtron | AI, Blockchain & IT Product Development</title>
+        <title>Maxtron | Web3, AI, Blockchain & IT Product Development</title>
         <meta name="description" content="Maxtron delivers innovative IT and marketing solutions to accelerate your business growth with cutting-edge technology." />
         <link rel="canonical" href="https://www.maxtron.ai/" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
-        <meta property="og:title" content="Maxtron | AI, Blockchain & IT Product Development" />
+        <meta property="og:title" content="Maxtron | Web3, AI, Blockchain & IT Product Development" />
         <meta property="og:description" content="Maxtron delivers innovative IT and marketing solutions to accelerate your business growth with cutting-edge technology." />
         <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
         <meta property="og:url" content="https://www.maxtron.ai/" />

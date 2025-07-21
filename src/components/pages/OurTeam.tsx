@@ -209,7 +209,7 @@ const OurTeam = () => {
                 }}
               >
                 {/* Animated Glowing Gradient Border */}
-                <div className="relative mt-2 mb-4">
+                <div className="relative mt-2 mb-3">
                   <span className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#a084e8] via-[#58269A] to-[#a084e8] blur-xl opacity-70 animate-pulse z-10" />
                   <div className="relative w-36 h-36 md:w-44 md:h-44 flex items-center justify-center overflow-hidden rounded-full border-4 border-white shadow-xl bg-white z-10 founder-img-glow">
                     <img
@@ -227,20 +227,20 @@ const OurTeam = () => {
                   CEO & Founder
                 </p>
               
-                <ul className="flex flex-col gap-2 text-base md:text-lg text-gray-800 w-full max-w-md mx-auto mb-4 mt-4">
+                <ul className="flex flex-col gap-1 text-base md:text-lg text-gray-800 w-full max-w-md mx-auto mb-4 mt-4">
                   <li className="flex items-start gap-2 bg-[#f3e8ff] rounded-lg px-3 py-2"><span className="text-[#7c3aed] mt-1">✔️</span> Partner & Ex- CBO Tagbin</li>
                   <li className="flex items-start gap-2 bg-[#f3e8ff] rounded-lg px-3 py-2"><span className="text-[#7c3aed] mt-1">✔️</span> Pitched, Won & Delivered Digital & Experiential Projects Worth $500mn+</li>
                   <li className="flex items-start gap-2 bg-[#f3e8ff] rounded-lg px-3 py-2"><span className="text-[#7c3aed] mt-1">✔️</span> Fundraising And Partnerships</li>
                   <li className="flex items-start gap-2 bg-[#f3e8ff] rounded-lg px-3 py-2"><span className="text-[#7c3aed] mt-1">✔️</span> IIT Roorkee</li>
                   <li className="flex items-start gap-2 bg-[#f3e8ff] rounded-lg px-3 py-2"><span className="text-[#7c3aed] mt-1">✔️</span> 10+ Years Experience in Emerging Tech</li>
                 </ul>
-                <blockquote className="italic text-center text-gray-500 text-lg border-l-4 border-[#a084e8] pl-4 mt-2">
+                <blockquote className="italic text-center text-gray-500 text-lg border-l-4 border-[#a084e8] pl-4 mt-1">
                   "Innovation is not just about technology, it's about creating impact."
                 </blockquote>
               </div>
             </div>
           </div>
-          <div className="w-full flex flex-col gap-8 mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-4 md:pr-5 lg:pr-10 items-start">
+          <div className="w-full flex flex-col gap-8 mt-8 md:mt-12 lg:mt-16 xl:mt-20 pr-4 md:pr-5 lg:pr-10 items-start">
             {/* Left Section - Heading and Paragraph */}
             <div className="w-full text-left ">
               <h1 className="text-[#2A2A2A] font-[Switzer] text-4xl lg:text-5xl xl:text-5xl mb-3 lg:mb-5 xl:mb-6 font-bold leading-[140%] text-start">
