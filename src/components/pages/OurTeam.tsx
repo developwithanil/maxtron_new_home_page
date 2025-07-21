@@ -81,9 +81,12 @@ const teams = [
     designation: "Partner",
     image: pooran,
     details: [
-      "Scaled Maxtron’s tech and product services across IT, branding, and architecture",
-      "Delivered results across banking, railways, and energy with cross-domain leadership.",
-      "Led operations for NTPC’s key power plants, ensuring efficiency and uptime."
+      
+      "20+ years in government infrastructure & procurement",
+      "Former advisor in Ministry of Finance (GoI)",
+      "Expert in public-private partnerships & regulatory strategy",
+      "Guides Maxtron’s smart city & clean energy initiatives",
+      "Key advisor for government relations in India & Africa",
     ],
     linkedin:"https://www.linkedin.com/in/pooran-singh-ahirwar-409b0932/"
   },
@@ -365,7 +368,7 @@ const OurTeam = () => {
                       <p className="text-lg font-semibold text-center text-[#7c3aed] mb-4">
                         {teams[selected].designation}
                       </p>
-                      <ul className="list-disc pl-5 space-y-2 text-left text-gray-700">
+                      <ul className="list-disc pl-5 space-y-1 text-left text-gray-700">
                         {teams[selected].details.map((point, i) => (
                           <li key={i}>{point}</li>
                         ))}

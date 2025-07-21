@@ -5,6 +5,7 @@ import img4 from "../assets/service/service4.webp";
 import { Link } from "react-router-dom";
 import React from "react";
 import { triangle as Triangle, target as Target } from "./VectorImage";
+import { Helmet } from 'react-helmet-async';
 
 const services = [
   {
@@ -73,6 +74,18 @@ const services = [
 const Services = () => {
   return (
     <>
+      <Helmet>
+        <title>Our Services | Maxtron</title>
+        <meta name="description" content="Explore Maxtron's innovative services: Web3 solutions, AI products, experiential development, and business enhancement for tech-driven growth." />
+        <link rel="canonical" href="https://www.maxtron.ai/services" />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="X-Robots-Tag" content="index, follow" />
+        <meta property="og:title" content="Our Services | Maxtron" />
+        <meta property="og:description" content="Explore Maxtron's innovative services: Web3 solutions, AI products, experiential development, and business enhancement for tech-driven growth." />
+        <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
+        <meta property="og:url" content="https://www.maxtron.ai/services" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div className="relative z-10 text-center mb-8 service_hero_img px-4 sm:px-6 lg:px-8 h-[90vh]">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
           Our Services At A Glance
