@@ -11,6 +11,9 @@ import craig from "../../assets/case/craig.webp";
 import riddhi from "../../assets/case/riddhi.webp";
 import ishan from "../../assets/case/ishan.webp";
 import aman from "../../assets/case/aman.webp";
+import dog from "../../assets/case/dog.webp";
+import geeta from "../../assets/case/geeta.webp";
+import pooran from "../../assets/case/pooran.webp";
 import vc from "../../assets/case/888vc.webp";
 import team from "../../assets/case/team.webp";
 import TeamLastComponent from "../elementalComponent/TeamLastComponent";
@@ -70,6 +73,28 @@ const teams = [
     ]
   },
   {
+    title: "Pooran Singh",
+    designation: "Co-Founder",
+    image: pooran,
+    details: [
+      "5+ Years in Scaling Web3 Innovative Products",
+      "Leading Tech Communities (Web3 & AI)",
+      "Expanded Products to US, UAE, Europe & Asian Markets",
+      "Ex- Founding Team: Create Protocol & Healaverse"
+    ]
+  },
+  {
+    title: "Geeta Vali",
+    designation: "Partner",
+    image: geeta,
+    details: [
+      "5+ Years in Scaling Web3 Innovative Products",
+      "Leading Tech Communities (Web3 & AI)",
+      "Expanded Products to US, UAE, Europe & Asian Markets",
+      "Ex- Founding Team: Create Protocol & Healaverse"
+    ]
+  },
+  {
     title: "Craig Henderson",
     designation: "Crypto Exchange Specialist",
     image: craig,
@@ -116,6 +141,16 @@ const teams = [
     title: "Riddhi Jaiswal",
     designation: "Project Manager & Lead",
     image: riddhi,
+    details: [
+      "Project Manager & Lead",
+      "Led 50+ Web3 Projects",
+      "Ex Wipro, Ex Swayatt Robots"
+    ]
+  },
+  {
+    title: "Crypto",
+    designation: "Chief Happiness Officer",
+    image: dog,
     details: [
       "Project Manager & Lead",
       "Led 50+ Web3 Projects",
@@ -202,7 +237,7 @@ const OurTeam = () => {
 
             <div className="w-full flex justify-center">
               <div
-                className="relative flex flex-col items-center bg-white rounded-3xl shadow-3xl p-8 md:p-14 max-w-xl w-full mx-auto border border-violet-100 founder-card"
+                className="relative flex flex-col items-center bg-white rounded-3xl shadow-3xl p-4 md:p-7 max-w-xl w-full mx-auto border border-violet-100 founder-card"
                 style={{
                   background:
                     'linear-gradient(135deg, #f3e8ff 0%, #fff 100%)',
