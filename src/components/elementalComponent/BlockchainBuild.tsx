@@ -1,49 +1,50 @@
-import usecase from "../../assets/usecase.webp";
+import blockchainbuild from "../../assets/blockchain/BlockchainBuild.webp";
 
 const marketingStepsData = [
   {
     number: "1",
-    title: "DeFi platforms needing long-term liquidity providers",
+    title: "Decentralized Applications (dApps)",
     description:
-      "Automate liquidity risk checks, user behavior monitoring and tokenomics optimization.",
+      "From DeFi protocols to supply chain systems user-focused, fast and secure.",
   },
   {
     number: "2",
-    title: "NFT marketplaces targeting creator ecosystems",
-    description: "Track ownership, enforce royalties, detect fraud.",
+    title: "Tokenized Ecosystems",
+    description:
+      "Utility tokens, governance tokens and real-world asset tokenization - engineered for compliance and adoption.",
   },
   {
     number: "3",
-    title: "DAOs looking to activate governance",
+    title: "NFT Platforms",
     description:
-      "Streamline proposals, auto-generate meeting summaries and smartly route tasks.",
+      "Complete NFT minting, trading, and royalty management platforms customized for creators, brands and enterprises.",
   },
   {
     number: "4",
-    title: "Web3 infra and tooling solving B2B pain points",
+    title: "Cross-Chain Solutions",
     description:
-      "Compliance automation, real-time trading analytics, fraud detection.",
+      "Multi-chain integrations, bridges and data flow layers that expand your product’s reach and liquidity.",
   },
   {
     number: "5",
-    title: "Token projects prepping for CEX/DEX listings",
+    title: "DAO Infrastructure",
     description:
-      "Run health checks, node analytics and validator coordination at scale.",
+      "Governance modules, voting contracts, dashboards and automation for community-driven platforms.",
   },
 ];
 
-const MarketingCase = () => {
+const BlockchainBuild = () => {
   return (
     <div className="max-w-[96rem]  mx-auto p-5 md:p-16 lg:p-16 xl:p-16 text-white flex flex-col md:flex-row w-full md:gap-28 gap-5">
       <div className="md:w-1/2 w-full flex flex-col justify-center items-center md:items-start text-center md:text-left space-y-6 sm:space-y-8">
         <h2 className="text-[20px] sm:text-[32px] lg:text-[48px] xl:text-[48px] font-medium text-[#2A2A2A] leading-tight">
-          Where We Excel
+          What We Build
         </h2>
 
         <div className="w-full flex justify-center items-center  ">
           <div className="w-full max-w-xs sm:max-w-xs flex justify-center items-center ">
             <img
-              src={usecase}
+              src={blockchainbuild}
               alt="Staff Augmentation Process Diagram"
               className="w-full h-auto m-0 p-0"
             />
@@ -76,4 +77,4 @@ const MarketingCase = () => {
   );
 };
 
-export default MarketingCase;
+export default BlockchainBuild;

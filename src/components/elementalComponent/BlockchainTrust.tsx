@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 
-const Web3Speed = () => {
+const BlockchainTrust = () => {
   const [screenSize, setScreenSize] = useState<"mobile" | "tablet" | "desktop">(
     "desktop"
   );
@@ -32,10 +32,10 @@ const Web3Speed = () => {
       container: {
         position: "relative" as const,
         width: "100%",
+        minHeight: isMobile ? "700px" : isTablet ? "900px" : "1100px",
         padding: isMobile ? "40px 16px" : isTablet ? "60px 24px" : "80px 20px",
         boxSizing: "border-box" as const,
         fontFamily: "sans-serif",
-        minHeight: isMobile ? "400px" : isTablet ? "500px" : "600px",
       },
       heading: {
         fontSize: isMobile ? "20px" : isTablet ? "40px" : "48px",
@@ -208,7 +208,7 @@ const Web3Speed = () => {
 
   return (
     <div className="max-w-[1200px] mx-auto py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-8">
-      <h2 style={styles.heading}>Built for Web3 Speed</h2>
+      <h2 style={styles.heading}>Built for Trust, Security & Scale</h2>
       <div style={styles.container}>
         <Line1 />
         <div style={{ ...styles.dot, ...positions.dot1 }}>1</div>
@@ -219,7 +219,7 @@ const Web3Speed = () => {
             whiteSpace: isMobile ? "normal" : "nowrap",
           }}
         >
-          DEEP TECHNICAL + CRYPTO FLUENCY
+          Audited & secure smart contracts.
         </div>
 
         <div
@@ -238,7 +238,7 @@ const Web3Speed = () => {
               whiteSpace: isMobile ? "normal" : "nowrap",
             }}
           >
-            FAST TURNAROUND, AGILE PLANNING
+            Cross-chain & modular infrastructure.
           </div>
         </div>
 
@@ -258,8 +258,59 @@ const Web3Speed = () => {
               whiteSpace: isMobile ? "normal" : "nowrap",
             }}
           >
-            CLEAR KPIs: WALLET GROWTH, TVL, <br />
-            RETENTION – NOT VANITY CLICKS
+            Gas-optimized & upgradeable systems
+          </div>
+        </div>
+
+        <div
+          style={{
+            ...styles.section,
+            top:
+              positions.section3.top + (isMobile ? 120 : isTablet ? 160 : 200),
+            left: 0,
+          }}
+        >
+          <Line2 />
+          <div
+            style={{
+              ...styles.dot,
+              top: isMobile ? 40 : 60,
+              left: isMobile ? "20%" : isTablet ? 320 : 420,
+            }}
+          >
+            4
+          </div>
+          <div
+            style={{
+              ...styles.text,
+              top: isMobile ? 100 : 140,
+              left: isMobile ? "5%" : isTablet ? 20 : 0,
+              whiteSpace: isMobile ? "normal" : "nowrap",
+            }}
+          >
+            Scalable design patterns.
+          </div>
+        </div>
+        <div
+          style={{
+            ...styles.section,
+            top:
+              positions.section3.top + (isMobile ? 240 : isTablet ? 320 : 400),
+            left: 0,
+          }}
+        >
+          <Line3 />
+          <div style={{ ...styles.dot, ...positions.dot3 }}>5</div>
+          <div
+            style={{
+              ...styles.text,
+              ...positions.text3,
+              whiteSpace: isMobile ? "normal" : "nowrap",
+            }}
+          >
+            Regulatory-ready architecture
+            <br />
+            (KYC/AML, GDPR).
           </div>
         </div>
       </div>
@@ -267,4 +318,4 @@ const Web3Speed = () => {
   );
 };
 
-export default Web3Speed;
+export default BlockchainTrust;
