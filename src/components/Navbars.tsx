@@ -55,6 +55,7 @@ const dropdownContentData = {
     liTags: [
       { name: "Web3", link: "/web3" },
       { name: "Web3 Marketing", link: "/web3-marketing" },
+      { name: "Blockchain", link: "/blockchain" },
       { name: "Artificial Intelligence", link: "/services" },
       {
         name: "Experiential Development",
