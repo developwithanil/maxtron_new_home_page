@@ -1,11 +1,7 @@
 import React from "react";
-import {
-  airdrop,
-  community,
-  group,
-  multichain,
-  onchain,
-} from "../Web3VectorImage";
+import { airdrop, community, onchain } from "../Web3VectorImage";
+
+import { group, multichain } from "../BlockchainVectorImage";
 
 interface CardProps {
   icon: React.ComponentType;
@@ -15,7 +11,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ icon: Icon, title }) => {
   return (
     <div
-      className="border-[#F3EBFC] border-[4px] sm:border-[6px] shadow-lg flex flex-col justify-start p-3 sm:p-4 md:p-6 h-full hover:scale-105 transition-all duration-300"
+      className="border-[#F3EBFC] border-2 sm:border-2 shadow-lg flex flex-col justify-start p-3 sm:p-4 md:p-6 h-full hover:scale-105 transition-all duration-300 rounded-md"
       style={{
         boxShadow: "0px 4px 12px 0px var(--Primary-0, #F3EBFC)",
       }}
@@ -62,7 +58,7 @@ const cardsData = [
 
 const WhyBlockchain = () => {
   return (
-    <div className="relative py-4 sm:py-6 md:py-8 lg:py-12 xl:py-16 text-center max-w-[96rem] mx-auto lg:p-16 xl:p-16 sm:p-10 md:p-10">
+    <div className="relative py-4 sm:py-6 md:py-8 lg:py-12 xl:py-16 text-center max-w-[96rem] mx-auto lg:p-16 xl:p-16 sm:p-10 md:p-10 p-5">
       <h2 className="text-[#2A2A2A] [font-family: Switzer] text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-6xl text-center mb-3 sm:mb-4 md:mb-6 font-semibold px-2 sm:px-4 md:px-8 lg:px-48 xl:px-48 leading-tight">
         Why Blockchain with Maxtron?
       </h2>

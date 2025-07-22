@@ -10,10 +10,10 @@ import BlockchainFooter from "../elementalComponent/BlockchainFooter";
 const Blockchain = () => {
   return (
     <div className="w-full text-white max-w-[96rem] mx-auto">
-      <div className="flex flex-col lg:flex-row lg:items-center md:p-10 lg:p-12 xl:p-12 sm:p-10">
+      <div className="flex flex-col lg:flex-row lg:items-center md:p-10 lg:p-12 xl:p-12 sm:p-10 p-5">
         <div className="w-full lg:w-[50%] xl:w-[50%] 2xl:w-[50%] flex flex-col justify-center p-4">
-          <h1 className="text-2xl md:text-5xl lg:text-5xl xl:text-5xl font-semibold text-[#2A2A2A] mb-3 sm:mb-3 font-[Switzer]">
-            Use Cases We Power
+          <h1 className="text-xl md:text-5xl lg:text-5xl xl:text-5xl font-semibold text-[#2A2A2A] mb-3 sm:mb-3 font-[Switzer]">
+            Blockchain Solutions That Work
           </h1>
           <p className="text-[#7A7A7A] md:text-[20px] xl:text-[20px] lg:text-[20px] sm:text-[14px] leading-relaxed mb-8 sm:mb-12 font-[Switzer] font-medium">
             Partner with forward-thinking teams and enterprises to design, build
