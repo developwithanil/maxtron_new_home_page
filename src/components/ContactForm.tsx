@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import ContactImg from "../../public/formimg.webp";
 
 import "../page.css";
-import { ToastContainer, toast } from "react-toastify";
+// import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { RightClick } from "./VectorImage";
 
