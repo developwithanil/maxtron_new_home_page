@@ -23,11 +23,11 @@ const Web3HeroSection = () => {
 
       try {
         await new Promise((resolve) => setTimeout(resolve, 1000)); // fake API delay
-        toast.success("Email submitted successfully!");
+        // toast.success("Email submitted successfully!");
         formRef.current.reset();
         setShowPopup(true);
       } catch (err) {
-        toast.error("Submission failed. Please try again.");
+        // toast.error("Submission failed. Please try again.");
       } finally {
         setIsLoading(false);
       }
@@ -118,7 +118,7 @@ const Web3HeroSection = () => {
         )}
       </AnimatePresence>
 
-      <ToastContainer position="top-right" />
+      {/* <ToastContainer position="top-right" /> */}
     </div>
   );
 };
