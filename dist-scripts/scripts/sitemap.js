@@ -67,6 +67,76 @@ const urls = [
     { url: "/tokenization", changefreq: EnumChangefreq.MONTHLY, priority: 0.8 },
     { url: "/about", changefreq: EnumChangefreq.YEARLY, priority: 0.7 },
     { url: "/careers", changefreq: EnumChangefreq.MONTHLY, priority: 0.7 },
+    {
+        url: "/web3",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.7,
+    },
+    {
+        url: "/web3-marketing",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.7,
+    },
+    {
+        url: "/blockchain-app-development-company",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.7,
+    },
+    {
+        url: "/staff-augmentation",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.7,
+    },
+    {
+        url: "/affiliate",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.7,
+    },
+    {
+        url: "/events",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.7,
+    },
+    {
+        url: "/compliance",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.7,
+    },
+    {
+        url: "/fund-raising",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.7,
+    },
+    {
+        url: "/our-team",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.7,
+    },
+    {
+        url: "/insights",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.7,
+    },
+    {
+        url: "/contact",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.7,
+    },
+    {
+        url: "/services",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.7,
+    },
+    {
+        url: "/solutions",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.7,
+    },
+    {
+        url: "/industries",
+        changefreq: EnumChangefreq.MONTHLY,
+        priority: 0.7,
+    },
 ];
 const publicDir = resolve(__dirname, "public");
 if (!existsSync(publicDir)) {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
 import ClientMarquee from "../elementalComponent/ClientMarquee";
 import TechnologyUsed from "../elementalComponent/TechnologyUsed";
 import HeroSection from "../Hero";
@@ -11,19 +11,41 @@ import Gallery from "../Gallery";
 import Testimonials from "../Testimonials";
 import ContactForm from "../ContactForm";
 import Webinar from "./Webinar";
+import ContactPopup from "../ContactPopup";
 
 const NewHomePage = () => {
+  const [showPopup, setShowPopup] = React.useState(false);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <Helmet>
         <title>Maxtron | Web3, AI, Blockchain & IT Product Development</title>
-        <meta name="description" content="Maxtron delivers innovative IT and marketing solutions to accelerate your business growth with cutting-edge technology." />
+        <meta
+          name="description"
+          content="Maxtron delivers innovative IT and marketing solutions to accelerate your business growth with cutting-edge technology."
+        />
         <link rel="canonical" href="https://www.maxtron.ai/" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
-        <meta property="og:title" content="Maxtron | Web3, AI, Blockchain & IT Product Development" />
-        <meta property="og:description" content="Maxtron delivers innovative IT and marketing solutions to accelerate your business growth with cutting-edge technology." />
-        <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
+        <meta
+          property="og:title"
+          content="Maxtron | Web3, AI, Blockchain & IT Product Development"
+        />
+        <meta
+          property="og:description"
+          content="Maxtron delivers innovative IT and marketing solutions to accelerate your business growth with cutting-edge technology."
+        />
+        <meta
+          property="og:image"
+          content="https://www.maxtron.ai/src/assets/MaxtronLogo.png"
+        />
         <meta property="og:url" content="https://www.maxtron.ai/" />
         <meta property="og:type" content="website" />
       </Helmet>
@@ -102,6 +124,7 @@ const NewHomePage = () => {
             <ContactForm />
           </section>
         </main>
+        {showPopup && <ContactPopup open={showPopup} setOpen={setShowPopup} />}
       </div>
     </>
   );
