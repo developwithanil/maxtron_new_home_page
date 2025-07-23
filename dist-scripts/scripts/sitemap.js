@@ -69,7 +69,6 @@ const urls = [
     { url: "/careers", changefreq: EnumChangefreq.MONTHLY, priority: 0.7 },
 ];
 const publicDir = resolve(__dirname, "public");
-// Ensure the public directory exists
 if (!existsSync(publicDir)) {
     mkdirSync(publicDir);
 }

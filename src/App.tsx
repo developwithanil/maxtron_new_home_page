@@ -26,6 +26,7 @@ import OurTeam from "./components/pages/OurTeam";
 import Compliance from "./components/pages/Compliance";
 import Web3 from "./components/pages/Web3";
 import Web3Marketing from "./components/pages/Web3Marketing";
+import Blockchain from "./components/pages/Blockchain";
 
 const Home: React.FC = () => (
   <div>
@@ -79,6 +80,10 @@ const App: React.FC = () => {
         <Route path="/tokenization" element={<TokenizePage />} />
         <Route path="/web3" element={<Web3 />} />
         <Route path="/web3-marketing" element={<Web3Marketing />} />
+        <Route
+          path="/blockchain-app-development-company"
+          element={<Blockchain />}
+        />
         <Route path="/staff-augmentation" element={<StaffAugmentation />} />
         <Route path="/affiliate" element={<AffiliateProgramPage />} />
         <Route path="/events" element={<EventsPage />} />
