@@ -34,11 +34,11 @@ const ContactForm: React.FC = () => {
         // Simulate API call
         await new Promise((resolve) => setTimeout(resolve, 1000));
 
-        toast.success("Request submitted successfully!");
+        // toast.success("Request submitted successfully!");
         formRef.current.reset();
         setShowPopup(true);
       } catch (error) {
-        toast.error("Error submitting request. Please try again.");
+        // toast.error("Error submitting request. Please try again.");
       } finally {
         setIsLoading(false);
       }
@@ -206,7 +206,7 @@ const ContactForm: React.FC = () => {
         )}
       </AnimatePresence>
 
-      <ToastContainer position="top-right" />
+      {/* <ToastContainer position="top-right" /> */}
     </section>
   );
 };
