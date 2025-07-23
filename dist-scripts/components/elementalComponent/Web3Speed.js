@@ -1,7 +1,7 @@
 "use client";
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { useEffect, useState } from "react";
-const Web3SpeedShort = () => {
+const Web3Speed = () => {
     const [screenSize, setScreenSize] = useState("desktop");
     useEffect(() => {
         const checkScreen = () => {
@@ -170,4 +170,4 @@ const Web3SpeedShort = () => {
                                     whiteSpace: isMobile ? "normal" : "nowrap",
                                 }, children: ["CLEAR KPIs: WALLET GROWTH, TVL, ", _jsx("br", {}), "RETENTION \u2013 NOT VANITY CLICKS"] })] })] })] }));
 };
-export default Web3SpeedShort;
+export default Web3Speed;
