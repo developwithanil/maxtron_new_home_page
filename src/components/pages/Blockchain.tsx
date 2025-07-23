@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import blockchain from "../../assets/blockchain/blockchain.webp";
 import WhyBlockchain from "../elementalComponent/WhyBlockchain";
 import BlockchainOffers from "../elementalComponent/BlockchainOffers";
@@ -10,6 +11,16 @@ import BlockchainFooter from "../elementalComponent/BlockchainFooter";
 const Blockchain = () => {
   return (
     <div className="w-full text-white max-w-[96rem] mx-auto">
+      <Helmet>
+        <title>
+          Top Blockchain App Development Company | Custom app development
+          solutions
+        </title>
+        <meta
+          name="description"
+          content="Maxtron is a leading blockchain app development company offering end-to-end blockchain application development services and solutions. Build secure, scalable, and custom blockchain-based apps with Maxtron"
+        />
+      </Helmet>
       <div className="flex flex-col lg:flex-row lg:items-center md:p-10 lg:p-12 xl:p-12 sm:p-10 p-5">
         <div className="w-full lg:w-[50%] xl:w-[50%] 2xl:w-[50%] flex flex-col justify-center p-4">
           <h1 className="text-xl md:text-5xl lg:text-5xl xl:text-5xl font-semibold text-[#2A2A2A] mb-3 sm:mb-3 font-[Switzer]">
