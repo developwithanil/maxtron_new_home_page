@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { useLocation } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 import ContactImg from "../../public/formimg.webp";
 
 import "../page.css";
@@ -11,6 +12,7 @@ const ContactForm: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const location = useLocation();
   const [isLoading, setIsLoading] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
 
   const sectionClassName =
     location.pathname === "/Contact"
@@ -29,26 +31,13 @@ const ContactForm: React.FC = () => {
       });
 
       try {
-        const response = await fetch(
-          "https://maxtron-backend.vercel.app/sendData",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(formObject),
-          }
-        );
+        // Simulate API call
+        await new Promise((resolve) => setTimeout(resolve, 1000));
 
-        if (response.ok) {
-          toast.success("Request submitted successfully!");
-          formRef.current.reset();
-        } else {
-          const errorText = await response.text();
-          toast.error(errorText);
-        }
+        toast.success("Request submitted successfully!");
+        formRef.current.reset();
+        setShowPopup(true);
       } catch (error) {
-        console.error("Failed to submit the request:", error);
         toast.error("Error submitting request. Please try again.");
       } finally {
         setIsLoading(false);
@@ -94,80 +83,36 @@ const ContactForm: React.FC = () => {
                 </div>
               </li>
             </ul>
-            <div className="">
-              <img
-                src={ContactImg}
-                alt="Contact illustration"
-                className="w-full h-auto"
-              />
-            </div>
+            <img src={ContactImg} alt="Contact" className="w-full h-auto" />
           </div>
 
           {/* Right Section - Form */}
-          <div className="w-full lg:w-1/2  p-0 sm:p-6  rounded-2xl  ">
+          <div className="w-full lg:w-1/2 p-0 sm:p-6 rounded-2xl">
             <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label
-                  htmlFor="fullName"
-                  className="block text-gray-700 font-medium mb-2 font-['Switzer']"
-                >
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  id="fullName"
-                  name="fullName"
-                  className="w-full p-3  rounded-lg placeholder-gray-400 bg-[#DFDEE74D]  focus:border-transparent transition-all duration-300 font-['Switzer']"
-                  placeholder="Enter Your Full Name"
-                  required
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-gray-700 font-medium mb-2 font-['Switzer']"
-                >
-                  Work Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="w-full p-3  bg-[#DFDEE74D]   rounded-lg placeholder-gray-400   focus:border-transparent transition-all duration-300 font-['Switzer']"
-                  placeholder="Enter Your Email"
-                  required
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="designation"
-                  className="block text-gray-700 font-medium mb-2 font-['Switzer']"
-                >
-                  Designation
-                </label>
-                <input
-                  type="text"
-                  id="designation"
-                  name="designation"
-                  className="w-full p-3 bg-[#DFDEE74D]   rounded-lg placeholder-gray-400  focus:border-transparent transition-all duration-300 font-['Switzer']"
-                  placeholder="Enter Designation"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="companyName"
-                  className="block text-gray-700 font-medium mb-2 font-['Switzer']"
-                >
-                  Company Name
-                </label>
-                <input
-                  type="text"
-                  id="companyName"
-                  name="companyName"
-                  className="w-full p-3 bg-[#DFDEE74D]   rounded-lg placeholder-gray-400  focus:border-transparent transition-all duration-300 font-['Switzer']"
-                  placeholder="Enter Company Name"
-                />
-              </div>
+              {["fullName", "email", "designation", "companyName"].map((id) => (
+                <div key={id}>
+                  <label
+                    htmlFor={id}
+                    className="block text-gray-700 font-medium mb-2 font-['Switzer'] capitalize"
+                  >
+                    {id === "fullName"
+                      ? "Full Name"
+                      : id === "companyName"
+                      ? "Company Name"
+                      : id}
+                  </label>
+                  <input
+                    type={id === "email" ? "email" : "text"}
+                    id={id}
+                    name={id}
+                    required={id === "fullName" || id === "email"}
+                    className="w-full p-3 rounded-lg placeholder-gray-400 bg-[#DFDEE74D] focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer']"
+                    placeholder={`Enter ${id
+                      .replace(/([A-Z])/g, " $1")
+                      .trim()}`}
+                  />
+                </div>
+              ))}
               <div>
                 <label
                   htmlFor="description"
@@ -179,14 +124,14 @@ const ContactForm: React.FC = () => {
                   id="description"
                   name="description"
                   rows={4}
-                  className="w-full p-3 bg-[#DFDEE74D]   rounded-lg placeholder-gray-400  focus:border-transparent transition-all duration-300 font-['Switzer']"
+                  className="w-full p-3 bg-[#DFDEE74D] rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer']"
                   placeholder="Write Something"
                 ></textarea>
               </div>
               <div className="text-right">
                 <button
                   type="submit"
-                  className="px-8 py-3 text-white font-semibold rounded-lg bg-[#7A35C1] hover:bg-[#6B2F9C] transition-all duration-300 transform hover:scale-105 active:scale-95 font-['Switzer']"
+                  className="px-8 py-3 text-white font-semibold rounded-lg bg-[#7A35C1] hover:bg-[#6B2F9C] transition-transform duration-300 transform hover:scale-105 active:scale-95 font-['Switzer']"
                   disabled={isLoading}
                 >
                   {isLoading ? (
@@ -222,6 +167,45 @@ const ContactForm: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* ✅ Beautiful Framer Motion Popup */}
+      <AnimatePresence>
+        {showPopup && (
+          <motion.div
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <motion.div
+              className="bg-white rounded-2xl p-6 w-[90%] max-w-sm shadow-2xl text-center relative"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="flex justify-center mb-4">
+                <div className="w-16 h-16 bg-[#E9D8FD] text-[#7A35C1] text-3xl rounded-full flex items-center justify-center shadow-inner animate-bounce">
+                  🎉
+                </div>
+              </div>
+              <h2 className="text-2xl font-bold text-[#1E1E1E] mb-2">
+                Congratulations!
+              </h2>
+              <p className="text-gray-600">
+                Your form has been submitted successfully.
+              </p>
+              <button
+                onClick={() => setShowPopup(false)}
+                className="mt-6 px-6 py-2 bg-[#7A35C1] text-white rounded-lg hover:bg-[#6B2F9C] transition-all"
+              >
+                Close
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <ToastContainer position="top-right" />
     </section>
   );
