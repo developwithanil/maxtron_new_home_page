@@ -3,11 +3,7 @@ import aiSvg from "../../assets/ai_images/first.webp";
 import aiProduct from "../../assets/ai_images/second.webp";
 import aiCallingBg from "../../assets/ai_images/third.webp";
 import AIPowTeam from "../elementalComponent/aipowteam";
-<<<<<<< HEAD
-import AiStudioDelivers from "../elementalComponent/AiStudioDelivers";
-=======
 import MaxtronFeatures from "../elementalComponent/MaxtronFeatures";
->>>>>>> ce5f688dee66f8d318acfa19b48caecc58be6b9e
 
 const ArtificialIntelligence = () => {
   return (
@@ -61,11 +57,7 @@ const ArtificialIntelligence = () => {
 
       </div>
       <AIPowTeam />
-<<<<<<< HEAD
-      <AiStudioDelivers />
-=======
       <MaxtronFeatures />
->>>>>>> ce5f688dee66f8d318acfa19b48caecc58be6b9e
     </div>
   );
 };
