@@ -27,6 +27,7 @@ import Compliance from "./components/pages/Compliance";
 import Web3 from "./components/pages/Web3";
 import Web3Marketing from "./components/pages/Web3Marketing";
 import Blockchain from "./components/pages/Blockchain";
+import ArtificialIntelligence from "./components/pages/ArtificialIntelligence";
 
 const Home: React.FC = () => (
   <div>
@@ -88,6 +89,7 @@ const App: React.FC = () => {
         <Route path="/affiliate" element={<AffiliateProgramPage />} />
         <Route path="/events" element={<EventsPage />} />
         <Route path="/compliance" element={<Compliance />} />
+        <Route path="/artificial-intelligence" element={<ArtificialIntelligence />} />
         {/* <Route
           path="/Maxtron/:title/:id"
           element={<InternalPage caseStudies={caseStudies} />}
