@@ -2,6 +2,7 @@ import React from "react";
 import aiSvg from "../../assets/ai_images/first.webp";
 import aiProduct from "../../assets/products/aiproduct2.webp";
 import aiCallingBg from "../../assets/internal/aicallingbg.webp";
+import Aipowerdelivers from "../elementalComponent/Aipowerdelivers";
 
 const ArtificialIntelligence = () => {
   return (
@@ -47,6 +48,7 @@ const ArtificialIntelligence = () => {
         </div>
       </div>
       {/* You can add more AI-related sections here, similar to how Blockchain.tsx adds more sections below the hero */}
+      <Aipowerdelivers />
     </div>
   );
 };
