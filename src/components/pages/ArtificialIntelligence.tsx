@@ -3,6 +3,7 @@ import aiSvg from "../../assets/ai_images/first.webp";
 import aiProduct from "../../assets/ai_images/second.webp";
 import aiCallingBg from "../../assets/ai_images/third.webp";
 import AIPowTeam from "../elementalComponent/aipowteam";
+import MaxtronFeatures from "../elementalComponent/MaxtronFeatures";
 
 const ArtificialIntelligence = () => {
   return (
@@ -56,6 +57,7 @@ const ArtificialIntelligence = () => {
 
       </div>
       <AIPowTeam />
+      <MaxtronFeatures />
     </div>
   );
 };
