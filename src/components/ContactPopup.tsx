@@ -90,7 +90,7 @@ const ContactPopup = ({
    
         setTimeout(() => {
           setOpen(false);
-        }, 1500);
+        }, 5000);
       } catch (error) {
      
       } finally {
