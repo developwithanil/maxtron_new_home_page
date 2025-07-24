@@ -1,14 +1,9 @@
 import React from "react";
 import aiSvg from "../../assets/ai_images/first.webp";
-<<<<<<< HEAD
-import aiProduct from "../../assets/products/aiproduct2.webp";
-import aiCallingBg from "../../assets/internal/aicallingbg.webp";
-import Aipowerdelivers from "../elementalComponent/Aipowerdelivers";
-=======
 import aiProduct from "../../assets/ai_images/second.webp";
 import aiCallingBg from "../../assets/ai_images/third.webp";
 import AIPowTeam from "../elementalComponent/aipowteam";
->>>>>>> 2b59e11fcb84ad870614bc0b5a45572000f3077d
+import AiStudioDelivers from "../elementalComponent/AiStudioDelivers";
 
 const ArtificialIntelligence = () => {
   return (
@@ -61,12 +56,8 @@ const ArtificialIntelligence = () => {
         </div>
 
       </div>
-<<<<<<< HEAD
-      {/* You can add more AI-related sections here, similar to how Blockchain.tsx adds more sections below the hero */}
-      <Aipowerdelivers />
-=======
       <AIPowTeam />
->>>>>>> 2b59e11fcb84ad870614bc0b5a45572000f3077d
+      <AiStudioDelivers />
     </div>
   );
 };
