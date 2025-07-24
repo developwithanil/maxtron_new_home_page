@@ -52,8 +52,12 @@ const CongratulationPopup = ({ onClose }: { onClose: () => void }) => (
           🎉
         </div>
       </div>
-      <h2 className="text-2xl font-bold text-[#1E1E1E] mb-2">Congratulations!</h2>
-      <p className="text-gray-600">Your form has been submitted successfully.</p>
+      <h2 className="text-2xl font-bold text-[#1E1E1E] mb-2">
+        Congratulations!
+      </h2>
+      <p className="text-gray-600">
+        Your form has been submitted successfully.
+      </p>
       <p className="text-gray-500 text-sm">We will connect with you soon.</p>
       <button
         onClick={onClose}
@@ -81,24 +85,22 @@ const ContactPopup = ({
     setIsLoading(true);
 
     if (formRef.current) {
-      const formData = new FormData(formRef.current);
+      // const formData = new FormData(formRef.current);
       try {
         await new Promise((resolve) => setTimeout(resolve, 1000));
         formRef.current.reset();
         setShowCongrats(true);
 
-   
         setTimeout(() => {
           setOpen(false);
         }, 5000);
       } catch (error) {
-     
+        console.error("Error submitting form:", error);
       } finally {
         setIsLoading(false);
       }
     }
   };
-
 
   useEffect(() => {
     if (!open) return;
@@ -137,14 +139,21 @@ const ContactPopup = ({
               exit="exit"
             >
               <CrossIcon onClick={() => setOpen(false)} />
-              <h2 className="text-3xl font-extrabold text-[#7A35C1] mb-6 text-center drop-shadow-lg">Contact Us</h2>
+              <h2 className="text-3xl font-extrabold text-[#7A35C1] mb-6 text-center drop-shadow-lg">
+                Contact Us
+              </h2>
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
                 className="w-full flex flex-col gap-5"
               >
                 <div>
-                  <label htmlFor="fullName" className="block text-gray-700 font-medium mb-2 font-['Switzer'] capitalize">Full Name</label>
+                  <label
+                    htmlFor="fullName"
+                    className="block text-gray-700 font-medium mb-2 font-['Switzer'] capitalize"
+                  >
+                    Full Name
+                  </label>
                   <input
                     type="text"
                     id="fullName"
@@ -155,7 +164,12 @@ const ContactPopup = ({
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-gray-700 font-medium mb-2 font-['Switzer'] capitalize">Email</label>
+                  <label
+                    htmlFor="email"
+                    className="block text-gray-700 font-medium mb-2 font-['Switzer'] capitalize"
+                  >
+                    Email
+                  </label>
                   <input
                     type="email"
                     id="email"
@@ -166,7 +180,12 @@ const ContactPopup = ({
                   />
                 </div>
                 <div>
-                  <label htmlFor="phone" className="block text-gray-700 font-medium mb-2 font-['Switzer'] capitalize">Phone Number</label>
+                  <label
+                    htmlFor="phone"
+                    className="block text-gray-700 font-medium mb-2 font-['Switzer'] capitalize"
+                  >
+                    Phone Number
+                  </label>
                   <input
                     type="tel"
                     id="phone"
@@ -177,7 +196,12 @@ const ContactPopup = ({
                   />
                 </div>
                 <div>
-                  <label htmlFor="description" className="block text-gray-700 font-medium mb-2 font-['Switzer']">Description</label>
+                  <label
+                    htmlFor="description"
+                    className="block text-gray-700 font-medium mb-2 font-['Switzer']"
+                  >
+                    Description
+                  </label>
                   <textarea
                     id="description"
                     name="description"
