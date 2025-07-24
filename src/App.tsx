@@ -81,7 +81,10 @@ const App: React.FC = () => {
         <Route path="/tokenization" element={<TokenizePage />} />
         <Route path="/web3" element={<Web3 />} />
         <Route path="/web3-marketing" element={<Web3Marketing />} />
-        <Route path="/blockchain" element={<Blockchain />} />
+        <Route
+          path="/blockchain-app-development-company"
+          element={<Blockchain />}
+        />
         <Route path="/staff-augmentation" element={<StaffAugmentation />} />
         <Route path="/affiliate" element={<AffiliateProgramPage />} />
         <Route path="/events" element={<EventsPage />} />
