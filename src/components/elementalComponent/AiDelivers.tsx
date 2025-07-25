@@ -45,7 +45,7 @@ const AiStudioDelivers: React.FC = () => {
       className="w-full bg-white py-10 px-4 flex flex-col items-center min-h-screen"
       style={{ fontFamily: "Open Sans, sans-serif" }}
     >
-      <h2 className="w-full max-w-6xl text-[2.2rem] sm:text-[2.5rem] font-italic font-normal mb-8 text-black italic tracking-tight">
+      <h2 className="w-full max-w-6xl text-[2.2rem] sm:text-[2.5rem] font-italic font-normal mb-8 text-black italic tracking-tight font-[Inter]">
         Our AI Studio Delivers
       </h2>
 
@@ -53,17 +53,17 @@ const AiStudioDelivers: React.FC = () => {
         {items.map((item) => (
           <div
             key={item.number}
-            className="w-full flex flex-col md:flex-row justify-between items-center bg-[#F6F6F8] rounded-2xl p-6 gap-6 shadow-sm"
+            className="w-full flex flex-col md:flex-row justify-between items-center bg-[#F6F6F8] rounded-2xl p-16 gap-6 shadow-sm font-[Inter]"
           >
             {/* Left - Text */}
-            <div className="w-full md:w-2/3 flex flex-col justify-start items-start">
-              <span className="text-[1rem] text-[#FFFFFF] font-semibold mb-1">
+            <div className="w-full md:w-1/3 flex flex-col justify-start items-start">
+              <span className=" text-[#D1D1D1] font-normal mb-1 font-[Inter] text-4xl">
                 {item.number}
               </span>
-              <span className="text-[1.1rem] font-semibold text-white bg-[#8E52CA] px-3 py-1 rounded-md mb-2">
+              <span className="text-[1.1rem] font-semibold text-white bg-[#8E52CA] px-3  rounded-md mb-2 font-[Inter] text-3xl mt-3">
                 {item.title}
               </span>
-              <p className="text-[#6B6B6B] text-[0.95rem] leading-relaxed">
+              <p className="text-[#6B6B6B] text-[0.95rem] leading-relaxed font-[Inter] text-2xl">
                 {item.desc}
               </p>
             </div>
