@@ -81,7 +81,3 @@ const IdealFor = () => {
 };
 
 export default IdealFor;
-
-
-
-
