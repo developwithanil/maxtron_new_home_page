@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const AIPowTeam = () => {
   return (
     <div className="min-h-screen bg-[#fafbfc] flex flex-col items-center py-12 px-2 font-sans">
@@ -13,10 +14,12 @@ const AIPowTeam = () => {
           Your on-demand, AI-powered creative team
         </h1>
         <p className="text-base md:text-lg text-[#444] font-normal mb-8 max-w-2xl">
+
           AI does the heavy-lifting. The final touches are all yours – everything is customizable.
         </p>
       </div>
       {/* Cards Grid */}
+
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Card 1 */}
         <div className="bg-white rounded-xl shadow-sm overflow-hidden flex flex-col min-h-[220px]">
@@ -76,6 +79,7 @@ const AIPowTeam = () => {
           <div className="p-5">
             <div className="font-semibold text-lg md:text-xl text-[#1A1A1A]">Beautiful Captions</div>
             <div className="text-xs md:text-sm text-[#444] mt-1">Instantly engage your viewers with eye-catching, AI-generated captions.</div>
+
           </div>
         </div>
       </div>
@@ -83,4 +87,7 @@ const AIPowTeam = () => {
   );
 };
 
+
+
 export default AIPowTeam;
+
