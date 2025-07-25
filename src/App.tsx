@@ -89,7 +89,10 @@ const App: React.FC = () => {
         <Route path="/affiliate" element={<AffiliateProgramPage />} />
         <Route path="/events" element={<EventsPage />} />
         <Route path="/compliance" element={<Compliance />} />
-        <Route path="/artificial-intelligence" element={<ArtificialIntelligence />} />
+        <Route
+          path="/artificial-intelligence"
+          element={<ArtificialIntelligence />}
+        />
         {/* <Route
           path="/Maxtron/:title/:id"
           element={<InternalPage caseStudies={caseStudies} />}

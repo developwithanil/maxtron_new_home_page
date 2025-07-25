@@ -1,83 +1,84 @@
-import React from 'react';
-import robotImg from "../../assets/ai_img/Shutterstock_01.webp";
-import bottomImg from "../../assets/ai_img/Footer_above.webp";
+import React from "react";
+import robotimg from "../../assets/ai_img/Shutterstock_01.webp";
 
-const idealForData = [
-  { id: 1, title: "Web3 startups launching new tokens or DAOs.", number: "1" },
-  { id: 2, title: "SaaS companies needing product content at scale.", number: "2" },
-  { id: 3, title: "Agencies looking to automate client deliverables", number: "3" },
-  { id: 4, title: "Marketing teams under pressure to publish more, faster", number: "4" },
-  { id: 5, title: "Founders who want consistent, high-quality content without overhead", number: "5" },
-  { id: 6, title: "And Much More..", number: "6" }
-];
+interface CardProps {
+  title: string;
+  number: number;
+}
 
-const IdealFor = () => {
+const Card: React.FC<CardProps> = ({ title, number }) => {
   return (
-    <>
-      {/* Top Section */}
-      <div className="w-full min-h-screen bg-white px-4 py-12 flex flex-col lg:flex-row items-center lg:items-start justify-center gap-12">
-        
-        {/* Left: Robot Image with Heading */}
-        <div className="relative flex-shrink-0 w-[360px] h-[440px] flex justify-start items-start">
-          <h2 className="absolute -top-14 left-0 text-[32px] font-semibold font-Switzer text-black">
-            Ideal For
-          </h2>
-          <img
-            src={robotImg}
-            alt="AI Robot illustration"
-            className="w-[260px] h-[320px] object-fill object-left-top rounded-[12px]"
-          />
-        </div>
-
-        {/* Right: Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-1">
-          {idealForData.map((item) => (
-            <div
-              key={item.id}
-              className="relative bg-gray-100 w-[320px] sm:w-[340px] h-[180px] flex px-5 sm:px-6 font-Switzer sans text-[14px] bold leading-snug text-black"
-            >
-              <div className="z-10 w-full">
-                {item.title}
-              </div>
-              <span
-                className="absolute bottom-0 right-0"
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  width: '48px',
-                  height: '36px',
-                  background: '#7B3AED',
-                  color: 'white',
-                  fontFamily: 'Switzer',
-                  fontWeight: 400,
-                  fontSize: '16px',
-                }}
-              >
-                {item.number}
-              </span>
-            </div>
-          ))}
-        </div>
+    <div className="bg-[#F5F5F5] flex flex-col justify-start p-6 relative pb-16 min-h-[16rem] hover:scale-95 transition-all duration-300 w-full">
+      <div>
+        <h3 className="text-lg md:text-xl font-medium mb-4 text-[#2A2A2A] [font-family:Switzer] items-start text-start">
+          {title}
+        </h3>
       </div>
-
-      {/* Bottom Section: Image with Button Overlay */}
-      <div className="w-full px-4 py-8">
-        <div className="max-w-7xl mx-auto relative">
-          <img
-            src={bottomImg} // <-- Replace with your actual image path
-            alt="Speed of automation with clarity of human"
-            className="w-full h-auto object-contain rounded-lg shadow-lg"
-          />
-
-          {/* Overlay Button */}
-          <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 md:bottom-8 md:left-8 lg:bottom-12 lg:left-12">
-            
-          </div>
-        </div>
+      <div className="bg-[#7A35C1] absolute bottom-0 right-0 h-12 w-12 flex items-center justify-center text-white">
+        {number}
       </div>
-    </>
+    </div>
   );
 };
 
-export default IdealFor;
+const cardsData = [
+  {
+    id: 1,
+    number: 1,
+    title: "Web3 startups launching new tokens or DAOs.",
+  },
+  {
+    id: 2,
+    number: 2,
+    title: "SaaS companies needing product content at scale.",
+  },
+  {
+    id: 3,
+    number: 3,
+    title: "Agencies looking to automate client deliverables.",
+  },
+  {
+    id: 4,
+    number: 4,
+    title: "Marketing teams under pressure to publish more, faster.",
+  },
+  {
+    id: 5,
+    number: 5,
+    title:
+      "Founders who want consistent, high-quality content without overhead.",
+  },
+  {
+    id: 6,
+    number: 6,
+    title: "And Much More...",
+  },
+];
+
+const Ideal = () => {
+  return (
+    <div className="relative p-5 md:p-8 lg:p-12 xl:p-16 inset-0 text-center max-w-[96rem] mx-auto">
+      <h2 className="text-[#2A2A2A] justify-center [font-family:Switzer] text-3xl md:text-4xl lg:text-5xl text-start font-normal mb-12">
+        Ideal For
+      </h2>
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
+        {/* Image Container */}
+        <div className="w-full lg:w-[30%] flex items-start justify-start">
+          <img
+            src={robotimg}
+            alt="AI robot analyzing data charts"
+            className="rounded-lg object-cover w-full h-auto"
+          />
+        </div>
+        {/* Cards Grid */}
+        <div className="w-full lg:w-[70%] grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {cardsData.map((card) => (
+            <Card key={card.id} number={card.number} title={card.title} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Ideal;
