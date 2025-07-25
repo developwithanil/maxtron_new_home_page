@@ -1,5 +1,6 @@
 import React from 'react';
 import robotImg from "../../assets/ai_img/Shutterstock_01.webp";
+import bottomImg from "../../assets/ai_img/Footer_above.webp";
 
 const idealForData = [
   { id: 1, title: "Web3 startups launching new tokens or DAOs.", number: "1" },
@@ -12,49 +13,62 @@ const idealForData = [
 
 const IdealFor = () => {
   return (
-    <div className="w-full min-h-screen bg-white px-4 py-12 flex flex-col lg:flex-row items-center lg:items-start justify-center gap-12">
-      
-      {/* Left: Robot Image */}
-      <div className="flex-shrink-0">
-      <div className="w-[360px] h-[440px] flex justify-start items-start">
+    <div className="w-full bg-white">
+      {/* Main IdealFor Section */}
+      <div className="min-h-screen px-4 py-12 flex flex-col lg:flex-row items-center lg:items-start justify-center gap-12">
+        
+        {/* Left: Robot Image */}
+        <div className="flex-shrink-0">
+          <div className="w-[360px] h-[440px] flex justify-start items-start">
+            <img
+              src={robotImg}
+              alt="AI Robot illustration"
+              className="w-[260px] h-[320px] object-fill object-left-top rounded-[12px]"
+            />
+          </div>
+        </div>
 
-          <img
-            src={robotImg}
-            alt="AI Robot illustration"
-            className=" w-[260px] h-[320px] object-fill object-left-top rounded-[12px]"
-          />
+        {/* Right: Responsive Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-1">
+          {idealForData.map((item) => (
+            <div
+              key={item.id}
+              className="relative bg-gray-100 w-[320px] sm:w-[340px] h-[180px] flex px-5 sm:px-6 font-Switzer sans text-[14px] bold leading-snug text-black"
+            >
+              <div className="z-10 w-full">
+                {item.title}
+              </div>
+              <span
+                className="absolute bottom-0 right-0"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  width: '48px',
+                  height: '36px',
+                  background: '#7B3AED',
+                  color: 'white',
+                  fontFamily: 'Switzer',
+                  fontWeight: 400,
+                  fontSize: '16px',
+                }}
+              >
+                {item.number}
+              </span>
+            </div>
+          ))}
         </div>
       </div>
 
-      {/* Right: Responsive Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-1">
-        {idealForData.map((item) => (
-          <div
-            key={item.id}
-            className="relative bg-gray-100 w-[320px] sm:w-[340px] h-[180px] flex   px-5 sm:px-6 font-Switzer sans text-[14px] bold leading-snug text-black"
-          >
-            <div className=" z-10 w-full">
-              {item.title}
-            </div>
-            <span
-              className="absolute bottom-0 right-0"
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                width: '48px',
-                height: '36px',
-                background: '#7B3AED',
-                color: 'white',
-                fontFamily:'Switzer',
-                fontWeight: 400,
-                fontSize: '16px',
-              }}
-            >
-              {item.number}
-            </span>
-          </div>
-        ))}
+      {/* Bottom Section - Just the Image */}
+      <div className="w-full px-4 py-8">
+        <div className="max-w-7xl mx-auto">
+          <img
+            src={bottomImg}
+            alt="Speed of automation with clarity of human"
+            className="w-full h-auto object-contain rounded-lg shadow-lg"
+          />
+        </div>
       </div>
     </div>
   );
