@@ -76,7 +76,7 @@ const urls: SitemapItemLoose[] = [
   { url: "/about", changefreq: EnumChangefreq.YEARLY, priority: 0.7 },
   { url: "/careers", changefreq: EnumChangefreq.MONTHLY, priority: 0.7 },
   {
-    url: "/web3",
+    url: "/web3-development-company",
     changefreq: EnumChangefreq.MONTHLY,
     priority: 0.7,
   },
