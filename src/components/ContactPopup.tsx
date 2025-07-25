@@ -93,7 +93,7 @@ const ContactPopup = ({
 
         setTimeout(() => {
           setOpen(false);
-        }, 1500);
+        }, 5000);
       } catch (error) {
         console.error("Error submitting form:", error);
       } finally {
