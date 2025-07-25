@@ -1,5 +1,4 @@
-import React from 'react';
-import Slider from "react-slick";
+import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import firstImg from "../../assets/about/first.webp";
@@ -12,7 +11,7 @@ import { cup } from "../../components/VectorImage";
 import { handshake } from "../../components/VectorImage";
 import { person } from "../../components/VectorImage";
 import ContactForm from "../ContactForm";
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
 
 const AboutUs = () => {
   // const cardData = [
@@ -75,13 +74,22 @@ const AboutUs = () => {
     <>
       <Helmet>
         <title>About Us | Maxtron</title>
-        <meta name="description" content="Meet the Maxtron team: technical, marketing, and creative experts delivering innovative solutions." />
+        <meta
+          name="description"
+          content="Meet the Maxtron team: technical, marketing, and creative experts delivering innovative solutions."
+        />
         <link rel="canonical" href="https://www.maxtron.ai/about" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content="About Us | Maxtron" />
-        <meta property="og:description" content="Meet the Maxtron team: technical, marketing, and creative experts delivering innovative solutions." />
-        <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
+        <meta
+          property="og:description"
+          content="Meet the Maxtron team: technical, marketing, and creative experts delivering innovative solutions."
+        />
+        <meta
+          property="og:image"
+          content="https://www.maxtron.ai/src/assets/MaxtronLogo.png"
+        />
         <meta property="og:url" content="https://www.maxtron.ai/about" />
         <meta property="og:type" content="website" />
       </Helmet>
@@ -118,11 +126,11 @@ const AboutUs = () => {
                 Our team blends ex-successful startup founders with top talent
                 from Blockchain, AI, Product, UX/UI, Software Development, Data
                 Analytics & Marketing. We're driven by one goal: to redefine
-                product innovation with a deep understanding of your business and
-                tech needs. Before we build, we dig in to ensure our solutions are
-                perfectly aligned with your goals. Let's turn your vision into
-                reality with expertise and a user-first approach. Ready to elevate
-                your business? Let's make it happen!
+                product innovation with a deep understanding of your business
+                and tech needs. Before we build, we dig in to ensure our
+                solutions are perfectly aligned with your goals. Let's turn your
+                vision into reality with expertise and a user-first approach.
+                Ready to elevate your business? Let's make it happen!
               </p>
             </div>
           </div>
@@ -162,8 +170,8 @@ const AboutUs = () => {
             <p className="bg-[#F7F4F480] my-4 p-2 flex text-left justify-stretch font-normal text-sm rounded-lg font-OpenSans">
               As ex-startup founders with a corporate background, we have
               experienced many of the struggles on both sides. We know there is
-              more to a successful product than technology, so we will always look
-              at your product from a business standpoint.
+              more to a successful product than technology, so we will always
+              look at your product from a business standpoint.
             </p>
           </div>
           <div className=" rounded-sm p-4 m-4 md:m-0 text-center border-2 border-black">
@@ -172,8 +180,8 @@ const AboutUs = () => {
             </div>
             <h3 className="text-xl font-bold mb-2">TOP TALENT</h3>
             <p className="bg-[#F7F4F480] my-4 p-2 flex text-left justify-stretch font-normal text-sm rounded-lg font-OpenSans">
-              We work with the best and brightest in tech talent to ensure you get
-              high-quality tech architecture.
+              We work with the best and brightest in tech talent to ensure you
+              get high-quality tech architecture.
             </p>
           </div>
           <div className=" rounded-sm p-4 m-4 md:m-0 text-center border-2 border-black">

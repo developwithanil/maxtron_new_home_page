@@ -1,15 +1,11 @@
 import React from "react";
-import one from "../../assets/ai_images/one.webp";
-import two from "../../assets/ai_images/two.webp";
-import three from "../../assets/ai_images/three.webp";
-import four from "../../assets/ai_images/four.webp";
-import five from "../../assets/ai_images/five.webp";
-import six from "../../assets/ai_images/six.webp";
+
 
 const AIPowTeam = () => {
   return (
-    <div className="min-h-screen bg-[#fafbfc] flex flex-col items-center py-6 px-4 sm:py-8 sm:px-6 md:py-10 md:px-8 lg:py-12 xl:py-16 font-sans">
+    <div className="min-h-screen bg-[#fafbfc] flex flex-col items-center py-12 px-2 font-sans">
       {/* Top label */}
+
       <div className="w-full max-w-7xl mb-3 sm:mb-4 px-2 sm:px-0">
         <span className="text-xs sm:text-sm font-semibold text-[#6C4AB6] tracking-widest uppercase font-[Switzer]">
           CRAFTED WITH AI
@@ -23,11 +19,14 @@ const AIPowTeam = () => {
         <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#5C5C5C] font-normal max-w-3xl leading-relaxed font-[Switzer]">
           AI does the heavy-lifting. The final touches are all yours –
           everything is customizable.
+
         </p>
       </div>
       {/* Cards Grid */}
-      <div className="w-full max-w-7xl grid grid-cols-1 xl:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 px-2 sm:px-0">
+
+      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Card 1 */}
+
         <div className="bg-white rounded-2xl sm:rounded-3xl shadow-sm overflow-hidden flex flex-col min-h-[220px] transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-black/10">
           <div className="flex-1 flex items-center justify-center h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 bg-gray-50 p-0 m-0">
             <img
@@ -134,6 +133,7 @@ const AIPowTeam = () => {
               Instantly engage your viewers with eye-catching, AI-generated
               captions.
             </div>
+
           </div>
         </div>
       </div>
@@ -141,4 +141,8 @@ const AIPowTeam = () => {
   );
 };
 
+
+
+
 export default AIPowTeam;
+
