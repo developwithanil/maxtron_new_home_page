@@ -100,10 +100,10 @@
     AOS.init();
   </script>
 
-  <!-- HubSpot Script -->
+  <!-- ✅ HubSpot Script -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/47033357.js"></script>
 
-  <!-- ✅ Custom Tracking for HubSpot Chat Click -->
+  <!-- ✅ HubSpot Chat Click Listener (optional button-based fallback) -->
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -119,6 +119,32 @@
         clearInterval(detectHubspotChatClick);
       }
     }, 1000);
+  </script>
+
+  <!-- ✅ HubSpot Conversations API Listener -->
+  <script>
+    function onConversationsAPIReady() {
+      window.HubSpotConversations.on('contactAssociated', function(payload) {
+        window.dataLayer.push({
+          event: 'hubspotChatClicked',
+          eventCategory: 'hubspot-chat',
+          eventAction: 'contact_associated',
+          eventLabel: payload.conversation.conversationId
+        });
+      });
+
+      window.HubSpotConversations.on('conversationStarted', function(payload) {
+        window.dataLayer.push({
+          event: 'hubspotChatClicked',
+          eventCategory: 'hubspot-chat',
+          eventAction: 'conversation_started',
+          eventLabel: payload.conversation.conversationId
+        });
+      });
+    }
+
+    window.hsConversationsOnReady = window.hsConversationsOnReady || [];
+    window.hsConversationsOnReady.push(onConversationsAPIReady);
   </script>
 </body>
 </html>

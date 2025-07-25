@@ -13,22 +13,23 @@ const idealForData = [
 
 const IdealFor = () => {
   return (
-    <div className="w-full bg-white">
-      {/* Main IdealFor Section */}
-      <div className="min-h-screen px-4 py-12 flex flex-col lg:flex-row items-center lg:items-start justify-center gap-12">
+    <>
+      {/* Top Section */}
+      <div className="w-full min-h-screen bg-white px-4 py-12 flex flex-col lg:flex-row items-center lg:items-start justify-center gap-12">
         
-        {/* Left: Robot Image */}
-        <div className="flex-shrink-0">
-          <div className="w-[360px] h-[440px] flex justify-start items-start">
-            <img
-              src={robotImg}
-              alt="AI Robot illustration"
-              className="w-[260px] h-[320px] object-fill object-left-top rounded-[12px]"
-            />
-          </div>
+        {/* Left: Robot Image with Heading */}
+        <div className="relative flex-shrink-0 w-[360px] h-[440px] flex justify-start items-start">
+          <h2 className="absolute -top-14 left-0 text-[32px] font-semibold font-Switzer text-black">
+            Ideal For
+          </h2>
+          <img
+            src={robotImg}
+            alt="AI Robot illustration"
+            className="w-[260px] h-[320px] object-fill object-left-top rounded-[12px]"
+          />
         </div>
 
-        {/* Right: Responsive Grid */}
+        {/* Right: Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-1">
           {idealForData.map((item) => (
             <div
@@ -60,17 +61,22 @@ const IdealFor = () => {
         </div>
       </div>
 
-      {/* Bottom Section - Just the Image */}
+      {/* Bottom Section: Image with Button Overlay */}
       <div className="w-full px-4 py-8">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto relative">
           <img
-            src={bottomImg}
+            src={bottomImg} // <-- Replace with your actual image path
             alt="Speed of automation with clarity of human"
             className="w-full h-auto object-contain rounded-lg shadow-lg"
           />
+
+          {/* Overlay Button */}
+          <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 md:bottom-8 md:left-8 lg:bottom-12 lg:left-12">
+            
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
