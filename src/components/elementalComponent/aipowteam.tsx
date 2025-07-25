@@ -1,5 +1,10 @@
 import React from "react";
-
+import one from "../../assets/ai_images/one.webp";
+import two from "../../assets/ai_images/two.webp";
+import three from "../../assets/ai_images/three.webp";
+import four from "../../assets/ai_images/four.webp";
+import five from "../../assets/ai_images/five.webp";
+import six from "../../assets/ai_images/six.webp";
 
 const AIPowTeam = () => {
   return (
@@ -19,7 +24,6 @@ const AIPowTeam = () => {
         <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#5C5C5C] font-normal max-w-3xl leading-relaxed font-[Switzer]">
           AI does the heavy-lifting. The final touches are all yours –
           everything is customizable.
-
         </p>
       </div>
       {/* Cards Grid */}
@@ -133,7 +137,6 @@ const AIPowTeam = () => {
               Instantly engage your viewers with eye-catching, AI-generated
               captions.
             </div>
-
           </div>
         </div>
       </div>
@@ -141,8 +144,4 @@ const AIPowTeam = () => {
   );
 };
 
-
-
-
 export default AIPowTeam;
-

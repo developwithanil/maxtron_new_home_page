@@ -56,10 +56,8 @@ const dropdownContentData = {
       { name: "Web3", link: "/web3-development-company" },
       { name: "Web3 Marketing", link: "/web3-marketing" },
 
-
       { name: "Artificial Intelligence", link: "/artificial-intelligence" },
       { name: "Blockchain", link: "/blockchain-app-development-company" },
-
 
       {
         name: "Experiential Development",
