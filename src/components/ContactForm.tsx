@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import ContactImg from "../../public/formimg.webp";
-
 import "../page.css";
 // import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -33,7 +32,6 @@ const ContactForm: React.FC = () => {
       try {
         // Simulate API call
         await new Promise((resolve) => setTimeout(resolve, 1000));
-
         // toast.success("Request submitted successfully!");
         formRef.current.reset();
         setShowPopup(true);
@@ -89,7 +87,13 @@ const ContactForm: React.FC = () => {
           {/* Right Section - Form */}
           <div className="w-full lg:w-1/2 p-0 sm:p-6 rounded-2xl">
             <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
-              {["fullName", "email", "designation", "companyName"].map((id) => (
+              {[
+                "fullName",
+                "email",
+                "phoneNumber",
+                "designation",
+                "companyName",
+              ].map((id) => (
                 <div key={id}>
                   <label
                     htmlFor={id}
@@ -99,13 +103,25 @@ const ContactForm: React.FC = () => {
                       ? "Full Name"
                       : id === "companyName"
                       ? "Company Name"
+                      : id === "phoneNumber"
+                      ? "Phone Number"
                       : id}
                   </label>
                   <input
-                    type={id === "email" ? "email" : "text"}
+                    type={
+                      id === "email"
+                        ? "email"
+                        : id === "phoneNumber"
+                        ? "tel"
+                        : "text"
+                    }
                     id={id}
                     name={id}
-                    required={id === "fullName" || id === "email"}
+                    required={
+                      id === "fullName" ||
+                      id === "email" ||
+                      id === "phoneNumber"
+                    }
                     className="w-full p-3 rounded-lg placeholder-gray-400 bg-[#DFDEE74D] focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer']"
                     placeholder={`Enter ${id
                       .replace(/([A-Z])/g, " $1")
@@ -168,7 +184,7 @@ const ContactForm: React.FC = () => {
         </div>
       </div>
 
-      {/* ✅ Beautiful Framer Motion Popup */}
+      {/* ✅ Framer Motion Popup */}
       <AnimatePresence>
         {showPopup && (
           <motion.div

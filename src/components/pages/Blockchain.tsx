@@ -18,7 +18,7 @@ const Blockchain = () => {
         </title>
         <meta
           name="description"
-          content="Maxtron is a leading blockchain app development company offering end-to-end blockchain application development services and solutions. Build secure, scalable, and custom blockchain-based apps with Maxtron"
+          content="Maxtron is a leading blockchain app development company offering end-to-end blockchain application development services and solutions. Build secure, scalable and custom blockchain-based apps with Maxtron"
         />
       </Helmet>
       <div className="flex flex-col lg:flex-row lg:items-center md:p-10 lg:p-12 xl:p-12 sm:p-10 p-5">
