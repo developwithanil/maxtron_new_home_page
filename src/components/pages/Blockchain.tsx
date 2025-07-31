@@ -12,14 +12,16 @@ const Blockchain = () => {
   return (
     <div className="w-full text-white max-w-[96rem] mx-auto">
       <Helmet>
-        <title>
-          Top Blockchain App Development Company | Custom app development
-          solutions
-        </title>
-        <meta
-          name="description"
-          content="Maxtron is a leading blockchain app development company offering end-to-end blockchain application development services and solutions. Build secure, scalable and custom blockchain-based apps with Maxtron"
-        />
+        <title>Blockchain Development | Maxtron</title>
+        <meta name="description" content="Maxtron offers expert blockchain development services for secure, scalable, and innovative solutions." />
+        <link rel="canonical" href="https://www.maxtron.ai/blockchain" />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="X-Robots-Tag" content="index, follow" />
+        <meta property="og:title" content="Blockchain Development | Maxtron" />
+        <meta property="og:description" content="Maxtron offers expert blockchain development services for secure, scalable, and innovative solutions." />
+        <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
+        <meta property="og:url" content="https://www.maxtron.ai/blockchain" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <div className="flex flex-col lg:flex-row lg:items-center md:p-10 lg:p-12 xl:p-12 sm:p-10 p-5">
         <div className="w-full lg:w-[50%] xl:w-[50%] 2xl:w-[50%] flex flex-col justify-center p-4">
