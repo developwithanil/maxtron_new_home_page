@@ -1,48 +1,61 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
 import ContactImg from "../../public/formimg.webp";
 import "../page.css";
-// import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { RightClick } from "./VectorImage";
 import { Helmet } from 'react-helmet-async';
 
+const schema = z.object({
+  fullName: z
+    .string()
+    .min(1, "Full Name is required")
+    .min(3, "Full Name must be at least 3 characters"),
+  email: z.string().min(1, "Email is required").email("Invalid email address"),
+  phoneNumber: z
+    .string()
+    .min(1, "Phone number is required")
+    .regex(/^[6-9]\d{9}$/, "Phone number must be 10 digits and valid"),
+  designation: z
+    .string()
+    .min(1, "Designation is required")
+    .min(2, "Designation must be at least 2 characters"),
+  companyName: z
+    .string()
+    .min(1, "Company Name is required")
+    .min(2, "Company Name must be at least 2 characters"),
+  description: z
+    .string()
+    .min(1, "Description is required")
+    .min(10, "Description must be at least 10 characters"),
+});
+
+type FormData = z.infer<typeof schema>;
+
 const ContactForm: React.FC = () => {
-  const formRef = useRef<HTMLFormElement>(null);
   const location = useLocation();
-  const [isLoading, setIsLoading] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
+
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting },
+  } = useForm<FormData>({
+    resolver: zodResolver(schema),
+    mode: "onChange",
+  });
+
+  console.log("Current form errors:", errors);
 
   const sectionClassName =
     location.pathname === "/Contact"
       ? "py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 pt-24 sm:pt-32 md:pt-36"
       : "py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12";
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsLoading(true);
-
-    if (formRef.current) {
-      const formData = new FormData(formRef.current);
-      const formObject: { [key: string]: string } = {};
-      formData.forEach((value, key) => {
-        formObject[key] = value.toString();
-      });
-
-      try {
-        // Simulate API call
-        await new Promise((resolve) => setTimeout(resolve, 1000));
-        // toast.success("Request submitted successfully!");
-        formRef.current.reset();
-        setShowPopup(true);
-      } catch (error) {
-        // toast.error("Error submitting request. Please try again.");
-      } finally {
-        setIsLoading(false);
-      }
-    }
-  };
 
   return (
     <>
@@ -65,7 +78,6 @@ const ContactForm: React.FC = () => {
             <p className="p-2 text-white">Free 30-Minutes Consultation</p>
           </div>
           <div className="container mx-auto flex flex-col lg:flex-row bg-white items-center py-5 md:p-5 justify-between gap-6 lg:gap-8">
-            {/* Left Section */}
             <div className="lg:w-1/2 text-left lg:text-left">
               <h2 className="self-stretch text-[#1E1E1E] [font-family:Switzer] font-bold text-xl md:text-[40px] leading-[120%]">
                 Fill the form & Get your project moving!
@@ -93,73 +105,178 @@ const ContactForm: React.FC = () => {
               <img src={ContactImg} alt="Contact" className="w-full h-auto" />
             </div>
 
-            {/* Right Section - Form */}
             <div className="w-full lg:w-1/2 p-0 sm:p-6 rounded-2xl">
-              <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
-                {[
-                  "fullName",
-                  "email",
-                  "phoneNumber",
-                  "designation",
-                  "companyName",
-                ].map((id) => (
-                  <div key={id}>
-                    <label
-                      htmlFor={id}
-                      className="block text-gray-700 font-medium mb-2 font-['Switzer'] capitalize"
-                    >
-                      {id === "fullName"
-                        ? "Full Name"
-                        : id === "companyName"
-                        ? "Company Name"
-                        : id === "phoneNumber"
-                        ? "Phone Number"
-                        : id}
-                    </label>
-                    <input
-                      type={
-                        id === "email"
-                          ? "email"
-                          : id === "phoneNumber"
-                          ? "tel"
-                          : "text"
-                      }
-                      id={id}
-                      name={id}
-                      required={
-                        id === "fullName" ||
-                        id === "email" ||
-                        id === "phoneNumber"
-                      }
-                      className="w-full p-3 rounded-lg placeholder-gray-400 bg-[#DFDEE74D] focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer']"
-                      placeholder={`Enter ${id
-                        .replace(/([A-Z])/g, " $1")
-                        .trim()}`}
-                    />
-                  </div>
-                ))}
+              <form
+                onSubmit={handleSubmit(async () => {
+                  try {
+                    await new Promise((resolve) => setTimeout(resolve, 1000));
+                    reset();
+                    setShowPopup(true);
+                  } catch (error) {
+                    console.error("Error submitting form:", error);
+                  }
+                })}
+                className="space-y-4"
+              >
+                <div>
+                  <label
+                    htmlFor="fullName"
+                    className="block text-gray-700 font-medium mb-2 font-['Switzer'] capitalize"
+                  >
+                    Full Name <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    {...register("fullName", {
+                      onChange: (e) => {
+                        console.log("Full name changed:", e.target.value);
+                      },
+                    })}
+                    type="text"
+                    id="fullName"
+                    required
+                    className={`w-full p-3 rounded-lg placeholder-gray-400 bg-[#DFDEE74D] focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer'] ${
+                      errors.fullName ? "border-2 border-red-500" : ""
+                    }`}
+                    placeholder="Enter Full Name"
+                  />
+                  {errors.fullName && (
+                    <p className="text-red-500 text-sm mt-1 font-normal">
+                      {errors.fullName.message}
+                    </p>
+                  )}
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="block text-gray-700 font-medium mb-2 font-['Switzer'] capitalize"
+                  >
+                    Email <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    {...register("email", {
+                      onChange: (e) => {
+                        console.log("Email changed:", e.target.value);
+                      },
+                    })}
+                    type="email"
+                    id="email"
+                    required
+                    className={`w-full p-3 rounded-lg placeholder-gray-400 bg-[#DFDEE74D] focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer'] ${
+                      errors.email ? "border-2 border-red-500" : ""
+                    }`}
+                    placeholder="Enter Email"
+                  />
+                  {errors.email && (
+                    <p className="text-red-500 text-sm mt-1 font-normal">
+                      {errors.email.message}
+                    </p>
+                  )}
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="phoneNumber"
+                    className="block text-gray-700 font-medium mb-2 font-['Switzer'] capitalize"
+                  >
+                    Phone Number <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    {...register("phoneNumber")}
+                    type="tel"
+                    id="phoneNumber"
+                    required
+                    className={`w-full p-3 rounded-lg placeholder-gray-400 bg-[#DFDEE74D] focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer'] ${
+                      errors.phoneNumber ? "border-2 border-red-500" : ""
+                    }`}
+                    placeholder="Enter Phone Number"
+                  />
+                  {errors.phoneNumber && (
+                    <p className="text-red-500 text-sm mt-1 font-normal">
+                      {errors.phoneNumber.message}
+                    </p>
+                  )}
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="designation"
+                    className="block text-gray-700 font-medium mb-2 font-['Switzer'] capitalize"
+                  >
+                    Designation <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    {...register("designation")}
+                    type="text"
+                    id="designation"
+                    required
+                    className={`w-full p-3 rounded-lg placeholder-gray-400 bg-[#DFDEE74D] focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer'] ${
+                      errors.designation ? "border-2 border-red-500" : ""
+                    }`}
+                    placeholder="Enter Designation"
+                  />
+                  {errors.designation && (
+                    <p className="text-red-500 text-sm mt-1 font-normal">
+                      {errors.designation.message}
+                    </p>
+                  )}
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="companyName"
+                    className="block text-gray-700 font-medium mb-2 font-['Switzer'] capitalize"
+                  >
+                    Company Name <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    {...register("companyName")}
+                    type="text"
+                    id="companyName"
+                    required
+                    className={`w-full p-3 rounded-lg placeholder-gray-400 bg-[#DFDEE74D] focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer'] ${
+                      errors.companyName ? "border-2 border-red-500" : ""
+                    }`}
+                    placeholder="Enter Company Name"
+                  />
+                  {errors.companyName && (
+                    <p className="text-red-500 text-sm mt-1 font-normal">
+                      {errors.companyName.message}
+                    </p>
+                  )}
+                </div>
+
                 <div>
                   <label
                     htmlFor="description"
                     className="block text-gray-700 font-medium mb-2 font-['Switzer']"
                   >
-                    Description
+                    Description <span className="text-red-500">*</span>
                   </label>
                   <textarea
+                    {...register("description")}
                     id="description"
-                    name="description"
                     rows={4}
-                    className="w-full p-3 bg-[#DFDEE74D] rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer']"
+                    required
+                    className={`w-full p-3 bg-[#DFDEE74D] rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer'] ${
+                      errors.description ? "border-2 border-red-500" : ""
+                    }`}
                     placeholder="Write Something"
                   ></textarea>
+                  {errors.description && (
+                    <p className="text-red-500 text-sm mt-1 font-normal">
+                      {errors.description.message}
+                    </p>
+                  )}
                 </div>
+
                 <div className="text-right">
                   <button
                     type="submit"
                     className="px-8 py-3 text-white font-semibold rounded-lg bg-[#7A35C1] hover:bg-[#6B2F9C] transition-transform duration-300 transform hover:scale-105 active:scale-95 font-['Switzer']"
-                    disabled={isLoading}
+                    disabled={isSubmitting}
                   >
-                    {isLoading ? (
+                    {isSubmitting ? (
                       <span className="flex items-center justify-center">
                         <svg
                           className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
@@ -193,7 +310,6 @@ const ContactForm: React.FC = () => {
           </div>
         </div>
 
-        {/* ✅ Framer Motion Popup */}
         <AnimatePresence>
           {showPopup && (
             <motion.div
@@ -230,7 +346,6 @@ const ContactForm: React.FC = () => {
             </motion.div>
           )}
         </AnimatePresence>
-
         {/* <ToastContainer position="top-right" /> */}
       </section>
     </>

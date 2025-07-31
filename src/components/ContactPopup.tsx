@@ -1,5 +1,26 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+
+const schema = z.object({
+  fullName: z
+    .string()
+    .min(1, "Full Name is required")
+    .min(3, "Full Name must be at least 3 characters"),
+  email: z.string().min(1, "Email is required").email("Invalid email address"),
+  phone: z
+    .string()
+    .min(1, "Phone number is required")
+    .regex(/^[6-9]\d{9}$/, "Phone number must be 10 digits and valid"),
+  description: z
+    .string()
+    .min(1, "Description is required")
+    .min(10, "Description must be at least 10 characters"),
+});
+
+type FormData = z.infer<typeof schema>;
 
 const CrossIcon = ({ onClick }: { onClick: () => void }) => (
   <button
@@ -76,31 +97,19 @@ const ContactPopup = ({
   open: boolean;
   setOpen: (open: boolean) => void;
 }) => {
-  const formRef = useRef<HTMLFormElement>(null);
-  const [isLoading, setIsLoading] = useState(false);
   const [showCongrats, setShowCongrats] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsLoading(true);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting },
+  } = useForm<FormData>({
+    resolver: zodResolver(schema),
+    mode: "onChange",
+  });
 
-    if (formRef.current) {
-      // const formData = new FormData(formRef.current);
-      try {
-        await new Promise((resolve) => setTimeout(resolve, 1000));
-        formRef.current.reset();
-        setShowCongrats(true);
-
-        setTimeout(() => {
-          setOpen(false);
-        }, 5000);
-      } catch (error) {
-        console.error("Error submitting form:", error);
-      } finally {
-        setIsLoading(false);
-      }
-    }
-  };
+  console.log("Current form errors:", errors);
 
   useEffect(() => {
     if (!open) return;
@@ -143,8 +152,16 @@ const ContactPopup = ({
                 Contact Us
               </h2>
               <form
-                ref={formRef}
-                onSubmit={handleSubmit}
+                onSubmit={handleSubmit(async () => {
+                  try {
+                    await new Promise((resolve) => setTimeout(resolve, 1000));
+                    reset();
+                    setShowCongrats(true);
+                    setTimeout(() => setOpen(false), 5000);
+                  } catch (error) {
+                    console.error("Error submitting form:", error);
+                  }
+                })}
                 className="w-full flex flex-col gap-5"
               >
                 <div>
@@ -152,71 +169,108 @@ const ContactPopup = ({
                     htmlFor="fullName"
                     className="block text-gray-700 font-medium mb-2 font-['Switzer'] capitalize"
                   >
-                    Full Name
+                    Full Name <span className="text-red-500">*</span>
                   </label>
                   <input
+                    {...register("fullName", {
+                      onChange: (e) => {
+                        console.log("Full name changed:", e.target.value);
+                      },
+                    })}
                     type="text"
                     id="fullName"
-                    name="fullName"
                     required
-                    className="w-full p-3 rounded-lg placeholder-gray-400 bg-[#DFDEE74D] focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer']"
+                    className={`w-full p-3 rounded-lg placeholder-gray-400 bg-[#DFDEE74D] focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer'] ${
+                      errors.fullName ? "border-2 border-red-500" : ""
+                    }`}
                     placeholder="Enter Full Name"
                   />
+                  {errors.fullName && (
+                    <p className="text-red-500 text-sm mt-1 font-normal">
+                      {errors.fullName.message}
+                    </p>
+                  )}
                 </div>
                 <div>
                   <label
                     htmlFor="email"
                     className="block text-gray-700 font-medium mb-2 font-['Switzer'] capitalize"
                   >
-                    Email
+                    Email <span className="text-red-500">*</span>
                   </label>
                   <input
+                    {...register("email", {
+                      onChange: (e) => {
+                        console.log("Email changed:", e.target.value);
+                      },
+                    })}
                     type="email"
                     id="email"
-                    name="email"
                     required
-                    className="w-full p-3 rounded-lg placeholder-gray-400 bg-[#DFDEE74D] focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer']"
+                    className={`w-full p-3 rounded-lg placeholder-gray-400 bg-[#DFDEE74D] focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer'] ${
+                      errors.email ? "border-2 border-red-500" : ""
+                    }`}
                     placeholder="Enter Email"
                   />
+                  {errors.email && (
+                    <p className="text-red-500 text-sm mt-1 font-normal">
+                      {errors.email.message}
+                    </p>
+                  )}
                 </div>
                 <div>
                   <label
                     htmlFor="phone"
                     className="block text-gray-700 font-medium mb-2 font-['Switzer'] capitalize"
                   >
-                    Phone Number
+                    Phone Number <span className="text-red-500">*</span>
                   </label>
                   <input
+                    {...register("phone")}
                     type="tel"
                     id="phone"
-                    name="phone"
                     required
-                    className="w-full p-3 rounded-lg placeholder-gray-400 bg-[#DFDEE74D] focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer']"
+                    className={`w-full p-3 rounded-lg placeholder-gray-400 bg-[#DFDEE74D] focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer'] ${
+                      errors.phone ? "border-2 border-red-500" : ""
+                    }`}
                     placeholder="Enter Phone Number"
                   />
+                  {errors.phone && (
+                    <p className="text-red-500 text-sm mt-1 font-normal">
+                      {errors.phone.message}
+                    </p>
+                  )}
                 </div>
                 <div>
                   <label
                     htmlFor="description"
                     className="block text-gray-700 font-medium mb-2 font-['Switzer']"
                   >
-                    Description
+                    Description <span className="text-red-500">*</span>
                   </label>
                   <textarea
+                    {...register("description")}
                     id="description"
-                    name="description"
                     rows={4}
-                    className="w-full p-3 bg-[#DFDEE74D] rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer']"
+                    required
+                    className={`w-full p-3 bg-[#DFDEE74D] rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer'] ${
+                      errors.description ? "border-2 border-red-500" : ""
+                    }`}
                     placeholder="Write Something"
                   ></textarea>
+                  {errors.description && (
+                    <p className="text-red-500 text-sm mt-1 font-normal">
+                      {errors.description.message}
+                    </p>
+                  )}
                 </div>
                 <div className="text-right">
                   <button
                     type="submit"
                     className="px-8 py-3 text-white font-semibold rounded-lg bg-[#7A35C1] hover:bg-[#6B2F9C] transition-transform duration-300 transform hover:scale-105 active:scale-95 font-['Switzer']"
-                    disabled={isLoading}
+                    disabled={isSubmitting}
                   >
-                    {isLoading ? (
+                    {isSubmitting ? (
                       <span className="flex items-center justify-center">
                         <svg
                           className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
@@ -251,7 +305,6 @@ const ContactPopup = ({
         )}
       </AnimatePresence>
 
-      {/* Congratulation Popup */}
       <AnimatePresence>
         {showCongrats && (
           <CongratulationPopup onClose={() => setShowCongrats(false)} />
