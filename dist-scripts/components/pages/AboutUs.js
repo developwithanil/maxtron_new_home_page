@@ -11,7 +11,7 @@ import { cup } from "../../components/VectorImage";
 import { handshake } from "../../components/VectorImage";
 import { person } from "../../components/VectorImage";
 import ContactForm from "../ContactForm";
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
 const AboutUs = () => {
     // const cardData = [
     //   {

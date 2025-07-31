@@ -34,10 +34,10 @@ const dropdownContentData = {
         title: "Services",
         link: "/services",
         liTags: [
-            { name: "Web3", link: "/web3" },
+            { name: "Web3", link: "/web3-development-company" },
             { name: "Web3 Marketing", link: "/web3-marketing" },
+            { name: "Artificial Intelligence", link: "/artificial-intelligence" },
             { name: "Blockchain", link: "/blockchain-app-development-company" },
-            { name: "Artificial Intelligence", link: "/services" },
             {
                 name: "Experiential Development",
                 link: "https://experiences.maxtron.ai/",

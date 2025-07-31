@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Widget </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .feature {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #7A35C1;
+        }
+        
+        .feature h3 {
+            color: #7A35C1;
+            margin-top: 0;
+        }
+        
+        .code-block {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        .highlight {
+            background: #ffd700;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #7A35C1, #6B2F9C);
+            color: white;
+            border-radius: 12px;
+        }
+        
+        .cta h2 {
+            margin-top: 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #7A35C1;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Contact Widget Demo</h1>
+        
+        <div class="feature">
+            <h3>✨ Features</h3>
+            <ul>
+                <li><strong>Floating Button:</strong> Always visible chat button</li>
+                <li><strong>Form Validation:</strong> Real-time validation with Zod</li>
+                <li><strong>Responsive Design:</strong> Works on all devices</li>
+                <li><strong>Customizable:</strong> Easy to customize colors and position</li>
+                <li><strong>Lightweight:</strong> No external dependencies</li>
+            </ul>
+        </div>
+        
+        <div class="feature">
+            <h3>📋 How to Install</h3>
+            <p>Add this single line of code to your website:</p>
+            <div class="code-block">
+                &lt;script src="<span class="highlight">https://your-domain.com/contact-widget.js</span>"&gt;&lt;/script&gt;
+            </div>
+        </div>
+        
+        <div class="feature">
+            <h3>⚙️ Customization</h3>
+            <p>You can customize the widget by modifying the config object in the script:</p>
+            <div class="code-block">
+const config = {
+  position: 'bottom-right', // bottom-right, bottom-left, top-right, top-left
+  primaryColor: '#7A35C1',
+  secondaryColor: '#6B2F9C',
+  companyName: 'Your Company',
+  welcomeMessage: 'Get in touch with us for your project needs'
+};
+            </div>
+        </div>
+        
+        <div class="feature">
+            <h3>🔧 Integration with Backend</h3>
+            <p>To connect with your backend, replace the setTimeout in the handleSubmit function:</p>
+            <div class="code-block">
+// Replace this:
+setTimeout(() => {
+  console.log('Form data:', formData);
+  // Show success message
+}, 1000);
+
+// With this:
+fetch('/api/contact', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(formData)
+})
+.then(response => response.json())
+.then(data => {
+  // Show success message
+})
+.catch(error => {
+  // Handle error
+});
+            </div>
+        </div>
+        
+        <div class="cta">
+            <h2>Ready to Add Contact Widget?</h2>
+            <p>Click the chat button in the bottom-right corner to see it in action!</p>
+            <a href="#" class="btn" onclick="openContactWidget()">Test Widget</a>
+        </div>
+        
+        <div class="feature">
+            <h3>📱 Mobile Responsive</h3>
+            <p>The widget automatically adapts to mobile screens and provides an excellent user experience across all devices.</p>
+        </div>
+        
+        <div class="feature">
+            <h3>🔒 Privacy & Security</h3>
+            <p>The widget runs entirely in the browser and doesn't collect any data until the user submits the form. All validation happens client-side for better performance.</p>
+        </div>
+    </div>
+
+    <!-- Contact Widget Script -->
+    <script src="contact-widget.js"></script>
+</body>
+</html> 
