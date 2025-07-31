@@ -13,16 +13,23 @@ const Web3 = () => {
   return (
     <>
       <Helmet>
-        <title>Web3 Services | Maxtron</title>
-        <meta name="description" content="Explore Maxtron's Web3 services: blockchain, decentralized apps, and next-gen digital solutions for your business." />
+z        <title>Web3 Development | Maxtron</title>
+        <meta name="description" content="Maxtron offers expert Web3 development services for blockchain, smart contracts, and decentralized applications." />
         <link rel="canonical" href="https://www.maxtron.ai/web3" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
-        <meta property="og:title" content="Web3 Services | Maxtron" />
-        <meta property="og:description" content="Explore Maxtron's Web3 services: blockchain, decentralized apps, and next-gen digital solutions for your business." />
+        <meta property="og:title" content="Web3 Development | Maxtron" />
+        <meta property="og:description" content="Maxtron offers expert Web3 development services for blockchain, smart contracts, and decentralized applications." />
         <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
         <meta property="og:url" content="https://www.maxtron.ai/web3" />
         <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Web3 Development | Maxtron" />
+        <meta name="twitter:description" content="Maxtron offers expert Web3 development services for blockchain, smart contracts, and decentralized applications." />
+        <meta name="twitter:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
+        <meta name="keywords" content="Web3 development, blockchain, smart contracts, dApps, Maxtron" />
+        <meta name="publisher" content="Maxtron Innovations" />
+        <meta name="language" content="en" />
       </Helmet>
 
       <div id="Home">
