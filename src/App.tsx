@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbars";
 // import Banner from "./components/Banner";
 import ContactForm from "./components/ContactForm";
-import ContactWidget from "./components/ContactWidget";
+// import ContactWidget from "./components/ContactWidget";
+import WhatsappWidget from "./components/WhatsappWidget";
 import Footer from "./components/Footer";
 import Service from "./components/Services";
 import AboutUs from "./components/pages/AboutUs";
@@ -108,7 +109,8 @@ const App: React.FC = () => {
         <Route path="/book" element={<Book />} />
       </Routes>
       <Footer />
-      <ContactWidget />
+      {/* <ContactWidget /> */}
+      <WhatsappWidget />
     </Router>
   );
 };
