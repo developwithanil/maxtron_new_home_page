@@ -60,9 +60,9 @@ const ContactForm: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Contact | Maxtron</title>
-        <meta name="description" content="Contact Maxtron for innovative IT and marketing solutions to accelerate your business growth." />
-        <link rel="canonical" href="https://www.maxtron.ai/contact" />
+        <title> Maxtron Innovation</title>
+        <meta name="description" content=" Maxtron for innovative IT and marketing solutions to accelerate your business growth." />
+        <link rel="canonical" href="https://www.maxtron.ai" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
       </Helmet>
