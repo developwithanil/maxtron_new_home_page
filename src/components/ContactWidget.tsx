@@ -58,7 +58,7 @@ const ContactWidget: React.FC = () => {
     <>
       <motion.button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-20 right-6  z-50 bg-[#7A35C1] text-white p-4 rounded-full shadow-lg hover:bg-[#6B2F9C] transition-all duration-300 hover:scale-110"
+        className="fixed bottom-6 left-6  z-50 bg-[#7A35C1] text-white p-4 rounded-full shadow-lg hover:bg-[#6B2F9C] transition-all duration-300 hover:scale-110"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         initial={{ opacity: 0, y: 100 }}
