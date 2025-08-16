@@ -47,9 +47,7 @@ const Webinar = () => {
               How to Build, Launch, and Market Your Web3 Vision.
             </h1>
             <h2 className="text-lg md:text-xl font-medium text-gray-600 mb-6">
-              Unlock the secrets to successfully bringing your Web3 projects to
-              life. This session is your roadmap to navigating the future of the
-              decentralized web.
+            🔑 Learn how to build, launch, and market your Web3 projects like a pro. Whether you're just starting out or looking to level up, this session is packed with valuable insights that will shape your success in the Web3 world.
             </h2>
 
             <p className="text-gray-700 mb-8">
