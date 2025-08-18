@@ -212,17 +212,18 @@ const Web3Speed = () => {
       <div style={styles.container}>
         <Line1 />
         <div style={{ ...styles.dot, ...positions.dot1 }}>1</div>
-        <div
+        <div className="font-normal text-sm"
           style={{
             ...styles.text,
             ...positions.text1,
             whiteSpace: isMobile ? "normal" : "nowrap",
           }}
         >
-          DEEP TECHNICAL + CRYPTO FLUENCY
+          Fast turnaround, agile planning <span className="font-light">with weekly sprints
+            </span> 
         </div>
 
-        <div
+        <div className="font-normal text-sm"
           style={{
             ...styles.section,
             top: positions.section2.top,
@@ -238,7 +239,8 @@ const Web3Speed = () => {
               whiteSpace: isMobile ? "normal" : "nowrap",
             }}
           >
-            FAST TURNAROUND, AGILE PLANNING
+            Deep technical + crypto fluency <span className="font-light">across <br /> chains and standards
+              </span> 
           </div>
         </div>
 
@@ -251,15 +253,16 @@ const Web3Speed = () => {
         >
           <Line3 />
           <div style={{ ...styles.dot, ...positions.dot3 }}>3</div>
-          <div
+          <div className="font-normal text-sm"
             style={{
               ...styles.text,
               ...positions.text3,
               whiteSpace: isMobile ? "normal" : "nowrap",
             }}
           >
-            CLEAR KPIs: WALLET GROWTH, TVL, <br />
-            RETENTION – NOT VANITY CLICKS
+            CLEAR KPIs: <span className="font-light">WALLET GROWTH, TVL, 
+            RETENTION – NOT <br /> VANITY CLICKS
+              </span> 
           </div>
         </div>
       </div>

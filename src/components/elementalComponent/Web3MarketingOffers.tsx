@@ -29,44 +29,51 @@ const cardsData = [
   {
     id: 1,
     number: 1,
-    title: "Go-to-Market for Web3 Launches",
+    title: "Go‑to‑Market for Web3 Launches",
     description:
-      "Full-stack GTM plans for dApps, tokens, Layer 1s/L2s and Web3 platforms- built for traction, not noise.",
+      "Full‑stack GTM for dApps, tokens, L1s/L2s, and platforms-built for traction, not noise. Positioning, narrative, token design input, creator flywheels, and day‑0 distribution.",
   },
   {
     id: 2,
     number: 2,
     title: "Community Building & Management",
     description:
-      "Grow active, engaged communities on Discord, Telegram, Farcaster, Lens and X with culture-driven strategies and real-time moderation.",
+      "Active, high‑signal communities across Discord, Telegram, Farcaster, Lens, and X with culture‑driven programming, contributor pathways, and real‑time moderation.",
   },
   {
     id: 3,
     number: 3,
-    title: "Crypto-Native Content & Creative",
+    title: "Crypto‑Native Content & Creative",
     description:
-      "Threads, explainers, motion graphics and token use-case storytelling - designed for DeFi degens, DAO voters and normie-curious alike.",
+      "Threads, explainers, motion graphics, and token‑utility storytelling-crafted for DeFi users, DAO voters, and the crypto‑curious.",
   },
   {
     id: 4,
     number: 4,
     title: "Influencer & KOL Campaigns",
     description:
-      "End-to-end coordination with trusted creators in your niche - driven by authenticity, not inflated impressions.",
+      "End‑to‑end creator collaborations in your niche-authentic, compliance‑aware, and focused on measurable lift.",
   },
   {
     id: 5,
     number: 5,
-    title: " Data-Backed Growth Analytics",
+    title: "Data & Growth Analytics",
     description:
-      "Track airdrop efficiency, wallet behavior, retention rates and social sentiment - then optimize in real-time.",
+      "Airdrop efficiency, wallet behavior, retention cohorts, and social sentiment-tracked in real time and fed back into experiments.",
   },
   {
     id: 6,
     number: 6,
-    title: "SEO & Web3 PR",
+    title: "PR & SEO for Crypto",
     description:
-      "Dominate organic search for crypto keywords and place stories where early adopters actually read - Bankless, Decrypt, CoinDesk and more.",
+      "Category narratives, founder media training, announcements, link‑earning, and technical SEO. We place stories where early adopters actually read—Bankless, Decrypt, CoinDesk, and more-operating as a modern crypto marketing agency with newsroom rigor.",
+  },
+  {
+    id: 7,
+    number: 7,
+    title: "Paid Acquisition (Yes, We Run Paid)",
+    description:
+      "Your performance arm across search, social, programmatic, and Web3‑native networks. We plan, buy, and optimize as your crypto ad agency and on‑chain‑savvy crypto advertising company, with measurement tied to wallets, TVL, and LTV. When you need a crypto digital marketing agency, we're already in the seat.",
   },
 ];
 
@@ -77,26 +84,28 @@ const Web3MarketingOffers = () => {
         className="text-[#2A2A2A] justify-center [font-family: Switzer] text-xl md:text-3xl
         lg:text-5xl xl:text-5xl text-start font-normal mb-12"
       >
-        What We Offer
+        What We Deliver
       </h2>
 
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-[100px]">
-        <div className="w-full lg:w-[30%] flex items-start justify-start">
+        <div className="w-full lg:w-[30%] flex items-start justify-start lg:sticky lg:top-8">
           <img
             src={offerimg}
             alt=""
             className="w-full h-auto object-cover rounded-lg"
           />
         </div>
-        <div className="w-full lg:w-[70%] grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-2">
-          {cardsData.map((card) => (
-            <Card
-              key={card.id}
-              number={card.number}
-              title={card.title}
-              description={card.description}
-            />
-          ))}
+        <div className="w-full lg:w-[70%] max-h-[550px] overflow-y-auto " style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-2">
+            {cardsData.map((card) => (
+              <Card
+                key={card.id}
+                number={card.number}
+                title={card.title}
+                description={card.description}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

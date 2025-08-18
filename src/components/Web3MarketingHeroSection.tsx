@@ -36,9 +36,7 @@ const Web3MarketingHeroSection = () => {
               </h2>
 
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-start bg-opacity-50 rounded text-[#F5F5F5] leading-relaxed">
-                At Maxtron, We create structured, scalable growth strategies
-                across Web3 platforms, marketing channels, and community
-                ecosystems.
+               Your all‑in‑one crypto & Web3 growth engine.
               </p>
             </div>
           </div>
