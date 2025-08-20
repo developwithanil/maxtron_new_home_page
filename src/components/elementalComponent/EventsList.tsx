@@ -25,9 +25,9 @@ const EventsList: React.FC<EventsListProps> = ({ events }) => {
             key={event.id}
             href={event.link}
             target="_blank"
-            rel="noopener noreferrer" // ✅ security best practice
+            rel="noopener noreferrer" 
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-lg h-[875px] transition-all duration-300 hover:scale-[1.02] hover:shadow-xl cursor-pointer">
+            <div className="relative rounded-2xl overflow-hidden  shadow-lg h-[450px] md:h-[600px] lg:h-[860px] transition-all duration-300 hover:scale-[1.02] hover:shadow-xl cursor-pointer">
               {event.isPlaceholder ? (
                 <div className="absolute inset-0 w-full h-full bg-[#6d28d9]" />
               ) : (
@@ -40,9 +40,9 @@ const EventsList: React.FC<EventsListProps> = ({ events }) => {
                 )
               )}
 
-              <div className="absolute bottom-0 left-0 right-0 p-4">
+              <div className="absolute bottom-0 left-0 right-0 px-3 py-1">
                 <div className="p-4 bg-white rounded-lg shadow-md">
-                  <h2 className="font-bold font-switzer text-xl lg:text-2xl xl:text-2xl">
+                  <h2 className="font-bold font-switzer text-lg lg:text-2xl xl:text-2xl">
                     {event.title}
                   </h2>
                   <p className="text-[#2A2A2A] mt-1 text-base font-switzer">
