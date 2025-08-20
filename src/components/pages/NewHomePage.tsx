@@ -10,7 +10,7 @@ import CaseStudies from "../CaseStudies";
 import Gallery from "../Gallery";
 import Testimonials from "../Testimonials";
 import ContactForm from "../ContactForm";
-import Webinar from "./Webinar";
+// import Webinar from "./Webinar";
 import ContactPopup from "../ContactPopup";
 
 const NewHomePage = () => {
@@ -96,9 +96,9 @@ const NewHomePage = () => {
           <section id="clients" aria-label="Our Clients">
             <ClientMarquee />
           </section>
-          <section id="webinar" aria-label="Webinar">
+          {/* <section id="webinar" aria-label="Webinar">
             <Webinar />
-          </section>
+          </section> */}
           <section id="why-maxtron" aria-label="Why Choose Maxtron">
             <WhyMaxtron />
           </section>
