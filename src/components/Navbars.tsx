@@ -73,6 +73,7 @@ const dropdownContentData = {
       { name: "Events", link: "/events" },
       { name: "Our Team", link: "/our-team" },
       { name: "Digital Compliance", link: "/compliance" },
+      { name: "Performance Marketing", link: "/performance-marketing" },
     ],
   },
   caseStudies: {
