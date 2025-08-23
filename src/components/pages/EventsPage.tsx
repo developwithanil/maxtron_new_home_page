@@ -1,7 +1,7 @@
 import React from "react";
 import EventsList, { EventType } from "../elementalComponent/EventsList";
 import EventsLastComponent from "../elementalComponent/EventsLastComponent";
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
 
 import eventSpace from "../../assets/events/eventSpace.webp";
 import token2049Img from "../../assets/events/tokendate.webp";
@@ -20,7 +20,7 @@ const EventsPage: React.FC = () => {
       date: "August 2025",
       image: august,
       isPlaceholder: false,
-      link:'https://www.youtube.com/live/q_pznGJX8fY?si=Yb7VWGYxdX5AbfxV'
+      link: "https://www.youtube.com/live/q_pznGJX8fY?si=Yb7VWGYxdX5AbfxV",
     },
     {
       id: 2,
@@ -28,7 +28,7 @@ const EventsPage: React.FC = () => {
       date: "March 2025",
       image: token2049Img,
       isPlaceholder: false,
-      link:""
+      link: "",
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ const EventsPage: React.FC = () => {
       date: "February 2025",
       image: consensusImg,
       isPlaceholder: false,
-       link:""
+      link: "",
     },
     {
       id: 4,
@@ -44,7 +44,7 @@ const EventsPage: React.FC = () => {
       date: "June 2024",
       image: artBaselImg,
       isPlaceholder: false,
-       link:""
+      link: "",
     },
     {
       id: 5,
@@ -52,7 +52,7 @@ const EventsPage: React.FC = () => {
       date: "June 2024",
       image: nftNycImg,
       isPlaceholder: false,
-       link:""
+      link: "",
     },
     {
       id: 6,
@@ -60,7 +60,7 @@ const EventsPage: React.FC = () => {
       date: "May 2024",
       image: futuristImg,
       isPlaceholder: false,
-       link:""
+      link: "",
     },
     {
       id: 7,
@@ -68,7 +68,7 @@ const EventsPage: React.FC = () => {
       date: "April 2024",
       image: miamiNftImg,
       isPlaceholder: false,
-       link:""
+      link: "",
     },
   ];
 
@@ -78,13 +78,22 @@ const EventsPage: React.FC = () => {
     <>
       <Helmet>
         <title>Events | Maxtron</title>
-        <meta name="description" content="Discover Maxtron's global events: from NFT exhibits to tech conferences, see how we turn ideas into real-world impact." />
+        <meta
+          name="description"
+          content="Discover Maxtron's global events: from NFT exhibits to tech conferences, see how we turn ideas into real-world impact."
+        />
         <link rel="canonical" href="https://www.maxtron.ai/events" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content="Events | Maxtron" />
-        <meta property="og:description" content="Discover Maxtron's global events: from NFT exhibits to tech conferences, see how we turn ideas into real-world impact." />
-        <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
+        <meta
+          property="og:description"
+          content="Discover Maxtron's global events: from NFT exhibits to tech conferences, see how we turn ideas into real-world impact."
+        />
+        <meta
+          property="og:image"
+          content="https://www.maxtron.ai/src/assets/MaxtronLogo.png"
+        />
         <meta property="og:url" content="https://www.maxtron.ai/events" />
         <meta property="og:type" content="website" />
       </Helmet>
@@ -106,9 +115,10 @@ const EventsPage: React.FC = () => {
           <div className="md:w-[60%]">
             <h2 className="text-black font-openSansHebrew text-lg lg:text-xl font-normal mb-8">
               Maxtron turns global events into strategic playgrounds raising
-              funds, showcasing digital art, and activating bold client campaigns.
-              From NFT exhibits at Art Basel to investor wins at Token2049, we use
-              every stage to transform ideas into real-world impact.
+              funds, showcasing digital art, and activating bold client
+              campaigns. From NFT exhibits at Art Basel to investor wins at
+              Token2049, we use every stage to transform ideas into real-world
+              impact.
             </h2>
             <a href="https://experiences.maxtron.ai/" className="inline-block">
               <button className="bg-[#7A35C1] text-white px-4 py-3 rounded-lg font-semibold hover:bg-violet-500 transition-colors flex items-center gap-2">
@@ -144,7 +154,7 @@ const EventsPage: React.FC = () => {
 
         <div className="w-full max-w-[96rem] mx-auto py-12 px-8 lg:px-16">
           <EventsList events={eventsData} />
-          <EventsLastComponent />       
+          <EventsLastComponent />
         </div>
       </div>
     </>

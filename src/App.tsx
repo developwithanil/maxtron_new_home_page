@@ -30,6 +30,7 @@ import Web3 from "./components/pages/Web3";
 import Web3Marketing from "./components/pages/Web3Marketing";
 import Blockchain from "./components/pages/Blockchain";
 import ArtificialIntelligence from "./components/pages/ArtificialIntelligence";
+import PerformanceMarketing from "./components/pages/PerformanceMarketing";
 
 const Home: React.FC = () => (
   <div>
@@ -93,6 +94,10 @@ const App: React.FC = () => {
         <Route path="/staff-augmentation" element={<StaffAugmentation />} />
         <Route path="/affiliate" element={<AffiliateProgramPage />} />
         <Route path="/events" element={<EventsPage />} />
+        <Route
+          path="/performance-marketing"
+          element={<PerformanceMarketing />}
+        />
         <Route path="/compliance" element={<Compliance />} />
         <Route
           path="/artificial-intelligence"
