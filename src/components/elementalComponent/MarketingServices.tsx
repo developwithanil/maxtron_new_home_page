@@ -151,8 +151,16 @@ const MarketingServices = () => {
         </>
       ),
       icon: marketingicon(),
-      description:
-        "D2C brands thrive when they connect directly with customers without middlemen. We create multi-channel campaigns tailored for startups and established brands to scale revenue and build long-term relationships.",
+      description: (
+        <>
+          D2C brands thrive when they connect directly with customers without
+          middlemen. We create{" "}
+          <span className="font-semibold">multi-channel campaigns </span>
+          {""}
+          tailored for startups and established brands to scale revenue and
+          build long-term relationships.
+        </>
+      ),
       features: [
         {
           text: "End-to-end growth strategy (SEO, paid ads)",
