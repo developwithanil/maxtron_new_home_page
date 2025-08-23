@@ -91,7 +91,7 @@ const MarketingServices = () => {
       ),
       icon: marketingicon(),
       description:
-        "Social media is more than just likes and shares—it’s a powerful driver of business. We designad campaigns across Facebook, Instagram, LinkedIn, and Twitter that not only capture attention but also convert into sales.",
+        "Social media is more than just likes and shares—it’s a powerful driver of business. We design ad campaigns across Facebook, Instagram, LinkedIn, and Twitter that not only capture attention but also convert into sales.",
       features: [
         {
           text: "Precision audience targeting",

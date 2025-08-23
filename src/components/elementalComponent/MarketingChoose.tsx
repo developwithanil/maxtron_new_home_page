@@ -23,7 +23,7 @@ const MarketingChoose = () => {
       <div className="max-w-[96rem] mx-auto px-3 sm:px-4 md:px-6 lg:px-12 xl:px-24">
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-x-12">
           <div className="w-full lg:w-1/4">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-900 mb-6 sm:mb-8 lg:mb-0">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#2A2A2A] mb-6 sm:mb-8 lg:mb-0 font-[switzer]">
               Why Choose Us
             </h2>
           </div>
@@ -34,10 +34,10 @@ const MarketingChoose = () => {
                 {chooseUsData.slice(0, 2).map((item, index) => (
                   <div key={item.id} className="relative">
                     <div className="flex items-start gap-2 sm:gap-3 md:gap-4">
-                      <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-full bg-gray-100 text-gray-900 font-semibold text-xs sm:text-sm md:text-base flex-shrink-0">
+                      <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-full bg-gray-100 text-[#2A2A2A] font-semibold text-xs sm:text-sm md:text-base flex-shrink-0">
                         {item.id}
                       </div>
-                      <p className="text-sm sm:text-base md:text-lg font-medium leading-relaxed text-gray-900">
+                      <p className="text-sm sm:text-base md:text-lg font-medium leading-relaxed text-[#2A2A2A] font-lexendDeca">
                         {item.text}
                       </p>
                     </div>
@@ -52,10 +52,10 @@ const MarketingChoose = () => {
                 {chooseUsData.slice(2).map((item, index) => (
                   <div key={item.id} className="relative">
                     <div className="flex items-start gap-2 sm:gap-3 md:gap-4">
-                      <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-full bg-gray-100 text-gray-900 font-semibold text-xs sm:text-sm md:text-base flex-shrink-0">
+                      <div className="flex items-center justify-center w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 rounded-full bg-gray-100 text-[#2A2A2A] font-semibold text-xs sm:text-sm md:text-base flex-shrink-0">
                         {item.id}
                       </div>
-                      <p className="text-sm sm:text-base md:text-lg font-medium leading-relaxed text-gray-900">
+                      <p className="text-sm sm:text-base md:text-lg font-medium leading-relaxed text-[#2A2A2A] font-lexendDeca">
                         {item.text}
                       </p>
                     </div>

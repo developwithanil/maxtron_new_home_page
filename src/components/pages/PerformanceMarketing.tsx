@@ -23,7 +23,7 @@ const PerformanceMarketing = () => {
             <p className="text-[#2A2A2A] text-center font-['Switzer'] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight px-2 sm:px-4 md:px-6 lg:px-8">
               Performance Marketing Services
             </p>
-            <p className="text-[#2A2A2A] text-center font-openSansHebrew text-base sm:text-lg md:text-xl lg:text-xl xl:text-xl tracking-tight font-normal max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+            <p className="text-[#2A2A2A] text-center font-normal  font-openSansHebrew text-base sm:text-lg md:text-xl lg:text-xl xl:text-xl tracking-tight max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
               In today's digital-first world, every brand wants growth that is
               measurable, scalable, and profitable. At maxtron, we specialize in
               Performance Marketing — a results-driven approach where every
