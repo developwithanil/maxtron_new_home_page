@@ -39,7 +39,12 @@ const MarketingServices = () => {
   const serviceCards = [
     {
       title: "Be where your customers are searching",
-      heading: "Search Engine Marketing (SEM)",
+      heading: (
+        <>
+          Search Engine
+          <span className="text-[#A16EDA] font-semibold"> Marketing</span>(SEM)
+        </>
+      ),
       icon: marketingicon(),
       description:
         "We create and manage targeted ad campaigns on Google and Bing to connect you with high-intent customers. From in-depth keyword research to smart bidding strategies, we ensure your brand ranks on top when it matters most.",
@@ -65,7 +70,12 @@ const MarketingServices = () => {
     },
     {
       title: "Re-engage. Remind. Retain.",
-      heading: "Display & Retargeting Ads",
+      heading: (
+        <>
+          Display &{" "}
+          <span className="text-[#A16EDA] font-semibold">Retargeting</span> Ads
+        </>
+      ),
       icon: marketingicon(),
       description:
         "Most customers don't convert on the first visit. That's where retargeting ads come in. With banner ads, video ads, and programmatic campaigns, we ensure your brand stays top-of-mind until customers return to complete their purchase.",
@@ -74,7 +84,11 @@ const MarketingServices = () => {
     },
     {
       title: "Turn conversations into conversions.",
-      heading: "Social Media Ads",
+      heading: (
+        <>
+          Social Media <span className="text-[#A16EDA] font-semibold">Ads</span>
+        </>
+      ),
       icon: marketingicon(),
       description:
         "Social media is more than just likes and shares—it’s a powerful driver of business. We designad campaigns across Facebook, Instagram, LinkedIn, and Twitter that not only capture attention but also convert into sales.",
@@ -100,13 +114,18 @@ const MarketingServices = () => {
     },
     {
       title: "Scale your online store with performance-driven campaigns.",
-      heading: "E-commerce Marketing",
+      heading: (
+        <>
+          <span className="text-[#A16EDA] font-semibold">E-commerce</span>{" "}
+          Marketing
+        </>
+      ),
       icon: marketingicon(),
       description:
         "We help e-commerce businesses increase sales across platforms like Amazon, Flipkart, and Shopify. From product visibility to customer retention, we ensure your store stands out in a competitive marketplace.",
       features: [
         {
-          text: "Marketplace ads (Amazon Sponsored Ads, Flipkart Ads)",
+          text: " Marketplace ads (Amazon Sponsored Ads, Flipkart Ads",
           icon: marketplace,
         },
         {
@@ -126,7 +145,11 @@ const MarketingServices = () => {
     },
     {
       title: "Empowering Direct-to-Consumer brands to grow faster.",
-      heading: "D2C Marketing",
+      heading: (
+        <>
+          <span className="text-[#A16EDA] font-semibold">D2C</span> Marketing
+        </>
+      ),
       icon: marketingicon(),
       description:
         "D2C brands thrive when they connect directly with customers without middlemen. We create multi-channel campaigns tailored for startups and established brands to scale revenue and build long-term relationships.",
@@ -152,7 +175,12 @@ const MarketingServices = () => {
     },
     {
       title: "Leverage authentic voices to build trust.",
-      heading: "Influencer Marketing",
+      heading: (
+        <>
+          <span className="text-[#A16EDA] font-semibold">Influencer</span>{" "}
+          Marketing
+        </>
+      ),
       icon: marketingicon(),
       description:
         "Today’s consumers trust creators more than brands. We connect you with influencers who align with your audience and values, ensuring genuine brand advocacy and conversions.",
@@ -178,7 +206,12 @@ const MarketingServices = () => {
     },
     {
       title: "Turn visitors into paying customers.",
-      heading: "Conversion Rate Optimization (CRO)",
+      heading: (
+        <>
+          Conversion Rate Optimization{" "}
+          <span className="text-[#A16EDA] font-semibold">(CRO)</span>
+        </>
+      ),
       icon: marketingicon(),
       description:
         "Driving traffic is important, but converting them is critical. We use data, design, and behavioral insights to optimize your website and ad funnels for maximum impact.",
@@ -204,7 +237,12 @@ const MarketingServices = () => {
     },
     {
       title: "Data is at the core of performance marketing.",
-      heading: "Analytics & Reporting",
+      heading: (
+        <>
+          <span className="text-[#A16EDA] font-semibold">Analytics</span> &{" "}
+          Reporting
+        </>
+      ),
       icon: marketingicon(),
       description:
         "We don’t just run campaigns—we analyze, measure, and refine them continuously. Our reports give you a clear picture of your ad spend, ROI, and business growth.",
@@ -237,7 +275,7 @@ const MarketingServices = () => {
           {serviceCards.map((card, index) => (
             <div
               key={index}
-              className={`flex flex-col rounded-2xl sm:rounded-3xl md:rounded-[32px] lg:rounded-[64px] shadow-md overflow-hidden mb-4 sm:mb-6 lg:mb-6 justify-between relative ${
+              className={`flex flex-col rounded-2xl sm:rounded-3xl md:rounded-[32px] lg:rounded-[64px] border border-gray-200 overflow-hidden mb-4 sm:mb-6 lg:mb-6 justify-between relative ${
                 index % 2 !== 0
                   ? "lg:flex-row  bg-gradient-to-r from-purple-200  to-white"
                   : "lg:flex-row-reverse bg-gradient-to-l from-purple-200 to-white"
@@ -261,7 +299,7 @@ const MarketingServices = () => {
                     {card.title}
                   </h2>
                 </div>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-2 sm:mb-3 lg:mb-2">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-3 sm:mb-3 lg:mb-4">
                   {card.heading}
                 </h2>
                 <p className="text-[#2A2A2A] font-normal mb-6 sm:mb-8 lg:mb-12 font-openSansHebrew text-sm sm:text-base lg:text-base">
