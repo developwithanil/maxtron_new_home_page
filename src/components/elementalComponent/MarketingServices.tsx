@@ -1,4 +1,4 @@
-import searchEngineMarketing from "../../assets/marketing/container1.png";
+import searchEngineMarketing from "../../assets/marketing/Container1.png";
 import retargetingAds from "../../assets/marketing/container2.png";
 import socialAds from "../../assets/marketing/container3.webp";
 import ecommerceMarketing from "../../assets/marketing/container4.webp";
