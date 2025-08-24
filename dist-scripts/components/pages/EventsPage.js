@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
 import EventsList from "../elementalComponent/EventsList";
 import EventsLastComponent from "../elementalComponent/EventsLastComponent";
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
 import eventSpace from "../../assets/events/eventSpace.webp";
 import token2049Img from "../../assets/events/tokendate.webp";
 import consensusImg from "../../assets/events/ConsensusHongKong.webp";
@@ -9,49 +9,64 @@ import miamiNftImg from "../../assets/events/MiamiNFTWeek.webp";
 import artBaselImg from "../../assets/events/artbasel.webp";
 import nftNycImg from "../../assets/events/nftNycImg.webp";
 import futuristImg from "../../assets/events/futuristconference.webp";
+import august from "../../assets/events/august.webp";
 const EventsPage = () => {
     const eventsData = [
         {
             id: 1,
+            title: "Collateralizing Digital Assets and What Regulators Want Now",
+            date: "August 2025",
+            image: august,
+            isPlaceholder: false,
+            link: "https://www.youtube.com/live/q_pznGJX8fY?si=Yb7VWGYxdX5AbfxV",
+        },
+        {
+            id: 2,
             title: "Token 2049 Dubai",
             date: "March 2025",
             image: token2049Img,
             isPlaceholder: false,
+            link: "",
         },
         {
-            id: 2,
+            id: 3,
             title: "Consensus Hong Kong",
             date: "February 2025",
             image: consensusImg,
             isPlaceholder: false,
+            link: "",
         },
         {
-            id: 3,
+            id: 4,
             title: "Art Basel",
             date: "June 2024",
             image: artBaselImg,
             isPlaceholder: false,
+            link: "",
         },
         {
-            id: 4,
+            id: 5,
             title: "NFT NYC",
             date: "June 2024",
             image: nftNycImg,
             isPlaceholder: false,
+            link: "",
         },
         {
-            id: 5,
+            id: 6,
             title: "Futurist Conference",
             date: "May 2024",
             image: futuristImg,
             isPlaceholder: false,
+            link: "",
         },
         {
-            id: 6,
+            id: 7,
             title: "Miami NFT Week",
             date: "April 2024",
             image: miamiNftImg,
             isPlaceholder: false,
+            link: "",
         },
     ];
     const realEventImages = eventsData.filter((event) => !event.isPlaceholder);

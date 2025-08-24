@@ -8,26 +8,26 @@ const Card = ({ icon: Icon, title }) => {
 const cardsData = [
     {
         id: 1,
-        icon: airdrop,
-        title: "KOLs, airdrops, and tokenomics",
+        icon: community,
+        title: "Community‑first growth, not top‑down blasts.",
     },
     {
         id: 2,
-        icon: onchain,
-        title: "On-chain + off-chain insights",
+        icon: education,
+        title: "Education and transparency, not clickbait.",
     },
     {
         id: 3,
-        icon: community,
-        title: "Community-first strategies",
+        icon: airdrop,
+        title: "KOLs, airdrops, and tokenomics that retain-not just attract.",
     },
     {
         id: 4,
-        icon: education,
-        title: "Education and transparency",
+        icon: onchain,
+        title: "On‑chain + off‑chain insights that drive decisions.",
     },
 ];
 const FullStackMarketing = () => {
-    return (_jsxs("div", { className: "relative py-4 sm:py-6 md:py-8 lg:py-12 xl:py-16 text-center max-w-[96rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16", children: [_jsx("h2", { className: "text-[#2A2A2A] [font-family: Switzer] text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-6xl text-center mb-3 sm:mb-4 md:mb-6 font-semibold px-2 sm:px-4 md:px-8 lg:px-48 xl:px-48 leading-tight", children: "Full-Stack Marketing Built for Web3" }), _jsx("p", { className: "text-[#5E28A0] font-[Switzer] text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl text-center font-normal mb-6 sm:mb-8 md:mb-10 lg:mb-12 mx-auto px-2 sm:px-4 md:px-8 lg:px-16 xl:px-20 leading-relaxed uppercase", children: "Traditional growth tactics don't work in decentralized ecosystems. You need :" }), _jsx("div", { className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 lg:gap-6 mb-8 sm:mb-12 md:mb-16", children: cardsData.map((card) => (_jsx(Card, { icon: card.icon, title: card.title }, card.id))) })] }));
+    return (_jsxs("div", { className: "relative py-4 sm:py-6 md:py-8 lg:py-12 xl:py-16 text-center max-w-[96rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16", children: [_jsx("h2", { className: "text-[#2A2A2A] [font-family: Switzer] text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-6xl text-center mb-3 sm:mb-4 md:mb-6 font-semibold px-2 sm:px-4 md:px-8 lg:px-48 xl:px-48 leading-tight", children: "Why Crypto & Web3 Need a Different Playbook" }), _jsx("p", { className: "text-[#5E28A0] font-[Switzer] text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-2xl text-center font-normal mb-6 sm:mb-8 md:mb-10 lg:mb-12 mx-auto px-2 sm:px-4 md:px-8 lg:px-16 xl:px-20 leading-relaxed", children: "Traditional funnels weren't built for decentralized ownership and permissionless distribution. You need:" }), _jsx("div", { className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-5 lg:gap-6 mb-8 sm:mb-12 md:mb-16", children: cardsData.map((card) => (_jsx(Card, { icon: card.icon, title: card.title }, card.id))) }), _jsx("p", { className: "text-[#2A2A2A] font-[Switzer] text-base md:text-lg lg:text-xl text-center font-normal mx-auto px-2 sm:px-4 md:px-8 lg:px-16 xl:px-20 leading-relaxed", children: "Maxtron blends credible PR, bold storytelling, and quant growth so your message isn't just noticed-it's remembered." })] }));
 };
 export default FullStackMarketing;
