@@ -148,26 +148,26 @@ const Web3Speed = () => {
         };
     };
     const positions = getPositioning();
-    return (_jsxs("div", { className: "max-w-[1200px] mx-auto py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-8", children: [_jsx("h2", { style: styles.heading, children: "Built for Web3 Speed" }), _jsxs("div", { style: styles.container, children: [_jsx(Line1, {}), _jsx("div", { style: { ...styles.dot, ...positions.dot1 }, children: "1" }), _jsx("div", { style: {
+    return (_jsxs("div", { className: "max-w-[1200px] mx-auto py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-8", children: [_jsx("h2", { style: styles.heading, children: "Built for Web3 Speed" }), _jsxs("div", { style: styles.container, children: [_jsx(Line1, {}), _jsx("div", { style: { ...styles.dot, ...positions.dot1 }, children: "1" }), _jsxs("div", { className: "font-normal text-sm", style: {
                             ...styles.text,
                             ...positions.text1,
                             whiteSpace: isMobile ? "normal" : "nowrap",
-                        }, children: "DEEP TECHNICAL + CRYPTO FLUENCY" }), _jsxs("div", { style: {
+                        }, children: ["Fast turnaround, agile planning ", _jsx("span", { className: "font-light", children: "with weekly sprints" })] }), _jsxs("div", { className: "font-normal text-sm", style: {
                             ...styles.section,
                             top: positions.section2.top,
                             left: 0,
-                        }, children: [_jsx(Line2, {}), _jsx("div", { style: { ...styles.dot, ...positions.dot2 }, children: "2" }), _jsx("div", { style: {
+                        }, children: [_jsx(Line2, {}), _jsx("div", { style: { ...styles.dot, ...positions.dot2 }, children: "2" }), _jsxs("div", { style: {
                                     ...styles.text,
                                     ...positions.text2,
                                     whiteSpace: isMobile ? "normal" : "nowrap",
-                                }, children: "FAST TURNAROUND, AGILE PLANNING" })] }), _jsxs("div", { style: {
+                                }, children: ["Deep technical + crypto fluency ", _jsxs("span", { className: "font-light", children: ["across ", _jsx("br", {}), " chains and standards"] })] })] }), _jsxs("div", { style: {
                             ...styles.section,
                             top: positions.section3.top,
                             left: 0,
-                        }, children: [_jsx(Line3, {}), _jsx("div", { style: { ...styles.dot, ...positions.dot3 }, children: "3" }), _jsxs("div", { style: {
+                        }, children: [_jsx(Line3, {}), _jsx("div", { style: { ...styles.dot, ...positions.dot3 }, children: "3" }), _jsxs("div", { className: "font-normal text-sm", style: {
                                     ...styles.text,
                                     ...positions.text3,
                                     whiteSpace: isMobile ? "normal" : "nowrap",
-                                }, children: ["CLEAR KPIs: WALLET GROWTH, TVL, ", _jsx("br", {}), "RETENTION \u2013 NOT VANITY CLICKS"] })] })] })] }));
+                                }, children: ["CLEAR KPIs: ", _jsxs("span", { className: "font-light", children: ["WALLET GROWTH, TVL, RETENTION \u2013 NOT ", _jsx("br", {}), " VANITY CLICKS"] })] })] })] })] }));
 };
 export default Web3Speed;
