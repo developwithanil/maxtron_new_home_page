@@ -1,11 +1,11 @@
-import searchEngineMarketing from "../../assets/marketing/Container1.webp";
-import retargetingAds from "../../assets/marketing/Container2.webp";
-import socialAds from "../../assets/marketing/Container3.webp";
-import ecommerceMarketing from "../../assets/marketing/Container4.webp";
-import d2cMarketing from "../../assets/marketing/Container5.webp";
-import influencerMarketing from "../../assets/marketing/Container6.webp";
-import cro from "../../assets/marketing/Container7.webp";
-import analyticsReporting from "../../assets/marketing/Container8.webp";
+import searchEngineMarketing from "../../assets/marketing/container1.webp";
+import retargetingAds from "../../assets/marketing/container2.webp";
+import socialAds from "../../assets/marketing/container3.webp";
+import ecommerceMarketing from "../../assets/marketing/container4.webp";
+import d2cMarketing from "../../assets/marketing/container5.webp";
+import influencerMarketing from "../../assets/marketing/container6.webp";
+import cro from "../../assets/marketing/container7.webp";
+import analyticsReporting from "../../assets/marketing/container8.webp";
 import {
   competitive,
   conversion,
