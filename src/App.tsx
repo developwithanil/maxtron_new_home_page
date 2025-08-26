@@ -30,6 +30,7 @@ import Web3 from "./components/pages/Web3";
 import Web3Marketing from "./components/pages/Web3Marketing";
 import Blockchain from "./components/pages/Blockchain";
 import ArtificialIntelligence from "./components/pages/ArtificialIntelligence";
+import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 
 const Home: React.FC = () => (
   <div>
@@ -94,6 +95,10 @@ const App: React.FC = () => {
         <Route
           path="/artificial-intelligence"
           element={<ArtificialIntelligence />}
+        />
+        <Route
+          path="/privacy-policy"
+          element={<PrivacyPolicy />}
         />
         {/* <Route
           path="/Maxtron/:title/:id"
