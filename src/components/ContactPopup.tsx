@@ -132,7 +132,7 @@ const ContactPopup = ({
       <AnimatePresence>
         {open && (
           <motion.div
-            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[1000]"
+            className="fixed inset-0 max-h-screen bg-black bg-opacity-50 flex items-center justify-center z-[1000]"
             initial="hidden"
             animate="visible"
             exit="exit"
@@ -141,10 +141,11 @@ const ContactPopup = ({
             <motion.div
               ref={popupRef}
               tabIndex={-1}
-              className="relative w-[90%] max-w-lg px-8 py-10 flex flex-col items-center focus:outline-none bg-white border-2 border-[#7A35C1] shadow-2xl rounded-3xl"
+              className="relative w-[90%] max-w-lg max-h-[90%] px-8 py-10 flex flex-col items-center overflow-y-scroll focus:outline-none bg-white border-2 border-[#7A35C1] shadow-2xl rounded-3xl"
               variants={popupVariants}
               initial="hidden"
               animate="visible"
+              style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
               exit="exit"
             >
               <CrossIcon onClick={() => setOpen(false)} />
