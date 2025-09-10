@@ -31,6 +31,10 @@ const NewHomePage = () => {
           name="description"
           content="Maxtron delivers innovative IT and marketing solutions to accelerate your business growth with cutting-edge technology."
         />
+        <meta
+          name="keywords"
+          content="Maxtron Innovations, Maxtron innovation, maxtron, Best Digital Product Engineering Service in india, Digital Product Engineering in India, Top Digital Product Engineering in India, Top Digital Product Engineering in usa, Top Digital Product Engineering in dubai, Best Digital Product Engineering in dubai, Best Digital Product Engineering in usa, AI-Powered Digital Product Engineering in India, USA-Based Digital Product Engineering with AI Expertise, AI-Powered Digital Product Engineering in USA, AI-Powered Digital Product Engineering in Dubai, AI and Web3 Product Engineering in Dubai, AI and Web3 Product Engineering in India, AI and Web3 Product Engineering in USA"
+        />
         <link rel="canonical" href="https://www.maxtron.ai/" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
