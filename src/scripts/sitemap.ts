@@ -4,7 +4,7 @@ import {
   SitemapItemLoose,
   EnumChangefreq,
 } from "sitemap";
-import { createWriteStream, existsSync, mkdirSync } from "fs";
+import { createWriteStream, existsSync, mkdirSync, writeFileSync } from "fs";
 import { resolve } from "path";
 import { fileURLToPath } from "url";
 
@@ -175,3 +175,21 @@ writeStream.on("error", (err) => {
 sitemapStream.on("error", (err) => {
   console.error("Sitemap stream error:", err);
 });
+
+// Generate urllist.txt alongside sitemap.xml
+try {
+  const absoluteUrls = urls.map((item) => {
+    const path = typeof item.url === "string" ? item.url : String(item.url);
+    // Ensure exactly one slash between host and path
+    const normalizedPath = path.startsWith("/") ? path : `/${path}`;
+    return `${hostname}${normalizedPath}`;
+  });
+
+  const urlListPath = `${publicDir}/urllist.txt`;
+  writeFileSync(urlListPath, absoluteUrls.join("\n") + "\n", {
+    encoding: "utf-8",
+  });
+  console.log("URL list generated:", urlListPath);
+} catch (err) {
+  console.error("Error generating urllist.txt:", err);
+}
