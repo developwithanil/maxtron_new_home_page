@@ -14,6 +14,8 @@ import aman from "../../assets/case/aman.webp";
 import dog from "../../assets/case/dog.webp";
 import geeta from "../../assets/case/geeta.webp";
 import pooran from "../../assets/case/pooran.webp";
+import rishikesh from "../../assets/case/rishikesh.webp";
+import trish from "../../assets/case/trish.webp";
 import vc from "../../assets/case/888vc.webp";
 import team from "../../assets/case/team.webp";
 import TeamLastComponent from "../elementalComponent/TeamLastComponent";
@@ -40,7 +42,7 @@ const items = [
   },
   {
     title: "Leventis Captial DIFC",
-    description: "Desc",
+    description: "",
     image: leventiscapital,
   },
   {
@@ -50,6 +52,43 @@ const items = [
   },
 ];
 const teams = [
+  {
+    title: "Prashant",
+    designation: "Co-Founder & Partner",
+    image: prashant,
+    details: [
+      "Partner (Serial Entrepreneur)",
+      "Technology & Product",
+      "Selected at Draper University, Summer Program (USA)",
+      "Inter IIT Technology Meet: Gold Medalist"
+      ],
+    linkedin:"https://www.linkedin.com/in/prashant-kumar-939327ab/"
+  },
+  {
+    title: "Trish Kane",
+    designation: "Director of business USA",
+    image: trish,
+    details: [
+      "20+ Years Disruptive Technologies, Sales & Startups",
+      "Tech & Motivational Keynote Speaker",
+      "Ex: Wall Street, Aflac & Informa Tech",
+      "3.5 years CTO & Project Manager, Healerverse (2022-2025)",
+      "Awarded Woman of the Year Web 3 & Tech, 2024, UAE"
+    ],
+    linkedin:"https://www.linkedin.com/in/trishmkane"
+  },
+  {
+    title: "Rishikesh Trivedi",
+    designation: "Director of business Mena region",
+    image: rishikesh,
+    details: [
+      "Market Acceleration Specialist & Investor with 20+ years driving global growth",
+      "Co-Founder of Enabler ONE",
+      "President at SCLG ExCom",
+      "Managing Partner at 888vc & Strategy Advisor at PitchMatter"
+    ],
+    linkedin:"https://www.linkedin.com/in/rishikeshtrivedi/"
+  },
   {
     title: "Hue H. Nguyễn",
     designation: "Regulatory & Compliance Advisor",
@@ -111,18 +150,7 @@ const teams = [
       ],
     linkedin:"https://www.linkedin.com/in/craig-henderson-5a7509bb/"
   },
-  {
-    title: "Prashant",
-    designation: "Co-Founder & Partner",
-    image: prashant,
-    details: [
-      "Partner (Serial Entrepreneur)",
-      "Technology & Product",
-      "Selected at Draper University, Summer Program (USA)",
-      "Inter IIT Technology Meet: Gold Medalist"
-      ],
-    linkedin:"https://www.linkedin.com/in/prashant-kumar-939327ab/"
-  },
+  
   {
     title: "Aman Shah",
     designation: "Web3 Solutions Expert",
@@ -293,7 +321,7 @@ const OurTeam = () => {
             {/* Left Section - Heading and Paragraph */}
             <div className="w-full text-left ">
               <h1 className="text-[#2A2A2A] font-[Switzer] text-4xl lg:text-5xl xl:text-5xl mb-3 lg:mb-5 xl:mb-6 font-bold leading-[140%] text-start">
-                Our Team
+                Our Team and Partners
               </h1>
             </div>
 
