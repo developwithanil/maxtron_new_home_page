@@ -28,12 +28,12 @@ const HeroSection = () => {
           <div className="absolute top-0 left-0 w-full h-full bg-purple-900 bg-opacity-50"></div>
 
           <div className="relative z-10 flex flex-col items-center sm:items-center justify-center h-full text-white px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl hidden sm:block sm:text-xl md:text-6xl font-bold text-center mb-4">
-              Creating Winning Products, Ensuring Their Success
-            </h2>
-            <h2 className="sm:hidden text-3xl md:text-6xl font-bold text-center mb-3">
-              Creating Winning Products, Ensuring Their Success
-            </h2>
+            <h1 className="text-2xl hidden sm:block sm:text-xl md:text-6xl font-bold text-center mb-4">
+              Best Digital Product Engineering & Consulting Services
+            </h1>
+            <h1 className="sm:hidden text-3xl md:text-6xl font-bold text-center mb-3">
+              Best Digital Product Engineering & Consulting Services
+            </h1>
 
             <p className="text-xl sm:text-2xl md:text-3xl text-center mb-3 bg-black bg-opacity-50 p-2 rounded">
               Transform Your Business and Growth with 360° Cutting-Edge Tech

@@ -21,13 +21,19 @@ const WhyMaxtron = () => {
     >
       <div>
         <div className="p-4 ">
-          <h2 className="text-3xl lg:text-3xl font-bold text-[#2A2A2A] mb-4 text-[Switzer]">
+          <h2 className="text-3xl lg:text-6xl font-bold text-[#2A2A2A] mb-4 text-[Switzer]">
             Why Maxtron
           </h2>
-          <p className="mb-8 md:mb-10 lg:mb-14 xl:mb-16  text-[#5B5570] font-openSansHebrew text-md md:text-lg">
-            We go beyond merely serving the industry - we forge enduring
-            relationships founded on trust and mutual success.
+
+          <p className="mb-8 md:mb-10 lg:mb-14 xl:mb-16  text-[#5B5570] font-openSansHebrew text-md md:text-lg mx-auto w-[80%]">
+            At Maxtron.ai, we’re more than just a digital product engineering
+            company — we’re your innovation partner. We combine cutting-edge
+            technologies like AI, blockchain, and cloud with deep business
+            insight to build scalable, high-performance digital products.
           </p>
+          <h3 className="text-3xl lg:text-3xl font-bold text-[#2A2A2A] mb-4 text-[Switzer] mb-8 md:mb-10 lg:mb-14 xl:mb-16 ">
+            What sets us apart:
+          </h3>
           <div className="container mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-3 xl:gap-8">
             {cardData.map((card, index) => (
               <div

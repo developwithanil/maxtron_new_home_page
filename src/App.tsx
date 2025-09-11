@@ -104,10 +104,7 @@ const App: React.FC = () => {
           path="/artificial-intelligence"
           element={<ArtificialIntelligence />}
         />
-        <Route
-          path="/privacy-policy"
-          element={<PrivacyPolicy />}
-        />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         {/* <Route
           path="/Maxtron/:title/:id"
           element={<InternalPage caseStudies={caseStudies} />}

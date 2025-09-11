@@ -97,23 +97,25 @@ const NewHomePage = () => {
               </li>
             </ul>
           </nav>
-          <section id="clients" aria-label="Our Clients">
-            <ClientMarquee />
-          </section>
+
           {/* <section id="webinar" aria-label="Webinar">
             <Webinar />
           </section> */}
-          <section id="why-maxtron" aria-label="Why Choose Maxtron">
-            <WhyMaxtron />
-          </section>
           <section id="who-maxtron" aria-label="Who We Are">
             <WhoMaxtron />
           </section>
+          <section id="why-maxtron" aria-label="Why Choose Maxtron">
+            <WhyMaxtron />
+          </section>
+
           <section id="technology" aria-label="Technologies We Use">
             <TechnologyUsed />
           </section>
           <section id="pride" aria-label="Our Pride">
             <Pride />
+          </section>
+          <section id="clients" aria-label="Our Clients">
+            <ClientMarquee />
           </section>
           <section id="case-studies" aria-label="Case Studies">
             <CaseStudies />

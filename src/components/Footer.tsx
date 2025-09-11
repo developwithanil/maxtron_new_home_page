@@ -101,7 +101,10 @@ const Footer = () => {
             {/* {new Date().getFullYear()} by Maxtron Innovations */}
           </p>
           <div className="flex md:justify-start  mb-4 md:mb-0">
-            <Link to="/privacy-policy" className="text-[#FFFFFF] text-sm hover:text-white">
+            <Link
+              to="/privacy-policy"
+              className="text-[#FFFFFF] text-sm hover:text-white"
+            >
               Privacy Policy<span className="px-4"></span>
             </Link>
             <a href="#" className="text-[#FFFFFF] text-sm hover:text-white">

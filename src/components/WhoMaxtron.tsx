@@ -205,13 +205,18 @@ const WhoMaxtron = () => {
           {" "}
           <Verify /> ENTERPRISE-GRADE SOLUTIONS{" "}
         </p>
-        <h2 className="text-4xl sm:text-4xl md:text-3xl font-bold text-[#2A2A2A] mb-3 md:mb-4 font-[Switzer]">
+        <h1 className="text-2xl sm:text-2xl md:text-5xl font-bold text-[#2A2A2A] mb-3 md:mb-4 font-[Switzer]">
           {" "}
           Who Are We{" "}
-        </h2>
-        <p className="text-base sm:text-sm md:text-lg mb-6 md:mb-10 lg:mb-14 xl:mb-16 text-[#5B5570] font-openSansHebrew px-2">
+        </h1>
+        <p className="text-base sm:text-sm md:text-lg mb-6 md:mb-10 lg:mb-14 xl:mb-16 text-[#5B5570] font-openSansHebrew px-2 w-[80%] mx-auto">
           {" "}
-          Your Partner in Building Future-Ready Digital Solutions{" "}
+          Maxtron.ai is a global digital product engineering and consulting
+          company founded by a team of IITians. We specialize in harnessing
+          advanced technologies such as AI, blockchain, and cloud computing to
+          develop innovative, high-performance digital products. Our mission is
+          to empower startups, SMBs, and enterprises by transforming their ideas
+          into scalable solutions that solve real business challenges.
         </p>
       </div>
 
