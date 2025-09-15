@@ -26,13 +26,13 @@ const NewHomePage = () => {
   return (
     <>
       <Helmet>
-        <title>
-          Best Digital Product Engineering & Consulting Services | Maxtron.ai{" "}
-        </title>
+        <title>Maxtron | Web3, AI, Blockchain & IT Product Development</title>
+
         <meta
           name="description"
-          content="Maxtron.ai delivers the best digital product engineering and consulting services— driving innovation with AI, blockchain, and end-to-end product development solution for startups, SMBs, and enterprises."
+          content="Maxtron delivers innovative IT and marketing solutions to accelerate your business growth with cutting-edge technology."
         />
+
         <meta
           name="keywords"
           content="Maxtron Innovations, Maxtron innovation, maxtron, Best Digital Product Engineering Service in india, Digital Product Engineering in India, Top Digital Product Engineering in India, Top Digital Product Engineering in usa, Top Digital Product Engineering in dubai, Best Digital Product Engineering in dubai, Best Digital Product Engineering in usa, AI-Powered Digital Product Engineering in India, USA-Based Digital Product Engineering with AI Expertise, AI-Powered Digital Product Engineering in USA, AI-Powered Digital Product Engineering in Dubai, AI and Web3 Product Engineering in Dubai, AI and Web3 Product Engineering in India, AI and Web3 Product Engineering in USA"
@@ -42,11 +42,11 @@ const NewHomePage = () => {
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta
           property="og:title"
-          content="Maxtron | Web3, AI, Blockchain & IT Product Development"
+          content="Best Digital Product Engineering & Consulting Services  | Maxtron.ai"
         />
         <meta
           property="og:description"
-          content="Maxtron delivers innovative IT and marketing solutions to accelerate your business growth with cutting-edge technology."
+          content="Maxtron.ai delivers the best digital product engineering and consulting services— driving innovation with AI, blockchain, and end-to-end product development solution for startups, SMBs, and enterprises."
         />
         <meta
           property="og:image"
