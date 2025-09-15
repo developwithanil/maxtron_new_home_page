@@ -26,10 +26,12 @@ const NewHomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Maxtron | Web3, AI, Blockchain & IT Product Development</title>
+        <title>
+          Best Digital Product Engineering & Consulting Services | Maxtron.ai{" "}
+        </title>
         <meta
           name="description"
-          content="Maxtron delivers innovative IT and marketing solutions to accelerate your business growth with cutting-edge technology."
+          content="Maxtron.ai delivers the best digital product engineering and consulting services— driving innovation with AI, blockchain, and end-to-end product development solution for startups, SMBs, and enterprises."
         />
         <meta
           name="keywords"
