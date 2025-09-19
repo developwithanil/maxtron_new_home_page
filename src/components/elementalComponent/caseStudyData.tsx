@@ -1023,7 +1023,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     title: "TOKEN LAUNCH",
-    subtitle: " And It's Success 📈",
+    subtitle: "And It's Success 📈",
     heroImage: tokeninside,
     type: ["Marketing", "UX/UI Design", "Graphics Design", "Web Development"],
     afterHeroSection: process,

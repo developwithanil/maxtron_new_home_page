@@ -45,419 +45,194 @@ const InternalPageDetails: React.FC<InternalPageProps> = ({ caseStudies }) => {
     bgImage,
   } = caseStudy;
   console.log("image internal ", bgImage);
+  const generateMetadata = () => {
+    const defaultMetadata = {
+      title: `${title} Case Study | Maxtron`,
+      description:
+        description ||
+        subtitle ||
+        `Case study: ${title} - ${
+          subtitle || "Learn how we delivered innovative solutions"
+        }`,
+      ogTitle: `${title} Case Study | Maxtron`,
+      ogDescription:
+        description ||
+        subtitle ||
+        `Case study: ${title} - ${
+          subtitle || "Learn how we delivered innovative solutions"
+        }`,
+      twitterTitle: `${title} Case Study | Maxtron`,
+      twitterDescription:
+        description ||
+        subtitle ||
+        `Case study: ${title} - ${
+          subtitle || "Learn how we delivered innovative solutions"
+        }`,
+    };
+
+    const metadataMap = {
+      "Ludo Love": {
+        title: "Blockchain Game Development Case Study | Maxtron Innovations",
+        description:
+          "Discover how Maxtron created a blockchain-based game solution. This case study details the development process, challenges overcome, and results achieved.",
+        ogTitle: "Blockchain Game Development Case Study | Maxtron Innovations",
+        ogDescription:
+          "Discover how Maxtron created a blockchain-based game solution. This case study details the development process, challenges overcome, and results achieved.",
+        twitterTitle:
+          "Blockchain Game Development Case Study | Maxtron Innovations",
+        twitterDescription:
+          "Discover how Maxtron created a blockchain-based game solution. This case study details the development process, challenges overcome, and results achieved.",
+      },
+      ShaperCult: {
+        title: "ECommerce Marketing Case Study | Maxtron Innovations",
+        description:
+          "Learn how Maxtron transformed eCommerce marketing strategies to drive growth, optimize ROI, and increase conversions. Read the full case study.",
+        ogTitle: "ECommerce Marketing Case Study | Maxtron Innovations",
+        ogDescription:
+          "Learn how Maxtron transformed eCommerce marketing strategies to drive growth, optimize ROI, and increase conversions. Read the full case study.",
+        twitterTitle: "ECommerce Marketing Case Study | Maxtron Innovations",
+        twitterDescription:
+          "Learn how Maxtron transformed eCommerce marketing strategies to drive growth, optimize ROI, and increase conversions. Read the full case study.",
+      },
+      "HYPER CASUAL GAMES": {
+        title: "Mini Gaming Platform Case Study | Maxtron Innovations",
+        description:
+          "Discover how Maxtron engineered a compact, high-performance gaming platform. This case study delves into the design, development, and impact of the project.",
+        ogTitle: "Mini Gaming Platform Case Study | Maxtron Innovations",
+        ogDescription:
+          "Discover how Maxtron engineered a compact, high-performance gaming platform. This case study delves into the design, development, and impact of the project.",
+        twitterTitle: "Mini Gaming Platform Case Study | Maxtron Innovations",
+        twitterDescription:
+          "Discover how Maxtron engineered a compact, high-performance gaming platform. This case study delves into the design, development, and impact of the project.",
+      },
+      "AI CALLING AGENT": {
+        title: "AI Calling Tool Case Study | Maxtron Innovations",
+        description:
+          "Explore Maxtron's approach to creating an AI calling tool that streamlines communication workflows. This case study delves into the project's journey from concept to deployment.",
+        ogTitle: "AI Calling Tool Case Study | Maxtron Innovations",
+        ogDescription:
+          "Explore Maxtron's approach to creating an AI calling tool that streamlines communication workflows. This case study delves into the project's journey from concept to deployment.",
+        twitterTitle: "AI Calling Tool Case Study | Maxtron Innovations",
+        twitterDescription:
+          "Explore Maxtron's approach to creating an AI calling tool that streamlines communication workflows. This case study delves into the project's journey from concept to deployment.",
+      },
+      "WEB 3.0 MARKETING PROJECT": {
+        title: "Crypto Project Marketing Case Study | Maxtron Innovations",
+        description:
+          "Explore Maxtron's approach to crypto project marketing, focusing on community building and strategic outreach. This case study highlights our methods and outcomes.",
+        ogTitle: "Crypto Project Marketing Case Study | Maxtron Innovations",
+        ogDescription:
+          "Explore Maxtron's approach to crypto project marketing, focusing on community building and strategic outreach. This case study highlights our methods and outcomes.",
+        twitterTitle:
+          "Crypto Project Marketing Case Study | Maxtron Innovations",
+        twitterDescription:
+          "Explore Maxtron's approach to crypto project marketing, focusing on community building and strategic outreach. This case study highlights our methods and outcomes.",
+      },
+      "VOTING BLOCK USA": {
+        title:
+          "Blockchain-Based E-Voting System Case Study | Maxtron Innovations",
+        description:
+          "Discover how Maxtron developed a secure and transparent blockchain-based e-voting system. This case study explores the design, implementation, and impact of the solution.",
+        ogTitle:
+          "Blockchain-Based E-Voting System Case Study | Maxtron Innovations",
+        ogDescription:
+          "Discover how Maxtron developed a secure and transparent blockchain-based e-voting system. This case study explores the design, implementation, and impact of the solution.",
+        twitterTitle:
+          "Blockchain-Based E-Voting System Case Study | Maxtron Innovations",
+        twitterDescription:
+          "Discover how Maxtron developed a secure and transparent blockchain-based e-voting system. This case study explores the design, implementation, and impact of the solution.",
+      },
+      "Good Standing": {
+        title: "Good Standing Case Study | Maxtron Innovations",
+        description:
+          "Explore Maxtron's approach to ensuring clients' good standing by implementing effective compliance strategies. This case study delves into the project's journey and outcomes.",
+        ogTitle: "Good Standing Case Study | Maxtron Innovations",
+        ogDescription:
+          "Explore Maxtron's approach to ensuring clients' good standing by implementing effective compliance strategies. This case study delves into the project's journey and outcomes.",
+        twitterTitle: "Good Standing Case Study | Maxtron Innovations",
+        twitterDescription:
+          "Explore Maxtron's approach to ensuring clients' good standing by implementing effective compliance strategies. This case study delves into the project's journey and outcomes.",
+      },
+      GRO8: {
+        title: "Gro8 Case Study | Maxtron Innovations",
+        description:
+          "Explore Maxtron's collaboration with Gro8, focusing on digital growth strategies and technological advancements. This case study delves into the project's journey and outcomes.",
+        ogTitle: "Gro8 Case Study | Maxtron Innovations",
+        ogDescription:
+          "Explore Maxtron's collaboration with Gro8, focusing on digital growth strategies and technological advancements. This case study delves into the project's journey and outcomes.",
+        twitterTitle: "Gro8 Case Study | Maxtron Innovations",
+        twitterDescription:
+          "Explore Maxtron's collaboration with Gro8, focusing on digital growth strategies and technological advancements. This case study delves into the project's journey and outcomes.",
+      },
+      "TOKEN LAUNCH": {
+        title: "Token Launch Case Study | Maxtron Innovations",
+        description:
+          "Explore Maxtron's comprehensive strategy for a token launch, focusing on market positioning, investor relations, and post-launch support. This case study delves into the project's journey and results.",
+        ogTitle: "Token Launch Case Study | Maxtron Innovations",
+        ogDescription:
+          "Explore Maxtron's comprehensive strategy for a token launch, focusing on market positioning, investor relations, and post-launch support. This case study delves into the project's journey and results.",
+        twitterTitle: "Token Launch Case Study | Maxtron Innovations",
+        twitterDescription:
+          "Explore Maxtron's comprehensive strategy for a token launch, focusing on market positioning, investor relations, and post-launch support. This case study delves into the project's journey and results.",
+      },
+      ICCA: {
+        title: "ICCA Case Study | Maxtron Innovations",
+        description:
+          "Explore Maxtron's collaboration with ICCA, focusing on digital growth strategies and technological advancements. This case study delves into the project's journey and outcomes.",
+        ogTitle: "ICCA Case Study | Maxtron Innovations",
+        ogDescription:
+          "Explore Maxtron's collaboration with ICCA, focusing on digital growth strategies and technological advancements. This case study delves into the project's journey and outcomes.",
+        twitterTitle: "ICCA Case Study | Maxtron Innovations",
+        twitterDescription:
+          "Explore Maxtron's collaboration with ICCA, focusing on digital growth strategies and technological advancements. This case study delves into the project's journey and outcomes.",
+      },
+      Tawuniya: {
+        title: "Tawuniya Case Study | Maxtron Innovations",
+        description:
+          "Explore Maxtron's collaboration with Tawuniya, focusing on digital growth strategies and technological advancements. This case study delves into the project's journey and outcomes.",
+        ogTitle: "Tawuniya Case Study | Maxtron Innovations",
+        ogDescription:
+          "Explore Maxtron's collaboration with Tawuniya, focusing on digital growth strategies and technological advancements. This case study delves into the project's journey and outcomes.",
+        twitterTitle: "Tawuniya Case Study | Maxtron Innovations",
+        twitterDescription:
+          "Explore Maxtron's collaboration with Tawuniya, focusing on digital growth strategies and technological advancements. This case study delves into the project's journey and outcomes.",
+      },
+      ULALO: {
+        title: "ULALO Case Study | Maxtron Innovations",
+        description:
+          "Discover how Maxtron partnered with ULALO to drive digital transformation through innovative solutions. Read the full case study for insights into our approach and results.",
+        ogTitle: "ULALO Case Study | Maxtron Innovations",
+        ogDescription:
+          "Discover how Maxtron partnered with ULALO to drive digital transformation through innovative solutions. Read the full case study for insights into our approach and results.",
+        twitterTitle: "ULALO Case Study | Maxtron Innovations",
+        twitterDescription:
+          "Discover how Maxtron partnered with ULALO to drive digital transformation through innovative solutions. Read the full case study for insights into our approach and results.",
+      },
+    };
+
+    return metadataMap[title as keyof typeof metadataMap] || defaultMetadata;
+  };
+
+  const metadata = generateMetadata();
+
   return (
     <>
       <Helmet>
-        {(() => {
-          if (
-            title === "Ludo Love" ||
-            title === "Blockchain Game Development"
-          ) {
-            return (
-              <>
-                <title>
-                  Blockchain Game Development Case Study | Maxtron Innovations
-                </title>
-                <meta
-                  name="description"
-                  content="Discover how Maxtron created a blockchain-based game solution. This case study details the development process, challenges overcome, and results achieved."
-                />
-                <meta
-                  property="og:title"
-                  content="Blockchain Game Development Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="og:description"
-                  content="Discover how Maxtron created a blockchain-based game solution. This case study details the development process, challenges overcome, and results achieved."
-                />
-                <meta
-                  property="twitter:title"
-                  content="Blockchain Game Development Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="twitter:description"
-                  content="Discover how Maxtron created a blockchain-based game solution. This case study details the development process, challenges overcome, and results achieved."
-                />
-              </>
-            );
-          } else if (title === "ShaperCult") {
-            return (
-              <>
-                <title>
-                  ECommerce Marketing Case Study | Maxtron Innovations
-                </title>
-                <meta
-                  name="description"
-                  content="Learn how Maxtron transformed eCommerce marketing strategies to drive growth, optimize ROI, and increase conversions. Read the full case study."
-                />
-                <meta
-                  property="og:title"
-                  content="ECommerce Marketing Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="og:description"
-                  content="Learn how Maxtron transformed eCommerce marketing strategies to drive growth, optimize ROI, and increase conversions. Read the full case study."
-                />
-                <meta
-                  property="twitter:title"
-                  content="ECommerce Marketing Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="twitter:description"
-                  content="Learn how Maxtron transformed eCommerce marketing strategies to drive growth, optimize ROI, and increase conversions. Read the full case study."
-                />
-              </>
-            );
-          } else if (title === "HYPER CASUAL GAMES") {
-            return (
-              <>
-                <title>
-                  Mini Gaming Platform Case Study | Maxtron Innovations
-                </title>
-                <meta
-                  name="description"
-                  content="Discover how Maxtron engineered a compact, high-performance gaming platform. This case study delves into the design, development, and impact of the project."
-                />
-                <meta
-                  property="og:title"
-                  content="Mini Gaming Platform Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="og:description"
-                  content="Discover how Maxtron engineered a compact, high-performance gaming platform. This case study delves into the design, development, and impact of the project."
-                />
-                <meta
-                  property="twitter:title"
-                  content="Mini Gaming Platform Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="twitter:description"
-                  content="Discover how Maxtron engineered a compact, high-performance gaming platform. This case study delves into the design, development, and impact of the project."
-                />
-              </>
-            );
-          } else if (title === "DECENTRALIZED AI PLATEFORM") {
-            return (
-              <>
-                <title>
-                  Decentralized AI Platform Case Study | Maxtron Innovations
-                </title>
-                <meta
-                  name="description"
-                  content="Explore how Maxtron developed an ethical and compliant decentralized AI platform, ensuring data integrity and intellectual property protection."
-                />
-                <meta
-                  property="og:title"
-                  content="Decentralized AI Platform Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="og:description"
-                  content="Explore how Maxtron developed an ethical and compliant decentralized AI platform, ensuring data integrity and intellectual property protection."
-                />
-                <meta
-                  property="twitter:title"
-                  content="Decentralized AI Platform Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="twitter:description"
-                  content="Explore how Maxtron developed an ethical and compliant decentralized AI platform, ensuring data integrity and intellectual property protection."
-                />
-              </>
-            );
-          } else if (title === "AI CALLING AGENT") {
-            return (
-              <>
-                <title>AI Calling Tool Case Study | Maxtron Innovations</title>
-                <meta
-                  name="description"
-                  content="Explore Maxtron's approach to creating an AI calling tool that streamlines communication workflows. This case study delves into the project's journey from concept to deployment."
-                />
-                <meta
-                  property="og:title"
-                  content="AI Calling Tool Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="og:description"
-                  content="Explore Maxtron's approach to creating an AI calling tool that streamlines communication workflows. This case study delves into the project's journey from concept to deployment."
-                />
-                <meta
-                  property="twitter:title"
-                  content="AI Calling Tool Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="twitter:description"
-                  content="Explore Maxtron's approach to creating an AI calling tool that streamlines communication workflows. This case study delves into the project's journey from concept to deployment."
-                />
-              </>
-            );
-          } else if (title === "WEB 3.0 MARKETING PROJECT") {
-            return (
-              <>
-                <title>
-                  Crypto Project Marketing Case Study | Maxtron Innovations
-                </title>
-                <meta
-                  name="description"
-                  content="Explore Maxtron's approach to crypto project marketing, focusing on community building and strategic outreach. This case study highlights our methods and outcomes."
-                />
-                <meta
-                  property="og:title"
-                  content="Crypto Project Marketing Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="og:description"
-                  content="Explore Maxtron's approach to crypto project marketing, focusing on community building and strategic outreach. This case study highlights our methods and outcomes."
-                />
-                <meta
-                  property="twitter:title"
-                  content="Crypto Project Marketing Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="twitter:description"
-                  content="Explore Maxtron's approach to crypto project marketing, focusing on community building and strategic outreach. This case study highlights our methods and outcomes."
-                />
-              </>
-            );
-          } else if (title === "VOTING BLOCK USA") {
-            return (
-              <>
-                <title>
-                  Blockchain-Based E-Voting System Case Study | Maxtron
-                  Innovations
-                </title>
-                <meta
-                  name="description"
-                  content="Discover how Maxtron developed a secure and transparent blockchain-based e-voting system. This case study explores the design, implementation, and impact of the solution."
-                />
-                <meta
-                  property="og:title"
-                  content="Blockchain-Based E-Voting System Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="og:description"
-                  content="Discover how Maxtron developed a secure and transparent blockchain-based e-voting system. This case study explores the design, implementation, and impact of the solution."
-                />
-                <meta
-                  property="twitter:title"
-                  content="Blockchain-Based E-Voting System Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="twitter:description"
-                  content="Discover how Maxtron developed a secure and transparent blockchain-based e-voting system. This case study explores the design, implementation, and impact of the solution."
-                />
-              </>
-            );
-          } else if (title === "Good Standing") {
-            return (
-              <>
-                <title>Good Standing Case Study | Maxtron Innovations</title>
-                <meta
-                  name="description"
-                  content="Explore Maxtron's approach to ensuring clients' good standing by implementing effective compliance strategies. This case study delves into the project's journey and outcomes."
-                />
-                <meta
-                  property="og:title"
-                  content="Good Standing Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="og:description"
-                  content="Explore Maxtron's approach to ensuring clients' good standing by implementing effective compliance strategies. This case study delves into the project's journey and outcomes."
-                />
-                <meta
-                  property="twitter:title"
-                  content="Good Standing Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="twitter:description"
-                  content="Explore Maxtron's approach to ensuring clients' good standing by implementing effective compliance strategies. This case study delves into the project's journey and outcomes."
-                />
-              </>
-            );
-          } else if (title === "GRO8") {
-            return (
-              <>
-                <title>Gro8 Case Study | Maxtron Innovations</title>
-                <meta
-                  name="description"
-                  content="Explore Maxtron's collaboration with Gro8, focusing on digital growth strategies and technological advancements. This case study delves into the project's journey and outcomes."
-                />
-                <meta
-                  property="og:title"
-                  content="Gro8 Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="og:description"
-                  content="Explore Maxtron's collaboration with Gro8, focusing on digital growth strategies and technological advancements. This case study delves into the project's journey and outcomes."
-                />
-                <meta
-                  property="twitter:title"
-                  content="Gro8 Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="twitter:description"
-                  content="Explore Maxtron's collaboration with Gro8, focusing on digital growth strategies and technological advancements. This case study delves into the project's journey and outcomes."
-                />
-              </>
-            );
-          } else if (title === "TOKEN LAUNCH") {
-            return (
-              <>
-                <title>Token Launch Case Study | Maxtron Innovations</title>
-                <meta
-                  name="description"
-                  content="Explore Maxtron's comprehensive strategy for a token launch, focusing on market positioning, investor relations, and post-launch support. This case study delves into the project's journey and results."
-                />
-                <meta
-                  property="og:title"
-                  content="Token Launch Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="og:description"
-                  content="Explore Maxtron's comprehensive strategy for a token launch, focusing on market positioning, investor relations, and post-launch support. This case study delves into the project's journey and results."
-                />
-                <meta
-                  property="twitter:title"
-                  content="Token Launch Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="twitter:description"
-                  content="Explore Maxtron's comprehensive strategy for a token launch, focusing on market positioning, investor relations, and post-launch support. This case study delves into the project's journey and results."
-                />
-              </>
-            );
-          } else if (title === "ICCA") {
-            return (
-              <>
-                <title>ICCA Case Study | Maxtron Innovations</title>
-                <meta
-                  name="description"
-                  content="Explore Maxtron's collaboration with ICCA, focusing on digital growth strategies and technological advancements. This case study delves into the project's journey and outcomes."
-                />
-                <meta
-                  property="og:title"
-                  content="ICCA Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="og:description"
-                  content="Explore Maxtron's collaboration with ICCA, focusing on digital growth strategies and technological advancements. This case study delves into the project's journey and outcomes."
-                />
-                <meta
-                  property="twitter:title"
-                  content="ICCA Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="twitter:description"
-                  content="Explore Maxtron's collaboration with ICCA, focusing on digital growth strategies and technological advancements. This case study delves into the project's journey and outcomes."
-                />
-              </>
-            );
-          } else if (title === "TAWUNIYA") {
-            return (
-              <>
-                <title>Tawuniya Case Study | Maxtron Innovations</title>
-                <meta
-                  name="description"
-                  content="Explore Maxtron's collaboration with Tawuniya, focusing on digital growth strategies and technological advancements. This case study delves into the project's journey and outcomes."
-                />
-                <meta
-                  property="og:title"
-                  content="Tawuniya Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="og:description"
-                  content="Explore Maxtron's collaboration with Tawuniya, focusing on digital growth strategies and technological advancements. This case study delves into the project's journey and outcomes."
-                />
-                <meta
-                  property="twitter:title"
-                  content="Tawuniya Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="twitter:description"
-                  content="Explore Maxtron's collaboration with Tawuniya, focusing on digital growth strategies and technological advancements. This case study delves into the project's journey and outcomes."
-                />
-              </>
-            );
-          } else if (title === "ULALO") {
-            return (
-              <>
-                <title>ULALO Case Study | Maxtron Innovations</title>
-                <meta
-                  name="description"
-                  content="Discover how Maxtron partnered with ULALO to drive digital transformation through innovative solutions. Read the full case study for insights into our approach and results."
-                />
-                <meta
-                  property="og:title"
-                  content="ULALO Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="og:description"
-                  content="Discover how Maxtron partnered with ULALO to drive digital transformation through innovative solutions. Read the full case study for insights into our approach and results."
-                />
-                <meta
-                  property="twitter:title"
-                  content="ULALO Case Study | Maxtron Innovations"
-                />
-                <meta
-                  property="twitter:description"
-                  content="Discover how Maxtron partnered with ULALO to drive digital transformation through innovative solutions. Read the full case study for insights into our approach and results."
-                />
-              </>
-            );
-          } else {
-            return (
-              <>
-                <title>{title} | Case Study | Maxtron</title>
-                <meta
-                  name="description"
-                  content={
-                    description ||
-                    subtitle ||
-                    `Case study: ${title} - ${
-                      subtitle || "Learn how we delivered innovative solutions"
-                    }`
-                  }
-                />
-                <meta
-                  property="og:title"
-                  content={`${title} | Case Study | Maxtron`}
-                />
-                <meta
-                  property="og:description"
-                  content={
-                    description ||
-                    subtitle ||
-                    `Case study: ${title} - ${
-                      subtitle || "Learn how we delivered innovative solutions"
-                    }`
-                  }
-                />
-                <meta
-                  property="twitter:title"
-                  content={`${title} | Case Study | Maxtron`}
-                />
-                <meta
-                  property="twitter:description"
-                  content={
-                    description ||
-                    subtitle ||
-                    `Case study: ${title} - ${
-                      subtitle || "Learn how we delivered innovative solutions"
-                    }`
-                  }
-                />
-              </>
-            );
-          }
-        })()}
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta property="og:title" content={metadata.title || metadata.title} />
+        <meta property="og:description" content={metadata.description} />
+        <meta name="twitter:title" content={metadata.title || metadata.title} />
+        <meta name="twitter:description" content={metadata.description} />
         <link rel="canonical" href={canonicalUrl} />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:image" content={heroImage} />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={canonicalUrl} />
-        <meta property="twitter:image" content={heroImage} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={canonicalUrl} />
+        <meta name="twitter:image" content={heroImage} />
       </Helmet>
       <div className="w-full flex flex-col gap-3 md:gap-5 lg:gap-6 xl:gap-7 mt-2 mb-4 relative">
         <div

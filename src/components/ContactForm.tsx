@@ -8,7 +8,7 @@ import ContactImg from "../../public/formimg.webp";
 import "../page.css";
 import "react-toastify/dist/ReactToastify.css";
 import { RightClick } from "./VectorImage";
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
 
 const schema = z.object({
   fullName: z
@@ -53,19 +53,24 @@ const ContactForm: React.FC = () => {
   console.log("Current form errors:", errors);
 
   const sectionClassName =
-    location.pathname === "/Contact"
+    location.pathname === "/contact"
       ? "py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 pt-24 sm:pt-32 md:pt-36"
       : "py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12";
 
   return (
     <>
-      <Helmet>
-        <title> Maxtron Innovation</title>
-        <meta name="description" content=" Maxtron for innovative IT and marketing solutions to accelerate your business growth." />
-        <link rel="canonical" href="https://www.maxtron.ai" />
-        <meta name="robots" content="index, follow" />
-        <meta httpEquiv="X-Robots-Tag" content="index, follow" />
-      </Helmet>
+      {location.pathname === "/contact" && (
+        <Helmet>
+          <title>Contact Us | Maxtron Innovations</title>
+          <meta
+            name="description"
+            content="Get in touch with Maxtron Innovations for AI, Blockchain, Web3 and product development services."
+          />
+          <link rel="canonical" href="https://www.maxtron.ai/contact" />
+          <meta name="robots" content="index, follow" />
+          <meta httpEquiv="X-Robots-Tag" content="index, follow" />
+        </Helmet>
+      )}
       <section id="contact-us" className={sectionClassName}>
         <div className="shadow-lg border border-[#BEBCCA] rounded-3xl p-5 md:p-8">
           <div
