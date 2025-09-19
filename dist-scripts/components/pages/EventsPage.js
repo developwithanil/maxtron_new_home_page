@@ -10,10 +10,19 @@ import artBaselImg from "../../assets/events/artbasel.webp";
 import nftNycImg from "../../assets/events/nftNycImg.webp";
 import futuristImg from "../../assets/events/futuristconference.webp";
 import august from "../../assets/events/august.webp";
+import september from "../../assets/events/september.webp";
 const EventsPage = () => {
     const eventsData = [
         {
             id: 1,
+            title: "What Makes a Startup Investable",
+            date: "September 2025",
+            image: september,
+            isPlaceholder: false,
+            link: "https://www.youtube.com/live/0UJfmOn3hgE?si=SXpewxPvOWAzk0Q0",
+        },
+        {
+            id: 2,
             title: "Collateralizing Digital Assets and What Regulators Want Now",
             date: "August 2025",
             image: august,
@@ -21,7 +30,7 @@ const EventsPage = () => {
             link: "https://www.youtube.com/live/q_pznGJX8fY?si=Yb7VWGYxdX5AbfxV",
         },
         {
-            id: 2,
+            id: 3,
             title: "Token 2049 Dubai",
             date: "March 2025",
             image: token2049Img,
@@ -29,7 +38,7 @@ const EventsPage = () => {
             link: "",
         },
         {
-            id: 3,
+            id: 4,
             title: "Consensus Hong Kong",
             date: "February 2025",
             image: consensusImg,
@@ -37,7 +46,7 @@ const EventsPage = () => {
             link: "",
         },
         {
-            id: 4,
+            id: 5,
             title: "Art Basel",
             date: "June 2024",
             image: artBaselImg,
@@ -45,7 +54,7 @@ const EventsPage = () => {
             link: "",
         },
         {
-            id: 5,
+            id: 6,
             title: "NFT NYC",
             date: "June 2024",
             image: nftNycImg,
@@ -53,7 +62,7 @@ const EventsPage = () => {
             link: "",
         },
         {
-            id: 6,
+            id: 7,
             title: "Futurist Conference",
             date: "May 2024",
             image: futuristImg,
@@ -61,7 +70,7 @@ const EventsPage = () => {
             link: "",
         },
         {
-            id: 7,
+            id: 8,
             title: "Miami NFT Week",
             date: "April 2024",
             image: miamiNftImg,

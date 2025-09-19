@@ -122,18 +122,21 @@ const CaseStudyPage = () => {
   return (
     <>
       <Helmet>
-        <title>Case Studies | Maxtron</title>
+        <title>Proven Case Studies | Maxtron Innovations</title>
         <meta
           name="description"
-          content="Explore Maxtron's case studies to see how we've delivered innovative IT and marketing solutions for our clients."
+          content="Explore how Maxtron has delivered transformative AI, blockchain, and IT product solutions across industries. Read case studies highlighting strategy, execution, and measurable outcomes."
         />
         <link rel="canonical" href="https://www.maxtron.ai/case-study" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
-        <meta property="og:title" content="Case Studies | Maxtron" />
+        <meta
+          property="og:title"
+          content="Proven Case Studies | Maxtron Innovations"
+        />
         <meta
           property="og:description"
-          content="Explore Maxtron's case studies to see how we've delivered innovative IT and marketing solutions for our clients."
+          content="Explore how Maxtron has delivered transformative AI, blockchain, and IT product solutions across industries. Read case studies highlighting strategy, execution, and measurable outcomes."
         />
         <meta
           property="og:image"

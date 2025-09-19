@@ -49,7 +49,10 @@ const InternalPageDetails: React.FC<InternalPageProps> = ({ caseStudies }) => {
     <>
       <Helmet>
         {(() => {
-          if (title === "Ludo Love") {
+          if (
+            title === "Ludo Love" ||
+            title === "Blockchain Game Development"
+          ) {
             return (
               <>
                 <title>
@@ -130,6 +133,34 @@ const InternalPageDetails: React.FC<InternalPageProps> = ({ caseStudies }) => {
                 <meta
                   property="twitter:description"
                   content="Discover how Maxtron engineered a compact, high-performance gaming platform. This case study delves into the design, development, and impact of the project."
+                />
+              </>
+            );
+          } else if (title === "DECENTRALIZED AI PLATEFORM") {
+            return (
+              <>
+                <title>
+                  Decentralized AI Platform Case Study | Maxtron Innovations
+                </title>
+                <meta
+                  name="description"
+                  content="Explore how Maxtron developed an ethical and compliant decentralized AI platform, ensuring data integrity and intellectual property protection."
+                />
+                <meta
+                  property="og:title"
+                  content="Decentralized AI Platform Case Study | Maxtron Innovations"
+                />
+                <meta
+                  property="og:description"
+                  content="Explore how Maxtron developed an ethical and compliant decentralized AI platform, ensuring data integrity and intellectual property protection."
+                />
+                <meta
+                  property="twitter:title"
+                  content="Decentralized AI Platform Case Study | Maxtron Innovations"
+                />
+                <meta
+                  property="twitter:description"
+                  content="Explore how Maxtron developed an ethical and compliant decentralized AI platform, ensuring data integrity and intellectual property protection."
                 />
               </>
             );

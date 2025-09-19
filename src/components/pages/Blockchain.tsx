@@ -13,13 +13,22 @@ const Blockchain = () => {
     <div className="w-full text-white max-w-[96rem] mx-auto">
       <Helmet>
         <title>Blockchain Development | Maxtron</title>
-        <meta name="description" content="Maxtron offers expert blockchain development services for secure, scalable, and innovative solutions." />
+        <meta
+          name="description"
+          content="Maxtron offers expert blockchain development services for secure, scalable, and innovative solutions."
+        />
         <link rel="canonical" href="https://www.maxtron.ai/blockchain" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content="Blockchain Development | Maxtron" />
-        <meta property="og:description" content="Maxtron offers expert blockchain development services for secure, scalable, and innovative solutions." />
-        <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
+        <meta
+          property="og:description"
+          content="Maxtron offers expert blockchain development services for secure, scalable, and innovative solutions."
+        />
+        <meta
+          property="og:image"
+          content="https://www.maxtron.ai/src/assets/MaxtronLogo.png"
+        />
         <meta property="og:url" content="https://www.maxtron.ai/blockchain" />
         <meta property="og:type" content="website" />
       </Helmet>

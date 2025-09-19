@@ -32,6 +32,7 @@ import Blockchain from "./components/pages/Blockchain";
 import ArtificialIntelligence from "./components/pages/ArtificialIntelligence";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 import PerformanceMarketing from "./components/pages/PerformanceMarketing";
+import NotFound from "./components/pages/NotFound";
 
 const Home: React.FC = () => (
   <div>
@@ -117,6 +118,8 @@ const App: React.FC = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/book" element={<Book />} />
+        {/* Catch-all route for 404 - must be last */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
       {/* <ContactWidget /> */}

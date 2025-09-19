@@ -1,4 +1,4 @@
-import { jsx as _jsx } from "react/jsx-runtime";
+import { jsxs as _jsxs, jsx as _jsx } from "react/jsx-runtime";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import React from "react";
 import Mercedes from "../../../public/client/mercedes.svg";
@@ -36,6 +36,6 @@ const clients = [
     { name: "Audi", logo: Audi },
 ];
 const ClientMarquee = () => {
-    return (_jsx("div", { className: "py-6 md:py-8 lg:py-10 xl:py-11 my-6 md:my-7 lg:my-8 xl:my-10", children: _jsx("div", { className: "container mx-auto px-4 space-y-3 lg:space-y-4", children: _jsx("div", { className: "relative marquee-container", children: _jsx("div", { className: "animate-marquee whitespace-nowrap", children: clients.concat(clients).map((client, index) => (_jsx("div", { className: "marquee-item", children: _jsx("img", { src: client.logo, alt: client.name, className: "h-24 md:h-32 lg:h-36 xl:h-40 w-24 md:w-32 lg:w-36 xl:w-40 p-2 md:p-4" }) }, index))) }) }) }) }));
+    return (_jsx("div", { className: "py-6 md:py-8 lg:py-10 xl:py-11 my-6 md:my-7 lg:my-8 xl:my-10", children: _jsx("div", { className: "container mx-auto px-4 space-y-3 lg:space-y-4", children: _jsxs("div", { className: "relative marquee-container", children: [_jsxs("h1", { className: "text-2xl sm:text-2xl md:text-5xl font-bold text-[#2A2A2A] mb-3 md:mb-4 lg:mb-6 xl:mb-6 font-[Switzer] text-center", children: [" ", "Our Clients", " "] }), _jsx("div", { className: "animate-marquee whitespace-nowrap", children: clients.concat(clients).map((client, index) => (_jsx("div", { className: "marquee-item", children: _jsx("img", { src: client.logo, alt: client.name, className: "h-24 md:h-32 lg:h-36 xl:h-40 w-24 md:w-32 lg:w-36 xl:w-40 p-2 md:p-4" }) }, index))) })] }) }) }));
 };
 export default React.memo(ClientMarquee);

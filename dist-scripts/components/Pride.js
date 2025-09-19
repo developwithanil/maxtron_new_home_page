@@ -43,7 +43,7 @@ const DownArrowSVG = ({ className = "w-5 h-5" }) => (_jsx("svg", { xmlns: "http:
 const Pride = () => {
     const [activeTabId, setActiveTabId] = useState("experience");
     const activeTabData = prideData.find((tab) => tab.id === activeTabId);
-    return (_jsx("section", { id: "pride-in-numbers", className: "relative md:py-16 lg:py-20 text-center", children: _jsxs("div", { className: "max-w-[96rem] mx-auto p-5 md:p-4 lg:p-4 xl:p-4 px-4", children: [_jsx("h2", { className: "text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2A2A2A] mb-10 md:mb-14", children: "We Take Pride In Our Numbers" }), _jsx("div", { className: "md:hidden max-w-md mx-auto", children: prideData.map((item) => {
+    return (_jsx("section", { id: "pride-in-numbers", className: "relative md:py-16 lg:py-20 text-center", children: _jsxs("div", { className: "max-w-[96rem] mx-auto p-5 md:p-4 lg:p-4 xl:p-4 px-4", children: [_jsx("h2", { className: "text-2xl sm:text-4xl lg:text-5xl font-bold text-[#2A2A2A] mb-10 md:mb-14", children: "We Take Pride In Our Numbers" }), _jsx("div", { className: "md:hidden max-w-md mx-auto", children: prideData.map((item) => {
                         const isMobileActive = activeTabId === item.id;
                         return (_jsxs("div", { className: `rounded-xl mb-3 overflow-hidden shadow-lg transition-all duration-300 ease-in-out
                   ${isMobileActive ? "bg-[#7A35C1]" : "border border-[#7A35C1]"}
