@@ -1,17 +1,19 @@
 import React from "react";
 import bg404 from "../../../public/404-bg.svg";
+import { Link } from "react-router-dom";
 
 const App = () => {
   return (
     <div
-      className="w-full h-screen flex flex-col lg:flex-row items-center justify-center space-y-16 lg:space-y-0 space-x-8 2xl:space-x-0"
+      className="w-full h-screen flex flex-col lg:flex-row items-center justify-center space-y-16 lg:space-y-0 space-x-8 2xl:space-x-0 relative"
       style={{
         backgroundImage: `url(${bg404})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0"></div>
+      <div className="absolute inset-0 bg-white opacity-40 pointer-events-none"></div>
+
       <div className="relative z-10 w-full lg:w-1/2 flex flex-col items-center justify-center lg:px-2 xl:px-0 text-center">
         <p className="text-7xl md:text-8xl lg:text-9xl font-bold tracking-wider text-gray-800">
           404
@@ -23,20 +25,20 @@ const App = () => {
           Sorry, the page you are looking for could not be found.
         </p>
         <div className="flex flex-row gap-4">
-          <a
-            href="#"
-            className="flex items-center space-x-2 bg-gray-900 hover:bg-gray-800 text-gray-100 px-4 py-2 rounded transition duration-150"
+          <Link
+            to="/"
+            className="flex items-center space-x-2 bg-gray-800 hover:bg-gray-800 text-gray-100 px-4 py-2 rounded transition duration-150"
             title="Return Home"
           >
             <span>Return Home</span>
-          </a>
-          <a
-            href="#"
-            className="flex items-center space-x-2 bg-purple-600 hover:bg-gray-800 text-gray-100 px-4 py-2 rounded transition duration-150"
-            title="Return Home"
+          </Link>
+          <Link
+            to="/services"
+            className="flex items-center space-x-2 bg-purple-800 hover:bg-purple-700 text-gray-100 px-4 py-2 rounded transition duration-150"
+            title="Services"
           >
             <span>Services</span>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
