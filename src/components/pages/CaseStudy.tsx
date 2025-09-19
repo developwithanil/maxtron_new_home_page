@@ -18,7 +18,7 @@ import { motion } from "motion/react";
 import { useState } from "react";
 import CasesCard from "../elementalComponent/CasesCard";
 import ContactForm from "../ContactForm";
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
 
 const clients = [
   { name: "Mercedes", logo: Mercedes },
@@ -78,14 +78,26 @@ const CaseStudy = () => {
   return (
     <>
       <Helmet>
-        <title>Case Studies | Maxtron</title>
-        <meta name="description" content="Explore Maxtron's case studies: real-world examples of our IT, blockchain, AI, and marketing solutions driving business success." />
+        <title>Proven Case Studies | Maxtron Innovations</title>
+        <meta
+          name="description"
+          content="Explore how Maxtron has delivered transformative AI, blockchain, and IT product solutions across industries. Read case studies highlighting strategy, execution, and measurable outcomes."
+        />
         <link rel="canonical" href="https://www.maxtron.ai/case-studies" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
-        <meta property="og:title" content="Case Studies | Maxtron" />
-        <meta property="og:description" content="Explore Maxtron's case studies: real-world examples of our IT, blockchain, AI, and marketing solutions driving business success." />
-        <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
+        <meta
+          property="og:title"
+          content="Proven Case Studies | Maxtron Innovations"
+        />
+        <meta
+          property="og:description"
+          content="Explore how Maxtron has delivered transformative AI, blockchain, and IT product solutions across industries. Read case studies highlighting strategy, execution, and measurable outcomes."
+        />
+        <meta
+          property="og:image"
+          content="https://www.maxtron.ai/src/assets/MaxtronLogo.png"
+        />
         <meta property="og:url" content="https://www.maxtron.ai/case-studies" />
         <meta property="og:type" content="website" />
       </Helmet>

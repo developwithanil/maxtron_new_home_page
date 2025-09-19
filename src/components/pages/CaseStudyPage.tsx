@@ -12,7 +12,7 @@ import img10 from "../../assets/case/img10.webp";
 import ContactForm from "../ContactForm";
 import MoreCaseStudies from "./MoreCaseStudies";
 import { useState } from "react";
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
 
 const caseStudyData = [
   {
@@ -123,13 +123,22 @@ const CaseStudyPage = () => {
     <>
       <Helmet>
         <title>Case Studies | Maxtron</title>
-        <meta name="description" content="Explore Maxtron's case studies to see how we've delivered innovative IT and marketing solutions for our clients." />
+        <meta
+          name="description"
+          content="Explore Maxtron's case studies to see how we've delivered innovative IT and marketing solutions for our clients."
+        />
         <link rel="canonical" href="https://www.maxtron.ai/case-study" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content="Case Studies | Maxtron" />
-        <meta property="og:description" content="Explore Maxtron's case studies to see how we've delivered innovative IT and marketing solutions for our clients." />
-        <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
+        <meta
+          property="og:description"
+          content="Explore Maxtron's case studies to see how we've delivered innovative IT and marketing solutions for our clients."
+        />
+        <meta
+          property="og:image"
+          content="https://www.maxtron.ai/src/assets/MaxtronLogo.png"
+        />
         <meta property="og:url" content="https://www.maxtron.ai/case-study" />
         <meta property="og:type" content="website" />
       </Helmet>
