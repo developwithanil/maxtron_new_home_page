@@ -73,18 +73,23 @@ const AboutUs = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | Maxtron</title>
+        <title>
+          About Maxtron | AI, Blockchain & IT Product Development Company
+        </title>
         <meta
           name="description"
-          content="Meet the Maxtron team: technical, marketing, and creative experts delivering innovative solutions."
+          content="Maxtron is a leading technology company specializing in AI, blockchain, and full‑stack IT product development. Learn about our mission, core values, innovation-driven approach, and how we're shaping the future of digital experiences."
         />
         <link rel="canonical" href="https://www.maxtron.ai/about" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
-        <meta property="og:title" content="About Us | Maxtron" />
+        <meta
+          property="og:title"
+          content="About Maxtron | AI, Blockchain & IT Product Development Company"
+        />
         <meta
           property="og:description"
-          content="Meet the Maxtron team: technical, marketing, and creative experts delivering innovative solutions."
+          content="Maxtron is a leading technology company specializing in AI, blockchain, and full‑stack IT product development. Learn about our mission, core values, and innovation-driven approach."
         />
         <meta
           property="og:image"

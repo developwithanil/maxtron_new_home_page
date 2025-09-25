@@ -1,5 +1,5 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import React from "react";
+import { Helmet } from "react-helmet-async";
 import career from "../../../src/assets/career.webp";
 
 import FormTalent from "../FormTalent";
@@ -27,14 +27,28 @@ const Careers = () => {
   return (
     <>
       <Helmet>
-        <title>Careers | Maxtron</title>
-        <meta name="description" content="Join Maxtron's talent community. Get notified about new jobs and build your network in tech and marketing." />
+        <title>
+          Careers at Maxtron | AI, Blockchain & Tech Innovation Jobs
+        </title>
+        <meta
+          name="description"
+          content="Discover exciting career opportunities at Maxtron, a fast-growing company driving innovation in AI, blockchain, and IT solutions. Join our passionate team of technologists, developers, and visionaries building the future of tech. Explore open roles and apply today."
+        />
         <link rel="canonical" href="https://www.maxtron.ai/careers" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
-        <meta property="og:title" content="Careers | Maxtron" />
-        <meta property="og:description" content="Join Maxtron's talent community. Get notified about new jobs and build your network in tech and marketing." />
-        <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
+        <meta
+          property="og:title"
+          content=" Careers at Maxtron | AI, Blockchain & Tech Innovation Jobs"
+        />
+        <meta
+          property="og:description"
+          content="Discover exciting career opportunities at Maxtron, a fast-growing company driving innovation in AI, blockchain, and IT solutions. Join our passionate team of technologists, developers, and visionaries building the future of tech. Explore open roles and apply today."
+        />
+        <meta
+          property="og:image"
+          content="https://www.maxtron.ai/src/assets/MaxtronLogo.png"
+        />
         <meta property="og:url" content="https://www.maxtron.ai/careers" />
         <meta property="og:type" content="website" />
       </Helmet>
