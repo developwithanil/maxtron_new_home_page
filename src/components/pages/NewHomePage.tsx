@@ -65,7 +65,7 @@ const NewHomePage = () => {
           Skip to main content
         </a>
         <main id="main-content" role="main">
-          <h1 className="sr-only">Maxtron - Creating Winning Products</h1>
+          {/* <h1 className="sr-only">Maxtron - Creating Winning Products</h1> */}
           <HeroSection />
           <nav aria-label="Page sections" className="sr-only">
             <ul>

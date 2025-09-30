@@ -205,10 +205,10 @@ const WhoMaxtron = () => {
           {" "}
           <Verify /> ENTERPRISE-GRADE SOLUTIONS{" "}
         </p>
-        <h1 className="text-2xl sm:text-2xl md:text-5xl font-bold text-[#2A2A2A] mb-3 md:mb-4 font-[Switzer]">
+        <h2 className="text-2xl sm:text-2xl md:text-5xl font-bold text-[#2A2A2A] mb-3 md:mb-4 font-[Switzer]">
           {" "}
           Who Are We{" "}
-        </h1>
+        </h2>
         <p className="text-base sm:text-sm md:text-lg mb-6 md:mb-10 lg:mb-10 xl:mb-10 text-[#5B5570] font-openSansHebrew px-2 w-[80%] mx-auto">
           {" "}
           Maxtron.ai is a global digital product engineering and consulting
