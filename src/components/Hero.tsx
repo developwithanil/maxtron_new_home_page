@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <div className="relative top-0">
-      <div className="mx-4 mt-4 sm:mx-6 lg:mx-8 ">
+      <div className="mx-4 mt-4 sm:mx-6 lg:mx-8">
         <div className="relative h-screen w-full overflow-hidden rounded-3xl">
           <video
             className="absolute top-0 left-0 w-full h-full object-cover"

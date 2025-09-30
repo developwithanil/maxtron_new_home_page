@@ -41,10 +41,10 @@ const ClientMarquee = () => {
     <div className="py-6 md:py-8 lg:py-10 xl:py-11 my-6 md:my-7 lg:my-8 xl:my-10">
       <div className="container mx-auto px-4 space-y-3 lg:space-y-4">
         <div className="relative marquee-container">
-          <h1 className="text-2xl sm:text-2xl md:text-5xl font-bold text-[#2A2A2A] mb-3 md:mb-4 lg:mb-6 xl:mb-6 font-[Switzer] text-center">
+          <h2 className="text-2xl sm:text-2xl md:text-5xl font-bold text-[#2A2A2A] mb-3 md:mb-4 lg:mb-6 xl:mb-6 font-[Switzer] text-center">
             {" "}
             Our Clients{" "}
-          </h1>
+          </h2>
           <div className="animate-marquee whitespace-nowrap">
             {clients.concat(clients).map((client, index) => (
               <div key={index} className="marquee-item">
