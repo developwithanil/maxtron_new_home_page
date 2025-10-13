@@ -35,7 +35,7 @@ const Web3MarketingHeroSection = () => {
                 Maxtron Innovation empower Web3, Blockchain, and Crypto Projects
                 to grow, engage, and scale across India and the world.
               </p>
-              <h2 className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl text-start mb-1 sm:mb-2 md:mb-3 lg:mb-4 text-[#FFFFFF] font-[switzer] font-bold leading-snug">
+              <h2 className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl text-start mb-1 sm:mb-2 md:mb-3 lg:mb-4 text-[#FFFFFF] font-[switzer] font-bold leading-snug my-3">
                 Maxtron Innovation- Best crypto marketing agency in India
               </h2>
               <p className="text-xs sm:text-sm md:text-base lg:text-base xl:text-lg text-start bg-opacity-50 rounded text-[#F5F5F5] leading-snug">
@@ -44,9 +44,16 @@ const Web3MarketingHeroSection = () => {
                 meaningful visibility, credibility, and community growth. Our
                 team of crypto strategists, content creators, and growth hackers
                 design data-driven campaigns that build real engagement and
-                measurable ROI. We understand that crypto marketing is not “just
-                digital marketing.” It’s about trust, transparency, and timing —
-                and that’s where we excel.
+                measurable ROI.
+                <p className="my-3">
+                  {" "}
+                  We understand that crypto marketing is not “just digital
+                  marketing.”
+                </p>
+                <p>
+                  It’s about trust, transparency, and timing — and that’s where
+                  we excel.
+                </p>
               </p>
             </div>
           </div>
