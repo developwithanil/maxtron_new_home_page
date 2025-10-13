@@ -3,32 +3,32 @@ import usecase from "../../assets/usecase.webp";
 const marketingStepsData = [
   {
     number: "1",
-    title: "DeFi platforms",
+    title: "Discovery & Research",
     description:
-      "needing durable liquidity providers",
+      "— Understand your project’s vision, goals, and target community.",
   },
   {
     number: "2",
-    title: "NFT marketplaces",
-    description: "activating creator ecosystems",
+    title: "Strategy Design",
+    description:
+      "— Tailored marketing roadmap aligned with your tokenomics and timelines.",
   },
   {
     number: "3",
-    title: "DAOs",
+    title: "Creative Execution",
     description:
-      "increasing proposals, votes, and contributor funnels",
+      "— Content creation, influencer partnerships, and paid media rollout.",
   },
   {
     number: "4",
-    title: "Web3 infrastructure & tooling",
+    title: "Optimization & Reporting",
     description:
-      "solving B2B pain points",
+      "— Continuous monitoring, analytics, and transparent progress reports.",
   },
   {
     number: "5",
-    title: "Token projects",
-    description:
-      "prepping for CEX/DEX listings and post‑listing momentum",
+    title: "Scale & Sustain",
+    description: "— Ongoing growth campaigns for long-term brand visibility.",
   },
 ];
 
@@ -37,7 +37,7 @@ const MarketingCase = () => {
     <div className="max-w-[96rem]  mx-auto p-5 md:p-16 lg:p-16 xl:p-16 text-white flex flex-col md:flex-row w-full md:gap-28 gap-5">
       <div className="md:w-1/2 w-full flex flex-col justify-center items-center md:items-start text-center md:text-left space-y-6 sm:space-y-8">
         <h2 className="text-[20px] sm:text-[32px] lg:text-[48px] xl:text-[48px] font-medium text-[#2A2A2A] leading-tight">
-          Where We Excel
+          Our Process
         </h2>
 
         <div className="w-full flex justify-center items-center  ">
@@ -61,11 +61,11 @@ const MarketingCase = () => {
             <div className="bg-[#F5F5F5] text-[#1D1B33]  w-7 h-7 lg:w-9 lg:h-9 rounded-full flex items-center justify-center text-xl lg:text-xl flex-shrink-0 mt-1">
               {step.number}
             </div>
-            <div className="flex gap-1 mt-2">
-              <h3 className="text-sm lg:text-lg md:text-lg xl:text-lg text-[#2A2A2A] mb-1 font-semibold lg:mb-2 font-lexendDeca">
+            <div className="flex flex-wrap items-start mt-2">
+              <h3 className="text-sm md:text-base lg:text-lg xl:text-lg text-[#2A2A2A] mb-1 lg:mb-2 font-semibold font-lexendDeca mr-1">
                 {step.title}
               </h3>
-              <p className="text-[#2A2A2A] text-sm sm:text-base mt-[1px]">
+              <p className="text-[#2A2A2A] text-sm sm:text-base md:text-base mt-[1px]">
                 {step.description}
               </p>
             </div>

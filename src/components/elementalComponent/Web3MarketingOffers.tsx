@@ -29,51 +29,57 @@ const cardsData = [
   {
     id: 1,
     number: 1,
-    title: "Go‑to‑Market for Web3 Launches",
+    title: "Token Launch Marketing",
     description:
-      "Full‑stack GTM for dApps, tokens, L1s/L2s, and platforms-built for traction, not noise. Positioning, narrative, token design input, creator flywheels, and day‑0 distribution.",
+      "End-to-end launch support — from pre-launch hype to post-listing visibility.",
   },
   {
     id: 2,
     number: 2,
-    title: "Community Building & Management",
+    title: "Community Building",
     description:
-      "Active, high‑signal communities across Discord, Telegram, Farcaster, Lens, and X with culture‑driven programming, contributor pathways, and real‑time moderation.",
+      "Grow and manage active Telegram, Discord, and Reddit communities.",
   },
   {
     id: 3,
     number: 3,
-    title: "Crypto‑Native Content & Creative",
+    title: "Social Media Marketing",
     description:
-      "Threads, explainers, motion graphics, and token‑utility storytelling-crafted for DeFi users, DAO voters, and the crypto‑curious.",
+      "Organic + paid campaigns across X (Twitter), LinkedIn, Instagram, and YouTube.",
   },
   {
     id: 4,
     number: 4,
-    title: "Influencer & KOL Campaigns",
+    title: "Influencer & PR Outreach",
     description:
-      "End‑to‑end creator collaborations in your niche-authentic, compliance‑aware, and focused on measurable lift.",
+      "Collaborate with leading crypto influencers, KOLs, and global media houses.",
   },
   {
     id: 5,
     number: 5,
-    title: "Data & Growth Analytics",
+    title: "Content & Thought Leadership",
     description:
-      "Airdrop efficiency, wallet behavior, retention cohorts, and social sentiment-tracked in real time and fed back into experiments.",
+      "Blogs, whitepapers, website copy, and educational content that builds credibility.",
   },
   {
     id: 6,
     number: 6,
-    title: "PR & SEO for Crypto",
-    description:
-      "Category narratives, founder media training, announcements, link‑earning, and technical SEO. We place stories where early adopters actually read—Bankless, Decrypt, CoinDesk, and more-operating as a modern crypto marketing agency with newsroom rigor.",
+    title: "SEO for Crypto",
+    description: "Rank higher on Google with crypto-focused SEO strategies.",
   },
   {
     id: 7,
     number: 7,
-    title: "Paid Acquisition (Yes, We Run Paid)",
+    title: "Paid Ads & Growth Hacking",
     description:
-      "Your performance arm across search, social, programmatic, and Web3‑native networks. We plan, buy, and optimize as your crypto ad agency and on‑chain‑savvy crypto advertising company, with measurement tied to wallets, TVL, and LTV. When you need a crypto digital marketing agency, we're already in the seat.",
+      "Crypto ad networks, native ads, and airdrop campaigns that drive traction.",
+  },
+  {
+    id: 8,
+    number: 8,
+    title: "Metaverse & NFT Promotions",
+    description:
+      "Launch and promote NFT drops, Metaverse events, and virtual collaborations.",
   },
 ];
 
@@ -84,7 +90,7 @@ const Web3MarketingOffers = () => {
         className="text-[#2A2A2A] justify-center [font-family: Switzer] text-xl md:text-3xl
         lg:text-5xl xl:text-5xl text-start font-normal mb-12"
       >
-        What We Deliver
+        Our Services
       </h2>
 
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-[100px]">
@@ -95,7 +101,10 @@ const Web3MarketingOffers = () => {
             className="w-full h-auto object-cover rounded-lg"
           />
         </div>
-        <div className="w-full lg:w-[70%] max-h-[550px] overflow-y-auto " style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
+        <div
+          className="w-full lg:w-[70%] max-h-[550px] overflow-y-auto "
+          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+        >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-2">
             {cardsData.map((card) => (
               <Card

@@ -2,41 +2,34 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "Do you handle both PR and paid?",
+    question: "Is crypto marketing allowed in India?",
     answer: (
       <>
         <p>
-          Yes. We combine Web3 PR, community, content, KOLs, SEO, and paid media under one roof.
+          Yes, but with restrictions. At Maxtron Innovation, we design campaigns
+          that are 100% compliant with Indian and international ad policies.
         </p>
       </>
     ),
   },
   {
-    question: "Are you a crypto PR agency or a blockchain marketing agency?",
+    question: "What makes you different from other digital agencies?",
     answer: (
       <>
         <p>
-          Both-plus performance. We bring the depth of leading crypto PR agencies while operating like a product‑savvy blockchain marketing agency.
+          We specialize exclusively in crypto, Web3, and blockchain — combining
+          domain expertise with real marketing innovation.
         </p>
       </>
     ),
   },
   {
-    question: "How should I choose a crypto marketing agency?",
+    question: " Can you help global crypto brands enter the Indian market?",
     answer: (
       <>
         <p>
-          Look for on‑chain KPIs, tier‑1 references, clear experimentation cadence, and transparent dashboards. We share case studies and sprint plans up front.
-        </p>
-      </>
-    ),
-  },
-  {
-    question: "What paid channels do you run?",
-    answer: (
-      <>
-        <p>
-          Search, social, programmatic, and Web3‑native inventory-planned and optimized as your integrated crypto marketing company and performance partner.
+          Absolutely. We've helped several international projects localize their
+          brand and build indian communities.
         </p>
       </>
     ),

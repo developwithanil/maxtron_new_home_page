@@ -27,7 +27,7 @@ const NewHomePage = () => {
     <>
       <Helmet>
         <title>
-          Best Digital Product Engineering & Consulting Services | Maxtron.ai
+          Creating Winning Companies and Making Them Successful | Maxtron.ai
         </title>
 
         <meta
@@ -44,7 +44,7 @@ const NewHomePage = () => {
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta
           property="og:title"
-          content="Best Digital Product Engineering & Consulting Services  | Maxtron.ai"
+          content=" Creating Winning Companies and Making Them Successful  | Maxtron.ai"
         />
         <meta
           property="og:description"

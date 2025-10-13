@@ -208,22 +208,26 @@ const Web3Speed = () => {
 
   return (
     <div className="max-w-[1200px] mx-auto py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-8">
-      <h2 style={styles.heading}>Built for Web3 Speed</h2>
+      <h2 style={styles.heading}>
+        Why Trust Maxtron Innovation for Crypto Projects?
+      </h2>
       <div style={styles.container}>
         <Line1 />
         <div style={{ ...styles.dot, ...positions.dot1 }}>1</div>
-        <div className="font-normal text-sm"
+        <div
+          className="font-normal text-sm"
           style={{
             ...styles.text,
             ...positions.text1,
             whiteSpace: isMobile ? "normal" : "nowrap",
           }}
         >
-          Fast turnaround, agile planning <span className="font-light">with weekly sprints
-            </span> 
+          Expertise in Indian audience behavior
+          <br /> and crypto regulations.{" "}
         </div>
 
-        <div className="font-normal text-sm"
+        <div
+          className="font-normal text-sm"
           style={{
             ...styles.section,
             top: positions.section2.top,
@@ -239,8 +243,8 @@ const Web3Speed = () => {
               whiteSpace: isMobile ? "normal" : "nowrap",
             }}
           >
-            Deep technical + crypto fluency <span className="font-light">across <br /> chains and standards
-              </span> 
+            Strong media and influencer network in
+            <br /> India and abroad.{" "}
           </div>
         </div>
 
@@ -253,16 +257,16 @@ const Web3Speed = () => {
         >
           <Line3 />
           <div style={{ ...styles.dot, ...positions.dot3 }}>3</div>
-          <div className="font-normal text-sm"
+          <div
+            className="font-normal text-sm"
             style={{
               ...styles.text,
               ...positions.text3,
               whiteSpace: isMobile ? "normal" : "nowrap",
             }}
           >
-            CLEAR KPIs: <span className="font-light">WALLET GROWTH, TVL, 
-            RETENTION – NOT <br /> VANITY CLICKS
-              </span> 
+            Proven results with token sales, NFT drops, <br /> and Web3
+            launches.
           </div>
         </div>
       </div>

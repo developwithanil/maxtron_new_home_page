@@ -6,9 +6,8 @@ import Web3Speed from "../elementalComponent/Web3Speed";
 import FullStackMarketing from "../elementalComponent/FullStackMarketing";
 import Web3MarketingFAQ from "../elementalComponent/Web3MarketingFAQ";
 
-
 import ProofOfValue from "../elementalComponent/ProofOfValue";
-import WhyMaxtron from "../elementalComponent/WhyMaxtron";
+// import WhyMaxtron from "../elementalComponent/WhyMaxtron";
 import { Helmet } from "react-helmet-async";
 
 const Web3Marketing = () => {
@@ -16,20 +15,44 @@ const Web3Marketing = () => {
     <>
       <Helmet>
         <title>Maxtron - Crypto & Web3 Marketing for Builder</title>
-        <meta name="description" content="Maxtron is a crypto & Web3 growth partner providing PR, SEO, KOL, community, and paid performance" />
-        <link rel="canonical" href="https://www.maxtron.ai/web3-crypto-marketing-agency" />
+        <meta
+          name="description"
+          content="Maxtron is a crypto & Web3 growth partner providing PR, SEO, KOL, community, and paid performance"
+        />
+        <link
+          rel="canonical"
+          href="https://www.maxtron.ai/web3-crypto-marketing-agency"
+        />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta property="og:title" content="Web3 Marketing | Maxtron" />
-        <meta property="og:description" content="Maxtron's Web3 marketing services help you grow your blockchain project with innovative strategies and global reach." />
-        <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
-        <meta property="og:url" content="https://www.maxtron.ai/web3-crypto-marketing-agency" />
+        <meta
+          property="og:description"
+          content="Maxtron's Web3 marketing services help you grow your blockchain project with innovative strategies and global reach."
+        />
+        <meta
+          property="og:image"
+          content="https://www.maxtron.ai/src/assets/MaxtronLogo.png"
+        />
+        <meta
+          property="og:url"
+          content="https://www.maxtron.ai/web3-crypto-marketing-agency"
+        />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Web3 Marketing | Maxtron" />
-        <meta name="twitter:description" content="Maxtron's Web3 marketing services help you grow your blockchain project with innovative strategies and global reach." />
-        <meta name="twitter:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
-        <meta name="keywords" content="best crypto pr agency, crypto pr agencies, crypto marketing company, crypto marketing agency, blockchain marketing agency, best crypto marketing agency, cryptocurrency marketing agency, crypto ad agency, crypto advertising company, crypto digital marketing agency" />
+        <meta
+          name="twitter:description"
+          content="Maxtron's Web3 marketing services help you grow your blockchain project with innovative strategies and global reach."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.maxtron.ai/src/assets/MaxtronLogo.png"
+        />
+        <meta
+          name="keywords"
+          content="best crypto pr agency, crypto pr agencies, crypto marketing company, crypto marketing agency, blockchain marketing agency, best crypto marketing agency, cryptocurrency marketing agency, crypto ad agency, crypto advertising company, crypto digital marketing agency"
+        />
         <meta name="publisher" content="Maxtron Innovations" />
         <meta name="language" content="en" />
       </Helmet>
@@ -54,20 +77,18 @@ const Web3Marketing = () => {
           <section id="marketing-case" aria-label="Marketing Case">
             <MarketingCase />
           </section>
-       
+
           <section id="web3-speed" aria-label="Web3 Speed">
             <Web3Speed />
           </section>
-
-         
 
           <section id="proof-of-value" aria-label="Proof of Value">
             <ProofOfValue />
           </section>
 
-          <section id="why-maxtron" aria-label="Why Maxtron">
+          {/* <section id="why-maxtron" aria-label="Why Maxtron">
             <WhyMaxtron />
-          </section>
+          </section> */}
 
           <section id="web3-marketing-faq" aria-label="Web3 Marketing FAQ">
             <Web3MarketingFAQ />
