@@ -14,10 +14,12 @@ const Web3Marketing = () => {
   return (
     <>
       <Helmet>
-        <title>Maxtron - Crypto & Web3 Marketing for Builder</title>
+        <title>
+          Best Crypto Marketing Agency in India | Maxtron Innovation
+        </title>
         <meta
           name="description"
-          content="Maxtron is a crypto & Web3 growth partner providing PR, SEO, KOL, community, and paid performance"
+          content="Maxtron Innovation is India’s top crypto marketing agency, helping Web3, blockchain, and token projects grow, engage, and scale globally. From token launches to influencer outreach and SEO — we deliver compliant, ROI-driven strategies tailored for the crypto ecosystem."
         />
         <link
           rel="canonical"
@@ -25,10 +27,13 @@ const Web3Marketing = () => {
         />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
-        <meta property="og:title" content="Web3 Marketing | Maxtron" />
+        <meta
+          property="og:title"
+          content="Best Crypto Marketing Agency in India | Maxtron Innovation"
+        />
         <meta
           property="og:description"
-          content="Maxtron's Web3 marketing services help you grow your blockchain project with innovative strategies and global reach."
+          content="Maxtron Innovation is India’s top crypto marketing agency, helping Web3, blockchain, and token projects grow, engage, and scale globally. From token launches to influencer outreach and SEO — we deliver compliant, ROI-driven strategies tailored for the crypto ecosystem."
         />
         <meta
           property="og:image"
@@ -40,10 +45,13 @@ const Web3Marketing = () => {
         />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Web3 Marketing | Maxtron" />
+        <meta
+          name="twitter:title"
+          content="Best Crypto Marketing Agency in India | Maxtron Innovation"
+        />
         <meta
           name="twitter:description"
-          content="Maxtron's Web3 marketing services help you grow your blockchain project with innovative strategies and global reach."
+          content="Maxtron Innovation is India’s top crypto marketing agency, helping Web3, blockchain, and token projects grow, engage, and scale globally. From token launches to influencer outreach and SEO — we deliver compliant, ROI-driven strategies tailored for the crypto ecosystem."
         />
         <meta
           name="twitter:image"
