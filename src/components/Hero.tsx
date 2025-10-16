@@ -29,12 +29,14 @@ const HeroSection = () => {
 
           <div className="relative z-10 flex flex-col items-center sm:items-center justify-center h-full text-white px-4 sm:px-6 lg:px-8">
             <h1 className="text-xl sm:text-xl md:text-6xl font-bold text-center mb-4">
-              Creating Winning Companies and Making Them Successful
+              Best Digital Product Engineering & Consulting Services
             </h1>
 
             <p className="text-xl sm:text-2xl md:text-3xl text-center mb-3 bg-black bg-opacity-50 p-2 rounded">
-              Transform Your Business and Growth with 360° Cutting-Edge Tech
-              Solutions
+              Maxtron delivers the best digital product engineering and
+              consulting services— driving innovation with AI, blockchain, and
+              end-to-end product development solution for startups, SMBs, and
+              enterprises.
             </p>
 
             <div className="flex flex-row sm:flex-row justify-center items-center space-x-4">

@@ -27,12 +27,12 @@ const NewHomePage = () => {
     <>
       <Helmet>
         <title>
-          Creating Winning Companies and Making Them Successful | Maxtron.ai
+          Best Digital Product Engineering & Consulting Services | Maxtron.ai
         </title>
 
         <meta
           name="description"
-          content="Maxtron.ai delivers the best digital product engineering and consulting services— driving innovation with AI, blockchain, and end-to-end product development solution for startups, SMBs, and enterprises."
+          content="Maxtron delivers the best digital product engineering and consulting services— driving innovation with AI, blockchain, and end-to-end product development solution for startups, SMBs, and enterprises."
         />
 
         <meta
@@ -44,11 +44,11 @@ const NewHomePage = () => {
         <meta httpEquiv="X-Robots-Tag" content="index, follow" />
         <meta
           property="og:title"
-          content=" Creating Winning Companies and Making Them Successful  | Maxtron.ai"
+          content="Best Digital Product Engineering & Consulting Services  | Maxtron.ai"
         />
         <meta
           property="og:description"
-          content="Maxtron.ai delivers the best digital product engineering and consulting services— driving innovation with AI, blockchain, and end-to-end product development solution for startups, SMBs, and enterprises."
+          content="Maxtron delivers the best digital product engineering and consulting services— driving innovation with AI, blockchain, and end-to-end product development solution for startups, SMBs, and enterprises."
         />
         <meta
           property="og:image"
