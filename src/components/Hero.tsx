@@ -29,7 +29,7 @@ const HeroSection = () => {
 
           <div className="relative z-10 flex flex-col items-center sm:items-center justify-center h-full text-white px-4 sm:px-6 lg:px-8">
             <h1 className="text-xl sm:text-xl md:text-6xl font-bold text-center mb-4">
-              Best Digital Product Engineering & Consulting Services
+             Creating Winning Companies and Making Them Successful
             </h1>
 
             <p className="text-xl sm:text-2xl md:text-3xl text-center mb-3 bg-black bg-opacity-50 p-2 rounded">
