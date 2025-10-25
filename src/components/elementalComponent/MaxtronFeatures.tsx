@@ -1,6 +1,6 @@
 import React from "react";
 
-import contentImg from "../../assets/ai_images/content.webp";
+// import contentImg from "../../assets/ai_images/content.webp";
 import dataImg from "../../assets/ai_images/data.webp";
 import modularImg from "../../assets/ai_images/modular.webp";
 import creativeImg from "../../assets/ai_images/creative.webp";
@@ -39,7 +39,7 @@ const features = [
     items: [
       {
         text: "Generative AI is gaining momentum — content generation, creative industries, marketing, etc.",
-        image: contentImg,
+        // image: contentImg,
       },
       {
         text: "Increased adoption in rural India — agriculture, health, local governance benefitting from localized AI tools.",
@@ -83,15 +83,15 @@ const MaxtronFeatures = (): JSX.Element => {
             {section.items.map((item, j) => (
               <div
                 key={j}
-                className="bg-white rounded-lg px-6 py-6 flex flex-col text-left shadow-sm w-full min-h-[420px]"
+                className="bg-white rounded-lg px-6 py-6 flex flex-col text-left shadow-sm w-full "
               >
-                <div className="flex-grow w-full flex items-center justify-center mb-4">
+                {/* <div className="flex-grow w-full flex items-center justify-center mb-4">
                   <img
                     src={item.image}
                     alt={item.text}
                     className="w-full max-h-[300px] object-cover rounded-md"
                   />
-                </div>
+                </div> */}
                 <p className="text-[#171717] font-normal font-[Inter] text-lg sm:text-xl">
                   {item.text}
                 </p>
