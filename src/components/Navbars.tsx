@@ -71,7 +71,7 @@ const dropdownContentData = {
       { name: "Fund Raising", link: "/fund-raising" },
       { name: "Affiliate Program", link: "/affiliate" },
       { name: "Events", link: "/events" },
-      { name: "Our Team", link: "/our-team" },
+    
       { name: "Digital Compliance", link: "/compliance" },
       { name: "Performance Marketing", link: "/performance-marketing" },
     ],
@@ -126,12 +126,12 @@ const dropdownContentData = {
   },
   about: {
     head: "Learn About Us",
-    title: "About Maxtron",
+    title: "",
     link: "/about",
+
     liTags: [
-      { name: "Our Mission & Vision", link: "/about/mission" },
-      { name: "Meet The Team", link: "/about/team" },
-      { name: "Our Journey", link: "/about/history" },
+      { name: "About Us", link: "/about" },
+      { name: "Our Team", link: "/our-team"},
     ],
   },
   careers: {
@@ -145,6 +145,7 @@ const dropdownContentData = {
     ],
   },
 };
+
 type DropdownKey = keyof typeof dropdownContentData;
 
 const Navbar: React.FC = () => {
@@ -218,6 +219,8 @@ const Navbar: React.FC = () => {
       label: "Our Work",
       key: "caseStudies" as DropdownKey,
     },
+
+    { label: "About Us", key: "about" as DropdownKey },
   ];
 
   const currentDropdownContent = activeDropdownKey
@@ -280,6 +283,7 @@ const Navbar: React.FC = () => {
                     </button>
                   </div>
                 ))}
+
                 <NavLink
                   to="/tokenization"
                   onClick={closeDesktopDropdown}
@@ -307,19 +311,6 @@ const Navbar: React.FC = () => {
                   }
                 >
                   Careers
-                </NavLink>
-                <NavLink
-                  to="/about"
-                  onClick={closeDesktopDropdown}
-                  className={({ isActive }) =>
-                    `block ${
-                      isActive
-                        ? "bg-purple-100 text-purple-700"
-                        : "text-[#2A2A2A] font-openSansHebrew"
-                    } hover:bg-purple-50 hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium`
-                  }
-                >
-                  About Us
                 </NavLink>
               </div>
 
@@ -534,17 +525,6 @@ const Navbar: React.FC = () => {
               }
             >
               Careers
-            </NavLink>
-            <NavLink
-              to="/about"
-              onClick={handleMobileNavClick}
-              className={({ isActive }) =>
-                `block ${
-                  isActive ? "bg-purple-100 text-purple-700" : "text-[#2A2A2A]"
-                } hover:bg-purple-50 hover:text-purple-800 px-3 py-2.5 rounded-md text-base font-medium`
-              }
-            >
-              About Us
             </NavLink>
           </div>
 
