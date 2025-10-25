@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import footerImg from "../../assets/ai_images/aifooterimg.webp";
 
 const AIFooter = () => {
@@ -10,21 +10,34 @@ const AIFooter = () => {
       >
         <div className="flex flex-col gap-2 md:gap-3 lg:gap-4 xl:gap-5 z-20 px-12 max-w-2xl text-start justify-start items-start">
           <h1 className="text-[#FFF] text-start font-[Inter] text-xl md:text-2xl lg:text-4xl xl:text-5xl font-normal leading-[140%]">
-            The speed of automation with the clarity of human
+            Contact Us
           </h1>
           <p className="text-[#FFF] text-start text-sm md:text-lg lg:text-xl xl:text-xl font-normal leading-[140%] font-[Geist]">
-            Your industry, and Your audience
+            If you're looking to harness Artificial Intelligence in India for
+            your organization, let's talk.
           </p>
         </div>
-        <div className="flex flex-col gap-2 md:gap-3 lg:gap-4 xl:gap-5 z-20 px-12 max-w-2xl text-start justify-start items-start">
-          <Link
-            to={"https://experiences.maxtron.ai/"}
-            className="flex justify-start items-start gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-7  border-[#FFF] px-3 md:px-4 lg:px-5 py-2 md:py-2 lg:py-2 rounded-lg border-2 border-solid z-20 hover:bg-[#FFF] transition-all duration-300 group bg-[#FFFFFF]"
-          >
-            <p className="text-[#9554C8] group-hover:text-[#7A35C1] text-center font-[Inter] text-[12px] sm:text-sm md:text-base lg:text-lg font-normal leading-[140%] transition-colors duration-300 ">
-              Begin Now
-            </p>
-          </Link>
+        <div className="flex flex-col gap-4 md:gap-5 lg:gap-6 z-20 px-12 max-w-2xl text-start justify-start items-start">
+          <div className="flex flex-col gap-3">
+            <div className="flex items-center gap-3">
+              <span className="text-[#FFF] text-lg">📩</span>
+              <span className="text-[#FFF] text-sm md:text-base lg:text-lg font-[Geist]">
+                Email: info@maxtron.ai
+              </span>
+            </div>
+            <div className="flex items-center gap-3">
+              <span className="text-[#FFF] text-lg">🌐</span>
+              <span className="text-[#FFF] text-sm md:text-base lg:text-lg font-[Geist]">
+                Website: www.maxtron.ai
+              </span>
+            </div>
+            <div className="flex items-center gap-3">
+              <span className="text-[#FFF] text-lg">📞</span>
+              <span className="text-[#FFF] text-sm md:text-base lg:text-lg font-[Geist]">
+                Call / WhatsApp: +91-87911-56224
+              </span>
+            </div>
+          </div>
         </div>
         <div className="w-[655px] h-[655px] hidden lg:flex absolute bottom-[-279px] border-[#FFF]  rounded-[655px] border-0 border-solid right-28 z-10"></div>
         <div className="w-[248px] md:hidden h-[248px] absolute right-[-22px] bottom-[-40.801px] "></div>

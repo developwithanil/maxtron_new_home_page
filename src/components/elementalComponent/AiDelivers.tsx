@@ -9,34 +9,47 @@ import sliderImg from "../../assets/ai_img/slider.webp";
 const items = [
   {
     number: "01",
-    title: "AI-Powered Explainer Videos",
-    desc: "Scriptwriting, voiceover, animation, editing – all generated using AI pipelines. Perfect for product walkthroughs, feature launches and FAQs.",
+
+    title: "Natural Language Processing & Multilingual AI",
+    desc: "Chatbots, speech recognition, sentiment analysis in Hindi, Tamil, Marathi, Bengali and other regional languages.",
     icon: mp4Img,
   },
   {
     number: "02",
-    title: "AI for Social Media & Growth",
-    desc: "From tweet threads and carousels to viral short videos and auto-generated community Q&As – designed for traction, conversion, and consistency.",
+    title: "Custom AI & ML Model Development",
+    desc: "Building predictive models, classification systems, recommendation engines, time-series forecasting, etc.",
     icon: browserImg,
   },
   {
     number: "03",
-    title: "Content from Raw Data",
-    desc: "From tweet threads and carousels to viral short videos and auto-generated community Q&As – designed for traction, conversion, and consistency.",
+    title: "Computer Vision & Image/Video Analytics",
+    desc: "For security & surveillance, quality control in manufacturing, medical image diagnostics, etc.",
     icon: recordImg,
   },
   {
     number: "04",
-    title: "AI Blog & Website Copy",
-    desc: "Branded content for your site, landing pages, blogs, and thought leadership – crafted to sound intelligent, consistent and conversion-optimized.",
+    title: "AI-Powered Automation & Process Optimization",
+    desc: "Workflow automation, robotic process automation (RPA), reducing manual effort, improving accuracy.",
     icon: starImg,
   },
   {
     number: "05",
-    title: "Campaigns Built by AI",
-    desc: "Launch-ready content packs: banners, CTAs, scripts, captions, summaries – auto-generated and quality-checked for brand tone.",
+    title: "Ethical AI & Explainable AI (XAI)",
+    desc: "Ensuring transparency, fairness, data privacy, and responsible AI usage.",
     icon: sliderImg,
   },
+  // {
+  //   number: "06",
+  //   title: "Ethical AI & Explainable AI (XAI)",
+  //   desc: "Ensuring transparency, fairness, data privacy, and responsible AI usage.",
+  //   icon: mp4Img,
+  // },
+  // {
+  //   number: "07",
+  //   title: "AI Consulting & Capacity Building",
+  //   desc: "Roadmap creation, proof-of-concepts, training, upskilling teams for AI readiness.",
+  //   icon: browserImg,
+  // },
 ];
 
 const AiStudioDelivers: React.FC = () => {
@@ -46,7 +59,7 @@ const AiStudioDelivers: React.FC = () => {
       style={{ fontFamily: "Open Sans, sans-serif" }}
     >
       <h2 className="w-full max-w-6xl text-[2.2rem] sm:text-[2.5rem] font-italic font-normal mb-8 text-black italic tracking-tight font-[Inter]">
-        Our AI Studio Delivers
+        Our AI Services
       </h2>
 
       <div className="w-full max-w-6xl flex flex-col gap-8">
