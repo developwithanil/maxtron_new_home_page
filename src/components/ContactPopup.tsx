@@ -143,7 +143,6 @@ const ContactPopup = ({
               tabIndex={-1}
               className="relative w-[90%] max-w-lg max-h-[90%] px-8 py-10 flex flex-col items-center overflow-y-scroll focus:outline-none bg-white border-2 border-[#7A35C1] shadow-2xl rounded-3xl"
               variants={popupVariants}
-              
               initial="hidden"
               animate="visible"
               style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}

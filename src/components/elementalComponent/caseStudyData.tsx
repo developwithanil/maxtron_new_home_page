@@ -101,7 +101,7 @@ import goodstanding from "../../assets/internal/goodstanding.webp";
 import gsfeature from "../../assets/internal/gsfeature.png";
 import ludoafterherosection from "../../assets/internal/ludoafterherosection.webp";
 
-import hyper1 from "../../assets/internal/hyper1.webp";
+import hyper1 from "../../assets/internal/hyper1.png";
 import hyper2 from "../../assets/internal/hyper2.webp";
 import hyper3 from "../../assets/internal/hyper3.webp";
 import create1 from "../../assets/internal/create1.webp";
