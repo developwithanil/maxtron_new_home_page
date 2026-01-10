@@ -67,7 +67,10 @@ const NewHomePage = () => {
         <main id="main-content" role="main">
           {/* <h1 className="sr-only">Maxtron - Creating Winning Products</h1> */}
           <HeroSection />
-          <nav aria-label="Page sections" className="sr-only">
+            <section id="clients" aria-label="Our Clients">
+            <ClientMarquee />
+          </section>
+          {/* <nav aria-label="Page sections" className="sr-only">
             <ul>
               <li>
                 <a href="#clients">Our Clients</a>
@@ -100,17 +103,18 @@ const NewHomePage = () => {
                 <a href="#contact">Contact</a>
               </li>
             </ul>
-          </nav>
+          </nav> */}
 
           {/* <section id="webinar" aria-label="Webinar">
             <Webinar />
           </section> */}
+           <section id="why-maxtron" aria-label="Why Choose Maxtron">
+            <WhyMaxtron />
+          </section>
           <section id="who-maxtron" aria-label="Who We Are">
             <WhoMaxtron />
           </section>
-          <section id="why-maxtron" aria-label="Why Choose Maxtron">
-            <WhyMaxtron />
-          </section>
+         
 
           <section id="technology" aria-label="Technologies We Use">
             <TechnologyUsed />
@@ -118,9 +122,7 @@ const NewHomePage = () => {
           <section id="pride" aria-label="Our Pride">
             <Pride />
           </section>
-          <section id="clients" aria-label="Our Clients">
-            <ClientMarquee />
-          </section>
+        
           <section id="case-studies" aria-label="Case Studies">
             <CaseStudies />
           </section>
