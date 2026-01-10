@@ -46,7 +46,7 @@ const HeroSection = React.memo(function HeroSection() {
               <br className="hidden lg:block" />
               Making Them Successful and
               <br className="hidden lg:block" />
-              Taking them Public
+              Taking Them Public
             </motion.h1>
 
             <motion.p
