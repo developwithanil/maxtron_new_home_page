@@ -1,4 +1,4 @@
-import React from "react";
+import type { Variants } from "framer-motion";
 import { motion } from "framer-motion";
 
 const cardData = [
@@ -108,7 +108,7 @@ const cardData = [
 
 
 
-const gridVariants = {
+const gridVariants: Variants = {
   hidden: {},
   show: {
     transition: {
@@ -118,10 +118,18 @@ const gridVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 14 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.45, ease: "easeOut" } },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.45,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
 };
+
 
 const TechnologyUsed = () => {
   return (

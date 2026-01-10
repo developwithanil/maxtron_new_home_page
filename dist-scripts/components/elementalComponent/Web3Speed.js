@@ -148,11 +148,11 @@ const Web3Speed = () => {
         };
     };
     const positions = getPositioning();
-    return (_jsxs("div", { className: "max-w-[1200px] mx-auto py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-8", children: [_jsx("h2", { style: styles.heading, children: "Built for Web3 Speed" }), _jsxs("div", { style: styles.container, children: [_jsx(Line1, {}), _jsx("div", { style: { ...styles.dot, ...positions.dot1 }, children: "1" }), _jsxs("div", { className: "font-normal text-sm", style: {
+    return (_jsxs("div", { className: "max-w-[1200px] mx-auto py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-8", children: [_jsx("h2", { style: styles.heading, children: "Why Trust Maxtron Innovation for Crypto Projects?" }), _jsxs("div", { style: styles.container, children: [_jsx(Line1, {}), _jsx("div", { style: { ...styles.dot, ...positions.dot1 }, children: "1" }), _jsxs("div", { className: "font-normal text-sm", style: {
                             ...styles.text,
                             ...positions.text1,
                             whiteSpace: isMobile ? "normal" : "nowrap",
-                        }, children: ["Fast turnaround, agile planning ", _jsx("span", { className: "font-light", children: "with weekly sprints" })] }), _jsxs("div", { className: "font-normal text-sm", style: {
+                        }, children: ["Expertise in Indian audience behavior", _jsx("br", {}), " and crypto regulations.", " "] }), _jsxs("div", { className: "font-normal text-sm", style: {
                             ...styles.section,
                             top: positions.section2.top,
                             left: 0,
@@ -160,7 +160,7 @@ const Web3Speed = () => {
                                     ...styles.text,
                                     ...positions.text2,
                                     whiteSpace: isMobile ? "normal" : "nowrap",
-                                }, children: ["Deep technical + crypto fluency ", _jsxs("span", { className: "font-light", children: ["across ", _jsx("br", {}), " chains and standards"] })] })] }), _jsxs("div", { style: {
+                                }, children: ["Strong media and influencer network in", _jsx("br", {}), " India and abroad.", " "] })] }), _jsxs("div", { style: {
                             ...styles.section,
                             top: positions.section3.top,
                             left: 0,
@@ -168,6 +168,6 @@ const Web3Speed = () => {
                                     ...styles.text,
                                     ...positions.text3,
                                     whiteSpace: isMobile ? "normal" : "nowrap",
-                                }, children: ["CLEAR KPIs: ", _jsxs("span", { className: "font-light", children: ["WALLET GROWTH, TVL, RETENTION \u2013 NOT ", _jsx("br", {}), " VANITY CLICKS"] })] })] })] })] }));
+                                }, children: ["Proven results with token sales, NFT drops, ", _jsx("br", {}), " and Web3 launches."] })] })] })] }));
 };
 export default Web3Speed;

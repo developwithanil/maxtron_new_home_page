@@ -9,7 +9,7 @@ import ContactImg from "../../public/formimg.webp";
 import "../page.css";
 import "react-toastify/dist/ReactToastify.css";
 import { RightClick } from "./VectorImage";
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
 const schema = z.object({
     fullName: z
         .string()
@@ -41,10 +41,10 @@ const ContactForm = () => {
         mode: "onChange",
     });
     console.log("Current form errors:", errors);
-    const sectionClassName = location.pathname === "/Contact"
+    const sectionClassName = location.pathname === "/contact"
         ? "py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 pt-24 sm:pt-32 md:pt-36"
         : "py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12";
-    return (_jsxs(_Fragment, { children: [_jsxs(Helmet, { children: [_jsx("title", { children: " Maxtron Innovation" }), _jsx("meta", { name: "description", content: " Maxtron for innovative IT and marketing solutions to accelerate your business growth." }), _jsx("link", { rel: "canonical", href: "https://www.maxtron.ai" }), _jsx("meta", { name: "robots", content: "index, follow" }), _jsx("meta", { httpEquiv: "X-Robots-Tag", content: "index, follow" })] }), _jsxs("section", { id: "contact-us", className: sectionClassName, children: [_jsxs("div", { className: "shadow-lg border border-[#BEBCCA] rounded-3xl p-5 md:p-8", children: [_jsx("div", { className: "w-full flex p-2 items-start gap-2 rounded-lg container mx-auto ", style: {
+    return (_jsxs(_Fragment, { children: [location.pathname === "/contact" && (_jsxs(Helmet, { children: [_jsx("title", { children: "Contact Us | Maxtron Innovations" }), _jsx("meta", { name: "description", content: "Get in touch with Maxtron Innovations for AI, Blockchain, Web3 and product development services." }), _jsx("link", { rel: "canonical", href: "https://www.maxtron.ai/contact" }), _jsx("meta", { name: "robots", content: "index, follow" }), _jsx("meta", { httpEquiv: "X-Robots-Tag", content: "index, follow" })] })), _jsxs("section", { id: "contact-us", className: sectionClassName, children: [_jsxs("div", { className: "shadow-lg border border-[#BEBCCA] rounded-3xl p-5 md:p-8", children: [_jsx("div", { className: "w-full flex p-2 items-start gap-2 rounded-lg container mx-auto ", style: {
                                     background: "linear-gradient(270deg, var(--Primary-100, #CAA8EF) 0%, var(--Primary-500, #7A35C1) 100%)",
                                 }, children: _jsx("p", { className: "p-2 text-white", children: "Free 30-Minutes Consultation" }) }), _jsxs("div", { className: "container mx-auto flex flex-col lg:flex-row bg-white items-center py-5 md:p-5 justify-between gap-6 lg:gap-8", children: [_jsxs("div", { className: "lg:w-1/2 text-left lg:text-left", children: [_jsx("h2", { className: "self-stretch text-[#1E1E1E] [font-family:Switzer] font-bold text-xl md:text-[40px] leading-[120%]", children: "Fill the form & Get your project moving!" }), _jsxs("ul", { className: "mb-8 mt-8 space-y-4", children: [_jsxs("li", { className: "flex items-center space-x-3", children: [_jsx("div", { className: "md:w-8 w-6 h-6 md:h-8", children: _jsx(RightClick, {}) }), _jsx("div", { className: "text-[#1E1E1E] [font-family:Inter] text-sm md:text-base font-normal leading-[120%]", children: "We will respond to you within 24 hours." })] }), _jsxs("li", { className: "flex items-center space-x-3", children: [_jsx("div", { className: "md:w-8 w-6 h-6 md:h-8", children: _jsx(RightClick, {}) }), _jsx("div", { className: "text-[#1E1E1E] [font-family:Inter] text-sm md:text-base font-normal leading-[120%]", children: "You'll be talking to product and tech experts (no account managers)." })] })] }), _jsx("img", { src: ContactImg, alt: "Contact", className: "w-full h-auto" })] }), _jsx("div", { className: "w-full lg:w-1/2 p-0 sm:p-6 rounded-2xl", children: _jsxs("form", { onSubmit: handleSubmit(async () => {
                                                 try {

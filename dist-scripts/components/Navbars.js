@@ -50,7 +50,6 @@ const dropdownContentData = {
             { name: "Fund Raising", link: "/fund-raising" },
             { name: "Affiliate Program", link: "/affiliate" },
             { name: "Events", link: "/events" },
-            { name: "Our Team", link: "/our-team" },
             { name: "Digital Compliance", link: "/compliance" },
             { name: "Performance Marketing", link: "/performance-marketing" },
         ],
@@ -105,12 +104,11 @@ const dropdownContentData = {
     },
     about: {
         head: "Learn About Us",
-        title: "About Maxtron",
+        title: "",
         link: "/about",
         liTags: [
-            { name: "Our Mission & Vision", link: "/about/mission" },
-            { name: "Meet The Team", link: "/about/team" },
-            { name: "Our Journey", link: "/about/history" },
+            { name: "About Us", link: "/about" },
+            { name: "Our Team", link: "/our-team" },
         ],
     },
     careers: {
@@ -183,6 +181,7 @@ const Navbar = () => {
             label: "Our Work",
             key: "caseStudies",
         },
+        { label: "About Us", key: "about" },
     ];
     const currentDropdownContent = activeDropdownKey
         ? dropdownContentData[activeDropdownKey]
@@ -198,9 +197,7 @@ const Navbar = () => {
                                                         ? "bg-purple-100 text-purple-700"
                                                         : "text-[#2A2A2A] font-openSansHebrew"} hover:bg-purple-50 hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium`, "aria-label": "Learn about our tokenization services", children: "Tokenization" }), _jsx(NavLink, { to: "/careers", onClick: closeDesktopDropdown, className: ({ isActive }) => `block ${isActive
                                                         ? "bg-purple-100 text-purple-700"
-                                                        : "text-[#2A2A2A] font-openSansHebrew"} hover:bg-purple-50 hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium`, children: "Careers" }), _jsx(NavLink, { to: "/about", onClick: closeDesktopDropdown, className: ({ isActive }) => `block ${isActive
-                                                        ? "bg-purple-100 text-purple-700"
-                                                        : "text-[#2A2A2A] font-openSansHebrew"} hover:bg-purple-50 hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium`, children: "About Us" })] }), _jsxs("div", { className: "flex items-center space-x-1 xl:space-x-4 ml-4 xl:ml-6", children: [_jsx(Link, { to: "/contact", onClick: closeDesktopDropdown, className: "text-white bg-[#7A35C1] hover:bg-purple-800 px-5 py-2.5 rounded-md text-xs lg:text-sm font-medium whitespace-nowrap transition-colors duration-150 font-SegoeUISymbol", children: "Contact Us" }), _jsx("button", { onClick: () => {
+                                                        : "text-[#2A2A2A] font-openSansHebrew"} hover:bg-purple-50 hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium`, children: "Careers" })] }), _jsxs("div", { className: "flex items-center space-x-1 xl:space-x-4 ml-4 xl:ml-6", children: [_jsx(Link, { to: "/contact", onClick: closeDesktopDropdown, className: "text-white bg-[#7A35C1] hover:bg-purple-800 px-5 py-2.5 rounded-md text-xs lg:text-sm font-medium whitespace-nowrap transition-colors duration-150 font-SegoeUISymbol", children: "Contact Us" }), _jsx("button", { onClick: () => {
                                                         window.open("https://calendly.com/business-maxtron/30min", "_blank");
                                                         closeDesktopDropdown();
                                                     }, className: "text-white bg-gradient-to-r bg-[#7A35C1] hover:from-purple-700 hover:to-indigo-700 px-5 py-2.5 rounded-md text-xs lg:text-sm font-medium whitespace-nowrap transition-all duration-150 shadow-md hover:shadow-lg font-SegoeUISymbol", children: "Book a Call" })] })] }), _jsx("div", { className: "lg:hidden flex items-center", children: _jsxs("button", { onClick: toggleMobileMenu, className: "text-purple-600 hover:text-purple-800 focus:outline-none focus:text-purple-800 p-2 rounded-md", "aria-controls": "mobile-menu", "aria-expanded": isMobileMenuOpen, children: [_jsx("span", { className: "sr-only", children: "Open main menu" }), _jsx("svg", { className: "h-6 w-6", xmlns: "http://www.w3.org/2000/svg", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", children: _jsx("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: isMobileMenuOpen
@@ -245,7 +242,7 @@ const Navbar = () => {
                                                             ? "text-purple-700 font-semibold"
                                                             : "text-gray-700"} hover:text-purple-600 hover:font-medium py-1.5 px-3 rounded-md text-sm transition-colors duration-150 ease-in-out`, children: itemName }, `mobile-sub-${key}-${index}`));
                                                 })] }))] }, `mobile-dropdown-${key}`));
-                            }), _jsx(NavLink, { to: "/tokenization", onClick: handleMobileNavClick, className: ({ isActive }) => `block ${isActive ? "bg-purple-100 text-purple-700" : "text-[#2A2A2A]"} hover:bg-purple-50 hover:text-purple-800 px-3 py-2.5 rounded-md text-base font-medium`, children: "Tokenization" }), _jsx(NavLink, { to: "/careers", onClick: handleMobileNavClick, className: ({ isActive }) => `block ${isActive ? "bg-purple-100 text-purple-700" : "text-[#2A2A2A]"} hover:bg-purple-50 hover:text-purple-800 px-3 py-2.5 rounded-md text-base font-medium`, children: "Careers" }), _jsx(NavLink, { to: "/about", onClick: handleMobileNavClick, className: ({ isActive }) => `block ${isActive ? "bg-purple-100 text-purple-700" : "text-[#2A2A2A]"} hover:bg-purple-50 hover:text-purple-800 px-3 py-2.5 rounded-md text-base font-medium`, children: "About Us" })] }), _jsx("div", { className: "flex flex-row justify-between pt-3 p-10 pb-4 space-y-3 border-gray-200 mt-2", children: _jsxs("div", { className: "flex flex-grow space-x-2", children: [_jsx(Link, { to: "/contact", onClick: handleMobileNavClick, className: "flex-1 text-white text-center bg-[#7A35C1]  hover:bg-purple-800 px-3 py-2.5 rounded-md text-base font-medium", children: "Contact Us" }), _jsx("button", { onClick: () => {
+                            }), _jsx(NavLink, { to: "/tokenization", onClick: handleMobileNavClick, className: ({ isActive }) => `block ${isActive ? "bg-purple-100 text-purple-700" : "text-[#2A2A2A]"} hover:bg-purple-50 hover:text-purple-800 px-3 py-2.5 rounded-md text-base font-medium`, children: "Tokenization" }), _jsx(NavLink, { to: "/careers", onClick: handleMobileNavClick, className: ({ isActive }) => `block ${isActive ? "bg-purple-100 text-purple-700" : "text-[#2A2A2A]"} hover:bg-purple-50 hover:text-purple-800 px-3 py-2.5 rounded-md text-base font-medium`, children: "Careers" })] }), _jsx("div", { className: "flex flex-row justify-between pt-3 p-10 pb-4 space-y-3 border-gray-200 mt-2", children: _jsxs("div", { className: "flex flex-grow space-x-2", children: [_jsx(Link, { to: "/contact", onClick: handleMobileNavClick, className: "flex-1 text-white text-center bg-[#7A35C1]  hover:bg-purple-800 px-3 py-2.5 rounded-md text-base font-medium", children: "Contact Us" }), _jsx("button", { onClick: () => {
                                         window.open("https://calendly.com/business-maxtron/30min", "_blank");
                                         handleMobileNavClick();
                                     }, className: "flex-1 text-white bg-gradient-to-r bg-[#7A35C1] hover:from-purple-700 hover:to-indigo-700 px-3 py-2.5 rounded-md text-base font-medium", children: "Book a Call" })] }) })] }))] }));
