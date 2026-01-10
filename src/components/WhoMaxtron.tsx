@@ -166,20 +166,15 @@ const WhoMaxtron: React.FC = () => {
     >
       <div className="max-w-[1500px] mx-auto">
         <header className="mb-12 md:mb-16 lg:mb-24">
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-light text-[#1a1a1a] font-[IBM Plex Sans] text-center md:text-left tracking-tighter">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-light text-[#161616] font-[IBM Plex Sans] text-center md:text-left tracking-tighter">
             Smarter business.
             <br className="md:hidden" /> Real impact.
           </h2>
         </header>
 
-        {/* 
-           Layout Logic: 
-           - Mobile: Stacked, single column.
-           - Tablet (md): Asymmetric Grid (42% / 58%) prevents "Skinny Pillar" images.
-           - Desktop (lg): Large Gap and wide column proportions.
-        */}
+     
         <div className="grid grid-cols-1 md:grid-cols-[0.42fr_0.58fr] lg:grid-cols-2 gap-10 md:gap-14 lg:gap-32 items-start">
-          {/* TEXT SIDE (Left) */}
+       
           <div className="flex flex-col relative order-2 md:order-1">
             {projects.map((project, index) => {
               const isActive = activeIndex === index;
