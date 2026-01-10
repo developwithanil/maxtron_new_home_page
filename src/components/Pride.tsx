@@ -45,7 +45,7 @@ const prideData: StatItem[] = [
 const Pride = () => {
   return (
     <section className="py-8 lg:py-16  overflow-hidden">
-      <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[90rem] mx-auto px- sm:px-6 lg:px-16 xl:px-20">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
           
           <motion.div
