@@ -17,7 +17,7 @@
     "@wellyshen/use-web-animations": "^0.5.1",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
-    "framer-motion": "^12.23.6",
+    "framer-motion": "^12.25.0",
     "motion": "^12.5.0",
     "react": "^18.3.1",
     "react-countup": "^6.5.3",
@@ -33,6 +33,7 @@
     "react-toastify": "^10.0.6",
     "sitemap": "^8.0.0",
     "slick-carousel": "^1.8.1",
+    "styled-jsx": "^5.1.7",
     "swiper": "^11.2.6",
     "zod": "^4.0.14"
   },

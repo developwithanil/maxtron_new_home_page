@@ -1,459 +1,256 @@
-import React, { useState, useEffect } from "react";
-import { Verify } from "./VectorImage";
-import MaxtronLogo from "../assets/maxtronlogo.svg";
+"use client";
+
+import React, { useEffect, useRef, useState } from "react";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 import product1 from "../assets/products/blockchainproduct1.webp";
 import product2 from "../assets/products/aiproduct2.webp";
 import product3 from "../assets/products/experientialproduct3.webp";
 import product4 from "../assets/products/otherproduct4.webp";
-
 import fund1 from "../assets/products/marketing.webp";
 import fund2 from "../assets/products/fundraising.webp";
-import { logo1, logo2, logo3, logo4, logo5, logo6 } from "./VectorImage";
 
-type ContentItem = {
-  category: string;
-  title: string;
-  points: string[];
-  image: string;
-};
-
-const tabSystemData = {
-  mainTabs: [
-    { id: "products", label: "Creating Winning Products" },
-    { id: "success", label: "Ensuring Your Success" },
-  ],
-  subTabs: {
-    products: [
-      { id: "web3", icon: logo1, label: "Web3 Custom Solutions" },
-      { id: "ai", icon: logo2, label: "Applied AI Products & Services" },
-      { id: "experiential", icon: logo3, label: "Experiential Development" },
-      { id: "otherTech", icon: logo4, label: "Other Tech Services" },
-    ],
-    success: [
-      { id: "marketing", icon: logo5, label: "Marketing & Digital Strategy" },
-      { id: "fundraising", icon: logo6, label: "Fundraising & Partnership" },
-    ],
+const content = {
+  web3: {
+    title: "Web3 Custom Solutions",
+    description:
+      "We deliver enterprise-grade Web3 and blockchain solutions, including native token development and launch, dApp and smart contract engineering, DeFi platforms, crypto gaming, metaverse experiences, and native payment systems, built for scalability, security, and long-term performance.",
+    image: product1,
   },
-  content: {
-    web3: {
-      category: "WEB3 & BLOCKCHAIN SOLUTIONS",
-      title: "Blockchain-Ready Performance",
-      points: [
-        "Native Crypto Token Development & Launch",
-        "DApps Development",
-        "Crypto Gaming Development",
-        "Smart Contract Development",
-        "DeFi Development",
-        "Metaverse Development",
-        "Native Payment Development",
-      ],
-      image: product1,
-    },
-    ai: {
-      category: "AI SOLUTIONS",
-      title: "Impact-Driven Innovation",
-      points: [
-        "Custom AI App Development",
-        "AI Integration",
-        "AI Agent/Copilot Development",
-        "PoC & MVP Development",
-        "GenAI Development & LLM Fine-tuning",
-      ],
-      image: product2,
-    },
-    experiential: {
-      category: "IMMERSIVE EXPERIENCES",
-      title: "99% Engagement Rate",
-      points: [
-        "Kinetic Installation ",
-        "AR Virtual Try-ons & Immersive Gaming ",
-        "Nano Mist Hologram & Holo Box",
-        "AI Avatar & 3D Models ",
-        "Transparent Screen ",
-        "Gesture Based Installation ",
-        "Projection Mapping",
-      ],
-      image: product3,
-    },
-    otherTech: {
-      category: "TECHNOLOGY SOLUTIONS",
-      title: "Confidence Delivery",
-      points: [
-        "Mobile App Development",
-        "Web Development",
-        "UX/UI Design",
-        "IT Staff Augmentation",
-        "IT Cousulting",
-        "Digital Transformation",
-        "Data & Cybersecurity",
-      ],
-      image: product4,
-    },
-    marketing: {
-      category: "GROWTH & GO-TO-MARKET SOLUTIONS",
-      title: "Revenue-Focused Execution",
-      points: [
-        "B2B: AI-Powered Email & LinkedIn Sales Prospecting",
-        "B2C: Performance Marketing - PPC, Programmatic, Influencers",
-        "AI-Phone Calling Tool For Sales, Marketing & Support",
-        "Web3 Projects: Marketing & Growth - KOLs, Community, etc",
-        "Branding & MarComm - Advisory & Execution",
-        "PR Solutions - Tier-1 Media, Tier-2 Media",
-        "Go-to-market Strategy For Digital Products",
-      ],
-      image: fund1,
-    },
-    fundraising: {
-      category: "STRATEGIC GROWTH PARTNERSHIPS",
-      title: "Relationship-Driven Expansion",
-      points: [
-        "Investor Outreach: Online, In-person, Networks",
-        "Channel Partnership: VARs, Integrators, MSPs, Whitelabel",
-        "Equity Partnership For Emerging Tech Projects",
-      ],
-      image: fund2,
-    },
-    hiring: {},
-    resource: {},
+  ai: {
+    title: "Applied AI Products & Services",
+    description:
+      "We deliver practical applied AI solutions including custom machine learning models, AI agents, LLM-powered applications, predictive analytics, and automation systems built to accelerate decision-making, optimize processes, and unlock new business value.",
+    image: product2,
+  },
+  experiential: {
+    title: "Experiential Development",
+    description:
+      "We design immersive and interactive digital experiences using cutting-edge technology from real-time 3D and AR/VR to branded experiential platforms crafted to captivate audiences and drive deeper engagement.",
+    image: product3,
+  },
+  otherTech: {
+    title: "Other Tech Services",
+    description:
+      "We provide comprehensive tech services spanning full-stack development, mobile and cloud solutions, enterprise software, API integrations, DevOps, and system architecture ensuring robust, scalable, and secure digital products.",
+    image: product4,
+  },
+  marketing: {
+    title: "Marketing and Digital Strategy",
+    description:
+      "We create results-focused digital strategies covering brand positioning, growth marketing, performance campaigns, community building, and analytics designed to elevate visibility, engagement, and measurable business growth.",
+    image: fund1,
+  },
+  fundraising: {
+    title: "Fundraising and Partnership",
+    description:
+      "We support fundraising readiness and strategic partnerships with investor narratives, pitch materials, go-to-market advisory, and ecosystem engagement connecting teams with capital, collaborators, and long-term growth opportunities.",
+    image: fund2,
   },
 };
 
-const ChevronUpIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={3}
-    stroke="currentColor"
-    className="w-4 h-4"
-  >
-    {" "}
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M4.5 15.75l7.5-7.5 7.5 7.5"
-    />{" "}
-  </svg>
-);
-const ChevronDownIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={3}
-    stroke="currentColor"
-    className="w-4 h-4"
-  >
-    {" "}
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-    />{" "}
-  </svg>
-);
+const projects = Object.entries(content)
+  .filter(([, value]) => value && "title" in value)
+  .map(([key, value]) => {
+    const item = value as { title: string; description: string; image: string };
+    return { ...item, serviceKey: key };
+  });
 
-const WhoMaxtron = () => {
-  const [activeMainTab, setActiveMainTab] = useState<
-    keyof typeof tabSystemData.subTabs
-  >(tabSystemData.mainTabs[0].id as keyof typeof tabSystemData.subTabs);
+const getKeywords = (key: string) =>
+  ({
+    web3: [
+      "Web3",
+      "dApp",
+      "DeFi",
+      "crypto gaming",
+      "metaverse",
+      "native payment systems",
+    ],
+    ai: ["AI", "machine learning", "LLM", "automation", "predictive analytics"],
+    experiential: ["AR", "VR", "3D", "immersive", "interactive"],
+    otherTech: [
+      "mobile",
+      "web",
+      "cloud",
+      "API",
+      "DevOps",
+      "system architecture",
+    ],
+    marketing: [
+      "brand",
+      "growth marketing",
+      "performance campaigns",
+      "analytics",
+    ],
+    fundraising: ["fundraising", "investors", "partnerships", "capital"],
+  }[key] || []);
 
-  const [activeSubTabs, setActiveSubTabs] = useState<{
-    [key in keyof typeof tabSystemData.subTabs]?: string | null;
-  }>({});
+const HighlightedText = ({
+  text,
+  serviceKey,
+}: {
+  text: string;
+  serviceKey: string;
+}) => {
+  const keywords = getKeywords(serviceKey);
+  const parts: (string | JSX.Element)[] = [];
+  let lastIndex = 0;
+  keywords.forEach((keyword) => {
+    const regex = new RegExp(`\\b${keyword}\\b`, "gi");
+    let match;
+    while ((match = regex.exec(text)) !== null) {
+      if (match.index > lastIndex)
+        parts.push(text.substring(lastIndex, match.index));
+      parts.push(
+        <span key={match.index} className="text-[#7A35C1] font-semibold">
+          {match[0]}
+        </span>
+      );
+      lastIndex = regex.lastIndex;
+    }
+  });
+  if (lastIndex < text.length) parts.push(text.substring(lastIndex));
+  return <>{parts.length > 0 ? parts : text}</>;
+};
+
+const OurProjects: React.FC = () => {
+  const itemRefs = useRef<HTMLElement[]>([]);
+  const addToRefs = (el: HTMLElement | null) => {
+    if (el && !itemRefs.current.includes(el)) itemRefs.current.push(el);
+  };
+
+  const [activeIndex, setActiveIndex] = useState(0);
+  const directionRef = useRef(0);
+  const prevIndexRef = useRef(0);
 
   useEffect(() => {
-    if (
-      tabSystemData.subTabs[activeMainTab]?.length > 0 &&
-      !activeSubTabs[activeMainTab]
-    ) {
-      setActiveSubTabs((prev) => ({
-        ...prev,
-        [activeMainTab]: tabSystemData.subTabs[activeMainTab][0].id,
-      }));
-    }
-  }, [activeMainTab]);
-
-  const handleMainTabClick = (mainTabId: "products" | "success") => {
-    setActiveMainTab(mainTabId as keyof typeof tabSystemData.subTabs);
-  };
-
-  const handleSubTabClick = (subTabId: string) => {
-    setActiveSubTabs((prevActiveSubTabs) => {
-      const currentActiveForMain = prevActiveSubTabs[activeMainTab];
-      if (currentActiveForMain === subTabId) {
-        return { ...prevActiveSubTabs, [activeMainTab]: null };
+    const measure = () => {
+      const center = window.innerHeight / 2;
+      let bestIdx = 0;
+      let minDist = Infinity;
+      itemRefs.current.forEach((el, idx) => {
+        const dist = Math.abs(
+          el.getBoundingClientRect().top + el.offsetHeight / 2 - center
+        );
+        if (dist < minDist) {
+          minDist = dist;
+          bestIdx = idx;
+        }
+      });
+      if (bestIdx !== activeIndex) {
+        directionRef.current = bestIdx > prevIndexRef.current ? 1 : -1;
+        prevIndexRef.current = bestIdx;
+        setActiveIndex(bestIdx);
       }
-      return { ...prevActiveSubTabs, [activeMainTab]: subTabId };
-    });
-  };
+    };
+    window.addEventListener("scroll", measure);
+    window.addEventListener("resize", measure);
+    return () => {
+      window.removeEventListener("scroll", measure);
+      window.removeEventListener("resize", measure);
+    };
+  }, [activeIndex]);
 
-  const currentSubTabsList = tabSystemData.subTabs[activeMainTab] || [];
-  const currentContentKey: keyof typeof tabSystemData.content | undefined =
-    activeSubTabs[activeMainTab] as keyof typeof tabSystemData.content;
-  const currentContent: ContentItem | null = currentContentKey
-    ? (tabSystemData.content[currentContentKey] as ContentItem)
-    : null;
+  const variants: Variants = {
+    initial: (dir: number) => ({
+      opacity: 0,
+      y: dir === 1 ? 40 : -40,
+      scale: 0.98,
+    }),
+    animate: { opacity: 1, y: 0, scale: 1 },
+    exit: (dir: number) => ({
+      opacity: 0,
+      y: dir === 1 ? -40 : 40,
+      scale: 1.02,
+    }),
+  };
 
   return (
-    <section
-      id="about-us"
-      className="relative py-4 md:py-8 lg:py-11 xl:py-12 bg-white max-w-[96rem] mx-auto"
+    <div
+      className="relative w-full bg-white px-6 md:px-12 lg:px-20 py-20"
+      id="projects"
     >
-      <div className="p-4 text-center ">
-        <p className=" text-xs md:text-sm flex items-center justify-center text-center text-[#7A35C1] mb-1">
-          {" "}
-          <Verify /> ENTERPRISE-GRADE SOLUTIONS{" "}
-        </p>
-        <h2 className="text-2xl sm:text-2xl md:text-5xl font-bold text-[#2A2A2A] mb-3 md:mb-4 font-[Switzer]">
-          {" "}
-          Who Are We{" "}
-        </h2>
-        <p className="text-base sm:text-sm md:text-lg mb-6 md:mb-10 lg:mb-10 xl:mb-10 text-[#5B5570] font-openSansHebrew px-2 w-[80%] mx-auto">
-          {" "}
-          Maxtron.ai is a global digital product engineering and consulting
-          company founded by a team of IITians. We specialize in harnessing
-          advanced technologies such as AI, blockchain, and cloud computing to
-          develop innovative, high-performance digital products. Our mission is
-          to empower startups, SMBs, and enterprises by transforming their ideas
-          into scalable solutions that solve real business challenges.
-        </p>
-      </div>
-      <h2 className="text-2xl sm:text-2xl md:text-4xl font-bold text-[#2A2A2A] mb-3 md:mb-4 font-[Switzer] mx-auto text-center">
-        {" "}
-        Our Services{" "}
-      </h2>
+      <div className="max-w-[1440px] mx-auto">
+        <header className="mb-6 md:mb-16 lg:mb-24">
+          <h2 className="text-2xl md:text-4xl lg:text-6xl font-light text-[#2A2A2A] font-[IBM Plex Sans] text-center md:text-left">
+            Smarter business. Real impact.
+          </h2>
+        </header>
 
-      <div className="w-full">
-        <div className="flex justify-between items-center border-t border-b border-[#EEEEEE] w-full">
-          {tabSystemData.mainTabs.map((tab, index) => (
-            <React.Fragment key={tab.id}>
-              <div
-                onClick={() =>
-                  handleMainTabClick(tab.id as "products" | "success")
-                }
-                className={`text-[14px] md:text-2xl lg:text-3xl font-semibold cursor-pointer px-3 py-4 md:py-6 flex-1 text-center border-l border-r border-[#DFDEE7] ${
-                  activeMainTab === tab.id
-                    ? "text-[#2A2A2A] bg-[#F8F8F8] [font-family:Switzer]"
-                    : "text-[#5B5570] bg-white hover:text-[#6A0DAD] [font-family:Switzer]"
-                }`}
-              >
-                {" "}
-                {tab.label}{" "}
-              </div>
-              {index < tabSystemData.mainTabs.length - 1 && (
-                <div className="hidden md:flex px-2 md:px-4 lg:px-6 items-center justify-center">
-                  {" "}
-                  <img
-                    className="h-8 sm:h-10 md:h-14 w-auto"
-                    src={MaxtronLogo}
-                    alt="Maxtron Logo"
-                  />{" "}
-                </div>
-              )}
-            </React.Fragment>
-          ))}
-        </div>
-
-        <div className="hidden md:block">
-          {currentSubTabsList.length > 0 && (
-            <div className="flex w-full bg-gray-50 border-b border-[#DFDEE7] overflow-hidden">
-              {currentSubTabsList.map((subTab, index) => {
-                const isSubTabActive =
-                  activeSubTabs[activeMainTab] === subTab.id;
-                return (
-                  <div
-                    key={subTab.id}
-                    onClick={() => handleSubTabClick(subTab.id)}
-                    className={`flex flex-1 items-center justify-center cursor-pointer px-2 sm:px-3 py-3 text-xs sm:text-sm font-medium transition-all duration-200 group
-                      ${
-                        index < currentSubTabsList.length - 1
-                          ? "border-r border-[#DFDEE7]"
-                          : ""
-                      }
-                      ${isSubTabActive ? "" : "hover:bg-gray-100"}`}
-                  >
-                    {subTab.icon && (
-                      <div
-                        className={`p-1 rounded mr-1.5  sm:mr-2 flex items-center justify-center h-6 w-6 sm:h-7 sm:w-7 shrink-0 transition-colors duration-200 
-                          ${
-                            isSubTabActive
-                              ? "bg-[#7A35C1]"
-                              : "bg-[#DFDEE7] group-hover:bg-[#7A35C1]"
-                          }`}
-                      >
-                        {typeof subTab.icon === "function" &&
-                          React.createElement(
-                            subTab.icon as React.FC<
-                              React.SVGProps<SVGSVGElement>
-                            >,
-                            {
-                              className: `h-full w-full object-contain ${
-                                isSubTabActive
-                                  ? "text-white"
-                                  : "hover:text-white text-gray-400 group-hover:text-white"
-                              }`,
-                            }
-                          )}
-                      </div>
-                    )}
-                    <span
-                      className={`leading-tight ${
-                        isSubTabActive
-                          ? "font-normal text-lg text-[#7A35C1] font-openSansHebrew"
-                          : "text-[#79748A] group-hover:text-[#7A35C1] font-normal text-lg font-openSansHebrew"
-                      }`}
-                    >
-                      {subTab.label}
-                    </span>
-                  </div>
-                );
-              })}
-            </div>
-          )}
-          {currentContent && (
-            <div className="flex flex-col md:flex-row gap-6 md:gap-16 p-4 md:p-6 lg:p-16">
-              <div className="md:w-3/5 text-left ">
-                {" "}
-                <p className="text-xs md:text-sm font-normal uppercase font-[Switzer] text-[#7A35C1] mb-1.5">
-                  {" "}
-                  {currentContent.category}{" "}
-                </p>{" "}
-                <h3 className="text-2xl md:text-3xl font-normal  text-[#2A2A2A] mb-4 font-[Switzer]">
-                  {" "}
-                  {currentContent.title}{" "}
-                </h3>{" "}
-                <ul className="space-y-2.5">
-                  {" "}
-                  {currentContent.points.map((point, pointIndex) => (
-                    <li
-                      key={pointIndex}
-                      className="flex items-start text-base text-[#5B5570] "
-                    >
-                      {" "}
-                      <span className="text-[#5B5570] font-bold mr-2 mt-1">
-                        •
-                      </span>{" "}
-                      {point}{" "}
-                    </li>
-                  ))}{" "}
-                </ul>{" "}
-              </div>
-              <div className="md:w-2/5 flex items-center justify-center p-4 md:p-0">
-                {" "}
-                <img
-                  src={currentContent.image}
-                  alt={currentContent.title}
-                  className="w-full max-w-sm md:max-w-full h-full md:h-full rounded-lg object-cover shadow-md"
-                />{" "}
-              </div>
-            </div>
-          )}
-        </div>
-
-        <div className="block md:hidden bg-[#F7F7FA]">
-          {currentSubTabsList.length > 0 &&
-            currentSubTabsList.map((subTab) => {
-              const isActive = activeSubTabs[activeMainTab] === subTab.id;
-              const contentForAccordionItem: ContentItem | null = isActive
-                ? (tabSystemData.content[
-                    subTab.id as keyof typeof tabSystemData.content
-                  ] as ContentItem)
-                : null;
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-32">
+          <div className="flex flex-col relative">
+            {projects.map((project, index) => {
+              const isActive = activeIndex === index;
               return (
-                <div
-                  key={subTab.id}
-                  className="bg-white border-b border-[#E5E7EB]"
+                <section
+                  key={index}
+                  ref={addToRefs}
+                  className="lg:min-h-[85vh] flex flex-col justify-center py-12 lg:py-0 border-t border-gray-100 first:border-none relative"
                 >
                   <div
-                    onClick={() => handleSubTabClick(subTab.id)}
-                    className="flex justify-between items-center p-5 cursor-pointer"
+                    className={`transition-all duration-700 ease-in-out pl-8 md:pl-12 relative ${
+                      isActive ? "opacity-100" : "opacity-30"
+                    }`}
                   >
-                    <div className="flex items-center">
-                      {subTab.icon && (
-                        <>
-                          {typeof subTab.icon === "function" ? (
-                            React.createElement(
-                              subTab.icon as React.FC<
-                                React.SVGProps<SVGSVGElement>
-                              >,
-                              {
-                                className: `h-6 w-6 mr-3 text-[#79748A]    ${
-                                  isActive
-                                    ? "fill-[#7A35C1] bg-[#7A35C1]  text-white rounded-md "
-                                    : ""
-                                }`,
-                              }
-                            )
-                          ) : (
-                            <img
-                              src={subTab.icon as string}
-                              alt=""
-                              className="h-6 w-6 mr-3 "
-                            />
-                          )}
-                        </>
-                      )}
-                      <span
-                        className={`text-base font-medium ${
-                          isActive ? "text-[#7A35C1]" : "text-gray-800"
+                    <div
+                      className={`absolute left-0 top-0 bottom-0 w-[4.5px] bg-[#7A35C1] rounded-full transition-all duration-1000 
+                        ${
+                          isActive
+                            ? "scale-y-100 opacity-100"
+                            : "scale-y-0 opacity-0"
                         }`}
-                      >
-                        {" "}
-                        {subTab.label}{" "}
-                      </span>
+                    />
+
+                    <h3 className="text-[#161616] font-normal text-xl md:text-2xl lg:text-3xl mb-8 leading-tight tracking-tight">
+                      {project.title}
+                    </h3>
+
+                    <p className="text-[#161616] font-light text-base md:text-xl leading-relaxed max-w-xl font-[IBM Plex Sans]">
+                      <HighlightedText
+                        text={project.description}
+                        serviceKey={project.serviceKey}
+                      />
+                    </p>
+
+                    <div className="mt-10 lg:hidden rounded-2xl overflow-hidden shadow-lg aspect-video">
+                      <img
+                        src={project.image}
+                        alt=""
+                        className="w-full h-full object-cover"
+                      />
                     </div>
-                    {isActive ? (
-                      <span className="text-[#7A35C1]">
-                        {" "}
-                        <ChevronUpIcon />{" "}
-                      </span>
-                    ) : (
-                      <span className="text-gray-500">
-                        {" "}
-                        <ChevronDownIcon />{" "}
-                      </span>
-                    )}
                   </div>
-                  {isActive && contentForAccordionItem && (
-                    <div className="p-10 pt-0 text-left">
-                      <p className="text-[12px] font-semibold uppercase text-[#7A35C1] mb-2 font-openSansHebrew">
-                        {contentForAccordionItem.category}
-                      </p>
-                      <h3 className="text-xl font-normal text-[#2A2A2A] mb-4 font-[Switzer]">
-                        {contentForAccordionItem.title}
-                      </h3>
-                      <ul className="space-y-2.5 mb-4">
-                        {contentForAccordionItem.points.map(
-                          (point, pointIndex) => (
-                            <li
-                              key={pointIndex}
-                              className="flex items-start text-[14px] text-[#5B5570]"
-                            >
-                              <span className="text-[#5B5570] font-bold mr-2 mt-[1px] text-lg leading-none">
-                                •
-                              </span>{" "}
-                              {point}
-                            </li>
-                          )
-                        )}
-                      </ul>
-                      {contentForAccordionItem.image && (
-                        <img
-                          src={contentForAccordionItem.image}
-                          alt={contentForAccordionItem.title}
-                          className="w-full rounded-lg object-cover shadow-sm max-h-[300px]"
-                        />
-                      )}
-                    </div>
-                  )}
-                </div>
+                </section>
               );
             })}
+          </div>
+
+          <div className="hidden lg:flex items-start">
+            <div className="sticky top-24 h-[75vh] w-full rounded-[40px] overflow-hidden shadow-[0_40px_100px_-20px_rgba(0,0,0,0.15)] bg-[#F8F8F8]">
+              <AnimatePresence mode="wait" custom={directionRef.current}>
+                <motion.div
+                  key={activeIndex}
+                  custom={directionRef.current}
+                  variants={variants}
+                  initial="initial"
+                  animate="animate"
+                  exit="exit"
+                  transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                  className="absolute inset-0"
+                >
+                  <img
+                    src={projects[activeIndex].image}
+                    alt=""
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent pointer-events-none" />
+                </motion.div>
+              </AnimatePresence>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default WhoMaxtron;
+export default OurProjects;

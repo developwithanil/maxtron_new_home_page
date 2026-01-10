@@ -13,7 +13,7 @@ const Testimonials = () => {
           <Verify />
           TESTIMONIALS
         </p>
-        <h2 className="text-2xl lg:text-5xl font-bold text-[#2A2A2A]  font-[Switzer]">
+        <h2 className="text-2xl lg:text-5xl text-[#2A2A2A] font-[IBM Plex Sans] ">
           Our Believers And Supporters
         </h2>
         <p className="md:mb-10 lg:mb-14 xl:mb-16 text-[#5B5570] [font-family: openSansHebrew] text-lg">
