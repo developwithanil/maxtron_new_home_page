@@ -59,7 +59,7 @@ const CaseStudies = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-row justify-between items-center mb-12 md:mb-16">
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-0 text-left text-brand-text-light">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-light text-[#2A2A2A] font-[IBM Plex Sans] mb-4 sm:mb-0 text-left text-brand-text-light">
             Case Studies
           </h2>
           <a
@@ -105,7 +105,7 @@ const CaseStudies = () => {
                 key={`case-study-content-${currentStudy.id}`}
                 className={`w-full max-w-md px-2 md:px-4 ${contentAnimationClass} duration-300`}
               >
-                <h3 className="sm:text-3xl  md:text-4xl lg:text-[32px] font-bold text-[#2A2A2A] mb-3">
+                <h3 className="sm:text-3xl  md:text-4xl lg:text-[32px] font-normal text-[#2A2A2A] mb-3">
                   {currentStudy.title}
                 </h3>
                 <div className="flex flex-wrap justify-center gap-x-2.5 gap-y-1 mb-4">
