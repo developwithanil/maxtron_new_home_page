@@ -80,12 +80,12 @@ const ContactForm: React.FC = () => {
                 "linear-gradient(270deg, var(--Primary-100, #CAA8EF) 0%, var(--Primary-500, #7A35C1) 100%)",
             }}
           >
-            <p className="p-2 text-white">Fill the Form & Get Your Project Moving</p>
+            <p className="p-2 text-white">Free 30-Minutes Consultation</p>
           </div>
           <div className="container mx-auto flex flex-col lg:flex-row bg-white items-center py-5 md:p-5 justify-between gap-6 lg:gap-8">
             <div className="lg:w-1/2 text-left lg:text-left">
               <h2 className="self-stretch text-[#1E1E1E] [font-family:Switzer] font-bold text-xl md:text-[40px] leading-[120%]">
-                Fill the form & Get your project moving!
+                Fill the Form & Get Your Project Moving!
               </h2>
 
               <ul className="mb-8 mt-8 space-y-4">
