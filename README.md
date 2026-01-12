@@ -1,4 +1,4 @@
-# React + TypeScript + Vite  +tailwind
+# React + TypeScript + Vite +tailwind
 
 
 
