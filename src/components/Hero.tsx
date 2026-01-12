@@ -40,12 +40,12 @@ const HeroSection = React.memo(function HeroSection() {
           >
             <motion.h1
               variants={itemVariants}
-              className="text-[#593E91] text-[36px] font-light leading-[1.15] tracking-tight sm:text-[48px] lg:text-[56px] font-[IBM Plex Sans] leading-[1.5]"
+              className="text-[#593E91] text-[7vw] sm:text-[48px] lg:text-[56px] font-light leading-[1.25] tracking-tight font-[IBM Plex Sans] whitespace-nowrap"
             >
               Creating Winning Companies,
-              <br className="hidden lg:block" />
+              <br />
               Making Them Successful and
-              <br className="hidden lg:block" />
+              <br />
               Taking Them Public
             </motion.h1>
 
@@ -64,7 +64,7 @@ const HeroSection = React.memo(function HeroSection() {
               className="mt-8 flex justify-center lg:justify-start"
             >
               <Link
-                to="/contact"
+                to="https://calendly.com/business-maxtron/30min?month=2024-08"
                 className="bg-[#7A35C1] px-8 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-[#602E8D] rounded-sm hover:shadow-lg"
               >
                 Book A Call
@@ -72,7 +72,7 @@ const HeroSection = React.memo(function HeroSection() {
             </motion.div>
           </motion.div>
 
-          {/* Premium 3D Globe Section - Larger size */}
+         
           <motion.div
             initial={{ opacity: 0, scale: 0.9, x: 20 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}

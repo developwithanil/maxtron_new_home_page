@@ -165,13 +165,11 @@ const WhoMaxtron: React.FC = () => {
       id="projects"
     >
       <div className="max-w-[1500px] mx-auto">
-        <header className="mb-12 md:mb-16 lg:mb-24">
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-light text-[#161616] font-[IBM Plex Sans] text-center md:text-left tracking-tighter">
-            Smarter business.
-            <br className="md:hidden" /> Real impact.
+        <header className="mb-4 md:mb-16 lg:mb-24">
+          <h2 className="text-[7vw] sm:text-4xl md:text-6xl lg:text-7xl font-light text-[#2A2A2A] font-[IBM Plex Sans] text-left tracking-tighter whitespace-nowrap">
+            Smarter business. Real impact.
           </h2>
         </header>
-
      
         <div className="grid grid-cols-1 md:grid-cols-[0.42fr_0.58fr] lg:grid-cols-2 gap-10 md:gap-14 lg:gap-32 items-start">
        
@@ -184,7 +182,7 @@ const WhoMaxtron: React.FC = () => {
                   ref={(el) => {
                     itemRefs.current[index] = el;
                   }}
-                  className="min-h-[40vh] md:min-h-[70vh] lg:min-h-[85vh] flex flex-col justify-center py-10 md:py-0 border-t border-gray-100 first:border-none relative"
+                  className="min-h-fit md:min-h-[70vh] lg:min-h-[85vh] flex flex-col justify-start md:justify-center py-6 md:py-0 border-t border-gray-100 first:border-none relative"
                 >
                   <div
                     className={`transition-all duration-700 ease-out pl-6 md:pl-10 lg:pl-12 relative ${
@@ -200,7 +198,7 @@ const WhoMaxtron: React.FC = () => {
                         }`}
                     />
 
-                    <h3 className="text-[#111111] font-medium text-2xl lg:text-4xl mb-5 lg:mb-8 leading-tight">
+                    <h3 className="text-[#111111] font-light text-xl md:text-2xl lg:text-4xl mb-3 md:mb-5 lg:mb-8 leading-tight">
                       {project.title}
                     </h3>
 
