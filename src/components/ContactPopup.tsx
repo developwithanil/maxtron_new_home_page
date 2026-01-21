@@ -109,8 +109,6 @@ const ContactPopup = ({
     mode: "onChange",
   });
 
-  console.log("Current form errors:", errors);
-
   useEffect(() => {
     if (!open) return;
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -152,19 +150,153 @@ const ContactPopup = ({
               <h2 className="text-3xl font-extrabold text-[#7A35C1] mb-6 text-center drop-shadow-lg">
                 Contact Us
               </h2>
+
               <form
-                onSubmit={handleSubmit(async () => {
+                // ✅ Zoho recommended ID
+                id="webform989313000000556138"
+                name="WebToLeads989313000000556138"
+                onSubmit={handleSubmit(async (data) => {
                   try {
-                    await new Promise((resolve) => setTimeout(resolve, 1000));
-                    reset();
+                    const formData = new FormData();
+
+                    // ✅ Required hidden fields
+                    formData.append(
+                      "xnQsjsdp",
+                      "7608cfd13f41908645cb54eba39b2a85aed01a9e4a9611e6905a32adfcc24722"
+                    );
+                    formData.append("zc_gad", "");
+                    formData.append(
+                      "xmIwtLD",
+                      "2abb4f4acabb7977b02f54292870a1ecb98eaddbc909d8cce79b8f41d9f29a9481a680ad1eb72ac4ec78a84ecf6ca96e"
+                    );
+                    formData.append("actionType", "TGVhZHM=");
+                    formData.append("returnURL", "null");
+
+                    // ✅ Honeypot (THIS WAS MISSING — BIG REASON LEAD FAILS)
+                    formData.append("aG9uZXlwb3Q", "");
+
+                    // ✅ SalesIQ / visitor tracking values (optional)
+                    const ldeskuidVal =
+                      (document.getElementById("ldeskuid") as HTMLInputElement)
+                        ?.value || "";
+                    const LDTuvidVal =
+                      (document.getElementById("LDTuvid") as HTMLInputElement)
+                        ?.value || "";
+
+                    let finalLDTuvid = LDTuvidVal;
+                    const w = window as any;
+                    if (
+                      w.$zoho &&
+                      w.$zoho.salesiq &&
+                      w.$zoho.salesiq.visitor &&
+                      w.$zoho.salesiq.visitor.uniqueid
+                    ) {
+                      const id = w.$zoho.salesiq.visitor.uniqueid();
+                      if (id) finalLDTuvid = id;
+                    }
+
+                    formData.append("ldeskuid", ldeskuidVal);
+                    formData.append("LDTuvid", finalLDTuvid);
+
+                 
+                    formData.append("Last Name", data.fullName);
+                    formData.append("Email", data.email);
+                    formData.append("Phone", data.phone);
+                    formData.append("Description", data.description);
+                    formData.append(
+                      "Lead Source",
+                      "Web Form- Contact Us Page"
+                    );
+
+                    // ✅ Important debug log
+                    console.log("Submitting to Zoho...");
+                    console.log("Payload:", {
+                      fullName: data.fullName,
+                      email: data.email,
+                      phone: data.phone,
+                      description: data.description,
+                    });
+
+                    // ✅ Submit to Zoho
+                    const response = await fetch(
+                      "https://crm.zoho.in/crm/WebToLeadForm",
+                      {
+                        method: "POST",
+                        body: formData,
+                        mode: "no-cors",
+                      }
+                    );
+
+                    console.log("Zoho fetch response:", response,formData);
+
+                    // ✅ Assume success if no error
                     setShowCongrats(true);
+                    // reset();
                     setTimeout(() => setOpen(false), 5000);
                   } catch (error) {
                     console.error("Error submitting form:", error);
+                    alert(
+                      "There was an error submitting the form. Please try again."
+                    );
                   }
                 })}
                 className="w-full flex flex-col gap-5"
               >
+                {/* ✅ Hidden Inputs for Zoho (keep these) */}
+                <input
+                  type="text"
+                  style={{ display: "none" }}
+                  name="xnQsjsdp"
+                  value="7608cfd13f41908645cb54eba39b2a85aed01a9e4a9611e6905a32adfcc24722"
+                  readOnly
+                />
+                <input type="hidden" name="zc_gad" id="zc_gad" value="" />
+                <input
+                  type="text"
+                  style={{ display: "none" }}
+                  name="xmIwtLD"
+                  value="2abb4f4acabb7977b02f54292870a1ecb98eaddbc909d8cce79b8f41d9f29a9481a680ad1eb72ac4ec78a84ecf6ca96e"
+                  readOnly
+                />
+                <input
+                  type="text"
+                  style={{ display: "none" }}
+                  name="actionType"
+                  value="TGVhZHM="
+                  readOnly
+                />
+                <input
+                  type="text"
+                  style={{ display: "none" }}
+                  name="returnURL"
+                  value="null"
+                  readOnly
+                />
+
+                {/* ✅ Honeypot hidden input (MUST KEEP) */}
+                <input
+                  type="text"
+                  style={{ display: "none" }}
+                  name="aG9uZXlwb3Q"
+                  value=""
+                  readOnly
+                />
+
+                {/* Do not remove this code */}
+                <input
+                  type="text"
+                  style={{ display: "none" }}
+                  id="ldeskuid"
+                  name="ldeskuid"
+                />
+                <input
+                  type="text"
+                  style={{ display: "none" }}
+                  id="LDTuvid"
+                  name="LDTuvid"
+                />
+                {/* Do not remove this code */}
+
                 <div>
                   <label
                     htmlFor="fullName"
@@ -173,11 +305,7 @@ const ContactPopup = ({
                     Full Name <span className="text-red-500">*</span>
                   </label>
                   <input
-                    {...register("fullName", {
-                      onChange: (e) => {
-                        console.log("Full name changed:", e.target.value);
-                      },
-                    })}
+                    {...register("fullName")}
                     type="text"
                     id="fullName"
                     required
@@ -192,6 +320,7 @@ const ContactPopup = ({
                     </p>
                   )}
                 </div>
+
                 <div>
                   <label
                     htmlFor="email"
@@ -200,11 +329,7 @@ const ContactPopup = ({
                     Email <span className="text-red-500">*</span>
                   </label>
                   <input
-                    {...register("email", {
-                      onChange: (e) => {
-                        console.log("Email changed:", e.target.value);
-                      },
-                    })}
+                    {...register("email")}
                     type="email"
                     id="email"
                     required
@@ -219,6 +344,7 @@ const ContactPopup = ({
                     </p>
                   )}
                 </div>
+
                 <div>
                   <label
                     htmlFor="phone"
@@ -242,6 +368,7 @@ const ContactPopup = ({
                     </p>
                   )}
                 </div>
+
                 <div>
                   <label
                     htmlFor="description"
@@ -265,6 +392,7 @@ const ContactPopup = ({
                     </p>
                   )}
                 </div>
+
                 <div className="text-right">
                   <button
                     type="submit"
