@@ -1,8 +1,10 @@
 import React, { useRef, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 const schema = z.object({
   fullName: z
@@ -12,8 +14,7 @@ const schema = z.object({
   email: z.string().min(1, "Email is required").email("Invalid email address"),
   phone: z
     .string()
-    .min(1, "Phone number is required")
-    .regex(/^[6-9]\d{9}$/, "Phone number must be 10 digits and valid"),
+    .min(1, "Phone number is required"),
   description: z
     .string()
     .min(1, "Description is required")
@@ -102,6 +103,7 @@ const ContactPopup = ({
   const {
     register,
     handleSubmit,
+    control,
     reset,
     formState: { errors, isSubmitting },
   } = useForm<FormData>({
@@ -152,14 +154,14 @@ const ContactPopup = ({
               </h2>
 
               <form
-                // ✅ Zoho recommended ID
+
                 id="webform989313000000556138"
                 name="WebToLeads989313000000556138"
                 onSubmit={handleSubmit(async (data) => {
                   try {
                     const formData = new FormData();
 
-                    // ✅ Required hidden fields
+
                     formData.append(
                       "xnQsjsdp",
                       "7608cfd13f41908645cb54eba39b2a85aed01a9e4a9611e6905a32adfcc24722"
@@ -172,10 +174,10 @@ const ContactPopup = ({
                     formData.append("actionType", "TGVhZHM=");
                     formData.append("returnURL", "null");
 
-                    // ✅ Honeypot (THIS WAS MISSING — BIG REASON LEAD FAILS)
+
                     formData.append("aG9uZXlwb3Q", "");
 
-                    // ✅ SalesIQ / visitor tracking values (optional)
+
                     const ldeskuidVal =
                       (document.getElementById("ldeskuid") as HTMLInputElement)
                         ?.value || "";
@@ -198,7 +200,7 @@ const ContactPopup = ({
                     formData.append("ldeskuid", ldeskuidVal);
                     formData.append("LDTuvid", finalLDTuvid);
 
-                 
+
                     formData.append("Last Name", data.fullName);
                     formData.append("Email", data.email);
                     formData.append("Phone", data.phone);
@@ -208,7 +210,7 @@ const ContactPopup = ({
                       "Web Form- Contact Us Page"
                     );
 
-                    // ✅ Important debug log
+
                     console.log("Submitting to Zoho...");
                     console.log("Payload:", {
                       fullName: data.fullName,
@@ -217,7 +219,7 @@ const ContactPopup = ({
                       description: data.description,
                     });
 
-                    // ✅ Submit to Zoho
+
                     const response = await fetch(
                       "https://crm.zoho.in/crm/WebToLeadForm",
                       {
@@ -227,11 +229,11 @@ const ContactPopup = ({
                       }
                     );
 
-                    console.log("Zoho fetch response:", response,formData);
+                    console.log("Zoho fetch response:", response, formData);
 
-                    // ✅ Assume success if no error
+
                     setShowCongrats(true);
-                    // reset();
+
                     setTimeout(() => setOpen(false), 5000);
                   } catch (error) {
                     console.error("Error submitting form:", error);
@@ -242,7 +244,7 @@ const ContactPopup = ({
                 })}
                 className="w-full flex flex-col gap-5"
               >
-                {/* ✅ Hidden Inputs for Zoho (keep these) */}
+
                 <input
                   type="text"
                   style={{ display: "none" }}
@@ -273,7 +275,7 @@ const ContactPopup = ({
                   readOnly
                 />
 
-                {/* ✅ Honeypot hidden input (MUST KEEP) */}
+
                 <input
                   type="text"
                   style={{ display: "none" }}
@@ -282,7 +284,7 @@ const ContactPopup = ({
                   readOnly
                 />
 
-                {/* Do not remove this code */}
+
                 <input
                   type="text"
                   style={{ display: "none" }}
@@ -295,7 +297,7 @@ const ContactPopup = ({
                   id="LDTuvid"
                   name="LDTuvid"
                 />
-                {/* Do not remove this code */}
+
 
                 <div>
                   <label
@@ -309,9 +311,8 @@ const ContactPopup = ({
                     type="text"
                     id="fullName"
                     required
-                    className={`w-full p-3 rounded-lg placeholder-gray-400 bg-[#DFDEE74D] focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer'] ${
-                      errors.fullName ? "border-2 border-red-500" : ""
-                    }`}
+                    className={`w-full p-3 rounded-lg placeholder-gray-400 bg-[#DFDEE74D] focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer'] ${errors.fullName ? "border-2 border-red-500" : ""
+                      }`}
                     placeholder="Enter Full Name"
                   />
                   {errors.fullName && (
@@ -333,9 +334,8 @@ const ContactPopup = ({
                     type="email"
                     id="email"
                     required
-                    className={`w-full p-3 rounded-lg placeholder-gray-400 bg-[#DFDEE74D] focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer'] ${
-                      errors.email ? "border-2 border-red-500" : ""
-                    }`}
+                    className={`w-full p-3 rounded-lg placeholder-gray-400 bg-[#DFDEE74D] focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer'] ${errors.email ? "border-2 border-red-500" : ""
+                      }`}
                     placeholder="Enter Email"
                   />
                   {errors.email && (
@@ -352,16 +352,45 @@ const ContactPopup = ({
                   >
                     Phone Number <span className="text-red-500">*</span>
                   </label>
-                  <input
-                    {...register("phone")}
-                    type="tel"
-                    id="phone"
-                    required
-                    className={`w-full p-3 rounded-lg placeholder-gray-400 bg-[#DFDEE74D] focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer'] ${
-                      errors.phone ? "border-2 border-red-500" : ""
-                    }`}
-                    placeholder="Enter Phone Number"
-                  />
+                  <div className="w-full">
+                    <Controller
+                      name="phone"
+                      control={control}
+                      render={({ field }) => (
+                        <PhoneInput
+                          country={"in"}
+                          value={field.value}
+                          onChange={(phone) => field.onChange(phone)}
+                          inputStyle={{
+                            width: "100%",
+                            height: "48px",
+                            borderRadius: "0.5rem",
+                            border: errors.phone ? "2px solid #ef4444" : "none",
+                            backgroundColor: "#DFDEE74D",
+                            fontFamily: "Switzer",
+                            paddingLeft: "48px",
+                          }}
+                          buttonStyle={{
+                            borderRadius: "0.5rem 0 0 0.5rem",
+                            border: "none",
+                            backgroundColor: "#DFDEE74D",
+                          }}
+                          dropdownStyle={{
+                            borderRadius: "0.5rem",
+                            fontFamily: "Switzer",
+                          }}
+                          containerStyle={{
+                            width: "100%",
+                            borderRadius: "0.5rem",
+                          }}
+                          inputProps={{
+                            name: "phone",
+                            required: true,
+                          }}
+                        />
+                      )}
+                    />
+                  </div>
                   {errors.phone && (
                     <p className="text-red-500 text-sm mt-1 font-normal">
                       {errors.phone.message}
@@ -381,9 +410,8 @@ const ContactPopup = ({
                     id="description"
                     rows={4}
                     required
-                    className={`w-full p-3 bg-[#DFDEE74D] rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer'] ${
-                      errors.description ? "border-2 border-red-500" : ""
-                    }`}
+                    className={`w-full p-3 bg-[#DFDEE74D] rounded-lg placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#7A35C1] transition-all font-['Switzer'] ${errors.description ? "border-2 border-red-500" : ""
+                      }`}
                     placeholder="Write Something"
                   ></textarea>
                   {errors.description && (
