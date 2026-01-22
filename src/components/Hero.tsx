@@ -42,11 +42,11 @@ const HeroSection = React.memo(function HeroSection() {
               variants={itemVariants}
               className="text-[#593E91] text-[7vw] sm:text-[48px] lg:text-[56px] font-light leading-[1.25] tracking-tight font-[IBM Plex Sans] whitespace-nowrap"
             >
-              Creating Winning Companies,
+             Building Winning Companies, 
               <br />
-              Making Them Successful and
+              Driving Success and Leading
               <br />
-              Taking Them Public
+           Them to Public Markets.
             </motion.h1>
 
             <motion.p
@@ -54,8 +54,8 @@ const HeroSection = React.memo(function HeroSection() {
               className="mx-auto mt-5 max-w-lg text-sm leading-relaxed text-[#161616]/80 sm:text-base lg:mx-0"
             >
               Maxtron delivers the best digital product engineering and
-              consulting services, driving innovation with AI, blockchain, and
-              end-to-end product development solution for startups, SMBs, and
+              consulting services, driving innovation with AI, blockchain and
+              end-to-end product development solution for startups, SMBs and
               enterprises.
             </motion.p>
 
