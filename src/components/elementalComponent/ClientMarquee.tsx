@@ -43,7 +43,7 @@ const ClientMarquee = () => {
         <div className="relative marquee-container">
           <h2 className="text-2xl sm:text-2xl md:text-5xl font-normal text-[#161616] mb-3 md:mb-4 lg:mb-6 xl:mb-6 font-[IBM Plex Sans] text-center">
             {" "}
-            Portfolio and Partners
+            Clients, Portfolio & Partners
           </h2>
           <div className="animate-marquee whitespace-nowrap">
             {clients.concat(clients).map((client, index) => (
