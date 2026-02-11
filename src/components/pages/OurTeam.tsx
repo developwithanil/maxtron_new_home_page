@@ -40,16 +40,16 @@ const items = [
     description: "Angel Network",
     image: bitangels,
   },
-  {
-    title: "Leventis Captial DIFC",
-    description: "",
-    image: leventiscapital,
-  },
-  {
-    title: "AgniX Capital",
-    description: "Investment Group",
-    image: agnix,
-  },
+  // {
+  //   title: "Leventis Captial DIFC",
+  //   description: "",
+  //   image: leventiscapital,
+  // },
+  // {
+  //   title: "AgniX Capital",
+  //   description: "Investment Group",
+  //   image: agnix,
+  // },
 ];
 const teams = [
   {
