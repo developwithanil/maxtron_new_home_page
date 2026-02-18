@@ -2,15 +2,20 @@ import affiliaterightlanding from "../../assets/case/affiliaterightlanding.webp"
 import ourteamrightimage from "../../assets/case/ourteamrightimage.webp";
 import gro8 from "../../assets/case/gro8.webp";
 import bitangels from "../../assets/case/bitangels.webp";
-import leventiscapital from "../../assets/case/leventiscapital.webp";
-import agnix from "../../assets/case/agnix.webp";
+// import leventiscapital from "../../assets/case/leventiscapital.webp";
+// import agnix from "../../assets/case/agnix.webp";
 import prashant from "../../assets/case/prashant.webp";
 import hui from "../../assets/case/hui.webp";
 import ridha from "../../assets/case/ridha.webp";
 import craig from "../../assets/case/craig.webp";
 import riddhi from "../../assets/case/riddhi.webp";
 import ishan from "../../assets/case/ishan.webp";
-import aman from "../../assets/case/aman.webp";
+import laxmi from "../../assets/case/laxmi.webp";
+import anil from "../../assets/case/anil.webp";
+import kamal from "../../assets/case/kamal.webp";
+import boby from "../../assets/case/boby.webp";
+import mehak from "../../assets/case/mehak.webp";
+// import aman from "../../assets/case/aman.webp";
 import dog from "../../assets/case/dog.webp";
 import geeta from "../../assets/case/geeta.webp";
 import pooran from "../../assets/case/pooran.webp";
@@ -52,6 +57,32 @@ const items = [
   // },
 ];
 const teams = [
+   {
+    title: "Hue H. Nguyễn",
+    designation: "Regulatory & Compliance Advisor",
+    image: hui,
+    details: [
+      "Ex- U.S. SEC",
+      "Pricewaterhouse Regulatory Group",
+      "Former COO of Investment Management",
+      "Influential Expertise in TradFi, DeFi, SEC Regulation",
+      "25+ years Experience"
+    ],
+    linkedin:"https://www.linkedin.com/in/hue-h-nguyen-7027852/"
+  },
+  {
+    title: "Bobby Sudon ",
+    designation: "General partner",
+    image: boby,
+    details: [
+      
+      "Business & sales strategist across multiple industries",
+      "Scaled family office and construction ventures",
+      "Architect-minded industry leader",
+      "Growth-focused and deal-driven professional"
+    ],
+    linkedin:""
+  },
   {
     title: "Prashant",
     designation: "Co-Founder & Partner",
@@ -89,19 +120,7 @@ const teams = [
     ],
     linkedin:"https://www.linkedin.com/in/rishikeshtrivedi/"
   },
-  {
-    title: "Hue H. Nguyễn",
-    designation: "Regulatory & Compliance Advisor",
-    image: hui,
-    details: [
-      "Ex- U.S. SEC",
-      "Pricewaterhouse Regulatory Group",
-      "Former COO of Investment Management",
-      "Influential Expertise in TradFi, DeFi, SEC Regulation",
-      "25+ years Experience"
-    ],
-    linkedin:"https://www.linkedin.com/in/hue-h-nguyen-7027852/"
-  },
+ 
   {
     title: "Ridha Agarwal",
     designation: "Web3 Product Leader",
@@ -139,6 +158,19 @@ const teams = [
     linkedin:""
   },
   {
+    title: "Laxmi Pandey",
+    designation: "Head of Marketing & Operation",
+    image: laxmi,
+    details: [
+      "Operations Lead managing 360°",
+      "Penetrated North American, Europe & Middle-East Geographies",
+      "8+ Years Experience in Management",
+     
+      ],
+    linkedin:"https://www.linkedin.com/in/pandey-laxmi-183061260/"
+  },
+  
+  {
     title: "Craig Henderson",
     designation: "Crypto Exchange Specialist",
     image: craig,
@@ -151,18 +183,18 @@ const teams = [
     linkedin:"https://www.linkedin.com/in/craig-henderson-5a7509bb/"
   },
   
-  {
-    title: "Aman Shah",
-    designation: "Web3 Solutions Expert",
-    image: aman,
-    details: [
-      "Web3 Solutions Development Expert",
-      "HPE & Blockchain Startup",
-      "Scalable, agile solution builder.",
-      "Blends corporate and startup strengths."
-     ],
-    linkedin:"https://www.linkedin.com/in/shah-aman/"
-  },
+  // {
+  //   title: "Aman Shah",
+  //   designation: "Web3 Solutions Expert",
+  //   image: aman,
+  //   details: [
+  //     "Web3 Solutions Development Expert",
+  //     "HPE & Blockchain Startup",
+  //     "Scalable, agile solution builder.",
+  //     "Blends corporate and startup strengths."
+  //    ],
+  //   linkedin:"https://www.linkedin.com/in/shah-aman/"
+  // },
   {
     title: "Ishan Dwivedi",
     designation: "Design Manager & Lead",
@@ -184,6 +216,44 @@ const teams = [
       "Ex Wipro, Ex Swayatt Robots"
       ],
     linkedin:"https://www.linkedin.com/in/ritz-jais/"
+  },
+  {
+    title: "Kamal Nayan",
+    designation: "Tech Lead",
+    image: kamal,
+    details: [
+      "Leading scalable Web2 & Web3 systems",
+      "Building secure blockchain & smart contract solutions",
+      "Developing AI-driven automation systems",
+      "Engineering embedded hardware solutions",
+      "Managing cybersecurity & server infrastructure",
+      ],
+    linkedin:"https://www.linkedin.com/in/saka015/"
+  },
+  {
+    title: "Anil Kumar",
+    designation: "Mobile Application Expert (IOS & Android)",
+    image: anil,
+    details: [
+      "Led end-to-end mobile app strategy from concept to global launch",
+      "Specialized in cross-platform technologies, cloud integration and system optimization",
+      "Driving seamless, secure and user-centric mobile experiences",
+      "Architected scalable, high-performance mobile platforms",
+      ],
+    linkedin:"https://www.linkedin.com/in/anil-kumar-668324273/"
+  },
+  {
+    title: "Mehak Gaur",
+    designation: "Head of Technical Operations",
+    image: mehak,
+    details: [
+      "Leading cross-functional tech execution and delivery",
+      "Overseeing product development & sprint planning",
+      "Aligning engineering with business and growth goals",
+      "Managing task delegation, timelines, and workflows",
+      "Ensuring smooth deployment, infrastructure & performance",
+      ],
+    linkedin:"https://www.linkedin.com/in/mehak-45a190245/"
   },
   {
     title: "Crypto",
