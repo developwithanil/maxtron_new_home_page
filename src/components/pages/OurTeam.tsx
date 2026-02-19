@@ -309,7 +309,7 @@ const teams = [
     designation: "Business Analyst",
     image: harshita,
     details: [
-      "Strategic Execution Arm of the Founde",
+      "Strategic Execution Arm of the Founder",
       "Cross-Functional Coordination & Decision Support",
       "Growth, Partnerships & Special Projects",
       "Governance, Reporting & Operational Excellence",
