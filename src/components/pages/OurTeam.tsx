@@ -11,9 +11,13 @@ import girish from "/girish.webp";
 import craig from "../../assets/case/craig.webp";
 import riddhi from "../../assets/case/riddhi.webp";
 import ishan from "../../assets/case/ishan.webp";
+import harshita from "../../assets/case/harshita.webp";
 import laxmi from "../../assets/case/laxmi.webp";
 import anil from "../../assets/case/anil.webp";
 import kamal from "../../assets/case/kamal.webp";
+import garvit from "../../assets/case/garvit.webp";
+import mahesh from "../../assets/case/mahesh.webp";
+import paras from "../../assets/case/paras.webp";
 import boby from "../../assets/case/boby.webp";
 import mehak from "../../assets/case/mehak.webp";
 // import aman from "../../assets/case/aman.webp";
@@ -60,6 +64,7 @@ const items = [
 const teams = [
   {
     title: "Girish Ahirwar",
+    subtitle:" General Partner",
     designation: "CEO & Founder",
     image: girish,
     details: [
@@ -73,7 +78,8 @@ const teams = [
   },
   {
     title: "Hue H. Nguyễn",
-    designation: "Regulatory & Compliance Advisor",
+    subtitle:" General Partner",
+    designation: "Regulatory & Compliance",
     image: hui,
     details: [
       "Ex- U.S. SEC",
@@ -86,7 +92,8 @@ const teams = [
   },
   {
     title: "Bobby Sudon ",
-    designation: "General partner",
+    subtitle:" General Partner",
+    designation: "Business & Strategy",
     image: boby,
     details: [
 
@@ -273,16 +280,68 @@ const teams = [
     linkedin: "https://www.linkedin.com/in/mehak-45a190245/"
   },
   {
-    title: "Crypto",
-    designation: "Chief Happiness Officer",
-    image: dog,
+    title: "Garvit Jain",
+    designation: "Blockchain Developer",
+    image: garvit,
     details: [
-      "He may not write code, but he debugs stress better than anyone.",
-      "His playful presence brings smiles, laughter, and a stress-free atmosphere",
-      "Crypto reminds us to enjoy the little moments."
+      "Leading blockchain development and smart contract architecture",
+      "Overseeing tokenomics design, presale platforms and DeFi protocol implementation",
+      "Aligning technical solutions with client requirements",
+      "Managing full-stack Web3 development to deployment",
+      "Ensuring secure, audit-ready smart contracts",
     ],
-    linkedin: ""
-  }
+    linkedin: "https://www.linkedin.com/in/garvitjain1857"
+  },
+  {
+    title: "Mahesh Tripathi",
+    designation: "App (iOS & Android)",
+    image: mahesh,
+    details: [
+      "Senior Flutter ( Android &IOS) Developer with Native Android App Development Skills",
+      "Proficient In Integrating Ai tools in Application",
+      "Skilled in Making Automation using AI Agents",
+      
+    ],
+    linkedin: "https://www.linkedin.com/in/maheshtripathimail1"
+  },
+   {
+    title: "Harshita kaushik",
+    designation: "Business Analyst",
+    image: harshita,
+    details: [
+      "Strategic Execution Arm of the Founde",
+      "Cross-Functional Coordination & Decision Support",
+      "Growth, Partnerships & Special Projects",
+      "Governance, Reporting & Operational Excellence",
+     
+    ],
+    linkedin: "https://www.linkedin.com/in/harshita-kaushik-6726a6279/"
+  },
+  {
+    title: "Paras ",
+    designation: "AI Marketer & Creator",
+    image: paras,
+    details: [
+      "Edits videos in minutes with automated cuts, captions and transitions",
+      "Detects highlights, removes silences, and optimizes pacing automatically",
+      "Generates subtitles, voiceovers, and effects using AI tools",
+      "Managing task delegation, timelines, and workflows",
+      "Cost-effective and scalable for bulk content production",
+    ],
+    linkedin: "https://www.linkedin.com/in/paras-sharma-59462b395/"
+  },
+ 
+  // {
+  //   title: "Crypto",
+  //   designation: "Chief Happiness Officer",
+  //   image: dog,
+  //   details: [
+  //     "He may not write code, but he debugs stress better than anyone.",
+  //     "His playful presence brings smiles, laughter, and a stress-free atmosphere",
+  //     "Crypto reminds us to enjoy the little moments."
+  //   ],
+  //   linkedin: ""
+  // }
 ];
 
 const OurTeam = () => {
@@ -321,32 +380,7 @@ const OurTeam = () => {
               />
             </div>
           </div>
-          <div className="w-full flex flex-col gap-8 mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-4 md:pr-5 lg:pr-10 items-start">
-            {/* Left Section - Heading and Paragraph */}
-            <div className="w-full text-left ">
-              <h1 className="text-[#2A2A2A] font-[Switzer] text-4xl lg:text-5xl xl:text-5xl mb-3 lg:mb-5 xl:mb-6 font-bold leading-[140%] text-start">
-                Our Partners
-              </h1>
-            </div>
-
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-col-3 xl:grid-cols-4 gap-7 lg:gap-8 justify-start items-start">
-              {items.map((item, index) => (
-                <div key={index} className="flex flex-col items-start ">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-32 md:w-36 lg:w-40 xl:w-44 h-32 md:h-36 lg:h-40 xl:h-44 object-contain rounded-md"
-                  />
-                  <p className="text-[#2A2A2A] font-[Switzer] text-2xl lg:text-3xl font-semibold text-left mt-3">
-                    {item.title}
-                  </p>
-                  <p className="text-xl lg:text-2xl text-[#363348] text-left mt-1">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
+         
           <div className="w-full  mt-9 md:mt-14 lg:mt-20 xl:mt-24 pr-4 md:pr-6 lg:pr-10 ">
             <img
               src={team}
@@ -384,8 +418,11 @@ const OurTeam = () => {
                       </div>
                     </div>
                     <div className="w-16 h-1 rounded-full bg-gradient-to-r from-[#a084e8] via-[#58269A] to-[#a084e8] mb-3 animate-pulse" />
-                    <h2 className="text-2xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl font-extrabold mt-2 mb-1 text-[#58269A] text-center tracking-tight drop-shadow-lg">
+                    <h2 className="text-2xl sm:text-3xl  lg:text-3xl xl:text-4xl font-extrabold mt-2 mb-1 text-[#58269A] text-center tracking-tight drop-shadow-lg">
                       {member.title}
+                    </h2>
+                    <h2 className="text-xl sm:text-2xl  lg:text-2xl xl:text-3xl font-medium mt-2 mb-1 text-[#58269A] text-center tracking-tight drop-shadow-lg">
+                      {member.subtitle}
                     </h2>
                     <p className="text-lg sm:text-xl md:text-lg lg:text-xl xl:text-2xl font-semibold text-[#7c3aed] text-center mb-2">
                       {member.designation}
@@ -410,9 +447,9 @@ const OurTeam = () => {
             </div>
           </div>
 
-          {/* === REST OF TEAM GRID === */}
+         
           <div className="w-full flex flex-col gap-8 mt-8 md:mt-12 lg:mt-16 xl:mt-20 pr-4 md:pr-5 lg:pr-10 items-start">
-            {/* Left Section - Heading and Paragraph */}
+           
             <div className="w-full text-left ">
               <h1 className="text-[#2A2A2A] font-[Switzer] text-4xl lg:text-5xl xl:text-5xl mb-3 lg:mb-5 xl:mb-6 font-bold leading-[140%] text-start">
                 Our Team and Partners
@@ -507,6 +544,32 @@ const OurTeam = () => {
                 </motion.div>
               )}
             </AnimatePresence>
+          </div>
+           <div className="w-full flex flex-col gap-8 mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-4 md:pr-5 lg:pr-10 items-start">
+           
+            <div className="w-full text-left ">
+              <h1 className="text-[#2A2A2A] font-[Switzer] text-4xl lg:text-5xl xl:text-5xl mb-3 lg:mb-5 xl:mb-6 font-bold leading-[140%] text-start">
+                Our Partners
+              </h1>
+            </div>
+
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-col-3 xl:grid-cols-4 gap-7 lg:gap-8 justify-start items-start">
+              {items.map((item, index) => (
+                <div key={index} className="flex flex-col items-start ">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-32 md:w-36 lg:w-40 xl:w-44 h-32 md:h-36 lg:h-40 xl:h-44 object-contain rounded-md"
+                  />
+                  <p className="text-[#2A2A2A] font-[Switzer] text-2xl lg:text-3xl font-semibold text-left mt-3">
+                    {item.title}
+                  </p>
+                  <p className="text-xl lg:text-2xl text-[#363348] text-left mt-1">
+                    {item.description}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <TeamLastComponent />
