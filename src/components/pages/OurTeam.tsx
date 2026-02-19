@@ -178,8 +178,8 @@ const teams = [
     designation: "Project Manager & Lead",
     image: riddhi,
     details: [
-      "Project Manager & Lead",
-      "Led 50+ Web3 Projects",
+      "Led technology projects across USA, Dubai, India and Asian markets",
+      "Specialized in Blockchain, AI, Healthcare, Finance, and Trading platform solutions",
       "Ex Wipro, Ex Swayatt Robots"
     ],
     linkedin: "https://www.linkedin.com/in/ritz-jais/"
