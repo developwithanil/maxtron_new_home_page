@@ -7,6 +7,7 @@ import bitangels from "../../assets/case/bitangels.webp";
 import prashant from "../../assets/case/prashant.webp";
 import hui from "../../assets/case/hui.webp";
 import ridha from "../../assets/case/ridha.webp";
+import girish from "/girish.webp";
 import craig from "../../assets/case/craig.webp";
 import riddhi from "../../assets/case/riddhi.webp";
 import ishan from "../../assets/case/ishan.webp";
@@ -57,7 +58,20 @@ const items = [
   // },
 ];
 const teams = [
-   {
+  {
+    title: "Girish Ahirwar",
+    designation: "CEO & Founder",
+    image: girish,
+    details: [
+      "Partner & Ex- CBO Tagbin",
+      "Pitched, Won & Delivered Digital & Experiential Projects Worth $500mn+",
+      "Fundraising And Partnerships",
+      "10+ Years Experience in Emerging Tech",
+      "IIT Roorkee"
+    ],
+    linkedin: "https://www.linkedin.com/in/girish-ahirwar/"
+  },
+  {
     title: "Hue H. Nguyễn",
     designation: "Regulatory & Compliance Advisor",
     image: hui,
@@ -68,20 +82,20 @@ const teams = [
       "Influential Expertise in TradFi, DeFi, SEC Regulation",
       "25+ years Experience"
     ],
-    linkedin:"https://www.linkedin.com/in/hue-h-nguyen-7027852/"
+    linkedin: "https://www.linkedin.com/in/hue-h-nguyen-7027852/"
   },
   {
     title: "Bobby Sudon ",
     designation: "General partner",
     image: boby,
     details: [
-      
+
       "Business & sales strategist across multiple industries",
       "Scaled family office and construction ventures",
       "Architect-minded industry leader",
       "Growth-focused and deal-driven professional"
     ],
-    linkedin:""
+    linkedin: ""
   },
   {
     title: "Prashant",
@@ -92,8 +106,35 @@ const teams = [
       "Technology & Product",
       "Selected at Draper University, Summer Program (USA)",
       "Inter IIT Technology Meet: Gold Medalist"
-      ],
-    linkedin:"https://www.linkedin.com/in/prashant-kumar-939327ab/"
+    ],
+    linkedin: "https://www.linkedin.com/in/prashant-kumar-939327ab/"
+  },
+   {
+    title: "Ridha Agarwal",
+    designation: "Web3 Product Leader",
+    image: ridha,
+    details: [
+      "5+ Years in Scaling Web3 Innovative Products",
+      "Leading Tech Communities (Web3 & AI)",
+      "Expanded Products to US, UAE, Europe & Asian Markets",
+      "Ex- Founding Team: Create Protocol & Healaverse"
+    ],
+    linkedin: "https://www.linkedin.com/in/ridha-agarwal-549ba9187/"
+
+  },
+   {
+    title: "Pooran Singh",
+    designation: "Partner",
+    image: pooran,
+    details: [
+
+      "20+ years in government infrastructure & procurement",
+      "Former advisor in Ministry of Finance (GoI)",
+      "Expert in public-private partnerships & regulatory strategy",
+      "Guides Maxtron’s smart city & clean energy initiatives",
+      "Key advisor for government relations in India & Africa",
+    ],
+    linkedin: "https://www.linkedin.com/in/pooran-singh-ahirwar-409b0932/"
   },
   {
     title: "Trish Kane",
@@ -106,7 +147,7 @@ const teams = [
       "3.5 years CTO & Project Manager, Healerverse (2022-2025)",
       "Awarded Woman of the Year Web 3 & Tech, 2024, UAE"
     ],
-    linkedin:"https://www.linkedin.com/in/trishmkane"
+    linkedin: "https://www.linkedin.com/in/trishmkane"
   },
   {
     title: "Rishikesh Trivedi",
@@ -118,44 +159,30 @@ const teams = [
       "President at SCLG ExCom",
       "Managing Partner at 888vc & Strategy Advisor at PitchMatter"
     ],
-    linkedin:"https://www.linkedin.com/in/rishikeshtrivedi/"
+    linkedin: "https://www.linkedin.com/in/rishikeshtrivedi/"
   },
+
  
-  {
-    title: "Ridha Agarwal",
-    designation: "Web3 Product Leader",
-    image: ridha,
-    details: [
-      "5+ Years in Scaling Web3 Innovative Products",
-      "Leading Tech Communities (Web3 & AI)",
-      "Expanded Products to US, UAE, Europe & Asian Markets",
-      "Ex- Founding Team: Create Protocol & Healaverse"
-    ],
-    linkedin:"https://www.linkedin.com/in/ridha-agarwal-549ba9187/"
-    
-  },
-  {
-    title: "Pooran Singh",
-    designation: "Partner",
-    image: pooran,
-    details: [
-      
-      "20+ years in government infrastructure & procurement",
-      "Former advisor in Ministry of Finance (GoI)",
-      "Expert in public-private partnerships & regulatory strategy",
-      "Guides Maxtron’s smart city & clean energy initiatives",
-      "Key advisor for government relations in India & Africa",
-    ],
-    linkedin:"https://www.linkedin.com/in/pooran-singh-ahirwar-409b0932/"
-  },
+ 
   {
     title: "Geeta Vali",
     designation: "Partner",
     image: geeta,
     details: [
-      
-       ],
-    linkedin:""
+
+    ],
+    linkedin: ""
+  },
+   {
+    title: "Riddhi Jaiswal",
+    designation: "Project Manager & Lead",
+    image: riddhi,
+    details: [
+      "Project Manager & Lead",
+      "Led 50+ Web3 Projects",
+      "Ex Wipro, Ex Swayatt Robots"
+    ],
+    linkedin: "https://www.linkedin.com/in/ritz-jais/"
   },
   {
     title: "Laxmi Pandey",
@@ -165,11 +192,11 @@ const teams = [
       "Operations Lead managing 360°",
       "Penetrated North American, Europe & Middle-East Geographies",
       "8+ Years Experience in Management",
-     
-      ],
-    linkedin:"https://www.linkedin.com/in/pandey-laxmi-183061260/"
+
+    ],
+    linkedin: "https://www.linkedin.com/in/pandey-laxmi-183061260/"
   },
-  
+
   {
     title: "Craig Henderson",
     designation: "Crypto Exchange Specialist",
@@ -179,10 +206,10 @@ const teams = [
       "Advisor to multiple Web3 startups across DeFi and GameFi",
       "Expert in exchange strategy, token lifecycle, and community development",
       "Led exchange negotiations, KOL outreach, and ambassador programs"
-      ],
-    linkedin:"https://www.linkedin.com/in/craig-henderson-5a7509bb/"
+    ],
+    linkedin: "https://www.linkedin.com/in/craig-henderson-5a7509bb/"
   },
-  
+
   // {
   //   title: "Aman Shah",
   //   designation: "Web3 Solutions Expert",
@@ -198,25 +225,15 @@ const teams = [
   {
     title: "Ishan Dwivedi",
     designation: "Design Manager & Lead",
-    image: ishan, 
+    image: ishan,
     details: [
       "Product & UI/UX",
       "Led 100+ UI/UX Projects Globally",
       "Experienced in user research, prototyping and creating engaging interfaces"
-      ],
-    linkedin:"https://www.linkedin.com/in/ishan-dwivedi-2021a9376"
+    ],
+    linkedin: "https://www.linkedin.com/in/ishan-dwivedi-2021a9376"
   },
-  {
-    title: "Riddhi Jaiswal",
-    designation: "Project Manager & Lead",
-    image: riddhi,
-    details: [
-      "Project Manager & Lead",
-      "Led 50+ Web3 Projects",
-      "Ex Wipro, Ex Swayatt Robots"
-      ],
-    linkedin:"https://www.linkedin.com/in/ritz-jais/"
-  },
+ 
   {
     title: "Kamal Nayan",
     designation: "Tech Lead",
@@ -227,8 +244,8 @@ const teams = [
       "Developing AI-driven automation systems",
       "Engineering embedded hardware solutions",
       "Managing cybersecurity & server infrastructure",
-      ],
-    linkedin:"https://www.linkedin.com/in/saka015/"
+    ],
+    linkedin: "https://www.linkedin.com/in/saka015/"
   },
   {
     title: "Anil Kumar",
@@ -239,8 +256,8 @@ const teams = [
       "Specialized in cross-platform technologies, cloud integration and system optimization",
       "Driving seamless, secure and user-centric mobile experiences",
       "Architected scalable, high-performance mobile platforms",
-      ],
-    linkedin:"https://www.linkedin.com/in/anil-kumar-668324273/"
+    ],
+    linkedin: "https://www.linkedin.com/in/anil-kumar-668324273/"
   },
   {
     title: "Mehak Gaur",
@@ -252,8 +269,8 @@ const teams = [
       "Aligning engineering with business and growth goals",
       "Managing task delegation, timelines, and workflows",
       "Ensuring smooth deployment, infrastructure & performance",
-      ],
-    linkedin:"https://www.linkedin.com/in/mehak-45a190245/"
+    ],
+    linkedin: "https://www.linkedin.com/in/mehak-45a190245/"
   },
   {
     title: "Crypto",
@@ -263,8 +280,8 @@ const teams = [
       "He may not write code, but he debugs stress better than anyone.",
       "His playful presence brings smiles, laughter, and a stress-free atmosphere",
       "Crypto reminds us to enjoy the little moments."
-       ],
-    linkedin:""
+    ],
+    linkedin: ""
   }
 ];
 
@@ -337,56 +354,63 @@ const OurTeam = () => {
               className="w-full h-full object-cover rounded-md"
             />
           </div>
+          {/* === TOP 3 FOUNDER CARDS === */}
           <div className="w-full flex flex-col gap-8 mt-14 md:mt-20 lg:mt-28 xl:mt-36 pr-4 md:pr-5 lg:pr-10 items-start">
-            <div className="w-full text-left ">
+            <div className="w-full text-left">
               <h1 className="text-[#2A2A2A] font-[Switzer] text-4xl lg:text-5xl xl:text-5xl font-bold leading-[140%] text-center">
-                About The Founder
+                Leadership
               </h1>
             </div>
 
-            <div className="w-full flex justify-center">
-              <div
-                className="relative flex flex-col items-center bg-white rounded-3xl shadow-3xl p-4 md:p-7 max-w-xl w-full mx-auto border border-violet-100 founder-card"
-                style={{
-                  background:
-                    'linear-gradient(135deg, #f3e8ff 0%, #fff 100%)',
-                }}
-              >
-                {/* Animated Glowing Gradient Border */}
-                <div className="relative mt-2 mb-3">
-                  <span className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#a084e8] via-[#58269A] to-[#a084e8] blur-xl opacity-70 animate-pulse z-10" />
-                  <div className="relative w-36 h-36 md:w-44 md:h-44 flex items-center justify-center overflow-hidden rounded-full border-4 border-white shadow-xl bg-white z-10 founder-img-glow">
-                    <img
-                      src="/girish.webp"
-                      alt="Girish Ahirwar"
-                      className="object-cover w-full h-full rounded-full border-4 border-[#a084e8] shadow-lg animate-fadeIn"
-                    />
+            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+              {teams.slice(0, 3).map((member, idx) => (
+                <div className="w-full flex justify-center" key={idx}>
+                  <div
+                    className="relative flex flex-col items-center bg-white rounded-3xl shadow-3xl p-4 md:p-6 lg:p-7 max-w-xl w-full mx-auto border border-violet-100 founder-card"
+                    style={{
+                      background:
+                        'linear-gradient(135deg, #f3e8ff 0%, #fff 100%)',
+                    }}
+                  >
+                    {/* Animated Glowing Gradient Border */}
+                    <div className="relative mt-2 mb-3">
+                      <span className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#a084e8] via-[#58269A] to-[#a084e8] blur-xl opacity-70 animate-pulse z-10" />
+                      <div className="relative w-28 h-28 sm:w-32 sm:h-32 md:w-32 md:h-32 lg:w-36 lg:h-36 xl:w-44 xl:h-44 flex items-center justify-center overflow-hidden rounded-full border-4 border-white shadow-xl bg-white z-10 founder-img-glow">
+                        <img
+                          src={member.image}
+                          alt={member.title}
+                          className="object-cover w-full h-full rounded-full border-4 border-[#a084e8] shadow-lg animate-fadeIn"
+                        />
+                      </div>
+                    </div>
+                    <div className="w-16 h-1 rounded-full bg-gradient-to-r from-[#a084e8] via-[#58269A] to-[#a084e8] mb-3 animate-pulse" />
+                    <h2 className="text-2xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl font-extrabold mt-2 mb-1 text-[#58269A] text-center tracking-tight drop-shadow-lg">
+                      {member.title}
+                    </h2>
+                    <p className="text-lg sm:text-xl md:text-lg lg:text-xl xl:text-2xl font-semibold text-[#7c3aed] text-center mb-2">
+                      {member.designation}
+                    </p>
+
+                    <ul className="flex flex-col gap-1 text-sm sm:text-base md:text-sm lg:text-base text-gray-800 w-full max-w-md mx-auto mb-4 mt-4">
+                      {member.details.map((detail, dIdx) => (
+                        <li key={dIdx} className="flex items-start gap-2 bg-[#f3e8ff] rounded-lg px-3 py-2">
+                          <span className="text-[#7c3aed] mt-1 shrink-0">✔️</span> {detail}
+                        </li>
+                      ))}
+                    </ul>
+
+                    {member.linkedin && (
+                      <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="mt-4">
+                        <AiFillLinkedin className="w-8 h-8 text-[#0A66C2] hover:opacity-80 transition-opacity" />
+                      </a>
+                    )}
                   </div>
                 </div>
-                <div className="w-16 h-1 rounded-full bg-gradient-to-r from-[#a084e8] via-[#58269A] to-[#a084e8] mb-3 animate-pulse" />
-                <h2 className="text-4xl md:text-5xl font-extrabold mt-2 mb-1 text-[#58269A] text-center tracking-tight drop-shadow-lg">
-                  Girish Ahirwar
-                </h2>
-                <p className="text-xl md:text-2xl font-semibold text-[#7c3aed] text-center mb-2">
-                  CEO & Founder
-                </p>
-              
-                <ul className="flex flex-col gap-1 text-base md:text-lg text-gray-800 w-full max-w-md mx-auto mb-4 mt-4">
-                  <li className="flex items-start gap-2 bg-[#f3e8ff] rounded-lg px-3 py-2"><span className="text-[#7c3aed] mt-1">✔️</span> Partner & Ex- CBO Tagbin</li>
-                  <li className="flex items-start gap-2 bg-[#f3e8ff] rounded-lg px-3 py-2"><span className="text-[#7c3aed] mt-1">✔️</span> Pitched, Won & Delivered Digital & Experiential Projects Worth $500mn+</li>
-                  <li className="flex items-start gap-2 bg-[#f3e8ff] rounded-lg px-3 py-2"><span className="text-[#7c3aed] mt-1">✔️</span> Fundraising And Partnerships</li>
-                  <li className="flex items-start gap-2 bg-[#f3e8ff] rounded-lg px-3 py-2"><span className="text-[#7c3aed] mt-1">✔️</span> IIT Roorkee</li>
-                  <li className="flex items-start gap-2 bg-[#f3e8ff] rounded-lg px-3 py-2"><span className="text-[#7c3aed] mt-1">✔️</span> 10+ Years Experience in Emerging Tech</li>
-                </ul>
-                <blockquote className="italic text-center text-gray-500 text-lg border-l-4 border-[#a084e8] pl-4 mt-1">
-                  "Innovation is not just about technology, it's about creating impact."
-                </blockquote>
-                <a href="https://www.linkedin.com/in/girish-ahirwar/" target="_blank" rel="noopener noreferrer" className="mt-4">
-                  <AiFillLinkedin className="w-8 h-8 text-[#0A66C2] hover:opacity-80 transition-opacity" />
-                </a>
-              </div>
+              ))}
             </div>
           </div>
+
+          {/* === REST OF TEAM GRID === */}
           <div className="w-full flex flex-col gap-8 mt-8 md:mt-12 lg:mt-16 xl:mt-20 pr-4 md:pr-5 lg:pr-10 items-start">
             {/* Left Section - Heading and Paragraph */}
             <div className="w-full text-left ">
@@ -396,14 +420,14 @@ const OurTeam = () => {
             </div>
 
             <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-10 justify-start items-start">
-              {teams.map((item, index) => (
+              {teams.slice(3).map((item, index) => (
                 <div
                   key={index}
                   className="relative flex flex-col items-center bg-white rounded-2xl shadow-xl p-6 group cursor-pointer overflow-hidden team-card transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:border-violet-300 border border-transparent"
                   style={{
                     background: 'linear-gradient(135deg, #f3e8ff 0%, #fff 100%)',
                   }}
-                  onClick={() => setSelected(index)}
+                  onClick={() => setSelected(index + 3)}
                 >
                   <div className="absolute -top-8 -right-8 w-32 h-32 bg-gradient-to-br from-[#58269A] to-[#a084e8] opacity-10 rounded-full z-0 group-hover:opacity-20 transition-all duration-300" />
                   <img
@@ -423,7 +447,7 @@ const OurTeam = () => {
                     >
                       Read More
                     </button>
-                   
+
                   </div>
                 </div>
               ))}
