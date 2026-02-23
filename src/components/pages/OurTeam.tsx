@@ -84,7 +84,7 @@ const teams = [
     details: [
       "Ex- U.S. SEC",
       "Pricewaterhouse Regulatory Group",
-      "Former COO of Investment Management",
+      "Former CCO of Investment Management",
       "Influential Expertise in TradFi, DeFi, SEC Regulation",
       "25+ years Experience"
     ],
