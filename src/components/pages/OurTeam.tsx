@@ -2,8 +2,7 @@ import affiliaterightlanding from "../../assets/case/affiliaterightlanding.webp"
 import ourteamrightimage from "../../assets/case/ourteamrightimage.webp";
 import gro8 from "../../assets/case/gro8.webp";
 import bitangels from "../../assets/case/bitangels.webp";
-// import leventiscapital from "../../assets/case/leventiscapital.webp";
-// import agnix from "../../assets/case/agnix.webp";
+
 import prashant from "../../assets/case/prashant.webp";
 import hui from "../../assets/case/hui.webp";
 import ridha from "../../assets/case/ridha.webp";
@@ -20,7 +19,7 @@ import mahesh from "../../assets/case/mahesh.webp";
 import paras from "../../assets/case/paras.webp";
 import boby from "../../assets/case/boby.webp";
 import mehak from "../../assets/case/mehak.webp";
-// import aman from "../../assets/case/aman.webp";
+
 import dog from "../../assets/case/dog.webp";
 import geeta from "../../assets/case/geeta.webp";
 import pooran from "../../assets/case/pooran.webp";
@@ -91,7 +90,7 @@ const teams = [
     linkedin: "https://www.linkedin.com/in/hue-h-nguyen-7027852/"
   },
   {
-    title: "Bobby Sudon ",
+    title: "Bobby Sudon",
     subtitle:" General Partner",
     designation: "Business & Strategy",
     image: boby,
