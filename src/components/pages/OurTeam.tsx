@@ -90,7 +90,7 @@ const teams = [
     linkedin: "https://www.linkedin.com/in/hue-h-nguyen-7027852/"
   },
   {
-    title: "Bobby Sudon",
+    title: "Robert D. Sudon",
     subtitle:" General Partner",
     designation: "Business & Strategy",
     image: boby,
