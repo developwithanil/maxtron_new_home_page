@@ -63,35 +63,35 @@ const items = [
 const teams = [
   {
     title: "Girish Ahirwar",
-    subtitle:" General Partner",
+    subtitle: "General Partner",
     designation: "CEO & Founder",
     image: girish,
     details: [
-      "Partner & Ex- CBO Tagbin",
-      "Pitched, Won & Delivered Digital & Experiential Projects Worth $500mn+",
-      "Fundraising And Partnerships",
-      "10+ Years Experience in Emerging Tech",
+      "Partner & Ex-CBO, Tagbin",
+      "Pitched, won, and delivered digital & experiential projects worth $500mn+",
+      "Fundraising and partnerships",
+      "10+ years of experience in emerging tech",
       "IIT Roorkee"
     ],
     linkedin: "https://www.linkedin.com/in/girish-ahirwar/"
   },
   {
     title: "Hue H. Nguyễn",
-    subtitle:" General Partner",
+    subtitle: "General Partner",
     designation: "Regulatory & Compliance",
     image: hui,
     details: [
-      "Ex- U.S. SEC",
+      "Ex-U.S. SEC",
       "Pricewaterhouse Regulatory Group",
       "Former CCO of Investment Management",
-      "Influential Expertise in TradFi, DeFi, SEC Regulation",
-      "25+ years Experience"
+      "Influential expertise in TradFi, DeFi, and SEC regulation",
+      "25+ years of experience"
     ],
     linkedin: "https://www.linkedin.com/in/hue-h-nguyen-7027852/"
   },
   {
     title: "Robert D. Sudon",
-    subtitle:" General Partner",
+    subtitle: "General Partner",
     designation: "Business & Strategy",
     image: boby,
     details: [
@@ -108,10 +108,10 @@ const teams = [
     designation: "Co-Founder & Partner",
     image: prashant,
     details: [
-      "Partner (Serial Entrepreneur)",
-      "Technology & Product",
-      "Selected at Draper University, Summer Program (USA)",
-      "Inter IIT Technology Meet: Gold Medalist"
+      "Partner (serial entrepreneur)",
+      "Technology and product",
+      "Selected at Draper University Summer Program (USA)",
+      "Inter IIT Technology Meet: Gold medalist"
     ],
     linkedin: "https://www.linkedin.com/in/prashant-kumar-939327ab/"
   },
@@ -120,50 +120,49 @@ const teams = [
     designation: "Web3 Product Leader",
     image: ridha,
     details: [
-      "5+ Years in Scaling Web3 Innovative Products",
-      "Leading Tech Communities (Web3 & AI)",
-      "Expanded Products to US, UAE, Europe & Asian Markets",
-      "Ex- Founding Team: Create Protocol & Healaverse"
+      "5+ years of experience in scaling innovative Web3 products",
+      "Leading tech communities (Web3 & AI)",
+      "Expanded products to US, UAE, Europe, and Asian markets",
+      "Ex-founding team: Create Protocol & Healaverse"
     ],
     linkedin: "https://www.linkedin.com/in/ridha-agarwal-549ba9187/"
 
   },
-   {
+  {
     title: "Pooran Singh",
     designation: "Partner",
     image: pooran,
     details: [
-
       "20+ years in government infrastructure & procurement",
-      "Former advisor in Ministry of Finance (GoI)",
+      "Former Advisor in Ministry of Finance (GoI)",
       "Expert in public-private partnerships & regulatory strategy",
-      "Guides Maxtron’s smart city & clean energy initiatives",
-      "Key advisor for government relations in India & Africa",
+      "Guides Maxtron’s smart city and clean energy initiatives",
+      "Key advisor for government relations in India and Africa",
     ],
     linkedin: "https://www.linkedin.com/in/pooran-singh-ahirwar-409b0932/"
   },
   {
     title: "Trish Kane",
-    designation: "Director of business USA",
+    designation: "Director of Business, USA",
     image: trish,
     details: [
       "20+ Years Disruptive Technologies, Sales & Startups",
       "Tech & Motivational Keynote Speaker",
       "Ex: Wall Street, Aflac & Informa Tech",
       "3.5 years CTO & Project Manager, Healerverse (2022-2025)",
-      "Awarded Woman of the Year Web 3 & Tech, 2024, UAE"
+      "Awarded Woman of the Year Web3 & Tech, 2024, UAE"
     ],
     linkedin: "https://www.linkedin.com/in/trishmkane"
   },
   {
     title: "Rishikesh Trivedi",
-    designation: "Director of business Mena region",
+    designation: "Director of Business, MENA Region",
     image: rishikesh,
     details: [
-      "Market Acceleration Specialist & Investor with 20+ years driving global growth",
-      "Co-Founder of Enabler ONE",
+      "Market acceleration specialist and investor with 20+ years of experience driving global growth",
+      "Co-founder of Enabler ONE",
       "President at SCLG ExCom",
-      "Managing Partner at 888vc & Strategy Advisor at PitchMatter"
+      "Managing Partner at 888vc and strategy advisor at PitchMatter"
     ],
     linkedin: "https://www.linkedin.com/in/rishikeshtrivedi/"
   },
@@ -192,7 +191,7 @@ const teams = [
   },
   {
     title: "Laxmi Pandey",
-    designation: "Head of Marketing & Operation",
+    designation: "Head of Marketing & Operations",
     image: laxmi,
     details: [
       "Operations Lead managing 360°",
@@ -255,7 +254,7 @@ const teams = [
   },
   {
     title: "Anil Kumar",
-    designation: "Mobile Application Expert (IOS & Android)",
+    designation: "Mobile Application Expert (iOS & Android)",
     image: anil,
     details: [
       "Led end-to-end mobile app strategy from concept to global launch",
@@ -278,33 +277,20 @@ const teams = [
     ],
     linkedin: "https://www.linkedin.com/in/mehak-45a190245/"
   },
-  {
-    title: "Garvit Jain",
-    designation: "Blockchain Developer",
-    image: garvit,
-    details: [
-      "Leading blockchain development and smart contract architecture",
-      "Overseeing tokenomics design, presale platforms and DeFi protocol implementation",
-      "Aligning technical solutions with client requirements",
-      "Managing full-stack Web3 development to deployment",
-      "Ensuring secure, audit-ready smart contracts",
-    ],
-    linkedin: "https://www.linkedin.com/in/garvitjain1857"
-  },
+
   {
     title: "Mahesh Tripathi",
-    designation: "App (iOS & Android)",
+    designation: "Mobile App Expert (iOS & Android)",
     image: mahesh,
     details: [
-      "Senior Flutter ( Android &IOS) Developer with Native Android App Development Skills",
-      "Proficient In Integrating Ai tools in Application",
-      "Skilled in Making Automation using AI Agents",
-      
+      "Senior Flutter (Android & iOS) developer with Native Android app development skills",
+      "Proficient in integrating AI tools into applications",
+      "Skilled in making automation using AI agents"
     ],
     linkedin: "https://www.linkedin.com/in/maheshtripathimail1"
   },
    {
-    title: "Harshita kaushik",
+    title: "Harshita Kaushik",
     designation: "Business Analyst",
     image: harshita,
     details: [
@@ -395,11 +381,11 @@ const OurTeam = () => {
               </h1>
             </div>
 
-            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch">
               {teams.slice(0, 3).map((member, idx) => (
                 <div className="w-full flex justify-center" key={idx}>
                   <div
-                    className="relative flex flex-col items-center bg-white rounded-3xl shadow-3xl p-4 md:p-6 lg:p-7 max-w-xl w-full mx-auto border border-violet-100 founder-card"
+                    className="relative flex flex-col items-center bg-white rounded-3xl shadow-3xl p-4 md:p-6 lg:p-7 max-w-xl w-full mx-auto border border-violet-100 founder-card h-full"
                     style={{
                       background:
                         'linear-gradient(135deg, #f3e8ff 0%, #fff 100%)',
@@ -455,11 +441,11 @@ const OurTeam = () => {
               </h1>
             </div>
 
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-10 justify-start items-start">
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-10 justify-start items-stretch">
               {teams.slice(3).map((item, index) => (
                 <div
                   key={index}
-                  className="relative flex flex-col items-center bg-white rounded-2xl shadow-xl p-6 group cursor-pointer overflow-hidden team-card transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:border-violet-300 border border-transparent"
+                  className="relative flex flex-col items-center bg-white rounded-2xl shadow-xl p-6 group cursor-pointer overflow-hidden team-card transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:border-violet-300 border border-transparent h-full"
                   style={{
                     background: 'linear-gradient(135deg, #f3e8ff 0%, #fff 100%)',
                   }}
@@ -477,7 +463,7 @@ const OurTeam = () => {
                   <p className="text-[#7c3aed] text-base lg:text-lg font-medium text-center mt-1 z-10">
                     {item.designation}
                   </p>
-                  <div className="flex items-center gap-3 mt-4 z-10">
+                  <div className="flex items-center gap-3 mt-auto pt-4 z-10">
                     <button
                       className="px-5 py-2 bg-gradient-to-r from-[#58269A] to-[#a084e8] text-white rounded-full font-semibold shadow hover:from-[#6d3bbd] hover:to-[#b39ddb] transition-all duration-300 scale-100 group-hover:scale-105 group-hover:shadow-lg"
                     >
