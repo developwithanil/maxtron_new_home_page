@@ -19,6 +19,7 @@ import mahesh from "../../assets/case/mahesh.webp";
 import paras from "../../assets/case/paras.webp";
 import boby from "../../assets/case/boby.webp";
 import mehak from "../../assets/case/mehak.webp";
+import amani from "../../assets/case/amani.png";
 
 import dog from "../../assets/case/dog.webp";
 import geeta from "../../assets/case/geeta.webp";
@@ -140,6 +141,21 @@ const teams = [
       "Key advisor for government relations in India and Africa",
     ],
     linkedin: "https://www.linkedin.com/in/pooran-singh-ahirwar-409b0932/"
+  },
+  {
+    title: "Amani Saif",
+    designation: "Business Partner (OKUUD) MENA Region",
+    image: amani,
+    details: [
+     "Business Strategist & AI Augmentation Leader",
+"Digital Transformation & AI Implementation Specialist",
+"Qatar Ministry of Communications & IT – Smart Qatar Initiatives",
+"AFC Asian Cup 2023 – AI in National Live Operations",
+"FIFA World Cup 2022 – Data Analytics & Live Reporting",
+"G8 & G20 Summit 2010 – Command Center Operations",
+"Qatar Genome Project – Ethics, Privacy & Consent Pilot"
+    ],
+    linkedin: "https://www.linkedin.com/in/amanisaif/"
   },
   {
     title: "Trish Kane",
