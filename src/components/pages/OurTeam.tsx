@@ -14,7 +14,7 @@ import harshita from "../../assets/case/harshita.webp";
 import laxmi from "../../assets/case/laxmi.webp";
 import anil from "../../assets/case/anil.webp";
 import kamal from "../../assets/case/kamal.webp";
-import garvit from "../../assets/case/garvit.webp";
+import atul from "../../assets/case/atul.png";
 import mahesh from "../../assets/case/mahesh.webp";
 import paras from "../../assets/case/paras.webp";
 import boby from "../../assets/case/boby.webp";
@@ -170,11 +170,12 @@ const teams = [
  
  
   {
-    title: "Geeta Vali",
-    designation: "Partner",
-    image: geeta,
+    title: "Atul Pratap Singh",
+    designation: "Business & Consultation\n(Government & Corporate)",
+    image: atul,
     details: [
-
+      "6+ years of experience in consultation across India, South Africa & Dubai",
+      "Government & Corporate"
     ],
     linkedin: ""
   },
@@ -460,7 +461,7 @@ const OurTeam = () => {
                   <p className="text-[#58269A] font-[Switzer] text-xl lg:text-2xl font-bold text-center mt-4 z-10">
                     {item.title}
                   </p>
-                  <p className="text-[#7c3aed] text-base lg:text-lg font-medium text-center mt-1 z-10">
+                  <p className="text-[#7c3aed] text-base lg:text-lg font-medium text-center mt-1 z-10 whitespace-pre-line">
                     {item.designation}
                   </p>
                   <div className="flex items-center gap-3 mt-auto pt-4 z-10">
@@ -509,7 +510,7 @@ const OurTeam = () => {
                       <h2 className="text-2xl font-bold text-center mb-1 text-[#58269A]">
                         {teams[selected].title}
                       </h2>
-                      <p className="text-lg font-semibold text-center text-[#7c3aed] mb-4">
+                      <p className="text-lg font-semibold text-center text-[#7c3aed] mb-4 whitespace-pre-line">
                         {teams[selected].designation}
                       </p>
                       <ul className="list-disc pl-5 space-y-1 text-left text-gray-700">
