@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <!-- ✅ Google Analytics 4 -->
+  <!-- ✅ Google Analytics 4 & Google Ads (AW-18060606085) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0NK4EEQRLX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+
+    // Google Analytics 4 Config
     gtag('config', 'G-0NK4EEQRLX');
+    
+    // Google Ads Config
+    gtag('config', 'AW-18060606085');
   </script>
 
   <!-- ✅ CookieYes -->
-  <script id="cookieyes" 
-    src="https://cdn-cookieyes.com/client_data/6b4acff75b82da77e6c55e8b/script.js"></script>
+  <script id="cookieyes" src="https://cdn-cookieyes.com/client_data/6b4acff75b82da77e6c55e8b/script.js"></script>
 
   <!-- ✅ Animate on Scroll -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -68,7 +73,8 @@
   <meta http-equiv="X-Robots-Tag" content="index, follow" />
   <!-- Per-page descriptions are injected via react-helmet-async -->
   <meta property="og:title" content="Maxtron | AI, Blockchain, Web3 Technologies, IT Services & Marketing" />
-  <meta property="og:description" content="Maxtron delivers innovative IT and marketing solutions to accelerate your business growth with cutting-edge technology." />
+  <meta property="og:description"
+    content="Maxtron delivers innovative IT and marketing solutions to accelerate your business growth with cutting-edge technology." />
   <meta property="og:image" content="https://www.maxtron.ai/src/assets/MaxtronLogo.png" />
   <meta property="og:url" content="https://www.maxtron.ai/" />
   <meta property="og:type" content="website" />
@@ -113,7 +119,7 @@
   <!-- ✅ HubSpot Conversations API Listener -->
   <script>
     function onConversationsAPIReady() {
-      window.HubSpotConversations.on('contactAssociated', function(payload) {
+      window.HubSpotConversations.on('contactAssociated', function (payload) {
         window.dataLayer.push({
           event: 'hubspotChatClicked',
           eventCategory: 'hubspot-chat',
@@ -122,7 +128,7 @@
         });
       });
 
-      window.HubSpotConversations.on('conversationStarted', function(payload) {
+      window.HubSpotConversations.on('conversationStarted', function (payload) {
         window.dataLayer.push({
           event: 'hubspotChatClicked',
           eventCategory: 'hubspot-chat',
@@ -136,4 +142,5 @@
     window.hsConversationsOnReady.push(onConversationsAPIReady);
   </script>
 </body>
+
 </html>
