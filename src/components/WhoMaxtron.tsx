@@ -6,12 +6,12 @@ import { logo1, logo2, logo3, logo4 } from "../assets/products";
 import { product1, product2, product3, product4, product5, product6, product7 } from "../assets/products";
 const projects = [
     {
-      serviceKey: "realAsset",
-      title: "Maxtron Real Asset",
-      subtitle: "(www.realasset.maxtron.ai)",
-      url: "https://www.realasset.maxtron.ai",
+      serviceKey: "Maxtronize",
+      title: "Maxtronize - RWA Tokenization",
+      subtitle: "(https://www.maxtronize.com/)",
+      url: "https://www.maxtronize.com/",
       logo: logo1,
-      description: "Our experiential innovation division uniting physical and digital worlds to create immersive brand ecosystems. We design AI-driven installations, AR/VR/MR environments, projection mapping, drone and laser shows, interactive gesture systems, metaverse activations, and experiential marketing environments.\n\nFrom product launches to intelligent experience centers, we build high-impact storytelling platforms that captivate audiences and elevate brand presence.",
+      description: "A compliant real-world asset tokenization platform enabling programmable ownership of gold, mining assets, real estate, equities, bonds, and infrastructure across global markets including the USA, UK, Dubai and India. Built for scalability and regulatory alignment, Maxtronize unlocks liquidity for high-value assets within the rapidly expanding RWA economy.",
       image: product1,
     },
     {
@@ -215,7 +215,7 @@ const WhoMaxtron: React.FC = () => {
                        <img
                           src={project.image}
                           alt={project.title}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-fill"
                         />
                     </div>
                   </div>

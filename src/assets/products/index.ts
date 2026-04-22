@@ -1,4 +1,4 @@
-import product1 from "./product1.png";
+import product1 from "./product1new1.png";
 import product2 from "./product2.png";
 import product3 from "./product3.png";
 import product4 from "./product4.png";
@@ -6,7 +6,7 @@ import product5 from "./product5.png";
 import product6 from "./product6.png";
 import product7 from "./product7.png";
 
-import logo1 from "./product1logo.png";
+import logo1 from "./product1logonew.png";
 import logo2 from "./product2logo.png";
 import logo3 from "./product3logo.png";
 import logo4 from "./product4logo.png";
