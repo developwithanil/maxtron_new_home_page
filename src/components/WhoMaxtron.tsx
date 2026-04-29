@@ -243,7 +243,7 @@ const WhoMaxtron: React.FC = () => {
                        <img
                         src={projects[activeIndex].image}
                         alt={projects[activeIndex].title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                        className="w-full h-full object-cover "
                       />
                     </a>
                   ) : (

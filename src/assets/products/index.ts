@@ -1,4 +1,4 @@
-import product1 from "./product1new1.png";
+import product1 from "./productnew2.webp";
 import product2 from "./product2.png";
 import product3 from "./product3.png";
 import product4 from "./product4.png";
