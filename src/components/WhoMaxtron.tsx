@@ -11,7 +11,7 @@ const projects = [
       subtitle: "(https://www.maxtronize.com/)",
       url: "https://www.maxtronize.com/",
       logo: logo1,
-      description: "A compliant real-world asset tokenization platform enabling programmable ownership of gold, mining assets, real estate, equities, bonds, and infrastructure across global markets including the USA, UK, Dubai and India. Built for scalability and regulatory alignment, Maxtronize unlocks liquidity for high-value assets within the rapidly expanding RWA economy.",
+      description: "A compliant real-world asset tokenization platform enabling programmable ownership of gold, mining assets, real estate, equities, bonds, and infrastructure across global markets including the USA, UK, Dubai and India. \n\nBuilt for scalability and regulatory alignment, Maxtronize unlocks liquidity for high-value assets within the rapidly expanding RWA economy.",
       image: product1,
     },
     {
@@ -20,7 +20,7 @@ const projects = [
       subtitle: "(www.strategy.maxtron.ai)",
       url: "https://www.strategy.maxtron.ai/",
       logo: logo2,
-      description: "Our AI-powered growth and marketing arm delivering scalable expansion through automation-led systems, Web3 and metaverse campaigns, performance marketing, creator and KOL partnerships, and full-funnel strategy.\n\nCombining analytics, AI optimization, and structured growth frameworks, Maxtron Studio transforms brand visibility, engagement, and revenue into measurable, repeatable outcomes for technology-first companies.",
+      description: "Our capital deployment and strategic advisory arm focused on infrastructure-led, asset-backed, long-duration value creation. We structure and support scalable platforms across energy transition, battery ecosystems, circular economy assets, AI-enhanced RWAs, carbon markets, medical technology, eco-smart cities, agriculture, and climate-linked infrastructure.\n\nThrough thesis-driven structuring and aligned partnerships, we catalyze sustainable growth and long-term capital formation.",
       image: product2,
     },
     {
