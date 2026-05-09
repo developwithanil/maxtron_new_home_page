@@ -306,32 +306,32 @@ const teams = [
     ],
     linkedin: "https://www.linkedin.com/in/maheshtripathimail1"
   },
-   {
-    title: "Harshita Kaushik",
-    designation: "Business Analyst",
-    image: harshita,
-    details: [
-      "Strategic Execution Arm of the Founder",
-      "Cross-Functional Coordination & Decision Support",
-      "Growth, Partnerships & Special Projects",
-      "Governance, Reporting & Operational Excellence",
+  //  {
+  //   title: "Harshita Kaushik",
+  //   designation: "Business Analyst",
+  //   image: harshita,
+  //   details: [
+  //     "Strategic Execution Arm of the Founder",
+  //     "Cross-Functional Coordination & Decision Support",
+  //     "Growth, Partnerships & Special Projects",
+  //     "Governance, Reporting & Operational Excellence",
      
-    ],
-    linkedin: "https://www.linkedin.com/in/harshita-kaushik-6726a6279/"
-  },
-  {
-    title: "Paras ",
-    designation: "AI Marketer & Creator",
-    image: paras,
-    details: [
-      "Edits videos in minutes with automated cuts, captions and transitions",
-      "Detects highlights, removes silences, and optimizes pacing automatically",
-      "Generates subtitles, voiceovers, and effects using AI tools",
-      "Managing task delegation, timelines, and workflows",
-      "Cost-effective and scalable for bulk content production",
-    ],
-    linkedin: "https://www.linkedin.com/in/paras-sharma-59462b395/"
-  },
+  //   ],
+  //   linkedin: "https://www.linkedin.com/in/harshita-kaushik-6726a6279/"
+  // },
+  // {
+  //   title: "Paras ",
+  //   designation: "AI Marketer & Creator",
+  //   image: paras,
+  //   details: [
+  //     "Edits videos in minutes with automated cuts, captions and transitions",
+  //     "Detects highlights, removes silences, and optimizes pacing automatically",
+  //     "Generates subtitles, voiceovers, and effects using AI tools",
+  //     "Managing task delegation, timelines, and workflows",
+  //     "Cost-effective and scalable for bulk content production",
+  //   ],
+  //   linkedin: "https://www.linkedin.com/in/paras-sharma-59462b395/"
+  // },
  
   // {
   //   title: "Crypto",
