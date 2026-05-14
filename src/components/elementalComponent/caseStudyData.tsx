@@ -1611,30 +1611,6 @@ export const caseStudies: CaseStudy[] = [
     ],
     keyFeatures: [
       {
-        title: "Tokenized healthcare diagnostic infrastructure",
-        details: [],
-      },
-      {
-        title: "Smart contract-based revenue distribution",
-        details: [],
-      },
-      {
-        title: "Real-time operational transparency system",
-        details: [],
-      },
-      {
-        title: "Investor-to-hospital participation pools",
-        details: [],
-      },
-      {
-        title: "Predictive healthcare infrastructure analytics",
-        details: [],
-      },
-      {
-        title: "Blockchain-powered financing model",
-        details: [],
-      },
-      {
         title: "Real-world utility increases Web3 trust",
         details: [],
       },
@@ -1646,6 +1622,7 @@ export const caseStudies: CaseStudy[] = [
         title: "Transparency is critical for adoption",
         details: [],
       },
+     
     ],
     keyFeaturesImage: [medimintmain1, medimintmain2],
     bgImage: ulalobg,
