@@ -12,6 +12,10 @@ import ulalo2 from "../../assets/internal/ulalo2.webp";
 import ulalobg from "../../assets/internal/ulalobg.webp";
 import icca1 from "../../assets/internal/icca1.webp";
 import icca2 from "../../assets/internal/icca2.webp";
+import medimint from "../../assets/internal/medimint.webp";
+import medimintmain from "../../assets/internal/medimintmain.webp";
+import medimintmain1 from "../../assets/internal/medimintmain1.webp";
+import medimintmain2 from "../../assets/internal/medimintmain2.webp";
 import ulaloprocess from "../../assets/internal/ulaloprocess.webp";
 import tawuniyamain from "../../assets/internal/tawuniyamain.webp";
 import ulalomain from "../../assets/internal/ulalomain.webp";
@@ -1410,6 +1414,110 @@ export const caseStudies = [
             },
         ],
         keyFeaturesImage: [ulalo1, ulalo2],
+        bgImage: ulalobg,
+    },
+    {
+        title: "MEDIMINT",
+        subtitle: "AI & Blockchain-Powered Healthcare Infrastructure Ecosystem",
+        heroImage: medimintmain,
+        type: ["Web3", "HealthTech", "Real-World Assets (RWA)", "Blockchain Infrastructure"],
+        afterHeroSection: medimint,
+        industryInfo: "Web3, HealthTech, Real-World Assets (RWA), Blockchain Infrastructure",
+        projectDuration: "4 Months",
+        theprocessText: "The Process",
+        name: "MEDIMINT",
+        description: "Medimint bridges healthcare infrastructure with blockchain-based investment systems creating a transparent and scalable ecosystem.",
+        clientSatisfaction: 5.0,
+        bussinessNeeds: {
+            title: "Decentralizing Healthcare Infrastructure Financing\n\nHealthcare systems face major structural limitations",
+            description: [
+                "High cost of diagnostic infrastructure and medical equipment",
+                "Lack of transparent healthcare funding systems",
+                "Difficulty in scaling hospitals and diagnostic centers",
+                "Limited access for investors into real-world healthcare assets",
+                "Poor visibility into operational healthcare revenue systems",
+            ],
+        },
+        results: {
+            title: "",
+            description: [
+                "Strong early Web3 healthcare community created",
+                "Improved investor awareness of healthcare tokenization",
+                "Positioned Medimint as real-world utility blockchain project",
+            ],
+        },
+        problemSolutionResult: [
+            {
+                heading: "Problem",
+                subheading: "Decentralizing Healthcare Infrastructure Financing",
+                points: [
+                    "Healthcare systems face major structural limitations:",
+                    "- High cost of diagnostic infrastructure and medical equipment",
+                    "- Lack of transparent healthcare funding systems",
+                    "- Difficulty in scaling hospitals and diagnostic centers",
+                    "- Limited access for investors into real-world healthcare assets",
+                    "- Poor visibility into operational healthcare revenue systems",
+                ],
+            },
+            {
+                heading: "Solution",
+                subheading: "Building a Tokenized Healthcare Infrastructure Network",
+                points: [
+                    "Maxtron Innovations helped design a blockchain-powered ecosystem where hospitals and investors connect through tokenized healthcare infrastructure.",
+                ],
+            },
+        ],
+        techs: [
+            { name: "Blockchain Architecture", icon: web3 },
+            { name: "Solidity", icon: solidity },
+            { name: "Node.js", icon: nodejs },
+            { name: "NestJS", icon: nest },
+            { name: "MongoDB", icon: mongodb },
+            { name: "MySQL", icon: Mysql },
+            { name: "TypeScript", icon: typescript },
+            { name: "JavaScript", icon: js },
+        ],
+        processSteps: [
+            {
+                title: "Product Scope",
+                description: [
+                    "Defined ecosystem vision and user journeys",
+                ],
+            },
+            {
+                title: "System Architecture",
+                description: [
+                    "Designed blockchain + tokenization model",
+                ],
+            },
+            {
+                title: "Prototype",
+                description: [
+                    "UX flows for investors and hospitals",
+                ],
+            },
+            {
+                title: "Development",
+                description: [
+                    "Smart contracts + dashboard + deployment",
+                ],
+            },
+        ],
+        keyFeatures: [
+            {
+                title: "Real-world utility increases Web3 trust",
+                details: [],
+            },
+            {
+                title: "Healthcare tokenization requires simplification",
+                details: [],
+            },
+            {
+                title: "Transparency is critical for adoption",
+                details: [],
+            },
+        ],
+        keyFeaturesImage: [medimintmain1, medimintmain2],
         bgImage: ulalobg,
     },
 ];
