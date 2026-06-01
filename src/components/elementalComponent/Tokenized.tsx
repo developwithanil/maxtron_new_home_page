@@ -87,7 +87,7 @@ const Tokenized = () => {
             <p
               className="text-black text-center font-[Switzer] text-md lg:text-lg font-semibold leading-5 lg:leading-[21.6px] hover:text-blue-800 hover:cursor-pointer"
               onClick={() =>
-                window.open("https://calendly.com/business-maxtron/30min")
+                window.open("https://calendly.com/business-maxtron/new-meeting")
               }
             >
               Schedule Introduction

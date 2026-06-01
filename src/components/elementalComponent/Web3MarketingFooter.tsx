@@ -56,7 +56,7 @@ const Web3MarketingFooter = () => {
           <div
             onClick={() => {
               window.open(
-                "https://calendly.com/business-maxtron/30min",
+                "https://calendly.com/business-maxtron/new-meeting",
                 "_blank"
               );
             }}

@@ -83,7 +83,7 @@ const Footer = () => {
             <button
               onClick={() =>
                 window.open(
-                  "https://calendly.com/business-maxtron/30min",
+                  "https://calendly.com/business-maxtron/new-meeting",
                   "_blank"
                 )
               }

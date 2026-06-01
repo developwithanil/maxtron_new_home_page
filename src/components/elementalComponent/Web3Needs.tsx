@@ -272,7 +272,7 @@ const Web3Needs = () => {
           className="inline-flex items-center justify-center gap-2 px-8 py-3 text-white bg-[#7A35C1] rounded-full shadow-lg hover:bg-purple-200 hover:text-[#7A35C1] transition duration-300 ease-in-out sticky bottom-8 left-1/2 -translate-x-1/2 z-30 font-openSansHebrew group"
           onClick={() => {
             window.open(
-              "https://calendly.com/business-maxtron/30min?month=2024-08"
+              "https://calendly.com/business-maxtron/new-meeting"
             );
           }}
         >

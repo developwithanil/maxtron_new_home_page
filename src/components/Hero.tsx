@@ -64,7 +64,7 @@ const HeroSection = React.memo(function HeroSection() {
               className="mt-8 flex justify-center lg:justify-start"
             >
               <Link
-                to="https://calendly.com/business-maxtron/30min?month=2024-08"
+                to="https://calendly.com/business-maxtron/new-meeting"
                 className="bg-[#7A35C1] px-8 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-[#602E8D] rounded-sm hover:shadow-lg"
               >
                 Book A Call

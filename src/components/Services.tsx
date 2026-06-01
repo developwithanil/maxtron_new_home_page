@@ -178,7 +178,7 @@ const Services = () => {
             <button
               className="bg-gray-900 flex items-center text-white my-1 px-6 py-4 text-base md:text-[16px] rounded-xl min-h-[44px] min-w-[44px]"
               onClick={() => {
-                window.open("https://calendly.com/business-maxtron/30min");
+                window.open("https://calendly.com/business-maxtron/new-meeting");
               }}
             >
               <span className="inline pr-3 w-8 h-auto md:w-12">

@@ -326,7 +326,7 @@ const Navbar: React.FC = () => {
                 <button
                   onClick={() => {
                     window.open(
-                      "https://calendly.com/business-maxtron/30min",
+                      "https://calendly.com/business-maxtron/new-meeting",
                       "_blank"
                     );
                     closeDesktopDropdown();
@@ -541,7 +541,7 @@ const Navbar: React.FC = () => {
               <button
                 onClick={() => {
                   window.open(
-                    "https://calendly.com/business-maxtron/30min",
+                    "https://calendly.com/business-maxtron/new-meeting",
                     "_blank"
                   );
                   handleMobileNavClick();

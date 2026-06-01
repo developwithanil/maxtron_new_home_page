@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
 
               <button
                 onClick={() => {
-                  window.open("https://calendly.com/business-maxtron/30min");
+                  window.open("https://calendly.com/business-maxtron/new-meeting");
                 }}
                 className="block mt-4 text-sm md:inline-block md:mt-0 capitalize rounded-lg p-2 bg-[#F5F5F5]  text-black"
               >
@@ -181,7 +181,7 @@ const Navbar: React.FC = () => {
 
               <button
                 onClick={() => {
-                  window.open("https://calendly.com/business-maxtron/30min");
+                  window.open("https://calendly.com/business-maxtron/new-meeting");
                 }}
                 className="block mt-4 text-sm md:inline-block md:mt-0 capitalize rounded-lg p-2 bg-[#F5F5F5]  text-black"
               >

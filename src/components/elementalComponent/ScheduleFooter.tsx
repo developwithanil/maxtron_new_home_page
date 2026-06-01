@@ -39,7 +39,7 @@ const ScheduleFooter = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 md:space-x-6">
             <button
               onClick={() => {
-                window.open("https://calendly.com/business-maxtron/30min");
+                window.open("https://calendly.com/business-maxtron/new-meeting");
               }}
               className="group  hover:bg-[#682BAF] border-2 border-white rounded-full 
                        py-3 px-6 sm:px-8 

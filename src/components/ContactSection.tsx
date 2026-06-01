@@ -10,7 +10,7 @@ const ContactSection = () => {
         <button
           onClick={() => {
             window.open(
-              "https://calendly.com/business-maxtron/30min?month=2024-08"
+              "https://calendly.com/business-maxtron/new-meeting"
             );
           }}
           className="bg-white max-w-fit text-black py-2 px-4 rounded transition duration-300"
