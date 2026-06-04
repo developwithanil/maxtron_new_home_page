@@ -41,6 +41,6 @@ const cardsData = [
     },
 ];
 const Web3Offers = () => {
-    return (_jsxs("div", { className: "relative p-5 md:p-8 lg:p-11 xl:p-16 inset-0  text-center max-w-[96rem] mx-auto", children: [_jsx("h2", { className: "text-[#2A2A2A] justify-center [font-family: Switzer]  text-xl md:text-3xl\r\n        lg:text-5xl xl:text-5xl text-center font-normal mb-12", children: "What We Offer to Web3 Projects" }), _jsx("div", { className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-2 ", children: cardsData.map((card) => (_jsx(Card, { number: card.number, title: card.title, description: card.description }, card.id))) })] }));
+    return (_jsxs("div", { className: "relative p-5 md:p-8 lg:p-11 xl:p-16 inset-0  text-center max-w-[96rem] mx-auto", children: [_jsx("h2", { className: "text-[#2A2A2A] justify-center [font-family: Switzer]  text-xl md:text-3xl\n        lg:text-5xl xl:text-5xl text-center font-normal mb-12", children: "What We Offer to Web3 Projects" }), _jsx("div", { className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-2 ", children: cardsData.map((card) => (_jsx(Card, { number: card.number, title: card.title, description: card.description }, card.id))) })] }));
 };
 export default Web3Offers;

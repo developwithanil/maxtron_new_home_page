@@ -52,6 +52,7 @@ const dropdownContentData = {
             { name: "Events", link: "/events" },
             { name: "Digital Compliance", link: "/compliance" },
             { name: "Performance Marketing", link: "/performance-marketing" },
+            { name: "White Label Solutions", link: "/white-label-solutions" },
         ],
     },
     caseStudies: {
