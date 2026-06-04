@@ -74,6 +74,7 @@ const dropdownContentData = {
     
       { name: "Digital Compliance", link: "/compliance" },
       { name: "Performance Marketing", link: "/performance-marketing" },
+      { name: "White Label Solutions", link: "/white-label-solutions" },
     ],
   },
   caseStudies: {
@@ -284,6 +285,7 @@ const Navbar: React.FC = () => {
                     </button>
                   </div>
                 ))}
+
 
                 <NavLink
                   to="/tokenization"
@@ -503,6 +505,7 @@ const Navbar: React.FC = () => {
                 </div>
               );
             })}
+
 
             <NavLink
               to="/tokenization"

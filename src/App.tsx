@@ -33,6 +33,7 @@ import ArtificialIntelligence from "./components/pages/ArtificialIntelligence";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 import PerformanceMarketing from "./components/pages/PerformanceMarketing";
 import NotFound from "./components/pages/NotFound";
+import { LandingPage } from "./components/landing-page";
 
 const Home: React.FC = () => (
   <div>
@@ -106,6 +107,7 @@ const App: React.FC = () => {
           element={<ArtificialIntelligence />}
         />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/white-label-solutions" element={<LandingPage />} />
         {/* <Route
           path="/Maxtron/:title/:id"
           element={<InternalPage caseStudies={caseStudies} />}
