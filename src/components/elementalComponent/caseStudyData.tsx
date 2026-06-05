@@ -54,6 +54,10 @@ import tawuniyanew2 from "../../assets/internal/tawuniyanew2.webp";
 import ulalo2 from "../../assets/internal/ulalo2.webp";
 import ulalobg from "../../assets/internal/ulalobg.webp";
 import icca1 from "../../assets/internal/icca1.webp";
+import frontweve from "../../assets/internal/frontweve.webp";
+import wavemoney from "../../assets/internal/wavemoney.webp";
+import frontweve2 from "../../assets/internal/frontweve2.webp";
+import heroWave from "../../assets/internal/heroWave.webp";
 import icca2 from "../../assets/internal/icca2.webp";
 import medimint from "../../assets/internal/medimint.webp";
 import medimintmain from "../../assets/internal/medimintmain.webp";
@@ -64,6 +68,7 @@ import ulaloprocess from "../../assets/internal/ulaloprocess.webp";
 import tawuniyamain from "../../assets/internal/tawuniyamain.webp";
 import ulalomain from "../../assets/internal/ulalomain.webp";
 import tawuniyabg from "../../assets/internal/tawuniya.jpg";
+import digitalwallet from "../../assets/internal/digitalwallet.jpg";
 import tawuniya from "../../assets/internal/tawuniya.png";
 import gro8 from "../../assets/internal/gro8.webp";
 import casestudy1bg from "../../assets/internal/casestudy1bg.webp";
@@ -1558,11 +1563,11 @@ export const caseStudies: CaseStudy[] = [
         subheading: "Decentralizing Healthcare Infrastructure Financing",
         points: [
           "Healthcare systems face major structural limitations:",
-          "- High cost of diagnostic infrastructure and medical equipment",
-          "- Lack of transparent healthcare funding systems",
-          "- Difficulty in scaling hospitals and diagnostic centers",
-          "- Limited access for investors into real-world healthcare assets",
-          "- Poor visibility into operational healthcare revenue systems",
+          "High cost of diagnostic infrastructure and medical equipment",
+          "Lack of transparent healthcare funding systems",
+          "Difficulty in scaling hospitals and diagnostic centers",
+          "Limited access for investors into real-world healthcare assets",
+          "Poor visibility into operational healthcare revenue systems",
         ],
       },
       {
@@ -1627,4 +1632,207 @@ export const caseStudies: CaseStudy[] = [
     keyFeaturesImage: [medimintmain1, medimintmain2],
     bgImage: ulalobg,
   },
+ {
+  title: "Wave Money",
+  subtitle: "Use Crypto In Everyday Life",
+  heroImage: heroWave,
+
+  type: [
+  "Web3",
+  "FinTech",
+  "Digital Payments",
+  "Crypto Wallet",
+  "Travel & Lifestyle Payments"
+],
+
+  afterHeroSection: wavemoney,
+
+ industryInfo:
+"Web3, FinTech, Crypto Payments, Travel & Lifestyle Services",
+
+  projectDuration: "5 Months",
+
+  theprocessText: "The Process",
+
+  name: "Wave Money",
+
+description:
+  "Wave Money is a Web3-powered financial super app designed to make cryptocurrency useful in everyday life. Users can securely store, transfer, convert and spend digital assets while accessing travel bookings, hotel reservations, mobile recharges, utility bill payments, gift cards, QR payments and cross-border money transfers. The platform bridges blockchain technology with real-world financial services through a single secure ecosystem.",
+
+  clientSatisfaction: 5.0,
+
+  bussinessNeeds: {
+    title:
+      "Making Cryptocurrency Practical For Everyday Spending\n\nMillions of crypto users still face challenges when trying to use digital assets for daily transactions",
+
+   description: [
+  "Limited real-world utility for cryptocurrencies",
+  "Difficulty spending crypto on everyday services",
+  "Complex wallet management and asset transfers",
+  "Slow and expensive international payments",
+  "Lack of integrated travel and lifestyle services",
+  "Fragmented user experience across multiple platforms",
+  "Need for secure and compliant financial infrastructure"
+]
+  },
+
+results: {
+  title: "",
+  description: [
+    "Enabled real-world spending using cryptocurrencies",
+    "Unified wallet experience for fiat and digital assets",
+    "Integrated travel, recharge and bill payment services",
+    "Faster cross-border and peer-to-peer transactions",
+    "Improved user adoption through simplified financial tools",
+    "Positioned Wave Money as a crypto-powered lifestyle platform"
+  ]
+},
+
+  problemSolutionResult: [
+    {
+      heading: "Problem",
+
+      subheading:
+        "Bringing Real Utility To Digital Assets",
+
+      points: [
+        "Despite growing crypto adoption, users struggle to utilize digital assets in everyday transactions.",
+        "Limited merchant acceptance",
+        "Fragmented wallet experiences",
+        "Difficult fiat-to-crypto conversions",
+        "Slow international transfers",
+        "Security and compliance concerns",
+        "Complex onboarding for non-technical users"
+      ]
+    },
+
+    {
+      heading: "Solution",
+
+      subheading:
+        "Building A Unified Digital Finance Ecosystem",
+
+      points: [
+      "Wave Money created a crypto-powered financial ecosystem where users can store, transfer, convert, and spend digital assets through a single application. The platform enables flight bookings, hotel reservations, utility bill payments, mobile recharges, gift card purchases, QR payments, asset swaps, and cross-border money transfers while maintaining enterprise-grade security and compliance."
+      ]
+    }
+  ],
+
+  techs: [
+    { name: "Blockchain Architecture", icon: web3 },
+    { name: "Node.js", icon: nodejs },
+    { name: "NestJS", icon: nest },
+    { name: "MongoDB", icon: mongodb },
+    { name: "Firebase", icon: firebase },
+    { name: "MySQL", icon: Mysql },
+    { name: "TypeScript", icon: typescript },
+    { name: "JavaScript", icon: js },
+    { name: "Python", icon: Python },
+    { name: "AWS", icon: aws }
+  ],
+
+  processSteps: [
+    {
+      title: "Product Discovery",
+      description: [
+      "Defined user journeys across wallet management, crypto spending, travel bookings, bill payments, merchant transactions, and international money transfers."
+      ]
+    },
+
+    {
+      title: "System Architecture",
+      description: [
+        "Designed secure wallet infrastructure, transaction processing systems, KYC workflows, and blockchain integrations."
+      ]
+    },
+
+    {
+      title: "Prototype",
+      description: [
+        "Created wallet flows, payment experiences, QR transactions, and digital asset management interfaces."
+      ]
+    },
+
+    {
+      title: "Development",
+      description: [
+       "Built wallet infrastructure, crypto payment integrations, travel booking services, recharge modules, payment gateways, KYC workflows, security systems and real-time transaction monitoring."
+      ]
+    }
+  ],
+
+  keyFeatures: [
+    {
+      title: "Multi-Asset Wallet",
+      details: []
+    },
+
+  {
+  title: "Flight Booking Using Cryptocurrency",
+  details: []
+},
+
+{
+  title: "Hotel Reservations",
+  details: []
+},
+
+{
+  title: "Mobile Recharge Services",
+  details: []
+},
+
+{
+  title: "Utility Bill Payments",
+  details: []
+},
+
+    {
+      title: "Instant Peer-To-Peer Transfers",
+      details: []
+    },
+
+    {
+      title: "QR Code Payments",
+      details: []
+    },
+
+    {
+      title: "In-App Asset Swaps & Conversion",
+      details: []
+    },
+
+    {
+      title: "Cross-Border Payment Infrastructure",
+      details: []
+    },
+
+    {
+      title: "KYC & Compliance Engine",
+      details: []
+    },
+
+    {
+      title: "Advanced Wallet Security",
+      details: []
+    },
+
+    {
+      title: "Bank & Card Integration",
+      details: []
+    },
+
+    {
+      title: "Real-Time Transaction Monitoring",
+      details: []
+    }
+  ],
+
+  keyFeaturesImage: [
+    frontweve,
+    frontweve2
+  ],
+
+  bgImage: digitalwallet
+}
 ];
