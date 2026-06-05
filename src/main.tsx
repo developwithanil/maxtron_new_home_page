@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
+import "./app/globals.css";
 import { HelmetProvider } from "react-helmet-async";
 // import { Helmet } from "react-helmet";
 
