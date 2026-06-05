@@ -1417,7 +1417,7 @@ export const caseStudies: CaseStudy[] = [
     industryInfo: "Web3, HealthTech, Data Ownership",
     projectDuration: "4 Months",
     theprocessText: "The Process",
-    name: "ULALO",
+    name: "Ulalo",
     description:
       "AI and blockchain-powered health-tech protocol revolutionizing how patients manage their medical data. With a secure Smart Patient Wallet, ULALO empowers users to store, share, and visualize health records, receive personalized health insights, and take control of their well-being",
     clientSatisfaction: 5.0,
@@ -1531,7 +1531,7 @@ export const caseStudies: CaseStudy[] = [
     industryInfo: "Web3, HealthTech, Real-World Assets (RWA), Blockchain Infrastructure",
     projectDuration: "4 Months",
     theprocessText: "The Process",
-    name: "MEDIMINT",
+    name: "Medimint",
     description: "Medimint bridges healthcare infrastructure with blockchain-based investment systems creating a transparent and scalable ecosystem.",
     clientSatisfaction: 5.0,
     bussinessNeeds: {

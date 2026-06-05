@@ -110,8 +110,8 @@ const dropdownContentData = {
       { name: "Token Launch", link: "/case-study/Token-Launch" },
       { name: "ICCA", link: "/case-study/ICCA" },
       { name: "Tawuniya", link: "/case-study/Tawuniya" },
-      { name: "ULALO", link: "/case-study/ULALO" },
-      { name: "MEDIMINT", link: "/case-study/MEDIMINT" },
+      { name: "Ulalo", link: "/case-study/Ulalo" },
+      { name: "Medimint", link: "/case-study/Medimint" },
     ],
   },
   tokenization: {
