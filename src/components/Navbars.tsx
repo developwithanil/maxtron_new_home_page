@@ -114,6 +114,7 @@ const dropdownContentData = {
       { name: "Ulalo", link: "/case-study/Ulalo" },
       { name: "Medimint", link: "/case-study/Medimint" },
       { name: "Wave Money", link: "/case-study/Wave-Money" },
+      { name: "Glofi Estates ", link: "/case-study/Glofi-Estates" },
     ],
   },
   tokenization: {

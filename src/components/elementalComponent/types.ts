@@ -1,3 +1,5 @@
+import type { ComponentType, SVGProps } from "react";
+
 export interface CaseStudy {
   title: string;
   subtitle: string;
@@ -17,7 +19,7 @@ export interface CaseStudy {
   }>;
   techs: Array<{
     name: string;
-    icon: () => JSX.Element;
+    icon: ComponentType<SVGProps<SVGSVGElement>>;
   }>;
   bussinessNeeds?: {
     title?: string;

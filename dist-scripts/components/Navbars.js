@@ -89,8 +89,10 @@ const dropdownContentData = {
             { name: "Token Launch", link: "/case-study/Token-Launch" },
             { name: "ICCA", link: "/case-study/ICCA" },
             { name: "Tawuniya", link: "/case-study/Tawuniya" },
-            { name: "ULALO", link: "/case-study/ULALO" },
-            { name: "MEDIMINT", link: "/case-study/MEDIMINT" },
+            { name: "Ulalo", link: "/case-study/Ulalo" },
+            { name: "Medimint", link: "/case-study/Medimint" },
+            { name: "Wave Money", link: "/case-study/Wave-Money" },
+            { name: "Glofi Estates ", link: "/case-study/Glofi-Estates" },
         ],
     },
     tokenization: {

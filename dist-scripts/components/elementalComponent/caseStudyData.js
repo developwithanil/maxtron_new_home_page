@@ -1,16 +1,25 @@
 import hero from "../../assets/internal/hero.webp";
-import { Mysql, Python, FastApi, Zoho, LLM, web3, typescript, aws, Unity, PC, toolkit, webcam, Google, meta, Mic, av, vectordatabase, php, nest, db, nodejs, solidity, js, OpenZeppelin, sequelize, figma, react, mongodb, talwindcss, qr, Chatgpt, vr, Headset, Either, cicd, firebase, jest, Chrome, } from "../VectorImage";
+import { Mysql, Python, FastApi, Zoho, LLM, web3, typescript, aws, Unity, PC, flutter, toolkit, webcam, Google, meta, Mic, av, vectordatabase, php, nest, db, nodejs, solidity, js, OpenZeppelin, sequelize, figma, react, mongodb, talwindcss, qr, Chatgpt, vr, Headset, Either, cicd, firebase, jest, Chrome, } from "../VectorImage";
 import tokennew1 from "../../assets/internal/tokennew1.webp";
 import tokennew2 from "../../assets/internal/tokennew2.webp";
 import tokennew3 from "../../assets/internal/tokennew3.webp";
 import tokennew4 from "../../assets/internal/tokennew4.webp";
 import ulalo1 from "../../assets/internal/ulalo1.webp";
 import tawuniya3 from "../../assets/internal/tawuniya5.webp";
+import glofi from "../../assets/internal/glofi.webp";
+import glofibg from "../../assets/internal/glofibg.webp";
+import glofifirst from "../../assets/internal/glofifirst.webp";
+import glofisecond from "../../assets/internal/glofisecond.webp";
+import glofilogo from "../../assets/internal/glofilogo.webp";
 import tawuniyanew1 from "../../assets/internal/tawuniyanew1.webp";
 import tawuniyanew2 from "../../assets/internal/tawuniyanew2.webp";
 import ulalo2 from "../../assets/internal/ulalo2.webp";
 import ulalobg from "../../assets/internal/ulalobg.webp";
 import icca1 from "../../assets/internal/icca1.webp";
+import frontweve from "../../assets/internal/frontweve.webp";
+import wavemoney from "../../assets/internal/wavemoney.webp";
+import frontweve2 from "../../assets/internal/frontweve2.webp";
+import heroWave from "../../assets/internal/heroWave.webp";
 import icca2 from "../../assets/internal/icca2.webp";
 import medimint from "../../assets/internal/medimint.webp";
 import medimintmain from "../../assets/internal/medimintmain.webp";
@@ -20,6 +29,7 @@ import ulaloprocess from "../../assets/internal/ulaloprocess.webp";
 import tawuniyamain from "../../assets/internal/tawuniyamain.webp";
 import ulalomain from "../../assets/internal/ulalomain.webp";
 import tawuniyabg from "../../assets/internal/tawuniya.jpg";
+import digitalwallet from "../../assets/internal/digitalwallet.jpg";
 import tawuniya from "../../assets/internal/tawuniya.png";
 import gro8 from "../../assets/internal/gro8.webp";
 import casestudy1bg from "../../assets/internal/casestudy1bg.webp";
@@ -1318,7 +1328,7 @@ export const caseStudies = [
         industryInfo: "Web3, HealthTech, Data Ownership",
         projectDuration: "4 Months",
         theprocessText: "The Process",
-        name: "ULALO",
+        name: "Ulalo",
         description: "AI and blockchain-powered health-tech protocol revolutionizing how patients manage their medical data. With a secure Smart Patient Wallet, ULALO empowers users to store, share, and visualize health records, receive personalized health insights, and take control of their well-being",
         clientSatisfaction: 5.0,
         bussinessNeeds: {
@@ -1425,7 +1435,7 @@ export const caseStudies = [
         industryInfo: "Web3, HealthTech, Real-World Assets (RWA), Blockchain Infrastructure",
         projectDuration: "4 Months",
         theprocessText: "The Process",
-        name: "MEDIMINT",
+        name: "Medimint",
         description: "Medimint bridges healthcare infrastructure with blockchain-based investment systems creating a transparent and scalable ecosystem.",
         clientSatisfaction: 5.0,
         bussinessNeeds: {
@@ -1452,11 +1462,11 @@ export const caseStudies = [
                 subheading: "Decentralizing Healthcare Infrastructure Financing",
                 points: [
                     "Healthcare systems face major structural limitations:",
-                    "- High cost of diagnostic infrastructure and medical equipment",
-                    "- Lack of transparent healthcare funding systems",
-                    "- Difficulty in scaling hospitals and diagnostic centers",
-                    "- Limited access for investors into real-world healthcare assets",
-                    "- Poor visibility into operational healthcare revenue systems",
+                    "High cost of diagnostic infrastructure and medical equipment",
+                    "Lack of transparent healthcare funding systems",
+                    "Difficulty in scaling hospitals and diagnostic centers",
+                    "Limited access for investors into real-world healthcare assets",
+                    "Poor visibility into operational healthcare revenue systems",
                 ],
             },
             {
@@ -1520,4 +1530,338 @@ export const caseStudies = [
         keyFeaturesImage: [medimintmain1, medimintmain2],
         bgImage: ulalobg,
     },
+    {
+        title: "Wave Money",
+        subtitle: "Use Crypto In Everyday Life",
+        heroImage: heroWave,
+        type: [
+            "Web3",
+            "FinTech",
+            "Digital Payments",
+            "Crypto Wallet",
+            "Travel & Lifestyle Payments"
+        ],
+        afterHeroSection: wavemoney,
+        industryInfo: "Web3, FinTech, Crypto Payments, Travel & Lifestyle Services",
+        projectDuration: "5 Months",
+        theprocessText: "The Process",
+        name: "Wave Money",
+        description: "Wave Money is a Web3-powered financial super app designed to make cryptocurrency useful in everyday life. Users can securely store, transfer, convert and spend digital assets while accessing travel bookings, hotel reservations, mobile recharges, utility bill payments, gift cards, QR payments and cross-border money transfers. The platform bridges blockchain technology with real-world financial services through a single secure ecosystem.",
+        clientSatisfaction: 5.0,
+        bussinessNeeds: {
+            title: "Making Cryptocurrency Practical For Everyday Spending\n\nMillions of crypto users still face challenges when trying to use digital assets for daily transactions",
+            description: [
+                "Limited real-world utility for cryptocurrencies",
+                "Difficulty spending crypto on everyday services",
+                "Complex wallet management and asset transfers",
+                "Slow and expensive international payments",
+                "Lack of integrated travel and lifestyle services",
+                "Fragmented user experience across multiple platforms",
+                "Need for secure and compliant financial infrastructure"
+            ]
+        },
+        results: {
+            title: "",
+            description: [
+                "Enabled real-world spending using cryptocurrencies",
+                "Unified wallet experience for fiat and digital assets",
+                "Integrated travel, recharge and bill payment services",
+                "Faster cross-border and peer-to-peer transactions",
+                "Improved user adoption through simplified financial tools",
+                "Positioned Wave Money as a crypto-powered lifestyle platform"
+            ]
+        },
+        problemSolutionResult: [
+            {
+                heading: "Problem",
+                subheading: "Bringing Real Utility To Digital Assets",
+                points: [
+                    "Despite growing crypto adoption, users struggle to utilize digital assets in everyday transactions.",
+                    "Limited merchant acceptance",
+                    "Fragmented wallet experiences",
+                    "Difficult fiat-to-crypto conversions",
+                    "Slow international transfers",
+                    "Security and compliance concerns",
+                    "Complex onboarding for non-technical users"
+                ]
+            },
+            {
+                heading: "Solution",
+                subheading: "Building A Unified Digital Finance Ecosystem",
+                points: [
+                    "Wave Money created a crypto-powered financial ecosystem where users can store, transfer, convert, and spend digital assets through a single application. The platform enables flight bookings, hotel reservations, utility bill payments, mobile recharges, gift card purchases, QR payments, asset swaps, and cross-border money transfers while maintaining enterprise-grade security and compliance."
+                ]
+            }
+        ],
+        techs: [
+            { name: "Blockchain Architecture", icon: web3 },
+            { name: "Node.js", icon: nodejs },
+            { name: "NestJS", icon: nest },
+            { name: "MongoDB", icon: mongodb },
+            { name: "Firebase", icon: firebase },
+            { name: "MySQL", icon: Mysql },
+            { name: "TypeScript", icon: typescript },
+            { name: "JavaScript", icon: js },
+            { name: "Python", icon: Python },
+            { name: "AWS", icon: aws }
+        ],
+        processSteps: [
+            {
+                title: "Product Discovery",
+                description: [
+                    "Defined user journeys across wallet management, crypto spending, travel bookings, bill payments, merchant transactions, and international money transfers."
+                ]
+            },
+            {
+                title: "System Architecture",
+                description: [
+                    "Designed secure wallet infrastructure, transaction processing systems, KYC workflows, and blockchain integrations."
+                ]
+            },
+            {
+                title: "Prototype",
+                description: [
+                    "Created wallet flows, payment experiences, QR transactions, and digital asset management interfaces."
+                ]
+            },
+            {
+                title: "Development",
+                description: [
+                    "Built wallet infrastructure, crypto payment integrations, travel booking services, recharge modules, payment gateways, KYC workflows, security systems and real-time transaction monitoring."
+                ]
+            }
+        ],
+        keyFeatures: [
+            {
+                title: "Multi-Asset Wallet",
+                details: []
+            },
+            {
+                title: "Flight Booking Using Cryptocurrency",
+                details: []
+            },
+            {
+                title: "Hotel Reservations",
+                details: []
+            },
+            {
+                title: "Mobile Recharge Services",
+                details: []
+            },
+            {
+                title: "Utility Bill Payments",
+                details: []
+            },
+            {
+                title: "Instant Peer-To-Peer Transfers",
+                details: []
+            },
+            {
+                title: "QR Code Payments",
+                details: []
+            },
+            {
+                title: "In-App Asset Swaps & Conversion",
+                details: []
+            },
+            {
+                title: "Cross-Border Payment Infrastructure",
+                details: []
+            },
+            {
+                title: "KYC & Compliance Engine",
+                details: []
+            },
+            {
+                title: "Advanced Wallet Security",
+                details: []
+            },
+            {
+                title: "Bank & Card Integration",
+                details: []
+            },
+            {
+                title: "Real-Time Transaction Monitoring",
+                details: []
+            }
+        ],
+        keyFeaturesImage: [
+            frontweve,
+            frontweve2
+        ],
+        bgImage: digitalwallet
+    },
+    {
+        title: "GLOFI ESTATES",
+        subtitle: "Own Real Estate Fraction By Fraction",
+        heroImage: glofi,
+        type: [
+            "MOBILE APP",
+            "WEB APPLICATION",
+            "FINTECH",
+            "REAL ESTATE INVESTMENT",
+            "FRACTIONAL OWNERSHIP",
+        ],
+        afterHeroSection: glofilogo,
+        industryInfo: "Real Estate, Fractional Ownership",
+        projectDuration: "6 Months",
+        theprocessText: "The Process",
+        name: "Glofi Estates",
+        clientSatisfaction: 5.0,
+        description: "GloFi Estates is a modern fractional real estate investment platform that allows anyone to start investing in premium real estate with as little as ₹10,000. Instead of purchasing an entire property, investors can buy fractions of carefully curated residential and commercial assets, build a diversified portfolio and track investment growth through a seamless digital experience.",
+        bussinessNeeds: {
+            title: "Making Real Estate Ownership Affordable And Accessible To Everyone",
+            description: [
+                "Enable investments starting from ₹10,000",
+                "Allow users to purchase fractions of premium properties",
+                "Lower traditional barriers to real estate investing",
+                "Provide transparent ownership and investment tracking",
+                "Digitize investor onboarding and KYC verification",
+                "Help investors diversify across multiple properties",
+                "Simplify real estate investing through technology",
+            ],
+        },
+        results: {
+            title: "",
+            description: [
+                "Successfully launched a fractional real estate investment platform",
+                "Enabled investments starting from ₹10,000",
+                "Implemented end-to-end KYC onboarding and verification",
+                "Provided access to curated premium real estate opportunities",
+                "Delivered real-time portfolio tracking and investment analytics",
+                "Improved transparency through structured ownership records",
+                "Simplified real estate investing for retail investors",
+                "Created a scalable platform for long-term wealth creation",
+            ],
+        },
+        problemSolutionResult: [
+            {
+                heading: "Problem",
+                subheading: "Real Estate Investing Remains Out Of Reach For Most Investors",
+                points: [
+                    "Traditional real estate investments require large capital commitments often running into lakhs or crores.",
+                    "Most retail investors cannot afford full ownership of premium residential or commercial properties.",
+                    "Diversifying across multiple real estate assets is difficult due to high investment requirements.",
+                    "Property discovery, due diligence and ownership processes are often complex and time-consuming.",
+                    "Access to institutional-grade real estate opportunities is limited to high-net-worth individuals.",
+                    "Many investors want exposure to real estate but lack the capital required for direct ownership.",
+                ],
+            },
+            {
+                heading: "Solution",
+                subheading: "A Technology-Driven Fractional Ownership Platform Starting From ₹10,000",
+                points: [
+                    "GloFi Estates enables users to invest in professionally curated real estate assets through fractional ownership.",
+                    "Investors can start with as little as ₹10,000 and gradually build a diversified real estate portfolio.",
+                    "The platform offers digital KYC verification, secure onboarding, transparent ownership records and property insights.",
+                    "Users can browse premium investment opportunities, review documentation and invest directly through the platform.",
+                    "Real-time portfolio dashboards allow investors to monitor asset performance, ownership shares and investment growth.",
+                    "By lowering the minimum investment amount, GloFi makes real estate ownership accessible to a much wider audience.",
+                ],
+            },
+            {
+                heading: "Result",
+                subheading: "Democratizing Access To Premium Real Estate Investments",
+                points: [
+                    "Users can now start investing in premium real estate with investments as low as ₹10,000.",
+                    "Investors gain exposure to high-value residential and commercial assets without purchasing entire properties.",
+                    "Fractional ownership enables portfolio diversification across multiple properties and locations.",
+                    "Digital onboarding and transparent reporting significantly improve investor confidence.",
+                    "The platform simplifies wealth creation through real estate while reducing traditional entry barriers.",
+                    "Investors can monitor their holdings and investment performance through a secure and intuitive dashboard.",
+                ],
+            },
+        ],
+        techs: [
+            { name: "Flutter", icon: flutter },
+            { name: "React.js", icon: react },
+            { name: "Node.js", icon: nodejs },
+            { name: "NestJS", icon: nest },
+            { name: "MongoDB", icon: mongodb },
+            { name: "MySQL", icon: Mysql },
+            { name: "TypeScript", icon: typescript },
+            { name: "JavaScript", icon: js },
+            { name: "AWS", icon: aws },
+            { name: "Firebase", icon: firebase },
+            { name: "Figma", icon: figma },
+        ],
+        processSteps: [
+            {
+                title: "Product Discovery",
+                description: [
+                    "Defined investor journeys, investment workflows, regulatory requirements, property onboarding processes, ownership structures and portfolio management requirements.",
+                ],
+            },
+            {
+                title: "Architecture & Compliance Planning",
+                description: [
+                    "Designed secure KYC verification workflows, investment transaction systems, ownership management architecture, compliance processes, reporting systems and scalable backend infrastructure.",
+                ],
+            },
+            {
+                title: "Prototype & User Experience",
+                description: [
+                    "Created investor onboarding experiences, property browsing flows, investment journeys, ownership tracking systems and portfolio management dashboards.",
+                ],
+            },
+            {
+                title: "Development & Deployment",
+                description: [
+                    "Developed mobile and web applications, admin management portal, KYC integration, property management modules, investment workflows, portfolio analytics and reporting systems.",
+                ],
+            },
+        ],
+        keyFeatures: [
+            {
+                title: "Invest Starting From ₹10,000",
+                details: [],
+            },
+            {
+                title: "Fractional Property Ownership",
+                details: [],
+            },
+            {
+                title: "Curated Premium Real Estate Opportunities",
+                details: [],
+            },
+            {
+                title: "Digital KYC Verification",
+                details: [],
+            },
+            {
+                title: "Real-Time Portfolio Dashboard",
+                details: [],
+            },
+            {
+                title: "Ownership Share Tracking",
+                details: [],
+            },
+            {
+                title: "Rental Income Distribution",
+                details: [],
+            },
+            {
+                title: "Investment Performance Analytics",
+                details: [],
+            },
+            {
+                title: "Property Documents & Reports",
+                details: [],
+            },
+            {
+                title: "Asset Diversification Management",
+                details: [],
+            },
+            {
+                title: "Secure Transaction Management",
+                details: [],
+            },
+            {
+                title: "Admin Property Management Panel",
+                details: [],
+            },
+        ],
+        keyFeaturesImage: [glofifirst, glofisecond],
+        bgImage: glofibg,
+    }
 ];

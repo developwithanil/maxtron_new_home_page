@@ -4568,3 +4568,32 @@ export const logo6 = (props: React.SVGProps<SVGSVGElement>) => {
     </svg>
   );
 };
+export const flutter = (props: React.SVGProps<SVGSVGElement>) => {
+  return (
+    <svg
+      {...props}
+      width="24"
+      height="24"
+      viewBox="0 0 89.65 111.105"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={props.className}
+    >
+      <g fillRule="evenodd">
+        <path
+          d="M56.226 111.105L26.166 81.237L42.782 64.331L89.649 111.105H56.226Z"
+          fill="#02539A"
+        />
+        <path
+          d="M25.795 81.26L55.595 51.46H89.095L42.736 97.818L25.795 81.26Z"
+          fill="#45D1FD"
+          fillOpacity="0.85"
+        />
+        <path
+          d="M0 55.268L16.918 72.175L89.093 0H55.419L0 55.268Z"
+          fill="#45D1FD"
+        />
+      </g>
+    </svg>
+  );
+};

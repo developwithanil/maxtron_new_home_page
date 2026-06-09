@@ -12,6 +12,7 @@ import {
   aws,
   Unity,
   PC,
+  flutter,
   toolkit,
   webcam,
   Google,
@@ -48,6 +49,11 @@ import tokennew3 from "../../assets/internal/tokennew3.webp";
 import tokennew4 from "../../assets/internal/tokennew4.webp";
 import ulalo1 from "../../assets/internal/ulalo1.webp";
 import tawuniya3 from "../../assets/internal/tawuniya5.webp";
+import glofi from "../../assets/internal/glofi.webp";
+import glofibg from "../../assets/internal/glofibg.webp";
+import glofifirst from "../../assets/internal/glofifirst.webp";
+import glofisecond from "../../assets/internal/glofisecond.webp";
+import glofilogo from "../../assets/internal/glofilogo.webp";
 
 import tawuniyanew1 from "../../assets/internal/tawuniyanew1.webp";
 import tawuniyanew2 from "../../assets/internal/tawuniyanew2.webp";
@@ -122,6 +128,7 @@ import dial3 from "../../assets/internal/dial3.webp";
 import web31 from "../../assets/internal/web31.webp";
 import web32 from "../../assets/internal/web32.webp";
 import web33 from "../../assets/internal/web33.webp";
+
 
 export const caseStudies: CaseStudy[] = [
   {
@@ -1834,5 +1841,197 @@ results: {
   ],
 
   bgImage: digitalwallet
+},
+{
+  title: "GLOFI ESTATES",
+  subtitle: "Own Real Estate Fraction By Fraction",
+  heroImage: glofi,
+  type: [
+    "MOBILE APP",
+    "WEB APPLICATION",
+    "FINTECH",
+    "REAL ESTATE INVESTMENT",
+    "FRACTIONAL OWNERSHIP",
+  ],
+  afterHeroSection: glofilogo,
+  industryInfo:
+    "Real Estate, Fractional Ownership",
+  projectDuration: "6 Months",
+  theprocessText: "The Process",
+  name: "Glofi Estates",
+  clientSatisfaction: 5.0,
+
+  description:
+    "GloFi Estates is a modern fractional real estate investment platform that allows anyone to start investing in premium real estate with as little as ₹10,000. Instead of purchasing an entire property, investors can buy fractions of carefully curated residential and commercial assets, build a diversified portfolio and track investment growth through a seamless digital experience.",
+
+  bussinessNeeds: {
+    title:
+      "Making Real Estate Ownership Affordable And Accessible To Everyone",
+    description: [
+      "Enable investments starting from ₹10,000",
+      "Allow users to purchase fractions of premium properties",
+      "Lower traditional barriers to real estate investing",
+      "Provide transparent ownership and investment tracking",
+      "Digitize investor onboarding and KYC verification",
+      "Help investors diversify across multiple properties",
+      "Simplify real estate investing through technology",
+    ],
+  },
+
+  results: {
+    title: "",
+    description: [
+      "Successfully launched a fractional real estate investment platform",
+      "Enabled investments starting from ₹10,000",
+      "Implemented end-to-end KYC onboarding and verification",
+      "Provided access to curated premium real estate opportunities",
+      "Delivered real-time portfolio tracking and investment analytics",
+      "Improved transparency through structured ownership records",
+      "Simplified real estate investing for retail investors",
+      "Created a scalable platform for long-term wealth creation",
+    ],
+  },
+
+  problemSolutionResult: [
+    {
+      heading: "Problem",
+      subheading:
+        "Real Estate Investing Remains Out Of Reach For Most Investors",
+      points: [
+        "Traditional real estate investments require large capital commitments often running into lakhs or crores.",
+        "Most retail investors cannot afford full ownership of premium residential or commercial properties.",
+        "Diversifying across multiple real estate assets is difficult due to high investment requirements.",
+        "Property discovery, due diligence and ownership processes are often complex and time-consuming.",
+        "Access to institutional-grade real estate opportunities is limited to high-net-worth individuals.",
+        "Many investors want exposure to real estate but lack the capital required for direct ownership.",
+      ],
+    },
+
+    {
+      heading: "Solution",
+      subheading:
+        "A Technology-Driven Fractional Ownership Platform Starting From ₹10,000",
+      points: [
+        "GloFi Estates enables users to invest in professionally curated real estate assets through fractional ownership.",
+        "Investors can start with as little as ₹10,000 and gradually build a diversified real estate portfolio.",
+        "The platform offers digital KYC verification, secure onboarding, transparent ownership records and property insights.",
+        "Users can browse premium investment opportunities, review documentation and invest directly through the platform.",
+        "Real-time portfolio dashboards allow investors to monitor asset performance, ownership shares and investment growth.",
+        "By lowering the minimum investment amount, GloFi makes real estate ownership accessible to a much wider audience.",
+      ],
+    },
+
+    {
+      heading: "Result",
+      subheading:
+        "Democratizing Access To Premium Real Estate Investments",
+      points: [
+        "Users can now start investing in premium real estate with investments as low as ₹10,000.",
+        "Investors gain exposure to high-value residential and commercial assets without purchasing entire properties.",
+        "Fractional ownership enables portfolio diversification across multiple properties and locations.",
+        "Digital onboarding and transparent reporting significantly improve investor confidence.",
+        "The platform simplifies wealth creation through real estate while reducing traditional entry barriers.",
+        "Investors can monitor their holdings and investment performance through a secure and intuitive dashboard.",
+      ],
+    },
+  ],
+
+  techs: [
+    { name: "Flutter", icon: flutter },
+    { name: "React.js", icon: react },
+    { name: "Node.js", icon: nodejs },
+    { name: "NestJS", icon: nest },
+    { name: "MongoDB", icon: mongodb },
+    { name: "MySQL", icon: Mysql },
+    { name: "TypeScript", icon: typescript },
+    { name: "JavaScript", icon: js },
+    { name: "AWS", icon: aws },
+    { name: "Firebase", icon: firebase },
+    { name: "Figma", icon: figma },
+  ],
+
+  processSteps: [
+    {
+      title: "Product Discovery",
+      description: [
+        "Defined investor journeys, investment workflows, regulatory requirements, property onboarding processes, ownership structures and portfolio management requirements.",
+      ],
+    },
+
+    {
+      title: "Architecture & Compliance Planning",
+      description: [
+        "Designed secure KYC verification workflows, investment transaction systems, ownership management architecture, compliance processes, reporting systems and scalable backend infrastructure.",
+      ],
+    },
+
+    {
+      title: "Prototype & User Experience",
+      description: [
+        "Created investor onboarding experiences, property browsing flows, investment journeys, ownership tracking systems and portfolio management dashboards.",
+      ],
+    },
+
+    {
+      title: "Development & Deployment",
+      description: [
+        "Developed mobile and web applications, admin management portal, KYC integration, property management modules, investment workflows, portfolio analytics and reporting systems.",
+      ],
+    },
+  ],
+
+  keyFeatures: [
+    {
+      title: "Invest Starting From ₹10,000",
+      details: [],
+    },
+    {
+      title: "Fractional Property Ownership",
+      details: [],
+    },
+    {
+      title: "Curated Premium Real Estate Opportunities",
+      details: [],
+    },
+    {
+      title: "Digital KYC Verification",
+      details: [],
+    },
+    {
+      title: "Real-Time Portfolio Dashboard",
+      details: [],
+    },
+    {
+      title: "Ownership Share Tracking",
+      details: [],
+    },
+    {
+      title: "Rental Income Distribution",
+      details: [],
+    },
+    {
+      title: "Investment Performance Analytics",
+      details: [],
+    },
+    {
+      title: "Property Documents & Reports",
+      details: [],
+    },
+    {
+      title: "Asset Diversification Management",
+      details: [],
+    },
+    {
+      title: "Secure Transaction Management",
+      details: [],
+    },
+    {
+      title: "Admin Property Management Panel",
+      details: [],
+    },
+  ],
+
+  keyFeaturesImage: [glofifirst, glofisecond],
+  bgImage: glofibg,
 }
 ];
