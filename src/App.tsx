@@ -34,6 +34,7 @@ import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 import PerformanceMarketing from "./components/pages/PerformanceMarketing";
 import NotFound from "./components/pages/NotFound";
 import { LandingPage } from "./components/landing-page";
+import MarketingCaseStudyPage from "./components/pages/MarketingCaseStudyPage";
 
 const Home: React.FC = () => (
   <div>
@@ -116,6 +117,8 @@ const App: React.FC = () => {
           path="/case-study/:casestudyName"
           element={<InternalPageDetails caseStudies={caseStudies} />}
         />
+        <Route path="/marketing-case-study/:casestudyName" element={<MarketingCaseStudyPage />} />
+
 
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />

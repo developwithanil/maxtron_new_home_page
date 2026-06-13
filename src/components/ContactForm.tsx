@@ -37,7 +37,11 @@ const schema = z.object({
 
 type FormData = z.infer<typeof schema>;
 
-const ContactForm: React.FC = () => {
+interface ContactFormProps {
+  sectionClassName?: string;
+}
+
+const ContactForm: React.FC<ContactFormProps> = ({ sectionClassName: customSectionClassName }) => {
   const location = useLocation();
   const [showPopup, setShowPopup] = useState(false);
 
@@ -54,8 +58,9 @@ const ContactForm: React.FC = () => {
 
   console.log("Current form errors:", errors);
 
-  const sectionClassName =
-    location.pathname === "/contact"
+  const sectionClassName = customSectionClassName 
+    ? customSectionClassName 
+    : location.pathname === "/contact"
       ? "py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 pt-24 sm:pt-32 md:pt-36"
       : "py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12";
 

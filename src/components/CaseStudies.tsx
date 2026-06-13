@@ -83,18 +83,16 @@ const CaseStudies = () => {
           <div className="flex flex-row md:flex-col items-center text-center relative  md:min-h-[400px] justify-between py-6 md:py-0 w-full ">
             <button
               onClick={handlePrev}
-              aria-label={`Previous case study: ${
-                caseStudiesData[
+              aria-label={`Previous case study: ${caseStudiesData[
                   (currentIndex - 1 + totalStudies) % totalStudies
                 ].title
-              }`}
+                }`}
               disabled={isPrevDisabled}
               className={`p-3 transition-colors duration-200 z-10
-                          ${
-                            isPrevDisabled
-                              ? "text-[#79748A] opacity-50 cursor-not-allowed"
-                              : "text-[#5E28A0] hover:text-[#5E28A0]"
-                          }`}
+                          ${isPrevDisabled
+                  ? "text-[#79748A] opacity-50 cursor-not-allowed"
+                  : "text-[#5E28A0] hover:text-[#5E28A0]"
+                }`}
             >
               <ArrowUpIcon className={`hidden md:block `} />
               <FaArrowLeftLong className={`md:hidden w-6 h-6`} />
@@ -138,16 +136,14 @@ const CaseStudies = () => {
 
             <button
               onClick={handleNext}
-              aria-label={`Next case study: ${
-                caseStudiesData[(currentIndex + 1) % totalStudies].title
-              }`}
+              aria-label={`Next case study: ${caseStudiesData[(currentIndex + 1) % totalStudies].title
+                }`}
               disabled={isNextDisabled}
               className={`p-3 transition-colors duration-200 z-10
-                          ${
-                            isNextDisabled
-                              ? "text-[#79748A] opacity-50 cursor-not-allowed"
-                              : "text-[#5E28A0] hover:text-[#5E28A0]"
-                          }`}
+                          ${isNextDisabled
+                  ? "text-[#79748A] opacity-50 cursor-not-allowed"
+                  : "text-[#5E28A0] hover:text-[#5E28A0]"
+                }`}
             >
               <ArrowDownIcon className={`hidden md:block `} />
               <FaArrowRightLong className={`md:hidden w-6 h-6`} />

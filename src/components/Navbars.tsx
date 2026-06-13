@@ -71,50 +71,63 @@ const dropdownContentData = {
       { name: "Fund Raising", link: "/fund-raising" },
       { name: "Affiliate Program", link: "/affiliate" },
       { name: "Events", link: "/events" },
-    
+
       { name: "Digital Compliance", link: "/compliance" },
       { name: "Performance Marketing", link: "/performance-marketing" },
       { name: "White Label Solutions", link: "/white-label-solutions" },
+      { name: "Wavemoney Marketing", link: "/marketing-case-study/wave-money" },
     ],
   },
   caseStudies: {
     head: "Our Work",
     title: "Projects",
     link: "/case-studies",
-    liTags: [
+    liTags: [],
+    categories: [
       {
-        name: "Blockchain Game Development",
-        link: "/case-study/Blockchain-Game-Development",
+        title: "Technical",
+        liTags: [
+          {
+            name: "Blockchain Game Development",
+            link: "/case-study/Blockchain-Game-Development",
+          },
+          {
+            name: "E-commerce Marketing",
+            link: "/case-study/ECommerce-Marketing",
+          },
+          {
+            name: "Mini-Gaming Platform",
+            link: "/case-study/Mini-Gaming-Platform",
+          },
+          {
+            name: "AI-Calling Tool",
+            link: "/case-study/AI-Calling-Tool",
+          },
+          {
+            name: "Crypto Project Marketing",
+            link: "/case-study/Crypto-Project-Marketing",
+          },
+          {
+            name: "Blockchain Based E-Voting System",
+            link: "/case-study/Blockchain-Based-EVoting-System",
+          },
+          { name: "Good Standing", link: "/case-study/Good-Standing" },
+          { name: "GRO8", link: "/case-study/Gro8" },
+          { name: "Token Launch", link: "/case-study/Token-Launch" },
+          { name: "ICCA", link: "/case-study/ICCA" },
+          { name: "Tawuniya", link: "/case-study/Tawuniya" },
+          { name: "Ulalo", link: "/case-study/Ulalo" },
+          { name: "Medimint", link: "/case-study/Medimint" },
+          { name: "Glofi Estates ", link: "/case-study/Glofi-Estates" },
+          { name: "WaveMoney ", link: "/case-study/Wave-Money" },
+        ],
       },
       {
-        name: "E-commerce Marketing",
-        link: "/case-study/ECommerce-Marketing",
+        title: "Marketing",
+        liTags: [
+          { name: "Wave Money", link: "/marketing-case-study/wave-money" },
+        ],
       },
-      {
-        name: "Mini-Gaming Platform",
-        link: "/case-study/Mini-Gaming-Platform",
-      },
-      {
-        name: "AI-Calling Tool",
-        link: "/case-study/AI-Calling-Tool",
-      },
-      {
-        name: "Crypto Project Marketing",
-        link: "/case-study/Crypto-Project-Marketing",
-      },
-      {
-        name: "Blockchain Based E-Voting System",
-        link: "/case-study/Blockchain-Based-EVoting-System",
-      },
-      { name: "Good Standing", link: "/case-study/Good-Standing" },
-      { name: "GRO8", link: "/case-study/Gro8" },
-      { name: "Token Launch", link: "/case-study/Token-Launch" },
-      { name: "ICCA", link: "/case-study/ICCA" },
-      { name: "Tawuniya", link: "/case-study/Tawuniya" },
-      { name: "Ulalo", link: "/case-study/Ulalo" },
-      { name: "Medimint", link: "/case-study/Medimint" },
-      { name: "Wave Money", link: "/case-study/Wave-Money" },
-      { name: "Glofi Estates ", link: "/case-study/Glofi-Estates" },
     ],
   },
   tokenization: {
@@ -135,7 +148,7 @@ const dropdownContentData = {
 
     liTags: [
       { name: "About Us", link: "/about" },
-      { name: "Our Team", link: "/our-team"},
+      { name: "Our Team", link: "/our-team" },
     ],
   },
   careers: {
@@ -162,6 +175,9 @@ const Navbar: React.FC = () => {
     useState<DropdownKey | null>(null);
   const [openMobileDropdownKey, setOpenMobileDropdownKey] =
     useState<DropdownKey | null>(null);
+  const [activeProjectsCategory, setActiveProjectsCategory] =
+    useState("Technical");
+  const [isCategoryDropdownOpen, setIsCategoryDropdownOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
@@ -234,13 +250,11 @@ const Navbar: React.FC = () => {
   return (
     <nav
       ref={navRef}
-      className={`shadow-lg ${
-        activeDropdownKey ? "rounded-t-3xl" : "rounded-3xl"
-      } 
-        ${
-          isSticky
-            ? "fixed top-0  left-0 right-0 z-50 bg-white  backdrop-blur-sm transform transition-all duration-300 ease-in-out mx-4 sm:mx-2 md:mx-6 lg:mx-8  mt-4 sm:mt-6"
-            : "relative mx-4 sm:mx-2 md:mx-6 lg:mx-8 mt-4 sm:mt-6 "
+      className={`shadow-lg ${activeDropdownKey ? "rounded-t-3xl" : "rounded-3xl"
+        } 
+        ${isSticky
+          ? "fixed top-0  left-0 right-0 z-50 bg-white  backdrop-blur-sm transform transition-all duration-300 ease-in-out mx-4 sm:mx-2 md:mx-6 lg:mx-8  mt-4 sm:mt-6"
+          : "relative mx-4 sm:mx-2 md:mx-6 lg:mx-8 mt-4 sm:mt-6 "
         }
       `}
     >
@@ -266,11 +280,10 @@ const Navbar: React.FC = () => {
                     <button
                       onClick={() => handleNavButtonClick(key)}
                       className={`flex items-center px-2 xl:px-3 py-2 rounded-md text-sm xl:text-base font-medium focus:outline-none transition-colors duration-150 ease-in-out
-                                ${
-                                  activeDropdownKey === key
-                                    ? "text-purple-900 bg-purple-100"
-                                    : "text-[#2A2A2A] hover:text-purple-800 font-openSansHebrew hover:bg-purple-50"
-                                }`}
+                                ${activeDropdownKey === key
+                          ? "text-purple-900 bg-purple-100"
+                          : "text-[#2A2A2A] hover:text-purple-800 font-openSansHebrew hover:bg-purple-50"
+                        }`}
                       aria-haspopup="true"
                       aria-expanded={activeDropdownKey === key}
                     >
@@ -293,10 +306,9 @@ const Navbar: React.FC = () => {
                   to="/tokenization"
                   onClick={closeDesktopDropdown}
                   className={({ isActive }) =>
-                    `block ${
-                      isActive
-                        ? "bg-purple-100 text-purple-700"
-                        : "text-[#2A2A2A] font-openSansHebrew"
+                    `block ${isActive
+                      ? "bg-purple-100 text-purple-700"
+                      : "text-[#2A2A2A] font-openSansHebrew"
                     } hover:bg-purple-50 hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium`
                   }
                   aria-label="Learn about our tokenization services"
@@ -308,10 +320,9 @@ const Navbar: React.FC = () => {
                   to="/careers"
                   onClick={closeDesktopDropdown}
                   className={({ isActive }) =>
-                    `block ${
-                      isActive
-                        ? "bg-purple-100 text-purple-700"
-                        : "text-[#2A2A2A] font-openSansHebrew"
+                    `block ${isActive
+                      ? "bg-purple-100 text-purple-700"
+                      : "text-[#2A2A2A] font-openSansHebrew"
                     } hover:bg-purple-50 hover:text-purple-800 px-3 py-2 rounded-md text-base font-medium`
                   }
                 >
@@ -378,11 +389,10 @@ const Navbar: React.FC = () => {
         <div
           className={`
       absolute left-0 right-0 z-40 top-full
-      ${
-        activeDropdownKey
-          ? "dropdown-animation-open"
-          : "dropdown-animation-close"
-      }
+      ${activeDropdownKey
+              ? "dropdown-animation-open"
+              : "dropdown-animation-close"
+            }
     `}
           onClick={(e) => e.stopPropagation()}
         >
@@ -406,30 +416,84 @@ const Navbar: React.FC = () => {
               >
                 {currentDropdownContent.title}
               </Link>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-3 font-openSansHebrew text-[20px] text-[#2A2A2A]">
-                {currentDropdownContent.liTags.map((item, index) => {
-                  const itemName = typeof item === "string" ? item : item.name;
-                  let itemLink = "#";
-                  if (typeof item === "object" && item.link) {
-                    itemLink = item.link;
-                  } else if (typeof item === "string") {
-                    itemLink = `${currentDropdownContent.link}/${itemName
-                      .toLowerCase()
-                      .replace(/\s+/g, "-")
-                      .replace(/&/g, "and")}`;
-                  }
-                  return (
-                    <Link
-                      key={`${activeDropdownKey}-item-${index}`}
-                      to={itemLink}
-                      onClick={closeDesktopDropdown}
-                      className="text-gray-700 hover:text-purple-700 hover:font-medium py-1 text-sm rounded-md transition-colors duration-150 ease-in-out"
-                    >
-                      {itemName}
-                    </Link>
-                  );
-                })}
-              </div>
+              {'categories' in currentDropdownContent && currentDropdownContent.categories ? (
+                <div className="flex flex-col gap-4">
+                  <div className="flex bg-gray-200/50 rounded-lg p-1 mb-6 w-max shadow-inner">
+                    {currentDropdownContent.categories.map((category) => (
+                      <button
+                        key={category.title}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          setActiveProjectsCategory(category.title);
+                        }}
+                        className={`px-8 py-2.5 text-[14px] font-bold rounded-md uppercase tracking-wider transition-all duration-200 ${activeProjectsCategory === category.title
+                          ? "bg-white shadow-sm text-[#7A35C1]"
+                          : "text-gray-500 hover:text-[#7A35C1]"
+                          }`}
+                      >
+                        {category.title}
+                      </button>
+                    ))}
+                  </div>
+
+                  {currentDropdownContent.categories
+                    .filter((category) => category.title === activeProjectsCategory)
+                    .map((category, catIndex) => (
+                      <div key={catIndex}>
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-3 font-openSansHebrew text-[20px] text-[#2A2A2A]">
+                          {category.liTags.map((item, index) => {
+                            const itemName = typeof item === "string" ? item : item.name;
+                            let itemLink = "#";
+                            if (typeof item === "object" && item.link) {
+                              itemLink = item.link;
+                            } else if (typeof item === "string") {
+                              itemLink = `${currentDropdownContent.link}/${itemName
+                                .toLowerCase()
+                                .replace(/\s+/g, "-")
+                                .replace(/&/g, "and")}`;
+                            }
+                            return (
+                              <Link
+                                key={`${activeDropdownKey}-cat-${catIndex}-item-${index}`}
+                                to={itemLink}
+                                onClick={closeDesktopDropdown}
+                                className="text-gray-700 hover:text-purple-700 hover:font-medium py-1 text-sm rounded-md transition-colors duration-150 ease-in-out"
+                              >
+                                {itemName}
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    ))}
+                </div>
+              ) : (
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-3 font-openSansHebrew text-[20px] text-[#2A2A2A]">
+                  {currentDropdownContent.liTags.map((item, index) => {
+                    const itemName = typeof item === "string" ? item : item.name;
+                    let itemLink = "#";
+                    if (typeof item === "object" && item.link) {
+                      itemLink = item.link;
+                    } else if (typeof item === "string") {
+                      itemLink = `${currentDropdownContent.link}/${itemName
+                        .toLowerCase()
+                        .replace(/\s+/g, "-")
+                        .replace(/&/g, "and")}`;
+                    }
+                    return (
+                      <Link
+                        key={`${activeDropdownKey}-item-${index}`}
+                        to={itemLink}
+                        onClick={closeDesktopDropdown}
+                        className="text-gray-700 hover:text-purple-700 hover:font-medium py-1 text-sm rounded-md transition-colors duration-150 ease-in-out"
+                      >
+                        {itemName}
+                      </Link>
+                    );
+                  })}
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -449,10 +513,9 @@ const Navbar: React.FC = () => {
                   <button
                     onClick={() => handleMobileDropdownToggle(key)}
                     className={`w-full flex justify-between items-center text-left px-3 py-2.5 rounded-md text-base font-medium
-                      ${
-                        isMobileDropdownOpen
-                          ? "bg-purple-100 text-purple-700"
-                          : "text-[#2A2A2A] hover:bg-purple-50 hover:text-purple-800"
+                      ${isMobileDropdownOpen
+                        ? "bg-purple-100 text-purple-700"
+                        : "text-[#2A2A2A] hover:bg-purple-50 hover:text-purple-800"
                       }`}
                   >
                     <span>{label}</span>
@@ -473,35 +536,91 @@ const Navbar: React.FC = () => {
                           {content.title}
                         </Link>
                       </div>
-                      {content.liTags.map((item, index) => {
-                        const itemName =
-                          typeof item === "string" ? item : item.name;
-                        let itemLink = "#";
-                        if (typeof item === "object" && item.link) {
-                          itemLink = item.link;
-                        } else if (typeof item === "string") {
-                          itemLink = `${content.link}/${itemName
-                            .toLowerCase()
-                            .replace(/\s+/g, "-")
-                            .replace(/&/g, "and")}`;
-                        }
-                        return (
-                          <NavLink
-                            key={`mobile-sub-${key}-${index}`}
-                            to={itemLink}
-                            onClick={handleMobileNavClick}
-                            className={({ isActive }) =>
-                              `block ${
-                                isActive
+                      {'categories' in content && content.categories ? (
+                        <div className="px-3 pb-2">
+                          <div className="flex bg-gray-100 rounded-lg p-1 mb-4 shadow-inner">
+                            {content.categories.map((category) => (
+                              <button
+                                key={category.title}
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  e.stopPropagation();
+                                  setActiveProjectsCategory(category.title);
+                                }}
+                                className={`flex-1 text-center text-[12px] font-bold py-2 px-2 rounded-md uppercase tracking-wider transition-all duration-200 ${activeProjectsCategory === category.title
+                                  ? "bg-white shadow-sm text-[#7A35C1]"
+                                  : "text-gray-500 hover:text-[#7A35C1]"
+                                  }`}
+                              >
+                                {category.title}
+                              </button>
+                            ))}
+                          </div>
+                          {content.categories
+                            .filter((category) => category.title === activeProjectsCategory)
+                            .map((category, catIndex) => (
+                              <div key={`mobile-cat-${key}-${catIndex}`}>
+                                {category.liTags.map((item, index) => {
+                                  const itemName =
+                                    typeof item === "string" ? item : item.name;
+                                  let itemLink = "#";
+                                  if (typeof item === "object" && item.link) {
+                                    itemLink = item.link;
+                                  } else if (typeof item === "string") {
+                                    itemLink = `${content.link}/${itemName
+                                      .toLowerCase()
+                                      .replace(/\s+/g, "-")
+                                      .replace(/&/g, "and")}`;
+                                  }
+                                  return (
+                                    <NavLink
+                                      key={`mobile-sub-${key}-${catIndex}-${index}`}
+                                      to={itemLink}
+                                      onClick={handleMobileNavClick}
+                                      className={({ isActive }) =>
+                                        `block ${isActive
+                                          ? "text-purple-700 font-semibold"
+                                          : "text-gray-700"
+                                        } hover:text-purple-600 hover:font-medium py-1.5 px-3 rounded-md text-sm transition-colors duration-150 ease-in-out`
+                                      }
+                                    >
+                                      {itemName}
+                                    </NavLink>
+                                  );
+                                })}
+                              </div>
+                            ))}
+                        </div>
+                      ) : (
+                        content.liTags.map((item, index) => {
+                          const itemName =
+                            typeof item === "string" ? item : item.name;
+                          let itemLink = "#";
+                          if (typeof item === "object" && item.link) {
+                            itemLink = item.link;
+                          } else if (typeof item === "string") {
+                            itemLink = `${content.link}/${itemName
+                              .toLowerCase()
+                              .replace(/\s+/g, "-")
+                              .replace(/&/g, "and")}`;
+                          }
+                          return (
+                            <NavLink
+                              key={`mobile-sub-${key}-${index}`}
+                              to={itemLink}
+                              onClick={handleMobileNavClick}
+                              className={({ isActive }) =>
+                                `block ${isActive
                                   ? "text-purple-700 font-semibold"
                                   : "text-gray-700"
-                              } hover:text-purple-600 hover:font-medium py-1.5 px-3 rounded-md text-sm transition-colors duration-150 ease-in-out`
-                            }
-                          >
-                            {itemName}
-                          </NavLink>
-                        );
-                      })}
+                                } hover:text-purple-600 hover:font-medium py-1.5 px-3 rounded-md text-sm transition-colors duration-150 ease-in-out`
+                              }
+                            >
+                              {itemName}
+                            </NavLink>
+                          );
+                        })
+                      )}
                     </div>
                   )}
                 </div>
@@ -513,8 +632,7 @@ const Navbar: React.FC = () => {
               to="/tokenization"
               onClick={handleMobileNavClick}
               className={({ isActive }) =>
-                `block ${
-                  isActive ? "bg-purple-100 text-purple-700" : "text-[#2A2A2A]"
+                `block ${isActive ? "bg-purple-100 text-purple-700" : "text-[#2A2A2A]"
                 } hover:bg-purple-50 hover:text-purple-800 px-3 py-2.5 rounded-md text-base font-medium`
               }
             >
@@ -525,8 +643,7 @@ const Navbar: React.FC = () => {
               to="/careers"
               onClick={handleMobileNavClick}
               className={({ isActive }) =>
-                `block ${
-                  isActive ? "bg-purple-100 text-purple-700" : "text-[#2A2A2A]"
+                `block ${isActive ? "bg-purple-100 text-purple-700" : "text-[#2A2A2A]"
                 } hover:bg-purple-50 hover:text-purple-800 px-3 py-2.5 rounded-md text-base font-medium`
               }
             >
