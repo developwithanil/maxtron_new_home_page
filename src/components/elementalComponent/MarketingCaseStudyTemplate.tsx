@@ -120,7 +120,7 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
         .lift:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.10); }
       `}</style>
 
-      <div className="w-full bg-white text-gray-900 pb-24" style={{ fontFamily: "'Poppins', sans-serif" }}>
+      <div className="w-full bg-white text-gray-900 pb-24 overflow-x-hidden" style={{ fontFamily: "'Poppins', sans-serif" }}>
 
         <div className="w-full relative bg-[#111111] overflow-hidden">
           <img
@@ -129,12 +129,12 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
             className="w-full h-[60vh] md:h-[80vh] object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/40 to-transparent" />
-          <div className="absolute inset-0 flex items-center justify-end px-8 sm:px-12 lg:px-20">
-            <div className="flex flex-col space-y-4 md:space-y-6 max-w-2xl w-full md:w-1/2 pt-16">
-              <h1 className="hero-title text-white font-bold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-tight tracking-tight drop-shadow-lg">
+          <div className="absolute inset-0 flex items-center justify-start md:justify-end px-5 sm:px-12 lg:px-20">
+            <div className="flex flex-col space-y-3 md:space-y-6 max-w-2xl w-full md:w-1/2 pt-16">
+              <h1 className="hero-title text-white font-bold text-3xl sm:text-5xl lg:text-6xl xl:text-7xl leading-tight tracking-tight drop-shadow-lg">
                 {data.hero.title}
               </h1>
-              <p className="hero-sub text-white/90 text-base sm:text-lg lg:text-xl leading-relaxed drop-shadow-md">
+              <p className="hero-sub text-white/90 text-sm sm:text-lg lg:text-xl leading-relaxed drop-shadow-md">
                 {data.hero.subtitle}
               </p>
               <div className="hero-tags flex flex-wrap gap-3 pt-2">
@@ -151,9 +151,9 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 space-y-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 md:pt-16 space-y-12 md:space-y-24">
 
-          <div className="flex flex-col lg:flex-row gap-12 items-start pt-8">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start pt-4 md:pt-8">
             <Reveal className="lg:w-3/5 space-y-6" direction="left">
               {data.intro.logo && (
                 <img src={data.intro.logo} alt="Brand Logo" className="h-16 w-auto object-contain mb-6" />
@@ -189,10 +189,10 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
           )}
 
 
-          <div className="space-y-8 pt-8">
+          <div className="space-y-6 md:space-y-8 pt-4 md:pt-8">
             <Reveal direction="up">
               <h2 className="text-3xl font-bold text-gray-900">Challenges</h2>
-              <p className="text-[#1A1C1E] text-lg leading-relaxed  mt-4">
+              <p className="text-[#1A1C1E] text-base md:text-lg leading-relaxed mt-4">
                 {data.challenges.description}
               </p>
             </Reveal>
@@ -209,7 +209,7 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
                 ];
                 return (
                   <Reveal key={idx} delay={idx * 120} direction="up">
-                    <div className={`lift ${bgColors[idx % 3]} p-8 rounded-[1.5rem] space-y-6 flex flex-col justify-between min-h-[260px] shadow-sm`}>
+                    <div className={`lift ${bgColors[idx % 3]} p-6 md:p-8 rounded-[1.5rem] space-y-4 md:space-y-6 flex flex-col justify-between min-h-[220px] md:min-h-[260px] shadow-sm`}>
                       <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm">
                         {icons[idx % 3]}
                       </div>
@@ -224,11 +224,11 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
             </div>
           </div>
 
-          <div className="space-y-12 text-center pt-16">
+          <div className="space-y-8 md:space-y-12 text-center pt-10 md:pt-16">
             <Reveal direction="up">
               <h4 className="text-xs font-bold tracking-[0.2em] text-gray-600 uppercase">OUR METHODOLOGY</h4>
-              <h2 className="text-3xl font-bold text-[#1A1C35] mt-2">Multi-Channel Growth Framework</h2>
-              <p className="text-gray-600 max-w-2xl mx-auto mt-3">{data.framework.subtitle}</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-[#1A1C35] mt-2">Multi-Channel Growth Framework</h2>
+              <p className="text-gray-600 text-sm md:text-base max-w-2xl mx-auto mt-3">{data.framework.subtitle}</p>
             </Reveal>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
               {data.framework.pillars.map((pillar, idx) => {
@@ -241,7 +241,7 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
                 const bulletColor = idx === 1 ? "text-[#00C2A0]" : "text-[#845ec2]";
                 return (
                   <Reveal key={idx} delay={idx * 100} direction="up">
-                    <div className="lift bg-white border border-[#CEC2D5] rounded-[0.5rem] p-8 space-y-6 shadow-sm flex flex-col justify-start h-full">
+                    <div className="lift bg-white border border-[#CEC2D5] rounded-2xl p-6 lg:p-8 space-y-4 md:space-y-6 shadow-sm flex flex-col justify-start h-full">
                       <div className="space-y-6 min-h-[260px] xl:min-h-[240px]">
                         <div className="w-12 h-12 bg-[#F2EBFF] rounded-2xl flex items-center justify-center text-xl">
                           {icons[idx % 4]}
@@ -265,11 +265,11 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
           </div>
 
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-16 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-10 md:pt-16 items-stretch">
             <Reveal direction="left" className="h-full">
-              <div className="bg-[#4E148C] text-white p-10 sm:p-12 rounded-[2.5rem] flex flex-col justify-start relative overflow-hidden h-full">
-                <h3 className="text-2xl font-bold mb-6 relative z-10">Business Need</h3>
-                <p className="text-purple-100 leading-relaxed text-lg relative z-10 pr-16 font-medium">
+              <div className="bg-[#4E148C] text-white p-8 sm:p-12 rounded-[2rem] md:rounded-[2.5rem] flex flex-col justify-start relative overflow-hidden h-full">
+                <h3 className="text-2xl font-bold mb-4 md:mb-6 relative z-10">Business Need</h3>
+                <p className="text-purple-100 leading-relaxed text-base md:text-lg relative z-10 pr-0 sm:pr-16 font-medium">
                   {data.businessNeed.description}
                 </p>
                 <div className="absolute right-8 top-8 text-purple-700/20 pointer-events-none">
@@ -280,15 +280,15 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
               </div>
             </Reveal>
             <Reveal direction="right" delay={100} className="h-full">
-              <div className="bg-[#DECDEE] p-10 sm:p-12 rounded-[2.5rem] flex flex-col justify-start relative overflow-hidden h-full">
+              <div className="bg-[#DECDEE] p-8 sm:p-12 rounded-[2rem] md:rounded-[2.5rem] flex flex-col justify-start relative overflow-hidden h-full">
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6 relative z-10">Campaign Results</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4 md:mb-6 relative z-10">Campaign Results</h3>
                   <ul className="space-y-4 relative z-10">
                     {data.results.points.map((point, idx) => {
                       const parts = point.split("**");
                       return (
-                        <li key={idx} className="flex items-start text-gray-900 font-medium text-lg leading-relaxed" style={{ transitionDelay: `${idx * 80}ms` }}>
-                          <FaCheckCircle className="text-[#4E148C] text-xl mt-1 mr-4 flex-shrink-0" />
+                        <li key={idx} className="flex items-start text-gray-900 font-medium text-base md:text-lg leading-relaxed" style={{ transitionDelay: `${idx * 80}ms` }}>
+                          <FaCheckCircle className="text-[#4E148C] text-xl mt-1 mr-3 md:mr-4 flex-shrink-0" />
                           <span>
                             {parts.map((part, pIdx) =>
                               pIdx % 2 === 1
@@ -312,8 +312,8 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
 
 
         </div>
-        <div className="w-full py-12 mt-8" style={{ background: 'linear-gradient(to bottom, #FFFFFF, #F2E6FF)' }}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        <div className="w-full py-10 md:py-12 mt-8" style={{ background: 'linear-gradient(to bottom, #FFFFFF, #F2E6FF)' }}>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 md:space-y-8">
             <Reveal direction="up">
               <h3 className="text-2xl font-bold text-gray-900">Key Metrics at a Glance</h3>
             </Reveal>
@@ -322,7 +322,7 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
                 if (idx === 3) {
                   return (
                     <MetricReveal key={idx} delay={idx * 120}>
-                      <div className="p-8 rounded-[2rem] bg-[#4E148C] text-white relative overflow-hidden flex flex-col min-h-[220px] shadow-lg justify-between">
+                      <div className="p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] bg-[#4E148C] text-white relative overflow-hidden flex flex-col min-h-[200px] md:min-h-[220px] shadow-lg justify-between">
                         <div className="flex justify-between items-center mb-4">
                           <div className="w-10 h-10 border border-white/20 bg-white/10 rounded-xl flex items-center justify-center text-white text-lg">
                             <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -365,7 +365,7 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
 
                 return (
                   <MetricReveal key={idx} delay={idx * 120}>
-                    <div className="p-8 rounded-[2rem] bg-white border border-gray-100 shadow-sm relative overflow-hidden flex flex-col min-h-[240px]">
+                    <div className="p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] bg-white border border-gray-100 shadow-sm relative overflow-hidden flex flex-col min-h-[220px] md:min-h-[240px]">
                       <div className="flex justify-between items-center mb-4">
                         <div className={`w-10 h-10 ${iconBg} rounded-xl flex items-center justify-center text-lg`}>
                           {icon}
@@ -421,8 +421,8 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
           </div>
         </div>
 
-        <div className="w-full py-12" style={{ background: 'linear-gradient(to bottom, #F3E7FF, #FFFFFF)' }}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        <div className="w-full py-10 md:py-12" style={{ background: 'linear-gradient(to bottom, #F3E7FF, #FFFFFF)' }}>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 md:space-y-8">
             <Reveal direction="up">
               <h3 className="text-2xl font-bold text-gray-900">Detailed Campaign Data</h3>
             </Reveal>
@@ -473,9 +473,9 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 md:space-y-24">
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 py-8 md:py-12">
             {data.mockups.image2 && (
               <Reveal direction="left">
                 <img src={data.mockups.image2} alt="Mockup 2" className="w-full h-auto rounded-[2.5rem] object-cover shadow-lg" />
@@ -488,10 +488,10 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
             )}
           </div>
 
-          <div className="space-y-16">
-            <div className="space-y-10 text-center pt-8">
+          <div className="space-y-12 md:space-y-16">
+            <div className="space-y-6 md:space-y-10 text-center pt-4 md:pt-8">
               <Reveal direction="up">
-                <h3 className="text-3xl font-bold text-gray-900">Growth Channels</h3>
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Growth Channels</h3>
               </Reveal>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                 {data.growthChannels.map((channel, idx) => {
@@ -501,7 +501,7 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
                   ];
                   return (
                     <Reveal key={idx} delay={idx * 60} direction="up">
-                      <div className="lift flex flex-col items-center justify-center space-y-4 bg-white border border-gray-100 rounded-[2rem] py-8 shadow-sm">
+                      <div className="lift flex flex-col items-center justify-center space-y-3 md:space-y-4 bg-white border border-gray-100 rounded-[1.5rem] md:rounded-[2rem] py-6 md:py-8 shadow-sm">
                         <div className="w-14 h-14 bg-[#F2EBFF] rounded-2xl flex items-center justify-center text-3xl">{icons[idx % 8]}</div>
                         <span className="text-gray-700 font-medium text-sm">{channel.name}</span>
                       </div>
@@ -513,10 +513,10 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
 
 
             <Reveal direction="up">
-              <div className="bg-[#F8F5FC] rounded-[3rem] p-8 md:p-12 lg:p-16 max-w-5xl mx-auto">
-                <div className="space-y-8">
-                  <h3 className="text-3xl font-bold text-[#050505]">Campaign Highlights</h3>
-                  <ul className="space-y-8">
+              <div className="bg-[#F8F5FC] rounded-[2rem] md:rounded-[3rem] p-6 sm:p-8 md:p-12 lg:p-16 max-w-5xl mx-auto">
+                <div className="space-y-6 md:space-y-8">
+                  <h3 className="text-2xl md:text-3xl font-bold text-[#050505]">Campaign Highlights</h3>
+                  <ul className="space-y-6 md:space-y-8">
                     {data.highlights.points.map((point, idx) => (
                       <HighlightItem key={idx} point={point} delay={idx * 100} />
                     ))}
@@ -580,13 +580,13 @@ const HighlightItem: React.FC<{ point: string; delay: number }> = ({ point, dela
   return (
     <li
       ref={ref}
-      className="highlight-li reveal reveal-up flex items-center"
+      className="highlight-li reveal reveal-up flex items-start md:items-center"
       style={{ transitionDelay: `${delay}ms` }}
     >
-      <div className="bullet-dot mr-5 w-8 h-8 rounded-full bg-[#B696ED] flex items-center justify-center flex-shrink-0 shadow-sm opacity-0" style={{ animationDelay: `${delay + 200}ms` }}>
-        <FaCheckCircle className="text-white text-base" />
+      <div className="bullet-dot mr-4 md:mr-5 w-7 h-7 md:w-8 md:h-8 mt-1 md:mt-0 rounded-full bg-[#B696ED] flex items-center justify-center flex-shrink-0 shadow-sm opacity-0" style={{ animationDelay: `${delay + 200}ms` }}>
+        <FaCheckCircle className="text-white text-sm md:text-base" />
       </div>
-      <span className="text-[#1A1C1E] text-lg leading-relaxed">{point}</span>
+      <span className="text-[#1A1C1E] text-base md:text-lg leading-relaxed">{point}</span>
     </li>
   );
 };
