@@ -75,7 +75,7 @@ const dropdownContentData = {
       { name: "Digital Compliance", link: "/compliance" },
       { name: "Performance Marketing", link: "/performance-marketing" },
       { name: "White Label Solutions", link: "/white-label-solutions" },
-      { name: "Wavemoney Marketing", link: "/marketing-case-study/wave-money" },
+
     ],
   },
   caseStudies: {
