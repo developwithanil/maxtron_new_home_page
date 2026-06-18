@@ -46,9 +46,10 @@ export interface MarketingCaseStudyProps {
     title: string;
     subtitle: string;
     tags: string[];
+    textAlign?: "left" | "right";
   };
   intro: {
-    logo: string;
+    logo?: string;
     description: string;
     industries: string;
     services: string[];
@@ -81,14 +82,19 @@ export interface MarketingCaseStudyProps {
     value: string;
     subtitle: string;
   }[];
-  detailedData: {
-    searchVisibility: { label: string; value: string }[];
-    userAcquisition: { label: string; value: string }[];
+  detailedData?: {
+    searchVisibilityTitle?: string;
+    userAcquisitionTitle?: string;
+    searchVisibility?: { label: string; value: string }[];
+    userAcquisition?: { label: string; value: string }[];
+    sections?: {
+      title: string;
+      items: { label: string; value: string }[];
+    }[];
   };
   mockups: {
-    image1: string;
-    image2: string;
-    image3?: string;
+    top?: string[];
+    bottom?: string[];
   };
   growthChannels: {
     iconUrl?: string;
@@ -96,6 +102,6 @@ export interface MarketingCaseStudyProps {
   }[];
   highlights: {
     points: string[];
-    image: string;
+    image?: string;
   };
 }

@@ -6,6 +6,28 @@ import wavemoneydesc from "../../assets/marketingcasestudy/wavemoneydesc.webp";
 import detailedcampaign1 from "../../assets/marketingcasestudy/detailedcampaign1.webp";
 import detailedcampaign2 from "../../assets/marketingcasestudy/detailedcampaign2.webp";
 import wavemoneycampaign from "../../assets/marketingcasestudy/wavemoneycampaign.webp";
+import medimintlogo from "../../assets/marketingcasestudy/medimintlogo.webp";
+import pitchmatterlogo from "../../assets/marketingcasestudy/pitchmatterlogo.webp";
+import shapercultlogo from "../../assets/marketingcasestudy/shapercultlogo.webp";
+import shapercultbottom1 from "../../assets/marketingcasestudy/shapercultbottom1.webp";
+import shapercultbottom2 from "../../assets/marketingcasestudy/shapercultbottom2.webp";
+import pitchmatterhero1 from "../../assets/marketingcasestudy/pitchmatterhero1.webp";
+import pitchmatterhero2 from "../../assets/marketingcasestudy/pitchmatterhero2.webp";
+import pitchmatterhero3 from "../../assets/marketingcasestudy/pitchmatterhero3.webp";
+import pitchmatterhero4 from "../../assets/marketingcasestudy/pitchmatterhero4.webp";
+import pitchmatterbottom1 from "../../assets/marketingcasestudy/pitchmatterbottom1.webp";
+import pitchmatterbottom2 from "../../assets/marketingcasestudy/pitchmatterbottom2.webp";
+import mediminthero from "../../assets/marketingcasestudy/mediminthero.webp";
+import medimintbottom1 from "../../assets/marketingcasestudy/medimintbottom1.webp";
+import medimintbottom2 from "../../assets/marketingcasestudy/medimintbottom2.webp";
+import shaperculthero from "../../assets/marketingcasestudy/shaperculthero.webp";
+import pitchmattermain from "../../assets/marketingcasestudy/pitchmattermain.webp";
+import medimintmain from "../../assets/marketingcasestudy/medimintmain.webp";
+import shapercultmain from "../../assets/marketingcasestudy/shapercultmain.webp";
+
+import campaignmedimint from "../../assets/marketingcasestudy/campaignmedimint.webp";
+import campaignpitchmatter from "../../assets/marketingcasestudy/campaignpitchmatter.webp";
+import campaignshapecult from "../../assets/marketingcasestudy/campaignshapecult.webp";
 
 export const marketingCaseStudiesData: Record<string, MarketingCaseStudyProps> = {
   "wave-money": {
@@ -93,9 +115,8 @@ export const marketingCaseStudiesData: Record<string, MarketingCaseStudyProps> =
       ],
     },
     mockups: {
-      image1: wavemoneydesc,
-      image2: detailedcampaign1,
-      image3: detailedcampaign2,
+      top: [wavemoneydesc],
+      bottom: [detailedcampaign1, detailedcampaign2],
     },
     growthChannels: [
       { name: "Google Ads" },
@@ -114,7 +135,440 @@ export const marketingCaseStudiesData: Record<string, MarketingCaseStudyProps> =
         "Executed multi-channel creative strategy for Meta and Google.",
         "Implemented real-time attribution and event tracking.",
       ],
-      image: wavemoneycampaign,
+     
+    },
+  },
+  "mediment": {
+    hero: {
+      bgImage: medimintmain,
+      title: "Mediment",
+      subtitle: "Web3 Community Growth & Brand Awareness Campaign",
+      tags: ["Web3 Marketing", "Community Management", "Webinar Marketing", "Video Marketing", "Growth Strategy"],
+      textAlign: "left",
+    },
+    intro: {
+      logo: medimintlogo,
+      description: "Mediment partnered with Maxtron Innovations to strengthen its presence in the Web3 healthcare ecosystem through strategic community building, educational webinars, video marketing, and multi-channel growth initiatives. The objective was to increase brand awareness, build an engaged community, establish thought leadership, and create a scalable foundation for long-term ecosystem growth. Through a combination of content, community engagement, and educational campaigns, Maxtron helped Mediment expand its reach and improve audience participation across multiple channels.",
+      industries: "Web3 Healthcare / Biotechnology",
+      services: ["Web3 Marketing", "Community Management", "Webinar Marketing", "Video Marketing", "Growth Strategy"],
+    },
+    challenges: {
+      description: "Before partnering with Maxtron, Mediment faced several growth challenges: limited visibility within the Web3 and healthcare communities, low community engagement across digital platforms, the need to educate audiences about blockchain-powered healthcare solutions, and a lack of structured community growth and retention strategies.",
+      cards: [
+        {
+          title: "Limited Visibility",
+          description: "Very low visibility and recognition within the competitive Web3 healthcare ecosystem.",
+        },
+        {
+          title: "Low Engagement",
+          description: "Stagnant member growth and minimal interaction across core community channels.",
+        },
+        {
+          title: "Education Barrier",
+          description: "High friction in educating non-technical users about complex decentralized healthcare tech.",
+        },
+      ],
+    },
+    framework: {
+      subtitle: "A comprehensive growth framework focused on awareness, engagement, education, and community expansion.",
+      pillars: [
+        {
+          title: "Community Growth",
+          description: "Telegram and Discord community management and engagement campaigns.",
+          points: ["Telegram & Discord Mgmt", "AMA Sessions & Discussions", "Retention Activities"],
+        },
+        {
+          title: "Webinar Marketing",
+          description: "Educational webinar planning, registration acquisition, and thought leadership positioning.",
+          points: ["Webinar Planning", "Attendee Acquisition", "Thought Leadership"],
+        },
+        {
+          title: "Video Marketing",
+          description: "Educational Web3 content creation, promotional videos, and short-form distribution.",
+          points: ["Content Creation", "Promotional Recaps", "Short-Form Content"],
+        },
+        {
+          title: "Multi-Channel Growth",
+          description: "X (Twitter) growth campaigns, LinkedIn marketing, and cross-platform distribution.",
+          points: ["X Campaigns", "LinkedIn Marketing", "Cross-Distribution"],
+        },
+      ],
+    },
+    businessNeed: {
+      description: "Mediment needed to construct an engaged Web3 community from scratch, establish educational touchpoints to build ecosystem trust, and scale brand awareness via an integrated multi-channel strategy.",
+    },
+    results: {
+      points: [
+        "Successfully built and scaled an engaged **Web3 healthcare community**.",
+        "Generated **8M+ total impressions** through educational campaigns.",
+        "Increased community growth by **350%** and engagement by **220%**.",
+        "Delivered successful webinar campaigns with a **60%+ attendance rate**.",
+      ],
+    },
+    metrics: [
+      { title: "COMMUNITY GROWTH", value: "350%", subtitle: "+350%" },
+      { title: "ENGAGEMENT GROWTH", value: "220%", subtitle: "+220%" },
+      { title: "VIDEO VIEWS", value: "1.2M+", subtitle: "1.2M+ Views" },
+      { title: "TOTAL IMPRESSIONS", value: "8M+", subtitle: "8M+ Impressions" },
+    ],
+    detailedData: {
+      sections: [
+        {
+          title: "Community Growth",
+          items: [
+            { label: "Community Members Reached", value: "25,000+" },
+            { label: "Community Growth", value: "+350%" },
+            { label: "Engagement Increase", value: "+220%" },
+            { label: "Retention Rate", value: "78%" },
+          ],
+        },
+        {
+          title: "Content & Video Marketing",
+          items: [
+            { label: "Video Views", value: "1.2M+" },
+            { label: "Content Reach", value: "4M+" },
+            { label: "Watch Time Growth", value: "+75%" },
+            { label: "Engagement Growth", value: "+145%" },
+          ],
+        },
+        {
+          title: "Webinar Performance",
+          items: [
+            { label: "Registrations", value: "3,500+" },
+            { label: "Attendees", value: "2,100+" },
+            { label: "Attendance Rate", value: "60%+" },
+            { label: "Audience Interaction", value: "High Engagement" },
+          ],
+        },
+        {
+          title: "Brand Awareness",
+          items: [
+            { label: "Total Impressions", value: "8M+" },
+            { label: "Brand Visibility Growth", value: "+210%" },
+            { label: "Social Growth", value: "+170%" },
+            { label: "Multi-Channel Reach", value: "500,000+" },
+          ],
+        },
+      ],
+    },
+    mockups: {
+      top: [mediminthero],
+      bottom: [medimintbottom1, medimintbottom2],
+    },
+    growthChannels: [
+      { name: "Telegram" },
+      { name: "Discord" },
+      { name: "X (Twitter)" },
+      { name: "LinkedIn" },
+      { name: "Webinars" },
+      { name: "Video Content" },
+      { name: "SEO" },
+      { name: "Analytics" },
+    ],
+    highlights: {
+      points: [
+        "Successfully built and scaled an engaged Web3 healthcare community.",
+        "Generated millions of impressions through educational content and community campaigns.",
+        "Increased engagement rates across social and community platforms.",
+        "Delivered successful webinar campaigns with strong audience participation.",
+        "Strengthened Mediment's position as an emerging thought leader in Web3 healthcare.",
+        "Expanded brand visibility through a strategic multi-channel growth framework.",
+      ],
+      image: campaignmedimint,
+    },
+  },
+  "pitchmatter": {
+    hero: {
+      bgImage: pitchmattermain,
+      title: "Pitchmatter",
+      subtitle: "Web2 & Web3 Growth Marketing Campaign",
+      tags: ["Web2 Marketing", "Web3 Marketing", "Community Building", "Webinar Marketing", "Content Marketing", "Growth Strategy"],
+      textAlign: "left",
+    },
+    intro: {
+      logo: pitchmatterlogo,
+      description: "Pitchmatter partnered with Maxtron Innovations to accelerate its growth across both Web2 and Web3 ecosystems. The objective was to increase brand awareness, build an engaged startup and investor community, generate quality leads, and establish Pitchmatter as a trusted platform for founders, investors, and emerging businesses. Through a combination of community building, webinar marketing, content strategy, and multi-channel growth campaigns, Maxtron helped Pitchmatter significantly expand its audience and strengthen its digital presence.",
+      industries: "Startup Ecosystems / Fintech / Web3",
+      services: ["Web2 Marketing", "Web3 Marketing", "Community Management", "Webinar Marketing", "Content Marketing", "Growth Strategy"],
+    },
+    challenges: {
+      description: "Before partnering with Maxtron, Pitchmatter faced several growth challenges: limited visibility among startup founders and investors, low community engagement, the need to bridge traditional startup and Web3 audiences, and the lack of a structured webinar acquisition and content distribution framework.",
+      cards: [
+        {
+          title: "Low Founder/Investor Reach",
+          description: "Struggling to capture the attention of high-intent startup founders and early-stage investors.",
+        },
+        {
+          title: "Fragmented Ecosystems",
+          description: "Difficulties in appealing to both traditional Web2 startup audiences and Web3 communities simultaneously.",
+        },
+        {
+          title: "Funnel Inefficiencies",
+          description: "Inconsistent content distribution and lack of a structured webinar-led lead acquisition engine.",
+        },
+      ],
+    },
+    framework: {
+      subtitle: "An integrated Web2 + Web3 growth framework focusing on awareness, engagement, lead generation, and community expansion.",
+      pillars: [
+        {
+          title: "Web2 Marketing",
+          description: "LinkedIn growth campaigns, founder-focused content strategy, and organic social media growth.",
+          points: ["LinkedIn Campaigns", "Founder Content", "Lead Gen Campaigns"],
+        },
+        {
+          title: "Web3 Marketing",
+          description: "Community management, investor/founder engagement campaigns, and retention strategies.",
+          points: ["Community Growth", "Investor Engagement", "Cross-Platform Growth"],
+        },
+        {
+          title: "Content Marketing",
+          description: "Educational startup content, founder success stories, and thought leadership positioning.",
+          points: ["Success Stories", "Thought Leadership", "Content Distribution"],
+        },
+        {
+          title: "Webinar Marketing",
+          description: "Webinar execution, registration campaigns, post-webinar nurturing, and content repurposing.",
+          points: ["Webinar Funnels", "Promotion Campaigns", "Nurturing Funnels"],
+        },
+      ],
+    },
+    businessNeed: {
+      description: "Pitchmatter required a unified Web2 + Web3 positioning framework to scale authority, establish a high-converting webinar acquisition engine, and generate quality startup/investor partnerships.",
+    },
+    results: {
+      points: [
+        "Successfully scaled webinar attendance from **200 to over 5,000+**.",
+        "Built a highly engaged community of **12,000+ founders and investors**.",
+        "Generated **1,500+ qualified leads** and **3,000+ founder connections**.",
+        "Achieved **5M+ total impressions** with **300% audience growth**.",
+      ],
+    },
+    metrics: [
+      { title: "WEBINAR AUDIENCE", value: "5,000+", subtitle: "Audience Growth" },
+      { title: "AUDIENCE GROWTH", value: "300%", subtitle: "+300%" },
+      { title: "ENGAGEMENT GROWTH", value: "180%", subtitle: "+180%" },
+      { title: "TOTAL IMPRESSIONS", value: "5M+", subtitle: "5M+ Impressions" },
+    ],
+    detailedData: {
+      sections: [
+        {
+          title: "Brand Awareness",
+          items: [
+            { label: "Total Impressions", value: "5M+" },
+            { label: "Brand Visibility Growth", value: "+240%" },
+            { label: "Social Reach", value: "2.5M+" },
+            { label: "Audience Growth", value: "+300%" },
+          ],
+        },
+        {
+          title: "Community Growth",
+          items: [
+            { label: "Community Members Added", value: "12,000+" },
+            { label: "Community Growth", value: "+220%" },
+            { label: "Engagement Growth", value: "+180%" },
+            { label: "Retention Rate", value: "75%" },
+          ],
+        },
+        {
+          title: "Webinar Growth",
+          items: [
+            { label: "Initial Webinar Attendance", value: "200+" },
+            { label: "Total Webinar Audience Growth", value: "5,000+" },
+            { label: "Webinar Registrations", value: "7,500+" },
+            { label: "Average Attendance Rate", value: "65%+" },
+            { label: "Repeat Attendee Rate", value: "40%+" },
+            { label: "Community Members Acquired Through Webinars", value: "3,000+" },
+          ],
+        },
+        {
+          title: "Content Performance",
+          items: [
+            { label: "Content Reach", value: "3M+" },
+            { label: "Profile Visits", value: "45,000+" },
+            { label: "Content Engagement", value: "+190%" },
+            { label: "Follower Growth", value: "+250%" },
+          ],
+        },
+        {
+          title: "Lead Generation",
+          items: [
+            { label: "Qualified Leads Generated", value: "1,500+" },
+            { label: "Founder Connections", value: "3,000+" },
+            { label: "Investor Reach", value: "500+" },
+            { label: "Partnership Opportunities", value: "100+" },
+          ],
+        },
+      ],
+    },
+    mockups: {
+      top: [pitchmatterhero1, pitchmatterhero2, pitchmatterhero3, pitchmatterhero4],
+      bottom: [pitchmatterbottom1, pitchmatterbottom2],
+    },
+    growthChannels: [
+      { name: "LinkedIn" },
+      { name: "Telegram" },
+      { name: "Discord" },
+      { name: "Webinars" },
+      { name: "Content Marketing" },
+      { name: "SEO" },
+      { name: "Lead Gen" },
+      { name: "Analytics" },
+    ],
+    highlights: {
+      points: [
+        "Successfully scaled webinar attendance from 200 participants to over 5,000 attendees.",
+        "Built a highly engaged startup, founder, investor, and Web3 community.",
+        "Generated millions of impressions through strategic content and awareness campaigns.",
+        "Increased audience engagement across LinkedIn, X, Telegram, Discord, and community channels.",
+        "Strengthened Pitchmatter's position within the startup and investment ecosystem.",
+        "Created a sustainable growth engine through webinar-led community acquisition.",
+        "Established a scalable framework for future audience and business growth.",
+      ],
+      image: campaignpitchmatter,
+    },
+  },
+  "shapercult": {
+    hero: {
+      bgImage: shapercultmain,
+      title: "Shapercult",
+      subtitle: "D2C Growth & Performance Marketing Campaign",
+      tags: ["Performance Marketing", "Meta Ads", "Google Ads", "Conversion Optimization", "Customer Acquisition", "D2C Growth"],
+      textAlign: "right",
+    },
+    intro: {
+      logo: shapercultlogo,
+      description: "Shapercult partnered with Maxtron Innovations to scale its direct-to-consumer (D2C) business through performance marketing and data-driven customer acquisition strategies. The objective was to increase online sales, improve return on ad spend (ROAS), reduce customer acquisition costs, and create a scalable growth engine capable of generating consistent revenue month after month. By leveraging Meta Ads, Google Ads, conversion optimization, audience targeting, and creative testing, Maxtron helped Shapercult accelerate growth and drive profitable customer acquisition.",
+      industries: "D2C / E-Commerce / Apparel",
+      services: ["Performance Marketing", "Meta Ads", "Google Ads", "Conversion Optimization", "Customer Acquisition", "Growth Strategy"],
+    },
+    challenges: {
+      description: "Before partnering with Maxtron, Shapercult faced several growth challenges: rising customer acquisition costs, limited scalability of existing campaigns, inconsistent sales performance, and low conversion rates across marketing funnels.",
+      cards: [
+        {
+          title: "Rising CAC",
+          description: "Spiraling customer acquisition costs eroding profit margins on digital channels.",
+        },
+        {
+          title: "Scalability Limits",
+          description: "Stagnating sales and difficulty scaling Meta and Google ad campaign budgets profitably.",
+        },
+        {
+          title: "Funnel Leaks",
+          description: "High cart abandonment rates and poor landing page/checkout conversion rates.",
+        },
+      ],
+    },
+    framework: {
+      subtitle: "A performance-driven growth framework focused on high ROAS, customer acquisition, and funnel optimization.",
+      pillars: [
+        {
+          title: "Meta Advertising",
+          description: "Prospecting campaigns, retargeting campaigns, dynamic product ads, and creative testing/optimization.",
+          points: ["Prospecting & Retargeting", "Creative Testing", "Lookalike Scaling"],
+        },
+        {
+          title: "Google Advertising",
+          description: "Search, shopping, Performance Max, and conversion-focused campaign optimization.",
+          points: ["Performance Max", "Shopping Campaigns", "Conversion Optimization"],
+        },
+        {
+          title: "Conversion Optimization",
+          description: "Landing page improvements, funnel optimization, user journey analysis, and cart recovery.",
+          points: ["Landing Page UX", "A/B Testing", "Cart Recovery"],
+        },
+        {
+          title: "Growth Strategy",
+          description: "Customer acquisition planning, audience segmentation, and data-driven revenue scaling.",
+          points: ["Audience Segmentation", "Revenue Scaling", "Continuous Improvement"],
+        },
+      ],
+    },
+    businessNeed: {
+      description: "Shapercult needed to establish a highly efficient customer acquisition funnel, lower their cost per acquisition (CAC), and scale monthly sales volume sustainably.",
+    },
+    results: {
+      points: [
+        "Generated **₹35L+ monthly revenue** through performance marketing campaigns.",
+        "Achieved an average **4.8X ROAS** across acquisition campaigns.",
+        "Reduced customer acquisition costs to an average **₹180 CAC**.",
+        "Acquired **8,500+ new customers** and boosted revenue by **320%**.",
+      ],
+    },
+    metrics: [
+      { title: "MONTHLY REVENUE", value: "₹35L+", subtitle: "₹35L+ Generated" },
+      { title: "AVERAGE ROAS", value: "4.8X", subtitle: "4.8X ROAS" },
+      { title: "AVERAGE CAC", value: "₹180", subtitle: "₹180 CPI / CAC" },
+      { title: "REVENUE GROWTH", value: "320%", subtitle: "+320% Revenue" },
+    ],
+    detailedData: {
+      sections: [
+        {
+          title: "Performance Marketing",
+          items: [
+            { label: "Monthly Revenue", value: "₹35L+" },
+            { label: "Revenue Growth", value: "+320%" },
+            { label: "Average ROAS", value: "4.8X" },
+            { label: "Purchase Growth", value: "+260%" },
+          ],
+        },
+        {
+          title: "Customer Acquisition",
+          items: [
+            { label: "Average CPI / CAC", value: "₹180" },
+            { label: "New Customers Acquired", value: "8,500+" },
+            { label: "Conversion Rate Growth", value: "+145%" },
+            { label: "Repeat Customer Rate", value: "28%" },
+          ],
+        },
+        {
+          title: "Advertising Performance",
+          items: [
+            { label: "Meta Ad Reach", value: "3M+" },
+            { label: "Total Impressions", value: "10M+" },
+            { label: "Website Visitors", value: "120,000+" },
+            { label: "Add-to-Cart Growth", value: "+180%" },
+          ],
+        },
+        {
+          title: "Website Performance",
+          items: [
+            { label: "Store Sessions", value: "100,000+" },
+            { label: "Product Views", value: "250,000+" },
+            { label: "Checkout Initiated", value: "12,000+" },
+            { label: "Conversion Growth", value: "+145%" },
+          ],
+        },
+      ],
+    },
+    mockups: {
+      top: [shaperculthero],
+      bottom: [shapercultbottom1, shapercultbottom2],
+    },
+    growthChannels: [
+      { name: "Meta Ads" },
+      { name: "Google Ads" },
+      { name: "Search Ads" },
+      { name: "Shopping Ads" },
+      { name: "CRO" },
+      { name: "Analytics" },
+      { name: "Performance" },
+      { name: "Retargeting" },
+    ],
+    highlights: {
+      points: [
+        "Generated ₹35L+ monthly revenue through performance marketing campaigns.",
+        "Achieved an average 4.8X ROAS across acquisition campaigns.",
+        "Reduced customer acquisition costs while scaling sales volume.",
+        "Acquired 8,500+ new customers through Meta and Google Ads.",
+        "Increased website conversion rates through funnel optimization.",
+        "Built a scalable D2C growth engine capable of supporting future expansion.",
+        "Improved overall profitability through continuous campaign optimization.",
+      ],
+      image: campaignshapecult,
     },
   },
 };
+
+marketingCaseStudiesData["medimint"] = marketingCaseStudiesData["mediment"];
+

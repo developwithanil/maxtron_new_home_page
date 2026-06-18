@@ -59,6 +59,41 @@ const Reveal: React.FC<{
   );
 };
 
+const MockupGrid: React.FC<{ images?: string[]; sectionName: string }> = ({ images, sectionName }) => {
+  if (!images || images.length === 0) return null;
+  const count = images.length;
+  const fixedHeight = count >= 3;
+
+  let gridCols = "grid-cols-1";
+  if (count === 2) gridCols = "grid-cols-1 md:grid-cols-2";
+  else if (count === 3) gridCols = "grid-cols-1 md:grid-cols-3";
+  else if (count >= 4) gridCols = "grid-cols-2 md:grid-cols-4";
+
+  return (
+    <div className={`grid ${gridCols} gap-6 md:gap-8 py-8 md:py-12`}>
+      {images.map((imgUrl, idx) => (
+        <Reveal key={idx} direction={idx % 2 === 0 ? "left" : "right"} delay={idx * 100}>
+          {fixedHeight ? (
+            <div className="w-full aspect-square rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-2xl">
+              <img
+                src={imgUrl}
+                alt={`${sectionName} Mockup ${idx + 1}`}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          ) : (
+            <img
+              src={imgUrl}
+              alt={`${sectionName} Mockup ${idx + 1}`}
+              className="w-full h-auto rounded-[2rem] md:rounded-[2.5rem] object-cover shadow-2xl"
+            />
+          )}
+        </Reveal>
+      ))}
+    </div>
+  );
+};
+
 const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = ({ data }) => {
   return (
     <>
@@ -129,7 +164,9 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
             className="w-full h-[60vh] md:h-[80vh] object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/40 to-transparent" />
-          <div className="absolute inset-0 flex items-center justify-start md:justify-end px-5 sm:px-12 lg:px-20">
+          <div className={`absolute inset-0 flex items-center px-5 sm:px-12 lg:px-20 ${
+            data.hero.textAlign === "left" ? "justify-start md:justify-start" : "justify-start md:justify-end"
+          }`}>
             <div className="flex flex-col space-y-3 md:space-y-6 max-w-2xl w-full md:w-1/2 pt-16">
               <h1 className="hero-title text-white font-bold text-3xl sm:text-5xl lg:text-6xl xl:text-7xl leading-tight tracking-tight drop-shadow-lg">
                 {data.hero.title}
@@ -141,7 +178,7 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
                 {data.hero.tags.map((tag, idx) => (
                   <span
                     key={idx}
-                    className="px-5 py-2 bg-white/10 backdrop-blur-md hover:bg-white/20 transition-colors text-white text-sm font-medium rounded-full tracking-wide shadow-sm"
+                    className="px-3 py-[6px] bg-white/10 backdrop-blur-md hover:bg-white/20 transition-colors text-white text-sm font-medium rounded-full tracking-wide shadow-sm"
                   >
                     {tag}
                   </span>
@@ -181,11 +218,8 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
             </Reveal>
           </div>
 
-
-          {data.mockups.image1 && (
-            <Reveal className="py-8">
-              <img src={data.mockups.image1} alt="Mockup 1" className="w-full h-auto rounded-[2.5rem] object-cover shadow-2xl" />
-            </Reveal>
+          {data.mockups.top && (
+            <MockupGrid images={data.mockups.top} sectionName="Top" />
           )}
 
 
@@ -421,72 +455,93 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
           </div>
         </div>
 
-        <div className="w-full py-10 md:py-12" style={{ background: 'linear-gradient(to bottom, #F3E7FF, #FFFFFF)' }}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 md:space-y-8">
-            <Reveal direction="up">
-              <h3 className="text-2xl font-bold text-gray-900">Detailed Campaign Data</h3>
-            </Reveal>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <Reveal direction="left" delay={0}>
-                <div className="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                  <div className="bg-[#D7C3E9] px-6 py-5 flex justify-between items-center">
-                    <h4 className="font-semibold text-[#1A1C35] text-sm">Search Visibility</h4>
-                    <FiSearch className="text-[#845ec2] text-lg" />
-                  </div>
-                  <div className="divide-y divide-gray-100 bg-white">
-                    {data.detailedData.searchVisibility.map((item, idx) => {
-                      let valueColor = "text-gray-900";
-                      if (item.value.includes("12M+")) valueColor = "text-[#845ec2]";
-
-                      return (
-                        <div key={idx} className="flex justify-between items-center px-6 py-4">
-                          <span className="text-gray-600 text-sm font-medium">{item.label}</span>
-                          <span className={`font-bold text-sm ${valueColor}`}>{item.value}</span>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
+        {data.detailedData && (
+          <div className="w-full py-10 md:py-12" style={{ background: 'linear-gradient(to bottom, #F3E7FF, #FFFFFF)' }}>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 md:space-y-8">
+              <Reveal direction="up">
+                <h3 className="text-2xl font-bold text-gray-900">Detailed Campaign Data</h3>
               </Reveal>
-              <Reveal direction="right" delay={120}>
-                <div className="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                  <div className="bg-[#D7C3E9] px-6 py-5 flex justify-between items-center">
-                    <h4 className="font-semibold text-[#1A1C35] text-sm">User Acquisition</h4>
-                    <FiUserPlus className="text-[#845ec2] text-lg" />
-                  </div>
-                  <div className="divide-y divide-gray-100 bg-white">
-                    {data.detailedData.userAcquisition.map((item, idx) => {
-                      let valueColor = "text-gray-900";
-                      if (item.value.includes("-")) valueColor = "text-[#00C2A0]";
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {data.detailedData.searchVisibility && data.detailedData.searchVisibility.length > 0 && (
+                  <Reveal direction="left" delay={0}>
+                    <div className="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                      <div className="bg-[#D7C3E9] px-6 py-5 flex justify-between items-center">
+                        <h4 className="font-semibold text-[#1A1C35] text-sm">
+                          {data.detailedData.searchVisibilityTitle || "Search Visibility"}
+                        </h4>
+                        <FiSearch className="text-[#845ec2] text-lg" />
+                      </div>
+                      <div className="divide-y divide-gray-100 bg-white">
+                        {data.detailedData.searchVisibility.map((item, idx) => {
+                          let valueColor = "text-gray-900";
+                          if (item.value.includes("12M+")) valueColor = "text-[#845ec2]";
 
-                      return (
-                        <div key={idx} className="flex justify-between items-center px-6 py-4">
-                          <span className="text-gray-600 text-sm font-medium">{item.label}</span>
-                          <span className={`font-bold text-sm ${valueColor}`}>{item.value}</span>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              </Reveal>
+                          return (
+                            <div key={idx} className="flex justify-between items-center px-6 py-4">
+                              <span className="text-gray-600 text-sm font-medium">{item.label}</span>
+                              <span className={`font-bold text-sm ${valueColor}`}>{item.value}</span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </Reveal>
+                )}
+                {data.detailedData.userAcquisition && data.detailedData.userAcquisition.length > 0 && (
+                  <Reveal direction="right" delay={120}>
+                    <div className="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                      <div className="bg-[#D7C3E9] px-6 py-5 flex justify-between items-center">
+                        <h4 className="font-semibold text-[#1A1C35] text-sm">
+                          {data.detailedData.userAcquisitionTitle || "User Acquisition"}
+                        </h4>
+                        <FiUserPlus className="text-[#845ec2] text-lg" />
+                      </div>
+                      <div className="divide-y divide-gray-100 bg-white">
+                        {data.detailedData.userAcquisition.map((item, idx) => {
+                          let valueColor = "text-gray-900";
+                          if (item.value.includes("-")) valueColor = "text-[#00C2A0]";
+
+                          return (
+                            <div key={idx} className="flex justify-between items-center px-6 py-4">
+                              <span className="text-gray-600 text-sm font-medium">{item.label}</span>
+                              <span className={`font-bold text-sm ${valueColor}`}>{item.value}</span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </Reveal>
+                )}
+                {data.detailedData.sections && data.detailedData.sections.map((section, sectionIdx) => (
+                  <Reveal key={sectionIdx} direction="up" delay={sectionIdx * 60}>
+                    <div className="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                      <div className="bg-[#D7C3E9] px-6 py-5 flex justify-between items-center">
+                        <h4 className="font-semibold text-[#1A1C35] text-sm">
+                          {section.title}
+                        </h4>
+                        <FiSearch className="text-[#845ec2] text-lg" />
+                      </div>
+                      <div className="divide-y divide-gray-100 bg-white">
+                        {section.items.map((item, idx) => (
+                          <div key={idx} className="flex justify-between items-center px-6 py-4">
+                            <span className="text-gray-600 text-sm font-medium">{item.label}</span>
+                            <span className="font-bold text-sm text-gray-900">{item.value}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
+        )}
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 md:space-y-24">
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 py-8 md:py-12">
-            {data.mockups.image2 && (
-              <Reveal direction="left">
-                <img src={data.mockups.image2} alt="Mockup 2" className="w-full h-auto rounded-[2.5rem] object-cover shadow-lg" />
-              </Reveal>
-            )}
-            {data.mockups.image3 && (
-              <Reveal direction="right" delay={100}>
-                <img src={data.mockups.image3} alt="Mockup 3" className="w-full h-auto rounded-[2.5rem] object-cover shadow-lg" />
-              </Reveal>
-            )}
-          </div>
+          {data.mockups.bottom && (
+            <MockupGrid images={data.mockups.bottom} sectionName="Bottom" />
+          )}
 
           <div className="space-y-12 md:space-y-16">
             <div className="space-y-6 md:space-y-10 text-center pt-4 md:pt-8">
@@ -514,13 +569,24 @@ const MarketingCaseStudyTemplate: React.FC<{ data: MarketingCaseStudyProps }> = 
 
             <Reveal direction="up">
               <div className="bg-[#F8F5FC] rounded-[2rem] md:rounded-[3rem] p-6 sm:p-8 md:p-12 lg:p-16 max-w-5xl mx-auto">
-                <div className="space-y-6 md:space-y-8">
-                  <h3 className="text-2xl md:text-3xl font-bold text-[#050505]">Campaign Highlights</h3>
-                  <ul className="space-y-6 md:space-y-8">
-                    {data.highlights.points.map((point, idx) => (
-                      <HighlightItem key={idx} point={point} delay={idx * 100} />
-                    ))}
-                  </ul>
+                <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+                  <div className={`space-y-6 md:space-y-8 ${data.highlights.image ? "lg:w-3/5" : "w-full"}`}>
+                    <h3 className="text-2xl md:text-3xl font-bold text-[#050505]">Campaign Highlights</h3>
+                    <ul className="space-y-6 md:space-y-8">
+                      {data.highlights.points.map((point, idx) => (
+                        <HighlightItem key={idx} point={point} delay={idx * 100} />
+                      ))}
+                    </ul>
+                  </div>
+                  {data?.highlights?.image && (
+                    <div className="lg:w-2/5 w-full flex-shrink-0">
+                      <img
+                        src={data.highlights.image}
+                        alt="Campaign Highlight"
+                        className="w-full h-auto rounded-[1.5rem] md:rounded-[2rem] object-cover shadow-lg lg:sticky lg:top-24"
+                      />
+                    </div>
+                  )}
                 </div>
               </div>
             </Reveal>
