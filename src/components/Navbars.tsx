@@ -129,6 +129,7 @@ const dropdownContentData = {
           { name: "Mediment", link: "/marketing-case-study/mediment" },
           { name: "Pitchmatter", link: "/marketing-case-study/pitchmatter" },
           { name: "Shapercult", link: "/marketing-case-study/shapercult" },
+          { name: "Ulalo", link: "/marketing-case-study/ulalo" },
         ],
       },
     ],

@@ -29,6 +29,13 @@ import campaignmedimint from "../../assets/marketingcasestudy/campaignmedimint.w
 import campaignpitchmatter from "../../assets/marketingcasestudy/campaignpitchmatter.webp";
 import campaignshapecult from "../../assets/marketingcasestudy/campaignshapecult.webp";
 
+import ulalologo from "../../assets/marketingcasestudy/ulalologo.webp";
+import ulalomain from "../../assets/marketingcasestudy/ulalomain.webp";
+import ulalohero from "../../assets/marketingcasestudy/ulalohero.webp";
+import ulalobottom1 from "../../assets/marketingcasestudy/ulalobottom1.webp";
+import ulalobottom2 from "../../assets/marketingcasestudy/ulalobottom2.webp";
+import campaignulalo from "../../assets/marketingcasestudy/campaignulalo.webp";
+
 export const marketingCaseStudiesData: Record<string, MarketingCaseStudyProps> = {
   "wave-money": {
     hero: {
@@ -566,6 +573,192 @@ export const marketingCaseStudiesData: Record<string, MarketingCaseStudyProps> =
         "Improved overall profitability through continuous campaign optimization.",
       ],
       image: campaignshapecult,
+    },
+  },
+  "ulalo": {
+    hero: {
+      bgImage: ulalomain,
+      title: "ULALO",
+      subtitle: "Web3 Community Growth & Ecosystem Expansion Campaign",
+      tags: [
+        "Community Building",
+        "Web3 Marketing",
+        "Ambassador Program",
+        "Social Media Growth",
+        "Partnerships",
+        "Content Marketing",
+      ],
+      textAlign: "left",
+    },
+    intro: {
+      logo: ulalologo,
+      description:
+        "ULALO partnered with Maxtron Innovations to accelerate ecosystem growth, expand community engagement, strengthen brand visibility, and establish a scalable marketing foundation ahead of major milestones including Testnet, DApps, Health Wallet, and Token Launch. Through a combination of strategic community building, social media marketing, ambassador management, partnership development, content creation, and ecosystem outreach, Maxtron helped ULALO build a highly engaged Web3 community while positioning the project for long-term growth and adoption.",
+      industries: "Web3 / Blockchain / Decentralized Ecosystems",
+      services: [
+        "Web3 Marketing",
+        "Community Management",
+        "Ambassador Program Management",
+        "Social Media Marketing",
+        "Partnership Development",
+        "Content Marketing",
+        "Growth Strategy",
+      ],
+    },
+    challenges: {
+      description:
+        "Before partnering with Maxtron, ULALO faced several growth challenges: limited community size and ecosystem awareness, need for stronger social media visibility and engagement, lack of structured ambassador and community programs, limited industry partnerships and ecosystem connections, need to prepare audience and community for upcoming Testnet and product launches, and building trust and credibility within the Web3 ecosystem.",
+      cards: [
+        {
+          title: "Limited Awareness",
+          description:
+            "Limited community size and low ecosystem awareness ahead of major product and token releases.",
+        },
+        {
+          title: "No Structured Programs",
+          description:
+            "Lack of structured ambassador and community programs to drive user-generated content and advocacy.",
+        },
+        {
+          title: "Ecosystem Invisibility",
+          description:
+            "Limited industry partnerships, investor connections, and credibility within the Web3 ecosystem.",
+        },
+      ],
+    },
+    framework: {
+      subtitle:
+        "A multi-channel Web3 growth framework focused on awareness, engagement, community expansion, partnerships, and ecosystem development.",
+      pillars: [
+        {
+          title: "Community Growth & Mgmt",
+          description:
+            "24/7 moderation and engagement across Telegram and Discord to build trust and retain early adopters.",
+          points: [
+            "24/7 Moderation",
+            "Engagement Campaigns",
+            "User Support & Retention",
+          ],
+        },
+        {
+          title: "Ambassador Program",
+          description:
+            "Structured recruitment, onboarding, and advocacy framework to scale community-generated content.",
+          points: [
+            "Ambassador Onboarding",
+            "User-Generated Content",
+            "Referral & Advocacy",
+          ],
+        },
+        {
+          title: "Social & Content Marketing",
+          description:
+            "Consistent publishing, interactive campaigns, and educational video production including YouTube Shorts.",
+          points: [
+            "Social Media Campaigns",
+            "Educational Videos",
+            "YouTube Shorts Production",
+          ],
+        },
+        {
+          title: "Partnerships & Activation",
+          description:
+            "Strategic partner outreach, investor networking, and community activation campaigns like Zealy.",
+          points: [
+            "Strategic Outreach",
+            "Zealy Campaigns",
+            "VC & Investor Introductions",
+          ],
+        },
+      ],
+    },
+    businessNeed: {
+      description:
+        "ULALO required a comprehensive Web3 marketing partner to scale community size and engagement, design a high-performing ambassador acquisition pipeline, and secure strategic ecosystem partnerships to prepare for upcoming Testnet and DApp launches.",
+    },
+    results: {
+      points: [
+        "Successfully built and scaled a highly engaged **Web3 community**.",
+        "Generated thousands of **organic engagement actions** across social platforms.",
+        "Established a strong **ambassador acquisition pipeline** with 257+ applications.",
+        "Successfully launched and scaled **Zealy community campaigns**.",
+        "Expanded **networking opportunities** with investors, VCs, and strategic partners.",
+      ],
+    },
+    metrics: [
+      { title: "ORGANIC ENGAGEMENT", value: "3,000+", subtitle: "Engagement Actions" },
+      { title: "TELEGRAM MEMBERS", value: "1,199+", subtitle: "Active Community" },
+      { title: "ZEALY PARTICIPANTS", value: "981+", subtitle: "Campaign Participants" },
+      { title: "AMBASSADOR APPS", value: "257+", subtitle: "93% Crypto-Native" },
+    ],
+    detailedData: {
+      sections: [
+        {
+          title: "Community Growth",
+          items: [
+            { label: "Telegram Members", value: "1,199+" },
+            { label: "Community Moderation", value: "24/7 Active" },
+            { label: "Ambassador Applications", value: "257+" },
+            { label: "Crypto-Native Ambassadors", value: "93%" },
+            { label: "Zealy Participants", value: "981+" },
+          ],
+        },
+        {
+          title: "Social Media Performance",
+          items: [
+            { label: "Average Comments Per Post", value: "100+" },
+            { label: "Average Reposts Per Post", value: "50+" },
+            { label: "Average Likes Per Post", value: "100+" },
+            { label: "Average Impressions Per Post", value: "2,000+" },
+            { label: "Total Organic Engagement Actions", value: "3,000+" },
+          ],
+        },
+        {
+          title: "Ambassador Program Performance",
+          items: [
+            { label: "Applications Received", value: "257+" },
+            { label: "Crypto Native Audience", value: "93%" },
+            { label: "Third-Party Organic Posts", value: "200+" },
+            { label: "Platform Coverage", value: "X, Discord, YouTube" },
+          ],
+        },
+        {
+          title: "Content & Outreach",
+          items: [
+            { label: "YouTube Shorts Completed", value: "4" },
+            { label: "Long-form Videos Produced", value: "2" },
+            { label: "Qualified LinkedIn Responses", value: "150+" },
+            { label: "LinkedIn Outreach Campaigns", value: "Active" },
+          ],
+        },
+      ],
+    },
+    mockups: {
+      top: [ulalohero],
+      bottom: [ulalobottom1, ulalobottom2],
+    },
+    growthChannels: [
+      { name: "Telegram" },
+      { name: "Discord" },
+      { name: "X (Twitter)" },
+      { name: "YouTube" },
+      { name: "Zealy" },
+      { name: "LinkedIn" },
+      { name: "Content Creation" },
+      { name: "Partnerships" },
+    ],
+    highlights: {
+      points: [
+        "Built and scaled a highly engaged Web3 community.",
+        "Established a strong ambassador acquisition pipeline.",
+        "Generated thousands of organic engagement actions across social platforms.",
+        "Successfully launched and scaled Zealy community campaigns.",
+        "Increased ecosystem visibility through content marketing and outreach.",
+        "Created a foundation for upcoming Testnet, DApps, and Health Wallet launches.",
+        "Expanded networking opportunities with investors, VCs, and strategic partners.",
+        "Strengthened ULALO's positioning within the Web3 ecosystem.",
+      ],
+      image: campaignulalo,
     },
   },
 };
