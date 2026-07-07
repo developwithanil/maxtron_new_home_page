@@ -59,40 +59,56 @@ const dropdownContentData = {
         head: "Our Work",
         title: "Projects",
         link: "/case-studies",
-        liTags: [
+        liTags: [],
+        categories: [
             {
-                name: "Blockchain Game Development",
-                link: "/case-study/Blockchain-Game-Development",
+                title: "Technical",
+                liTags: [
+                    {
+                        name: "Blockchain Game Development",
+                        link: "/case-study/Blockchain-Game-Development",
+                    },
+                    {
+                        name: "E-commerce Marketing",
+                        link: "/case-study/ECommerce-Marketing",
+                    },
+                    {
+                        name: "Mini-Gaming Platform",
+                        link: "/case-study/Mini-Gaming-Platform",
+                    },
+                    {
+                        name: "AI-Calling Tool",
+                        link: "/case-study/AI-Calling-Tool",
+                    },
+                    {
+                        name: "Crypto Project Marketing",
+                        link: "/case-study/Crypto-Project-Marketing",
+                    },
+                    {
+                        name: "Blockchain Based E-Voting System",
+                        link: "/case-study/Blockchain-Based-EVoting-System",
+                    },
+                    { name: "Good Standing", link: "/case-study/Good-Standing" },
+                    { name: "GRO8", link: "/case-study/Gro8" },
+                    { name: "Token Launch", link: "/case-study/Token-Launch" },
+                    { name: "ICCA", link: "/case-study/ICCA" },
+                    { name: "Tawuniya", link: "/case-study/Tawuniya" },
+                    { name: "Ulalo", link: "/case-study/Ulalo" },
+                    { name: "Medimint", link: "/case-study/Medimint" },
+                    { name: "Glofi Estates ", link: "/case-study/Glofi-Estates" },
+                    { name: "WaveMoney ", link: "/case-study/Wave-Money" },
+                ],
             },
             {
-                name: "E-commerce Marketing",
-                link: "/case-study/ECommerce-Marketing",
+                title: "Marketing",
+                liTags: [
+                    { name: "Wave Money", link: "/marketing-case-study/wave-money" },
+                    { name: "Mediment", link: "/marketing-case-study/mediment" },
+                    { name: "Pitchmatter", link: "/marketing-case-study/pitchmatter" },
+                    { name: "Shapercult", link: "/marketing-case-study/shapercult" },
+                    { name: "Ulalo", link: "/marketing-case-study/ulalo" },
+                ],
             },
-            {
-                name: "Mini-Gaming Platform",
-                link: "/case-study/Mini-Gaming-Platform",
-            },
-            {
-                name: "AI-Calling Tool",
-                link: "/case-study/AI-Calling-Tool",
-            },
-            {
-                name: "Crypto Project Marketing",
-                link: "/case-study/Crypto-Project-Marketing",
-            },
-            {
-                name: "Blockchain Based E-Voting System",
-                link: "/case-study/Blockchain-Based-EVoting-System",
-            },
-            { name: "Good Standing", link: "/case-study/Good-Standing" },
-            { name: "GRO8", link: "/case-study/Gro8" },
-            { name: "Token Launch", link: "/case-study/Token-Launch" },
-            { name: "ICCA", link: "/case-study/ICCA" },
-            { name: "Tawuniya", link: "/case-study/Tawuniya" },
-            { name: "Ulalo", link: "/case-study/Ulalo" },
-            { name: "Medimint", link: "/case-study/Medimint" },
-            { name: "Wave Money", link: "/case-study/Wave-Money" },
-            { name: "Glofi Estates ", link: "/case-study/Glofi-Estates" },
         ],
     },
     tokenization: {
@@ -133,6 +149,8 @@ const Navbar = () => {
     const navRef = useRef(null);
     const [activeDropdownKey, setActiveDropdownKey] = useState(null);
     const [openMobileDropdownKey, setOpenMobileDropdownKey] = useState(null);
+    const [activeProjectsCategory, setActiveProjectsCategory] = useState("Technical");
+    const [isCategoryDropdownOpen, setIsCategoryDropdownOpen] = useState(false);
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen((prev) => !prev);
         setActiveDropdownKey(null);
@@ -211,7 +229,28 @@ const Navbar = () => {
       ${activeDropdownKey
                     ? "dropdown-animation-open"
                     : "dropdown-animation-close"}
-    `, onClick: (e) => e.stopPropagation(), children: _jsxs("div", { className: "mx-auto", children: [" ", _jsxs("div", { className: "bg-gray-50 rounded-b-xl p-6 ring-1 ring-black ring-opacity-5 max-h-[calc(100vh-8rem)] overflow-y-auto", children: [_jsxs(Link, { to: currentDropdownContent.link, onClick: closeDesktopDropdown, className: "flex items-center mb-5", children: [_jsx("h3", { className: "text-xl font-bold text-gray-800", children: currentDropdownContent.head }), _jsx(CustomArrowIcon, {})] }), _jsx(Link, { to: currentDropdownContent.link, onClick: closeDesktopDropdown, className: "block text-[18px] font-semibold text-[#9693A6] mb-5", children: currentDropdownContent.title }), _jsx("div", { className: "grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-3 font-openSansHebrew text-[20px] text-[#2A2A2A]", children: currentDropdownContent.liTags.map((item, index) => {
+    `, onClick: (e) => e.stopPropagation(), children: _jsxs("div", { className: "mx-auto", children: [" ", _jsxs("div", { className: "bg-gray-50 rounded-b-xl p-6 ring-1 ring-black ring-opacity-5 max-h-[calc(100vh-8rem)] overflow-y-auto", children: [_jsxs(Link, { to: currentDropdownContent.link, onClick: closeDesktopDropdown, className: "flex items-center mb-5", children: [_jsx("h3", { className: "text-xl font-bold text-gray-800", children: currentDropdownContent.head }), _jsx(CustomArrowIcon, {})] }), _jsx(Link, { to: currentDropdownContent.link, onClick: closeDesktopDropdown, className: "block text-[18px] font-semibold text-[#9693A6] mb-5", children: currentDropdownContent.title }), 'categories' in currentDropdownContent && currentDropdownContent.categories ? (_jsxs("div", { className: "flex flex-col gap-4", children: [_jsx("div", { className: "flex bg-gray-200/50 rounded-lg p-1 mb-6 w-max shadow-inner", children: currentDropdownContent.categories.map((category) => (_jsx("button", { onClick: (e) => {
+                                                    e.preventDefault();
+                                                    e.stopPropagation();
+                                                    setActiveProjectsCategory(category.title);
+                                                }, className: `px-8 py-2.5 text-[14px] font-bold rounded-md uppercase tracking-wider transition-all duration-200 ${activeProjectsCategory === category.title
+                                                    ? "bg-white shadow-sm text-[#7A35C1]"
+                                                    : "text-gray-500 hover:text-[#7A35C1]"}`, children: category.title }, category.title))) }), currentDropdownContent.categories
+                                            .filter((category) => category.title === activeProjectsCategory)
+                                            .map((category, catIndex) => (_jsx("div", { children: _jsx("div", { className: "grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-3 font-openSansHebrew text-[20px] text-[#2A2A2A]", children: category.liTags.map((item, index) => {
+                                                    const itemName = typeof item === "string" ? item : item.name;
+                                                    let itemLink = "#";
+                                                    if (typeof item === "object" && item.link) {
+                                                        itemLink = item.link;
+                                                    }
+                                                    else if (typeof item === "string") {
+                                                        itemLink = `${currentDropdownContent.link}/${itemName
+                                                            .toLowerCase()
+                                                            .replace(/\s+/g, "-")
+                                                            .replace(/&/g, "and")}`;
+                                                    }
+                                                    return (_jsx(Link, { to: itemLink, onClick: closeDesktopDropdown, className: "text-gray-700 hover:text-purple-700 hover:font-medium py-1 text-sm rounded-md transition-colors duration-150 ease-in-out", children: itemName }, `${activeDropdownKey}-cat-${catIndex}-item-${index}`));
+                                                }) }) }, catIndex)))] })) : (_jsx("div", { className: "grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-3 font-openSansHebrew text-[20px] text-[#2A2A2A]", children: currentDropdownContent.liTags.map((item, index) => {
                                         const itemName = typeof item === "string" ? item : item.name;
                                         let itemLink = "#";
                                         if (typeof item === "object" && item.link) {
@@ -224,13 +263,36 @@ const Navbar = () => {
                                                 .replace(/&/g, "and")}`;
                                         }
                                         return (_jsx(Link, { to: itemLink, onClick: closeDesktopDropdown, className: "text-gray-700 hover:text-purple-700 hover:font-medium py-1 text-sm rounded-md transition-colors duration-150 ease-in-out", children: itemName }, `${activeDropdownKey}-item-${index}`));
-                                    }) })] })] }) })), isMobileMenuOpen && (_jsxs("div", { className: "lg:hidden shadow-lg rounded-b-3xl z-30 overflow-y-auto max-h-[calc(100vh-6rem)] bg-white", id: "mobile-menu", children: [_jsxs("div", { className: "px-2 pt-2 pb-1 space-y-1 sm:px-3", children: [navLinksConfig.map(({ label, key }) => {
+                                    }) }))] })] }) })), isMobileMenuOpen && (_jsxs("div", { className: "lg:hidden shadow-lg rounded-b-3xl z-30 overflow-y-auto max-h-[calc(100vh-6rem)] bg-white", id: "mobile-menu", children: [_jsxs("div", { className: "px-2 pt-2 pb-1 space-y-1 sm:px-3", children: [navLinksConfig.map(({ label, key }) => {
                                 const content = dropdownContentData[key];
                                 const isMobileDropdownOpen = openMobileDropdownKey === key;
                                 return (_jsxs("div", { children: [_jsxs("button", { onClick: () => handleMobileDropdownToggle(key), className: `w-full flex justify-between items-center text-left px-3 py-2.5 rounded-md text-base font-medium
                       ${isMobileDropdownOpen
                                                 ? "bg-purple-100 text-purple-700"
-                                                : "text-[#2A2A2A] hover:bg-purple-50 hover:text-purple-800"}`, children: [_jsx("span", { children: label }), isMobileDropdownOpen ? (_jsx(FiChevronUp, { size: 20 })) : (_jsx(FiChevronDown, { size: 20 }))] }), isMobileDropdownOpen && content && (_jsxs("div", { className: "py-2 pl-5 pr-2 space-y-1 bg-purple-50/40 rounded-b-md", children: [_jsx("div", { className: "px-3 pt-2 pb-1", children: _jsx(Link, { to: content.link, onClick: handleMobileNavClick, className: "text-sm font-semibold text-purple-700 hover:text-purple-900 hover:underline", children: content.title }) }), content.liTags.map((item, index) => {
+                                                : "text-[#2A2A2A] hover:bg-purple-50 hover:text-purple-800"}`, children: [_jsx("span", { children: label }), isMobileDropdownOpen ? (_jsx(FiChevronUp, { size: 20 })) : (_jsx(FiChevronDown, { size: 20 }))] }), isMobileDropdownOpen && content && (_jsxs("div", { className: "py-2 pl-5 pr-2 space-y-1 bg-purple-50/40 rounded-b-md", children: [_jsx("div", { className: "px-3 pt-2 pb-1", children: _jsx(Link, { to: content.link, onClick: handleMobileNavClick, className: "text-sm font-semibold text-purple-700 hover:text-purple-900 hover:underline", children: content.title }) }), 'categories' in content && content.categories ? (_jsxs("div", { className: "px-3 pb-2", children: [_jsx("div", { className: "flex bg-gray-100 rounded-lg p-1 mb-4 shadow-inner", children: content.categories.map((category) => (_jsx("button", { onClick: (e) => {
+                                                                    e.preventDefault();
+                                                                    e.stopPropagation();
+                                                                    setActiveProjectsCategory(category.title);
+                                                                }, className: `flex-1 text-center text-[12px] font-bold py-2 px-2 rounded-md uppercase tracking-wider transition-all duration-200 ${activeProjectsCategory === category.title
+                                                                    ? "bg-white shadow-sm text-[#7A35C1]"
+                                                                    : "text-gray-500 hover:text-[#7A35C1]"}`, children: category.title }, category.title))) }), content.categories
+                                                            .filter((category) => category.title === activeProjectsCategory)
+                                                            .map((category, catIndex) => (_jsx("div", { children: category.liTags.map((item, index) => {
+                                                                const itemName = typeof item === "string" ? item : item.name;
+                                                                let itemLink = "#";
+                                                                if (typeof item === "object" && item.link) {
+                                                                    itemLink = item.link;
+                                                                }
+                                                                else if (typeof item === "string") {
+                                                                    itemLink = `${content.link}/${itemName
+                                                                        .toLowerCase()
+                                                                        .replace(/\s+/g, "-")
+                                                                        .replace(/&/g, "and")}`;
+                                                                }
+                                                                return (_jsx(NavLink, { to: itemLink, onClick: handleMobileNavClick, className: ({ isActive }) => `block ${isActive
+                                                                        ? "text-purple-700 font-semibold"
+                                                                        : "text-gray-700"} hover:text-purple-600 hover:font-medium py-1.5 px-3 rounded-md text-sm transition-colors duration-150 ease-in-out`, children: itemName }, `mobile-sub-${key}-${catIndex}-${index}`));
+                                                            }) }, `mobile-cat-${key}-${catIndex}`)))] })) : (content.liTags.map((item, index) => {
                                                     const itemName = typeof item === "string" ? item : item.name;
                                                     let itemLink = "#";
                                                     if (typeof item === "object" && item.link) {
@@ -245,7 +307,7 @@ const Navbar = () => {
                                                     return (_jsx(NavLink, { to: itemLink, onClick: handleMobileNavClick, className: ({ isActive }) => `block ${isActive
                                                             ? "text-purple-700 font-semibold"
                                                             : "text-gray-700"} hover:text-purple-600 hover:font-medium py-1.5 px-3 rounded-md text-sm transition-colors duration-150 ease-in-out`, children: itemName }, `mobile-sub-${key}-${index}`));
-                                                })] }))] }, `mobile-dropdown-${key}`));
+                                                }))] }))] }, `mobile-dropdown-${key}`));
                             }), _jsx(NavLink, { to: "/tokenization", onClick: handleMobileNavClick, className: ({ isActive }) => `block ${isActive ? "bg-purple-100 text-purple-700" : "text-[#2A2A2A]"} hover:bg-purple-50 hover:text-purple-800 px-3 py-2.5 rounded-md text-base font-medium`, children: "Tokenization" }), _jsx(NavLink, { to: "/careers", onClick: handleMobileNavClick, className: ({ isActive }) => `block ${isActive ? "bg-purple-100 text-purple-700" : "text-[#2A2A2A]"} hover:bg-purple-50 hover:text-purple-800 px-3 py-2.5 rounded-md text-base font-medium`, children: "Careers" })] }), _jsx("div", { className: "flex flex-row justify-between pt-3 p-10 pb-4 space-y-3 border-gray-200 mt-2", children: _jsxs("div", { className: "flex flex-grow space-x-2", children: [_jsx(Link, { to: "/contact", onClick: handleMobileNavClick, className: "flex-1 text-white text-center bg-[#7A35C1]  hover:bg-purple-800 px-3 py-2.5 rounded-md text-base font-medium", children: "Contact Us" }), _jsx("button", { onClick: () => {
                                         window.open("https://calendly.com/business-maxtron/new-meeting", "_blank");
                                         handleMobileNavClick();

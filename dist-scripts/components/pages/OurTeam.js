@@ -20,7 +20,7 @@ import mehak from "../../assets/case/mehak.webp";
 import amani from "../../assets/case/amani.png";
 import pooran from "../../assets/case/pooran.webp";
 import rishikesh from "../../assets/case/rishikesh.webp";
-import trish from "../../assets/case/trish.webp";
+// import trish from "../../assets/case/trish.webp";
 import vc from "../../assets/case/888vc.webp";
 import team from "../../assets/case/team.webp";
 import TeamLastComponent from "../elementalComponent/TeamLastComponent";
@@ -149,19 +149,19 @@ const teams = [
         ],
         linkedin: "https://www.linkedin.com/in/amanisaif/"
     },
-    {
-        title: "Trish Kane",
-        designation: "Director of Business, USA",
-        image: trish,
-        details: [
-            "20+ Years Disruptive Technologies, Sales & Startups",
-            "Tech & Motivational Keynote Speaker",
-            "Ex: Wall Street, Aflac & Informa Tech",
-            "3.5 years CTO & Project Manager, Healerverse (2022-2025)",
-            "Awarded Woman of the Year Web3 & Tech, 2024, UAE"
-        ],
-        linkedin: "https://www.linkedin.com/in/trishmkane"
-    },
+    // {
+    //   title: "Trish Kane",
+    //   designation: "Director of Business, USA",
+    //   image: trish,
+    //   details: [
+    //     "20+ Years Disruptive Technologies, Sales & Startups",
+    //     "Tech & Motivational Keynote Speaker",
+    //     "Ex: Wall Street, Aflac & Informa Tech",
+    //     "3.5 years CTO & Project Manager, Healerverse (2022-2025)",
+    //     "Awarded Woman of the Year Web3 & Tech, 2024, UAE"
+    //   ],
+    //   linkedin: "https://www.linkedin.com/in/trishmkane"
+    // },
     {
         title: "Rishikesh Trivedi",
         designation: "Director of Business, MENA Region",
